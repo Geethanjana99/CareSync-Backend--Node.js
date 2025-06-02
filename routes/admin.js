@@ -1,0 +1,35 @@
+const express = require('express');
+const router = express.Router();
+const AdminController = require('../controllers/adminController');
+const { validateAdminUser } = require('../middleware/validation');
+const auth = require('../middleware/auth');
+
+// All routes require admin authentication
+router.use(auth.required);
+router.use(auth.authorize(['admin']));
+
+// Dashboard
+router.get('/dashboard', AdminController.getDashboard);
+
+// User management
+router.get('/users', AdminController.getUsers);
+router.get('/users/:userId', AdminController.getUserDetails);
+router.patch('/users/:userId/status', AdminController.updateUserStatus);
+router.post('/users/admin', validateAdminUser, AdminController.createAdminUser);
+
+// Appointment management
+router.get('/appointments', AdminController.getAppointments);
+router.get('/appointments/statistics', AdminController.getAppointmentStatistics);
+
+// Doctor management
+router.get('/doctors/metrics', AdminController.getDoctorMetrics);
+router.patch('/doctors/:doctorId/approval', AdminController.approveDoctorRegistration);
+
+// Medical reports management
+router.get('/medical-reports', AdminController.getMedicalReports);
+
+// System statistics and monitoring
+router.get('/statistics', AdminController.getSystemStatistics);
+router.get('/health', AdminController.getSystemHealth);
+
+module.exports = router;

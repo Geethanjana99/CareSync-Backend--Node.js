@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CareSync</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 300;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .welcome-message {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .features {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .features h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #adb5bd;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to CareSync</h1>
+            <p>Your Health, Our Priority</p>
+        </div>
+        
+        <div class="content">
+            <div class="welcome-message">
+                <p>Dear {{userName}},</p>
+                <p>Welcome to CareSync! We're excited to have you join our healthcare community where managing your health has never been easier.</p>
+            </div>
+            
+            <div class="features">
+                <h3>What you can do with CareSync:</h3>
+                <ul class="feature-list">
+                    <li>Book appointments with top-rated doctors</li>
+                    <li>Access your medical records anytime, anywhere</li>
+                    <li>Receive appointment reminders and health tips</li>
+                    <li>Upload and manage your medical reports</li>
+                    <li>Track your health metrics and progress</li>
+                    <li>Get AI-powered health insights</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="{{loginUrl}}" class="cta-button">Get Started</a>
+            </div>
+            
+            <p>If you have any questions or need assistance, our support team is here to help. Simply reply to this email or contact us at <a href="mailto:support@caresync.com">support@caresync.com</a>.</p>
+            
+            <p>Thank you for choosing CareSync for your healthcare needs.</p>
+            
+            <p>Best regards,<br>
+            The CareSync Team</p>
+        </div>
+        
+        <div class="footer">
+            <div class="social-links">
+                <a href="#">📧</a>
+                <a href="#">📱</a>
+                <a href="#">🌐</a>
+            </div>
+            <p>&copy; 2024 CareSync. All rights reserved.</p>
+            <p>This email was sent to {{userEmail}}. If you no longer wish to receive these emails, you can <a href="{{unsubscribeUrl}}">unsubscribe</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

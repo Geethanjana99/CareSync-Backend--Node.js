@@ -1,0 +1,357 @@
+const { mysqlConnection } = require('../config/mysql');
+const { v4: uuidv4 } = require('uuid');
+
+class Doctor {
+  constructor(doctorData) {
+    this.id = doctorData.id || uuidv4();
+    this.user_id = doctorData.user_id;
+    this.doctor_id = doctorData.doctor_id;
+    this.specialty = doctorData.specialty;
+    this.license_number = doctorData.license_number;
+    this.years_of_experience = doctorData.years_of_experience;
+    this.education = doctorData.education;
+    this.certifications = doctorData.certifications;
+    this.consultation_fee = doctorData.consultation_fee;
+    this.languages_spoken = doctorData.languages_spoken;
+    this.office_address = doctorData.office_address;
+    this.bio = doctorData.bio;
+    this.rating = doctorData.rating || 0.00;
+    this.total_reviews = doctorData.total_reviews || 0;
+    this.working_hours = doctorData.working_hours;
+    this.availability_status = doctorData.availability_status || 'available';
+    this.commission_rate = doctorData.commission_rate || 25.00;
+    this.status = doctorData.status || 'active';
+  }
+
+  async save() {
+    // Generate doctor ID if not provided
+    if (!this.doctor_id) {
+      this.doctor_id = await this.generateDoctorId();
+    }
+
+    const query = `
+      INSERT INTO doctors (
+        id, user_id, doctor_id, specialty, license_number, years_of_experience,
+        education, certifications, consultation_fee, languages_spoken,
+        office_address, bio, rating, total_reviews, working_hours,
+        availability_status, commission_rate, status
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `;
+
+    const params = [
+      this.id, this.user_id, this.doctor_id, this.specialty, this.license_number,
+      this.years_of_experience, this.education, this.certifications,
+      this.consultation_fee, JSON.stringify(this.languages_spoken),
+      this.office_address, this.bio, this.rating, this.total_reviews,
+      JSON.stringify(this.working_hours), this.availability_status,
+      this.commission_rate, this.status
+    ];
+
+    await mysqlConnection.query(query, params);
+    return this;
+  }
+
+  static async findById(id) {
+    const query = 'SELECT * FROM doctors WHERE id = ?';
+    const doctors = await mysqlConnection.query(query, [id]);
+    return doctors.length > 0 ? new Doctor(doctors[0]) : null;
+  }
+
+  static async findByUserId(userId) {
+    const query = 'SELECT * FROM doctors WHERE user_id = ?';
+    const doctors = await mysqlConnection.query(query, [userId]);
+    return doctors.length > 0 ? new Doctor(doctors[0]) : null;
+  }
+
+  static async findByDoctorId(doctorId) {
+    const query = 'SELECT * FROM doctors WHERE doctor_id = ?';
+    const doctors = await mysqlConnection.query(query, [doctorId]);
+    return doctors.length > 0 ? new Doctor(doctors[0]) : null;
+  }
+
+  static async findAll(filters = {}) {
+    let query = `
+      SELECT d.*, u.name, u.email, u.phone, u.avatar_url, u.created_at
+      FROM doctors d
+      JOIN users u ON d.user_id = u.id
+      WHERE d.status = 'active' AND u.is_active = true
+    `;
+    const params = [];
+
+    if (filters.search) {
+      query += ` AND (u.name LIKE ? OR d.specialty LIKE ? OR d.doctor_id LIKE ?)`;
+      const searchTerm = `%${filters.search}%`;
+      params.push(searchTerm, searchTerm, searchTerm);
+    }
+
+    if (filters.specialty) {
+      query += ' AND d.specialty = ?';
+      params.push(filters.specialty);
+    }
+
+    if (filters.availability_status) {
+      query += ' AND d.availability_status = ?';
+      params.push(filters.availability_status);
+    }
+
+    if (filters.min_rating) {
+      query += ' AND d.rating >= ?';
+      params.push(parseFloat(filters.min_rating));
+    }
+
+    // Sort by rating and reviews by default
+    query += ' ORDER BY d.rating DESC, d.total_reviews DESC, u.name ASC';
+
+    if (filters.limit) {
+      query += ' LIMIT ?';
+      params.push(parseInt(filters.limit));
+    }
+
+    if (filters.offset) {
+      query += ' OFFSET ?';
+      params.push(parseInt(filters.offset));
+    }
+
+    return await mysqlConnection.query(query, params);
+  }
+
+  async update(updateData) {
+    const allowedFields = [
+      'specialty', 'years_of_experience', 'education', 'certifications',
+      'consultation_fee', 'languages_spoken', 'office_address', 'bio',
+      'working_hours', 'availability_status', 'commission_rate', 'status'
+    ];
+
+    const updates = [];
+    const params = [];
+
+    for (const [key, value] of Object.entries(updateData)) {
+      if (allowedFields.includes(key) && value !== undefined) {
+        if (key === 'languages_spoken' || key === 'working_hours') {
+          updates.push(`${key} = ?`);
+          params.push(JSON.stringify(value));
+        } else {
+          updates.push(`${key} = ?`);
+          params.push(value);
+        }
+      }
+    }
+
+    if (updates.length === 0) {
+      throw new Error('No valid fields to update');
+    }
+
+    params.push(this.id);
+    const query = `UPDATE doctors SET ${updates.join(', ')}, updated_at = CURRENT_TIMESTAMP WHERE id = ?`;
+    
+    await mysqlConnection.query(query, params);
+
+    // Update current instance
+    Object.assign(this, updateData);
+    return this;
+  }
+
+  async generateDoctorId() {
+    const query = 'SELECT COUNT(*) as count FROM doctors';
+    const result = await mysqlConnection.query(query);
+    const count = result[0].count + 1;
+    return `D${count.toString().padStart(3, '0')}`;
+  }
+
+  // Get doctor with user information
+  static async findWithUserInfo(doctorId) {
+    const query = `
+      SELECT d.*, u.name, u.email, u.phone, u.avatar_url, u.created_at, u.last_login
+      FROM doctors d
+      JOIN users u ON d.user_id = u.id
+      WHERE d.id = ? AND d.status = 'active' AND u.is_active = true
+    `;
+    
+    const doctors = await mysqlConnection.query(query, [doctorId]);
+    if (doctors.length > 0) {
+      const doctor = doctors[0];
+      // Parse JSON fields
+      if (doctor.languages_spoken) {
+        doctor.languages_spoken = JSON.parse(doctor.languages_spoken);
+      }
+      if (doctor.working_hours) {
+        doctor.working_hours = JSON.parse(doctor.working_hours);
+      }
+      return doctor;
+    }
+    return null;
+  }
+
+  // Get doctor's availability
+  async getAvailability(filters = {}) {
+    let query = `
+      SELECT * FROM doctor_availability 
+      WHERE doctor_id = ? AND is_active = true
+    `;
+    const params = [this.id];
+
+    if (filters.day_of_week) {
+      query += ' AND day_of_week = ?';
+      params.push(filters.day_of_week);
+    }
+
+    if (filters.effective_date) {
+      query += ' AND effective_date <= ? AND (expiry_date IS NULL OR expiry_date >= ?)';
+      params.push(filters.effective_date, filters.effective_date);
+    }
+
+    query += ' ORDER BY day_of_week, start_time';
+
+    return await mysqlConnection.query(query, params);
+  }
+
+  // Set availability
+  async setAvailability(availabilityData) {
+    const query = `
+      INSERT INTO doctor_availability (
+        id, doctor_id, day_of_week, start_time, end_time, slot_duration,
+        max_appointments_per_slot, is_active, effective_date, expiry_date
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON DUPLICATE KEY UPDATE
+        start_time = VALUES(start_time),
+        end_time = VALUES(end_time),
+        slot_duration = VALUES(slot_duration),
+        max_appointments_per_slot = VALUES(max_appointments_per_slot),
+        is_active = VALUES(is_active),
+        expiry_date = VALUES(expiry_date),
+        updated_at = CURRENT_TIMESTAMP
+    `;
+
+    const params = [
+      uuidv4(), this.id, availabilityData.day_of_week,
+      availabilityData.start_time, availabilityData.end_time,
+      availabilityData.slot_duration || 30,
+      availabilityData.max_appointments_per_slot || 1,
+      availabilityData.is_active !== undefined ? availabilityData.is_active : true,
+      availabilityData.effective_date,
+      availabilityData.expiry_date
+    ];
+
+    return await mysqlConnection.query(query, params);
+  }
+
+  // Get today's appointments
+  async getTodayAppointments() {
+    const query = `
+      SELECT a.*, p.patient_id, u.name as patient_name, u.phone as patient_phone
+      FROM appointments a
+      JOIN patients p ON a.patient_id = p.id
+      JOIN users u ON p.user_id = u.id
+      WHERE a.doctor_id = ? AND a.appointment_date = CURDATE()
+      ORDER BY a.appointment_time ASC
+    `;
+    
+    return await mysqlConnection.query(query, [this.id]);
+  }
+
+  // Get upcoming appointments
+  async getUpcomingAppointments(days = 7) {
+    const query = `
+      SELECT a.*, p.patient_id, u.name as patient_name, u.phone as patient_phone
+      FROM appointments a
+      JOIN patients p ON a.patient_id = p.id
+      JOIN users u ON p.user_id = u.id
+      WHERE a.doctor_id = ? 
+        AND a.status IN ('scheduled', 'confirmed')
+        AND a.appointment_date BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL ? DAY)
+      ORDER BY a.appointment_date ASC, a.appointment_time ASC
+    `;
+    
+    return await mysqlConnection.query(query, [this.id, days]);
+  }
+
+  // Get patient list
+  async getPatients() {
+    const query = `
+      SELECT DISTINCT p.*, u.name, u.email, u.phone, u.avatar_url,
+             COUNT(a.id) as total_appointments,
+             MAX(a.appointment_date) as last_appointment_date
+      FROM appointments a
+      JOIN patients p ON a.patient_id = p.id
+      JOIN users u ON p.user_id = u.id
+      WHERE a.doctor_id = ?
+      GROUP BY p.id, u.name, u.email, u.phone, u.avatar_url
+      ORDER BY last_appointment_date DESC
+    `;
+    
+    return await mysqlConnection.query(query, [this.id]);
+  }
+
+  // Update rating
+  async updateRating() {
+    const query = `
+      SELECT AVG(rating) as avg_rating, COUNT(*) as review_count
+      FROM doctor_reviews
+      WHERE doctor_id = ? AND status = 'approved'
+    `;
+    
+    const result = await mysqlConnection.query(query, [this.id]);
+    const { avg_rating, review_count } = result[0];
+
+    const updateQuery = `
+      UPDATE doctors 
+      SET rating = ?, total_reviews = ?, updated_at = CURRENT_TIMESTAMP
+      WHERE id = ?
+    `;
+    
+    await mysqlConnection.query(updateQuery, [
+      avg_rating || 0.00,
+      review_count || 0,
+      this.id
+    ]);
+
+    this.rating = avg_rating || 0.00;
+    this.total_reviews = review_count || 0;
+    
+    return this;
+  }
+
+  // Get monthly earnings
+  async getMonthlyEarnings(year, month) {
+    const query = `
+      SELECT 
+        COUNT(a.id) as total_appointments,
+        SUM(a.consultation_fee) as total_revenue,
+        SUM(a.consultation_fee * d.commission_rate / 100) as total_commission
+      FROM appointments a
+      JOIN doctors d ON a.doctor_id = d.id
+      WHERE a.doctor_id = ? 
+        AND YEAR(a.appointment_date) = ?
+        AND MONTH(a.appointment_date) = ?
+        AND a.status = 'completed'
+    `;
+    
+    const result = await mysqlConnection.query(query, [this.id, year, month]);
+    return result[0];
+  }
+
+  toJSON() {
+    const doctor = { ...this };
+    
+    // Parse JSON fields if they're strings
+    if (typeof doctor.languages_spoken === 'string') {
+      try {
+        doctor.languages_spoken = JSON.parse(doctor.languages_spoken);
+      } catch (e) {
+        doctor.languages_spoken = [];
+      }
+    }
+    
+    if (typeof doctor.working_hours === 'string') {
+      try {
+        doctor.working_hours = JSON.parse(doctor.working_hours);
+      } catch (e) {
+        doctor.working_hours = {};
+      }
+    }
+    
+    return doctor;
+  }
+}
+
+module.exports = Doctor;

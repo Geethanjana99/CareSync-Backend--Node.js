@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .content {
+            padding: 30px;
+        }
+        .appointment-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #28a745;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .appointment-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .detail-item {
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .detail-value {
+            color: #212529;
+            font-size: 16px;
+        }
+        .confirmation-code {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .instructions {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .instructions h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .appointment-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✅ Appointment Confirmed</h1>
+            <p>Your appointment has been successfully scheduled</p>
+        </div>
+        
+        <div class="content">
+            <p>Dear {{patientName}},</p>
+            <p>Thank you for choosing CareSync. Your appointment has been confirmed with the following details:</p>
+            
+            <div class="appointment-card">
+                <div class="appointment-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Doctor</div>
+                        <div class="detail-value">{{doctorName}}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Specialization</div>
+                        <div class="detail-value">{{doctorSpecialization}}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Date</div>
+                        <div class="detail-value">{{appointmentDate}}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Time</div>
+                        <div class="detail-value">{{appointmentTime}}</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Duration</div>
+                        <div class="detail-value">{{duration}} minutes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Type</div>
+                        <div class="detail-value">{{appointmentType}}</div>
+                    </div>
+                </div>
+                
+                <div class="detail-item" style="margin-top: 15px;">
+                    <div class="detail-label">Clinic Address</div>
+                    <div class="detail-value">{{clinicAddress}}</div>
+                </div>
+                
+                <div class="detail-item" style="margin-top: 15px;">
+                    <div class="detail-label">Consultation Fee</div>
+                    <div class="detail-value">${{consultationFee}}</div>
+                </div>
+            </div>
+            
+            <div class="confirmation-code">
+                Confirmation Code: {{confirmationCode}}
+            </div>
+            
+            <div class="instructions">
+                <h3>Important Instructions:</h3>
+                <ul>
+                    <li>Please arrive 15 minutes before your scheduled appointment time</li>
+                    <li>Bring a valid ID and your insurance card (if applicable)</li>
+                    <li>Bring any relevant medical records or test results</li>
+                    <li>If you need to reschedule or cancel, please do so at least 24 hours in advance</li>
+                    <li>You can manage your appointments through the CareSync app or website</li>
+                </ul>
+            </div>
+            
+            <p>If you have any questions or need to make changes to your appointment, please contact us at <a href="mailto:appointments@caresync.com">appointments@caresync.com</a> or call us at <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
+            
+            <p>We look forward to seeing you!</p>
+            
+            <p>Best regards,<br>
+            The CareSync Team</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 CareSync. All rights reserved.</p>
+            <p>Need help? Contact us at <a href="mailto:support@caresync.com">support@caresync.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
