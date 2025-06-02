@@ -1,117 +1,171 @@
 version: '3.8'
 
 services:
-  # Backend API Service
+  # Clinical Appointment System Backend
   backend:
-    build: .
-    container_name: caresync-backend
-    ports:
-      - "5000:5000"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: clinical-backend
+    restart: unless-stopped
     environment:
       - NODE_ENV=production
-    env_file:
-      - .env
+      - PORT=5000
+      - MYSQL_HOST=mysql
+      - MONGODB_URI=mongodb://mongodb:27017/clinical_appointment_system
+      - REDIS_HOST=redis
+    ports:
+      - "5000:5000"
     volumes:
       - ./uploads:/app/uploads
       - ./logs:/app/logs
-    depends_on:
-      - mysql
-      - mongodb
-      - redis
+      - ./backups:/app/backups
     networks:
-      - caresync-network
-    restart: unless-stopped
+      - clinical-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
+      redis:
+        condition: service_started
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5000/api/docs/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
       interval: 30s
       timeout: 10s
       retries: 3
+      start_period: 40s
 
   # MySQL Database
   mysql:
     image: mysql:8.0
-    container_name: caresync-mysql
+    container_name: clinical-mysql
+    restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: rootpassword123
+      MYSQL_DATABASE: clinical_appointment_system
+      MYSQL_USER: clinical_user
+      MYSQL_PASSWORD: clinical_password123
     ports:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database/mysql_schema.sql:/docker-entrypoint-initdb.d/init.sql:ro
     networks:
-      - caresync-network
-    restart: unless-stopped
+      - clinical-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword123"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
     command: --default-authentication-plugin=mysql_native_password
 
   # MongoDB Database
   mongodb:
     image: mongo:6.0
-    container_name: caresync-mongodb
+    container_name: clinical-mongodb
+    restart: unless-stopped
     environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
-      MONGO_INITDB_DATABASE: ${MONGO_DB_NAME}
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mongopassword123
+      MONGO_INITDB_DATABASE: clinical_appointment_system
     ports:
       - "27017:27017"
     volumes:
       - mongodb_data:/data/db
-      - ./scripts/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./database/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
     networks:
-      - caresync-network
-    restart: unless-stopped
+      - clinical-network
 
   # Redis Cache
   redis:
     image: redis:7-alpine
-    container_name: caresync-redis
+    container_name: clinical-redis
+    restart: unless-stopped
     ports:
       - "6379:6379"
     volumes:
       - redis_data:/data
     networks:
-      - caresync-network
-    restart: unless-stopped
-    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
-
-  # Frontend (Optional - for full stack deployment)
-  frontend:
-    build: ../frontend
-    container_name: caresync-frontend
-    ports:
-      - "3000:3000"
-    environment:
-      - REACT_APP_API_URL=http://backend:5000/api
-    depends_on:
-      - backend
-    networks:
-      - caresync-network
-    restart: unless-stopped
+      - clinical-network
+    command: redis-server --appendonly yes --requirepass redispassword123
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
   # Nginx Reverse Proxy
   nginx:
     image: nginx:alpine
-    container_name: caresync-nginx
+    container_name: clinical-nginx
+    restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    networks:
+      - clinical-network
     depends_on:
       - backend
-      - frontend
-    networks:
-      - caresync-network
+
+  # Monitoring with Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: clinical-prometheus
     restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    networks:
+      - clinical-network
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+
+  # Grafana for metrics visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: clinical-grafana
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    networks:
+      - clinical-network
+    depends_on:
+      - prometheus
 
 volumes:
   mysql_data:
+    driver: local
   mongodb_data:
+    driver: local
   redis_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
 
 networks:
-  caresync-network:
+  clinical-network:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

@@ -1,0 +1,116 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: "clinical-appointment-system"
+    
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+    
+    static_configs:
+      - targets: ["localhost:5000"]
+    
+    scrape_interval: 5s
+    metrics_path: /api/metrics
+    
+    # Optional: Add custom labels
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'clinical-app'
+
+  # Monitor Node.js process metrics
+  - job_name: "nodejs-exporter"
+    static_configs:
+      - targets: ["localhost:5000"]
+    metrics_path: /api/metrics
+    scrape_interval: 10s
+
+  # Monitor MySQL if you have mysqld_exporter
+  - job_name: "mysql"
+    static_configs:
+      - targets: ["localhost:9104"]
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+  # Monitor MongoDB if you have mongodb_exporter
+  - job_name: "mongodb"
+    static_configs:
+      - targets: ["localhost:9216"]
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+  # Monitor Redis if you have redis_exporter
+  - job_name: "redis"
+    static_configs:
+      - targets: ["localhost:9121"]
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+  # Monitor system metrics if you have node_exporter
+  - job_name: "node"
+    static_configs:
+      - targets: ["localhost:9100"]
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+  # Monitor Nginx if you have nginx-prometheus-exporter
+  - job_name: "nginx"
+    static_configs:
+      - targets: ["localhost:9113"]
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+  # Monitor Docker containers if you have cadvisor
+  - job_name: "cadvisor"
+    static_configs:
+      - targets: ["localhost:8080"]
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  - "alert_rules.yml"
+
+# Example alert rules (save to alert_rules.yml)
+# groups:
+#   - name: clinical-appointment-system
+#     rules:
+#       - alert: HighErrorRate
+#         expr: rate(http_requests_total{status_code=~"5.."}[5m]) > 0.1
+#         for: 5m
+#         labels:
+#           severity: warning
+#         annotations:
+#           summary: "High error rate detected"
+#           description: "Error rate is above 10% for 5 minutes"
+#       
+#       - alert: DatabaseConnectionsHigh
+#         expr: database_connections_active > 80
+#         for: 2m
+#         labels:
+#           severity: warning
+#         annotations:
+#           summary: "High database connections"
+#           description: "Database connections are above 80"
+#       
+#       - alert: MemoryUsageHigh
+#         expr: process_resident_memory_bytes / 1024 / 1024 / 1024 > 1
+#         for: 5m
+#         labels:
+#           severity: critical
+#         annotations:
+#           summary: "High memory usage"
+#           description: "Memory usage is above 1GB"

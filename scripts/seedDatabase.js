@@ -267,7 +267,7 @@ class DatabaseSeeder {
       {
         patient_id: patients[0].id,
         doctor_id: doctors[0].id,
-        appointment_date: '2024-01-15',
+        appointment_date: '2025-06-15',
         appointment_time: '10:00:00',
         duration_minutes: 30,
         type: 'consultation',
@@ -279,7 +279,7 @@ class DatabaseSeeder {
       {
         patient_id: patients[1].id,
         doctor_id: doctors[0].id,
-        appointment_date: '2024-01-16',
+        appointment_date: '2025-06-16',
         appointment_time: '14:30:00',
         duration_minutes: 45,
         type: 'consultation',
@@ -291,7 +291,7 @@ class DatabaseSeeder {
       {
         patient_id: patients[2].id,
         doctor_id: doctors[1].id,
-        appointment_date: '2024-01-18',
+        appointment_date: '2025-06-18',
         appointment_time: '11:00:00',
         duration_minutes: 30,
         type: 'consultation',
@@ -303,7 +303,7 @@ class DatabaseSeeder {
       {
         patient_id: patients[0].id,
         doctor_id: doctors[2].id,
-        appointment_date: '2024-01-22',
+        appointment_date: '2025-06-22',
         appointment_time: '09:30:00',
         duration_minutes: 60,
         type: 'consultation',
@@ -315,7 +315,7 @@ class DatabaseSeeder {
       {
         patient_id: patients[3].id,
         doctor_id: doctors[0].id,
-        appointment_date: '2024-01-25',
+        appointment_date: '2025-06-25',
         appointment_time: '15:00:00',
         duration_minutes: 30,
         type: 'consultation',
@@ -327,7 +327,7 @@ class DatabaseSeeder {
       {
         patient_id: patients[1].id,
         doctor_id: doctors[1].id,
-        appointment_date: '2024-01-28',
+        appointment_date: '2025-06-28',
         appointment_time: '10:30:00',
         duration_minutes: 30,
         type: 'follow-up',

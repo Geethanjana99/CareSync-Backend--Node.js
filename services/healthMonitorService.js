@@ -1,103 +1,122 @@
-const os = require('os');
 const { mysqlConnection } = require('../config/mysql');
 const { mongoConnection } = require('../config/mongodb');
 const cacheService = require('./cacheService');
 const logger = require('../config/logger');
+const os = require('os');
+const fs = require('fs').promises;
+const path = require('path');
 
 class HealthMonitorService {
   constructor() {
     this.startTime = Date.now();
-    this.healthMetrics = {
-      uptime: 0,
-      memory: {},
-      cpu: {},
-      database: {
-        mysql: { status: 'unknown', latency: null },
-        mongodb: { status: 'unknown', latency: null }
-      },
-      cache: { status: 'unknown', latency: null },
-      requests: {
-        total: 0,
-        errors: 0,
-        avgResponseTime: 0
-      }
+    this.healthChecks = new Map();
+    this.alertThresholds = {
+      cpu: 80, // CPU usage percentage
+      memory: 80, // Memory usage percentage
+      disk: 85, // Disk usage percentage
+      responseTime: 5000, // Response time in milliseconds
+      errorRate: 10 // Error rate percentage
     };
+    this.metrics = {
+      requests: 0,
+      errors: 0,
+      totalResponseTime: 0,
+      lastMinuteRequests: [],
+      lastMinuteErrors: []
+    };
+  }
+
+  // Initialize health monitoring
+  async initialize() {
+    logger.info('Initializing health monitor service...');
     
-    this.requestMetrics = [];
-    this.maxRequestMetricsSize = 1000;
+    // Start periodic health checks
+    this.startPeriodicChecks();
+    
+    // Initialize metrics cleanup
+    this.startMetricsCleanup();
+    
+    logger.info('Health monitor service initialized');
+  }
+
+  // Start periodic health checks
+  startPeriodicChecks() {
+    // Check every 30 seconds
+    setInterval(async () => {
+      await this.performHealthChecks();
+    }, 30000);
+
+    // Detailed check every 5 minutes
+    setInterval(async () => {
+      await this.performDetailedHealthCheck();
+    }, 300000);
+  }
+
+  // Start metrics cleanup (remove old data)
+  startMetricsCleanup() {
+    setInterval(() => {
+      const oneMinuteAgo = Date.now() - 60000;
+      this.metrics.lastMinuteRequests = this.metrics.lastMinuteRequests.filter(
+        timestamp => timestamp > oneMinuteAgo
+      );
+      this.metrics.lastMinuteErrors = this.metrics.lastMinuteErrors.filter(
+        timestamp => timestamp > oneMinuteAgo
+      );
+    }, 10000); // Clean every 10 seconds
   }
 
   // Record request metrics
-  recordRequest(duration, isError = false) {
-    this.healthMetrics.requests.total++;
+  recordRequest(responseTime, isError = false) {
+    const now = Date.now();
+    
+    this.metrics.requests++;
+    this.metrics.totalResponseTime += responseTime;
+    this.metrics.lastMinuteRequests.push(now);
+    
     if (isError) {
-      this.healthMetrics.requests.errors++;
+      this.metrics.errors++;
+      this.metrics.lastMinuteErrors.push(now);
     }
-
-    this.requestMetrics.push(duration);
-    if (this.requestMetrics.length > this.maxRequestMetricsSize) {
-      this.requestMetrics.shift();
-    }
-
-    // Calculate average response time
-    const sum = this.requestMetrics.reduce((a, b) => a + b, 0);
-    this.healthMetrics.requests.avgResponseTime = Math.round(sum / this.requestMetrics.length);
   }
 
-  // Get system metrics
-  getSystemMetrics() {
-    const uptime = Date.now() - this.startTime;
-    const memUsage = process.memoryUsage();
-    const systemMem = {
-      total: os.totalmem(),
-      free: os.freemem(),
-      used: os.totalmem() - os.freemem()
-    };
+  // Get current metrics
+  getMetrics() {
+    const now = Date.now();
+    const uptime = now - this.startTime;
+    const requestsPerMinute = this.metrics.lastMinuteRequests.length;
+    const errorsPerMinute = this.metrics.lastMinuteErrors.length;
+    const errorRate = this.metrics.requests > 0 ? (this.metrics.errors / this.metrics.requests) * 100 : 0;
+    const avgResponseTime = this.metrics.requests > 0 ? this.metrics.totalResponseTime / this.metrics.requests : 0;
 
     return {
-      uptime: Math.floor(uptime / 1000), // in seconds
-      memory: {
-        process: {
-          rss: Math.round(memUsage.rss / 1024 / 1024), // MB
-          heapUsed: Math.round(memUsage.heapUsed / 1024 / 1024), // MB
-          heapTotal: Math.round(memUsage.heapTotal / 1024 / 1024), // MB
-          external: Math.round(memUsage.external / 1024 / 1024) // MB
-        },
-        system: {
-          total: Math.round(systemMem.total / 1024 / 1024), // MB
-          free: Math.round(systemMem.free / 1024 / 1024), // MB
-          used: Math.round(systemMem.used / 1024 / 1024), // MB
-          usage: Math.round((systemMem.used / systemMem.total) * 100) // percentage
-        }
-      },
-      cpu: {
-        cores: os.cpus().length,
-        platform: os.platform(),
-        architecture: os.arch(),
-        loadAverage: os.loadavg()
-      }
+      uptime,
+      totalRequests: this.metrics.requests,
+      totalErrors: this.metrics.errors,
+      requestsPerMinute,
+      errorsPerMinute,
+      errorRate,
+      avgResponseTime,
+      timestamp: now
     };
   }
 
   // Check MySQL database health
   async checkMySQLHealth() {
     try {
-      const start = Date.now();
+      const startTime = Date.now();
       await mysqlConnection.query('SELECT 1');
-      const latency = Date.now() - start;
+      const responseTime = Date.now() - startTime;
       
       return {
         status: 'healthy',
-        latency,
-        connection: 'active'
+        responseTime,
+        message: 'MySQL connection successful'
       };
     } catch (error) {
-      logger.error('MySQL health check failed:', error);
       return {
         status: 'unhealthy',
-        latency: null,
-        connection: 'failed',
-        error: error.message
+        responseTime: null,
+        message: `MySQL connection failed: ${error.message}`
       };
     }
   }
@@ -105,263 +124,374 @@ class HealthMonitorService {
   // Check MongoDB health
   async checkMongoDBHealth() {
     try {
-      if (!mongoConnection || mongoConnection.readyState !== 1) {
-        return {
-          status: 'unhealthy',
-          latency: null,
-          connection: 'disconnected'
-        };
-      }
-
-      const start = Date.now();
+      const startTime = Date.now();
       await mongoConnection.db.admin().ping();
-      const latency = Date.now() - start;
+      const responseTime = Date.now() - startTime;
       
       return {
         status: 'healthy',
-        latency,
-        connection: 'active',
-        readyState: mongoConnection.readyState
+        responseTime,
+        message: 'MongoDB connection successful'
       };
     } catch (error) {
-      logger.error('MongoDB health check failed:', error);
       return {
         status: 'unhealthy',
-        latency: null,
-        connection: 'failed',
-        error: error.message
+        responseTime: null,
+        message: `MongoDB connection failed: ${error.message}`
       };
     }
   }
 
-  // Check cache service health
+  // Check Redis cache health
   async checkCacheHealth() {
     try {
-      const result = await cacheService.healthCheck();
-      return result;
-    } catch (error) {
-      logger.error('Cache health check failed:', error);
-      return {
-        status: 'unhealthy',
-        latency: null,
-        error: error.message
-      };
-    }
-  }
-
-  // Get database statistics
-  async getDatabaseStats() {
-    try {
-      const stats = {};
-
-      // MySQL stats
-      try {
-        const [userCount] = await mysqlConnection.query('SELECT COUNT(*) as count FROM users');
-        const [patientCount] = await mysqlConnection.query('SELECT COUNT(*) as count FROM patients');
-        const [doctorCount] = await mysqlConnection.query('SELECT COUNT(*) as count FROM doctors');
-        const [appointmentCount] = await mysqlConnection.query('SELECT COUNT(*) as count FROM appointments');
-        
-        stats.mysql = {
-          users: userCount[0].count,
-          patients: patientCount[0].count,
-          doctors: doctorCount[0].count,
-          appointments: appointmentCount[0].count
-        };
-      } catch (error) {
-        stats.mysql = { error: 'Unable to fetch MySQL stats' };
-      }
-
-      // MongoDB stats
-      try {
-        if (mongoConnection && mongoConnection.readyState === 1) {
-          const db = mongoConnection.db;
-          const collections = await db.listCollections().toArray();
-          stats.mongodb = {
-            collections: collections.length,
-            collectionNames: collections.map(c => c.name)
-          };
-        } else {
-          stats.mongodb = { error: 'MongoDB not connected' };
-        }
-      } catch (error) {
-        stats.mongodb = { error: 'Unable to fetch MongoDB stats' };
-      }
-
-      return stats;
-    } catch (error) {
-      logger.error('Error getting database stats:', error);
-      return { error: 'Unable to fetch database statistics' };
-    }
-  }
-
-  // Get application metrics
-  getApplicationMetrics() {
-    return {
-      nodeVersion: process.version,
-      environment: process.env.NODE_ENV || 'development',
-      pid: process.pid,
-      requests: this.healthMetrics.requests,
-      errorRate: this.healthMetrics.requests.total > 0 
-        ? Math.round((this.healthMetrics.requests.errors / this.healthMetrics.requests.total) * 100)
-        : 0
-    };
-  }
-
-  // Comprehensive health check
-  async getHealthStatus() {
-    try {
-      const systemMetrics = this.getSystemMetrics();
-      const [mysqlHealth, mongoHealth, cacheHealth] = await Promise.all([
-        this.checkMySQLHealth(),
-        this.checkMongoDBHealth(),
-        this.checkCacheHealth()
-      ]);
-
-      const dbStats = await this.getDatabaseStats();
-      const appMetrics = this.getApplicationMetrics();
-
-      const overallStatus = this.determineOverallStatus(mysqlHealth, mongoHealth, cacheHealth);
-
-      return {
-        status: overallStatus,
-        timestamp: new Date().toISOString(),
-        uptime: systemMetrics.uptime,
-        system: systemMetrics,
-        database: {
-          mysql: mysqlHealth,
-          mongodb: mongoHealth,
-          statistics: dbStats
-        },
-        cache: cacheHealth,
-        application: appMetrics,
-        services: {
-          mysql: mysqlHealth.status === 'healthy',
-          mongodb: mongoHealth.status === 'healthy',
-          cache: cacheHealth.status === 'connected'
-        }
-      };
-    } catch (error) {
-      logger.error('Health check failed:', error);
-      return {
-        status: 'unhealthy',
-        timestamp: new Date().toISOString(),
-        error: error.message
-      };
-    }
-  }
-
-  // Determine overall system status
-  determineOverallStatus(mysqlHealth, mongoHealth, cacheHealth) {
-    const criticalServices = [mysqlHealth.status];
-    const optionalServices = [mongoHealth.status, cacheHealth.status];
-
-    // If any critical service is down, system is unhealthy
-    if (criticalServices.includes('unhealthy')) {
-      return 'unhealthy';
-    }
-
-    // If critical services are healthy but some optional services are down, system is degraded
-    if (optionalServices.includes('unhealthy') || optionalServices.includes('disconnected')) {
-      return 'degraded';
-    }
-
-    return 'healthy';
-  }
-
-  // Get simple health status for load balancers
-  async getSimpleHealthStatus() {
-    try {
-      const mysqlHealth = await this.checkMySQLHealth();
+      const startTime = Date.now();
+      const isHealthy = await cacheService.healthCheck();
+      const responseTime = Date.now() - startTime;
       
       return {
-        status: mysqlHealth.status === 'healthy' ? 'ok' : 'error',
-        timestamp: new Date().toISOString()
+        status: isHealthy ? 'healthy' : 'unhealthy',
+        responseTime,
+        message: isHealthy ? 'Redis cache accessible' : 'Redis cache not accessible'
+      };
+    } catch (error) {
+      return {
+        status: 'unhealthy',
+        responseTime: null,
+        message: `Cache health check failed: ${error.message}`
+      };
+    }
+  }
+
+  // Check system resources
+  async checkSystemResources() {
+    try {
+      // CPU usage
+      const cpus = os.cpus();
+      let totalIdle = 0;
+      let totalTick = 0;
+      
+      cpus.forEach(cpu => {
+        for (const type in cpu.times) {
+          totalTick += cpu.times[type];
+        }
+        totalIdle += cpu.times.idle;
+      });
+      
+      const idle = totalIdle / cpus.length;
+      const total = totalTick / cpus.length;
+      const cpuUsage = 100 - ~~(100 * idle / total);
+
+      // Memory usage
+      const totalMemory = os.totalmem();
+      const freeMemory = os.freemem();
+      const usedMemory = totalMemory - freeMemory;
+      const memoryUsage = (usedMemory / totalMemory) * 100;
+
+      // Disk usage (for uploads directory)
+      let diskUsage = null;
+      try {
+        const uploadsPath = path.join(__dirname, '../uploads');
+        const stats = await fs.stat(uploadsPath);
+        // This is a simplified check - in production, you might want to use a library like 'node-disk-info'
+        diskUsage = {
+          path: uploadsPath,
+          exists: true
+        };
+      } catch (error) {
+        diskUsage = {
+          path: 'uploads',
+          exists: false,
+          error: error.message
+        };
+      }
+
+      return {
+        status: 'healthy',
+        cpu: {
+          usage: cpuUsage,
+          cores: cpus.length
+        },
+        memory: {
+          total: totalMemory,
+          used: usedMemory,
+          free: freeMemory,
+          usage: memoryUsage
+        },
+        disk: diskUsage,
+        loadAverage: os.loadavg(),
+        uptime: os.uptime()
       };
     } catch (error) {
       return {
         status: 'error',
-        timestamp: new Date().toISOString(),
-        error: error.message
+        message: `System resource check failed: ${error.message}`
       };
     }
   }
 
-  // Monitor resource usage and alert if thresholds are exceeded
-  checkResourceThresholds() {
-    const systemMetrics = this.getSystemMetrics();
-    const alerts = [];
+  // Check file system health
+  async checkFileSystemHealth() {
+    try {
+      const uploadsDir = path.join(__dirname, '../uploads');
+      const testFile = path.join(uploadsDir, 'health-check.tmp');
+      
+      // Test write
+      await fs.writeFile(testFile, 'health check');
+      
+      // Test read
+      const content = await fs.readFile(testFile, 'utf8');
+      
+      // Clean up
+      await fs.unlink(testFile);
+      
+      return {
+        status: 'healthy',
+        message: 'File system read/write operations successful'
+      };
+    } catch (error) {
+      return {
+        status: 'unhealthy',
+        message: `File system check failed: ${error.message}`
+      };
+    }
+  }
 
-    // Memory usage alert (> 85%)
-    if (systemMetrics.memory.system.usage > 85) {
-      alerts.push({
-        type: 'memory',
-        level: 'warning',
-        message: `High memory usage: ${systemMetrics.memory.system.usage}%`,
-        value: systemMetrics.memory.system.usage
+  // Perform basic health checks
+  async performHealthChecks() {
+    const checks = {
+      mysql: await this.checkMySQLHealth(),
+      mongodb: await this.checkMongoDBHealth(),
+      cache: await this.checkCacheHealth(),
+      system: await this.checkSystemResources(),
+      filesystem: await this.checkFileSystemHealth()
+    };
+
+    this.healthChecks.set('basic', {
+      timestamp: Date.now(),
+      checks,
+      overall: this.determineOverallHealth(checks)
+    });
+
+    // Log any unhealthy services
+    Object.entries(checks).forEach(([service, check]) => {
+      if (check.status === 'unhealthy' || check.status === 'error') {
+        logger.warn(`Health check failed for ${service}:`, check.message);
+      }
+    });
+  }
+
+  // Perform detailed health check
+  async performDetailedHealthCheck() {
+    try {
+      // Database performance checks
+      const dbPerformance = await this.checkDatabasePerformance();
+      
+      // Application metrics
+      const appMetrics = this.getMetrics();
+      
+      // Service dependencies
+      const dependencies = await this.checkServiceDependencies();
+
+      const detailedCheck = {
+        timestamp: Date.now(),
+        database: dbPerformance,
+        application: appMetrics,
+        dependencies,
+        alerts: this.checkAlerts()
+      };
+
+      this.healthChecks.set('detailed', detailedCheck);
+      
+      logger.info('Detailed health check completed', {
+        errorRate: appMetrics.errorRate,
+        avgResponseTime: appMetrics.avgResponseTime,
+        requestsPerMinute: appMetrics.requestsPerMinute
       });
+
+    } catch (error) {
+      logger.error('Detailed health check failed:', error);
+    }
+  }
+
+  // Check database performance
+  async checkDatabasePerformance() {
+    const performance = {};
+
+    try {
+      // MySQL performance
+      const mysqlStart = Date.now();
+      const [mysqlRows] = await mysqlConnection.query('SHOW STATUS LIKE "Threads_connected"');
+      performance.mysql = {
+        responseTime: Date.now() - mysqlStart,
+        connections: mysqlRows[0]?.Value || 'unknown',
+        status: 'healthy'
+      };
+    } catch (error) {
+      performance.mysql = {
+        status: 'error',
+        message: error.message
+      };
     }
 
-    // Process memory alert (> 500MB)
-    if (systemMetrics.memory.process.rss > 500) {
-      alerts.push({
-        type: 'process_memory',
-        level: 'warning',
-        message: `High process memory usage: ${systemMetrics.memory.process.rss}MB`,
-        value: systemMetrics.memory.process.rss
-      });
+    try {
+      // MongoDB performance
+      const mongoStart = Date.now();
+      const mongoStats = await mongoConnection.db.stats();
+      performance.mongodb = {
+        responseTime: Date.now() - mongoStart,
+        collections: mongoStats.collections,
+        dataSize: mongoStats.dataSize,
+        storageSize: mongoStats.storageSize,
+        status: 'healthy'
+      };
+    } catch (error) {
+      performance.mongodb = {
+        status: 'error',
+        message: error.message
+      };
     }
 
-    // Error rate alert (> 5%)
-    const errorRate = this.healthMetrics.requests.total > 0 
-      ? (this.healthMetrics.requests.errors / this.healthMetrics.requests.total) * 100
-      : 0;
+    return performance;
+  }
+
+  // Check service dependencies
+  async checkServiceDependencies() {
+    const dependencies = {};
+
+    // Check if all required environment variables are set
+    const requiredEnvVars = [
+      'DB_HOST', 'DB_USER', 'DB_PASSWORD', 'DB_NAME',
+      'MONGODB_URI', 'JWT_SECRET', 'JWT_REFRESH_SECRET'
+    ];
+
+    const missingEnvVars = requiredEnvVars.filter(varName => !process.env[varName]);
     
-    if (errorRate > 5) {
+    dependencies.environment = {
+      status: missingEnvVars.length === 0 ? 'healthy' : 'warning',
+      missingVariables: missingEnvVars
+    };
+
+    // Check critical directories
+    const criticalDirs = ['uploads', 'logs'];
+    const dirChecks = [];
+
+    for (const dir of criticalDirs) {
+      try {
+        const dirPath = path.join(__dirname, '..', dir);
+        await fs.access(dirPath);
+        dirChecks.push({ name: dir, status: 'exists' });
+      } catch (error) {
+        dirChecks.push({ name: dir, status: 'missing', error: error.message });
+      }
+    }
+
+    dependencies.directories = {
+      status: dirChecks.every(check => check.status === 'exists') ? 'healthy' : 'warning',
+      checks: dirChecks
+    };
+
+    return dependencies;
+  }
+
+  // Check for alerts based on thresholds
+  checkAlerts() {
+    const alerts = [];
+    const metrics = this.getMetrics();
+    const systemCheck = this.healthChecks.get('basic')?.checks?.system;
+
+    // High error rate
+    if (metrics.errorRate > this.alertThresholds.errorRate) {
       alerts.push({
         type: 'error_rate',
-        level: 'critical',
-        message: `High error rate: ${errorRate.toFixed(2)}%`,
-        value: errorRate
+        severity: 'high',
+        message: `Error rate is ${metrics.errorRate.toFixed(2)}% (threshold: ${this.alertThresholds.errorRate}%)`,
+        value: metrics.errorRate,
+        threshold: this.alertThresholds.errorRate
       });
     }
 
-    // Response time alert (> 1000ms)
-    if (this.healthMetrics.requests.avgResponseTime > 1000) {
+    // High response time
+    if (metrics.avgResponseTime > this.alertThresholds.responseTime) {
       alerts.push({
         type: 'response_time',
-        level: 'warning',
-        message: `High average response time: ${this.healthMetrics.requests.avgResponseTime}ms`,
-        value: this.healthMetrics.requests.avgResponseTime
+        severity: 'medium',
+        message: `Average response time is ${metrics.avgResponseTime.toFixed(2)}ms (threshold: ${this.alertThresholds.responseTime}ms)`,
+        value: metrics.avgResponseTime,
+        threshold: this.alertThresholds.responseTime
+      });
+    }
+
+    // High CPU usage
+    if (systemCheck?.cpu?.usage > this.alertThresholds.cpu) {
+      alerts.push({
+        type: 'cpu_usage',
+        severity: 'medium',
+        message: `CPU usage is ${systemCheck.cpu.usage}% (threshold: ${this.alertThresholds.cpu}%)`,
+        value: systemCheck.cpu.usage,
+        threshold: this.alertThresholds.cpu
+      });
+    }
+
+    // High memory usage
+    if (systemCheck?.memory?.usage > this.alertThresholds.memory) {
+      alerts.push({
+        type: 'memory_usage',
+        severity: 'medium',
+        message: `Memory usage is ${systemCheck.memory.usage.toFixed(2)}% (threshold: ${this.alertThresholds.memory}%)`,
+        value: systemCheck.memory.usage,
+        threshold: this.alertThresholds.memory
       });
     }
 
     return alerts;
   }
 
-  // Start periodic health monitoring
-  startMonitoring(intervalMs = 60000) {
-    setInterval(async () => {
-      try {
-        const alerts = this.checkResourceThresholds();
-        if (alerts.length > 0) {
-          logger.warn('Resource threshold alerts:', alerts);
-        }
+  // Determine overall health status
+  determineOverallHealth(checks) {
+    const statuses = Object.values(checks).map(check => check.status);
+    
+    if (statuses.includes('unhealthy') || statuses.includes('error')) {
+      return 'unhealthy';
+    }
+    
+    if (statuses.includes('warning')) {
+      return 'warning';
+    }
+    
+    return 'healthy';
+  }
 
-        // Log basic health metrics
-        const health = await this.getSimpleHealthStatus();
-        if (health.status === 'error') {
-          logger.error('Health check failed:', health);
-        }
-      } catch (error) {
-        logger.error('Health monitoring error:', error);
-      }
-    }, intervalMs);
+  // Get comprehensive health report
+  getHealthReport() {
+    const basic = this.healthChecks.get('basic');
+    const detailed = this.healthChecks.get('detailed');
+    const metrics = this.getMetrics();
 
-    logger.info('Health monitoring started');
+    return {
+      status: basic?.overall || 'unknown',
+      timestamp: Date.now(),
+      uptime: Date.now() - this.startTime,
+      version: process.env.npm_package_version || '1.0.0',
+      environment: process.env.NODE_ENV || 'development',
+      basic: basic?.checks || {},
+      metrics,
+      detailed: detailed || null,
+      alerts: detailed?.alerts || []
+    };
+  }
+
+  // Get simple health status
+  getSimpleHealth() {
+    const basic = this.healthChecks.get('basic');
+    return {
+      status: basic?.overall || 'unknown',
+      timestamp: Date.now()
+    };
   }
 }
 
 // Create singleton instance
-const healthMonitor = new HealthMonitorService();
+const healthMonitorService = new HealthMonitorService();
 
-module.exports = healthMonitor;
+module.exports = healthMonitorService;

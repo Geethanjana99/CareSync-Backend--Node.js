@@ -1,0 +1,243 @@
+groups:
+  - name: clinical-appointment-system-alerts
+    rules:
+      # HTTP Error Rate Alerts
+      - alert: HighHTTPErrorRate
+        expr: rate(http_requests_total{status_code=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High HTTP error rate detected"
+          description: "HTTP error rate is above 5% for 5 minutes (current: {{ $value | humanizePercentage }})"
+
+      - alert: CriticalHTTPErrorRate
+        expr: rate(http_requests_total{status_code=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.10
+        for: 2m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Critical HTTP error rate detected"
+          description: "HTTP error rate is above 10% for 2 minutes (current: {{ $value | humanizePercentage }})"
+
+      # Response Time Alerts
+      - alert: HighResponseTime
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 2
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High response time detected"
+          description: "95th percentile response time is above 2 seconds (current: {{ $value }}s)"
+
+      - alert: CriticalResponseTime
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 5
+        for: 2m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Critical response time detected"
+          description: "95th percentile response time is above 5 seconds (current: {{ $value }}s)"
+
+      # Database Alerts
+      - alert: HighDatabaseConnections
+        expr: database_connections_active > 80
+        for: 3m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High database connections"
+          description: "Database connections are above 80 (current: {{ $value }})"
+
+      - alert: CriticalDatabaseConnections
+        expr: database_connections_active > 95
+        for: 1m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Critical database connections"
+          description: "Database connections are above 95 (current: {{ $value }})"
+
+      - alert: SlowDatabaseQueries
+        expr: histogram_quantile(0.95, rate(database_query_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "Slow database queries detected"
+          description: "95th percentile database query time is above 1 second (current: {{ $value }}s)"
+
+      # Memory and CPU Alerts
+      - alert: HighMemoryUsage
+        expr: process_resident_memory_bytes / 1024 / 1024 / 1024 > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is above 1GB (current: {{ $value | humanize }}B)"
+
+      - alert: CriticalMemoryUsage
+        expr: process_resident_memory_bytes / 1024 / 1024 / 1024 > 2
+        for: 2m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Critical memory usage"
+          description: "Memory usage is above 2GB (current: {{ $value | humanize }}B)"
+
+      - alert: HighCPUUsage
+        expr: rate(process_cpu_seconds_total[5m]) > 0.8
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is above 80% (current: {{ $value | humanizePercentage }})"
+
+      # Application-specific Alerts
+      - alert: HighAuthenticationFailures
+        expr: rate(authentication_attempts_total{status="failed"}[5m]) > 5
+        for: 3m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High authentication failure rate"
+          description: "Authentication failures are above 5 per minute (current: {{ $value }}/min)"
+
+      - alert: LowCacheHitRatio
+        expr: cache_hit_ratio < 0.7
+        for: 10m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "Low cache hit ratio"
+          description: "Cache hit ratio is below 70% (current: {{ $value | humanizePercentage }})"
+
+      - alert: EmailDeliveryFailures
+        expr: rate(emails_sent_total{status="failed"}[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "Email delivery failures detected"
+          description: "Email delivery failure rate is above 10% (current: {{ $value | humanizePercentage }})"
+
+      - alert: FileUploadFailures
+        expr: rate(file_uploads_total{status="failed"}[5m]) > 0.2
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "File upload failures detected"
+          description: "File upload failure rate is above 20% (current: {{ $value | humanizePercentage }})"
+
+      # System Health Alerts
+      - alert: LowSystemHealth
+        expr: system_health_score < 0.8
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "Low system health score"
+          description: "System health score is below 80% for component {{ $labels.component }} (current: {{ $value | humanizePercentage }})"
+
+      - alert: CriticalSystemHealth
+        expr: system_health_score < 0.6
+        for: 2m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Critical system health score"
+          description: "System health score is below 60% for component {{ $labels.component }} (current: {{ $value | humanizePercentage }})"
+
+      # WebSocket Alerts
+      - alert: HighWebSocketConnections
+        expr: sum(websocket_connections_active) > 1000
+        for: 5m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "High WebSocket connections"
+          description: "WebSocket connections are above 1000 (current: {{ $value }})"
+
+      # Backup Alerts
+      - alert: BackupFailures
+        expr: increase(backup_operations_total{status="failed"}[24h]) > 0
+        for: 1m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Backup operation failed"
+          description: "{{ $value }} backup operations failed in the last 24 hours"
+
+      - alert: NoRecentBackup
+        expr: time() - max(backup_operations_total{status="success"}) > 86400
+        for: 1m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "No recent successful backup"
+          description: "No successful backup in the last 24 hours"
+
+      # Business Logic Alerts
+      - alert: UnusualAppointmentCancellations
+        expr: rate(appointments_total{status="cancelled"}[1h]) > 10
+        for: 10m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "Unusual appointment cancellation rate"
+          description: "Appointment cancellation rate is above 10 per hour (current: {{ $value }}/hour)"
+
+      - alert: NoAppointmentsScheduled
+        expr: rate(appointments_total{status="scheduled"}[1h]) == 0
+        for: 30m
+        labels:
+          severity: warning
+          service: clinical-appointment-system
+        annotations:
+          summary: "No appointments scheduled recently"
+          description: "No appointments have been scheduled in the last hour"
+
+      # Instance Down Alert
+      - alert: InstanceDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Instance is down"
+          description: "{{ $labels.instance }} has been down for more than 1 minute"
+
+      # Disk Space Alerts (if node_exporter is available)
+      - alert: LowDiskSpace
+        expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) < 0.1
+        for: 5m
+        labels:
+          severity: critical
+          service: clinical-appointment-system
+        annotations:
+          summary: "Low disk space"
+          description: "Disk space is below 10% on {{ $labels.instance }} (current: {{ $value | humanizePercentage }})"

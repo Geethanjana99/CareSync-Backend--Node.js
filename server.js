@@ -13,6 +13,9 @@ const connectMySQL = require('./config/mysql');
 const connectMongoDB = require('./config/mongodb');
 const logger = require('./config/logger');
 
+// Import monitoring
+// const { trackHttpMetrics, getMetrics } = require('./monitoring/metrics');
+
 // Import services
 const cacheService = require('./services/cacheService');
 const healthMonitor = require('./services/healthMonitorService');
@@ -90,45 +93,41 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(morgan('combined', {
   stream: {
     write: (message) => logger.info(message.trim())
-  },
-  skip: (req, res) => {
-    // Skip logging for health checks in production
-    return process.env.NODE_ENV === 'production' && req.path.includes('/health');
   }
 }));
 
-// Serve static files
-app.use('/uploads', express.static('uploads'));
-
-// API Routes
-app.use('/api', indexRoutes);
-app.use('/api/docs', docsRoutes);
-app.use('/api/auth', authRoutes);
-app.use('/api/patients', authMiddleware.authenticate, patientRoutes);
-app.use('/api/doctors', authMiddleware.authenticate, doctorRoutes);
-app.use('/api/appointments', authMiddleware.authenticate, appointmentRoutes);
-app.use('/api/medical-reports', authMiddleware.authenticate, medicalReportsRoutes);
-app.use('/api/admin', authMiddleware.authenticate, authMiddleware.authorize(['admin']), adminRoutes);
-
-// Root endpoint
-app.get('/', (req, res) => {
-  res.json({
-    success: true,
-    message: 'CareSync Clinical Appointment API',
-    version: '1.0.0',
-    documentation: '/api/docs',
-    health: '/api/docs/health'
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    environment: process.env.NODE_ENV || 'development'
   });
 });
+
+// API Routes
+app.use('/api/auth', authRoutes);
+// app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
+app.use('/api/patients', patientRoutes);
+app.use('/api/doctors', doctorRoutes);
+app.use('/api/appointments', appointmentRoutes);
+// app.use('/api/queue', authMiddleware, queueRoutes); // TODO: Create queue routes
+// app.use('/api/billing', authMiddleware, billingRoutes); // TODO: Create billing routes
+app.use('/api/medical-reports', medicalReportsRoutes);
+// app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes
+// app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
+app.use('/api/admin', adminRoutes);
+
+// Serve uploaded files
+app.use('/uploads', express.static('uploads'));
 
 // 404 handler
 app.use('*', (req, res) => {
   res.status(404).json({
     success: false,
     message: 'API endpoint not found',
-    path: req.originalUrl,
-    method: req.method,
-    suggestion: 'Check the API documentation at /api/docs'
+    path: req.originalUrl
   });
 });
 
@@ -138,12 +137,28 @@ app.use(errorHandler);
 // Database connections
 async function startServer() {
   try {
-    // Connect to databases
-    await connectMySQL();
-    await connectMongoDB();
+    // Connect to databases (optional for now)
+    try {
+      await connectMySQL();
+      logger.info('✅ MySQL connected successfully');
+    } catch (error) {
+      logger.warn('⚠️ MySQL connection failed - continuing without MySQL:', error.message);
+    }
     
-    // Initialize notification service
-    await NotificationService.initialize();
+    try {
+      await connectMongoDB();
+      logger.info('✅ MongoDB connected successfully');
+    } catch (error) {
+      logger.warn('⚠️ MongoDB connection failed - continuing without MongoDB:', error.message);
+    }
+    
+    // Initialize notification service (optional)
+    try {
+      // await NotificationService.initialize();
+      logger.info('📧 Notification service skipped for now');
+    } catch (error) {
+      logger.warn('⚠️ Notification service initialization failed:', error.message);
+    }
     
     const PORT = process.env.PORT || 5000;
     
@@ -151,6 +166,7 @@ async function startServer() {
       logger.info(`🚀 Server running on port ${PORT}`);
       logger.info(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
       logger.info(`🔗 Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
+      logger.info(`📋 API Documentation: http://localhost:${PORT}/api/docs`);
     });
     
   } catch (error) {

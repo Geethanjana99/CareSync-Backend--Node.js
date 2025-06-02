@@ -8,44 +8,45 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
+            color: #333;
             max-width: 600px;
             margin: 0 auto;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
             text-align: center;
+            margin-bottom: 30px;
         }
-        .header h1 {
-            margin: 0;
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+        .welcome-title {
             font-size: 28px;
-            font-weight: 300;
+            color: #1f2937;
+            margin-bottom: 20px;
         }
         .content {
-            padding: 40px 30px;
-        }
-        .welcome-message {
-            font-size: 18px;
-            color: #333;
             margin-bottom: 30px;
         }
         .features {
-            background-color: #f8f9fa;
-            padding: 25px;
+            background: #f3f4f6;
             border-radius: 8px;
-            margin: 30px 0;
+            padding: 20px;
+            margin: 20px 0;
         }
         .features h3 {
-            color: #667eea;
-            margin-top: 0;
+            color: #3b82f6;
+            margin-bottom: 15px;
         }
         .feature-list {
             list-style: none;
@@ -53,97 +54,142 @@
         }
         .feature-list li {
             padding: 8px 0;
-            border-bottom: 1px solid #e9ecef;
+            padding-left: 25px;
+            position: relative;
         }
-        .feature-list li:last-child {
-            border-bottom: none;
-        }
-        .feature-list li::before {
+        .feature-list li:before {
             content: "✓";
-            color: #28a745;
+            color: #10b981;
             font-weight: bold;
-            margin-right: 10px;
+            position: absolute;
+            left: 0;
         }
         .cta-button {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #3b82f6;
             color: white;
-            padding: 15px 30px;
+            padding: 12px 30px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 500;
+            border-radius: 6px;
+            font-weight: 600;
             margin: 20px 0;
-            transition: transform 0.2s;
-        }
-        .cta-button:hover {
-            transform: translateY(-2px);
         }
         .footer {
-            background-color: #343a40;
-            color: #adb5bd;
-            padding: 30px;
             text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
             font-size: 14px;
         }
-        .footer a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        .social-links {
+        .user-info {
+            background: #ecf3ff;
+            border-radius: 8px;
+            padding: 15px;
             margin: 20px 0;
         }
-        .social-links a {
-            margin: 0 10px;
-            color: #adb5bd;
-            font-size: 18px;
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .welcome-title {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Welcome to CareSync</h1>
-            <p>Your Health, Our Priority</p>
+            <div class="logo">CareSync</div>
+            <h1 class="welcome-title">Welcome to CareSync!</h1>
         </div>
-        
+
         <div class="content">
-            <div class="welcome-message">
-                <p>Dear {{userName}},</p>
-                <p>Welcome to CareSync! We're excited to have you join our healthcare community where managing your health has never been easier.</p>
-            </div>
+            <p>Dear {{name}},</p>
             
+            <p>Welcome to CareSync, your comprehensive clinical appointment scheduling platform! We're excited to have you join our healthcare community.</p>
+
+            <div class="user-info">
+                <h3>Your Account Details:</h3>
+                <p><strong>Name:</strong> {{name}}</p>
+                <p><strong>Email:</strong> {{email}}</p>
+                <p><strong>Role:</strong> {{role}}</p>
+                <p><strong>Account Created:</strong> {{createdAt}}</p>
+            </div>
+
+            {{#if isPatient}}
             <div class="features">
-                <h3>What you can do with CareSync:</h3>
+                <h3>As a Patient, you can:</h3>
                 <ul class="feature-list">
-                    <li>Book appointments with top-rated doctors</li>
-                    <li>Access your medical records anytime, anywhere</li>
-                    <li>Receive appointment reminders and health tips</li>
+                    <li>Book appointments with qualified healthcare providers</li>
+                    <li>View your medical history and appointment records</li>
                     <li>Upload and manage your medical reports</li>
-                    <li>Track your health metrics and progress</li>
-                    <li>Get AI-powered health insights</li>
+                    <li>Receive appointment reminders and notifications</li>
+                    <li>Manage your health profile and insurance information</li>
+                    <li>Rate and review healthcare providers</li>
                 </ul>
             </div>
-            
-            <div style="text-align: center;">
-                <a href="{{loginUrl}}" class="cta-button">Get Started</a>
+            {{/if}}
+
+            {{#if isDoctor}}
+            <div class="features">
+                <h3>As a Healthcare Provider, you can:</h3>
+                <ul class="feature-list">
+                    <li>Manage your appointment schedule and availability</li>
+                    <li>Access patient medical histories and reports</li>
+                    <li>Update patient records after consultations</li>
+                    <li>View your earnings and appointment statistics</li>
+                    <li>Communicate with patients through secure messaging</li>
+                    <li>Build your professional profile and reputation</li>
+                </ul>
             </div>
-            
-            <p>If you have any questions or need assistance, our support team is here to help. Simply reply to this email or contact us at <a href="mailto:support@caresync.com">support@caresync.com</a>.</p>
-            
-            <p>Thank you for choosing CareSync for your healthcare needs.</p>
-            
+            {{/if}}
+
+            {{#if isAdmin}}
+            <div class="features">
+                <h3>As an Administrator, you can:</h3>
+                <ul class="feature-list">
+                    <li>Manage all users, doctors, and patients</li>
+                    <li>Monitor system performance and health</li>
+                    <li>Approve doctor registrations and profiles</li>
+                    <li>View comprehensive system analytics</li>
+                    <li>Manage system settings and configurations</li>
+                    <li>Handle support requests and issues</li>
+                </ul>
+            </div>
+            {{/if}}
+
+            <p>To get started, simply log in to your account using your email address and the password you created during registration.</p>
+
+            <div style="text-align: center;">
+                <a href="{{loginUrl}}" class="cta-button">Log In to CareSync</a>
+            </div>
+
+            <div class="features">
+                <h3>Need Help?</h3>
+                <p>Our support team is here to help you:</p>
+                <ul class="feature-list">
+                    <li>Email: support@caresync.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Live Chat: Available 24/7 on our website</li>
+                    <li>Help Center: Visit our comprehensive help documentation</li>
+                </ul>
+            </div>
+
+            <p>Thank you for choosing CareSync for your healthcare needs. We're committed to providing you with the best possible experience.</p>
+
             <p>Best regards,<br>
             The CareSync Team</p>
         </div>
-        
+
         <div class="footer">
-            <div class="social-links">
-                <a href="#">📧</a>
-                <a href="#">📱</a>
-                <a href="#">🌐</a>
-            </div>
-            <p>&copy; 2024 CareSync. All rights reserved.</p>
-            <p>This email was sent to {{userEmail}}. If you no longer wish to receive these emails, you can <a href="{{unsubscribeUrl}}">unsubscribe</a>.</p>
+            <p>© 2025 CareSync Healthcare Solutions. All rights reserved.</p>
+            <p>This email was sent to {{email}}. If you didn't create an account with us, please ignore this email.</p>
+            <p>For privacy concerns, please review our <a href="{{privacyPolicyUrl}}" style="color: #3b82f6;">Privacy Policy</a>.</p>
         </div>
     </div>
 </body>

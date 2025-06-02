@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const PatientController = require('../controllers/patientController');
-const { validatePatientProfile, validateHealthMetrics } = require('../middleware/validation');
+const { patientValidation } = require('../middleware/validation');
 const auth = require('../middleware/auth');
 
 // All routes require patient authentication
-router.use(auth.required);
+router.use(auth.authMiddleware);
 router.use(auth.authorize(['patient']));
 
 // Profile management
 router.get('/profile', PatientController.getProfile);
-router.put('/profile', validatePatientProfile, PatientController.updateProfile);
+router.put('/profile', patientValidation.update, PatientController.updateProfile);
 
 // Dashboard
 router.get('/dashboard', PatientController.getDashboard);
@@ -24,7 +24,7 @@ router.get('/medical-reports', PatientController.getMedicalReports);
 
 // Health metrics
 router.get('/health-metrics', PatientController.getHealthMetrics);
-router.post('/health-metrics', validateHealthMetrics, PatientController.updateHealthMetrics);
+router.post('/health-metrics', PatientController.updateHealthMetrics);
 
 // Doctor search
 router.get('/doctors/search', PatientController.searchDoctors);

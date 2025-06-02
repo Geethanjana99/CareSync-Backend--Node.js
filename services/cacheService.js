@@ -1,178 +1,166 @@
-const redis = require('redis');
+const Redis = require('redis');
 const logger = require('../config/logger');
 
 class CacheService {
   constructor() {
     this.client = null;
     this.isConnected = false;
-    this.reconnectAttempts = 0;
-    this.maxReconnectAttempts = 5;
   }
 
   async connect() {
     try {
-      if (process.env.NODE_ENV === 'test') {
-        // Skip Redis in test environment
-        logger.info('Skipping Redis connection in test environment');
-        return;
-      }
-
-      const redisConfig = {
+      this.client = Redis.createClient({
         host: process.env.REDIS_HOST || 'localhost',
-        port: parseInt(process.env.REDIS_PORT) || 6379,
-        db: parseInt(process.env.REDIS_DB) || 0,
+        port: process.env.REDIS_PORT || 6379,
+        password: process.env.REDIS_PASSWORD || undefined,
+        db: process.env.REDIS_DB || 0,
         retryDelayOnFailover: 100,
-        enableOfflineQueue: false,
+        retryDelayOnConnectTimeout: 100,
         maxRetriesPerRequest: 3,
         lazyConnect: true
-      };
+      });
 
-      if (process.env.REDIS_PASSWORD) {
-        redisConfig.password = process.env.REDIS_PASSWORD;
-      }
-
-      this.client = redis.createClient(redisConfig);
+      this.client.on('error', (err) => {
+        logger.error('Redis Client Error:', err);
+        this.isConnected = false;
+      });
 
       this.client.on('connect', () => {
-        logger.info('Redis client connected');
+        logger.info('Connected to Redis server');
         this.isConnected = true;
-        this.reconnectAttempts = 0;
       });
 
       this.client.on('ready', () => {
         logger.info('Redis client ready');
-      });
-
-      this.client.on('error', (err) => {
-        logger.error('Redis client error:', err);
-        this.isConnected = false;
+        this.isConnected = true;
       });
 
       this.client.on('end', () => {
-        logger.warn('Redis client disconnected');
+        logger.info('Redis connection closed');
         this.isConnected = false;
       });
 
-      this.client.on('reconnecting', () => {
-        this.reconnectAttempts++;
-        logger.info(`Redis client reconnecting... Attempt ${this.reconnectAttempts}`);
-        
-        if (this.reconnectAttempts >= this.maxReconnectAttempts) {
-          logger.error('Max Redis reconnection attempts reached');
-          this.client.disconnect();
-        }
-      });
-
       await this.client.connect();
-      logger.info('Redis cache service initialized');
+      
+      // Test connection
+      await this.client.ping();
+      logger.info('Redis cache service initialized successfully');
+      
     } catch (error) {
-      logger.error('Failed to initialize Redis cache service:', error);
-      // Don't throw error - app should work without Redis
+      logger.warn('Redis connection failed, running without cache:', error.message);
+      this.isConnected = false;
     }
   }
 
   async disconnect() {
     if (this.client && this.isConnected) {
-      try {
-        await this.client.disconnect();
-        logger.info('Redis client disconnected');
-      } catch (error) {
-        logger.error('Error disconnecting Redis client:', error);
-      }
+      await this.client.quit();
+      this.isConnected = false;
+      logger.info('Redis cache service disconnected');
     }
   }
 
-  isReady() {
-    return this.client && this.isConnected;
-  }
-
-  // Generic cache methods
+  // Basic cache operations
   async get(key) {
-    if (!this.isReady()) {
-      return null;
-    }
-
+    if (!this.isConnected) return null;
+    
     try {
       const value = await this.client.get(key);
       return value ? JSON.parse(value) : null;
     } catch (error) {
-      logger.error(`Cache get error for key ${key}:`, error);
+      logger.error('Cache get error:', error);
       return null;
     }
   }
 
   async set(key, value, ttlSeconds = 3600) {
-    if (!this.isReady()) {
-      return false;
-    }
-
+    if (!this.isConnected) return false;
+    
     try {
       await this.client.setEx(key, ttlSeconds, JSON.stringify(value));
       return true;
     } catch (error) {
-      logger.error(`Cache set error for key ${key}:`, error);
+      logger.error('Cache set error:', error);
       return false;
     }
   }
 
   async del(key) {
-    if (!this.isReady()) {
-      return false;
-    }
-
+    if (!this.isConnected) return false;
+    
     try {
       await this.client.del(key);
       return true;
     } catch (error) {
-      logger.error(`Cache delete error for key ${key}:`, error);
+      logger.error('Cache delete error:', error);
       return false;
     }
   }
 
   async exists(key) {
-    if (!this.isReady()) {
-      return false;
-    }
-
+    if (!this.isConnected) return false;
+    
     try {
       const result = await this.client.exists(key);
       return result === 1;
     } catch (error) {
-      logger.error(`Cache exists error for key ${key}:`, error);
+      logger.error('Cache exists error:', error);
       return false;
     }
   }
 
-  async expire(key, ttlSeconds) {
-    if (!this.isReady()) {
-      return false;
-    }
-
+  async expire(key, seconds) {
+    if (!this.isConnected) return false;
+    
     try {
-      await this.client.expire(key, ttlSeconds);
+      await this.client.expire(key, seconds);
       return true;
     } catch (error) {
-      logger.error(`Cache expire error for key ${key}:`, error);
+      logger.error('Cache expire error:', error);
       return false;
     }
   }
 
-  async flushAll() {
-    if (!this.isReady()) {
-      return false;
-    }
-
+  async ttl(key) {
+    if (!this.isConnected) return -1;
+    
     try {
-      await this.client.flushAll();
+      return await this.client.ttl(key);
+    } catch (error) {
+      logger.error('Cache TTL error:', error);
+      return -1;
+    }
+  }
+
+  // Pattern-based operations
+  async keys(pattern) {
+    if (!this.isConnected) return [];
+    
+    try {
+      return await this.client.keys(pattern);
+    } catch (error) {
+      logger.error('Cache keys error:', error);
+      return [];
+    }
+  }
+
+  async deletePattern(pattern) {
+    if (!this.isConnected) return false;
+    
+    try {
+      const keys = await this.client.keys(pattern);
+      if (keys.length > 0) {
+        await this.client.del(keys);
+      }
       return true;
     } catch (error) {
-      logger.error('Cache flush all error:', error);
+      logger.error('Cache delete pattern error:', error);
       return false;
     }
   }
 
-  // Specialized methods for the application
-  async cacheUserSession(userId, sessionData, ttlSeconds = 86400) {
+  // Application-specific cache methods
+  async cacheUserSession(userId, sessionData, ttlSeconds = 3600) {
     const key = `session:${userId}`;
     return await this.set(key, sessionData, ttlSeconds);
   }
@@ -182,14 +170,14 @@ class CacheService {
     return await this.get(key);
   }
 
-  async invalidateUserSession(userId) {
+  async clearUserSession(userId) {
     const key = `session:${userId}`;
     return await this.del(key);
   }
 
-  async cacheDoctorAvailability(doctorId, date, slots, ttlSeconds = 1800) {
+  async cacheDoctorAvailability(doctorId, date, availability, ttlSeconds = 1800) {
     const key = `availability:${doctorId}:${date}`;
-    return await this.set(key, slots, ttlSeconds);
+    return await this.set(key, availability, ttlSeconds);
   }
 
   async getDoctorAvailability(doctorId, date) {
@@ -197,122 +185,135 @@ class CacheService {
     return await this.get(key);
   }
 
-  async invalidateDoctorAvailability(doctorId, date = null) {
+  async clearDoctorAvailability(doctorId, date = null) {
     if (date) {
       const key = `availability:${doctorId}:${date}`;
       return await this.del(key);
     } else {
-      // Clear all availability for doctor
       const pattern = `availability:${doctorId}:*`;
-      return await this.clearPattern(pattern);
+      return await this.deletePattern(pattern);
     }
   }
 
-  async cacheAppointmentStats(userId, role, stats, ttlSeconds = 300) {
-    const key = `stats:${role}:${userId}`;
-    return await this.set(key, stats, ttlSeconds);
+  async cacheAppointmentSlots(doctorId, date, slots, ttlSeconds = 900) {
+    const key = `slots:${doctorId}:${date}`;
+    return await this.set(key, slots, ttlSeconds);
   }
 
-  async getAppointmentStats(userId, role) {
-    const key = `stats:${role}:${userId}`;
+  async getAppointmentSlots(doctorId, date) {
+    const key = `slots:${doctorId}:${date}`;
     return await this.get(key);
   }
 
-  async cacheDoctorList(filters, doctors, ttlSeconds = 600) {
-    const filterKey = Object.keys(filters).sort().map(k => `${k}:${filters[k]}`).join('|');
-    const key = `doctors:${Buffer.from(filterKey).toString('base64')}`;
-    return await this.set(key, doctors, ttlSeconds);
+  async clearAppointmentSlots(doctorId, date = null) {
+    if (date) {
+      const key = `slots:${doctorId}:${date}`;
+      return await this.del(key);
+    } else {
+      const pattern = `slots:${doctorId}:*`;
+      return await this.deletePattern(pattern);
+    }
   }
 
-  async getDoctorList(filters) {
-    const filterKey = Object.keys(filters).sort().map(k => `${k}:${filters[k]}`).join('|');
-    const key = `doctors:${Buffer.from(filterKey).toString('base64')}`;
+  async cachePatientHistory(patientId, history, ttlSeconds = 1800) {
+    const key = `history:patient:${patientId}`;
+    return await this.set(key, history, ttlSeconds);
+  }
+
+  async getPatientHistory(patientId) {
+    const key = `history:patient:${patientId}`;
     return await this.get(key);
   }
 
-  async cachePatientReports(patientId, reports, ttlSeconds = 1800) {
-    const key = `reports:${patientId}`;
-    return await this.set(key, reports, ttlSeconds);
-  }
-
-  async getPatientReports(patientId) {
-    const key = `reports:${patientId}`;
-    return await this.get(key);
-  }
-
-  async invalidatePatientReports(patientId) {
-    const key = `reports:${patientId}`;
+  async clearPatientHistory(patientId) {
+    const key = `history:patient:${patientId}`;
     return await this.del(key);
   }
 
-  // Rate limiting support
-  async incrementRateLimit(key, windowSeconds = 900) {
-    if (!this.isReady()) {
-      return { count: 0, ttl: windowSeconds };
-    }
-
-    try {
-      const multi = this.client.multi();
-      multi.incr(key);
-      multi.expire(key, windowSeconds);
-      const results = await multi.exec();
-      
-      const count = results[0];
-      const ttl = await this.client.ttl(key);
-      
-      return { count, ttl: ttl > 0 ? ttl : windowSeconds };
-    } catch (error) {
-      logger.error(`Rate limit increment error for key ${key}:`, error);
-      return { count: 0, ttl: windowSeconds };
-    }
+  async cacheDoctorProfile(doctorId, profile, ttlSeconds = 3600) {
+    const key = `profile:doctor:${doctorId}`;
+    return await this.set(key, profile, ttlSeconds);
   }
 
-  async getRateLimit(key) {
-    if (!this.isReady()) {
-      return { count: 0, ttl: 0 };
-    }
-
-    try {
-      const count = await this.client.get(key) || 0;
-      const ttl = await this.client.ttl(key);
-      return { count: parseInt(count), ttl: ttl > 0 ? ttl : 0 };
-    } catch (error) {
-      logger.error(`Rate limit get error for key ${key}:`, error);
-      return { count: 0, ttl: 0 };
-    }
+  async getDoctorProfile(doctorId) {
+    const key = `profile:doctor:${doctorId}`;
+    return await this.get(key);
   }
 
-  // Helper method to clear keys by pattern
-  async clearPattern(pattern) {
-    if (!this.isReady()) {
-      return false;
-    }
+  async clearDoctorProfile(doctorId) {
+    const key = `profile:doctor:${doctorId}`;
+    return await this.del(key);
+  }
 
+  // Rate limiting
+  async incrementRateLimit(key, windowSeconds = 60, maxRequests = 100) {
+    if (!this.isConnected) return { count: 0, remaining: maxRequests, reset: Date.now() + windowSeconds * 1000 };
+    
     try {
-      const keys = await this.client.keys(pattern);
-      if (keys.length > 0) {
-        await this.client.del(keys);
+      const current = await this.client.incr(key);
+      
+      if (current === 1) {
+        await this.client.expire(key, windowSeconds);
       }
+      
+      const ttl = await this.client.ttl(key);
+      const reset = Date.now() + ttl * 1000;
+      const remaining = Math.max(0, maxRequests - current);
+      
+      return {
+        count: current,
+        remaining,
+        reset,
+        exceeded: current > maxRequests
+      };
+    } catch (error) {
+      logger.error('Rate limit error:', error);
+      return { count: 0, remaining: maxRequests, reset: Date.now() + windowSeconds * 1000 };
+    }
+  }
+
+  // Statistics and monitoring
+  async getStats() {
+    if (!this.isConnected) return null;
+    
+    try {
+      const info = await this.client.info();
+      const keyCount = await this.client.dbSize();
+      
+      return {
+        connected: this.isConnected,
+        keyCount,
+        info
+      };
+    } catch (error) {
+      logger.error('Cache stats error:', error);
+      return null;
+    }
+  }
+
+  async flushAll() {
+    if (!this.isConnected) return false;
+    
+    try {
+      await this.client.flushAll();
+      logger.info('Cache flushed successfully');
       return true;
     } catch (error) {
-      logger.error(`Clear pattern error for ${pattern}:`, error);
+      logger.error('Cache flush error:', error);
       return false;
     }
   }
 
   // Health check
   async healthCheck() {
-    if (!this.isReady()) {
-      return { status: 'disconnected', latency: null };
-    }
-
+    if (!this.isConnected) return false;
+    
     try {
-      const start = Date.now();
-      await this.client.ping();
-      const latency = Date.now() - start;
-      return { status: 'connected', latency };
+      const response = await this.client.ping();
+      return response === 'PONG';
     } catch (error) {
-      return { status: 'error', latency: null, error: error.message };
+      logger.error('Cache health check error:', error);
+      return false;
     }
   }
 }

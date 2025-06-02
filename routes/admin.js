@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const AdminController = require('../controllers/adminController');
-const { validateAdminUser } = require('../middleware/validation');
+const { userValidation } = require('../middleware/validation');
 const auth = require('../middleware/auth');
 
 // All routes require admin authentication
-router.use(auth.required);
+router.use(auth.authMiddleware);
 router.use(auth.authorize(['admin']));
 
 // Dashboard
@@ -15,7 +15,7 @@ router.get('/dashboard', AdminController.getDashboard);
 router.get('/users', AdminController.getUsers);
 router.get('/users/:userId', AdminController.getUserDetails);
 router.patch('/users/:userId/status', AdminController.updateUserStatus);
-router.post('/users/admin', validateAdminUser, AdminController.createAdminUser);
+router.post('/users/admin', userValidation.register, AdminController.createAdminUser);
 
 // Appointment management
 router.get('/appointments', AdminController.getAppointments);

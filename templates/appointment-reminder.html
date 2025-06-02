@@ -5,103 +5,290 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Reminder</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
         .container {
             max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
+        
         .header {
-            background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
             padding: 30px;
             text-align: center;
         }
+        
         .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 300;
-        }
-        .content {
-            padding: 30px;
-        }
-        .reminder-badge {
-            background-color: #fff3cd;
-            border: 1px solid #ffeaa7;
-            color: #856404;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            margin: 20px 0;
+            font-size: 28px;
+            margin-bottom: 10px;
             font-weight: 600;
         }
-        .appointment-summary {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #ffc107;
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
         }
-        .summary-row {
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .reminder-badge {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .reminder-badge h2 {
+            color: #856404;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .reminder-badge p {
+            color: #856404;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .countdown {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #f5576c;
+        }
+        
+        .countdown-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #f5576c;
+            display: block;
+        }
+        
+        .countdown-text {
+            font-size: 14px;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .appointment-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #f5576c;
+        }
+        
+        .appointment-details {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .detail-row {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 8px 0;
             border-bottom: 1px solid #e9ecef;
         }
-        .summary-row:last-child {
+        
+        .detail-row:last-child {
             border-bottom: none;
         }
-        .summary-label {
+        
+        .detail-label {
             font-weight: 600;
             color: #495057;
+            font-size: 14px;
         }
-        .summary-value {
-            color: #212529;
+        
+        .detail-value {
+            color: #333;
+            font-size: 14px;
+            text-align: right;
+            flex: 1;
+            margin-left: 20px;
         }
-        .action-buttons {
+        
+        .preparation-checklist {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .preparation-checklist h3 {
+            color: #0c5460;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .checklist {
+            list-style: none;
+        }
+        
+        .checklist li {
+            color: #0c5460;
+            margin: 8px 0;
+            font-size: 14px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .urgent-info {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .urgent-info h3 {
+            color: #721c24;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .urgent-info p {
+            color: #721c24;
+            font-size: 14px;
+        }
+        
+        .actions {
             text-align: center;
             margin: 30px 0;
         }
+        
         .btn {
             display: inline-block;
-            padding: 12px 24px;
-            margin: 0 10px;
-            border-radius: 25px;
+            padding: 12px 30px;
+            background: #f5576c;
+            color: white;
             text-decoration: none;
-            font-weight: 500;
-            transition: transform 0.2s;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
         }
+        
         .btn:hover {
-            transform: translateY(-2px);
+            background: #e14458;
         }
-        .btn-primary {
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-            color: white;
-        }
+        
         .btn-secondary {
-            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #f5576c;
+            border: 2px solid #f5576c;
+        }
+        
+        .btn-outline:hover {
+            background: #f5576c;
             color: white;
         }
-        .preparation-tips {
-            background-color: #e8f5e8;
-            border-left: 4px solid #28a745;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
+        
         .footer {
-            background-color: #343a40;
-            color: #adb5bd;
-            padding: 20px;
+            background: #f8f9fa;
+            padding: 25px 30px;
+            border-top: 1px solid #e9ecef;
             text-align: center;
             font-size: 14px;
+            color: #6c757d;
+        }
+        
+        .footer p {
+            margin: 5px 0;
+        }
+        
+        .contact-info {
+            margin: 15px 0;
+        }
+        
+        .contact-info a {
+            color: #f5576c;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                border-radius: 8px;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+            
+            .header {
+                padding: 25px 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .appointment-card {
+                padding: 20px;
+            }
+            
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .detail-value {
+                text-align: left;
+                margin-left: 0;
+            }
+            
+            .btn {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .countdown-number {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
@@ -113,64 +300,138 @@
         </div>
         
         <div class="content">
+            <p>Hello <strong>{{patientName}}</strong>,</p>
+            
             <div class="reminder-badge">
-                Your appointment is scheduled for {{reminderTime}}
+                <h2>📅 Appointment Coming Up!</h2>
+                <p>Your appointment with Dr. {{doctorName}} is scheduled soon</p>
             </div>
             
-            <p>Dear {{patientName}},</p>
-            <p>This is a friendly reminder about your upcoming appointment:</p>
+            <div class="countdown">
+                <span class="countdown-number">{{hoursUntilAppointment}}</span>
+                <span class="countdown-text">Hours Remaining</span>
+            </div>
             
-            <div class="appointment-summary">
-                <div class="summary-row">
-                    <span class="summary-label">Doctor:</span>
-                    <span class="summary-value">{{doctorName}}</span>
-                </div>
-                <div class="summary-row">
-                    <span class="summary-label">Date:</span>
-                    <span class="summary-value">{{appointmentDate}}</span>
-                </div>
-                <div class="summary-row">
-                    <span class="summary-label">Time:</span>
-                    <span class="summary-value">{{appointmentTime}}</span>
-                </div>
-                <div class="summary-row">
-                    <span class="summary-label">Location:</span>
-                    <span class="summary-value">{{clinicAddress}}</span>
-                </div>
-                <div class="summary-row">
-                    <span class="summary-label">Confirmation Code:</span>
-                    <span class="summary-value">{{confirmationCode}}</span>
+            <div class="appointment-card">
+                <div class="appointment-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Doctor:</span>
+                        <span class="detail-value"><strong>Dr. {{doctorName}}</strong></span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Specialty:</span>
+                        <span class="detail-value">{{doctorSpecialty}}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Appointment ID:</span>
+                        <span class="detail-value">#{{appointmentId}}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Date:</span>
+                        <span class="detail-value">{{appointmentDate}}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Time:</span>
+                        <span class="detail-value">{{appointmentTime}}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Duration:</span>
+                        <span class="detail-value">{{duration}} minutes</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Type:</span>
+                        <span class="detail-value">{{appointmentType}}</span>
+                    </div>
+                    {{#if consultationFee}}
+                    <div class="detail-row">
+                        <span class="detail-label">Consultation Fee:</span>
+                        <span class="detail-value"><strong>${{consultationFee}}</strong></span>
+                    </div>
+                    {{/if}}
                 </div>
             </div>
             
-            <div class="preparation-tips">
-                <h3 style="margin-top: 0; color: #28a745;">Preparation Checklist:</h3>
-                <ul style="margin-bottom: 0;">
-                    <li>Arrive 15 minutes early for check-in</li>
-                    <li>Bring a valid photo ID</li>
-                    <li>Bring your insurance card</li>
-                    <li>Prepare a list of current medications</li>
-                    <li>Write down any questions you want to ask</li>
+            {{#if clinicAddress}}
+            <div class="preparation-checklist">
+                <h3>📍 Clinic Location</h3>
+                <p style="margin-bottom: 10px;">{{clinicAddress}}</p>
+                {{#if directions}}
+                <p style="font-size: 13px; color: #0c5460;">{{directions}}</p>
+                {{/if}}
+                {{#if parkingInfo}}
+                <p style="font-size: 13px; color: #0c5460;">Parking: {{parkingInfo}}</p>
+                {{/if}}
+            </div>
+            {{/if}}
+            
+            <div class="preparation-checklist">
+                <h3>📋 Pre-Appointment Checklist</h3>
+                <ul class="checklist">
+                    <li>Plan to arrive 15 minutes early</li>
+                    <li>Bring valid ID and insurance card</li>
+                    <li>Gather any medical records or test results</li>
+                    <li>Prepare list of current medications</li>
+                    <li>Write down any questions for the doctor</li>
+                    {{#if fasting}}
+                    <li><strong>Fasting required - no food or drink after {{fastingTime}}</strong></li>
+                    {{/if}}
+                    {{#if specialPrep}}
+                    <li>{{specialPrep}}</li>
+                    {{/if}}
                 </ul>
             </div>
             
-            <div class="action-buttons">
-                <a href="{{rescheduleUrl}}" class="btn btn-secondary">Reschedule</a>
-                <a href="{{confirmUrl}}" class="btn btn-primary">Confirm Attendance</a>
+            {{#if symptoms}}
+            <div class="preparation-checklist">
+                <h3>📝 Reason for Visit</h3>
+                <p>{{symptoms}}</p>
+            </div>
+            {{/if}}
+            
+            {{#if isUrgent}}
+            <div class="urgent-info">
+                <h3>⚠️ Important Notice</h3>
+                <p>If you're experiencing severe symptoms or this is an emergency, please go to the nearest emergency room or call emergency services immediately. Do not wait for your appointment.</p>
+            </div>
+            {{/if}}
+            
+            <div class="actions">
+                <a href="{{confirmLink}}" class="btn">Confirm Attendance</a>
+                <a href="{{rescheduleLink}}" class="btn btn-outline">Reschedule</a>
+                <a href="{{viewDetailsLink}}" class="btn btn-secondary">View Details</a>
             </div>
             
-            <p>If you need to cancel or reschedule this appointment, please do so at least 24 hours in advance to avoid any cancellation fees.</p>
+            <div style="background: #e2e6ea; border-radius: 8px; padding: 20px; margin: 25px 0; text-align: center;">
+                <p style="margin-bottom: 10px; font-weight: 600; color: #495057;">Need to cancel or reschedule?</p>
+                <p style="font-size: 14px; color: #6c757d;">
+                    Please contact us at least 24 hours in advance to avoid cancellation fees.
+                    Same-day cancellations may incur charges.
+                </p>
+            </div>
             
-            <p>Need directions? <a href="{{directionsUrl}}">Get directions to the clinic</a></p>
-            
-            <p>For any questions, contact us at <a href="mailto:appointments@caresync.com">appointments@caresync.com</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
-            
-            <p>Thank you for choosing CareSync!</p>
+            {{#if doctorNotes}}
+            <div class="preparation-checklist">
+                <h3>👨‍⚕️ Special Instructions from Dr. {{doctorName}}</h3>
+                <p>{{doctorNotes}}</p>
+            </div>
+            {{/if}}
         </div>
         
         <div class="footer">
-            <p>&copy; 2024 CareSync. All rights reserved.</p>
-            <p>You're receiving this because you have an upcoming appointment with us.</p>
+            <div class="contact-info">
+                <p><strong>Clinical Appointment System</strong></p>
+                <p>📞 Phone: <a href="tel:{{clinicPhone}}">{{clinicPhone}}</a></p>
+                <p>✉️ Email: <a href="mailto:{{clinicEmail}}">{{clinicEmail}}</a></p>
+                {{#if clinicWebsite}}
+                <p>🌐 Website: <a href="{{clinicWebsite}}">{{clinicWebsite}}</a></p>
+                {{/if}}
+            </div>
+            <p style="margin-top: 15px; font-size: 12px;">
+                This is an automated reminder. Reply STOP to unsubscribe from SMS reminders.
+            </p>
+            <p style="font-size: 12px;">
+                © {{currentYear}} Clinical Appointment System. All rights reserved.
+            </p>
         </div>
     </div>
 </body>

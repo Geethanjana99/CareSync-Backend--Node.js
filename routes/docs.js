@@ -1,17 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const healthMonitor = require('../services/healthMonitorService');
+const path = require('path');
 
-// API Documentation Data
+// API Documentation
 const apiDocumentation = {
   info: {
-    title: 'CareSync Clinical Appointment API',
+    title: 'Clinical Appointment Scheduling System API',
     version: '1.0.0',
-    description: 'RESTful API for Clinical Appointment Scheduling System',
+    description: 'Comprehensive API for managing clinical appointments, patients, doctors, and medical records',
     contact: {
-      name: 'CareSync Support',
-      email: 'support@caresync.com',
-      url: 'https://caresync.com/support'
+      name: 'API Support',
+      email: 'support@clinicalapp.com'
     },
     license: {
       name: 'MIT',
@@ -20,8 +19,12 @@ const apiDocumentation = {
   },
   servers: [
     {
-      url: process.env.API_BASE_URL || 'http://localhost:5000/api',
-      description: 'Development Server'
+      url: 'http://localhost:5000/api',
+      description: 'Development server'
+    },
+    {
+      url: 'https://api.clinicalapp.com/api',
+      description: 'Production server'
     }
   ],
   authentication: {
@@ -29,8 +32,7 @@ const apiDocumentation = {
     description: 'Include JWT token in Authorization header: Bearer <token>',
     endpoints: {
       login: 'POST /auth/login',
-      register: 'POST /auth/register',
-      refresh: 'POST /auth/refresh-token'
+      refresh: 'POST /auth/refresh'
     }
   },
   endpoints: {
@@ -38,515 +40,625 @@ const apiDocumentation = {
       'POST /auth/register': {
         description: 'Register a new user',
         body: {
-          name: 'string (required)',
-          email: 'string (required)',
-          password: 'string (required, min 6 chars)',
-          role: 'enum (patient, doctor, admin)',
-          phone: 'string (optional)'
+          firstName: 'string (required)',
+          lastName: 'string (required)',
+          email: 'string (required, email format)',
+          password: 'string (required, min 8 chars)',
+          phone: 'string (required)',
+          dateOfBirth: 'date (required)',
+          gender: 'string (required: male/female/other)',
+          role: 'string (optional: patient/doctor, default: patient)'
         },
-        responses: {
-          201: 'User created successfully',
-          400: 'Validation error',
-          409: 'Email already exists'
+        response: {
+          success: 'boolean',
+          user: 'object',
+          token: 'string'
         }
       },
       'POST /auth/login': {
-        description: 'Authenticate user and get token',
+        description: 'User login',
         body: {
           email: 'string (required)',
           password: 'string (required)'
         },
-        responses: {
-          200: 'Login successful',
-          401: 'Invalid credentials',
-          400: 'Validation error'
+        response: {
+          success: 'boolean',
+          user: 'object',
+          token: 'string',
+          refreshToken: 'string'
         }
       },
-      'POST /auth/refresh-token': {
-        description: 'Refresh expired JWT token',
+      'POST /auth/refresh': {
+        description: 'Refresh access token',
         body: {
           refreshToken: 'string (required)'
         },
-        responses: {
-          200: 'Token refreshed',
-          401: 'Invalid refresh token'
+        response: {
+          success: 'boolean',
+          token: 'string'
         }
       },
       'GET /auth/profile': {
-        description: 'Get current user profile',
-        auth: 'Required',
-        responses: {
-          200: 'Profile retrieved',
-          401: 'Unauthorized'
+        description: 'Get user profile',
+        authentication: 'required',
+        response: {
+          success: 'boolean',
+          user: 'object'
         }
       },
       'PUT /auth/profile': {
         description: 'Update user profile',
-        auth: 'Required',
+        authentication: 'required',
         body: {
-          name: 'string (optional)',
+          firstName: 'string (optional)',
+          lastName: 'string (optional)',
           phone: 'string (optional)',
-          avatar_url: 'string (optional)'
+          avatar: 'string (optional)'
         },
-        responses: {
-          200: 'Profile updated',
-          401: 'Unauthorized'
+        response: {
+          success: 'boolean',
+          user: 'object'
+        }
+      },
+      'POST /auth/change-password': {
+        description: 'Change user password',
+        authentication: 'required',
+        body: {
+          currentPassword: 'string (required)',
+          newPassword: 'string (required, min 8 chars)'
+        },
+        response: {
+          success: 'boolean',
+          message: 'string'
         }
       }
     },
     appointments: {
       'GET /appointments': {
-        description: 'Get user appointments (filtered by role)',
-        auth: 'Required',
+        description: 'List user appointments',
+        authentication: 'required',
         query: {
-          status: 'enum (pending, confirmed, completed, cancelled)',
-          date: 'date (YYYY-MM-DD)',
-          page: 'number (default: 1)',
-          limit: 'number (default: 10, max: 100)'
+          status: 'string (optional: scheduled/confirmed/completed/cancelled)',
+          date: 'date (optional)',
+          page: 'number (optional, default: 1)',
+          limit: 'number (optional, default: 10)'
         },
-        responses: {
-          200: 'Appointments retrieved',
-          401: 'Unauthorized'
+        response: {
+          success: 'boolean',
+          appointments: 'array',
+          pagination: 'object'
         }
       },
       'POST /appointments': {
-        description: 'Create new appointment (patients only)',
-        auth: 'Required (patient)',
+        description: 'Create new appointment',
+        authentication: 'required (patient)',
         body: {
-          doctor_id: 'string (required)',
-          appointment_date: 'date (required)',
-          appointment_time: 'time (required)',
-          reason: 'string (required)',
-          type: 'enum (consultation, follow-up, emergency)'
+          doctorId: 'number (required)',
+          appointmentDate: 'date (required)',
+          appointmentTime: 'time (required)',
+          duration: 'number (optional, default: 30)',
+          type: 'string (required: consultation/follow-up/emergency)',
+          symptoms: 'string (optional)',
+          notes: 'string (optional)'
         },
-        responses: {
-          201: 'Appointment created',
-          400: 'Validation error',
-          409: 'Time slot not available'
+        response: {
+          success: 'boolean',
+          appointment: 'object'
         }
       },
       'GET /appointments/:id': {
-        description: 'Get specific appointment details',
-        auth: 'Required',
-        responses: {
-          200: 'Appointment details',
-          404: 'Appointment not found',
-          403: 'Access denied'
+        description: 'Get appointment details',
+        authentication: 'required',
+        response: {
+          success: 'boolean',
+          appointment: 'object'
         }
       },
       'PUT /appointments/:id': {
-        description: 'Update appointment (status, notes, etc.)',
-        auth: 'Required',
+        description: 'Update appointment',
+        authentication: 'required',
         body: {
-          status: 'enum (confirmed, cancelled, completed)',
-          notes: 'string (optional)',
-          appointment_date: 'date (optional)',
-          appointment_time: 'time (optional)'
+          status: 'string (optional)',
+          appointmentDate: 'date (optional)',
+          appointmentTime: 'time (optional)',
+          symptoms: 'string (optional)',
+          notes: 'string (optional)'
         },
-        responses: {
-          200: 'Appointment updated',
-          404: 'Appointment not found',
-          403: 'Access denied'
+        response: {
+          success: 'boolean',
+          appointment: 'object'
         }
       },
       'DELETE /appointments/:id': {
         description: 'Cancel appointment',
-        auth: 'Required',
-        responses: {
-          200: 'Appointment cancelled',
-          404: 'Appointment not found',
-          403: 'Access denied'
+        authentication: 'required',
+        response: {
+          success: 'boolean',
+          message: 'string'
+        }
+      },
+      'GET /appointments/slots': {
+        description: 'Get available appointment slots',
+        authentication: 'required',
+        query: {
+          doctorId: 'number (required)',
+          date: 'date (required)',
+          duration: 'number (optional, default: 30)'
+        },
+        response: {
+          success: 'boolean',
+          slots: 'array'
         }
       }
     },
     patients: {
-      'GET /patients/profile': {
-        description: 'Get patient profile',
-        auth: 'Required (patient)',
-        responses: {
-          200: 'Patient profile',
-          401: 'Unauthorized'
-        }
-      },
-      'PUT /patients/profile': {
-        description: 'Update patient profile',
-        auth: 'Required (patient)',
-        body: {
-          date_of_birth: 'date (optional)',
-          gender: 'enum (Male, Female, Other)',
-          address: 'string (optional)',
-          emergency_contact_name: 'string (optional)',
-          emergency_contact_phone: 'string (optional)',
-          allergies: 'string (optional)',
-          current_medications: 'string (optional)',
-          blood_type: 'string (optional)',
-          height: 'number (optional)',
-          weight: 'number (optional)'
-        },
-        responses: {
-          200: 'Profile updated',
-          401: 'Unauthorized'
-        }
-      },
       'GET /patients/dashboard': {
         description: 'Get patient dashboard data',
-        auth: 'Required (patient)',
-        responses: {
-          200: 'Dashboard data',
-          401: 'Unauthorized'
-        }
-      },
-      'GET /patients/appointments': {
-        description: 'Get patient appointments',
-        auth: 'Required (patient)',
-        query: {
-          status: 'enum (pending, confirmed, completed, cancelled)',
-          limit: 'number (default: 10)'
-        },
-        responses: {
-          200: 'Appointments list',
-          401: 'Unauthorized'
+        authentication: 'required (patient)',
+        response: {
+          success: 'boolean',
+          dashboard: {
+            upcomingAppointments: 'array',
+            recentAppointments: 'array',
+            totalAppointments: 'number',
+            healthMetrics: 'object'
+          }
         }
       },
       'GET /patients/doctors': {
-        description: 'Search available doctors',
-        auth: 'Required (patient)',
+        description: 'Search and list doctors',
+        authentication: 'required (patient)',
         query: {
-          specialization: 'string (optional)',
-          date: 'date (optional)',
-          rating: 'number (optional)',
-          search: 'string (optional)'
+          specialty: 'string (optional)',
+          search: 'string (optional)',
+          page: 'number (optional)',
+          limit: 'number (optional)'
         },
-        responses: {
-          200: 'Doctors list',
-          401: 'Unauthorized'
+        response: {
+          success: 'boolean',
+          doctors: 'array',
+          pagination: 'object'
+        }
+      },
+      'GET /patients/health-metrics': {
+        description: 'Get patient health metrics',
+        authentication: 'required (patient)',
+        response: {
+          success: 'boolean',
+          metrics: 'object'
+        }
+      },
+      'PUT /patients/health-metrics': {
+        description: 'Update patient health metrics',
+        authentication: 'required (patient)',
+        body: {
+          height: 'number (optional)',
+          weight: 'number (optional)',
+          bloodPressureSystolic: 'number (optional)',
+          bloodPressureDiastolic: 'number (optional)',
+          heartRate: 'number (optional)',
+          bloodSugar: 'number (optional)',
+          allergies: 'array (optional)',
+          medications: 'array (optional)'
+        },
+        response: {
+          success: 'boolean',
+          metrics: 'object'
         }
       }
     },
     doctors: {
-      'GET /doctors/profile': {
-        description: 'Get doctor profile',
-        auth: 'Required (doctor)',
-        responses: {
-          200: 'Doctor profile',
-          401: 'Unauthorized'
-        }
-      },
-      'PUT /doctors/profile': {
-        description: 'Update doctor profile',
-        auth: 'Required (doctor)',
-        body: {
-          specialization: 'string (optional)',
-          education: 'string (optional)',
-          bio: 'string (optional)',
-          consultation_fee: 'number (optional)',
-          clinic_address: 'string (optional)'
-        },
-        responses: {
-          200: 'Profile updated',
-          401: 'Unauthorized'
-        }
-      },
       'GET /doctors/dashboard': {
         description: 'Get doctor dashboard data',
-        auth: 'Required (doctor)',
-        responses: {
-          200: 'Dashboard data',
-          401: 'Unauthorized'
+        authentication: 'required (doctor)',
+        response: {
+          success: 'boolean',
+          dashboard: {
+            todayAppointments: 'array',
+            upcomingAppointments: 'array',
+            totalPatients: 'number',
+            earnings: 'object'
+          }
         }
       },
-      'GET /doctors/appointments': {
-        description: 'Get doctor appointments',
-        auth: 'Required (doctor)',
+      'GET /doctors/patients': {
+        description: 'Get doctor patients',
+        authentication: 'required (doctor)',
         query: {
-          status: 'enum (pending, confirmed, completed, cancelled)',
+          search: 'string (optional)',
+          page: 'number (optional)',
+          limit: 'number (optional)'
+        },
+        response: {
+          success: 'boolean',
+          patients: 'array',
+          pagination: 'object'
+        }
+      },
+      'GET /doctors/schedule': {
+        description: 'Get doctor schedule',
+        authentication: 'required (doctor)',
+        query: {
           date: 'date (optional)',
-          limit: 'number (default: 10)'
+          week: 'string (optional)'
         },
-        responses: {
-          200: 'Appointments list',
-          401: 'Unauthorized'
+        response: {
+          success: 'boolean',
+          schedule: 'object'
         }
       },
-      'GET /doctors/availability/:date': {
-        description: 'Get doctor availability for specific date',
-        auth: 'Required (doctor)',
-        responses: {
-          200: 'Available time slots',
-          401: 'Unauthorized'
-        }
-      },
-      'PUT /doctors/availability': {
-        description: 'Update doctor availability',
-        auth: 'Required (doctor)',
+      'PUT /doctors/schedule': {
+        description: 'Update doctor schedule',
+        authentication: 'required (doctor)',
         body: {
-          availability_hours: 'object (required)',
-          unavailable_dates: 'array (optional)'
+          workingHours: 'object (required)',
+          breakTimes: 'array (optional)',
+          unavailableDates: 'array (optional)'
         },
-        responses: {
-          200: 'Availability updated',
-          401: 'Unauthorized'
+        response: {
+          success: 'boolean',
+          schedule: 'object'
         }
-      }
-    },
-    medicalReports: {
-      'GET /medical-reports': {
-        description: 'Get medical reports (filtered by role)',
-        auth: 'Required',
+      },
+      'GET /doctors/availability': {
+        description: 'Check doctor availability',
+        authentication: 'required',
         query: {
-          patient_id: 'string (optional, admin/doctor only)',
-          type: 'string (optional)',
-          page: 'number (default: 1)',
-          limit: 'number (default: 10)'
+          date: 'date (required)',
+          time: 'time (optional)'
         },
-        responses: {
-          200: 'Reports list',
-          401: 'Unauthorized'
-        }
-      },
-      'POST /medical-reports/upload': {
-        description: 'Upload medical report file',
-        auth: 'Required',
-        contentType: 'multipart/form-data',
-        body: {
-          file: 'file (required)',
-          patient_id: 'string (required)',
-          title: 'string (required)',
-          description: 'string (optional)',
-          type: 'string (optional)'
-        },
-        responses: {
-          201: 'File uploaded',
-          400: 'Invalid file',
-          401: 'Unauthorized'
-        }
-      },
-      'GET /medical-reports/:id': {
-        description: 'Get specific medical report',
-        auth: 'Required',
-        responses: {
-          200: 'Report details',
-          404: 'Report not found',
-          403: 'Access denied'
-        }
-      },
-      'GET /medical-reports/:id/download': {
-        description: 'Download medical report file',
-        auth: 'Required',
-        responses: {
-          200: 'File content',
-          404: 'File not found',
-          403: 'Access denied'
+        response: {
+          success: 'boolean',
+          available: 'boolean',
+          slots: 'array'
         }
       }
     },
     admin: {
       'GET /admin/dashboard': {
-        description: 'Get admin dashboard statistics',
-        auth: 'Required (admin)',
-        responses: {
-          200: 'Dashboard statistics',
-          403: 'Access denied'
+        description: 'Get admin dashboard data',
+        authentication: 'required (admin)',
+        response: {
+          success: 'boolean',
+          dashboard: {
+            totalUsers: 'number',
+            totalDoctors: 'number',
+            totalPatients: 'number',
+            totalAppointments: 'number',
+            recentActivities: 'array'
+          }
         }
       },
       'GET /admin/users': {
-        description: 'Get all users with filtering',
-        auth: 'Required (admin)',
+        description: 'Get all users',
+        authentication: 'required (admin)',
         query: {
-          role: 'enum (patient, doctor, admin)',
-          status: 'enum (active, inactive)',
+          role: 'string (optional)',
+          status: 'string (optional)',
           search: 'string (optional)',
-          page: 'number (default: 1)',
-          limit: 'number (default: 20)'
+          page: 'number (optional)',
+          limit: 'number (optional)'
         },
-        responses: {
-          200: 'Users list',
-          403: 'Access denied'
+        response: {
+          success: 'boolean',
+          users: 'array',
+          pagination: 'object'
         }
       },
-      'PUT /admin/users/:id/status': {
-        description: 'Update user status (activate/deactivate)',
-        auth: 'Required (admin)',
+      'PUT /admin/users/:id': {
+        description: 'Update user',
+        authentication: 'required (admin)',
         body: {
-          is_active: 'boolean (required)'
+          status: 'string (optional)',
+          role: 'string (optional)',
+          verified: 'boolean (optional)'
         },
-        responses: {
-          200: 'Status updated',
-          404: 'User not found',
-          403: 'Access denied'
+        response: {
+          success: 'boolean',
+          user: 'object'
         }
       },
-      'GET /admin/doctors/pending': {
-        description: 'Get doctors pending approval',
-        auth: 'Required (admin)',
-        responses: {
-          200: 'Pending doctors list',
-          403: 'Access denied'
+      'GET /admin/analytics': {
+        description: 'Get system analytics',
+        authentication: 'required (admin)',
+        query: {
+          period: 'string (optional: day/week/month/year)',
+          startDate: 'date (optional)',
+          endDate: 'date (optional)'
+        },
+        response: {
+          success: 'boolean',
+          analytics: 'object'
         }
-      },
-      'PUT /admin/doctors/:id/approve': {
-        description: 'Approve doctor account',
-        auth: 'Required (admin)',
+      }
+    },
+    medicalReports: {
+      'POST /medical-reports/upload': {
+        description: 'Upload medical report file',
+        authentication: 'required',
+        contentType: 'multipart/form-data',
         body: {
-          is_approved: 'boolean (required)'
+          file: 'file (required)',
+          title: 'string (required)',
+          description: 'string (optional)',
+          type: 'string (required: lab-report/prescription/scan/other)',
+          patientId: 'number (optional, for doctors/admin)'
         },
-        responses: {
-          200: 'Doctor approval status updated',
-          404: 'Doctor not found',
-          403: 'Access denied'
+        response: {
+          success: 'boolean',
+          report: 'object'
+        }
+      },
+      'GET /medical-reports': {
+        description: 'List medical reports',
+        authentication: 'required',
+        query: {
+          type: 'string (optional)',
+          patientId: 'number (optional, for doctors/admin)',
+          page: 'number (optional)',
+          limit: 'number (optional)'
+        },
+        response: {
+          success: 'boolean',
+          reports: 'array',
+          pagination: 'object'
+        }
+      },
+      'GET /medical-reports/:id': {
+        description: 'Get medical report details',
+        authentication: 'required',
+        response: {
+          success: 'boolean',
+          report: 'object'
+        }
+      },
+      'GET /medical-reports/:id/download': {
+        description: 'Download medical report file',
+        authentication: 'required',
+        response: 'file download'
+      },
+      'DELETE /medical-reports/:id': {
+        description: 'Delete medical report',
+        authentication: 'required',
+        response: {
+          success: 'boolean',
+          message: 'string'
         }
       }
     }
   },
-  errorCodes: {
-    400: 'Bad Request - Invalid input data',
+  statusCodes: {
+    200: 'OK - Request successful',
+    201: 'Created - Resource created successfully',
+    400: 'Bad Request - Invalid request data',
     401: 'Unauthorized - Authentication required',
-    403: 'Forbidden - Insufficient permissions',
+    403: 'Forbidden - Access denied',
     404: 'Not Found - Resource not found',
     409: 'Conflict - Resource already exists',
-    422: 'Unprocessable Entity - Validation error',
+    422: 'Unprocessable Entity - Validation failed',
     429: 'Too Many Requests - Rate limit exceeded',
     500: 'Internal Server Error - Server error'
   },
   rateLimiting: {
-    general: '100 requests per 15 minutes per IP',
-    authentication: '5 requests per 15 minutes per IP',
-    passwordReset: '3 requests per hour per IP',
-    fileUpload: '10 requests per minute per IP',
-    admin: '30 requests per 5 minutes per IP'
+    general: '100 requests per 15 minutes',
+    authentication: '5 requests per 15 minutes',
+    registration: '3 requests per 15 minutes',
+    upload: '10 requests per 15 minutes'
   },
-  dataFormats: {
-    date: 'YYYY-MM-DD (e.g., 2024-01-15)',
-    time: 'HH:MM:SS (e.g., 14:30:00)',
-    datetime: 'ISO 8601 format (e.g., 2024-01-15T14:30:00.000Z)',
-    phone: 'International format (e.g., +1234567890)',
-    email: 'Valid email address (e.g., user@example.com)'
+  examples: {
+    registration: {
+      request: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: 'john.doe@example.com',
+        password: 'SecurePass123!',
+        phone: '+1234567890',
+        dateOfBirth: '1990-01-01',
+        gender: 'male',
+        role: 'patient'
+      },
+      response: {
+        success: true,
+        user: {
+          id: 1,
+          firstName: 'John',
+          lastName: 'Doe',
+          email: 'john.doe@example.com',
+          role: 'patient',
+          verified: false,
+          createdAt: '2023-10-01T10:00:00Z'
+        },
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'
+      }
+    },
+    login: {
+      request: {
+        email: 'john.doe@example.com',
+        password: 'SecurePass123!'
+      },
+      response: {
+        success: true,
+        user: {
+          id: 1,
+          firstName: 'John',
+          lastName: 'Doe',
+          email: 'john.doe@example.com',
+          role: 'patient'
+        },
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...',
+        refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'
+      }
+    },
+    appointment: {
+      request: {
+        doctorId: 5,
+        appointmentDate: '2023-10-15',
+        appointmentTime: '14:30',
+        duration: 30,
+        type: 'consultation',
+        symptoms: 'Experiencing headaches and fatigue',
+        notes: 'First time consultation'
+      },
+      response: {
+        success: true,
+        appointment: {
+          id: 123,
+          patientId: 1,
+          doctorId: 5,
+          appointmentDate: '2023-10-15',
+          appointmentTime: '14:30:00',
+          duration: 30,
+          type: 'consultation',
+          status: 'scheduled',
+          symptoms: 'Experiencing headaches and fatigue',
+          notes: 'First time consultation',
+          createdAt: '2023-10-01T10:00:00Z'
+        }
+      }
+    }
   }
 };
 
-// API Documentation endpoint
+// Main documentation route
 router.get('/', (req, res) => {
   res.json({
     success: true,
-    message: 'CareSync API Documentation',
-    data: apiDocumentation
+    documentation: apiDocumentation
   });
 });
 
-// Health check endpoint
-router.get('/health', async (req, res) => {
-  try {
-    const health = await healthMonitor.getHealthStatus();
-    const statusCode = health.status === 'healthy' ? 200 : 
-                      health.status === 'degraded' ? 200 : 503;
-    
-    res.status(statusCode).json({
-      success: health.status !== 'unhealthy',
-      data: health
+// Get specific endpoint documentation
+router.get('/endpoints/:category', (req, res) => {
+  const { category } = req.params;
+  
+  if (apiDocumentation.endpoints[category]) {
+    res.json({
+      success: true,
+      category,
+      endpoints: apiDocumentation.endpoints[category]
     });
-  } catch (error) {
-    res.status(503).json({
+  } else {
+    res.status(404).json({
       success: false,
-      message: 'Health check failed',
-      error: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error'
+      message: 'Documentation category not found',
+      availableCategories: Object.keys(apiDocumentation.endpoints)
     });
   }
 });
 
-// Simple health check for load balancers
-router.get('/health/simple', async (req, res) => {
-  try {
-    const health = await healthMonitor.getSimpleHealthStatus();
-    const statusCode = health.status === 'ok' ? 200 : 503;
-    
-    res.status(statusCode).json(health);
-  } catch (error) {
-    res.status(503).json({
-      status: 'error',
-      timestamp: new Date().toISOString()
-    });
-  }
-});
-
-// API status endpoint
-router.get('/status', (req, res) => {
+// Get examples
+router.get('/examples', (req, res) => {
   res.json({
     success: true,
-    message: 'CareSync API is running',
-    data: {
-      service: 'CareSync Clinical Appointment API',
-      version: '1.0.0',
-      environment: process.env.NODE_ENV || 'development',
-      timestamp: new Date().toISOString(),
-      uptime: Math.floor(process.uptime()),
-      endpoints: {
-        documentation: '/api/docs',
-        health: '/api/docs/health',
-        authentication: '/api/auth',
-        appointments: '/api/appointments',
-        patients: '/api/patients',
-        doctors: '/api/doctors',
-        medicalReports: '/api/medical-reports',
-        admin: '/api/admin'
-      }
-    }
+    examples: apiDocumentation.examples
   });
 });
 
-// OpenAPI/Swagger-like specification
-router.get('/openapi', (req, res) => {
-  const openApiSpec = {
-    openapi: '3.0.0',
-    info: apiDocumentation.info,
-    servers: apiDocumentation.servers,
-    paths: {},
-    components: {
-      securitySchemes: {
-        BearerAuth: {
-          type: 'http',
-          scheme: 'bearer',
-          bearerFormat: 'JWT'
-        }
-      },
-      schemas: {
-        User: {
-          type: 'object',
-          properties: {
-            id: { type: 'string', format: 'uuid' },
-            name: { type: 'string' },
-            email: { type: 'string', format: 'email' },
-            role: { type: 'string', enum: ['patient', 'doctor', 'admin'] },
-            phone: { type: 'string' },
-            is_active: { type: 'boolean' },
-            created_at: { type: 'string', format: 'date-time' }
-          }
-        },
-        Appointment: {
-          type: 'object',
-          properties: {
-            id: { type: 'string', format: 'uuid' },
-            patient_id: { type: 'string', format: 'uuid' },
-            doctor_id: { type: 'string', format: 'uuid' },
-            appointment_date: { type: 'string', format: 'date' },
-            appointment_time: { type: 'string', format: 'time' },
-            status: { type: 'string', enum: ['pending', 'confirmed', 'completed', 'cancelled'] },
-            reason: { type: 'string' },
-            fee: { type: 'number', format: 'decimal' }
-          }
-        },
-        Error: {
-          type: 'object',
-          properties: {
-            success: { type: 'boolean', example: false },
-            message: { type: 'string' },
-            errors: { type: 'array', items: { type: 'string' } }
-          }
-        }
-      }
-    }
-  };
+// Get rate limiting info
+router.get('/rate-limits', (req, res) => {
+  res.json({
+    success: true,
+    rateLimiting: apiDocumentation.rateLimiting
+  });
+});
 
-  res.json(openApiSpec);
+// Get status codes
+router.get('/status-codes', (req, res) => {
+  res.json({
+    success: true,
+    statusCodes: apiDocumentation.statusCodes
+  });
+});
+
+// Interactive API testing interface (simple HTML)
+router.get('/test', (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Clinical API Documentation</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            .endpoint { background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 5px; }
+            .method { color: #fff; padding: 5px 10px; border-radius: 3px; font-weight: bold; }
+            .post { background: #49cc90; }
+            .get { background: #61affe; }
+            .put { background: #fca130; }
+            .delete { background: #f93e3e; }
+            code { background: #f8f8f8; padding: 2px 5px; border-radius: 3px; }
+            .example { background: #e8f4fd; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        </style>
+    </head>
+    <body>
+        <h1>Clinical Appointment System API Documentation</h1>
+        <p>Welcome to the interactive API documentation. Use this page to explore available endpoints.</p>
+        
+        <h2>Quick Start</h2>
+        <div class="example">
+            <h3>1. Register a new user</h3>
+            <span class="method post">POST</span> <code>/api/auth/register</code>
+            <pre>{
+  "firstName": "John",
+  "lastName": "Doe", 
+  "email": "john@example.com",
+  "password": "SecurePass123!",
+  "phone": "+1234567890",
+  "dateOfBirth": "1990-01-01",
+  "gender": "male"
+}</pre>
+        </div>
+        
+        <div class="example">
+            <h3>2. Login</h3>
+            <span class="method post">POST</span> <code>/api/auth/login</code>
+            <pre>{
+  "email": "john@example.com",
+  "password": "SecurePass123!"
+}</pre>
+        </div>
+        
+        <div class="example">
+            <h3>3. Create an appointment</h3>
+            <span class="method post">POST</span> <code>/api/appointments</code>
+            <p><strong>Requires:</strong> Authorization header with JWT token</p>
+            <pre>{
+  "doctorId": 5,
+  "appointmentDate": "2023-10-15",
+  "appointmentTime": "14:30",
+  "type": "consultation",
+  "symptoms": "Headaches and fatigue"
+}</pre>
+        </div>
+        
+        <h2>Available Endpoints</h2>
+        <p>Get detailed documentation:</p>
+        <ul>
+            <li><a href="/api/docs/endpoints/authentication">Authentication endpoints</a></li>
+            <li><a href="/api/docs/endpoints/appointments">Appointment endpoints</a></li>
+            <li><a href="/api/docs/endpoints/patients">Patient endpoints</a></li>
+            <li><a href="/api/docs/endpoints/doctors">Doctor endpoints</a></li>
+            <li><a href="/api/docs/endpoints/admin">Admin endpoints</a></li>
+            <li><a href="/api/docs/endpoints/medicalReports">Medical reports endpoints</a></li>
+        </ul>
+        
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="/api/docs/examples">Request/Response examples</a></li>
+            <li><a href="/api/docs/rate-limits">Rate limiting information</a></li>
+            <li><a href="/api/docs/status-codes">HTTP status codes</a></li>
+            <li><a href="/api/health">System health check</a></li>
+        </ul>
+        
+        <h2>Authentication</h2>
+        <p>Most endpoints require authentication. Include the JWT token in the Authorization header:</p>
+        <code>Authorization: Bearer YOUR_JWT_TOKEN</code>
+        
+        <h2>Base URL</h2>
+        <p>All API endpoints are prefixed with <code>/api</code></p>
+        <p>Example: <code>GET http://localhost:5000/api/auth/profile</code></p>
+    </body>
+    </html>
+  `);
 });
 
 module.exports = router;

@@ -4,7 +4,7 @@ const MedicalReportController = require('../controllers/medicalReportController'
 const auth = require('../middleware/auth');
 
 // All routes require authentication
-router.use(auth.required);
+router.use(auth.authMiddleware);
 
 // Upload medical report
 router.post('/upload', 

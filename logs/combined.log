@@ -1,0 +1,29 @@
+2025-06-02 15:38:49 [INFO]: Socket.IO server initialized
+2025-06-02 15:39:01 [INFO]: Socket.IO server initialized
+2025-06-02 15:39:01 [ERROR]: ❌ MySQL connection failed:
+2025-06-02 15:39:47 [INFO]: Socket.IO server initialized
+2025-06-02 15:39:47 [ERROR]: ❌ MySQL connection failed:
+2025-06-02 15:39:47 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-02 15:39:47 [ERROR]: ❌ MongoDB connection failed:
+2025-06-02 15:39:47 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-02 15:39:47 [INFO]: 📧 Notification service skipped for now
+2025-06-02 15:39:47 [INFO]: 🚀 Server running on port 5000
+2025-06-02 15:39:47 [INFO]: 📊 Environment: development
+2025-06-02 15:39:47 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-02 15:39:47 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-02 15:40:03 [INFO]: Socket.IO server initialized
+2025-06-02 15:40:03 [ERROR]: ❌ MySQL connection failed:
+2025-06-02 15:40:42 [INFO]: Socket.IO server initialized
+2025-06-02 15:40:42 [ERROR]: ❌ MySQL connection failed:
+2025-06-02 15:40:42 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-02 15:40:42 [ERROR]: ❌ MongoDB connection failed:
+2025-06-02 15:40:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-02 15:40:42 [INFO]: 📧 Notification service skipped for now
+2025-06-02 15:40:42 [INFO]: 🚀 Server running on port 5000
+2025-06-02 15:40:42 [INFO]: 📊 Environment: development
+2025-06-02 15:40:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-02 15:40:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-02 15:40:58 [INFO]: ::1 - - [02/Jun/2025:10:10:58 +0000] "GET /api/docs HTTP/1.1" 404 71 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-02 15:41:00 [INFO]: ::1 - - [02/Jun/2025:10:11:00 +0000] "GET /favicon.ico HTTP/1.1" 404 74 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-02 15:41:54 [INFO]: Socket.IO server initialized
+2025-06-02 15:41:54 [ERROR]: ❌ MySQL connection failed:

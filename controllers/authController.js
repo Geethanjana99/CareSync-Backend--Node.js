@@ -19,9 +19,9 @@ const generateRefreshToken = (userId) => {
   });
 };
 
-const authController = {
+class AuthController {
   // Register new user
-  register: async (req, res) => {
+  static async register(req, res) {
     try {
       const { name, email, password, role, phone, profileData } = req.body;
 
@@ -90,10 +90,10 @@ const authController = {
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
-  },
+  }
 
   // Login user
-  login: async (req, res) => {
+  static async login(req, res) {
     try {
       const { email, password } = req.body;
 
@@ -145,10 +145,10 @@ const authController = {
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
-  },
+  }
 
   // Refresh token
-  refreshToken: async (req, res) => {
+  static async refreshToken(req, res) {
     try {
       const { refreshToken } = req.body;
 
@@ -191,10 +191,10 @@ const authController = {
         message: 'Invalid refresh token'
       });
     }
-  },
+  }
 
   // Get current user profile
-  getProfile: async (req, res) => {
+  static async getProfile(req, res) {
     try {
       const userWithProfile = await User.findWithProfile(req.user.id);
       
@@ -220,10 +220,10 @@ const authController = {
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
-  },
+  }
 
   // Update user profile
-  updateProfile: async (req, res) => {
+  static async updateProfile(req, res) {
     try {
       const { name, phone, avatar_url, profileData } = req.body;
 
@@ -272,10 +272,10 @@ const authController = {
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
-  },
+  }
 
   // Change password
-  changePassword: async (req, res) => {
+  static async changePassword(req, res) {
     try {
       const { currentPassword, newPassword } = req.body;
 
@@ -314,10 +314,36 @@ const authController = {
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
-  },
+  }
+
+  // Reset password
+  static async resetPassword(req, res) {
+    try {
+      const { token, newPassword } = req.body;
+
+      // TODO: Implement password reset logic with token verification
+      // This would typically involve:
+      // 1. Verify the reset token
+      // 2. Find the user associated with the token
+      // 3. Update the password
+      // 4. Invalidate the reset token
+
+      res.json({
+        success: true,
+        message: 'Password reset feature coming soon'
+      });
+
+    } catch (error) {
+      logger.error('Reset password error:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Password reset failed'
+      });
+    }
+  }
 
   // Logout (mainly for logging purposes)
-  logout: async (req, res) => {
+  static async logout(req, res) {
     try {
       logger.info(`User logged out: ${req.user.email}`);
       
@@ -333,10 +359,10 @@ const authController = {
         message: 'Logout failed'
       });
     }
-  },
+  }
 
   // Verify email (placeholder for future implementation)
-  verifyEmail: async (req, res) => {
+  static async verifyEmail(req, res) {
     try {
       const { token } = req.params;
       
@@ -355,10 +381,10 @@ const authController = {
         message: 'Email verification failed'
       });
     }
-  },
+  }
 
   // Forgot password (placeholder for future implementation)
-  forgotPassword: async (req, res) => {
+  static async forgotPassword(req, res) {
     try {
       const { email } = req.body;
       
@@ -378,6 +404,6 @@ const authController = {
       });
     }
   }
-};
+}
 
-module.exports = authController;
+module.exports = AuthController;
