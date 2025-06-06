@@ -96,3 +96,191 @@
 2025-06-06 16:27:13 [INFO]: ✅ MySQL database connected successfully
 2025-06-06 16:27:14 [ERROR]: MySQL query error:
 2025-06-06 16:27:32 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:37:54 [INFO]: Socket.IO server initialized
+2025-06-06 16:37:54 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:38:18 [INFO]: Socket.IO server initialized
+2025-06-06 16:38:18 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:38:18 [INFO]: ✅ MySQL connected successfully
+2025-06-06 16:38:18 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:38:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 16:38:18 [INFO]: 📧 Notification service skipped for now
+2025-06-06 16:38:18 [INFO]: 🚀 Server running on port 5000
+2025-06-06 16:38:18 [INFO]: 📊 Environment: development
+2025-06-06 16:38:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 16:38:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-06 16:41:07 [INFO]: ::1 - - [06/Jun/2025:11:11:07 +0000] "GET /health HTTP/1.1" 200 103 "-" "node"
+2025-06-06 16:41:09 [INFO]: ::1 - - [06/Jun/2025:11:11:09 +0000] "POST /api/auth/register HTTP/1.1" 400 370 "-" "node"
+2025-06-06 16:41:09 [INFO]: ::1 - - [06/Jun/2025:11:11:09 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "node"
+2025-06-06 16:41:09 [INFO]: ::1 - - [06/Jun/2025:11:11:09 +0000] "POST /api/auth/register HTTP/1.1" 400 370 "-" "node"
+2025-06-06 16:41:39 [INFO]: ::1 - - [06/Jun/2025:11:11:39 +0000] "GET /health HTTP/1.1" 200 103 "-" "node"
+2025-06-06 16:41:39 [INFO]: ::1 - - [06/Jun/2025:11:11:39 +0000] "POST /api/auth/register HTTP/1.1" 400 175 "-" "node"
+2025-06-06 16:41:39 [INFO]: ::1 - - [06/Jun/2025:11:11:39 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "node"
+2025-06-06 16:41:39 [INFO]: ::1 - - [06/Jun/2025:11:11:39 +0000] "POST /api/auth/register HTTP/1.1" 400 175 "-" "node"
+2025-06-06 16:41:58 [INFO]: Patient profile created for user: 48ed9221-173d-43de-b612-1a7da3d75fa9
+2025-06-06 16:41:58 [INFO]: New user registered: test@example.com with role: patient
+2025-06-06 16:41:58 [INFO]: ::1 - - [06/Jun/2025:11:11:58 +0000] "POST /api/auth/register HTTP/1.1" 201 684 "-" "node"
+2025-06-06 16:42:29 [INFO]: ::1 - - [06/Jun/2025:11:12:29 +0000] "GET /health HTTP/1.1" 200 103 "-" "node"
+2025-06-06 16:42:29 [INFO]: Patient profile created for user: cb213000-5e68-4363-9f4f-c953908a6501
+2025-06-06 16:42:29 [INFO]: New user registered: patient_1749208349075@test.com with role: patient
+2025-06-06 16:42:29 [INFO]: ::1 - - [06/Jun/2025:11:12:29 +0000] "POST /api/auth/register HTTP/1.1" 201 701 "-" "node"
+2025-06-06 16:42:29 [INFO]: User logged in: patient_1749208349075@test.com
+2025-06-06 16:42:29 [INFO]: ::1 - - [06/Jun/2025:11:12:29 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "node"
+2025-06-06 16:42:29 [INFO]: ::1 - - [06/Jun/2025:11:12:29 +0000] "GET /api/auth/profile HTTP/1.1" 200 927 "-" "node"
+2025-06-06 16:42:30 [ERROR]: MySQL query error:
+2025-06-06 16:42:30 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:42:30 [INFO]: ::1 - - [06/Jun/2025:11:12:30 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "node"
+2025-06-06 16:42:50 [ERROR]: MySQL query error:
+2025-06-06 16:42:50 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:42:50 [INFO]: ::1 - - [06/Jun/2025:11:12:50 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "node"
+2025-06-06 16:43:19 [ERROR]: MySQL query error:
+2025-06-06 16:43:19 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:43:19 [INFO]: ::1 - - [06/Jun/2025:11:13:19 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "node"
+2025-06-06 16:43:36 [ERROR]: MySQL query error:
+2025-06-06 16:43:36 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:43:36 [INFO]: ::1 - - [06/Jun/2025:11:13:36 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "node"
+2025-06-06 16:45:16 [INFO]: ::1 - - [06/Jun/2025:11:15:16 +0000] "POST /api/auth/register HTTP/1.1" 400 254 "-" "axios/1.9.0"
+2025-06-06 16:45:31 [ERROR]: MySQL query error:
+2025-06-06 16:45:31 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:45:31 [INFO]: ::1 - - [06/Jun/2025:11:15:31 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "axios/1.9.0"
+2025-06-06 16:45:56 [ERROR]: MySQL query error:
+2025-06-06 16:45:56 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:45:56 [INFO]: ::1 - - [06/Jun/2025:11:15:56 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "axios/1.9.0"
+2025-06-06 16:46:41 [ERROR]: MySQL query error:
+2025-06-06 16:46:41 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:46:41 [INFO]: ::1 - - [06/Jun/2025:11:16:41 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "axios/1.9.0"
+2025-06-06 16:46:57 [INFO]: ::1 - - [06/Jun/2025:11:16:57 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:47:01 [INFO]: ::1 - - [06/Jun/2025:11:17:01 +0000] "GET /health HTTP/1.1" 200 103 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:47:12 [INFO]: Socket.IO server initialized
+2025-06-06 16:47:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:47:37 [ERROR]: MySQL query error:
+2025-06-06 16:47:37 [ERROR]: Error: Column 'license_number' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:47:37 [INFO]: ::1 - - [06/Jun/2025:11:17:37 +0000] "POST /api/auth/register HTTP/1.1" 500 98 "-" "axios/1.9.0"
+2025-06-06 16:47:38 [ERROR]: MySQL query error:
+2025-06-06 16:47:38 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:47:38 [INFO]: ::1 - - [06/Jun/2025:11:17:38 +0000] "POST /api/auth/register HTTP/1.1" 500 93 "-" "axios/1.9.0"
+2025-06-06 16:47:38 [INFO]: New user registered: test31749208658323@example.com with role: doctor
+2025-06-06 16:47:38 [INFO]: ::1 - - [06/Jun/2025:11:17:38 +0000] "POST /api/auth/register HTTP/1.1" 201 705 "-" "axios/1.9.0"
+2025-06-06 16:48:24 [INFO]: Doctor profile created for user: 48b1aabe-ee20-4301-94ec-25b678fb91a8
+2025-06-06 16:48:24 [INFO]: New user registered: fixed1749208704395@example.com with role: doctor
+2025-06-06 16:48:24 [INFO]: ::1 - - [06/Jun/2025:11:18:24 +0000] "POST /api/auth/register HTTP/1.1" 201 710 "-" "axios/1.9.0"
+2025-06-06 16:48:25 [INFO]: User logged in: fixed1749208704395@example.com
+2025-06-06 16:48:25 [INFO]: ::1 - - [06/Jun/2025:11:18:25 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-06 16:50:07 [INFO]: ::1 - - [06/Jun/2025:11:20:07 +0000] "GET /health HTTP/1.1" 200 103 "-" "axios/1.9.0"
+2025-06-06 16:50:07 [INFO]: Patient profile created for user: 0e5c1ee3-1a9f-4fa2-86bf-ae3229ed3716
+2025-06-06 16:50:07 [INFO]: New user registered: patient1749208807668@example.com with role: patient
+2025-06-06 16:50:07 [INFO]: ::1 - - [06/Jun/2025:11:20:07 +0000] "POST /api/auth/register HTTP/1.1" 201 711 "-" "axios/1.9.0"
+2025-06-06 16:50:08 [INFO]: User logged in: patient1749208807668@example.com
+2025-06-06 16:50:08 [INFO]: ::1 - - [06/Jun/2025:11:20:08 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-06 16:50:08 [INFO]: Doctor profile created for user: c848fc5b-5ad7-47e4-bdb9-0c49b02b26ee
+2025-06-06 16:50:08 [INFO]: New user registered: doctor1749208808295@example.com with role: doctor
+2025-06-06 16:50:08 [INFO]: ::1 - - [06/Jun/2025:11:20:08 +0000] "POST /api/auth/register HTTP/1.1" 201 712 "-" "axios/1.9.0"
+2025-06-06 16:50:08 [INFO]: User logged in: doctor1749208808295@example.com
+2025-06-06 16:50:08 [INFO]: ::1 - - [06/Jun/2025:11:20:08 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-06 16:50:09 [INFO]: New user registered: admin1749208808927@example.com with role: admin
+2025-06-06 16:50:09 [INFO]: ::1 - - [06/Jun/2025:11:20:09 +0000] "POST /api/auth/register HTTP/1.1" 201 705 "-" "axios/1.9.0"
+2025-06-06 16:50:09 [INFO]: User logged in: admin1749208808927@example.com
+2025-06-06 16:50:09 [INFO]: ::1 - - [06/Jun/2025:11:20:09 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-06 16:50:09 [INFO]: New user registered: billing1749208809540@example.com with role: billing
+2025-06-06 16:50:09 [INFO]: ::1 - - [06/Jun/2025:11:20:09 +0000] "POST /api/auth/register HTTP/1.1" 201 712 "-" "axios/1.9.0"
+2025-06-06 16:50:10 [INFO]: User logged in: billing1749208809540@example.com
+2025-06-06 16:50:10 [INFO]: ::1 - - [06/Jun/2025:11:20:10 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-06 16:50:10 [INFO]: ::1 - - [06/Jun/2025:11:20:10 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-06 16:54:27 [INFO]: Socket.IO server initialized
+2025-06-06 16:54:27 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:55:45 [INFO]: Socket.IO server initialized
+2025-06-06 16:55:45 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:56:12 [INFO]: Socket.IO server initialized
+2025-06-06 16:56:12 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:56:12 [INFO]: ✅ MySQL connected successfully
+2025-06-06 16:56:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:56:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 16:56:12 [INFO]: 📧 Notification service skipped for now
+2025-06-06 16:56:12 [INFO]: 🚀 Server running on port 5000
+2025-06-06 16:56:12 [INFO]: 📊 Environment: development
+2025-06-06 16:56:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 16:56:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-06 16:59:41 [INFO]: Socket.IO server initialized
+2025-06-06 16:59:41 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:59:41 [INFO]: ✅ MySQL connected successfully
+2025-06-06 16:59:41 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:59:41 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 16:59:41 [INFO]: 📧 Notification service skipped for now
+2025-06-06 16:59:41 [INFO]: 🚀 Server running on port 5000
+2025-06-06 16:59:41 [INFO]: 📊 Environment: development
+2025-06-06 16:59:41 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 16:59:41 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-06 17:00:21 [INFO]: ::1 - - [06/Jun/2025:11:30:21 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "axios/1.9.0"
+2025-06-06 17:01:59 [INFO]: Socket.IO server initialized
+2025-06-06 17:01:59 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 17:01:59 [INFO]: ✅ MySQL connected successfully
+2025-06-06 17:01:59 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:01:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 17:01:59 [INFO]: 📧 Notification service skipped for now
+2025-06-06 17:01:59 [INFO]: 🚀 Server running on port 5000
+2025-06-06 17:01:59 [INFO]: 📊 Environment: development
+2025-06-06 17:01:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 17:01:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-06 17:03:07 [INFO]: ::1 - - [06/Jun/2025:11:33:07 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-06 17:03:37 [INFO]: Patient profile created for user: e776699f-aca0-44c5-bdcf-0655ec3b2454
+2025-06-06 17:03:37 [INFO]: New user registered: 9973geetha@gmail.com with role: patient
+2025-06-06 17:03:37 [INFO]: ::1 - - [06/Jun/2025:11:33:37 +0000] "POST /api/auth/register HTTP/1.1" 201 724 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-06 17:03:51 [INFO]: User logged out: 9973geetha@gmail.com
+2025-06-06 17:03:51 [INFO]: ::1 - - [06/Jun/2025:11:33:51 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-06 17:03:51 [INFO]: ::1 - - [06/Jun/2025:11:33:51 +0000] "GET /api/auth/profile HTTP/1.1" 200 928 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-06 17:08:09 [INFO]: Socket.IO server initialized
+2025-06-06 17:08:09 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 17:09:04 [INFO]: Socket.IO server initialized
+2025-06-06 17:09:04 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 17:09:04 [INFO]: ✅ MySQL connected successfully
+2025-06-06 17:09:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:09:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 17:09:04 [INFO]: 📧 Notification service skipped for now
+2025-06-06 17:09:04 [INFO]: 🚀 Server running on port 5000
+2025-06-06 17:09:04 [INFO]: 📊 Environment: development
+2025-06-06 17:09:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 17:09:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs

@@ -61,12 +61,36 @@ class AuthController {
         };
         const patient = new Patient(patientData);
         await patient.save();
-        logger.info(`Patient profile created for user: ${user.id}`);
-      } else if (role === 'doctor' && profileData) {
+        logger.info(`Patient profile created for user: ${user.id}`);      } else if (role === 'doctor' && profileData) {
+        console.log('ProfileData received:', JSON.stringify(profileData, null, 2)); // Debug log
+        console.log('specialization value:', profileData.specialization);
+        console.log('specialty value:', profileData.specialty);
+        
+        const specialty = profileData.specialization || profileData.specialty;
+        console.log('Final specialty value:', specialty);
+        
+        if (!specialty) {
+          return res.status(400).json({
+            success: false,
+            message: 'Specialty is required for doctor registration'
+          });
+        }
+        
         const doctorData = {
           user_id: user.id,
-          ...profileData
+          specialty: specialty,
+          license_number: profileData.license_number,
+          years_of_experience: profileData.experience_years || profileData.years_of_experience,
+          education: profileData.education,
+          certifications: profileData.certifications,
+          consultation_fee: profileData.consultation_fee,
+          languages_spoken: profileData.languages_spoken,
+          office_address: profileData.office_address,
+          bio: profileData.bio,
+          working_hours: profileData.working_hours,
+          availability_status: profileData.availability_status || 'available'
         };
+        console.log('DoctorData being saved:', JSON.stringify(doctorData, null, 2)); // Debug log
         const doctor = new Doctor(doctorData);
         await doctor.save();
         logger.info(`Doctor profile created for user: ${user.id}`);

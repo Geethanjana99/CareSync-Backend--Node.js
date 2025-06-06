@@ -36,3 +36,76 @@
 2025-06-06 16:23:52 [ERROR]: MySQL query error:
 2025-06-06 16:25:53 [ERROR]: MySQL query error:
 2025-06-06 16:27:14 [ERROR]: MySQL query error:
+2025-06-06 16:37:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:38:18 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:42:30 [ERROR]: MySQL query error:
+2025-06-06 16:42:30 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:42:50 [ERROR]: MySQL query error:
+2025-06-06 16:42:50 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:43:19 [ERROR]: MySQL query error:
+2025-06-06 16:43:19 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:43:36 [ERROR]: MySQL query error:
+2025-06-06 16:43:36 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:45:31 [ERROR]: MySQL query error:
+2025-06-06 16:45:31 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:45:56 [ERROR]: MySQL query error:
+2025-06-06 16:45:56 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:46:41 [ERROR]: MySQL query error:
+2025-06-06 16:46:41 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:47:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:47:37 [ERROR]: MySQL query error:
+2025-06-06 16:47:37 [ERROR]: Error: Column 'license_number' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:47:38 [ERROR]: MySQL query error:
+2025-06-06 16:47:38 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:54:27 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:55:45 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:56:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:59:41 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:01:59 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:08:09 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:09:04 [ERROR]: ❌ MongoDB connection failed:
