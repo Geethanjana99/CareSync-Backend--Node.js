@@ -27,3 +27,61 @@
 2025-06-02 15:41:00 [INFO]: ::1 - - [02/Jun/2025:10:11:00 +0000] "GET /favicon.ico HTTP/1.1" 404 74 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 2025-06-02 15:41:54 [INFO]: Socket.IO server initialized
 2025-06-02 15:41:54 [ERROR]: ❌ MySQL connection failed:
+2025-06-06 16:08:19 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:11:15 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:17:00 [INFO]: Socket.IO server initialized
+2025-06-06 16:17:00 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:17:00 [INFO]: ✅ MySQL connected successfully
+2025-06-06 16:17:00 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:17:00 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 16:17:00 [INFO]: 📧 Notification service skipped for now
+2025-06-06 16:17:00 [INFO]: 🚀 Server running on port 5000
+2025-06-06 16:17:00 [INFO]: 📊 Environment: development
+2025-06-06 16:17:00 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 16:17:00 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-06 16:17:21 [INFO]: ::1 - - [06/Jun/2025:10:47:21 +0000] "GET /health HTTP/1.1" 200 102 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:17:36 [INFO]: ::1 - - [06/Jun/2025:10:47:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:17:53 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:19:18 [INFO]: User logged in: admin@clinicalapp.com
+2025-06-06 16:19:18 [INFO]: ::1 - - [06/Jun/2025:10:49:18 +0000] "POST /api/auth/login HTTP/1.1" 200 1360 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:19:26 [INFO]: ::1 - - [06/Jun/2025:10:49:26 +0000] "POST /api/auth/register HTTP/1.1" 400 255 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:19:32 [ERROR]: MySQL query error:
+2025-06-06 16:19:32 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:19:32 [INFO]: ::1 - - [06/Jun/2025:10:49:32 +0000] "POST /api/auth/register HTTP/1.1" 500 136 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:19:58 [ERROR]: MySQL query error:
+2025-06-06 16:19:58 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:19:58 [INFO]: ::1 - - [06/Jun/2025:10:49:58 +0000] "POST /api/auth/register HTTP/1.1" 500 136 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:20:18 [ERROR]: MySQL query error:
+2025-06-06 16:20:18 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:20:18 [INFO]: ::1 - - [06/Jun/2025:10:50:18 +0000] "POST /api/auth/register HTTP/1.1" 500 136 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:20:40 [ERROR]: MySQL query error:
+2025-06-06 16:20:40 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:20:40 [INFO]: ::1 - - [06/Jun/2025:10:50:40 +0000] "POST /api/auth/register HTTP/1.1" 500 136 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:21:04 [INFO]: Socket.IO server initialized
+2025-06-06 16:21:04 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:21:04 [INFO]: ✅ MySQL connected successfully
+2025-06-06 16:21:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:21:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-06 16:21:04 [INFO]: 📧 Notification service skipped for now
+2025-06-06 16:21:04 [INFO]: 🚀 Server running on port 5000
+2025-06-06 16:21:04 [INFO]: 📊 Environment: development
+2025-06-06 16:21:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-06 16:21:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-06 16:21:27 [INFO]: New user registered: test3@example.com with role: patient
+2025-06-06 16:21:27 [INFO]: ::1 - - [06/Jun/2025:10:51:27 +0000] "POST /api/auth/register HTTP/1.1" 201 688 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"

@@ -6,3 +6,29 @@
 2025-06-02 15:40:42 [ERROR]: ❌ MySQL connection failed:
 2025-06-02 15:40:42 [ERROR]: ❌ MongoDB connection failed:
 2025-06-02 15:41:54 [ERROR]: ❌ MySQL connection failed:
+2025-06-06 16:17:00 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:19:32 [ERROR]: MySQL query error:
+2025-06-06 16:19:32 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:19:58 [ERROR]: MySQL query error:
+2025-06-06 16:19:58 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:20:18 [ERROR]: MySQL query error:
+2025-06-06 16:20:18 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:20:40 [ERROR]: MySQL query error:
+2025-06-06 16:20:40 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:42:38)
+    at User.save (E:\Project 2\backend\models\User.js:30:27)
+    at register (E:\Project 2\backend\controllers\authController.js:50:18)
+2025-06-06 16:21:04 [ERROR]: ❌ MongoDB connection failed:
