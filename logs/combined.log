@@ -85,3 +85,14 @@
 2025-06-06 16:21:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
 2025-06-06 16:21:27 [INFO]: New user registered: test3@example.com with role: patient
 2025-06-06 16:21:27 [INFO]: ::1 - - [06/Jun/2025:10:51:27 +0000] "POST /api/auth/register HTTP/1.1" 201 688 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-06 16:22:36 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:23:52 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:23:52 [ERROR]: MySQL query error:
+2025-06-06 16:23:52 [ERROR]: MySQL query error:
+2025-06-06 16:25:53 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:25:53 [ERROR]: MySQL query error:
+2025-06-06 16:26:12 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:26:19 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:27:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-06 16:27:14 [ERROR]: MySQL query error:
+2025-06-06 16:27:32 [INFO]: ✅ MySQL database connected successfully

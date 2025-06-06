@@ -47,16 +47,21 @@ class AuthController {
       };
 
       const user = new User(userData);
-      await user.save();
-
-      // Create role-specific profile
-      if (role === 'patient' && profileData) {
+      await user.save();      // Create role-specific profile
+      if (role === 'patient') {
+        // Create basic patient profile with minimal data
         const patientData = {
           user_id: user.id,
-          ...profileData
+          gender: profileData?.gender || null,
+          date_of_birth: profileData?.date_of_birth || null,
+          address: profileData?.address || null,
+          emergency_contact_name: profileData?.emergency_contact_name || null,
+          emergency_contact_phone: profileData?.emergency_contact_phone || null,
+          preferred_language: profileData?.preferred_language || 'English'
         };
         const patient = new Patient(patientData);
         await patient.save();
+        logger.info(`Patient profile created for user: ${user.id}`);
       } else if (role === 'doctor' && profileData) {
         const doctorData = {
           user_id: user.id,
@@ -64,6 +69,7 @@ class AuthController {
         };
         const doctor = new Doctor(doctorData);
         await doctor.save();
+        logger.info(`Doctor profile created for user: ${user.id}`);
       }
 
       // Generate tokens

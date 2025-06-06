@@ -8,11 +8,9 @@ async function fullConnectionTest() {
     // 1. Test basic connection
     console.log('1️⃣ Testing basic connection...');
     await mysqlConnection.connect();
-    console.log('   ✅ MySQL connection successful\n');
-
-    // 2. Test all tables exist
+    console.log('   ✅ MySQL connection successful\n');    // 2. Test all tables exist
     console.log('2️⃣ Verifying all tables exist...');
-    const [tables] = await mysqlConnection.query('SHOW TABLES');
+    const tables = await mysqlConnection.query('SHOW TABLES');
     const tableNames = tables.map(row => Object.values(row)[0]);
     
     const expectedTables = [
@@ -28,44 +26,38 @@ async function fullConnectionTest() {
         console.log(`   ❌ Table '${table}' missing`);
       }
     }
-    console.log('');
-
-    // 3. Test users table
+    console.log('');    // 3. Test users table
     console.log('3️⃣ Testing users table...');
-    const [userCount] = await mysqlConnection.query('SELECT COUNT(*) as count FROM users');
+    const userCount = await mysqlConnection.query('SELECT COUNT(*) as count FROM users');
     console.log(`   📊 Total users: ${userCount[0].count}`);
     
-    const [adminUsers] = await mysqlConnection.query('SELECT name, email, role FROM users WHERE role = "admin"');
+    const adminUsers = await mysqlConnection.query('SELECT name, email, role FROM users WHERE role = "admin"');
     console.log(`   👤 Admin users: ${adminUsers.length}`);
     for (const admin of adminUsers) {
       console.log(`      - ${admin.name} (${admin.email})`);
     }
-    console.log('');
-
-    // 4. Test patient creation
+    console.log('');    // 4. Test patient creation
     console.log('4️⃣ Testing patient functionality...');
-    const [patients] = await mysqlConnection.query('SELECT COUNT(*) as count FROM patients');
+    const patients = await mysqlConnection.query('SELECT COUNT(*) as count FROM patients');
     console.log(`   📊 Total patients: ${patients[0].count}`);
     
     // Get a patient user for testing
-    const [patientUsers] = await mysqlConnection.query('SELECT * FROM users WHERE role = "patient" LIMIT 1');
+    const patientUsers = await mysqlConnection.query('SELECT * FROM users WHERE role = "patient" LIMIT 1');
     if (patientUsers.length > 0) {
       const patientUser = patientUsers[0];
       console.log(`   👥 Sample patient user: ${patientUser.name} (${patientUser.email})`);
       
       // Check if this user has a patient profile
-      const [patientProfiles] = await mysqlConnection.query('SELECT * FROM patients WHERE user_id = ?', [patientUser.id]);
+      const patientProfiles = await mysqlConnection.query('SELECT * FROM patients WHERE user_id = ?', [patientUser.id]);
       if (patientProfiles.length > 0) {
         console.log(`   📋 Patient profile exists: ID ${patientProfiles[0].patient_id}`);
       } else {
         console.log(`   ⚠️  Patient profile missing for user ${patientUser.name}`);
       }
     }
-    console.log('');
-
-    // 5. Test doctor functionality
+    console.log('');    // 5. Test doctor functionality
     console.log('5️⃣ Testing doctor functionality...');
-    const [doctors] = await mysqlConnection.query('SELECT COUNT(*) as count FROM doctors');
+    const doctors = await mysqlConnection.query('SELECT COUNT(*) as count FROM doctors');
     console.log(`   📊 Total doctors: ${doctors[0].count}`);
     console.log('');
 
@@ -88,10 +80,9 @@ async function fullConnectionTest() {
     console.log('');
 
     // 7. Test unique constraints
-    console.log('7️⃣ Testing unique constraints...');
-    try {
+    console.log('7️⃣ Testing unique constraints...');    try {
       // Try to insert a user with existing email
-      const [existingUser] = await mysqlConnection.query('SELECT email FROM users LIMIT 1');
+      const existingUser = await mysqlConnection.query('SELECT email FROM users LIMIT 1');
       if (existingUser.length > 0) {
         await mysqlConnection.query(
           'INSERT INTO users (id, name, email, password_hash, role) VALUES (?, ?, ?, ?, ?)',
@@ -125,11 +116,9 @@ async function fullConnectionTest() {
     } catch (error) {
       console.log(`   ❌ JSON fields error: ${error.message}`);
     }
-    console.log('');
-
-    // 10. Test indexes
+    console.log('');    // 10. Test indexes
     console.log('🔟 Testing indexes...');
-    const [indexes] = await mysqlConnection.query(`
+    const indexes = await mysqlConnection.query(`
       SELECT TABLE_NAME, INDEX_NAME, COLUMN_NAME 
       FROM INFORMATION_SCHEMA.STATISTICS 
       WHERE TABLE_SCHEMA = 'clinical_appointment_system' 

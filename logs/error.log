@@ -32,3 +32,7 @@
     at User.save (E:\Project 2\backend\models\User.js:30:27)
     at register (E:\Project 2\backend\controllers\authController.js:50:18)
 2025-06-06 16:21:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:23:52 [ERROR]: MySQL query error:
+2025-06-06 16:23:52 [ERROR]: MySQL query error:
+2025-06-06 16:25:53 [ERROR]: MySQL query error:
+2025-06-06 16:27:14 [ERROR]: MySQL query error:
