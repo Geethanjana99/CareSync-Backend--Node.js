@@ -143,13 +143,33 @@ class AuthController {
           success: false,
           message: 'Invalid email or password'
         });
-      }
-
-      // Update last login
+      }      // Update last login
       await user.updateLastLogin();
 
       // Get user with profile information
       const userWithProfile = await User.findWithProfile(user.id);
+
+      // Clean up the user data for frontend response
+      const cleanUserData = {
+        id: userWithProfile.id,
+        name: userWithProfile.name,
+        email: userWithProfile.email,
+        role: userWithProfile.role,
+        phone: userWithProfile.phone,
+        avatar_url: userWithProfile.avatar_url,
+        is_active: userWithProfile.is_active,
+        email_verified: userWithProfile.email_verified,
+        last_login: userWithProfile.last_login,
+        created_at: userWithProfile.created_at,
+        updated_at: userWithProfile.updated_at,
+        // Include profile data if available
+        profile: {
+          patient_id: userWithProfile.patient_id,
+          doctor_id: userWithProfile.doctor_id,
+          specialty: userWithProfile.specialty,
+          // Add other relevant profile fields as needed
+        }
+      };
 
       // Generate tokens
       const token = generateToken(user.id);
@@ -161,7 +181,7 @@ class AuthController {
         success: true,
         message: 'Login successful',
         data: {
-          user: userWithProfile,
+          user: cleanUserData,
           token,
           refreshToken
         }
