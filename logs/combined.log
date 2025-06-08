@@ -795,3 +795,18 @@
 2025-06-08 13:42:57 [INFO]: Patient profile created for user: f75a8fbc-61d9-4db8-961e-0a51b4401c7e
 2025-06-08 13:42:57 [INFO]: New user registered: quicktest1749370377034@example.com with role: patient
 2025-06-08 13:42:57 [INFO]: ::1 - - [08/Jun/2025:08:12:57 +0000] "POST /api/auth/register HTTP/1.1" 201 716 "-" "axios/1.9.0"
+2025-06-08 16:49:35 [INFO]: Socket.IO server initialized
+2025-06-08 16:49:36 [INFO]: ✅ MySQL database connected successfully
+2025-06-08 16:49:36 [INFO]: ✅ MySQL connected successfully
+2025-06-08 16:49:36 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 16:49:36 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-08 16:49:36 [INFO]: 📧 Notification service skipped for now
+2025-06-08 16:49:36 [INFO]: 🚀 Server running on port 5000
+2025-06-08 16:49:36 [INFO]: 📊 Environment: development
+2025-06-08 16:49:36 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-08 16:49:36 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-08 16:49:55 [INFO]: User logged in: 9973geetha@gmail.com
+2025-06-08 16:49:55 [INFO]: ::1 - - [08/Jun/2025:11:19:55 +0000] "POST /api/auth/login HTTP/1.1" 200 871 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 16:49:59 [INFO]: User logged out: 9973geetha@gmail.com
+2025-06-08 16:49:59 [INFO]: ::1 - - [08/Jun/2025:11:19:59 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 16:49:59 [INFO]: ::1 - - [08/Jun/2025:11:19:59 +0000] "GET /api/auth/profile HTTP/1.1" 200 948 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
