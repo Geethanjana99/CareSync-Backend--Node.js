@@ -2,29 +2,33 @@ const { mysqlConnection } = require('../config/mysql');
 const bcrypt = require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
 
-class User {
-  constructor(userData) {
+class User {  constructor(userData) {
     this.id = userData.id || uuidv4();
     this.name = userData.name;
     this.email = userData.email;
     this.password_hash = userData.password_hash;
     this.role = userData.role;
-    this.avatar_url = userData.avatar_url;
-    this.phone = userData.phone;
+    this.avatar_url = userData.avatar_url || null;
+    this.phone = userData.phone || null;
     this.is_active = userData.is_active !== undefined ? userData.is_active : true;
     this.email_verified = userData.email_verified || false;
-    this.last_login = userData.last_login;
-  }
-
-  async save() {
+    this.last_login = userData.last_login || null;
+  }  async save() {
     const query = `
       INSERT INTO users (id, name, email, password_hash, role, avatar_url, phone, is_active, email_verified)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;
     
     const params = [
-      this.id, this.name, this.email, this.password_hash, this.role,
-      this.avatar_url, this.phone, this.is_active, this.email_verified
+      this.id, 
+      this.name, 
+      this.email, 
+      this.password_hash, 
+      this.role,
+      this.avatar_url, 
+      this.phone, 
+      this.is_active, 
+      this.email_verified
     ];
 
     await mysqlConnection.query(query, params);

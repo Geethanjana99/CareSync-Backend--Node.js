@@ -7,17 +7,15 @@ class MySQLConnection {
   }
 
   async connect() {
-    try {
-      this.pool = mysql.createPool({
+    try {      this.pool = mysql.createPool({
         host: process.env.MYSQL_HOST || 'localhost',
         port: process.env.MYSQL_PORT || 3306,
         user: process.env.MYSQL_USER || 'root',
         password: process.env.MYSQL_PASSWORD || '',
         database: process.env.MYSQL_DATABASE || 'clinical_appointment_system',
         connectionLimit: parseInt(process.env.MYSQL_CONNECTION_LIMIT) || 10,
-        acquireTimeout: 60000,
-        timeout: 60000,
-        reconnect: true,
+        queueLimit: 0,
+        idleTimeout: 300000,
         charset: 'utf8mb4',
         timezone: '+00:00',
         supportBigNumbers: true,
