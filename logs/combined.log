@@ -686,3 +686,112 @@
 2025-06-08 12:52:47 [INFO]: 📊 Environment: development
 2025-06-08 12:52:47 [INFO]: 🔗 Client URL: http://localhost:5173
 2025-06-08 12:52:47 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-08 13:27:29 [INFO]: Socket.IO server initialized
+2025-06-08 13:27:29 [ERROR]: ❌ MySQL connection failed:
+2025-06-08 13:27:29 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-08 13:27:29 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 13:27:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-08 13:27:29 [INFO]: 📧 Notification service skipped for now
+2025-06-08 13:27:29 [INFO]: 🚀 Server running on port 5000
+2025-06-08 13:27:29 [INFO]: 📊 Environment: development
+2025-06-08 13:27:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-08 13:27:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-08 13:27:55 [ERROR]: MySQL query error:
+2025-06-08 13:27:55 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-08 13:27:55 [INFO]: ::1 - - [08/Jun/2025:07:57:55 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:27:55 [ERROR]: MySQL query error:
+2025-06-08 13:27:55 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-08 13:27:55 [INFO]: ::1 - - [08/Jun/2025:07:57:55 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:27:59 [ERROR]: MySQL query error:
+2025-06-08 13:27:59 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:27:59 [INFO]: ::1 - - [08/Jun/2025:07:57:59 +0000] "POST /api/auth/login HTTP/1.1" 500 53 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:09 [ERROR]: MySQL query error:
+2025-06-08 13:28:09 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:28:09 [INFO]: ::1 - - [08/Jun/2025:07:58:09 +0000] "POST /api/auth/login HTTP/1.1" 500 53 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:09 [ERROR]: MySQL query error:
+2025-06-08 13:28:09 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:28:09 [INFO]: ::1 - - [08/Jun/2025:07:58:09 +0000] "POST /api/auth/login HTTP/1.1" 500 53 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:10 [ERROR]: MySQL query error:
+2025-06-08 13:28:10 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:28:10 [INFO]: ::1 - - [08/Jun/2025:07:58:10 +0000] "POST /api/auth/login HTTP/1.1" 500 53 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:41 [INFO]: ::1 - - [08/Jun/2025:07:58:41 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:42 [INFO]: ::1 - - [08/Jun/2025:07:58:42 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:43 [INFO]: ::1 - - [08/Jun/2025:07:58:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:44 [INFO]: ::1 - - [08/Jun/2025:07:58:44 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:44 [INFO]: ::1 - - [08/Jun/2025:07:58:44 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:48 [INFO]: ::1 - - [08/Jun/2025:07:58:48 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:48 [INFO]: ::1 - - [08/Jun/2025:07:58:48 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:48 [INFO]: ::1 - - [08/Jun/2025:07:58:48 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:49 [INFO]: ::1 - - [08/Jun/2025:07:58:49 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:28:49 [INFO]: ::1 - - [08/Jun/2025:07:58:49 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:29:09 [INFO]: ::1 - - [08/Jun/2025:07:59:09 +0000] "POST /api/auth/register HTTP/1.1" 400 65 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:29:27 [INFO]: User logged in: 9973geetha@gmail.com
+2025-06-08 13:29:27 [INFO]: ::1 - - [08/Jun/2025:07:59:27 +0000] "POST /api/auth/login HTTP/1.1" 200 871 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:29:32 [INFO]: User logged out: 9973geetha@gmail.com
+2025-06-08 13:29:32 [INFO]: ::1 - - [08/Jun/2025:07:59:32 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:29:32 [INFO]: ::1 - - [08/Jun/2025:07:59:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 948 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-08 13:42:32 [INFO]: Socket.IO server initialized
+2025-06-08 13:42:32 [INFO]: ✅ MySQL database connected successfully
+2025-06-08 13:42:57 [INFO]: Patient profile created for user: f75a8fbc-61d9-4db8-961e-0a51b4401c7e
+2025-06-08 13:42:57 [INFO]: New user registered: quicktest1749370377034@example.com with role: patient
+2025-06-08 13:42:57 [INFO]: ::1 - - [08/Jun/2025:08:12:57 +0000] "POST /api/auth/register HTTP/1.1" 201 716 "-" "axios/1.9.0"
