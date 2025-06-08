@@ -26,14 +26,13 @@ const userValidation = {
       .isLength({ min: 8 })
       .withMessage('Password must be at least 8 characters long')
       .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/)
-      .withMessage('Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character'),
-    body('role')
+      .withMessage('Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character'),    body('role')
       .isIn(['patient', 'doctor', 'admin', 'billing'])
       .withMessage('Invalid role specified'),
     body('phone')
       .optional()
-      .isMobilePhone()
-      .withMessage('Please provide a valid phone number'),
+      .matches(/^0\d{9}$/)
+      .withMessage('Please provide a valid Sri Lankan phone number (10 digits starting with 0)'),
     handleValidationErrors
   ],
 

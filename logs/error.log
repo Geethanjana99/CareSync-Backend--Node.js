@@ -153,3 +153,41 @@
     at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async register (E:\Project 2\backend\controllers\authController.js:95:9)
+2025-06-07 13:25:34 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 13:28:53 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 13:29:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 18:04:39 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 18:05:50 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:05:50 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:05:51 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:05:51 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:07:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 18:08:15 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:07:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:18:41 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:19:58 [ERROR]: MySQL query error:
+2025-06-08 12:19:58 [ERROR]: Error: Duplicate entry 'MD12345' for key 'license_number'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:95:9)
+2025-06-08 12:21:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:33:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:37:32 [ERROR]: ❌ MongoDB connection failed:
