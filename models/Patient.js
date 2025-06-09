@@ -39,15 +39,27 @@ class Patient {
         blood_type, height, weight, occupation, marital_status,
         preferred_language, status
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `;
-
-    const params = [
-      this.id, this.user_id, this.patient_id, this.date_of_birth, this.gender,
-      this.address, this.emergency_contact_name, this.emergency_contact_phone,
-      this.medical_history, this.allergies, this.current_medications,
-      this.insurance_provider, this.insurance_policy_number, this.blood_type,
-      this.height, this.weight, this.occupation, this.marital_status,
-      this.preferred_language, this.status
+    `;    const params = [
+      this.id, 
+      this.user_id, 
+      this.patient_id, 
+      this.date_of_birth || null, 
+      this.gender || null,
+      this.address || null, 
+      this.emergency_contact_name || null, 
+      this.emergency_contact_phone || null,
+      this.medical_history || null, 
+      this.allergies || null, 
+      this.current_medications || null,
+      this.insurance_provider || null, 
+      this.insurance_policy_number || null, 
+      this.blood_type || null,
+      this.height || null, 
+      this.weight || null, 
+      this.occupation || null, 
+      this.marital_status || null,
+      this.preferred_language || 'English', 
+      this.status || 'active'
     ];
 
     await mysqlConnection.query(query, params);

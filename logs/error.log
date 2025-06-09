@@ -32,3 +32,240 @@
     at User.save (E:\Project 2\backend\models\User.js:30:27)
     at register (E:\Project 2\backend\controllers\authController.js:50:18)
 2025-06-06 16:21:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:23:52 [ERROR]: MySQL query error:
+2025-06-06 16:23:52 [ERROR]: MySQL query error:
+2025-06-06 16:25:53 [ERROR]: MySQL query error:
+2025-06-06 16:27:14 [ERROR]: MySQL query error:
+2025-06-06 16:37:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:38:18 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:42:30 [ERROR]: MySQL query error:
+2025-06-06 16:42:30 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:42:50 [ERROR]: MySQL query error:
+2025-06-06 16:42:50 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:43:19 [ERROR]: MySQL query error:
+2025-06-06 16:43:19 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:43:36 [ERROR]: MySQL query error:
+2025-06-06 16:43:36 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:45:31 [ERROR]: MySQL query error:
+2025-06-06 16:45:31 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:45:56 [ERROR]: MySQL query error:
+2025-06-06 16:45:56 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:46:41 [ERROR]: MySQL query error:
+2025-06-06 16:46:41 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:47:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:47:37 [ERROR]: MySQL query error:
+2025-06-06 16:47:37 [ERROR]: Error: Column 'license_number' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:47:38 [ERROR]: MySQL query error:
+2025-06-06 16:47:38 [ERROR]: Error: Column 'specialty' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:71:9)
+2025-06-06 16:54:27 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:55:45 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:56:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 16:59:41 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:01:59 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:08:09 [ERROR]: ❌ MongoDB connection failed:
+2025-06-06 17:09:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 12:16:37 [ERROR]: ❌ MySQL connection failed:
+2025-06-07 12:16:37 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 12:16:49 [ERROR]: MySQL query error:
+2025-06-07 12:16:49 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-07 12:20:32 [ERROR]: MySQL query error:
+2025-06-07 12:20:32 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-07 12:20:43 [ERROR]: ❌ MySQL connection failed:
+2025-06-07 12:32:17 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 12:34:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 12:44:34 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 12:50:10 [ERROR]: MySQL query error:
+2025-06-07 12:50:10 [ERROR]: Error: Column 'license_number' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:95:9)
+2025-06-07 12:52:17 [ERROR]: MySQL query error:
+2025-06-07 12:52:17 [ERROR]: Error: Column 'license_number' cannot be null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:95:9)
+2025-06-07 13:25:34 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 13:28:53 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 13:29:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 18:04:39 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 18:05:50 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:05:50 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:05:51 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:05:51 [ERROR]: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (e:\Project 2\backend\node_modules\jsonwebtoken\sign.js:111:20)
+    at generateToken (e:\Project 2\backend\controllers\authController.js:10:14)
+    at register (e:\Project 2\backend\controllers\authController.js:100:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-07 18:07:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-07 18:08:15 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:07:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:18:41 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:19:58 [ERROR]: MySQL query error:
+2025-06-08 12:19:58 [ERROR]: Error: Duplicate entry 'MD12345' for key 'license_number'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Doctor.save (E:\Project 2\backend\models\Doctor.js:60:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async register (E:\Project 2\backend\controllers\authController.js:95:9)
+2025-06-08 12:21:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:33:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:37:32 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 12:52:47 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 13:27:29 [ERROR]: ❌ MySQL connection failed:
+2025-06-08 13:27:29 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 13:27:55 [ERROR]: MySQL query error:
+2025-06-08 13:27:55 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-08 13:27:55 [ERROR]: MySQL query error:
+2025-06-08 13:27:55 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-08 13:27:59 [ERROR]: MySQL query error:
+2025-06-08 13:27:59 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:28:09 [ERROR]: MySQL query error:
+2025-06-08 13:28:09 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:28:09 [ERROR]: MySQL query error:
+2025-06-08 13:28:09 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:28:10 [ERROR]: MySQL query error:
+2025-06-08 13:28:10 [ERROR]: Error
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:131:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-06-08 13:42:32 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 16:49:36 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 18:30:36 [ERROR]: ❌ MongoDB connection failed:

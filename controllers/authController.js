@@ -47,23 +47,53 @@ class AuthController {
       };
 
       const user = new User(userData);
-      await user.save();
-
-      // Create role-specific profile
-      if (role === 'patient' && profileData) {
+      await user.save();      // Create role-specific profile
+      if (role === 'patient') {
+        // Create basic patient profile with minimal data
         const patientData = {
           user_id: user.id,
-          ...profileData
+          gender: profileData?.gender || null,
+          date_of_birth: profileData?.date_of_birth || null,
+          address: profileData?.address || null,
+          emergency_contact_name: profileData?.emergency_contact_name || null,
+          emergency_contact_phone: profileData?.emergency_contact_phone || null,
+          preferred_language: profileData?.preferred_language || 'English'
         };
         const patient = new Patient(patientData);
         await patient.save();
-      } else if (role === 'doctor' && profileData) {
+        logger.info(`Patient profile created for user: ${user.id}`);      } else if (role === 'doctor' && profileData) {
+        console.log('ProfileData received:', JSON.stringify(profileData, null, 2)); // Debug log
+        console.log('specialization value:', profileData.specialization);
+        console.log('specialty value:', profileData.specialty);
+        
+        const specialty = profileData.specialization || profileData.specialty;
+        console.log('Final specialty value:', specialty);
+        
+        if (!specialty) {
+          return res.status(400).json({
+            success: false,
+            message: 'Specialty is required for doctor registration'
+          });
+        }
+        
         const doctorData = {
           user_id: user.id,
-          ...profileData
+          specialty: specialty,
+          license_number: profileData.license_number,
+          years_of_experience: profileData.experience_years || profileData.years_of_experience,
+          education: profileData.education,
+          certifications: profileData.certifications,
+          consultation_fee: profileData.consultation_fee,
+          languages_spoken: profileData.languages_spoken,
+          office_address: profileData.office_address,
+          bio: profileData.bio,
+          working_hours: profileData.working_hours,
+          availability_status: profileData.availability_status || 'available'
         };
+        console.log('DoctorData being saved:', JSON.stringify(doctorData, null, 2)); // Debug log
         const doctor = new Doctor(doctorData);
         await doctor.save();
+        logger.info(`Doctor profile created for user: ${user.id}`);
       }
 
       // Generate tokens
@@ -113,13 +143,33 @@ class AuthController {
           success: false,
           message: 'Invalid email or password'
         });
-      }
-
-      // Update last login
+      }      // Update last login
       await user.updateLastLogin();
 
       // Get user with profile information
       const userWithProfile = await User.findWithProfile(user.id);
+
+      // Clean up the user data for frontend response
+      const cleanUserData = {
+        id: userWithProfile.id,
+        name: userWithProfile.name,
+        email: userWithProfile.email,
+        role: userWithProfile.role,
+        phone: userWithProfile.phone,
+        avatar_url: userWithProfile.avatar_url,
+        is_active: userWithProfile.is_active,
+        email_verified: userWithProfile.email_verified,
+        last_login: userWithProfile.last_login,
+        created_at: userWithProfile.created_at,
+        updated_at: userWithProfile.updated_at,
+        // Include profile data if available
+        profile: {
+          patient_id: userWithProfile.patient_id,
+          doctor_id: userWithProfile.doctor_id,
+          specialty: userWithProfile.specialty,
+          // Add other relevant profile fields as needed
+        }
+      };
 
       // Generate tokens
       const token = generateToken(user.id);
@@ -131,7 +181,7 @@ class AuthController {
         success: true,
         message: 'Login successful',
         data: {
-          user: userWithProfile,
+          user: cleanUserData,
           token,
           refreshToken
         }

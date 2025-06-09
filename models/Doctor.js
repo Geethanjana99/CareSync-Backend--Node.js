@@ -36,15 +36,25 @@ class Doctor {
         office_address, bio, rating, total_reviews, working_hours,
         availability_status, commission_rate, status
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `;
-
-    const params = [
-      this.id, this.user_id, this.doctor_id, this.specialty, this.license_number,
-      this.years_of_experience, this.education, this.certifications,
-      this.consultation_fee, JSON.stringify(this.languages_spoken),
-      this.office_address, this.bio, this.rating, this.total_reviews,
-      JSON.stringify(this.working_hours), this.availability_status,
-      this.commission_rate, this.status
+    `;    const params = [
+      this.id, 
+      this.user_id, 
+      this.doctor_id, 
+      this.specialty || null, 
+      this.license_number || null,
+      this.years_of_experience || null, 
+      this.education || null, 
+      this.certifications || null,
+      this.consultation_fee || null, 
+      this.languages_spoken ? JSON.stringify(this.languages_spoken) : null,
+      this.office_address || null, 
+      this.bio || null, 
+      this.rating || 0.00, 
+      this.total_reviews || 0,
+      this.working_hours ? JSON.stringify(this.working_hours) : null, 
+      this.availability_status || 'available',
+      this.commission_rate || 25.00, 
+      this.status || 'active'
     ];
 
     await mysqlConnection.query(query, params);
