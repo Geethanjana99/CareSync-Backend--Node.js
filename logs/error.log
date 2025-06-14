@@ -1131,3 +1131,10 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 14:37:08 [ERROR]: MySQL query error:
+2025-06-09 14:37:08 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
