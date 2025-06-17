@@ -5,14 +5,14 @@ class MySQLConnection {
   constructor() {
     this.pool = null;
   }
-
   async connect() {
-    try {      this.pool = mysql.createPool({
-        host: process.env.MYSQL_HOST || 'localhost',
-        port: process.env.MYSQL_PORT || 3306,
-        user: process.env.MYSQL_USER || 'root',
-        password: process.env.MYSQL_PASSWORD || '',
-        database: process.env.MYSQL_DATABASE || 'clinical_appointment_system',
+    try {      
+      const mysqlConfig = {
+        host: process.env.MYSQL_HOST || 'caresyncdb-caresync.e.aivencloud.com',
+        port: process.env.MYSQL_PORT || 16006,
+        user: process.env.MYSQL_USER || 'avnadmin',
+        password: process.env.MYSQL_PASSWORD || 'AVNS_6xeaVpCVApextDTAKfU',
+        database: process.env.MYSQL_DATABASE || 'caresync',
         connectionLimit: parseInt(process.env.MYSQL_CONNECTION_LIMIT) || 10,
         queueLimit: 0,
         idleTimeout: 300000,
@@ -20,7 +20,16 @@ class MySQLConnection {
         timezone: '+00:00',
         supportBigNumbers: true,
         bigNumberStrings: true
-      });
+      };
+
+      // Add SSL configuration for Aiven.io
+      if (process.env.MYSQL_SSL === 'true') {
+        mysqlConfig.ssl = {
+          rejectUnauthorized: false
+        };
+      }
+
+      this.pool = mysql.createPool(mysqlConfig);
 
       // Test the connection
       const connection = await this.pool.getConnection();
