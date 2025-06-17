@@ -2195,3 +2195,140 @@
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-06-09 14:37:08 [INFO]: ::1 - - [09/Jun/2025:09:07:08 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-14 10:06:30 [INFO]: Socket.IO server initialized
+2025-06-14 10:06:30 [ERROR]: ❌ MySQL connection failed:
+2025-06-14 10:06:30 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-14 10:06:30 [ERROR]: ❌ MongoDB connection failed:
+2025-06-14 10:06:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-14 10:06:30 [INFO]: 📧 Notification service skipped for now
+2025-06-14 10:06:30 [INFO]: 🚀 Server running on port 5000
+2025-06-14 10:06:30 [INFO]: 📊 Environment: development
+2025-06-14 10:06:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-14 10:06:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-17 21:32:43 [INFO]: ✅ MySQL database connected successfully
+2025-06-17 21:32:45 [INFO]: MySQL connection pool closed
+2025-06-17 21:34:53 [INFO]: ✅ MySQL database connected successfully
+2025-06-17 21:34:59 [INFO]: MySQL connection pool closed
+2025-06-17 21:35:56 [INFO]: Socket.IO server initialized
+2025-06-17 21:35:58 [INFO]: ✅ MySQL database connected successfully
+2025-06-17 21:35:58 [INFO]: ✅ MySQL connected successfully
+2025-06-17 21:35:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:35:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-17 21:35:58 [INFO]: 📧 Notification service skipped for now
+2025-06-17 21:35:58 [INFO]: 🚀 Server running on port 5000
+2025-06-17 21:35:59 [INFO]: 📊 Environment: development
+2025-06-17 21:35:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-17 21:35:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-17 21:36:05 [INFO]: Socket.IO server initialized
+2025-06-17 21:36:06 [INFO]: ✅ MySQL database connected successfully
+2025-06-17 21:38:12 [INFO]: Socket.IO server initialized
+2025-06-17 21:38:14 [INFO]: ✅ MySQL database connected successfully
+2025-06-17 21:38:14 [INFO]: ✅ MySQL connected successfully
+2025-06-17 21:38:14 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:38:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-17 21:38:14 [INFO]: 📧 Notification service skipped for now
+2025-06-17 21:38:14 [INFO]: 🚀 Server running on port 5000
+2025-06-17 21:38:14 [INFO]: 📊 Environment: development
+2025-06-17 21:38:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-17 21:38:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-17 21:38:37 [INFO]: ::1 - - [17/Jun/2025:16:08:37 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "axios/1.9.0"
+2025-06-17 21:38:38 [INFO]: ::1 - - [17/Jun/2025:16:08:38 +0000] "POST /api/auth/register HTTP/1.1" 400 213 "-" "axios/1.9.0"
+2025-06-17 21:39:53 [INFO]: ::1 - - [17/Jun/2025:16:09:53 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "axios/1.9.0"
+2025-06-17 21:39:54 [INFO]: New user registered: api.test.doctor.1750176593464@example.com with role: doctor
+2025-06-17 21:39:54 [INFO]: ::1 - - [17/Jun/2025:16:09:54 +0000] "POST /api/auth/register HTTP/1.1" 201 719 "-" "axios/1.9.0"
+2025-06-17 21:39:56 [INFO]: User logged in: api.test.doctor.1750176593464@example.com
+2025-06-17 21:39:56 [INFO]: ::1 - - [17/Jun/2025:16:09:56 +0000] "POST /api/auth/login HTTP/1.1" 200 866 "-" "axios/1.9.0"
+2025-06-17 21:39:56 [INFO]: ::1 - - [17/Jun/2025:16:09:56 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "-" "axios/1.9.0"
+2025-06-17 21:41:47 [INFO]: New user registered: basic.test.1750176706690@example.com with role: doctor
+2025-06-17 21:41:47 [INFO]: ::1 - - [17/Jun/2025:16:11:47 +0000] "POST /api/auth/register HTTP/1.1" 201 716 "-" "axios/1.9.0"
+2025-06-17 21:41:48 [INFO]: User logged in: basic.test.1750176706690@example.com
+2025-06-17 21:41:48 [INFO]: ::1 - - [17/Jun/2025:16:11:48 +0000] "POST /api/auth/login HTTP/1.1" 200 863 "-" "axios/1.9.0"
+2025-06-17 21:41:48 [INFO]: ::1 - - [17/Jun/2025:16:11:48 +0000] "GET /api/auth/profile HTTP/1.1" 200 936 "-" "axios/1.9.0"
+2025-06-17 21:42:53 [INFO]: Doctor profile created for user: 283706f1-ec20-4356-af8e-5c1b278c7613
+2025-06-17 21:42:53 [INFO]: New user registered: complete.doctor.1750176771749@example.com with role: doctor
+2025-06-17 21:42:53 [INFO]: ::1 - - [17/Jun/2025:16:12:53 +0000] "POST /api/auth/register HTTP/1.1" 201 724 "-" "axios/1.9.0"
+2025-06-17 21:42:54 [INFO]: User logged in: complete.doctor.1750176771749@example.com
+2025-06-17 21:42:54 [INFO]: ::1 - - [17/Jun/2025:16:12:54 +0000] "POST /api/auth/login HTTP/1.1" 200 881 "-" "axios/1.9.0"
+2025-06-17 21:42:54 [INFO]: ::1 - - [17/Jun/2025:16:12:54 +0000] "GET /api/doctors/profile HTTP/1.1" 200 730 "-" "axios/1.9.0"
+2025-06-17 21:42:58 [ERROR]: MySQL query error:
+2025-06-17 21:42:58 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:42:58 [INFO]: ::1 - - [17/Jun/2025:16:12:58 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 619 "-" "axios/1.9.0"
+2025-06-17 21:42:59 [INFO]: ::1 - - [17/Jun/2025:16:12:59 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "-" "axios/1.9.0"
+2025-06-17 21:43:00 [ERROR]: TypeError: Doctor.getStatistics is not a function
+    at getStatistics (E:\Project 2\backend\controllers\doctorController.js:363:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:43:00 [ERROR]: TypeError: Doctor.getStatistics is not a function
+    at getStatistics (E:\Project 2\backend\controllers\doctorController.js:363:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:43:00 [INFO]: ::1 - - [17/Jun/2025:16:13:00 +0000] "GET /api/doctors/statistics HTTP/1.1" 500 300 "-" "axios/1.9.0"
+2025-06-17 21:44:13 [INFO]: Doctor profile created for user: cd65f3be-0af9-412c-af72-c57c92b0a83c
+2025-06-17 21:44:13 [INFO]: New user registered: final.verification.1750176851809@example.com with role: doctor
+2025-06-17 21:44:13 [INFO]: ::1 - - [17/Jun/2025:16:14:13 +0000] "POST /api/auth/register HTTP/1.1" 201 732 "-" "axios/1.9.0"
+2025-06-17 21:44:15 [INFO]: User logged in: final.verification.1750176851809@example.com
+2025-06-17 21:44:15 [INFO]: ::1 - - [17/Jun/2025:16:14:15 +0000] "POST /api/auth/login HTTP/1.1" 200 895 "-" "axios/1.9.0"
+2025-06-17 21:44:15 [INFO]: ::1 - - [17/Jun/2025:16:14:15 +0000] "GET /api/doctors/profile HTTP/1.1" 200 577 "-" "axios/1.9.0"
+2025-06-17 21:44:17 [ERROR]: MySQL query error:
+2025-06-17 21:44:17 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:17 [INFO]: ::1 - - [17/Jun/2025:16:14:17 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 713 "-" "axios/1.9.0"
+2025-06-17 21:44:18 [INFO]: ::1 - - [17/Jun/2025:16:14:18 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "-" "axios/1.9.0"
+2025-06-17 21:44:18 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:18 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:18 [INFO]: ::1 - - [17/Jun/2025:16:14:18 +0000] "PUT /api/doctors/profile HTTP/1.1" 500 285 "-" "axios/1.9.0"
+2025-06-17 21:45:56 [INFO]: Doctor profile created for user: 8c46741e-c799-41c9-985b-3e1b7c168637
+2025-06-17 21:45:56 [INFO]: New user registered: success.summary.1750176954310@example.com with role: doctor
+2025-06-17 21:45:56 [INFO]: ::1 - - [17/Jun/2025:16:15:56 +0000] "POST /api/auth/register HTTP/1.1" 201 726 "-" "axios/1.9.0"
+2025-06-17 21:45:57 [INFO]: User logged in: success.summary.1750176954310@example.com
+2025-06-17 21:45:57 [INFO]: ::1 - - [17/Jun/2025:16:15:57 +0000] "POST /api/auth/login HTTP/1.1" 200 884 "-" "axios/1.9.0"
+2025-06-17 21:45:58 [INFO]: ::1 - - [17/Jun/2025:16:15:58 +0000] "GET /api/doctors/profile HTTP/1.1" 200 578 "-" "axios/1.9.0"
+2025-06-17 21:46:00 [ERROR]: MySQL query error:
+2025-06-17 21:46:00 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:46:00 [INFO]: ::1 - - [17/Jun/2025:16:16:00 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 707 "-" "axios/1.9.0"
+2025-06-17 21:46:00 [INFO]: ::1 - - [17/Jun/2025:16:16:00 +0000] "GET /api/auth/profile HTTP/1.1" 200 1015 "-" "axios/1.9.0"
+2025-06-17 21:46:01 [INFO]: ::1 - - [17/Jun/2025:16:16:01 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "-" "axios/1.9.0"
+2025-06-17 21:46:45 [INFO]: Socket.IO server initialized
+2025-06-17 21:46:46 [INFO]: ✅ MySQL database connected successfully
+2025-06-17 21:46:46 [INFO]: ✅ MySQL connected successfully
+2025-06-17 21:46:46 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:46:46 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-17 21:46:46 [INFO]: 📧 Notification service skipped for now
+2025-06-17 21:46:46 [INFO]: 🚀 Server running on port 5000
+2025-06-17 21:46:46 [INFO]: 📊 Environment: development
+2025-06-17 21:46:46 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-17 21:46:46 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-17 21:47:55 [INFO]: ::1 - - [17/Jun/2025:16:17:55 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:49:06 [INFO]: ::1 - - [17/Jun/2025:16:19:06 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:49:49 [INFO]: New user registered: geetha@gmail.com with role: admin
+2025-06-17 21:49:49 [INFO]: ::1 - - [17/Jun/2025:16:19:49 +0000] "POST /api/auth/register HTTP/1.1" 201 704 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:49:57 [INFO]: User logged out: geetha@gmail.com
+2025-06-17 21:49:57 [INFO]: ::1 - - [17/Jun/2025:16:19:57 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:49:58 [INFO]: ::1 - - [17/Jun/2025:16:19:58 +0000] "GET /api/auth/profile HTTP/1.1" 200 902 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:51:18 [INFO]: Doctor profile created for user: 219bdb02-a2a2-47f3-a2f5-346f79565177
+2025-06-17 21:51:18 [INFO]: New user registered: doctor@caresync.com with role: doctor
+2025-06-17 21:51:18 [INFO]: ::1 - - [17/Jun/2025:16:21:18 +0000] "POST /api/auth/register HTTP/1.1" 201 696 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:51:21 [ERROR]: MySQL query error:
+2025-06-17 21:51:21 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:51:21 [INFO]: ::1 - - [17/Jun/2025:16:21:21 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 682 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"

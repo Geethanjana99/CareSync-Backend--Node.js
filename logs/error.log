@@ -1138,3 +1138,49 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-14 10:06:30 [ERROR]: ❌ MySQL connection failed:
+2025-06-14 10:06:30 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:35:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:36:06 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:38:14 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:42:58 [ERROR]: MySQL query error:
+2025-06-17 21:42:58 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:43:00 [ERROR]: TypeError: Doctor.getStatistics is not a function
+    at getStatistics (E:\Project 2\backend\controllers\doctorController.js:363:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:43:00 [ERROR]: TypeError: Doctor.getStatistics is not a function
+    at getStatistics (E:\Project 2\backend\controllers\doctorController.js:363:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:17 [ERROR]: MySQL query error:
+2025-06-17 21:44:17 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:18 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:18 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:46:00 [ERROR]: MySQL query error:
+2025-06-17 21:46:00 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:46:46 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:51:21 [ERROR]: MySQL query error:
+2025-06-17 21:51:21 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
