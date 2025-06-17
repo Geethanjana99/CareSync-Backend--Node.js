@@ -63,6 +63,25 @@ class Appointment {
     return appointments.length > 0 ? new Appointment(appointments[0]) : null;
   }
 
+  // Find today's appointments for a specific doctor
+  static async findTodayByDoctorId(doctorId) {
+    const query = `
+      SELECT a.*, 
+             p.patient_id, pu.name as patient_name, pu.phone as patient_phone,
+             d.doctor_id, du.name as doctor_name, d.specialty
+      FROM appointments a
+      LEFT JOIN patients p ON a.patient_id = p.id
+      LEFT JOIN users pu ON p.user_id = pu.id
+      LEFT JOIN doctors d ON a.doctor_id = d.id
+      LEFT JOIN users du ON d.user_id = du.id
+      WHERE a.doctor_id = ? AND DATE(a.appointment_date) = CURDATE()
+      ORDER BY a.appointment_time ASC
+    `;
+    
+    const results = await mysqlConnection.query(query, [doctorId]);
+    return results.map(row => new Appointment(row));
+  }
+
   static async findAll(filters = {}) {
     let query = `
       SELECT a.*, 
@@ -291,6 +310,31 @@ class Appointment {
     return this;
   }
 
+  // Static method to update appointment status - for backward compatibility
+  static async updateStatus(appointmentId, status, notes = null) {
+    const appointment = await Appointment.findById(appointmentId);
+    if (!appointment) {
+      throw new Error('Appointment not found');
+    }
+
+    const updateData = { status };
+    if (notes) {
+      updateData.notes = notes;
+    }
+
+    // Set appropriate timestamp based on status
+    if (status === 'confirmed') {
+      updateData.confirmed_at = new Date();
+    } else if (status === 'completed') {
+      updateData.completed_at = new Date();
+    } else if (status === 'cancelled') {
+      updateData.cancelled_at = new Date();
+    }
+
+    await appointment.update(updateData);
+    return appointment;
+  }
+
   // Get appointment with full details
   static async findWithDetails(appointmentId) {
     const query = `
@@ -363,6 +407,65 @@ class Appointment {
 
     const result = await mysqlConnection.query(query, params);
     return result[0];
+  }
+
+  // Add medical notes to appointment - for doctor use
+  static async addMedicalNotes(appointmentId, medicalData) {
+    const appointment = await Appointment.findById(appointmentId);
+    if (!appointment) {
+      throw new Error('Appointment not found');
+    }
+
+    const { diagnosis, prescription, notes, follow_up_required, follow_up_date } = medicalData;
+    
+    // Update appointment with medical information
+    const updateData = {
+      status: 'completed', // Mark as completed when notes are added
+      completed_at: new Date()
+    };
+
+    // Add medical notes to the existing notes field (combining consultation and medical notes)
+    const medicalNotes = {
+      diagnosis: diagnosis || '',
+      prescription: prescription || '',
+      medical_notes: notes || '',
+      follow_up_required: follow_up_required || false,
+      follow_up_date: follow_up_date || null,
+      added_at: new Date().toISOString()
+    };
+
+    // Combine with existing notes if any
+    let combinedNotes = appointment.notes || '';
+    if (combinedNotes) {
+      combinedNotes += '\n\n--- MEDICAL NOTES ---\n';
+    } else {
+      combinedNotes = '--- MEDICAL NOTES ---\n';
+    }
+    
+    combinedNotes += `Diagnosis: ${diagnosis || 'Not specified'}\n`;
+    combinedNotes += `Prescription: ${prescription || 'None'}\n`;
+    combinedNotes += `Medical Notes: ${notes || 'None'}\n`;
+    combinedNotes += `Follow-up Required: ${follow_up_required ? 'Yes' : 'No'}\n`;
+    if (follow_up_date) {
+      combinedNotes += `Follow-up Date: ${follow_up_date}\n`;
+    }
+    combinedNotes += `Added: ${new Date().toLocaleString()}\n`;
+
+    updateData.notes = combinedNotes;
+
+    await appointment.update(updateData);
+
+    // Return the structured medical notes for the response
+    return {
+      appointment_id: appointmentId,
+      diagnosis,
+      prescription,
+      notes,
+      follow_up_required,
+      follow_up_date,
+      added_at: new Date(),
+      appointment_status: 'completed'
+    };
   }
 }
 

@@ -6,7 +6,7 @@ const auth = require('../middleware/auth');
 
 // All routes require doctor authentication
 router.use(auth.authMiddleware);
-router.use(auth.authorize(['doctor']));
+router.use(auth.authorize('doctor'));
 
 // Profile management
 router.get('/profile', DoctorController.getProfile);
@@ -23,6 +23,7 @@ router.put('/availability', doctorValidation.updateAvailability, DoctorControlle
 router.get('/appointments/today', DoctorController.getTodayAppointments);
 router.get('/appointments', DoctorController.getAppointmentHistory);
 router.patch('/appointments/:appointmentId/status', DoctorController.updateAppointmentStatus);
+router.patch('/appointments/:appointmentId/action', DoctorController.handleAppointmentAction);
 router.post('/appointments/:appointmentId/notes', DoctorController.addMedicalNotes);
 
 // Patient information
