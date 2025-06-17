@@ -267,3 +267,920 @@
     at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
     at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
 2025-06-08 13:42:32 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 16:49:36 [ERROR]: ❌ MongoDB connection failed:
+2025-06-08 18:30:36 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:29:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:30:21 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:30:48 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:31:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:32:34 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:32:51 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:39:36 [ERROR]: MySQL query error:
+2025-06-09 12:39:36 [ERROR]: TypeError: Cannot read properties of null (reading 'execute')
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at Object.authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at testMiddleware (E:\Project 2\backend\debug-middleware.js:94:16)
+    at Object.<anonymous> (E:\Project 2\backend\debug-middleware.js:115:3)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-06-09 12:40:28 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:41:32 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:41:46 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTodayAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:7)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:394:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:41:46 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:519:7)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:397:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:41:46 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getMonthlyEarnings (E:\Project 2\backend\controllers\doctorController.js:538:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:404:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:41:46 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTotalPatients (E:\Project 2\backend\controllers\doctorController.js:555:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:405:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:41:46 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTotalAppointments (E:\Project 2\backend\controllers\doctorController.js:574:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:406:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:41:46 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:591:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:407:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:42:31 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTodayAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:7)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:394:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:42:31 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:519:7)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:397:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:42:31 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getMonthlyEarnings (E:\Project 2\backend\controllers\doctorController.js:538:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:404:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:42:31 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTotalPatients (E:\Project 2\backend\controllers\doctorController.js:555:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:405:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:42:31 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTotalAppointments (E:\Project 2\backend\controllers\doctorController.js:574:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:406:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:42:31 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:591:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:407:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:45:43 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTodayAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:7)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:394:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:45:43 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:519:7)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:397:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:45:43 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getMonthlyEarnings (E:\Project 2\backend\controllers\doctorController.js:538:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:404:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:45:43 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTotalPatients (E:\Project 2\backend\controllers\doctorController.js:555:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:405:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:45:43 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getTotalAppointments (E:\Project 2\backend\controllers\doctorController.js:574:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:406:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:45:43 [ERROR]: ReferenceError: mysqlConnection is not defined
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:591:22)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:407:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:46:29 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:46:37 [ERROR]: MySQL query error:
+2025-06-09 12:46:37 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:47:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:47:17 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:47:40 [ERROR]: MySQL query error:
+2025-06-09 12:47:40 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:47:40 [ERROR]: TypeError: Appointment.addMedicalNotes is not a function
+    at addMedicalNotes (E:\Project 2\backend\controllers\doctorController.js:302:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:47:40 [ERROR]: TypeError: Appointment.addMedicalNotes is not a function
+    at addMedicalNotes (E:\Project 2\backend\controllers\doctorController.js:302:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:47:40 [ERROR]: MySQL query error:
+2025-06-09 12:47:40 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:49:22 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:49:44 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:49:48 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:50:07 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:50:28 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:50:37 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-09 12:50:46 [ERROR]: MySQL query error:
+2025-06-09 12:50:46 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:51:44 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-09 12:51:52 [ERROR]: MySQL query error:
+2025-06-09 12:51:52 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:52:05 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:52:18 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:52:27 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:52:32 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-09 12:53:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:53:27 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:53:37 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:53:49 [ERROR]: TypeError: Appointment.findTodayByDoctorId is not a function
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:157:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:53:49 [ERROR]: TypeError: Appointment.findTodayByDoctorId is not a function
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:157:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 12:56:01 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:56:24 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 12:56:32 [ERROR]: MySQL query error:
+2025-06-09 12:56:32 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:00:19 [ERROR]: MySQL query error:
+2025-06-09 13:00:19 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:00:52 [ERROR]: MySQL query error:
+2025-06-09 13:01:36 [ERROR]: MySQL query error:
+2025-06-09 13:03:01 [ERROR]: MySQL query error:
+2025-06-09 13:03:57 [ERROR]: MySQL query error:
+2025-06-09 13:03:57 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:03:57 [ERROR]: MySQL query error:
+2025-06-09 13:03:57 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:04:06 [ERROR]: MySQL query error:
+2025-06-09 13:04:06 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:04:53 [ERROR]: MySQL query error:
+2025-06-09 13:04:53 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:06:52 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 13:10:07 [ERROR]: MySQL query error:
+2025-06-09 13:10:07 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:10 [ERROR]: MySQL query error:
+2025-06-09 13:10:10 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:11 [ERROR]: MySQL query error:
+2025-06-09 13:10:11 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:11 [ERROR]: MySQL query error:
+2025-06-09 13:10:11 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:12 [ERROR]: MySQL query error:
+2025-06-09 13:10:12 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:13 [ERROR]: MySQL query error:
+2025-06-09 13:10:13 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:13 [ERROR]: MySQL query error:
+2025-06-09 13:10:13 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:14 [ERROR]: MySQL query error:
+2025-06-09 13:10:14 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:14 [ERROR]: MySQL query error:
+2025-06-09 13:10:14 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:15 [ERROR]: MySQL query error:
+2025-06-09 13:10:15 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:15 [ERROR]: MySQL query error:
+2025-06-09 13:10:15 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:15 [ERROR]: MySQL query error:
+2025-06-09 13:10:15 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:15 [ERROR]: MySQL query error:
+2025-06-09 13:10:15 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:16 [ERROR]: MySQL query error:
+2025-06-09 13:10:16 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:16 [ERROR]: MySQL query error:
+2025-06-09 13:10:16 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:16 [ERROR]: MySQL query error:
+2025-06-09 13:10:16 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:17 [ERROR]: MySQL query error:
+2025-06-09 13:10:17 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:17 [ERROR]: MySQL query error:
+2025-06-09 13:10:17 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:17 [ERROR]: MySQL query error:
+2025-06-09 13:10:17 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:17 [ERROR]: MySQL query error:
+2025-06-09 13:10:17 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:17 [ERROR]: MySQL query error:
+2025-06-09 13:10:17 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:18 [ERROR]: MySQL query error:
+2025-06-09 13:10:18 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:18 [ERROR]: MySQL query error:
+2025-06-09 13:10:18 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:18 [ERROR]: MySQL query error:
+2025-06-09 13:10:18 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:18 [ERROR]: MySQL query error:
+2025-06-09 13:10:18 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:18 [ERROR]: MySQL query error:
+2025-06-09 13:10:18 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:19 [ERROR]: MySQL query error:
+2025-06-09 13:10:19 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:19 [ERROR]: MySQL query error:
+2025-06-09 13:10:19 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:19 [ERROR]: MySQL query error:
+2025-06-09 13:10:19 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:19 [ERROR]: MySQL query error:
+2025-06-09 13:10:19 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:19 [ERROR]: MySQL query error:
+2025-06-09 13:10:19 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:20 [ERROR]: MySQL query error:
+2025-06-09 13:10:20 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:20 [ERROR]: MySQL query error:
+2025-06-09 13:10:20 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:20 [ERROR]: MySQL query error:
+2025-06-09 13:10:20 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:21 [ERROR]: MySQL query error:
+2025-06-09 13:10:21 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:21 [ERROR]: MySQL query error:
+2025-06-09 13:10:21 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:21 [ERROR]: MySQL query error:
+2025-06-09 13:10:21 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:21 [ERROR]: MySQL query error:
+2025-06-09 13:10:21 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:22 [ERROR]: MySQL query error:
+2025-06-09 13:10:22 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:22 [ERROR]: MySQL query error:
+2025-06-09 13:10:22 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:22 [ERROR]: MySQL query error:
+2025-06-09 13:10:22 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:22 [ERROR]: MySQL query error:
+2025-06-09 13:10:22 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:22 [ERROR]: MySQL query error:
+2025-06-09 13:10:22 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:23 [ERROR]: MySQL query error:
+2025-06-09 13:10:23 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:23 [ERROR]: MySQL query error:
+2025-06-09 13:10:23 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:23 [ERROR]: MySQL query error:
+2025-06-09 13:10:23 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:23 [ERROR]: MySQL query error:
+2025-06-09 13:10:23 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:24 [ERROR]: MySQL query error:
+2025-06-09 13:10:24 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:24 [ERROR]: MySQL query error:
+2025-06-09 13:10:24 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:24 [ERROR]: MySQL query error:
+2025-06-09 13:10:24 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:24 [ERROR]: MySQL query error:
+2025-06-09 13:10:24 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:24 [ERROR]: MySQL query error:
+2025-06-09 13:10:24 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:25 [ERROR]: MySQL query error:
+2025-06-09 13:10:25 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:26 [ERROR]: MySQL query error:
+2025-06-09 13:10:26 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:26 [ERROR]: MySQL query error:
+2025-06-09 13:10:26 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:27 [ERROR]: MySQL query error:
+2025-06-09 13:10:27 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:27 [ERROR]: MySQL query error:
+2025-06-09 13:10:27 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:28 [ERROR]: MySQL query error:
+2025-06-09 13:10:28 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:29 [ERROR]: MySQL query error:
+2025-06-09 13:10:29 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:31 [ERROR]: MySQL query error:
+2025-06-09 13:10:31 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:31 [ERROR]: MySQL query error:
+2025-06-09 13:10:31 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:32 [ERROR]: MySQL query error:
+2025-06-09 13:10:32 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:33 [ERROR]: MySQL query error:
+2025-06-09 13:10:33 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:34 [ERROR]: MySQL query error:
+2025-06-09 13:10:34 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:34 [ERROR]: MySQL query error:
+2025-06-09 13:10:34 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:35 [ERROR]: MySQL query error:
+2025-06-09 13:10:35 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:35 [ERROR]: MySQL query error:
+2025-06-09 13:10:35 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:36 [ERROR]: MySQL query error:
+2025-06-09 13:10:36 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:37 [ERROR]: MySQL query error:
+2025-06-09 13:10:37 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:37 [ERROR]: MySQL query error:
+2025-06-09 13:10:37 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:38 [ERROR]: MySQL query error:
+2025-06-09 13:10:38 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:39 [ERROR]: MySQL query error:
+2025-06-09 13:10:39 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:39 [ERROR]: MySQL query error:
+2025-06-09 13:10:39 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:40 [ERROR]: MySQL query error:
+2025-06-09 13:10:40 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:41 [ERROR]: MySQL query error:
+2025-06-09 13:10:41 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:41 [ERROR]: MySQL query error:
+2025-06-09 13:10:41 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:42 [ERROR]: MySQL query error:
+2025-06-09 13:10:42 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:10:44 [ERROR]: MySQL query error:
+2025-06-09 13:10:44 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:12:34 [ERROR]: ❌ MongoDB connection failed:
+2025-06-09 13:13:06 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-09 13:13:54 [ERROR]: MySQL query error:
+2025-06-09 13:13:54 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:14:23 [ERROR]: MySQL query error:
+2025-06-09 13:14:23 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:14:54 [ERROR]: MySQL query error:
+2025-06-09 13:14:54 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:14:57 [ERROR]: MySQL query error:
+2025-06-09 13:14:57 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:15:00 [ERROR]: MySQL query error:
+2025-06-09 13:15:00 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:15:11 [ERROR]: MySQL query error:
+2025-06-09 13:15:11 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:15:15 [ERROR]: MySQL query error:
+2025-06-09 13:15:15 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:17:06 [ERROR]: MySQL query error:
+2025-06-09 13:17:06 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:20:25 [ERROR]: MySQL query error:
+2025-06-09 13:20:25 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 13:20:33 [ERROR]: MySQL query error:
+2025-06-09 13:20:33 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-09 14:37:08 [ERROR]: MySQL query error:
+2025-06-09 14:37:08 [ERROR]: Error: Table 'clinical_appointment_system.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:40:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-14 10:06:30 [ERROR]: ❌ MySQL connection failed:
+2025-06-14 10:06:30 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:35:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:36:06 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:38:14 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:42:58 [ERROR]: MySQL query error:
+2025-06-17 21:42:58 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:43:00 [ERROR]: TypeError: Doctor.getStatistics is not a function
+    at getStatistics (E:\Project 2\backend\controllers\doctorController.js:363:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:43:00 [ERROR]: TypeError: Doctor.getStatistics is not a function
+    at getStatistics (E:\Project 2\backend\controllers\doctorController.js:363:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:17 [ERROR]: MySQL query error:
+2025-06-17 21:44:17 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:18 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:44:18 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:46:00 [ERROR]: MySQL query error:
+2025-06-17 21:46:00 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-17 21:46:46 [ERROR]: ❌ MongoDB connection failed:
+2025-06-17 21:51:21 [ERROR]: MySQL query error:
+2025-06-17 21:51:21 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
