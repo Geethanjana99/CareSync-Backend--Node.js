@@ -2332,3 +2332,33 @@
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-06-17 21:51:21 [INFO]: ::1 - - [17/Jun/2025:16:21:21 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 682 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:57:43 [INFO]: User logged out: doctor@caresync.com
+2025-06-17 21:57:43 [INFO]: ::1 - - [17/Jun/2025:16:27:43 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:57:43 [INFO]: ::1 - - [17/Jun/2025:16:27:43 +0000] "GET /api/auth/profile HTTP/1.1" 200 910 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:58:07 [INFO]: ::1 - - [17/Jun/2025:16:28:07 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-17 21:59:03 [INFO]: Patient profile created for user: 43f5e90e-3c8d-448b-96bb-29de2080976c
+2025-06-17 21:59:03 [INFO]: New user registered: patient@caresync.com with role: patient
+2025-06-17 21:59:03 [INFO]: ::1 - - [17/Jun/2025:16:29:03 +0000] "POST /api/auth/register HTTP/1.1" 201 694 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 10:13:24 [INFO]: Socket.IO server initialized
+2025-06-23 10:13:26 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:13:26 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:13:26 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:13:26 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:13:26 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:13:26 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:13:26 [INFO]: 📊 Environment: development
+2025-06-23 10:13:26 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:13:26 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:13:52 [INFO]: Doctor profile created for user: 879bd81f-e2f7-47eb-a13d-5574c1dfde8c
+2025-06-23 10:13:52 [INFO]: New user registered: redirect.test.1750653831212@example.com with role: doctor
+2025-06-23 10:13:52 [INFO]: ::1 - - [23/Jun/2025:04:43:52 +0000] "POST /api/auth/register HTTP/1.1" 201 281 "-" "axios/1.9.0"
+2025-06-23 10:13:53 [INFO]: User logged in: redirect.test.1750653831212@example.com
+2025-06-23 10:13:53 [INFO]: ::1 - - [23/Jun/2025:04:43:53 +0000] "POST /api/auth/login HTTP/1.1" 200 879 "-" "axios/1.9.0"
+2025-06-23 10:13:54 [ERROR]: MySQL query error:
+2025-06-23 10:13:54 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 10:13:55 [INFO]: ::1 - - [23/Jun/2025:04:43:55 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 693 "-" "axios/1.9.0"
