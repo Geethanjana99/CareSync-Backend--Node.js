@@ -1184,6 +1184,7 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+<<<<<<< HEAD
 2025-06-23 10:03:10 [ERROR]: ❌ MongoDB connection failed:
 2025-06-23 10:06:52 [ERROR]: MySQL query error:
 2025-06-23 10:06:52 [ERROR]: Error: read ECONNRESET
@@ -1197,3 +1198,51 @@
     at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
     at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
     at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+=======
+2025-06-23 10:13:26 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:13:54 [ERROR]: MySQL query error:
+2025-06-23 10:13:54 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 10:19:02 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:23:39 [ERROR]: ❌ MongoDB connection failed:
+>>>>>>> 339be890948e3a46b0af5484d1e6a4d2513b6002
+2025-06-23 23:53:52 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 23:54:23 [ERROR]: MySQL query error:
+2025-06-23 23:54:23 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:592:44)
+    at getDashboard (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 23:55:50 [ERROR]: MySQL query error:
+2025-06-23 23:55:50 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:592:44)
+    at getDashboard (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 23:57:46 [ERROR]: MySQL query error:
+2025-06-23 23:57:46 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:592:44)
+    at getDashboard (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 23:59:55 [ERROR]: MySQL query error:
+2025-06-23 23:59:55 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:592:44)
+    at getDashboard (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 00:07:24 [ERROR]: MySQL query error:
+2025-06-24 00:07:24 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:592:44)
+    at getDashboard (D:\Projects\CareSync-Backend--Node.js\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
