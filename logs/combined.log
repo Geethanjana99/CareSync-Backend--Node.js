@@ -3754,3 +3754,330 @@
 2025-06-24 08:57:06 [INFO]: User logged in: patient.test.new@example.com
 2025-06-24 08:57:06 [INFO]: ::1 - - [24/Jun/2025:03:27:06 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
 2025-06-24 08:57:07 [INFO]: ::1 - - [24/Jun/2025:03:27:07 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 200 879 "-" "axios/1.9.0"
+2025-06-24 12:24:31 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 12:24:33 [INFO]: MySQL connection pool closed
+2025-06-24 12:28:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 12:28:29 [INFO]: MySQL connection pool closed
+2025-06-24 12:31:42 [INFO]: Socket.IO server initialized
+2025-06-24 12:31:44 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 12:31:44 [INFO]: ✅ MySQL connected successfully
+2025-06-24 12:31:44 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 12:31:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 12:31:44 [INFO]: 📧 Notification service skipped for now
+2025-06-24 12:31:44 [INFO]: 🚀 Server running on port 5000
+2025-06-24 12:31:44 [INFO]: 📊 Environment: development
+2025-06-24 12:31:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 12:31:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 12:36:29 [INFO]: User logged in: patient.test@example.com
+2025-06-24 12:36:29 [INFO]: ::1 - - [24/Jun/2025:07:06:29 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:36:30 [INFO]: ::1 - - [24/Jun/2025:07:06:30 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:36:45 [INFO]: User logged out: patient.test@example.com
+2025-06-24 12:36:45 [INFO]: ::1 - - [24/Jun/2025:07:06:45 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:36:46 [INFO]: ::1 - - [24/Jun/2025:07:06:46 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:36:54 [INFO]: User logged in: patient.test@example.com
+2025-06-24 12:36:54 [INFO]: ::1 - - [24/Jun/2025:07:06:54 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:36:54 [INFO]: ::1 - - [24/Jun/2025:07:06:54 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:37:02 [INFO]: ::1 - - [24/Jun/2025:07:07:02 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:37:03 [INFO]: ::1 - - [24/Jun/2025:07:07:03 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:37:03 [INFO]: ::1 - - [24/Jun/2025:07:07:03 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:37:56 [INFO]: User logged in: patient.test@example.com
+2025-06-24 12:37:56 [INFO]: ::1 - - [24/Jun/2025:07:07:56 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:37:56 [INFO]: ::1 - - [24/Jun/2025:07:07:56 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:38:51 [INFO]: ::1 - - [24/Jun/2025:07:08:51 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:00 [INFO]: ::1 - - [24/Jun/2025:07:09:00 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:03 [INFO]: ::1 - - [24/Jun/2025:07:09:03 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:14 [INFO]: ::1 - - [24/Jun/2025:07:09:14 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:24 [INFO]: ::1 - - [24/Jun/2025:07:09:24 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:24 [INFO]: ::1 - - [24/Jun/2025:07:09:24 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:26 [INFO]: ::1 - - [24/Jun/2025:07:09:26 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:30 [INFO]: ::1 - - [24/Jun/2025:07:09:30 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:39:31 [INFO]: ::1 - - [24/Jun/2025:07:09:31 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:42:19 [INFO]: ::1 - - [24/Jun/2025:07:12:19 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:42:21 [INFO]: ::1 - - [24/Jun/2025:07:12:21 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:42:23 [INFO]: ::1 - - [24/Jun/2025:07:12:23 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:42:33 [INFO]: ::1 - - [24/Jun/2025:07:12:33 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:43:26 [INFO]: ::1 - - [24/Jun/2025:07:13:26 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:43:31 [INFO]: ::1 - - [24/Jun/2025:07:13:31 +0000] "PUT /api/appointments/573a6ec4-6cc1-4358-8860-3f195f75da44/cancel HTTP/1.1" 404 123 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 12:44:09 [INFO]: ::1 - - [24/Jun/2025:07:14:09 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:37:06 [ERROR]: MySQL query error:
+2025-06-24 13:37:06 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (D:\Project 2\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Project 2\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Project 2\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (D:\Project 2\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-24 13:37:06 [INFO]: ::1 - - [24/Jun/2025:08:07:06 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:37:06 [ERROR]: MySQL query error:
+2025-06-24 13:37:06 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (D:\Project 2\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Project 2\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Project 2\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (D:\Project 2\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-24 13:37:06 [INFO]: ::1 - - [24/Jun/2025:08:07:06 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:37:10 [ERROR]: MySQL query error:
+2025-06-24 13:37:10 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (D:\Project 2\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Project 2\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Project 2\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Project 2\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Project 2\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Project 2\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Project 2\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-24 13:37:10 [INFO]: ::1 - - [24/Jun/2025:08:07:10 +0000] "POST /api/auth/login HTTP/1.1" 500 111 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:37:17 [ERROR]: MySQL query error:
+2025-06-24 13:37:17 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (D:\Project 2\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Project 2\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Project 2\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Project 2\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Project 2\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Project 2\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Project 2\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Project 2\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-24 13:37:17 [INFO]: ::1 - - [24/Jun/2025:08:07:17 +0000] "POST /api/auth/login HTTP/1.1" 500 111 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:38:09 [INFO]: Socket.IO server initialized
+2025-06-24 13:38:11 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 13:38:11 [INFO]: ✅ MySQL connected successfully
+2025-06-24 13:38:11 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 13:38:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 13:38:11 [INFO]: 📧 Notification service skipped for now
+2025-06-24 13:38:11 [INFO]: 🚀 Server running on port 5000
+2025-06-24 13:38:11 [INFO]: 📊 Environment: development
+2025-06-24 13:38:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 13:38:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 13:38:36 [INFO]: User logged in: patient.test@example.com
+2025-06-24 13:38:36 [INFO]: ::1 - - [24/Jun/2025:08:08:36 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:38:37 [INFO]: ::1 - - [24/Jun/2025:08:08:37 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:39:04 [INFO]: ::1 - - [24/Jun/2025:08:09:04 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:39:14 [INFO]: ::1 - - [24/Jun/2025:08:09:14 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:40:18 [INFO]: ::1 - - [24/Jun/2025:08:10:18 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:40:21 [INFO]: ::1 - - [24/Jun/2025:08:10:21 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:40:27 [INFO]: ::1 - - [24/Jun/2025:08:10:27 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:43:24 [INFO]: ::1 - - [24/Jun/2025:08:13:24 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:43:35 [INFO]: ::1 - - [24/Jun/2025:08:13:35 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:43:45 [INFO]: ::1 - - [24/Jun/2025:08:13:45 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:43:54 [INFO]: ::1 - - [24/Jun/2025:08:13:54 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:44:15 [INFO]: ::1 - - [24/Jun/2025:08:14:15 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:44:16 [INFO]: ::1 - - [24/Jun/2025:08:14:16 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:44:22 [INFO]: User logged in: patient.test@example.com
+2025-06-24 13:44:22 [INFO]: ::1 - - [24/Jun/2025:08:14:22 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:44:23 [INFO]: ::1 - - [24/Jun/2025:08:14:23 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:44:55 [INFO]: ::1 - - [24/Jun/2025:08:14:55 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:44:59 [INFO]: ::1 - - [24/Jun/2025:08:14:59 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:45:04 [INFO]: ::1 - - [24/Jun/2025:08:15:04 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:45:28 [INFO]: ::1 - - [24/Jun/2025:08:15:28 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:45:31 [INFO]: ::1 - - [24/Jun/2025:08:15:31 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:45:36 [INFO]: ::1 - - [24/Jun/2025:08:15:36 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:46:17 [INFO]: ::1 - - [24/Jun/2025:08:16:17 +0000] "GET /api/appointments/available-slots?doctorId=33f345c4-1e35-4f52-b90f-a016adabd0be&date=2025-07-10 HTTP/1.1" 200 151 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:46:19 [INFO]: ::1 - - [24/Jun/2025:08:16:19 +0000] "GET /api/appointments/available-slots?doctorId=33f345c4-1e35-4f52-b90f-a016adabd0be&date=2025-07-10 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:46:34 [INFO]: New appointment created: APT-131
+2025-06-24 13:46:34 [INFO]: ::1 - - [24/Jun/2025:08:16:34 +0000] "POST /api/appointments HTTP/1.1" 201 1008 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:46:56 [INFO]: ::1 - - [24/Jun/2025:08:16:56 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:52:06 [INFO]: ::1 - - [24/Jun/2025:08:22:06 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:52:06 [INFO]: ::1 - - [24/Jun/2025:08:22:06 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:52:54 [WARN]: Email service not configured - missing environment variables
+2025-06-24 13:52:54 [ERROR]: Error: accountSid must start with AC
+    at new Client (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:36:26)
+    at new NotificationService (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:9:10)
+    at Object.<anonymous> (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:336:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-06-24 13:52:54 [INFO]: Socket.IO server initialized
+2025-06-24 13:52:55 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 13:52:55 [INFO]: ✅ MySQL connected successfully
+2025-06-24 13:52:55 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 13:52:55 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 13:52:55 [INFO]: 📧 Notification service skipped for now
+2025-06-24 13:52:55 [INFO]: 🚀 Server running on port 5000
+2025-06-24 13:52:55 [INFO]: 📊 Environment: development
+2025-06-24 13:52:55 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 13:52:55 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 13:53:12 [WARN]: Email service not configured - missing environment variables
+2025-06-24 13:53:12 [ERROR]: Error: accountSid must start with AC
+    at new Client (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:36:26)
+    at new NotificationService (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:9:10)
+    at Object.<anonymous> (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:336:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-06-24 13:53:13 [INFO]: Socket.IO server initialized
+2025-06-24 13:53:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 13:53:13 [INFO]: ✅ MySQL connected successfully
+2025-06-24 13:53:14 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 13:53:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 13:53:14 [INFO]: 📧 Notification service skipped for now
+2025-06-24 13:53:14 [INFO]: 🚀 Server running on port 5000
+2025-06-24 13:53:14 [INFO]: 📊 Environment: development
+2025-06-24 13:53:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 13:53:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 13:53:41 [WARN]: Email service not configured - missing environment variables
+2025-06-24 13:53:41 [ERROR]: Error: accountSid must start with AC
+    at new Client (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:36:26)
+    at new NotificationService (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:9:10)
+    at Object.<anonymous> (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:351:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-06-24 13:53:41 [INFO]: Socket.IO server initialized
+2025-06-24 13:53:42 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 13:53:42 [INFO]: ✅ MySQL connected successfully
+2025-06-24 13:53:42 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 13:53:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 13:53:42 [INFO]: 📧 Notification service skipped for now
+2025-06-24 13:53:42 [INFO]: 🚀 Server running on port 5000
+2025-06-24 13:53:42 [INFO]: 📊 Environment: development
+2025-06-24 13:53:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 13:53:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 13:54:02 [INFO]: User logged in: patient.test@example.com
+2025-06-24 13:54:02 [INFO]: ::1 - - [24/Jun/2025:08:24:02 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:03 [INFO]: ::1 - - [24/Jun/2025:08:24:03 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:04 [INFO]: ::1 - - [24/Jun/2025:08:24:04 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:05 [INFO]: ::1 - - [24/Jun/2025:08:24:05 +0000] "GET /api/auth/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:10 [INFO]: User logged in: patient.test@example.com
+2025-06-24 13:54:10 [INFO]: ::1 - - [24/Jun/2025:08:24:10 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:11 [INFO]: ::1 - - [24/Jun/2025:08:24:11 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:13 [INFO]: ::1 - - [24/Jun/2025:08:24:13 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:37 [ERROR]: TypeError: Cannot read properties of undefined (reading 'name')
+    at NotificationService.sendAppointmentCancellation (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:218:27)
+    at cancel (D:\Project 2\CareSync-Backend--Node.js\controllers\appointmentController.js:367:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 13:54:37 [INFO]: Appointment cancelled: APT-131 by patient
+2025-06-24 13:54:37 [INFO]: ::1 - - [24/Jun/2025:08:24:37 +0000] "DELETE /api/appointments/e1741707-c000-43da-8247-89c5ed65a22b HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:48 [INFO]: ::1 - - [24/Jun/2025:08:24:48 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:54:48 [INFO]: ::1 - - [24/Jun/2025:08:24:48 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:55:02 [INFO]: User logged in: patient.test@example.com
+2025-06-24 13:55:02 [INFO]: ::1 - - [24/Jun/2025:08:25:02 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:55:03 [INFO]: ::1 - - [24/Jun/2025:08:25:03 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:55:07 [INFO]: ::1 - - [24/Jun/2025:08:25:07 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:56:52 [INFO]: ::1 - - [24/Jun/2025:08:26:52 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:57:07 [INFO]: ::1 - - [24/Jun/2025:08:27:07 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:57:26 [INFO]: ::1 - - [24/Jun/2025:08:27:26 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:57:26 [INFO]: ::1 - - [24/Jun/2025:08:27:26 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:57:46 [ERROR]: TypeError: Cannot read properties of undefined (reading 'name')
+    at NotificationService.sendAppointmentCancellation (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:218:27)
+    at cancel (D:\Project 2\CareSync-Backend--Node.js\controllers\appointmentController.js:367:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 13:57:46 [INFO]: Appointment cancelled: APT-101 by patient
+2025-06-24 13:57:46 [INFO]: ::1 - - [24/Jun/2025:08:27:46 +0000] "DELETE /api/appointments/573a6ec4-6cc1-4358-8860-3f195f75da44 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:57:50 [INFO]: ::1 - - [24/Jun/2025:08:27:50 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:57:50 [INFO]: ::1 - - [24/Jun/2025:08:27:50 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 13:58:15 [WARN]: Email service not configured - missing environment variables
+2025-06-24 13:58:15 [ERROR]: Error: accountSid must start with AC
+    at new Client (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:36:26)
+    at new NotificationService (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:9:10)
+    at Object.<anonymous> (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:351:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-06-24 13:58:16 [INFO]: Socket.IO server initialized
+2025-06-24 13:58:23 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 14:01:14 [INFO]: User logged in: patient.test@example.com
+2025-06-24 14:01:14 [INFO]: ::1 - - [24/Jun/2025:08:31:14 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:01:16 [INFO]: ::1 - - [24/Jun/2025:08:31:16 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:01:20 [INFO]: ::1 - - [24/Jun/2025:08:31:20 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:01:44 [ERROR]: TypeError: Cannot read properties of undefined (reading 'name')
+    at NotificationService.sendAppointmentCancellation (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:218:27)
+    at cancel (D:\Project 2\CareSync-Backend--Node.js\controllers\appointmentController.js:367:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 14:01:44 [INFO]: Appointment cancelled: APT-091 by patient
+2025-06-24 14:01:44 [INFO]: ::1 - - [24/Jun/2025:08:31:44 +0000] "DELETE /api/appointments/5595d90b-4109-48bc-9402-6801718ae39c HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:08:31 [INFO]: ::1 - - [24/Jun/2025:08:38:31 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:08:39 [INFO]: ::1 - - [24/Jun/2025:08:38:39 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:08:50 [INFO]: ::1 - - [24/Jun/2025:08:38:50 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:09:04 [INFO]: ::1 - - [24/Jun/2025:08:39:04 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:10:21 [WARN]: Email service not configured - missing environment variables
+2025-06-24 14:10:21 [ERROR]: Error: accountSid must start with AC
+    at new Client (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:36:26)
+    at new NotificationService (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:9:10)
+    at Object.<anonymous> (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:351:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-06-24 14:10:21 [INFO]: Socket.IO server initialized
+2025-06-24 14:10:21 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 14:10:21 [INFO]: ✅ MySQL connected successfully
+2025-06-24 14:10:22 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 14:10:22 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 14:10:22 [INFO]: 📧 Notification service skipped for now
+2025-06-24 14:10:22 [INFO]: 🚀 Server running on port 5000
+2025-06-24 14:10:22 [INFO]: 📊 Environment: development
+2025-06-24 14:10:22 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 14:10:22 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 14:13:42 [WARN]: Email service not configured - missing environment variables
+2025-06-24 14:13:42 [ERROR]: Error: accountSid must start with AC
+    at new Client (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (D:\Project 2\CareSync-Backend--Node.js\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:36:26)
+    at new NotificationService (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:9:10)
+    at Object.<anonymous> (D:\Project 2\CareSync-Backend--Node.js\services\notificationService.js:437:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-06-24 14:13:42 [INFO]: Socket.IO server initialized
+2025-06-24 14:13:43 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 14:13:43 [INFO]: ✅ MySQL connected successfully
+2025-06-24 14:13:43 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 14:13:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 14:13:43 [INFO]: 📧 Notification service skipped for now
+2025-06-24 14:13:43 [INFO]: 🚀 Server running on port 5000
+2025-06-24 14:13:43 [INFO]: 📊 Environment: development
+2025-06-24 14:13:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 14:13:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 14:15:39 [INFO]: ::1 - - [24/Jun/2025:08:45:39 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:15:41 [INFO]: ::1 - - [24/Jun/2025:08:45:41 +0000] "GET /api/auth/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:15:47 [INFO]: User logged in: patient.test@example.com
+2025-06-24 14:15:47 [INFO]: ::1 - - [24/Jun/2025:08:45:47 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:15:49 [INFO]: ::1 - - [24/Jun/2025:08:45:49 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:15:52 [INFO]: ::1 - - [24/Jun/2025:08:45:52 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:16:49 [INFO]: ::1 - - [24/Jun/2025:08:46:49 +0000] "GET /api/appointments/available-slots?doctorId=D061&date=2025-06-27 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:17:01 [INFO]: ::1 - - [24/Jun/2025:08:47:01 +0000] "GET /api/appointments/available-slots?doctorId=D061&date=2025-06-28 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:17:12 [INFO]: ::1 - - [24/Jun/2025:08:47:12 +0000] "GET /api/appointments/available-slots?doctorId=D061&date=2025-07-08 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:17:16 [INFO]: ::1 - - [24/Jun/2025:08:47:16 +0000] "GET /api/appointments/available-slots?doctorId=D061&date=2025-07-15 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:17:34 [INFO]: ::1 - - [24/Jun/2025:08:47:34 +0000] "GET /api/appointments/available-slots?doctorId=D061&date=2025-06-27 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:18:20 [INFO]: ::1 - - [24/Jun/2025:08:48:20 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:18:27 [INFO]: ::1 - - [24/Jun/2025:08:48:27 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:18:39 [INFO]: ::1 - - [24/Jun/2025:08:48:39 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:18:58 [INFO]: ::1 - - [24/Jun/2025:08:48:58 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:19:40 [INFO]: ::1 - - [24/Jun/2025:08:49:40 +0000] "GET /api/appointments/available-slots?doctorId=D061&date=2025-06-30 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:19:53 [INFO]: ::1 - - [24/Jun/2025:08:49:53 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:20:39 [INFO]: ::1 - - [24/Jun/2025:08:50:39 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 14:21:16 [INFO]: ::1 - - [24/Jun/2025:08:51:16 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"

@@ -20,6 +20,7 @@ router.post('/', appointmentValidation.create, appointmentController.create);
 
 // Update appointment
 router.put('/:appointmentId', appointmentValidation.update, appointmentController.update);
+router.put('/:appointmentId/reschedule', appointmentController.reschedule);
 router.patch('/:appointmentId/status', appointmentController.update); // Generic update method
 router.patch('/:appointmentId/confirm', appointmentController.confirm);
 router.patch('/:appointmentId/complete', appointmentController.complete);
