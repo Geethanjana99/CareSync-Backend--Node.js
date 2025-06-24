@@ -2386,3 +2386,1371 @@
 2025-06-23 10:24:23 [INFO]: Patient profile created for user: 0d8609f2-aeba-493b-8ea4-68ebccdadf33
 2025-06-23 10:24:23 [INFO]: New user registered: test@test.com with role: patient
 2025-06-23 10:24:23 [INFO]: ::1 - - [23/Jun/2025:04:54:23 +0000] "POST /api/auth/register HTTP/1.1" 201 248 "-" "axios/1.9.0"
+2025-06-23 10:25:48 [INFO]: Socket.IO server initialized
+2025-06-23 10:25:50 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:25:50 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:25:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:25:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:25:50 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:25:50 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:25:50 [INFO]: 📊 Environment: development
+2025-06-23 10:25:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:25:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:27:01 [INFO]: Doctor profile created for user: b469c041-f53f-4018-b39e-858f31592cd4
+2025-06-23 10:27:01 [INFO]: New user registered: doctor@gmail.com with role: doctor
+2025-06-23 10:27:01 [INFO]: ::1 - - [23/Jun/2025:04:57:01 +0000] "POST /api/auth/register HTTP/1.1" 201 246 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 10:28:58 [INFO]: User logged in: doctor@gmail.com
+2025-06-23 10:28:58 [INFO]: ::1 - - [23/Jun/2025:04:58:58 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 10:29:02 [ERROR]: MySQL query error:
+2025-06-23 10:29:02 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 10:29:02 [INFO]: ::1 - - [23/Jun/2025:04:59:02 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 676 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 10:38:49 [INFO]: ::1 - - [23/Jun/2025:05:08:49 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 10:38:51 [ERROR]: MySQL query error:
+2025-06-23 10:38:51 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 10:38:51 [INFO]: ::1 - - [23/Jun/2025:05:08:51 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 10:40:04 [INFO]: Socket.IO server initialized
+2025-06-23 10:40:05 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:40:05 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:40:05 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:40:05 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:40:05 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:40:05 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:40:05 [INFO]: 📊 Environment: development
+2025-06-23 10:40:05 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:40:05 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:51:18 [INFO]: Socket.IO server initialized
+2025-06-23 10:51:20 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:51:20 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:51:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:51:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:51:20 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:51:20 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:51:20 [INFO]: 📊 Environment: development
+2025-06-23 10:51:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:51:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:52:14 [INFO]: ::1 - - [23/Jun/2025:05:22:14 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-23 10:52:40 [INFO]: ::1 - - [23/Jun/2025:05:22:40 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-23 10:52:55 [INFO]: ::1 - - [23/Jun/2025:05:22:55 +0000] "GET /health HTTP/1.1" 200 103 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-23 10:53:25 [INFO]: ::1 - - [23/Jun/2025:05:23:25 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "axios/1.9.0"
+2025-06-23 10:53:27 [INFO]: New user registered: api.test.doctor.1750656205782@example.com with role: doctor
+2025-06-23 10:53:27 [INFO]: ::1 - - [23/Jun/2025:05:23:27 +0000] "POST /api/auth/register HTTP/1.1" 201 278 "-" "axios/1.9.0"
+2025-06-23 10:53:28 [INFO]: User logged in: api.test.doctor.1750656205782@example.com
+2025-06-23 10:53:28 [INFO]: ::1 - - [23/Jun/2025:05:23:28 +0000] "POST /api/auth/login HTTP/1.1" 200 866 "-" "axios/1.9.0"
+2025-06-23 10:53:29 [INFO]: ::1 - - [23/Jun/2025:05:23:29 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "-" "axios/1.9.0"
+2025-06-23 10:54:10 [INFO]: Socket.IO server initialized
+2025-06-23 10:54:11 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:54:11 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:54:11 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:54:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:54:11 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:54:11 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:54:11 [INFO]: 📊 Environment: development
+2025-06-23 10:54:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:54:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:54:24 [INFO]: ::1 - - [23/Jun/2025:05:24:24 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 10:54:29 [INFO]: Socket.IO server initialized
+2025-06-23 10:54:30 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:54:30 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:54:30 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:54:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:54:30 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:54:30 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:54:30 [INFO]: 📊 Environment: development
+2025-06-23 10:54:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:54:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:54:33 [INFO]: ::1 - - [23/Jun/2025:05:24:33 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 10:54:52 [INFO]: Socket.IO server initialized
+2025-06-23 10:54:53 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:54:53 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:54:53 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:54:53 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:54:53 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:54:53 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:54:53 [INFO]: 📊 Environment: development
+2025-06-23 10:54:53 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:54:53 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:55:15 [INFO]: Socket.IO server initialized
+2025-06-23 10:55:17 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:55:17 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:55:17 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:55:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:55:17 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:55:17 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:55:17 [INFO]: 📊 Environment: development
+2025-06-23 10:55:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:55:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:55:23 [INFO]: Socket.IO server initialized
+2025-06-23 10:55:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:55:25 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:55:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:55:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:55:25 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:55:25 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:55:25 [INFO]: 📊 Environment: development
+2025-06-23 10:55:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:55:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:56:23 [INFO]: Socket.IO server initialized
+2025-06-23 10:56:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:56:25 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:56:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:56:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:56:25 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:56:25 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:56:25 [INFO]: 📊 Environment: development
+2025-06-23 10:56:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:56:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 10:56:34 [INFO]: New user registered: sarah.johnson@clinic.com with role: doctor
+2025-06-23 10:56:34 [INFO]: ::1 - - [23/Jun/2025:05:26:34 +0000] "POST /api/auth/register HTTP/1.1" 201 266 "-" "axios/1.9.0"
+2025-06-23 10:56:35 [INFO]: New user registered: michael.chen@clinic.com with role: doctor
+2025-06-23 10:56:35 [INFO]: ::1 - - [23/Jun/2025:05:26:35 +0000] "POST /api/auth/register HTTP/1.1" 201 264 "-" "axios/1.9.0"
+2025-06-23 10:56:36 [INFO]: New user registered: priya.patel@clinic.com with role: doctor
+2025-06-23 10:56:36 [INFO]: ::1 - - [23/Jun/2025:05:26:36 +0000] "POST /api/auth/register HTTP/1.1" 201 262 "-" "axios/1.9.0"
+2025-06-23 10:56:36 [INFO]: New user registered: david.wilson@clinic.com with role: doctor
+2025-06-23 10:56:36 [INFO]: ::1 - - [23/Jun/2025:05:26:36 +0000] "POST /api/auth/register HTTP/1.1" 201 264 "-" "axios/1.9.0"
+2025-06-23 10:56:37 [INFO]: New user registered: lisa.thompson@clinic.com with role: doctor
+2025-06-23 10:56:37 [INFO]: ::1 - - [23/Jun/2025:05:26:37 +0000] "POST /api/auth/register HTTP/1.1" 201 266 "-" "axios/1.9.0"
+2025-06-23 10:56:38 [INFO]: Patient profile created for user: 983e3167-6e57-426d-b630-909bac3bc95a
+2025-06-23 10:56:38 [INFO]: New user registered: patient.test@example.com with role: patient
+2025-06-23 10:56:38 [INFO]: ::1 - - [23/Jun/2025:05:26:38 +0000] "POST /api/auth/register HTTP/1.1" 201 267 "-" "axios/1.9.0"
+2025-06-23 10:57:06 [INFO]: Socket.IO server initialized
+2025-06-23 10:57:08 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 10:57:08 [INFO]: ✅ MySQL connected successfully
+2025-06-23 10:57:08 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 10:57:08 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 10:57:08 [INFO]: 📧 Notification service skipped for now
+2025-06-23 10:57:08 [INFO]: 🚀 Server running on port 5000
+2025-06-23 10:57:08 [INFO]: 📊 Environment: development
+2025-06-23 10:57:08 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 10:57:08 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:08:32 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:08:32 [INFO]: ::1 - - [23/Jun/2025:05:38:32 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-23 11:08:32 [INFO]: ::1 - - [23/Jun/2025:05:38:32 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:08:53 [INFO]: Socket.IO server initialized
+2025-06-23 11:08:54 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:08:54 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:08:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:08:54 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:08:54 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:08:54 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:08:54 [INFO]: 📊 Environment: development
+2025-06-23 11:08:54 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:08:54 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:11:27 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:11:27 [INFO]: ::1 - - [23/Jun/2025:05:41:27 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-23 11:11:27 [INFO]: ::1 - - [23/Jun/2025:05:41:27 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:11:55 [INFO]: Socket.IO server initialized
+2025-06-23 11:11:58 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:11:58 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:11:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:11:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:11:58 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:11:58 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:11:58 [INFO]: 📊 Environment: development
+2025-06-23 11:11:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:11:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:12:12 [INFO]: Socket.IO server initialized
+2025-06-23 11:12:19 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:12:19 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:12:19 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:12:19 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:12:19 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:12:19 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:12:19 [INFO]: 📊 Environment: development
+2025-06-23 11:12:19 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:12:19 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:12:37 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:12:37 [INFO]: ::1 - - [23/Jun/2025:05:42:37 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-23 11:12:38 [ERROR]: MySQL query error:
+2025-06-23 11:12:38 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:12:38 [INFO]: ::1 - - [23/Jun/2025:05:42:38 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-06-23 11:13:37 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:13:37 [INFO]: ::1 - - [23/Jun/2025:05:43:37 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:13:42 [ERROR]: MySQL query error:
+2025-06-23 11:13:42 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:13:42 [INFO]: ::1 - - [23/Jun/2025:05:43:42 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:13:45 [ERROR]: MySQL query error:
+2025-06-23 11:13:45 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:13:45 [INFO]: ::1 - - [23/Jun/2025:05:43:45 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:13:45 [ERROR]: MySQL query error:
+2025-06-23 11:13:45 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:13:45 [INFO]: ::1 - - [23/Jun/2025:05:43:45 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:13:46 [ERROR]: MySQL query error:
+2025-06-23 11:13:46 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:13:46 [INFO]: ::1 - - [23/Jun/2025:05:43:46 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:13:47 [ERROR]: MySQL query error:
+2025-06-23 11:13:47 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:13:47 [INFO]: ::1 - - [23/Jun/2025:05:43:47 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:14:31 [ERROR]: MySQL query error:
+2025-06-23 11:14:31 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:14:31 [INFO]: ::1 - - [23/Jun/2025:05:44:31 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:14:32 [ERROR]: MySQL query error:
+2025-06-23 11:14:32 [ERROR]: Error: Unknown column 'u.first_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:30:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-06-23 11:14:33 [INFO]: ::1 - - [23/Jun/2025:05:44:33 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:15:46 [INFO]: Socket.IO server initialized
+2025-06-23 11:15:49 [INFO]: Socket.IO server initialized
+2025-06-23 11:15:50 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:15:50 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:15:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:15:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:15:50 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:15:50 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:15:50 [INFO]: 📊 Environment: development
+2025-06-23 11:15:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:15:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:15:58 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:15:58 [INFO]: ::1 - - [23/Jun/2025:05:45:58 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-23 11:15:59 [INFO]: ::1 - - [23/Jun/2025:05:45:59 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:16:23 [INFO]: Socket.IO server initialized
+2025-06-23 11:16:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:16:24 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:16:24 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:16:24 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:16:24 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:16:24 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:16:24 [INFO]: 📊 Environment: development
+2025-06-23 11:16:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:16:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:16:34 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:16:34 [INFO]: ::1 - - [23/Jun/2025:05:46:34 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-23 11:16:34 [INFO]: ::1 - - [23/Jun/2025:05:46:34 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:18:48 [INFO]: Socket.IO server initialized
+2025-06-23 11:18:49 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:18:49 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:18:49 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:18:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:18:49 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:18:49 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:18:49 [INFO]: 📊 Environment: development
+2025-06-23 11:18:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:18:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:19:02 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:19:08 [INFO]: MySQL connection pool closed
+2025-06-23 11:19:16 [INFO]: ::1 - - [23/Jun/2025:05:49:16 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "axios/1.9.0"
+2025-06-23 11:19:17 [INFO]: New user registered: api.test.doctor.1750657756897@example.com with role: doctor
+2025-06-23 11:19:17 [INFO]: ::1 - - [23/Jun/2025:05:49:17 +0000] "POST /api/auth/register HTTP/1.1" 201 278 "-" "axios/1.9.0"
+2025-06-23 11:19:18 [INFO]: User logged in: api.test.doctor.1750657756897@example.com
+2025-06-23 11:19:18 [INFO]: ::1 - - [23/Jun/2025:05:49:18 +0000] "POST /api/auth/login HTTP/1.1" 200 866 "-" "axios/1.9.0"
+2025-06-23 11:19:20 [INFO]: ::1 - - [23/Jun/2025:05:49:20 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "-" "axios/1.9.0"
+2025-06-23 11:19:49 [INFO]: Socket.IO server initialized
+2025-06-23 11:19:51 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:19:51 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:19:51 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:19:51 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:19:51 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:19:51 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:19:51 [INFO]: 📊 Environment: development
+2025-06-23 11:19:51 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:19:51 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:20:20 [INFO]: ::1 - - [23/Jun/2025:05:50:20 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-23 11:20:20 [INFO]: ::1 - - [23/Jun/2025:05:50:20 +0000] "POST /api/auth/register HTTP/1.1" 400 254 "-" "axios/1.9.0"
+2025-06-23 11:20:47 [INFO]: Socket.IO server initialized
+2025-06-23 11:20:49 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:20:49 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:20:49 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:20:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:20:49 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:20:49 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:20:49 [INFO]: 📊 Environment: development
+2025-06-23 11:20:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:20:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:20:59 [INFO]: ::1 - - [23/Jun/2025:05:50:59 +0000] "POST /api/auth/register HTTP/1.1" 400 408 "-" "axios/1.9.0"
+2025-06-23 11:21:00 [INFO]: ::1 - - [23/Jun/2025:05:51:00 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-23 11:21:00 [INFO]: ::1 - - [23/Jun/2025:05:51:00 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-23 11:21:00 [INFO]: ::1 - - [23/Jun/2025:05:51:00 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-23 11:21:00 [INFO]: ::1 - - [23/Jun/2025:05:51:00 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-23 11:21:28 [INFO]: Socket.IO server initialized
+2025-06-23 11:21:31 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:21:31 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:21:31 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:21:31 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:21:31 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:21:31 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:21:31 [INFO]: 📊 Environment: development
+2025-06-23 11:21:31 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:21:31 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:21:35 [INFO]: Patient profile created for user: 070b75bf-e925-42b5-8dae-91585cd5e62c
+2025-06-23 11:21:35 [INFO]: New user registered: patient.test.new@example.com with role: patient
+2025-06-23 11:21:35 [INFO]: ::1 - - [23/Jun/2025:05:51:35 +0000] "POST /api/auth/register HTTP/1.1" 201 266 "-" "axios/1.9.0"
+2025-06-23 11:21:36 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:21:36 [INFO]: ::1 - - [23/Jun/2025:05:51:36 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:22:07 [INFO]: Socket.IO server initialized
+2025-06-23 11:22:09 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:22:09 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:22:09 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:22:09 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:22:09 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:22:09 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:22:09 [INFO]: 📊 Environment: development
+2025-06-23 11:22:09 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:22:09 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:22:14 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:22:14 [INFO]: ::1 - - [23/Jun/2025:05:52:14 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:22:14 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:15:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-23 11:22:14 [INFO]: ::1 - - [23/Jun/2025:05:52:14 +0000] "GET /api/auth/profile HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-06-23 11:22:14 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:15:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-23 11:22:14 [INFO]: ::1 - - [23/Jun/2025:05:52:14 +0000] "GET /api/patients/doctors/search HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-06-23 11:23:02 [INFO]: Socket.IO server initialized
+2025-06-23 11:23:02 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:23:02 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:23:02 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:23:02 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:23:02 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:23:02 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:23:02 [INFO]: 📊 Environment: development
+2025-06-23 11:23:02 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:23:02 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:23:08 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:23:08 [INFO]: ::1 - - [23/Jun/2025:05:53:08 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:23:08 [INFO]: ::1 - - [23/Jun/2025:05:53:08 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:23:08 [INFO]: ::1 - - [23/Jun/2025:05:53:08 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:23:19 [INFO]: Socket.IO server initialized
+2025-06-23 11:23:20 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:23:20 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:23:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:23:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:23:20 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:23:20 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:23:20 [INFO]: 📊 Environment: development
+2025-06-23 11:23:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:23:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:23:26 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:23:26 [INFO]: ::1 - - [23/Jun/2025:05:53:26 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:23:26 [INFO]: ::1 - - [23/Jun/2025:05:53:26 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:23:26 [INFO]: ::1 - - [23/Jun/2025:05:53:26 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:24:04 [INFO]: Socket.IO server initialized
+2025-06-23 11:24:06 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:24:06 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:24:06 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:24:06 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:24:06 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:24:06 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:24:06 [INFO]: 📊 Environment: development
+2025-06-23 11:24:06 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:24:06 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:24:14 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:24:14 [INFO]: ::1 - - [23/Jun/2025:05:54:14 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:24:14 [INFO]: ::1 - - [23/Jun/2025:05:54:14 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:24:14 [INFO]: ::1 - - [23/Jun/2025:05:54:14 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:24:15 [INFO]: ::1 - - [23/Jun/2025:05:54:15 +0000] "GET /api/patients/profile HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:24:49 [INFO]: Socket.IO server initialized
+2025-06-23 11:24:50 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:24:50 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:24:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:24:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:24:50 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:24:50 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:24:50 [INFO]: 📊 Environment: development
+2025-06-23 11:24:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:24:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:25:06 [INFO]: Socket.IO server initialized
+2025-06-23 11:25:08 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:25:08 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:25:08 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:25:08 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:25:08 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:25:08 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:25:08 [INFO]: 📊 Environment: development
+2025-06-23 11:25:08 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:25:08 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:25:16 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:25:16 [INFO]: ::1 - - [23/Jun/2025:05:55:16 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:25:17 [INFO]: ::1 - - [23/Jun/2025:05:55:17 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:25:17 [INFO]: ::1 - - [23/Jun/2025:05:55:17 +0000] "GET /api/patients/doctors/search HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:25:17 [INFO]: ::1 - - [23/Jun/2025:05:55:17 +0000] "GET /api/patients/profile HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-06-23 11:25:43 [INFO]: Socket.IO server initialized
+2025-06-23 11:25:44 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:25:44 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:25:44 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:25:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:25:44 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:25:44 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:25:44 [INFO]: 📊 Environment: development
+2025-06-23 11:25:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:25:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:25:53 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:25:53 [INFO]: ::1 - - [23/Jun/2025:05:55:53 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:25:53 [INFO]: ::1 - - [23/Jun/2025:05:55:53 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:25:53 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Patient.searchDoctors (E:\Project 2\backend\models\Patient.js:314:36)
+    at searchDoctors (E:\Project 2\backend\controllers\patientController.js:229:37)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-06-23 11:25:53 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at Patient.searchDoctors (E:\Project 2\backend\models\Patient.js:314:36)
+    at searchDoctors (E:\Project 2\backend\controllers\patientController.js:229:37)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-06-23 11:25:53 [INFO]: ::1 - - [23/Jun/2025:05:55:53 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 - "-" "axios/1.9.0"
+2025-06-23 11:25:53 [INFO]: ::1 - - [23/Jun/2025:05:55:53 +0000] "GET /api/patients/profile HTTP/1.1" 200 530 "-" "axios/1.9.0"
+2025-06-23 11:26:25 [INFO]: Socket.IO server initialized
+2025-06-23 11:26:28 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:26:28 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:26:28 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:26:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:26:28 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:26:28 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:26:28 [INFO]: 📊 Environment: development
+2025-06-23 11:26:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:26:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:27:08 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:27:08 [INFO]: ::1 - - [23/Jun/2025:05:57:08 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:27:09 [INFO]: ::1 - - [23/Jun/2025:05:57:09 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:27:09 [ERROR]: SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at E:\Project 2\backend\models\Patient.js:326:52
+    at Array.map (<anonymous>)
+    at Patient.searchDoctors (E:\Project 2\backend\models\Patient.js:314:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async searchDoctors (E:\Project 2\backend\controllers\patientController.js:229:23)
+2025-06-23 11:27:09 [ERROR]: SyntaxError: "[object Object]" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at E:\Project 2\backend\models\Patient.js:326:52
+    at Array.map (<anonymous>)
+    at Patient.searchDoctors (E:\Project 2\backend\models\Patient.js:314:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async searchDoctors (E:\Project 2\backend\controllers\patientController.js:229:23)
+2025-06-23 11:27:09 [INFO]: ::1 - - [23/Jun/2025:05:57:09 +0000] "GET /api/patients/doctors/search HTTP/1.1" 500 512 "-" "axios/1.9.0"
+2025-06-23 11:27:10 [INFO]: ::1 - - [23/Jun/2025:05:57:10 +0000] "GET /api/patients/profile HTTP/1.1" 200 530 "-" "axios/1.9.0"
+2025-06-23 11:27:35 [INFO]: Socket.IO server initialized
+2025-06-23 11:27:37 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:27:37 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:27:37 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:27:37 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:27:37 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:27:37 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:27:37 [INFO]: 📊 Environment: development
+2025-06-23 11:27:37 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:27:37 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:27:47 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 11:27:47 [INFO]: ::1 - - [23/Jun/2025:05:57:47 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-23 11:27:47 [INFO]: ::1 - - [23/Jun/2025:05:57:47 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "-" "axios/1.9.0"
+2025-06-23 11:27:47 [INFO]: ::1 - - [23/Jun/2025:05:57:47 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-23 11:27:47 [INFO]: ::1 - - [23/Jun/2025:05:57:47 +0000] "GET /api/patients/profile HTTP/1.1" 200 530 "-" "axios/1.9.0"
+2025-06-23 11:28:01 [INFO]: Socket.IO server initialized
+2025-06-23 11:28:03 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:28:03 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:28:03 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:28:03 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:28:03 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:28:03 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:28:03 [INFO]: 📊 Environment: development
+2025-06-23 11:28:03 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:28:03 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:28:15 [INFO]: Socket.IO server initialized
+2025-06-23 11:28:17 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:28:17 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:28:17 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:28:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:28:17 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:28:17 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:28:17 [INFO]: 📊 Environment: development
+2025-06-23 11:28:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:28:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:29:56 [INFO]: Doctor profile created for user: 6ef697ef-113b-43b9-9b16-d208253a52e9
+2025-06-23 11:29:56 [INFO]: New user registered: final.verification.1750658395487@example.com with role: doctor
+2025-06-23 11:29:56 [INFO]: ::1 - - [23/Jun/2025:05:59:56 +0000] "POST /api/auth/register HTTP/1.1" 201 291 "-" "axios/1.9.0"
+2025-06-23 11:29:57 [INFO]: User logged in: final.verification.1750658395487@example.com
+2025-06-23 11:29:57 [INFO]: ::1 - - [23/Jun/2025:05:59:57 +0000] "POST /api/auth/login HTTP/1.1" 200 895 "-" "axios/1.9.0"
+2025-06-23 11:29:58 [INFO]: ::1 - - [23/Jun/2025:05:59:58 +0000] "GET /api/doctors/profile HTTP/1.1" 200 577 "-" "axios/1.9.0"
+2025-06-23 11:30:00 [ERROR]: MySQL query error:
+2025-06-23 11:30:00 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 11:30:00 [INFO]: ::1 - - [23/Jun/2025:06:00:00 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 713 "-" "axios/1.9.0"
+2025-06-23 11:30:01 [INFO]: ::1 - - [23/Jun/2025:06:00:01 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "-" "axios/1.9.0"
+2025-06-23 11:30:02 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 11:30:02 [ERROR]: TypeError: Doctor.update is not a function
+    at updateProfile (E:\Project 2\backend\controllers\doctorController.js:54:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 11:30:02 [INFO]: ::1 - - [23/Jun/2025:06:00:02 +0000] "PUT /api/doctors/profile HTTP/1.1" 500 285 "-" "axios/1.9.0"
+2025-06-23 11:30:29 [INFO]: Doctor profile created for user: d46a585c-23b2-4429-909e-82f2a6508a63
+2025-06-23 11:30:29 [INFO]: New user registered: success.summary.1750658427684@example.com with role: doctor
+2025-06-23 11:30:29 [INFO]: ::1 - - [23/Jun/2025:06:00:29 +0000] "POST /api/auth/register HTTP/1.1" 201 285 "-" "axios/1.9.0"
+2025-06-23 11:30:29 [INFO]: User logged in: success.summary.1750658427684@example.com
+2025-06-23 11:30:29 [INFO]: ::1 - - [23/Jun/2025:06:00:29 +0000] "POST /api/auth/login HTTP/1.1" 200 884 "-" "axios/1.9.0"
+2025-06-23 11:30:30 [INFO]: ::1 - - [23/Jun/2025:06:00:30 +0000] "GET /api/doctors/profile HTTP/1.1" 200 578 "-" "axios/1.9.0"
+2025-06-23 11:30:31 [ERROR]: MySQL query error:
+2025-06-23 11:30:31 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-23 11:30:31 [INFO]: ::1 - - [23/Jun/2025:06:00:31 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 707 "-" "axios/1.9.0"
+2025-06-23 11:30:32 [INFO]: ::1 - - [23/Jun/2025:06:00:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 1015 "-" "axios/1.9.0"
+2025-06-23 11:30:33 [INFO]: ::1 - - [23/Jun/2025:06:00:33 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "-" "axios/1.9.0"
+2025-06-23 11:32:14 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:32:14 [INFO]: ::1 - - [23/Jun/2025:06:02:14 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:32:16 [INFO]: ::1 - - [23/Jun/2025:06:02:16 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:32:35 [INFO]: ::1 - - [23/Jun/2025:06:02:35 +0000] "POST /api/appointments HTTP/1.1" 400 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:32:45 [INFO]: ::1 - - [23/Jun/2025:06:02:45 +0000] "POST /api/appointments HTTP/1.1" 400 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:32:52 [INFO]: ::1 - - [23/Jun/2025:06:02:52 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:36:14 [INFO]: Socket.IO server initialized
+2025-06-23 11:36:17 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:36:17 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:36:17 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:36:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:36:17 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:36:17 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:36:17 [INFO]: 📊 Environment: development
+2025-06-23 11:36:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:36:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:37:31 [INFO]: ::1 - - [23/Jun/2025:06:07:31 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:37:33 [INFO]: ::1 - - [23/Jun/2025:06:07:33 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:45:25 [INFO]: Socket.IO server initialized
+2025-06-23 11:45:27 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:46:21 [INFO]: Socket.IO server initialized
+2025-06-23 11:46:23 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:46:23 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:46:23 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:46:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:46:23 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:46:24 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:46:24 [INFO]: 📊 Environment: development
+2025-06-23 11:46:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:46:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:46:25 [INFO]: User logged in: patient.test@example.com
+2025-06-23 11:46:25 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:25 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:46:30 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:30 +0000] "GET /api/patients/appointments HTTP/1.1" 200 105 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:46:32 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:32 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:46:36 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:36 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:46:38 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:38 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:46:53 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:53 +0000] "POST /api/appointments HTTP/1.1" 400 65 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:46:57 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:16:57 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:47:01 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:17:01 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:47:03 [INFO]: ::1 - - [23/Jun/2025:06:17:03 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:47:04 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:06:17:04 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 11:47:26 [INFO]: Socket.IO server initialized
+2025-06-23 11:47:30 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:47:30 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:47:30 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:47:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:47:30 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:47:30 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:47:30 [INFO]: 📊 Environment: development
+2025-06-23 11:47:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:47:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:48:23 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:48:46 [INFO]: Socket.IO server initialized
+2025-06-23 11:48:49 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:48:49 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:48:49 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:48:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:48:49 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:48:49 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:48:49 [INFO]: 📊 Environment: development
+2025-06-23 11:48:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:48:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:48:55 [INFO]: Socket.IO server initialized
+2025-06-23 11:48:57 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:48:57 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:48:57 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:48:57 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:48:57 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:48:57 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:48:57 [INFO]: 📊 Environment: development
+2025-06-23 11:48:57 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:48:57 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:49:03 [INFO]: Socket.IO server initialized
+2025-06-23 11:49:06 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:49:06 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:49:06 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:49:06 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:49:06 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:49:06 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:49:06 [INFO]: 📊 Environment: development
+2025-06-23 11:49:06 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:49:06 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:49:22 [INFO]: Socket.IO server initialized
+2025-06-23 11:49:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:49:24 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:49:24 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:49:24 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:49:24 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:49:24 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:49:24 [INFO]: 📊 Environment: development
+2025-06-23 11:49:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:49:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:50:25 [INFO]: Socket.IO server initialized
+2025-06-23 11:50:30 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:50:30 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:50:30 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:50:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:50:30 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:50:30 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:50:30 [INFO]: 📊 Environment: development
+2025-06-23 11:50:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:50:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:53:00 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:53:23 [INFO]: Socket.IO server initialized
+2025-06-23 11:53:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:53:25 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:53:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:53:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:53:25 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:53:25 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:53:25 [INFO]: 📊 Environment: development
+2025-06-23 11:53:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:53:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:54:20 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:54:42 [INFO]: Socket.IO server initialized
+2025-06-23 11:54:43 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:54:43 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:54:43 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:54:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:54:43 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:54:43 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:54:43 [INFO]: 📊 Environment: development
+2025-06-23 11:54:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:54:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:54:51 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:07 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:18 [INFO]: Socket.IO server initialized
+2025-06-23 11:55:18 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:18 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:55:18 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:55:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:55:18 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:55:18 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:55:18 [INFO]: 📊 Environment: development
+2025-06-23 11:55:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:55:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:55:26 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:35 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:43 [INFO]: Socket.IO server initialized
+2025-06-23 11:55:45 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:45 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:55:45 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:55:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:55:45 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:55:45 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:55:45 [INFO]: 📊 Environment: development
+2025-06-23 11:55:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:55:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:55:52 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:55:54 [ERROR]: MySQL query error:
+2025-06-23 11:56:33 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:59:10 [INFO]: Socket.IO server initialized
+2025-06-23 11:59:12 [INFO]: Socket.IO server initialized
+2025-06-23 11:59:15 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 11:59:15 [INFO]: ✅ MySQL connected successfully
+2025-06-23 11:59:15 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 11:59:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 11:59:15 [INFO]: 📧 Notification service skipped for now
+2025-06-23 11:59:15 [INFO]: 🚀 Server running on port 5000
+2025-06-23 11:59:15 [INFO]: 📊 Environment: development
+2025-06-23 11:59:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 11:59:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 11:59:54 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:00:11 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:15:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-23 12:00:11 [INFO]: ::1 - - [23/Jun/2025:06:30:11 +0000] "GET /api/patients/appointments HTTP/1.1" 401 48 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-23 12:03:12 [INFO]: Socket.IO server initialized
+2025-06-23 12:03:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:03:13 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:03:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:03:13 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:03:13 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:03:13 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:03:13 [INFO]: 📊 Environment: development
+2025-06-23 12:03:13 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:03:13 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:03:49 [INFO]: User logged in: patient.test@example.com
+2025-06-23 12:03:49 [INFO]: ::1 - - [23/Jun/2025:06:33:49 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:03:51 [INFO]: ::1 - - [23/Jun/2025:06:33:51 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:03:52 [INFO]: ::1 - - [23/Jun/2025:06:33:52 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:04:42 [INFO]: ::1 - - [23/Jun/2025:06:34:42 +0000] "POST /api/appointments HTTP/1.1" 400 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:06:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:07:22 [INFO]: Socket.IO server initialized
+2025-06-23 12:07:23 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:07:23 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:07:23 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:07:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:07:23 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:07:23 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:07:23 [INFO]: 📊 Environment: development
+2025-06-23 12:07:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:07:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:07:27 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:08:56 [INFO]: Socket.IO server initialized
+2025-06-23 12:08:59 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:08:59 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:08:59 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:08:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:08:59 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:08:59 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:08:59 [INFO]: 📊 Environment: development
+2025-06-23 12:08:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:08:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:09:07 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:09:27 [INFO]: ::1 - - [23/Jun/2025:06:39:27 +0000] "POST /api/appointments HTTP/1.1" 400 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:09:34 [INFO]: ::1 - - [23/Jun/2025:06:39:34 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:09:38 [INFO]: ::1 - - [23/Jun/2025:06:39:38 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:10:23 [INFO]: Socket.IO server initialized
+2025-06-23 12:10:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:10:24 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:10:24 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:10:24 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:10:24 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:10:24 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:10:24 [INFO]: 📊 Environment: development
+2025-06-23 12:10:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:10:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:10:32 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:10:51 [INFO]: Socket.IO server initialized
+2025-06-23 12:10:53 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:10:53 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:10:53 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:10:53 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:10:53 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:10:53 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:10:53 [INFO]: 📊 Environment: development
+2025-06-23 12:10:53 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:10:53 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:11:07 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:11:37 [INFO]: Socket.IO server initialized
+2025-06-23 12:11:38 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:11:38 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:11:38 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:11:38 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:11:38 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:11:38 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:11:38 [INFO]: 📊 Environment: development
+2025-06-23 12:11:38 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:11:38 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:20:52 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:20:53 [ERROR]: MySQL query error:
+2025-06-23 12:21:28 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:21:31 [INFO]: Socket.IO server initialized
+2025-06-23 12:21:32 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:21:32 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:21:32 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:21:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:21:32 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:21:32 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:21:32 [INFO]: 📊 Environment: development
+2025-06-23 12:21:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:21:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:21:59 [INFO]: User logged in: patient.test@example.com
+2025-06-23 12:21:59 [INFO]: ::1 - - [23/Jun/2025:06:51:59 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:22:01 [INFO]: ::1 - - [23/Jun/2025:06:52:01 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:22:13 [ERROR]: MySQL query error:
+2025-06-23 12:22:13 [ERROR]: Error: Data truncated for column 'priority' at row 1
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.save (E:\Project 2\backend\models\Appointment.js:59:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async create (E:\Project 2\backend\controllers\appointmentController.js:80:7)
+2025-06-23 12:22:13 [INFO]: ::1 - - [23/Jun/2025:06:52:13 +0000] "POST /api/appointments HTTP/1.1" 500 114 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:22:22 [INFO]: ::1 - - [23/Jun/2025:06:52:22 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:22:22 [INFO]: ::1 - - [23/Jun/2025:06:52:22 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-23 12:39:59 [INFO]: Socket.IO server initialized
+2025-06-23 12:40:03 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:40:03 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:40:03 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:40:03 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:40:03 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:40:03 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:40:03 [INFO]: 📊 Environment: development
+2025-06-23 12:40:03 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:40:03 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:41:23 [INFO]: Socket.IO server initialized
+2025-06-23 12:41:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:41:25 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:41:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:41:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:41:25 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:41:25 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:41:25 [INFO]: 📊 Environment: development
+2025-06-23 12:41:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:41:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:44:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:44:41 [INFO]: Socket.IO server initialized
+2025-06-23 12:44:43 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:44:43 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:44:43 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:44:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:44:43 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:44:43 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:44:43 [INFO]: 📊 Environment: development
+2025-06-23 12:44:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:44:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 12:51:53 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:52:16 [INFO]: Socket.IO server initialized
+2025-06-23 12:52:19 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 12:52:19 [INFO]: ✅ MySQL connected successfully
+2025-06-23 12:52:19 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 12:52:19 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 12:52:19 [INFO]: 📧 Notification service skipped for now
+2025-06-23 12:52:19 [INFO]: 🚀 Server running on port 5000
+2025-06-23 12:52:19 [INFO]: 📊 Environment: development
+2025-06-23 12:52:19 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 12:52:19 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 13:02:45 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:03:06 [INFO]: Socket.IO server initialized
+2025-06-23 13:03:07 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:07:40 [INFO]: ::1 - - [23/Jun/2025:07:37:40 +0000] "GET /api/appointments/available-slots?doctorId=1&date=2025-06-26 HTTP/1.1" 401 69 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-06-23 13:08:35 [INFO]: Socket.IO server initialized
+2025-06-23 13:08:44 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:08:44 [INFO]: ✅ MySQL connected successfully
+2025-06-23 13:08:44 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 13:08:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 13:08:44 [INFO]: 📧 Notification service skipped for now
+2025-06-23 13:08:44 [INFO]: 🚀 Server running on port 5000
+2025-06-23 13:08:44 [INFO]: 📊 Environment: development
+2025-06-23 13:08:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 13:08:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 13:08:46 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:09:04 [ERROR]: MySQL query error:
+2025-06-23 13:10:48 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:11:05 [INFO]: Socket.IO server initialized
+2025-06-23 13:11:08 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:11:08 [INFO]: ✅ MySQL connected successfully
+2025-06-23 13:11:08 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 13:11:08 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 13:11:08 [INFO]: 📧 Notification service skipped for now
+2025-06-23 13:11:08 [INFO]: 🚀 Server running on port 5000
+2025-06-23 13:11:08 [INFO]: 📊 Environment: development
+2025-06-23 13:11:08 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 13:11:08 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 13:11:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:11:56 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:12:17 [INFO]: Socket.IO server initialized
+2025-06-23 13:12:20 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:12:20 [INFO]: ✅ MySQL connected successfully
+2025-06-23 13:12:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 13:12:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 13:12:20 [INFO]: 📧 Notification service skipped for now
+2025-06-23 13:12:20 [INFO]: 🚀 Server running on port 5000
+2025-06-23 13:12:20 [INFO]: 📊 Environment: development
+2025-06-23 13:12:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 13:12:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 13:12:30 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:12:31 [INFO]: ::1 - - [23/Jun/2025:07:42:31 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "node"
+2025-06-23 13:12:31 [INFO]: ::1 - - [23/Jun/2025:07:42:31 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "node"
+2025-06-23 13:13:08 [INFO]: Socket.IO server initialized
+2025-06-23 13:13:11 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:13:11 [INFO]: ✅ MySQL connected successfully
+2025-06-23 13:13:11 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 13:13:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 13:13:11 [INFO]: 📧 Notification service skipped for now
+2025-06-23 13:13:11 [INFO]: 🚀 Server running on port 5000
+2025-06-23 13:13:11 [INFO]: 📊 Environment: development
+2025-06-23 13:13:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 13:13:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 13:13:21 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:13:22 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 13:13:22 [INFO]: ::1 - - [23/Jun/2025:07:43:22 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "node"
+2025-06-23 13:13:22 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:15:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-06-23 13:13:22 [INFO]: ::1 - - [23/Jun/2025:07:43:22 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 401 48 "-" "node"
+2025-06-23 13:13:38 [INFO]: Socket.IO server initialized
+2025-06-23 13:13:42 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:13:42 [INFO]: ✅ MySQL connected successfully
+2025-06-23 13:13:42 [ERROR]: ❌ MongoDB connection failed:
+2025-06-23 13:13:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-23 13:13:42 [INFO]: 📧 Notification service skipped for now
+2025-06-23 13:13:42 [INFO]: 🚀 Server running on port 5000
+2025-06-23 13:13:42 [INFO]: 📊 Environment: development
+2025-06-23 13:13:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-23 13:13:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-23 13:15:44 [INFO]: ✅ MySQL database connected successfully
+2025-06-23 13:15:46 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 13:15:46 [INFO]: ::1 - - [23/Jun/2025:07:45:46 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "node"
+2025-06-23 13:15:47 [INFO]: ::1 - - [23/Jun/2025:07:45:47 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 200 127 "-" "node"
+2025-06-23 13:19:24 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 13:19:24 [INFO]: ::1 - - [23/Jun/2025:07:49:24 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:19:27 [INFO]: ::1 - - [23/Jun/2025:07:49:27 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:19:31 [INFO]: ::1 - - [23/Jun/2025:07:49:31 +0000] "GET /api/patients/appointments HTTP/1.1" 200 105 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:19:35 [INFO]: ::1 - - [23/Jun/2025:07:49:35 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:19:37 [INFO]: ::1 - - [23/Jun/2025:07:49:37 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:20:14 [INFO]: User logged in: patient.test.new@example.com
+2025-06-23 13:20:14 [INFO]: ::1 - - [23/Jun/2025:07:50:14 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:20:19 [INFO]: ::1 - - [23/Jun/2025:07:50:19 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:20:21 [INFO]: ::1 - - [23/Jun/2025:07:50:21 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:20:29 [INFO]: ::1 - - [23/Jun/2025:07:50:29 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:20:31 [INFO]: ::1 - - [23/Jun/2025:07:50:31 +0000] "GET /api/auth/profile HTTP/1.1" 200 933 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-23 13:20:31 [INFO]: ::1 - - [23/Jun/2025:07:50:31 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.0 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-24 08:25:53 [INFO]: Socket.IO server initialized
+2025-06-24 08:26:02 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:26:02 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:26:03 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:26:03 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:26:03 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:26:03 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:26:03 [INFO]: 📊 Environment: development
+2025-06-24 08:26:03 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:26:03 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:27:04 [INFO]: ::1 - - [24/Jun/2025:02:57:04 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:07 [INFO]: ::1 - - [24/Jun/2025:02:57:07 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:19 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:27:19 [INFO]: ::1 - - [24/Jun/2025:02:57:19 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:22 [INFO]: ::1 - - [24/Jun/2025:02:57:22 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:32 [INFO]: ::1 - - [24/Jun/2025:02:57:32 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 200 127 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:33 [INFO]: ::1 - - [24/Jun/2025:02:57:33 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:45 [ERROR]: MySQL query error:
+2025-06-24 08:27:45 [ERROR]: Error: Data truncated for column 'priority' at row 1
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.save (E:\Project 2\backend\models\Appointment.js:59:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async create (E:\Project 2\backend\controllers\appointmentController.js:80:7)
+2025-06-24 08:27:45 [INFO]: ::1 - - [24/Jun/2025:02:57:45 +0000] "POST /api/appointments HTTP/1.1" 500 114 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:27:59 [ERROR]: MySQL query error:
+2025-06-24 08:27:59 [ERROR]: Error: Data truncated for column 'priority' at row 1
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.save (E:\Project 2\backend\models\Appointment.js:59:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async create (E:\Project 2\backend\controllers\appointmentController.js:80:7)
+2025-06-24 08:27:59 [INFO]: ::1 - - [24/Jun/2025:02:57:59 +0000] "POST /api/appointments HTTP/1.1" 500 114 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:30:21 [INFO]: ::1 - - [24/Jun/2025:03:00:21 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:30:23 [INFO]: ::1 - - [24/Jun/2025:03:00:23 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:31:13 [INFO]: Socket.IO server initialized
+2025-06-24 08:31:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:31:13 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:31:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:31:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:31:14 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:31:14 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:31:14 [INFO]: 📊 Environment: development
+2025-06-24 08:31:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:31:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:31:22 [INFO]: Socket.IO server initialized
+2025-06-24 08:31:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:31:24 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:31:24 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:31:24 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:31:24 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:31:24 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:31:24 [INFO]: 📊 Environment: development
+2025-06-24 08:31:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:31:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:32:37 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:32:37 [INFO]: ::1 - - [24/Jun/2025:03:02:37 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-24 08:32:37 [INFO]: ::1 - - [24/Jun/2025:03:02:37 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-24 08:32:38 [INFO]: New appointment created: APT-081
+2025-06-24 08:32:38 [INFO]: ::1 - - [24/Jun/2025:03:02:38 +0000] "POST /api/appointments HTTP/1.1" 201 1017 "-" "axios/1.9.0"
+2025-06-24 08:34:12 [INFO]: ::1 - - [24/Jun/2025:03:04:12 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:34:14 [INFO]: ::1 - - [24/Jun/2025:03:04:14 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:34:17 [INFO]: ::1 - - [24/Jun/2025:03:04:17 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:34:43 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:34:43 [INFO]: ::1 - - [24/Jun/2025:03:04:43 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:34:47 [INFO]: ::1 - - [24/Jun/2025:03:04:47 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:34:54 [INFO]: ::1 - - [24/Jun/2025:03:04:54 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:34:54 [INFO]: ::1 - - [24/Jun/2025:03:04:54 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-26 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:06 [INFO]: New appointment created: APT-091
+2025-06-24 08:35:06 [INFO]: ::1 - - [24/Jun/2025:03:05:06 +0000] "POST /api/appointments HTTP/1.1" 201 997 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:10 [INFO]: ::1 - - [24/Jun/2025:03:05:10 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:30 [INFO]: ::1 - - [24/Jun/2025:03:05:30 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:35 [INFO]: ::1 - - [24/Jun/2025:03:05:35 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:42 [INFO]: ::1 - - [24/Jun/2025:03:05:42 +0000] "GET /api/appointments/available-slots?doctorId=0d76e5a4-6cf3-4793-b9c5-1ecb52767b5b&date=2025-06-27 HTTP/1.1" 200 143 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:43 [INFO]: ::1 - - [24/Jun/2025:03:05:43 +0000] "GET /api/appointments/available-slots?doctorId=0d76e5a4-6cf3-4793-b9c5-1ecb52767b5b&date=2025-06-27 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:52 [INFO]: New appointment created: APT-101
+2025-06-24 08:35:52 [INFO]: ::1 - - [24/Jun/2025:03:05:52 +0000] "POST /api/appointments HTTP/1.1" 201 1005 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:35:55 [INFO]: ::1 - - [24/Jun/2025:03:05:55 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:41:53 [INFO]: Doctor profile created for user: 70d2e1a2-6624-447e-aee9-92f50192a29c
+2025-06-24 08:41:53 [INFO]: New user registered: success.summary.1750734711725@example.com with role: doctor
+2025-06-24 08:41:53 [INFO]: ::1 - - [24/Jun/2025:03:11:53 +0000] "POST /api/auth/register HTTP/1.1" 201 285 "-" "axios/1.9.0"
+2025-06-24 08:41:54 [INFO]: User logged in: success.summary.1750734711725@example.com
+2025-06-24 08:41:54 [INFO]: ::1 - - [24/Jun/2025:03:11:54 +0000] "POST /api/auth/login HTTP/1.1" 200 884 "-" "axios/1.9.0"
+2025-06-24 08:41:55 [INFO]: ::1 - - [24/Jun/2025:03:11:55 +0000] "GET /api/doctors/profile HTTP/1.1" 200 578 "-" "axios/1.9.0"
+2025-06-24 08:41:57 [ERROR]: MySQL query error:
+2025-06-24 08:41:57 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:592:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:408:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:41:57 [INFO]: ::1 - - [24/Jun/2025:03:11:57 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 707 "-" "axios/1.9.0"
+2025-06-24 08:41:58 [INFO]: ::1 - - [24/Jun/2025:03:11:58 +0000] "GET /api/auth/profile HTTP/1.1" 200 1015 "-" "axios/1.9.0"
+2025-06-24 08:41:59 [INFO]: ::1 - - [24/Jun/2025:03:11:59 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "-" "axios/1.9.0"
+2025-06-24 08:42:13 [INFO]: ::1 - - [24/Jun/2025:03:12:13 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:42:13 [INFO]: ::1 - - [24/Jun/2025:03:12:13 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:43:23 [INFO]: Socket.IO server initialized
+2025-06-24 08:43:24 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:43:24 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:43:24 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:43:24 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:43:24 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:43:24 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:43:24 [INFO]: 📊 Environment: development
+2025-06-24 08:43:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:43:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:43:53 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:43:53 [INFO]: ::1 - - [24/Jun/2025:03:13:53 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:43:56 [INFO]: ::1 - - [24/Jun/2025:03:13:56 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:04 [INFO]: ::1 - - [24/Jun/2025:03:14:04 +0000] "GET /api/appointments/available-slots?doctorId=ac696ede-8280-4a42-8766-64dba77d4440&date=2025-06-27 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:04 [INFO]: ::1 - - [24/Jun/2025:03:14:04 +0000] "GET /api/appointments/available-slots?doctorId=ac696ede-8280-4a42-8766-64dba77d4440&date=2025-06-27 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:10 [INFO]: ::1 - - [24/Jun/2025:03:14:10 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:10 [INFO]: ::1 - - [24/Jun/2025:03:14:10 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:24 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:44:24 [INFO]: ::1 - - [24/Jun/2025:03:14:24 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:26 [INFO]: ::1 - - [24/Jun/2025:03:14:26 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:34 [INFO]: ::1 - - [24/Jun/2025:03:14:34 +0000] "GET /api/appointments/available-slots?doctorId=33f345c4-1e35-4f52-b90f-a016adabd0be&date=2025-06-26 HTTP/1.1" 200 151 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:36 [INFO]: ::1 - - [24/Jun/2025:03:14:36 +0000] "GET /api/appointments/available-slots?doctorId=33f345c4-1e35-4f52-b90f-a016adabd0be&date=2025-06-26 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:44:48 [INFO]: New appointment created: APT-111
+2025-06-24 08:44:48 [INFO]: ::1 - - [24/Jun/2025:03:14:48 +0000] "POST /api/appointments HTTP/1.1" 201 1013 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:45:00 [INFO]: ::1 - - [24/Jun/2025:03:15:00 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:45:10 [INFO]: ::1 - - [24/Jun/2025:03:15:10 +0000] "PUT /api/appointments/65098f26-5ae0-4b47-9f32-0dd315adadad/cancel HTTP/1.1" 404 123 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:45:37 [INFO]: ::1 - - [24/Jun/2025:03:15:37 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:45:38 [INFO]: ::1 - - [24/Jun/2025:03:15:38 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:48:34 [INFO]: Socket.IO server initialized
+2025-06-24 08:48:34 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:48:34 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:48:34 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:48:34 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:48:34 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:48:34 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:48:34 [INFO]: 📊 Environment: development
+2025-06-24 08:48:34 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:48:34 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:49:25 [ERROR]: MySQL query error:
+2025-06-24 08:49:25 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:160:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:119:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:49:25 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:160:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:119:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:49:25 [INFO]: ::1 - - [24/Jun/2025:03:19:25 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 580 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:49:26 [INFO]: ::1 - - [24/Jun/2025:03:19:26 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:50:43 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:50:54 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:51:44 [INFO]: ::1 - - [24/Jun/2025:03:21:44 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-06-24 08:52:09 [INFO]: Socket.IO server initialized
+2025-06-24 08:52:10 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:52:10 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:52:10 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:52:10 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:52:10 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:52:10 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:52:10 [INFO]: 📊 Environment: development
+2025-06-24 08:52:10 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:52:10 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:52:18 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:52:18 [INFO]: ::1 - - [24/Jun/2025:03:22:18 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:52:19 [ERROR]: MySQL query error:
+2025-06-24 08:52:19 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:160:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:119:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:52:19 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:160:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:119:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:52:19 [INFO]: ::1 - - [24/Jun/2025:03:22:19 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 500 580 "-" "axios/1.9.0"
+2025-06-24 08:52:43 [INFO]: Socket.IO server initialized
+2025-06-24 08:52:45 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:52:45 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:52:45 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:52:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:52:45 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:52:45 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:52:45 [INFO]: 📊 Environment: development
+2025-06-24 08:52:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:52:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:52:54 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:52:54 [INFO]: ::1 - - [24/Jun/2025:03:22:54 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:52:54 [ERROR]: MySQL query error:
+2025-06-24 08:52:54 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:160:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:117:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:52:54 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:160:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:117:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:52:54 [INFO]: ::1 - - [24/Jun/2025:03:22:54 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 500 580 "-" "axios/1.9.0"
+2025-06-24 08:53:12 [INFO]: Socket.IO server initialized
+2025-06-24 08:53:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:53:13 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:53:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:53:13 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:53:13 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:53:13 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:53:13 [INFO]: 📊 Environment: development
+2025-06-24 08:53:13 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:53:13 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:53:21 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:53:21 [INFO]: ::1 - - [24/Jun/2025:03:23:21 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:53:22 [ERROR]: MySQL query error:
+2025-06-24 08:53:22 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:163:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:117:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:53:22 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:163:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:117:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:53:22 [INFO]: ::1 - - [24/Jun/2025:03:23:22 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 500 580 "-" "axios/1.9.0"
+2025-06-24 08:53:42 [INFO]: Socket.IO server initialized
+2025-06-24 08:53:46 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:53:46 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:53:46 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:53:46 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:53:46 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:53:46 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:53:46 [INFO]: 📊 Environment: development
+2025-06-24 08:53:46 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:53:46 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:53:58 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:53:58 [INFO]: ::1 - - [24/Jun/2025:03:23:58 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:53:59 [ERROR]: MySQL query error:
+2025-06-24 08:53:59 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:163:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:120:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:53:59 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:163:34)
+    at getAppointmentHistory (E:\Project 2\backend\controllers\patientController.js:120:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-06-24 08:53:59 [INFO]: ::1 - - [24/Jun/2025:03:23:59 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 500 580 "-" "axios/1.9.0"
+2025-06-24 08:54:12 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:54:13 [ERROR]: MySQL query error:
+2025-06-24 08:54:24 [INFO]: Socket.IO server initialized
+2025-06-24 08:54:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:54:25 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:54:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:54:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:54:25 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:54:25 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:54:25 [INFO]: 📊 Environment: development
+2025-06-24 08:54:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:54:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:54:24 [INFO]: Socket.IO server initialized
+2025-06-24 08:54:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:54:25 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:54:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:54:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:54:25 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:54:25 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:54:25 [INFO]: 📊 Environment: development
+2025-06-24 08:54:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:54:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:54:33 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:54:33 [INFO]: ::1 - - [24/Jun/2025:03:24:33 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:54:34 [INFO]: ::1 - - [24/Jun/2025:03:24:34 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 200 87 "-" "axios/1.9.0"
+2025-06-24 08:54:45 [INFO]: Socket.IO server initialized
+2025-06-24 08:54:46 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:54:46 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:54:46 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:54:46 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:54:46 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:54:46 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:54:46 [INFO]: 📊 Environment: development
+2025-06-24 08:54:46 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:54:46 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:54:57 [INFO]: Socket.IO server initialized
+2025-06-24 08:54:58 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:54:58 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:54:58 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:54:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:54:58 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:54:58 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:54:58 [INFO]: 📊 Environment: development
+2025-06-24 08:54:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:54:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:55:08 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:55:08 [INFO]: ::1 - - [24/Jun/2025:03:25:08 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "-" "axios/1.9.0"
+2025-06-24 08:55:08 [INFO]: ::1 - - [24/Jun/2025:03:25:08 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-06-24 08:55:09 [INFO]: ::1 - - [24/Jun/2025:03:25:09 +0000] "POST /api/appointments HTTP/1.1" 400 65 "-" "axios/1.9.0"
+2025-06-24 08:55:19 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:55:19 [INFO]: ::1 - - [24/Jun/2025:03:25:19 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "-"
+2025-06-24 08:55:19 [INFO]: ::1 - - [24/Jun/2025:03:25:19 +0000] "GET /api/patients/doctors/search HTTP/1.1" 200 - "-" "node"
+2025-06-24 08:55:20 [INFO]: ::1 - - [24/Jun/2025:03:25:20 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-27 HTTP/1.1" 200 151 "-" "node"
+2025-06-24 08:55:21 [INFO]: New appointment created: APT-121
+2025-06-24 08:55:21 [INFO]: ::1 - - [24/Jun/2025:03:25:21 +0000] "POST /api/appointments HTTP/1.1" 201 - "-" "node"
+2025-06-24 08:55:21 [INFO]: ::1 - - [24/Jun/2025:03:25:21 +0000] "GET /api/appointments/available-slots?doctorId=26b6953c-871e-4873-8cd7-827d6290cd83&date=2025-06-27 HTTP/1.1" 200 143 "-" "node"
+2025-06-24 08:55:33 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:55:33 [INFO]: ::1 - - [24/Jun/2025:03:25:33 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:55:33 [INFO]: ::1 - - [24/Jun/2025:03:25:33 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 200 879 "-" "axios/1.9.0"
+2025-06-24 08:56:11 [INFO]: User logged in: patient.test@example.com
+2025-06-24 08:56:11 [INFO]: ::1 - - [24/Jun/2025:03:26:11 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:12 [INFO]: ::1 - - [24/Jun/2025:03:26:12 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:17 [INFO]: ::1 - - [24/Jun/2025:03:26:17 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:19 [INFO]: ::1 - - [24/Jun/2025:03:26:19 +0000] "GET /api/patients/doctors/search HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:24 [INFO]: Socket.IO server initialized
+2025-06-24 08:56:26 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 08:56:26 [INFO]: ✅ MySQL connected successfully
+2025-06-24 08:56:26 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 08:56:26 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 08:56:26 [INFO]: 📧 Notification service skipped for now
+2025-06-24 08:56:26 [INFO]: 🚀 Server running on port 5000
+2025-06-24 08:56:26 [INFO]: 📊 Environment: development
+2025-06-24 08:56:26 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 08:56:26 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 08:56:29 [INFO]: ::1 - - [24/Jun/2025:03:26:29 +0000] "GET /api/appointments/available-slots?doctorId=ac696ede-8280-4a42-8766-64dba77d4440&date=2025-06-26 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:29 [INFO]: ::1 - - [24/Jun/2025:03:26:29 +0000] "GET /api/appointments/available-slots?doctorId=ac696ede-8280-4a42-8766-64dba77d4440&date=2025-06-26 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:32 [INFO]: ::1 - - [24/Jun/2025:03:26:32 +0000] "GET /api/appointments/available-slots?doctorId=ac696ede-8280-4a42-8766-64dba77d4440&date=2025-06-25 HTTP/1.1" 200 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:32 [INFO]: ::1 - - [24/Jun/2025:03:26:32 +0000] "GET /api/appointments/available-slots?doctorId=ac696ede-8280-4a42-8766-64dba77d4440&date=2025-06-25 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:56:36 [INFO]: ::1 - - [24/Jun/2025:03:26:36 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-24 08:57:06 [INFO]: User logged in: patient.test.new@example.com
+2025-06-24 08:57:06 [INFO]: ::1 - - [24/Jun/2025:03:27:06 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
+2025-06-24 08:57:07 [INFO]: ::1 - - [24/Jun/2025:03:27:07 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 200 879 "-" "axios/1.9.0"

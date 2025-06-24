@@ -75,11 +75,9 @@ class PatientController {
     }
   }
 
-  // Get patient's appointment history
+  // Get patient appointment history
   static async getAppointmentHistory(req, res, next) {
     try {
-      const { page = 1, limit = 10, status, startDate, endDate } = req.query;
-      
       const patient = await Patient.findByUserId(req.user.id);
       if (!patient) {
         return res.status(404).json({
@@ -88,17 +86,46 @@ class PatientController {
         });
       }
 
-      const appointments = await Appointment.findByPatientId(patient.id, {
-        page: parseInt(page),
-        limit: parseInt(limit),
+      const {
+        page = 1,
+        limit = 10,
         status,
         startDate,
         endDate
-      });
+      } = req.query;      const filters = {
+        patient_id: patient.id,
+        limit: parseInt(limit),
+        offset: (parseInt(page) - 1) * parseInt(limit)
+      };
+
+      if (status) {
+        if (typeof status === 'string') {
+          filters.status = [status];
+        } else {
+          filters.status = status;
+        }
+      }
+
+      if (startDate) {
+        filters.date_from = startDate;
+      }
+
+      if (endDate) {
+        filters.date_to = endDate;
+      }
+
+      const appointments = await Appointment.findAll(filters);
 
       res.json({
         success: true,
-        data: appointments
+        data: {
+          appointments,
+          pagination: {
+            page: parseInt(page),
+            limit: parseInt(limit),
+            total: appointments.length
+          }
+        }
       });
     } catch (error) {
       logger.error('Error fetching appointment history:', error);
@@ -106,7 +133,7 @@ class PatientController {
     }
   }
 
-  // Get upcoming appointments
+  // Get upcoming appointments for patient
   static async getUpcomingAppointments(req, res, next) {
     try {
       const patient = await Patient.findByUserId(req.user.id);
@@ -117,11 +144,22 @@ class PatientController {
         });
       }
 
-      const appointments = await Appointment.findUpcomingByPatientId(patient.id);
+      const { limit = 5 } = req.query;
+
+      const filters = {
+        patient_id: patient.id,
+        status: ['scheduled', 'confirmed'],
+        date_from: new Date().toISOString().split('T')[0], // Today onwards
+        limit: parseInt(limit)
+      };
+
+      const appointments = await Appointment.findAll(filters);
 
       res.json({
         success: true,
-        data: appointments
+        data: {
+          appointments
+        }
       });
     } catch (error) {
       logger.error('Error fetching upcoming appointments:', error);

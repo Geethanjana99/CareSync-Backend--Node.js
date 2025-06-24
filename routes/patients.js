@@ -6,7 +6,7 @@ const auth = require('../middleware/auth');
 
 // All routes require patient authentication
 router.use(auth.authMiddleware);
-router.use(auth.authorize(['patient']));
+router.use(auth.authorize('patient'));
 
 // Profile management
 router.get('/profile', PatientController.getProfile);
