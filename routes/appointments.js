@@ -9,6 +9,7 @@ router.use(auth.authMiddleware);
 
 // Get appointments
 router.get('/', appointmentController.getAppointments);
+router.get('/available-slots', appointmentController.getAvailableSlots);
 router.get('/slots/:doctorId', appointmentController.getAvailableSlots);
 router.get('/upcoming', appointmentController.getAppointments); // Will filter by status
 router.get('/history', appointmentController.getAppointments); // Will filter by status

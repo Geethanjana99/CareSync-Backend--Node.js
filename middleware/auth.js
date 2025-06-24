@@ -11,9 +11,7 @@ const authMiddleware = async (req, res, next) => {
         success: false,
         message: 'No token provided, authorization denied'
       });
-    }
-
-    // Verify token
+    }    // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
     // Get user from database
@@ -44,9 +42,7 @@ const authMiddleware = async (req, res, next) => {
         success: false,
         message: 'Account is suspended'
       });
-    }
-
-    // Add user info to request
+    }    // Add user info to request
     req.user = {
       id: user.id,
       name: user.name,
@@ -113,9 +109,7 @@ const optionalAuth = async (req, res, next) => {
       return next();
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    
-    const query = `
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);    const query = `
       SELECT u.*, 
              p.patient_id, d.doctor_id, d.specialty
       FROM users u
