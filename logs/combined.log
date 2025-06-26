@@ -2531,3 +2531,376 @@
 2025-06-24 00:44:18 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:19:14:18 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5175/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
 2025-06-24 00:44:48 [INFO]: User logged in: amiyuru2@gmail.com
 2025-06-24 00:44:48 [INFO]: ::ffff:127.0.0.1 - - [23/Jun/2025:19:14:48 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5175/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 19:26:11 [INFO]: Socket.IO server initialized
+2025-06-24 19:26:12 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 19:26:12 [INFO]: ✅ MySQL connected successfully
+2025-06-24 19:26:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 19:26:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 19:26:12 [INFO]: 📧 Notification service skipped for now
+2025-06-24 19:26:12 [INFO]: 🚀 Server running on port 5000
+2025-06-24 19:26:12 [INFO]: 📊 Environment: development
+2025-06-24 19:26:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 19:26:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 19:26:49 [INFO]: Socket.IO server initialized
+2025-06-24 19:26:50 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 19:26:50 [INFO]: ✅ MySQL connected successfully
+2025-06-24 19:26:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 19:26:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 19:26:50 [INFO]: 📧 Notification service skipped for now
+2025-06-24 19:26:50 [INFO]: 🚀 Server running on port 5000
+2025-06-24 19:26:50 [INFO]: 📊 Environment: development
+2025-06-24 19:26:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 19:26:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 19:29:06 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-24 19:29:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:13:59:06 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 19:32:26 [INFO]: Socket.IO server initialized
+2025-06-24 19:32:28 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 19:32:28 [INFO]: ✅ MySQL connected successfully
+2025-06-24 19:32:28 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 19:32:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 19:32:28 [INFO]: 📧 Notification service skipped for now
+2025-06-24 19:32:28 [INFO]: 🚀 Server running on port 5000
+2025-06-24 19:32:28 [INFO]: 📊 Environment: development
+2025-06-24 19:32:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 19:32:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 19:48:51 [INFO]: ::1 - - [24/Jun/2025:14:18:51 +0000] "GET /health HTTP/1.1" 200 103 "-" "node"
+2025-06-24 19:55:24 [INFO]: Socket.IO server initialized
+2025-06-24 19:55:27 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 19:55:27 [INFO]: ✅ MySQL connected successfully
+2025-06-24 19:55:27 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 19:55:27 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 19:55:27 [INFO]: 📧 Notification service skipped for now
+2025-06-24 19:55:27 [INFO]: 🚀 Server running on port 5000
+2025-06-24 19:55:27 [INFO]: 📊 Environment: development
+2025-06-24 19:55:27 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 19:55:27 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 19:56:48 [INFO]: Socket.IO server initialized
+2025-06-24 19:56:50 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 19:56:50 [INFO]: ✅ MySQL connected successfully
+2025-06-24 19:56:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 19:56:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 19:56:50 [INFO]: 📧 Notification service skipped for now
+2025-06-24 19:56:50 [INFO]: 🚀 Server running on port 5000
+2025-06-24 19:56:50 [INFO]: 📊 Environment: development
+2025-06-24 19:56:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 19:56:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 20:02:58 [INFO]: Socket.IO server initialized
+2025-06-24 20:03:02 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:03:19 [INFO]: ::1 - - [24/Jun/2025:14:33:19 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "node"
+2025-06-24 20:03:19 [INFO]: ::1 - - [24/Jun/2025:14:33:19 +0000] "POST /api/auth/register HTTP/1.1" 400 251 "-" "node"
+2025-06-24 20:03:37 [INFO]: ::1 - - [24/Jun/2025:14:33:37 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-24 20:04:23 [INFO]: Socket.IO server initialized
+2025-06-24 20:04:29 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:04:29 [INFO]: ✅ MySQL connected successfully
+2025-06-24 20:04:29 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 20:04:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 20:04:29 [INFO]: 📧 Notification service skipped for now
+2025-06-24 20:04:29 [INFO]: 🚀 Server running on port 5000
+2025-06-24 20:04:29 [INFO]: 📊 Environment: development
+2025-06-24 20:04:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 20:04:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 20:04:44 [INFO]: ::1 - - [24/Jun/2025:14:34:44 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-24 20:05:47 [INFO]: ::1 - - [24/Jun/2025:14:35:47 +0000] "GET /health HTTP/1.1" 200 102 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-24 20:06:51 [ERROR]: MySQL query error:
+2025-06-24 20:07:17 [INFO]: ::1 - - [24/Jun/2025:14:37:17 +0000] "GET /api/admin/patients?page=1&limit=10 HTTP/1.1" 401 69 "-" "node"
+2025-06-24 20:13:27 [INFO]: Socket.IO server initialized
+2025-06-24 20:13:29 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:14:17 [INFO]: Socket.IO server initialized
+2025-06-24 20:14:18 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:15:07 [INFO]: Socket.IO server initialized
+2025-06-24 20:15:09 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:15:53 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:45:53 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:15:56 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:45:56 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:16:02 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-24 20:16:02 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:46:02 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:16:05 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:16:05 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:46:05 +0000] "GET /api/admin/patients?page=1&limit=20&search= HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:20:13 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:20:13 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:50:13 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:21:46 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:21:46 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:51:46 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:21:57 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:21:57 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:51:57 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:21:58 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:21:58 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:51:58 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:22:05 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:22:05 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:52:05 +0000] "GET /api/admin/patients?page=1&limit=20&search= HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:22:05 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:52:05 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:22:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:52:06 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:22:11 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-24 20:22:11 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:52:11 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:22:14 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:22:14 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:52:14 +0000] "GET /api/admin/patients?page=1&limit=20&search= HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:04 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:04 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:04 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:05 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:05 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:05 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:06 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:06 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:06 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:06 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:06 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:06 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:06 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:06 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:06 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:06 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:06 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:25:07 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-24 20:25:07 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:55:07 +0000] "POST /api/admin/patients HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:26:34 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:56:34 +0000] "GET /api/admin/patients?page=1&limit=20&search= HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:26:51 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:14:56:51 +0000] "GET /api/admin/patients?page=1&limit=20&search= HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:27:20 [INFO]: Socket.IO server initialized
+2025-06-24 20:27:41 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:27:46 [INFO]: Socket.IO server initialized
+2025-06-24 20:27:51 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:29:51 [INFO]: Socket.IO server initialized
+2025-06-24 20:30:02 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:30:02 [INFO]: ✅ MySQL connected successfully
+2025-06-24 20:30:02 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 20:30:02 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 20:30:02 [INFO]: 📧 Notification service skipped for now
+2025-06-24 20:30:02 [INFO]: 🚀 Server running on port 5000
+2025-06-24 20:30:02 [INFO]: 📊 Environment: development
+2025-06-24 20:30:02 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 20:30:02 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 20:31:22 [INFO]: ::1 - - [24/Jun/2025:15:01:22 +0000] "GET /api/admin/patients?page=1&limit=5 HTTP/1.1" 401 69 "-" "node"
+2025-06-24 20:32:02 [INFO]: Socket.IO server initialized
+2025-06-24 20:32:07 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 20:32:07 [INFO]: ✅ MySQL connected successfully
+2025-06-24 20:32:07 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 20:32:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 20:32:07 [INFO]: 📧 Notification service skipped for now
+2025-06-24 20:32:07 [INFO]: 🚀 Server running on port 5000
+2025-06-24 20:32:07 [INFO]: 📊 Environment: development
+2025-06-24 20:32:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 20:32:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 20:34:00 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:15:04:00 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:34:01 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:15:04:01 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:34:01 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:15:04:01 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:34:02 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:15:04:02 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:34:02 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:15:04:02 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 20:34:05 [INFO]: ::ffff:127.0.0.1 - - [24/Jun/2025:15:04:05 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0"
+2025-06-24 21:16:35 [INFO]: Socket.IO server initialized
+2025-06-24 21:16:37 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 21:17:02 [INFO]: Socket.IO server initialized
+2025-06-24 21:17:04 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 21:17:04 [INFO]: ✅ MySQL connected successfully
+2025-06-24 21:17:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 21:17:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 21:17:04 [INFO]: 📧 Notification service skipped for now
+2025-06-24 21:17:04 [INFO]: 🚀 Server running on port 5000
+2025-06-24 21:17:04 [INFO]: 📊 Environment: development
+2025-06-24 21:17:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 21:17:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-26 19:22:32 [INFO]: Socket.IO server initialized
+2025-06-26 19:22:42 [ERROR]: ❌ MySQL connection failed:
+2025-06-26 19:22:42 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-26 19:22:42 [ERROR]: ❌ MongoDB connection failed:
+2025-06-26 19:22:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-26 19:22:42 [INFO]: 📧 Notification service skipped for now
+2025-06-26 19:22:42 [INFO]: 🚀 Server running on port 5000
+2025-06-26 19:22:42 [INFO]: 📊 Environment: development
+2025-06-26 19:22:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-26 19:22:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-26 19:44:40 [INFO]: Socket.IO server initialized
+2025-06-26 19:44:50 [ERROR]: ❌ MySQL connection failed:
+2025-06-26 19:45:30 [ERROR]: ❌ MySQL connection failed:
+2025-06-26 19:56:02 [INFO]: Socket.IO server initialized
+2025-06-26 19:56:12 [ERROR]: ❌ MySQL connection failed:
+2025-06-26 19:56:12 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-26 19:56:12 [ERROR]: ❌ MongoDB connection failed:
+2025-06-26 19:56:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-26 19:56:12 [INFO]: 📧 Notification service skipped for now
+2025-06-26 19:56:12 [INFO]: 🚀 Server running on port 5000
+2025-06-26 19:56:12 [INFO]: 📊 Environment: development
+2025-06-26 19:56:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-26 19:56:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-26 20:00:09 [ERROR]: MySQL query error:
+2025-06-26 20:00:09 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-26 20:00:09 [INFO]: ::ffff:127.0.0.1 - - [26/Jun/2025:14:30:09 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-26 20:00:53 [ERROR]: MySQL query error:
+2025-06-26 20:00:53 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-26 20:00:53 [INFO]: ::ffff:127.0.0.1 - - [26/Jun/2025:14:30:53 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-26 20:58:37 [ERROR]: MySQL query error:
+2025-06-26 20:58:37 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-26 20:58:37 [INFO]: ::ffff:127.0.0.1 - - [26/Jun/2025:15:28:37 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
