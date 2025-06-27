@@ -119,7 +119,10 @@ app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
 app.use('/api/admin', adminRoutes);
 
-// Serve uploaded files
+// Temporary mock routes for testing (no authentication required)
+app.use('/api/mock/patients', require('./routes/mock-patients'));
+
+// Serve static files for uploads
 app.use('/uploads', express.static('uploads'));
 
 // 404 handler

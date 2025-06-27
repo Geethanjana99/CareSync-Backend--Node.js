@@ -27,6 +27,9 @@ router.use('/doctors', doctorRoutes);
 router.use('/medical-reports', medicalReportRoutes);
 router.use('/admin', adminRoutes);
 
+// Temporary mock routes for testing (no authentication required)
+router.use('/mock/patients', require('./mock-patients'));
+
 // API documentation endpoint
 router.get('/docs', (req, res) => {
   res.json({
