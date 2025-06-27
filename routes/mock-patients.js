@@ -92,4 +92,72 @@ router.post('/', (req, res) => {
   });
 });
 
+// Update patient by ID (no auth required for testing)
+router.put('/:id', (req, res) => {
+  console.log('📝 Mock API: Updating patient...', req.params.id, req.body);
+  
+  const { id } = req.params;
+  const { firstName, lastName, email, phone, dateOfBirth, gender, address, emergencyContact, emergencyPhone } = req.body;
+  
+  const patientIndex = mockPatients.findIndex(p => p.id === id);
+  
+  if (patientIndex === -1) {
+    return res.status(404).json({
+      success: false,
+      message: 'Patient not found'
+    });
+  }
+  
+  // Update patient data
+  mockPatients[patientIndex] = {
+    ...mockPatients[patientIndex],
+    name: `${firstName} ${lastName}`,
+    email,
+    phone,
+    date_of_birth: dateOfBirth,
+    gender,
+    address,
+    emergency_contact_name: emergencyContact,
+    emergency_contact_phone: emergencyPhone
+  };
+  
+  console.log('✅ Mock API: Patient updated successfully');
+  
+  res.json({
+    success: true,
+    message: 'Patient updated successfully',
+    data: {
+      patient: mockPatients[patientIndex]
+    }
+  });
+});
+
+// Delete patient by ID (soft delete - no auth required for testing)
+router.delete('/:id', (req, res) => {
+  console.log('🗑️ Mock API: Deleting patient...', req.params.id);
+  
+  const { id } = req.params;
+  const patientIndex = mockPatients.findIndex(p => p.id === id);
+  
+  if (patientIndex === -1) {
+    return res.status(404).json({
+      success: false,
+      message: 'Patient not found'
+    });
+  }
+  
+  // Remove patient from mock data (in real system, this would be a soft delete)
+  const deletedPatient = mockPatients.splice(patientIndex, 1)[0];
+  
+  console.log('✅ Mock API: Patient deleted successfully');
+  
+  res.json({
+    success: true,
+    message: 'Patient deleted successfully',
+    data: {
+      patient: deletedPatient
+    }
+  });
+});
+
 module.exports = router;
