@@ -1907,3 +1907,24 @@
 2025-06-27 00:35:08 [ERROR]: ❌ MongoDB connection failed:
 2025-06-27 00:36:57 [ERROR]: ❌ MongoDB connection failed:
 2025-06-27 10:16:35 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 10:57:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 11:59:28 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 12:39:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 12:40:13 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 12:41:37 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 12:59:50 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 13:15:01 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 13:15:29 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 13:20:11 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 13:27:07 [ERROR]: MySQL query error:
+2025-06-27 13:27:07 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (d:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (d:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (d:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (d:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)

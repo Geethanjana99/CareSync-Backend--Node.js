@@ -122,6 +122,7 @@ app.use('/api/admin', adminRoutes);
 // Temporary mock routes for testing (no authentication required)
 app.use('/api/mock/patients', require('./routes/mock-patients'));
 app.use('/api/mock/doctors', require('./routes/mock-doctors'));
+app.use('/api/mock/appointments', require('./routes/mock-appointments'));
 
 // Serve static files for uploads
 app.use('/uploads', express.static('uploads'));

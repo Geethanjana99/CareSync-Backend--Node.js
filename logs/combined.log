@@ -3632,3 +3632,201 @@
 2025-06-27 10:39:19 [INFO]: User logged in: amiyuru2@gmail.com
 2025-06-27 10:39:19 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:09:19 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
 2025-06-27 10:39:21 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:09:21 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:18 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:18 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:24 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:24 +0000] "DELETE /api/mock/doctors/4 HTTP/1.1" 200 346 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:24 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:24 +0000] "GET /api/mock/doctors HTTP/1.1" 200 567 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:26 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:26 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:30 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:30 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:31 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:31 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:44:42 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:14:42 +0000] "POST /api/auth/login HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:45:24 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 10:45:24 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:15:24 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:45:26 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:15:26 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:45:29 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:15:29 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:45:29 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:15:29 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 10:46:12 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 10:57:34 [INFO]: Socket.IO server initialized
+2025-06-27 10:57:54 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 10:57:54 [INFO]: ✅ MySQL connected successfully
+2025-06-27 10:57:54 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 10:57:54 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-27 10:57:54 [INFO]: 📧 Notification service skipped for now
+2025-06-27 10:57:54 [INFO]: 🚀 Server running on port 5000
+2025-06-27 10:57:54 [INFO]: 📊 Environment: development
+2025-06-27 10:57:54 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-27 10:57:54 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-27 10:59:14 [INFO]: ::1 - - [27/Jun/2025:05:29:14 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 11:13:41 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:43:41 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 11:13:41 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:43:41 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 11:13:45 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:43:45 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 11:13:50 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:43:50 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 11:13:50 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:05:43:50 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 11:59:26 [INFO]: Socket.IO server initialized
+2025-06-27 11:59:28 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 12:00:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:30:15 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:00:19 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:30:19 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:00:26 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 12:00:26 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:30:26 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:00:34 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:30:34 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:00:34 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:30:34 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:29 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:29 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:29 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:29 +0000] "POST /api/mock/patients HTTP/1.1" 201 493 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:30 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:30 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:30 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:30 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:33 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:33 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:33 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:33 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:35 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:35 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:35 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:35 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:41 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 12:01:41 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:41 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:43 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:43 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:01:43 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:31:43 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:01 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:01 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:06 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:06 +0000] "DELETE /api/mock/doctors/1 HTTP/1.1" 200 352 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:06 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:06 +0000] "GET /api/mock/doctors HTTP/1.1" 200 610 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:23 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:25 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:25 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:25 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:25 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:28 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:28 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:28 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:28 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:41 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:41 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:48 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:48 +0000] "DELETE /api/mock/doctors/2 HTTP/1.1" 200 348 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:48 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:48 +0000] "GET /api/mock/doctors HTTP/1.1" 200 345 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:50 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:50 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:51 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:51 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:51 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:51 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:56 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 12:03:56 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:56 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:03:57 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:33:57 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:03 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:03 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:09 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:09 +0000] "GET /api/admin/patients?page=1&limit=20&search=m&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:09 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:09 +0000] "GET /api/mock/patients?page=1&limit=20&search=m&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:11 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:11 +0000] "GET /api/admin/patients?page=1&limit=20&search=mi&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:11 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:11 +0000] "GET /api/mock/patients?page=1&limit=20&search=mi&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:13 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:13 +0000] "GET /api/admin/patients?page=1&limit=20&search=miy&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:13 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:13 +0000] "GET /api/mock/patients?page=1&limit=20&search=miy&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:13 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:13 +0000] "GET /api/admin/patients?page=1&limit=20&search=miyu&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:13 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:13 +0000] "GET /api/mock/patients?page=1&limit=20&search=miyu&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:15 +0000] "GET /api/admin/patients?page=1&limit=20&search=miy&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:15 +0000] "GET /api/mock/patients?page=1&limit=20&search=miy&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:15 +0000] "GET /api/admin/patients?page=1&limit=20&search=mi&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:15 +0000] "GET /api/mock/patients?page=1&limit=20&search=mi&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:15 +0000] "GET /api/admin/patients?page=1&limit=20&search=m&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:15 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:15 +0000] "GET /api/mock/patients?page=1&limit=20&search=m&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:16 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:16 +0000] "GET /api/admin/patients?page=1&limit=20&search=a&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:16 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:16 +0000] "GET /api/mock/patients?page=1&limit=20&search=a&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:17 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:17 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:17 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:17 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:17 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:17 +0000] "GET /api/admin/patients?page=1&limit=20&search=as&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:17 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:17 +0000] "GET /api/mock/patients?page=1&limit=20&search=as&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:18 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:18 +0000] "GET /api/admin/patients?page=1&limit=20&search=ash&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:18 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:18 +0000] "GET /api/mock/patients?page=1&limit=20&search=ash&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:23 +0000] "GET /api/admin/patients?page=1&limit=20&search=as&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:23 +0000] "GET /api/mock/patients?page=1&limit=20&search=as&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:23 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:23 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:23 +0000] "GET /api/admin/patients?page=1&limit=20&search=a&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:04:23 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:06:34:23 +0000] "GET /api/mock/patients?page=1&limit=20&search=a&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:38:58 [INFO]: Socket.IO server initialized
+2025-06-27 12:39:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 12:40:09 [INFO]: Socket.IO server initialized
+2025-06-27 12:40:13 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 12:41:36 [INFO]: Socket.IO server initialized
+2025-06-27 12:41:37 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 12:41:37 [INFO]: ✅ MySQL connected successfully
+2025-06-27 12:41:37 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 12:41:37 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-27 12:41:37 [INFO]: 📧 Notification service skipped for now
+2025-06-27 12:41:37 [INFO]: 🚀 Server running on port 5000
+2025-06-27 12:41:37 [INFO]: 📊 Environment: development
+2025-06-27 12:41:37 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-27 12:41:37 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-27 12:41:51 [INFO]: ::1 - - [27/Jun/2025:07:11:51 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:44:21 [INFO]: ::1 - - [27/Jun/2025:07:14:21 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:52:56 [INFO]: ::1 - - [27/Jun/2025:07:22:56 +0000] "POST /api/mock/appointments HTTP/1.1" 201 460 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:53:03 [INFO]: ::1 - - [27/Jun/2025:07:23:03 +0000] "POST /api/mock/appointments HTTP/1.1" 400 124 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:53:33 [INFO]: ::1 - - [27/Jun/2025:07:23:33 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1603 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:53:45 [INFO]: ::1 - - [27/Jun/2025:07:23:45 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:53:59 [INFO]: ::1 - - [27/Jun/2025:07:23:59 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1603 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 12:56:08 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:26:08 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:56:08 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:26:08 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:56:18 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:26:18 +0000] "DELETE /api/admin/patients/1 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:56:18 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:26:18 +0000] "DELETE /api/mock/patients/1 HTTP/1.1" 200 405 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 12:59:44 [INFO]: Socket.IO server initialized
+2025-06-27 12:59:50 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 13:00:32 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:30:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:00:33 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:30:33 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:00:41 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 13:00:41 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:30:41 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:00:44 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:30:44 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:00:44 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:30:44 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 456 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:01:45 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:31:45 +0000] "POST /api/admin/patients HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:01:45 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:31:45 +0000] "POST /api/mock/patients HTTP/1.1" 201 500 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:02:00 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:32:00 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:02:00 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:32:00 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 784 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:02:11 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:32:11 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:06:29 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:36:29 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:09:37 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:39:37 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:10:48 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:40:48 +0000] "POST /api/mock/doctors HTTP/1.1" 201 329 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:10:48 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:40:48 +0000] "GET /api/mock/doctors HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:10:59 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:40:59 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:11:00 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:41:00 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:11:01 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:41:01 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:11:04 [INFO]: User logged in: amiyuru2@gmail.com
+2025-06-27 13:11:04 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:41:04 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:11:06 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:41:06 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:14:59 [INFO]: Socket.IO server initialized
+2025-06-27 13:15:01 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 13:15:27 [INFO]: Socket.IO server initialized
+2025-06-27 13:15:28 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 13:16:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:46:03 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:16:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:46:03 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:16:17 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:46:17 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:16:17 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:46:17 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:16:47 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:46:47 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:16:47 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:46:47 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:17:01 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:47:01 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:17:01 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:47:01 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:20:04 [INFO]: Socket.IO server initialized
+2025-06-27 13:20:11 [INFO]: ✅ MySQL database connected successfully
+2025-06-27 13:20:11 [INFO]: ✅ MySQL connected successfully
+2025-06-27 13:20:11 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 13:20:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-27 13:20:11 [INFO]: 📧 Notification service skipped for now
+2025-06-27 13:20:11 [INFO]: 🚀 Server running on port 5000
+2025-06-27 13:20:11 [INFO]: 📊 Environment: development
+2025-06-27 13:20:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-27 13:20:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-27 13:20:29 [INFO]: ::1 - - [27/Jun/2025:07:50:29 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.5965"
+2025-06-27 13:26:58 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:56:58 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:26:58 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:56:58 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:01 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:01 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:07 [ERROR]: MySQL query error:
+2025-06-27 13:27:07 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (d:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (d:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (d:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (d:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-27 13:27:07 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:07 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:08 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:08 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:08 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:08 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:09 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:09 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:09 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:09 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:35 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:35 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:27:35 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:57:35 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:28:55 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:58:55 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:28:55 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:07:58:55 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:55:57 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:25:57 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:55:57 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:25:57 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:55:59 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:25:59 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:56:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:26:03 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:56:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:26:03 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:57:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:27:03 +0000] "POST /api/mock/appointments HTTP/1.1" 201 420 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-27 13:57:03 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:27:03 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
