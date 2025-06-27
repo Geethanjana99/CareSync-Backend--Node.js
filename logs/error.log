@@ -1928,3 +1928,5 @@
     at Function.process_params (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
     at next (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-27 13:59:36 [ERROR]: ❌ MongoDB connection failed:
+2025-06-27 14:00:51 [ERROR]: ❌ MongoDB connection failed:
