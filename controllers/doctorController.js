@@ -2,6 +2,7 @@ const Doctor = require('../models/Doctor');
 const User = require('../models/User');
 const Appointment = require('../models/Appointment');
 const Patient = require('../models/Patient');
+const Queue = require('../models/Queue');
 const logger = require('../config/logger');
 const { mysqlConnection } = require('../config/mysql');
 
@@ -449,7 +450,9 @@ class DoctorController {
               status: apt.status,
               type: apt.appointment_type || 'consultation',
               duration: apt.duration || 30,
-              consultationFee: apt.consultation_fee || doctor.consultation_fee
+              consultationFee: apt.consultation_fee || doctor.consultation_fee,
+              queueNumber: apt.queue_number,
+              isEmergency: apt.is_emergency
             }))
           },
           upcomingAppointments: upcomingAppointments.map(apt => ({
@@ -489,8 +492,13 @@ class DoctorController {
       FROM appointments a
       JOIN patients p ON a.patient_id = p.id
       JOIN users u ON p.user_id = u.id
-      WHERE a.doctor_id = ? AND DATE(a.appointment_date) = CURDATE()
-      ORDER BY a.appointment_time ASC
+      WHERE a.doctor_id = ? AND a.queue_date = CURDATE()
+      ORDER BY 
+        a.is_emergency DESC,
+        CASE 
+          WHEN a.is_emergency THEN CAST(SUBSTRING(a.queue_number, 2) AS UNSIGNED)
+          ELSE CAST(a.queue_number AS UNSIGNED)
+        END ASC
     `;
     
     try {
@@ -658,6 +666,163 @@ class DoctorController {
         message: 'Error processing appointment action',
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
+    }
+  }
+
+  // Get doctor's queue for today or specific date
+  static async getQueue(req, res, next) {
+    try {
+      const { date } = req.query;
+      const doctor = await Doctor.findByUserId(req.user.id);
+      
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      const queueData = await Queue.getDoctorQueue(doctor.id, date);
+      
+      res.json({
+        success: true,
+        data: queueData
+      });
+    } catch (error) {
+      logger.error('Error fetching doctor queue:', error);
+      next(error);
+    }
+  }
+
+  // Get queue summary
+  static async getQueueSummary(req, res, next) {
+    try {
+      const { date } = req.query;
+      const doctor = await Doctor.findByUserId(req.user.id);
+      
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      const summary = await Queue.getQueueSummary(doctor.id, date);
+      
+      res.json({
+        success: true,
+        data: summary
+      });
+    } catch (error) {
+      logger.error('Error fetching queue summary:', error);
+      next(error);
+    }
+  }
+
+  // Update current queue number (manually advance queue)
+  static async updateCurrentQueueNumber(req, res, next) {
+    try {
+      const { queueNumber, isEmergency = false, date } = req.body;
+      const doctor = await Doctor.findByUserId(req.user.id);
+      
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      await Queue.updateCurrentNumber(doctor.id, queueNumber, isEmergency, date);
+      
+      res.json({
+        success: true,
+        message: 'Queue number updated successfully'
+      });
+    } catch (error) {
+      logger.error('Error updating queue number:', error);
+      next(error);
+    }
+  }
+
+  // Start consultation for next patient in queue
+  static async startNextConsultation(req, res, next) {
+    try {
+      const { appointmentId } = req.params;
+      const doctor = await Doctor.findByUserId(req.user.id);
+      
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      const appointment = await Appointment.findById(appointmentId);
+      if (!appointment || appointment.doctor_id !== doctor.id) {
+        return res.status(404).json({
+          success: false,
+          message: 'Appointment not found'
+        });
+      }
+
+      // Update appointment status to in-progress
+      const updatedAppointment = await Appointment.updateAppointmentStatus(
+        appointmentId, 
+        'in-progress'
+      );
+
+      res.json({
+        success: true,
+        message: 'Consultation started',
+        data: updatedAppointment
+      });
+
+      logger.info(`Consultation started for appointment: ${appointmentId}`);
+    } catch (error) {
+      logger.error('Error starting consultation:', error);
+      next(error);
+    }
+  }
+
+  // Complete consultation and move to next
+  static async completeConsultation(req, res, next) {
+    try {
+      const { appointmentId } = req.params;
+      const { notes, prescription, diagnosis } = req.body;
+      const doctor = await Doctor.findByUserId(req.user.id);
+      
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      const appointment = await Appointment.findById(appointmentId);
+      if (!appointment || appointment.doctor_id !== doctor.id) {
+        return res.status(404).json({
+          success: false,
+          message: 'Appointment not found'
+        });
+      }
+
+      // Update appointment status to completed
+      const updatedAppointment = await Appointment.updateAppointmentStatus(
+        appointmentId, 
+        'completed',
+        JSON.stringify({ notes, prescription, diagnosis })
+      );
+
+      res.json({
+        success: true,
+        message: 'Consultation completed',
+        data: updatedAppointment
+      });
+
+      logger.info(`Consultation completed for appointment: ${appointmentId}`);
+    } catch (error) {
+      logger.error('Error completing consultation:', error);
+      next(error);
     }
   }
 }

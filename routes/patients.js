@@ -19,6 +19,11 @@ router.get('/dashboard', PatientController.getDashboard);
 router.get('/appointments', PatientController.getAppointmentHistory);
 router.get('/appointments/upcoming', PatientController.getUpcomingAppointments);
 
+// Queue-based appointments
+router.post('/appointments/queue', PatientController.bookQueueAppointment);
+router.get('/queue/position', PatientController.getQueuePosition);
+router.get('/queue/status', PatientController.getDoctorQueueStatus);
+
 // Medical reports
 router.get('/medical-reports', PatientController.getMedicalReports);
 

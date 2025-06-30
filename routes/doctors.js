@@ -33,4 +33,11 @@ router.get('/patients/:patientId', DoctorController.getPatientDetails);
 router.get('/earnings', DoctorController.getEarnings);
 router.get('/statistics', DoctorController.getStatistics);
 
+// Queue management
+router.get('/queue', DoctorController.getQueue);
+router.get('/queue/summary', DoctorController.getQueueSummary);
+router.put('/queue/current', DoctorController.updateCurrentQueueNumber);
+router.post('/queue/start/:appointmentId', DoctorController.startNextConsultation);
+router.post('/queue/complete/:appointmentId', DoctorController.completeConsultation);
+
 module.exports = router;

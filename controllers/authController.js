@@ -7,6 +7,14 @@ const logger = require('../config/logger');
 
 // Generate JWT token
 const generateToken = (userId) => {
+  console.log('🔍 generateToken called with userId:', userId);
+  console.log('🔍 JWT_SECRET exists:', !!process.env.JWT_SECRET);
+  console.log('🔍 JWT_SECRET length:', process.env.JWT_SECRET ? process.env.JWT_SECRET.length : 'N/A');
+  
+  if (!process.env.JWT_SECRET) {
+    throw new Error('JWT_SECRET is not defined in environment variables');
+  }
+  
   return jwt.sign({ userId }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRE || '7d'
   });
