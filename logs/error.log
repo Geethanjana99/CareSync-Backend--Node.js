@@ -1930,3 +1930,484 @@
     at Function.handle (d:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
 2025-06-27 13:59:36 [ERROR]: ❌ MongoDB connection failed:
 2025-06-27 14:00:51 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 12:10:04 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 12:10:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 12:11:06 [ERROR]: MySQL query error:
+2025-06-30 12:11:06 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 12:12:10 [ERROR]: MySQL query error:
+2025-06-30 12:12:10 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 12:12:23 [ERROR]: MySQL query error:
+2025-06-30 12:12:23 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 12:18:24 [ERROR]: MySQL query error:
+2025-06-30 12:18:24 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 15:49:44 [ERROR]: MySQL query error:
+2025-06-30 15:49:44 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 15:52:54 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 15:53:59 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 15:54:15 [ERROR]: MySQL query error:
+2025-06-30 15:54:15 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:31:49 [ERROR]: MySQL query error:
+2025-06-30 16:31:49 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:33:39 [ERROR]: MySQL query error:
+2025-06-30 16:33:39 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:34:44 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:34:44 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:34:44 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:34:59 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:34:59 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:34:59 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:49:03 [ERROR]: MySQL query error:
+2025-06-30 16:49:03 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:49:39 [ERROR]: MySQL query error:
+2025-06-30 16:49:39 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:50:35 [ERROR]: MySQL query error:
+2025-06-30 16:50:35 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:52:38 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:52:38 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:52:38 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:52:49 [ERROR]: MySQL query error:
+2025-06-30 16:52:49 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:54:20 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:54:20 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:54:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:54:49 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:54:49 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:54:49 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:58:19 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:58:19 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 17:07:12 [ERROR]: MySQL query error:
+2025-06-30 17:07:12 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at register (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:29:39)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 17:11:05 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 17:12:12 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 17:15:11 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 17:18:51 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 17:23:25 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 17:48:10 [ERROR]: MySQL query error:
+2025-06-30 17:48:10 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:50:12 [ERROR]: MySQL query error:
+2025-06-30 17:50:12 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:50:14 [ERROR]: MySQL query error:
+2025-06-30 17:50:14 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:50:24 [ERROR]: MySQL query error:
+2025-06-30 17:50:24 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:52:37 [ERROR]: MySQL query error:
+2025-06-30 17:52:37 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:52:45 [ERROR]: MySQL query error:
+2025-06-30 17:52:45 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:54:57 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-30 17:57:49 [ERROR]: MySQL query error:
+2025-06-30 17:57:49 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:50 [ERROR]: MySQL query error:
+2025-06-30 17:57:50 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:59 [ERROR]: MySQL query error:
+2025-06-30 17:57:59 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:00 [ERROR]: MySQL query error:
+2025-06-30 17:58:00 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:10 [ERROR]: MySQL query error:
+2025-06-30 17:58:10 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:48 [ERROR]: MySQL query error:
+2025-06-30 17:58:48 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)

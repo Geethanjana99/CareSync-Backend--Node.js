@@ -3877,3 +3877,716 @@
 2025-06-27 14:19:49 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:49:49 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
 2025-06-27 14:20:07 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:50:07 +0000] "PUT /api/mock/appointments/2 HTTP/1.1" 200 472 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
 2025-06-27 14:20:07 [INFO]: ::ffff:127.0.0.1 - - [27/Jun/2025:08:50:07 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 12:09:54 [INFO]: Socket.IO server initialized
+2025-06-30 12:10:04 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 12:10:04 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 12:10:04 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 12:10:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 12:10:04 [INFO]: 📧 Notification service skipped for now
+2025-06-30 12:10:04 [INFO]: 🚀 Server running on port 5000
+2025-06-30 12:10:04 [INFO]: 📊 Environment: development
+2025-06-30 12:10:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 12:10:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 12:11:06 [ERROR]: MySQL query error:
+2025-06-30 12:11:06 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 12:11:06 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:06:41:06 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 12:12:10 [ERROR]: MySQL query error:
+2025-06-30 12:12:10 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 12:12:10 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:06:42:10 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 12:12:23 [ERROR]: MySQL query error:
+2025-06-30 12:12:23 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 12:12:23 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:06:42:23 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 12:14:48 [INFO]: ::1 - - [30/Jun/2025:06:44:48 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 12:14:58 [INFO]: ::1 - - [30/Jun/2025:06:44:58 +0000] "PATCH /api/mock/appointments/1/status HTTP/1.1" 200 475 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 12:15:30 [INFO]: ::1 - - [30/Jun/2025:06:45:30 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 12:15:58 [INFO]: ::1 - - [30/Jun/2025:06:45:58 +0000] "PUT /api/mock/appointments/2 HTTP/1.1" 200 506 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 12:18:24 [ERROR]: MySQL query error:
+2025-06-30 12:18:24 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 12:18:24 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:06:48:24 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 15:49:44 [ERROR]: MySQL query error:
+2025-06-30 15:49:44 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 15:49:44 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:10:19:44 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 15:52:44 [INFO]: Socket.IO server initialized
+2025-06-30 15:52:54 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 15:53:49 [INFO]: Socket.IO server initialized
+2025-06-30 15:53:59 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 15:54:15 [ERROR]: MySQL query error:
+2025-06-30 15:54:15 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 15:54:15 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:10:24:15 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 15:55:41 [INFO]: ::1 - - [30/Jun/2025:10:25:41 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1265 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 16:31:49 [ERROR]: MySQL query error:
+2025-06-30 16:31:49 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:31:49 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:01:49 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 16:33:39 [ERROR]: MySQL query error:
+2025-06-30 16:33:39 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:33:39 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:03:39 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 16:34:34 [INFO]: Socket.IO server initialized
+2025-06-30 16:34:34 [INFO]: Socket.IO server initialized
+2025-06-30 16:34:44 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:34:44 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:34:44 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 16:34:44 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:34:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 16:34:44 [INFO]: 📧 Notification service skipped for now
+2025-06-30 16:34:44 [INFO]: 🚀 Server running on port 5000
+2025-06-30 16:34:44 [INFO]: 📊 Environment: development
+2025-06-30 16:34:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 16:34:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 16:34:49 [INFO]: Socket.IO server initialized
+2025-06-30 16:34:49 [INFO]: Socket.IO server initialized
+2025-06-30 16:34:59 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:34:59 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 16:34:59 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:34:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 16:34:59 [INFO]: 📧 Notification service skipped for now
+2025-06-30 16:34:59 [INFO]: 🚀 Server running on port 5000
+2025-06-30 16:34:59 [INFO]: 📊 Environment: development
+2025-06-30 16:34:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 16:34:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 16:34:59 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:47:39 [INFO]: ::1 - - [30/Jun/2025:11:17:39 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 369 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 16:49:03 [ERROR]: MySQL query error:
+2025-06-30 16:49:03 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:49:03 [INFO]: ::1 - - [30/Jun/2025:11:19:03 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.2 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-30 16:49:39 [ERROR]: MySQL query error:
+2025-06-30 16:49:39 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:49:39 [INFO]: ::1 - - [30/Jun/2025:11:19:39 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.2 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-30 16:50:35 [ERROR]: MySQL query error:
+2025-06-30 16:50:35 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:50:35 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:20:35 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 16:52:28 [INFO]: Socket.IO server initialized
+2025-06-30 16:52:28 [INFO]: Socket.IO server initialized
+2025-06-30 16:52:38 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:52:38 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:52:38 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 16:52:38 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:52:38 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 16:52:38 [INFO]: 📧 Notification service skipped for now
+2025-06-30 16:52:38 [INFO]: 🚀 Server running on port 5000
+2025-06-30 16:52:38 [INFO]: 📊 Environment: development
+2025-06-30 16:52:38 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 16:52:38 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 16:52:49 [ERROR]: MySQL query error:
+2025-06-30 16:52:49 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:131:31)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 16:52:49 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:22:49 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 16:54:10 [INFO]: Socket.IO server initialized
+2025-06-30 16:54:10 [INFO]: Socket.IO server initialized
+2025-06-30 16:54:20 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:54:20 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:54:20 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 16:54:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:54:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 16:54:20 [INFO]: 📧 Notification service skipped for now
+2025-06-30 16:54:20 [INFO]: 🚀 Server running on port 5000
+2025-06-30 16:54:20 [INFO]: 📊 Environment: development
+2025-06-30 16:54:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 16:54:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 16:54:39 [INFO]: Socket.IO server initialized
+2025-06-30 16:54:39 [INFO]: Socket.IO server initialized
+2025-06-30 16:54:49 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:54:49 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 16:54:49 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:54:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 16:54:49 [INFO]: 📧 Notification service skipped for now
+2025-06-30 16:54:49 [INFO]: 🚀 Server running on port 5000
+2025-06-30 16:54:49 [INFO]: 📊 Environment: development
+2025-06-30 16:54:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 16:54:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 16:54:49 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:56:44 [INFO]: ::1 - - [30/Jun/2025:11:26:44 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 369 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 16:57:39 [INFO]: Socket.IO server initialized
+2025-06-30 16:57:46 [INFO]: Socket.IO server initialized
+2025-06-30 16:58:09 [INFO]: Socket.IO server initialized
+2025-06-30 16:58:19 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 16:58:19 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-06-30 16:58:19 [ERROR]: ❌ MongoDB connection failed:
+2025-06-30 16:58:19 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-30 16:58:19 [INFO]: 📧 Notification service skipped for now
+2025-06-30 16:58:19 [INFO]: 🚀 Server running on port 5000
+2025-06-30 16:58:19 [INFO]: 📊 Environment: development
+2025-06-30 16:58:19 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-30 16:58:19 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-30 16:59:45 [INFO]: ::1 - - [30/Jun/2025:11:29:45 +0000] "GET /api/mock/appointments HTTP/1.1" 200 1231 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 16:59:55 [INFO]: ::1 - - [30/Jun/2025:11:29:55 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 369 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:01:36 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:31:36 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:04:40 [INFO]: ::1 - - [30/Jun/2025:11:34:40 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 369 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:05:55 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:35:55 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:06:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:36:07 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:07:12 [ERROR]: MySQL query error:
+2025-06-30 17:07:12 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (D:\Projects\CareSync-Backend--Node.js\models\User.js:46:41)
+    at register (D:\Projects\CareSync-Backend--Node.js\controllers\authController.js:29:39)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (D:\Projects\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-06-30 17:07:12 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:37:12 +0000] "POST /api/auth/register HTTP/1.1" 500 77 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:08:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:38:42 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:11:05 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 17:12:02 [INFO]: Socket.IO server initialized
+2025-06-30 17:12:12 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 17:13:46 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:43:46 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:14:12 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:44:12 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:15:01 [INFO]: Socket.IO server initialized
+2025-06-30 17:15:11 [ERROR]: ❌ MySQL connection failed:
+2025-06-30 17:15:30 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:45:30 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:15:45 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:45:45 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:15:54 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:45:54 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:18:15 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:48:15 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:18:25 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:48:25 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:18:48 [INFO]: Socket.IO server initialized
+2025-06-30 17:18:51 [INFO]: ✅ MySQL database connected successfully
+2025-06-30 17:23:23 [INFO]: Socket.IO server initialized
+2025-06-30 17:23:25 [INFO]: ✅ MySQL database connected successfully
+2025-06-30 17:24:55 [INFO]: ::1 - - [30/Jun/2025:11:54:55 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 369 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:25:37 [INFO]: ::1 - - [30/Jun/2025:11:55:37 +0000] "GET /api/mock/auth/profile HTTP/1.1" 401 44 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.2 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36"
+2025-06-30 17:28:08 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:58:08 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:28:19 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:58:19 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:28:33 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:58:33 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:03 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:03 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 369 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:08 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:08 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 401 48 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:08 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:08 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 785 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:11 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:11 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:11 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:13 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:34 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:34 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:34 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:34 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:29:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:11:59:42 +0000] "GET /api/mock/auth/profile HTTP/1.1" 200 116 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:31:35 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:01:35 +0000] "POST /api/mock/appointments HTTP/1.1" 201 437 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:31:35 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:01:35 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:31:49 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:01:49 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:32:05 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:02:05 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:32:05 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:02:05 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:32:17 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:02:17 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:24 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:24 +0000] "POST /api/mock/doctors HTTP/1.1" 201 342 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:24 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:24 +0000] "GET /api/mock/doctors HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:42 +0000] "DELETE /api/mock/doctors/3 HTTP/1.1" 200 355 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:42 +0000] "GET /api/mock/doctors HTTP/1.1" 200 866 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:44 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:44 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:44 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:44 +0000] "GET /api/mock/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:51 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:34:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:04:51 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:06 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:06 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:07 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:07 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:13 +0000] "PATCH /api/mock/appointments/1/status HTTP/1.1" 200 475 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:13 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:32 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:32 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 401 48 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:32 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:32 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:35:34 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:05:34 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:36:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:06:11 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:36:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:06:11 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:13 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:13 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:23 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:23 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:23 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:23 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:33 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:33 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:33 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:33 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:52 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:52 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:40:52 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:10:52 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:41:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:11:13 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:41:13 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:11:13 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:41:14 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:11:14 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:44:12 [INFO]: ::1 - - [30/Jun/2025:12:14:12 +0000] "GET /api/mock/doctors HTTP/1.1" 200 866 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:44:22 [INFO]: ::1 - - [30/Jun/2025:12:14:22 +0000] "POST /api/mock/doctors HTTP/1.1" 201 343 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:44:59 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:14:59 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:44:59 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:14:59 +0000] "GET /api/mock/doctors HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:45:01 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:15:01 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:45:03 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:15:03 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:45:03 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:15:03 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:45:12 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:15:12 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:47:05 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:17:05 +0000] "POST /api/mock/doctors HTTP/1.1" 201 329 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:47:05 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:17:05 +0000] "GET /api/mock/doctors HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:47:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:17:11 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:47:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:17:11 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:47:57 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:17:57 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:48:10 [ERROR]: MySQL query error:
+2025-06-30 17:48:10 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:48:10 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:18:10 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:50:12 [ERROR]: MySQL query error:
+2025-06-30 17:50:12 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:50:12 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:20:12 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:50:14 [ERROR]: MySQL query error:
+2025-06-30 17:50:14 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:50:14 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:20:14 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:50:24 [ERROR]: MySQL query error:
+2025-06-30 17:50:24 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:50:24 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:20:24 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:50:32 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:20:32 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:50:32 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:20:32 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:51:50 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:21:50 +0000] "POST /api/mock/appointments HTTP/1.1" 201 432 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:51:50 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:21:50 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:04 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:04 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:07 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:07 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:11 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:12 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:12 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:12 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:12 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:26 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:26 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:29 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:29 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:29 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:29 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:37 [ERROR]: MySQL query error:
+2025-06-30 17:52:37 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:52:37 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:37 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:52:45 [ERROR]: MySQL query error:
+2025-06-30 17:52:45 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:52:45 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:22:45 +0000] "GET /api/admin/patients?page=1&limit=20&search=&status=active HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:53:57 [INFO]: ::1 - - [30/Jun/2025:12:23:57 +0000] "GET /api/mock/patients HTTP/1.1" 200 785 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:54:57 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (D:\Projects\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:17:25)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-06-30 17:54:57 [INFO]: ::1 - - [30/Jun/2025:12:24:57 +0000] "GET /api/admin/patients HTTP/1.1" 401 48 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:55:29 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:25:29 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:13 [INFO]: ::1 - - [30/Jun/2025:12:27:13 +0000] "GET /api/mock/patients HTTP/1.1" 200 785 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:57:36 [INFO]: ::1 - - [30/Jun/2025:12:27:36 +0000] "POST /api/mock/patients HTTP/1.1" 201 501 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 17:57:49 [ERROR]: MySQL query error:
+2025-06-30 17:57:49 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:49 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:49 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:50 [ERROR]: MySQL query error:
+2025-06-30 17:57:50 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:50 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:50 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:51 [ERROR]: MySQL query error:
+2025-06-30 17:57:51 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:51 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:51 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:57:59 [ERROR]: MySQL query error:
+2025-06-30 17:57:59 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:57:59 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:27:59 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:00 [ERROR]: MySQL query error:
+2025-06-30 17:58:00 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:00 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:00 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:01 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:01 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:01 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:01 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:01 [ERROR]: MySQL query error:
+2025-06-30 17:58:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:01 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:01 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:10 [ERROR]: MySQL query error:
+2025-06-30 17:58:10 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:58:10 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:10 +0000] "POST /api/admin/patients HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:11 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:24 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:24 +0000] "POST /api/mock/patients HTTP/1.1" 201 474 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:26 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:26 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:31 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:31 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:31 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:31 +0000] "GET /api/mock/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:42 +0000] "DELETE /api/admin/patients/4 HTTP/1.1" - - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:42 +0000] "DELETE /api/mock/patients/4 HTTP/1.1" 200 382 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:42 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:42 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:28:42 +0000] "GET /api/mock/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 17:58:48 [ERROR]: MySQL query error:
+2025-06-30 17:58:48 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (D:\Projects\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (D:\Projects\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (D:\Projects\CareSync-Backend--Node.js\middleware\auth.js:30:41)
+    at newFn (D:\Projects\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Projects\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-30 17:59:11 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:29:11 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:01:26 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:31:26 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:02:18 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:32:18 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:02:55 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:32:55 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:03:50 [INFO]: ::1 - - [30/Jun/2025:12:33:50 +0000] "GET /api/mock/patients?page=1&limit=5 HTTP/1.1" 200 1108 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 18:04:00 [INFO]: ::1 - - [30/Jun/2025:12:34:00 +0000] "GET /api/mock/patients?page=1&limit=10 HTTP/1.1" 200 1108 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6033"
+2025-06-30 18:05:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:35:07 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:06:56 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:36:56 +0000] "POST /api/mock/patients HTTP/1.1" 201 498 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:06:57 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:36:57 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:00 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:00 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 200 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:02 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:02 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:02 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:02 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:03 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:03 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:07 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:07 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:07 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
+2025-06-30 18:07:50 [INFO]: ::ffff:127.0.0.1 - - [30/Jun/2025:12:37:50 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
