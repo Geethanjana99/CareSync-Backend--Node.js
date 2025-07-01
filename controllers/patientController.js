@@ -486,6 +486,104 @@ class PatientController {
       next(error);
     }
   }
+
+  // Get doctor availability for a specific date
+  static async getDoctorAvailability(req, res, next) {
+    try {
+      const { doctorId } = req.params;
+      const { date } = req.query;
+
+      if (!date) {
+        return res.status(400).json({
+          success: false,
+          message: 'Date parameter is required'
+        });
+      }
+
+      const { mysqlConnection } = require('../config/mysql');
+
+      // Get doctor info with working hours
+      const doctorRows = await mysqlConnection.query(`
+        SELECT d.id as internal_id, d.doctor_id, d.working_hours, u.name as doctor_name
+        FROM doctors d
+        JOIN users u ON d.user_id = u.id 
+        WHERE d.doctor_id = ?
+      `, [doctorId]);
+
+      if (doctorRows.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor not found'
+        });
+      }
+
+      const doctor = doctorRows[0];
+      const appointmentDate = new Date(date);
+      const dayOfWeek = appointmentDate.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
+
+      let availability = {
+        doctorId: doctor.doctor_id,
+        doctorName: doctor.doctor_name,
+        date: date,
+        isAvailable: false,
+        timeRange: null,
+        message: 'Doctor is not available on this day'
+      };
+
+      // Check working hours from JSON field
+      if (doctor.working_hours) {
+        try {
+          const workingHours = typeof doctor.working_hours === 'string' 
+            ? JSON.parse(doctor.working_hours) 
+            : doctor.working_hours;
+
+          if (workingHours[dayOfWeek]) {
+            const timeRange = workingHours[dayOfWeek];
+            availability.isAvailable = true;
+            availability.timeRange = timeRange;
+            availability.message = `Available from ${timeRange}`;
+          }
+        } catch (parseError) {
+          console.error('Error parsing working hours:', parseError);
+        }
+      }
+
+      // Also check doctor_availability table for more detailed availability
+      const detailedAvailability = await mysqlConnection.query(`
+        SELECT start_time, end_time, break_times
+        FROM doctor_availability da
+        WHERE da.doctor_id = ? 
+          AND da.day_of_week = ?
+          AND da.is_active = true
+          AND (da.effective_date IS NULL OR da.effective_date <= ?)
+          AND (da.expiry_date IS NULL OR da.expiry_date >= ?)
+        ORDER BY start_time
+      `, [doctor.internal_id, dayOfWeek.charAt(0).toUpperCase() + dayOfWeek.slice(1), date, date]);
+
+      if (detailedAvailability.length > 0) {
+        const firstSlot = detailedAvailability[0];
+        const lastSlot = detailedAvailability[detailedAvailability.length - 1];
+        
+        availability.isAvailable = true;
+        availability.timeRange = `${firstSlot.start_time.substring(0, 5)}-${lastSlot.end_time.substring(0, 5)}`;
+        availability.message = `Available from ${availability.timeRange}`;
+        availability.detailedSlots = detailedAvailability.map(slot => ({
+          startTime: slot.start_time.substring(0, 5),
+          endTime: slot.end_time.substring(0, 5),
+          breakTimes: slot.break_times
+        }));
+      }
+
+      res.json({
+        success: true,
+        data: availability
+      });
+
+    } catch (error) {
+      logger.error('Error getting doctor availability:', error);
+      next(error);
+    }
+  }
 }
 
 module.exports = PatientController;

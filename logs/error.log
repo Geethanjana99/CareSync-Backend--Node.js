@@ -2382,3 +2382,92 @@
 2025-06-30 15:51:05 [ERROR]: ❌ MongoDB connection failed:
 2025-06-30 15:51:18 [ERROR]: ❌ MongoDB connection failed:
 2025-06-30 15:52:27 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 11:00:15 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 11:00:41 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:00:41 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:00:46 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:00:46 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:00:48 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:00:48 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:01:08 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:01:08 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:01:08 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:01:08 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:01:10 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:01:10 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:03:15 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:03:15 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:525:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:04:11 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 11:04:29 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:532:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:04:29 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:532:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 11:05:17 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 19:45:56 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:532:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 19:45:56 [ERROR]: TypeError: Cannot read properties of undefined (reading 'doctor_id')
+    at getDoctorAvailability (E:\Project 2\backend\controllers\patientController.js:532:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 19:46:53 [ERROR]: MySQL query error:
+2025-07-01 19:49:22 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 19:49:56 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 19:51:19 [ERROR]: MySQL query error:
+2025-07-01 19:51:19 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 19:51:20 [ERROR]: MySQL query error:
+2025-07-01 19:51:20 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 19:51:29 [ERROR]: MySQL query error:
+2025-07-01 19:51:29 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 19:51:29 [ERROR]: MySQL query error:
+2025-07-01 19:51:29 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-01 19:54:17 [ERROR]: ❌ MongoDB connection failed:
