@@ -5587,3 +5587,1154 @@
 2025-07-01 19:54:51 [INFO]: Queue appointment booked: 362c24bb-eed4-4ccf-bcfa-9e609d0cdd23 for patient b353bba4-e3f9-4d01-b994-87f626e6e9d4
 2025-07-01 19:54:51 [INFO]: ::1 - - [01/Jul/2025:14:24:51 +0000] "POST /api/patients/appointments/queue HTTP/1.1" 201 715 "-" "axios/1.9.0"
 2025-07-01 19:54:53 [INFO]: ::1 - - [01/Jul/2025:14:24:53 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-02 01:22:11 [INFO]: Socket.IO server initialized
+2025-07-02 01:22:12 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:22:12 [INFO]: ✅ MySQL connected successfully
+2025-07-02 01:22:12 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 01:22:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 01:22:12 [INFO]: 📧 Notification service skipped for now
+2025-07-02 01:22:12 [INFO]: 🚀 Server running on port 5000
+2025-07-02 01:22:12 [INFO]: 📊 Environment: development
+2025-07-02 01:22:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 01:22:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 01:22:59 [INFO]: Socket.IO server initialized
+2025-07-02 01:23:01 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:23:01 [INFO]: ✅ MySQL connected successfully
+2025-07-02 01:23:01 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 01:23:01 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 01:23:01 [INFO]: 📧 Notification service skipped for now
+2025-07-02 01:23:01 [INFO]: 🚀 Server running on port 5000
+2025-07-02 01:23:01 [INFO]: 📊 Environment: development
+2025-07-02 01:23:01 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 01:23:01 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 01:23:11 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:23:11 [INFO]: ::1 - - [01/Jul/2025:19:53:11 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:23:13 [ERROR]: MySQL query error:
+2025-07-02 01:23:13 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:23:13 [ERROR]: MySQL query error:
+2025-07-02 01:23:13 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:23:13 [INFO]: ::1 - - [01/Jul/2025:19:53:13 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:23:53 [INFO]: ::1 - - [01/Jul/2025:19:53:53 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:23:54 [ERROR]: MySQL query error:
+2025-07-02 01:23:54 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:23:54 [ERROR]: MySQL query error:
+2025-07-02 01:23:54 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:23:54 [INFO]: ::1 - - [01/Jul/2025:19:53:54 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:14 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:24:14 [INFO]: ::1 - - [01/Jul/2025:19:54:14 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:15 [ERROR]: MySQL query error:
+2025-07-02 01:24:15 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:15 [ERROR]: MySQL query error:
+2025-07-02 01:24:15 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:15 [INFO]: ::1 - - [01/Jul/2025:19:54:15 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:18 [ERROR]: MySQL query error:
+2025-07-02 01:24:18 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:18 [ERROR]: MySQL query error:
+2025-07-02 01:24:18 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:18 [INFO]: ::1 - - [01/Jul/2025:19:54:18 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:30 [ERROR]: MySQL query error:
+2025-07-02 01:24:30 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:30 [ERROR]: MySQL query error:
+2025-07-02 01:24:30 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:30 [INFO]: ::1 - - [01/Jul/2025:19:54:30 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:42 [ERROR]: MySQL query error:
+2025-07-02 01:24:42 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:42 [ERROR]: MySQL query error:
+2025-07-02 01:24:42 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:43 [INFO]: ::1 - - [01/Jul/2025:19:54:43 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:44 [INFO]: User logged out: doctor@gmail.com
+2025-07-02 01:24:44 [INFO]: ::1 - - [01/Jul/2025:19:54:44 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:44 [ERROR]: MySQL query error:
+2025-07-02 01:24:44 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:44 [INFO]: ::1 - - [01/Jul/2025:19:54:44 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:45 [ERROR]: MySQL query error:
+2025-07-02 01:24:45 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:24:45 [INFO]: ::1 - - [01/Jul/2025:19:54:45 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:54 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:24:54 [INFO]: ::1 - - [01/Jul/2025:19:54:54 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:24:56 [INFO]: ::1 - - [01/Jul/2025:19:54:56 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:08 [INFO]: ::1 - - [01/Jul/2025:19:55:08 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:18 [INFO]: ::1 - - [01/Jul/2025:19:55:18 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:18 [INFO]: ::1 - - [01/Jul/2025:19:55:18 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:30 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:25:30 [INFO]: ::1 - - [01/Jul/2025:19:55:30 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:31 [INFO]: ::1 - - [01/Jul/2025:19:55:31 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:37 [INFO]: ::1 - - [01/Jul/2025:19:55:37 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:42 [INFO]: ::1 - - [01/Jul/2025:19:55:42 +0000] "GET /api/patients/doctors/26b6953c-871e-4873-8cd7-827d6290cd83/availability?date=2025-07-03 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:47 [INFO]: ::1 - - [01/Jul/2025:19:55:47 +0000] "GET /api/patients/doctors/26b6953c-871e-4873-8cd7-827d6290cd83/availability?date=2025-07-02 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:50 [INFO]: ::1 - - [01/Jul/2025:19:55:50 +0000] "GET /api/patients/doctors/26b6953c-871e-4873-8cd7-827d6290cd83/availability?date=2025-07-04 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:52 [INFO]: ::1 - - [01/Jul/2025:19:55:52 +0000] "GET /api/patients/doctors/26b6953c-871e-4873-8cd7-827d6290cd83/availability?date=2025-07-05 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:25:56 [INFO]: ::1 - - [01/Jul/2025:19:55:56 +0000] "GET /api/patients/doctors/26b6953c-871e-4873-8cd7-827d6290cd83/availability?date=2025-07-06 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:03 [INFO]: ::1 - - [01/Jul/2025:19:56:03 +0000] "GET /api/patients/doctors/641a27f8-804c-4d4c-9c73-98b8d2cbf579/availability?date=2025-07-06 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:06 [INFO]: ::1 - - [01/Jul/2025:19:56:06 +0000] "GET /api/patients/doctors/641a27f8-804c-4d4c-9c73-98b8d2cbf579/availability?date=2025-07-03 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:13 [INFO]: ::1 - - [01/Jul/2025:19:56:13 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:13 [INFO]: ::1 - - [01/Jul/2025:19:56:13 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:20 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:26:20 [INFO]: ::1 - - [01/Jul/2025:19:56:20 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:20 [INFO]: ::1 - - [01/Jul/2025:19:56:20 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:23 [INFO]: ::1 - - [01/Jul/2025:19:56:23 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:41 [INFO]: ::1 - - [01/Jul/2025:19:56:41 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:42 [INFO]: ::1 - - [01/Jul/2025:19:56:42 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:54 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:26:54 [INFO]: ::1 - - [01/Jul/2025:19:56:54 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:55 [INFO]: ::1 - - [01/Jul/2025:19:56:55 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:26:56 [INFO]: ::1 - - [01/Jul/2025:19:56:56 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:27:16 [INFO]: ::1 - - [01/Jul/2025:19:57:16 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:27:17 [INFO]: ::1 - - [01/Jul/2025:19:57:17 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:28:19 [INFO]: ::1 - - [01/Jul/2025:19:58:19 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:28:23 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:28:23 [INFO]: ::1 - - [01/Jul/2025:19:58:23 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:28:23 [INFO]: ::1 - - [01/Jul/2025:19:58:23 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:28:24 [INFO]: ::1 - - [01/Jul/2025:19:58:24 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:21 [INFO]: ::1 - - [01/Jul/2025:19:59:21 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:22 [INFO]: ::1 - - [01/Jul/2025:19:59:22 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:33 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:29:33 [INFO]: ::1 - - [01/Jul/2025:19:59:33 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:34 [INFO]: ::1 - - [01/Jul/2025:19:59:34 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:35 [INFO]: ::1 - - [01/Jul/2025:19:59:35 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:43 [INFO]: ::1 - - [01/Jul/2025:19:59:43 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-07 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:46 [INFO]: ::1 - - [01/Jul/2025:19:59:46 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-02 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:49 [INFO]: User logged out: patient.test@example.com
+2025-07-02 01:29:49 [INFO]: ::1 - - [01/Jul/2025:19:59:49 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:50 [INFO]: ::1 - - [01/Jul/2025:19:59:50 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:53 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:29:53 [INFO]: ::1 - - [01/Jul/2025:19:59:53 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:29:55 [ERROR]: MySQL query error:
+2025-07-02 01:29:55 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:29:55 [ERROR]: MySQL query error:
+2025-07-02 01:29:55 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:29:55 [INFO]: ::1 - - [01/Jul/2025:19:59:55 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:37 [INFO]: ::1 - - [01/Jul/2025:20:00:37 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:38 [INFO]: ::1 - - [01/Jul/2025:20:00:38 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:38 [ERROR]: MySQL query error:
+2025-07-02 01:30:38 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:30:38 [ERROR]: MySQL query error:
+2025-07-02 01:30:38 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:30:39 [INFO]: ::1 - - [01/Jul/2025:20:00:39 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:40 [INFO]: ::1 - - [01/Jul/2025:20:00:40 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:47 [INFO]: User logged in: patient.test@example.com
+2025-07-02 01:30:47 [INFO]: ::1 - - [01/Jul/2025:20:00:47 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:47 [INFO]: ::1 - - [01/Jul/2025:20:00:47 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:30:51 [INFO]: ::1 - - [01/Jul/2025:20:00:51 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:00 [INFO]: ::1 - - [01/Jul/2025:20:01:00 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-02 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:02 [INFO]: ::1 - - [01/Jul/2025:20:01:02 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-03 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:05 [INFO]: ::1 - - [01/Jul/2025:20:01:05 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:05 [INFO]: ::1 - - [01/Jul/2025:20:01:05 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-03 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:14 [INFO]: ::1 - - [01/Jul/2025:20:01:14 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-15 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:24 [INFO]: ::1 - - [01/Jul/2025:20:01:24 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-05 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:30 [INFO]: ::1 - - [01/Jul/2025:20:01:30 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:31 [INFO]: ::1 - - [01/Jul/2025:20:01:31 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-05 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:38 [INFO]: ::1 - - [01/Jul/2025:20:01:38 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:39 [INFO]: ::1 - - [01/Jul/2025:20:01:39 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-05 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:47 [INFO]: ::1 - - [01/Jul/2025:20:01:47 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-03 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:50 [INFO]: ::1 - - [01/Jul/2025:20:01:50 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-05 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:52 [INFO]: ::1 - - [01/Jul/2025:20:01:52 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-06 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:54 [INFO]: ::1 - - [01/Jul/2025:20:01:54 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-07 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:56 [INFO]: ::1 - - [01/Jul/2025:20:01:56 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-08 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:31:59 [INFO]: ::1 - - [01/Jul/2025:20:01:59 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-09 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:01 [INFO]: ::1 - - [01/Jul/2025:20:02:01 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-10 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:03 [INFO]: ::1 - - [01/Jul/2025:20:02:03 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-11 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:05 [INFO]: ::1 - - [01/Jul/2025:20:02:05 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-12 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:07 [INFO]: ::1 - - [01/Jul/2025:20:02:07 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-13 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:10 [INFO]: ::1 - - [01/Jul/2025:20:02:10 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-14 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:12 [INFO]: ::1 - - [01/Jul/2025:20:02:12 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-15 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:14 [INFO]: ::1 - - [01/Jul/2025:20:02:14 +0000] "GET /api/patients/doctors/78912290-eb79-46f5-9502-eae48d6be227/availability?date=2025-07-16 HTTP/1.1" 404 46 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:27 [INFO]: Queue appointment booked: 3dffa1b7-de0e-43d4-bcf9-22f4f59df802 for patient e3f58ea3-1d4f-4d7e-9ef0-446490865ad3
+2025-07-02 01:32:27 [INFO]: ::1 - - [01/Jul/2025:20:02:27 +0000] "POST /api/patients/appointments/queue HTTP/1.1" 201 642 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:38 [INFO]: User logged out: patient.test@example.com
+2025-07-02 01:32:38 [INFO]: ::1 - - [01/Jul/2025:20:02:38 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:38 [INFO]: ::1 - - [01/Jul/2025:20:02:38 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:42 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:32:42 [INFO]: ::1 - - [01/Jul/2025:20:02:42 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:43 [ERROR]: MySQL query error:
+2025-07-02 01:32:43 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:32:43 [ERROR]: MySQL query error:
+2025-07-02 01:32:43 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:32:43 [INFO]: ::1 - - [01/Jul/2025:20:02:43 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:53 [ERROR]: MySQL query error:
+2025-07-02 01:32:53 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:32:53 [ERROR]: MySQL query error:
+2025-07-02 01:32:53 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:32:53 [INFO]: ::1 - - [01/Jul/2025:20:02:53 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:32:54 [ERROR]: MySQL query error:
+2025-07-02 01:32:54 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:32:54 [ERROR]: MySQL query error:
+2025-07-02 01:32:54 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:32:54 [INFO]: ::1 - - [01/Jul/2025:20:02:54 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:33:10 [ERROR]: MySQL query error:
+2025-07-02 01:33:10 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:33:10 [ERROR]: MySQL query error:
+2025-07-02 01:33:10 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:33:10 [INFO]: ::1 - - [01/Jul/2025:20:03:10 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:33:11 [ERROR]: MySQL query error:
+2025-07-02 01:33:11 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:33:12 [ERROR]: MySQL query error:
+2025-07-02 01:33:12 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:33:12 [INFO]: ::1 - - [01/Jul/2025:20:03:12 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:36:01 [ERROR]: MySQL query error:
+2025-07-02 01:36:01 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:36:01 [ERROR]: MySQL query error:
+2025-07-02 01:36:01 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:36:01 [INFO]: ::1 - - [01/Jul/2025:20:06:01 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:36:35 [INFO]: ::1 - - [01/Jul/2025:20:06:35 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:36:35 [INFO]: ::1 - - [01/Jul/2025:20:06:35 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:36:37 [ERROR]: MySQL query error:
+2025-07-02 01:36:37 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:36:37 [ERROR]: MySQL query error:
+2025-07-02 01:36:37 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:36:37 [INFO]: ::1 - - [01/Jul/2025:20:06:37 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:40:53 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:40:53 [INFO]: ::1 - - [01/Jul/2025:20:10:53 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:40:55 [ERROR]: MySQL query error:
+2025-07-02 01:40:55 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:40:55 [ERROR]: MySQL query error:
+2025-07-02 01:40:55 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:40:55 [INFO]: ::1 - - [01/Jul/2025:20:10:55 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:44:32 [INFO]: ::1 - - [01/Jul/2025:20:14:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:44:40 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:44:40 [INFO]: ::1 - - [01/Jul/2025:20:14:40 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:44:42 [ERROR]: MySQL query error:
+2025-07-02 01:44:42 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:44:42 [ERROR]: MySQL query error:
+2025-07-02 01:44:42 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:44:42 [INFO]: ::1 - - [01/Jul/2025:20:14:42 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:44:51 [INFO]: ::1 - - [01/Jul/2025:20:14:51 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:44:51 [ERROR]: MySQL query error:
+2025-07-02 01:44:51 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:44:51 [ERROR]: MySQL query error:
+2025-07-02 01:44:51 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:44:52 [INFO]: ::1 - - [01/Jul/2025:20:14:52 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:01 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:45:01 [INFO]: ::1 - - [01/Jul/2025:20:15:01 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:02 [ERROR]: MySQL query error:
+2025-07-02 01:45:02 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:02 [ERROR]: MySQL query error:
+2025-07-02 01:45:02 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:03 [INFO]: ::1 - - [01/Jul/2025:20:15:03 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:04 [ERROR]: MySQL query error:
+2025-07-02 01:45:04 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:04 [ERROR]: MySQL query error:
+2025-07-02 01:45:04 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:04 [INFO]: ::1 - - [01/Jul/2025:20:15:04 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:12 [ERROR]: MySQL query error:
+2025-07-02 01:45:12 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:12 [ERROR]: MySQL query error:
+2025-07-02 01:45:12 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:12 [INFO]: ::1 - - [01/Jul/2025:20:15:12 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:21 [ERROR]: MySQL query error:
+2025-07-02 01:45:21 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:21 [ERROR]: MySQL query error:
+2025-07-02 01:45:21 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:22 [INFO]: ::1 - - [01/Jul/2025:20:15:22 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:33 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:45:33 [INFO]: ::1 - - [01/Jul/2025:20:15:33 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:35 [ERROR]: MySQL query error:
+2025-07-02 01:45:35 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:35 [ERROR]: MySQL query error:
+2025-07-02 01:45:35 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:35 [INFO]: ::1 - - [01/Jul/2025:20:15:35 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:44 [INFO]: ::1 - - [01/Jul/2025:20:15:44 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:44 [INFO]: ::1 - - [01/Jul/2025:20:15:44 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:45:44 [ERROR]: MySQL query error:
+2025-07-02 01:45:44 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:44 [ERROR]: MySQL query error:
+2025-07-02 01:45:44 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:45:44 [INFO]: ::1 - - [01/Jul/2025:20:15:44 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:46:34 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:46:34 [INFO]: ::1 - - [01/Jul/2025:20:16:34 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:46:40 [ERROR]: MySQL query error:
+2025-07-02 01:46:40 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:46:41 [ERROR]: MySQL query error:
+2025-07-02 01:46:41 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:46:41 [INFO]: ::1 - - [01/Jul/2025:20:16:41 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:48:13 [ERROR]: MySQL query error:
+2025-07-02 01:48:13 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:28:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-02 01:48:13 [INFO]: ::1 - - [01/Jul/2025:20:18:13 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:48:15 [ERROR]: MySQL query error:
+2025-07-02 01:48:15 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:28:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-02 01:48:15 [INFO]: ::1 - - [01/Jul/2025:20:18:15 +0000] "GET /api/doctors/dashboard HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:48:35 [ERROR]: MySQL query error:
+2025-07-02 01:48:35 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:28:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-02 01:48:35 [INFO]: ::1 - - [01/Jul/2025:20:18:35 +0000] "GET /api/doctors/dashboard HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:48:37 [ERROR]: MySQL query error:
+2025-07-02 01:48:37 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:139:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 01:48:37 [INFO]: ::1 - - [01/Jul/2025:20:18:37 +0000] "POST /api/auth/login HTTP/1.1" 500 68 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:53:08 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 01:53:08 [INFO]: ::1 - - [01/Jul/2025:20:23:08 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:53:10 [ERROR]: MySQL query error:
+2025-07-02 01:53:10 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:53:13 [ERROR]: MySQL query error:
+2025-07-02 01:53:13 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:53:14 [INFO]: ::1 - - [01/Jul/2025:20:23:14 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 01:53:28 [ERROR]: MySQL query error:
+2025-07-02 01:53:28 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:53:28 [ERROR]: MySQL query error:
+2025-07-02 01:53:28 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 01:53:28 [INFO]: ::1 - - [01/Jul/2025:20:23:28 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:01:28 [INFO]: Socket.IO server initialized
+2025-07-02 02:01:31 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:01:31 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:01:31 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:01:31 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:01:31 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:01:31 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:01:31 [INFO]: 📊 Environment: development
+2025-07-02 02:01:31 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:01:31 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:03:50 [INFO]: Socket.IO server initialized
+2025-07-02 02:03:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:03:51 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:03:51 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:03:51 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:03:51 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:03:51 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:03:51 [INFO]: 📊 Environment: development
+2025-07-02 02:03:51 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:03:51 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:04:26 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 02:04:26 [INFO]: ::1 - - [01/Jul/2025:20:34:26 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:04:27 [ERROR]: MySQL query error:
+2025-07-02 02:04:27 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:04:28 [ERROR]: MySQL query error:
+2025-07-02 02:04:28 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:04:29 [INFO]: ::1 - - [01/Jul/2025:20:34:29 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:05:16 [INFO]: Socket.IO server initialized
+2025-07-02 02:05:17 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:05:17 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:05:17 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:05:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:05:17 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:05:17 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:05:17 [INFO]: 📊 Environment: development
+2025-07-02 02:05:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:05:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:05:43 [INFO]: Socket.IO server initialized
+2025-07-02 02:05:45 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:05:45 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:05:45 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:05:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:05:45 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:05:45 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:05:45 [INFO]: 📊 Environment: development
+2025-07-02 02:05:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:05:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:06:32 [INFO]: Socket.IO server initialized
+2025-07-02 02:06:33 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:06:33 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:06:33 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:06:33 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:06:33 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:06:33 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:06:33 [INFO]: 📊 Environment: development
+2025-07-02 02:06:33 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:06:33 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:06:50 [INFO]: Socket.IO server initialized
+2025-07-02 02:06:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:06:51 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:06:51 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:06:51 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:06:51 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:06:51 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:06:51 [INFO]: 📊 Environment: development
+2025-07-02 02:06:51 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:06:51 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:07:26 [INFO]: Socket.IO server initialized
+2025-07-02 02:07:27 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:07:27 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:07:27 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:07:27 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:07:27 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:07:27 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:07:27 [INFO]: 📊 Environment: development
+2025-07-02 02:07:27 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:07:27 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:08:27 [INFO]: ::1 - - [01/Jul/2025:20:38:27 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:09:03 [INFO]: Socket.IO server initialized
+2025-07-02 02:09:05 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:09:05 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:09:05 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:09:05 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:09:05 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:09:05 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:09:05 [INFO]: 📊 Environment: development
+2025-07-02 02:09:05 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:09:05 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:09:12 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 02:09:12 [INFO]: ::1 - - [01/Jul/2025:20:39:12 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:09:14 [ERROR]: MySQL query error:
+2025-07-02 02:09:14 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:09:14 [ERROR]: MySQL query error:
+2025-07-02 02:09:14 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:09:16 [INFO]: ::1 - - [01/Jul/2025:20:39:16 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:10:51 [INFO]: Socket.IO server initialized
+2025-07-02 02:10:53 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:10:53 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:10:53 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:10:53 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:10:53 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:10:53 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:10:53 [INFO]: 📊 Environment: development
+2025-07-02 02:10:53 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:10:53 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:12:17 [INFO]: Socket.IO server initialized
+2025-07-02 02:12:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:12:18 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:12:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:12:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:12:18 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:12:18 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:12:18 [INFO]: 📊 Environment: development
+2025-07-02 02:12:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:12:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:13:30 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:21:26 [INFO]: Socket.IO server initialized
+2025-07-02 02:21:27 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:21:27 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:21:27 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:21:27 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:21:27 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:21:27 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:21:27 [INFO]: 📊 Environment: development
+2025-07-02 02:21:27 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:21:27 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:21:32 [INFO]: Socket.IO server initialized
+2025-07-02 02:21:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:21:32 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:21:32 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:21:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:21:32 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:21:32 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:21:32 [INFO]: 📊 Environment: development
+2025-07-02 02:21:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:21:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:21:41 [INFO]: Socket.IO server initialized
+2025-07-02 02:21:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:21:42 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:21:42 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:21:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:21:42 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:21:42 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:21:42 [INFO]: 📊 Environment: development
+2025-07-02 02:21:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:21:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:21:52 [INFO]: Socket.IO server initialized
+2025-07-02 02:21:53 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:21:53 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:21:53 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:21:53 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:21:53 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:21:53 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:21:53 [INFO]: 📊 Environment: development
+2025-07-02 02:21:53 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:21:53 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:22:05 [INFO]: Socket.IO server initialized
+2025-07-02 02:22:06 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:22:06 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:22:06 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:22:06 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:22:06 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:22:06 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:22:06 [INFO]: 📊 Environment: development
+2025-07-02 02:22:06 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:22:06 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:22:17 [INFO]: Socket.IO server initialized
+2025-07-02 02:22:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:22:18 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:22:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:22:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:22:18 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:22:18 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:22:18 [INFO]: 📊 Environment: development
+2025-07-02 02:22:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:22:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:22:32 [INFO]: Socket.IO server initialized
+2025-07-02 02:22:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:22:32 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:22:32 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:22:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:22:32 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:22:32 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:22:32 [INFO]: 📊 Environment: development
+2025-07-02 02:22:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:22:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:22:36 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 02:22:36 [INFO]: ::1 - - [01/Jul/2025:20:52:36 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:22:36 [ERROR]: MySQL query error:
+2025-07-02 02:22:36 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:22:37 [ERROR]: MySQL query error:
+2025-07-02 02:22:37 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:22:38 [INFO]: ::1 - - [01/Jul/2025:20:52:38 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:23:39 [ERROR]: MySQL query error:
+2025-07-02 02:23:39 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:23:39 [ERROR]: MySQL query error:
+2025-07-02 02:23:39 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:23:40 [INFO]: ::1 - - [01/Jul/2025:20:53:40 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:23:41 [ERROR]: MySQL query error:
+2025-07-02 02:23:41 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:23:41 [ERROR]: MySQL query error:
+2025-07-02 02:23:41 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:23:41 [INFO]: ::1 - - [01/Jul/2025:20:53:41 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:23:58 [INFO]: ::1 - - [01/Jul/2025:20:53:58 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:24:33 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 02:24:33 [INFO]: ::1 - - [01/Jul/2025:20:54:33 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:24:34 [ERROR]: MySQL query error:
+2025-07-02 02:24:34 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:24:35 [ERROR]: MySQL query error:
+2025-07-02 02:24:35 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:24:35 [INFO]: ::1 - - [01/Jul/2025:20:54:35 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:24:37 [ERROR]: MySQL query error:
+2025-07-02 02:24:37 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:24:37 [ERROR]: MySQL query error:
+2025-07-02 02:24:37 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:24:37 [INFO]: ::1 - - [01/Jul/2025:20:54:37 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:24:52 [INFO]: ::1 - - [01/Jul/2025:20:54:52 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:24:52 [ERROR]: MySQL query error:
+2025-07-02 02:24:52 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:24:52 [ERROR]: MySQL query error:
+2025-07-02 02:24:52 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:24:52 [INFO]: ::1 - - [01/Jul/2025:20:54:52 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:30:43 [INFO]: Socket.IO server initialized
+2025-07-02 02:30:44 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:30:44 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:30:44 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:30:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:30:44 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:30:44 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:30:44 [INFO]: 📊 Environment: development
+2025-07-02 02:30:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:30:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:30:57 [INFO]: Socket.IO server initialized
+2025-07-02 02:30:58 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:30:58 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:30:58 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:30:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:30:58 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:30:58 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:30:58 [INFO]: 📊 Environment: development
+2025-07-02 02:30:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:30:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:31:15 [INFO]: User logged in: doctor@gmail.com
+2025-07-02 02:31:15 [INFO]: ::1 - - [01/Jul/2025:21:01:15 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:31:16 [ERROR]: MySQL query error:
+2025-07-02 02:31:16 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:528:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:399:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:31:18 [ERROR]: MySQL query error:
+2025-07-02 02:31:18 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:600:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:409:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 02:31:18 [INFO]: ::1 - - [01/Jul/2025:21:01:18 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:31:21 [INFO]: Socket.IO server initialized
+2025-07-02 02:31:23 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:31:23 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:31:23 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:31:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:31:23 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:31:23 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:31:23 [INFO]: 📊 Environment: development
+2025-07-02 02:31:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:31:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:32:31 [INFO]: User logged out: doctor@gmail.com
+2025-07-02 02:32:31 [INFO]: ::1 - - [01/Jul/2025:21:02:31 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:32:31 [INFO]: ::1 - - [01/Jul/2025:21:02:31 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:32:35 [INFO]: User logged in: patient.test@example.com
+2025-07-02 02:32:35 [INFO]: ::1 - - [01/Jul/2025:21:02:35 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:32:35 [INFO]: ::1 - - [01/Jul/2025:21:02:35 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:32:40 [INFO]: ::1 - - [01/Jul/2025:21:02:40 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:00 [INFO]: Queue appointment booked: 93fdc0c4-1272-4102-8c49-3c4b3a8fedb9 for patient e3f58ea3-1d4f-4d7e-9ef0-446490865ad3
+2025-07-02 02:33:00 [INFO]: ::1 - - [01/Jul/2025:21:03:00 +0000] "POST /api/patients/appointments/queue HTTP/1.1" 201 652 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:05 [INFO]: Socket.IO server initialized
+2025-07-02 02:33:07 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:33:07 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:33:07 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:33:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:33:07 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:33:07 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:33:07 [INFO]: 📊 Environment: development
+2025-07-02 02:33:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:33:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:33:12 [INFO]: User logged out: patient.test@example.com
+2025-07-02 02:33:12 [INFO]: ::1 - - [01/Jul/2025:21:03:12 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:12 [INFO]: ::1 - - [01/Jul/2025:21:03:12 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:15 [INFO]: ::1 - - [01/Jul/2025:21:03:15 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:18 [INFO]: ::1 - - [01/Jul/2025:21:03:18 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:20 [INFO]: ::1 - - [01/Jul/2025:21:03:20 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:22 [INFO]: ::1 - - [01/Jul/2025:21:03:22 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:25 [INFO]: User logged in: patient.test@example.com
+2025-07-02 02:33:25 [INFO]: ::1 - - [01/Jul/2025:21:03:25 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:25 [INFO]: ::1 - - [01/Jul/2025:21:03:25 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:34 [INFO]: ::1 - - [01/Jul/2025:21:03:34 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:40 [INFO]: Socket.IO server initialized
+2025-07-02 02:33:41 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:33:41 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:33:41 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:33:41 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:33:41 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:33:41 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:33:41 [INFO]: 📊 Environment: development
+2025-07-02 02:33:41 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:33:41 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:33:42 [INFO]: ::1 - - [01/Jul/2025:21:03:42 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:43 [INFO]: ::1 - - [01/Jul/2025:21:03:43 +0000] "GET /api/auth/profile HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:51 [INFO]: User logged in: patient.test@example.com
+2025-07-02 02:33:51 [INFO]: ::1 - - [01/Jul/2025:21:03:51 +0000] "POST /api/auth/login HTTP/1.1" 200 857 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:52 [INFO]: ::1 - - [01/Jul/2025:21:03:52 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:53 [INFO]: ::1 - - [01/Jul/2025:21:03:53 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:33:54 [INFO]: ::1 - - [01/Jul/2025:21:03:54 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:34:19 [INFO]: Socket.IO server initialized
+2025-07-02 02:34:21 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:34:21 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:34:21 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:34:21 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:34:21 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:34:21 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:34:21 [INFO]: 📊 Environment: development
+2025-07-02 02:34:21 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:34:21 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:34:46 [INFO]: Socket.IO server initialized
+2025-07-02 02:34:47 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:34:47 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:34:47 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:34:47 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:34:47 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:34:47 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:34:47 [INFO]: 📊 Environment: development
+2025-07-02 02:34:47 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:34:47 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:35:09 [INFO]: Socket.IO server initialized
+2025-07-02 02:35:10 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:35:10 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:35:10 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:35:10 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:35:10 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:35:10 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:35:10 [INFO]: 📊 Environment: development
+2025-07-02 02:35:10 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:35:10 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:35:17 [INFO]: Socket.IO server initialized
+2025-07-02 02:35:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:35:18 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:35:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:35:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:35:18 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:35:18 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:35:18 [INFO]: 📊 Environment: development
+2025-07-02 02:35:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:35:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:35:27 [INFO]: Socket.IO server initialized
+2025-07-02 02:35:28 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:35:28 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:35:28 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:35:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:35:28 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:35:28 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:35:28 [INFO]: 📊 Environment: development
+2025-07-02 02:35:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:35:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:35:42 [INFO]: Socket.IO server initialized
+2025-07-02 02:35:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:35:43 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:35:43 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:35:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:35:43 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:35:43 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:35:43 [INFO]: 📊 Environment: development
+2025-07-02 02:35:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:35:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:35:49 [INFO]: Socket.IO server initialized
+2025-07-02 02:35:50 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:35:50 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:35:50 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:35:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:35:50 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:35:50 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:35:50 [INFO]: 📊 Environment: development
+2025-07-02 02:35:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:35:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:37:09 [INFO]: ::1 - - [01/Jul/2025:21:07:09 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:37:13 [INFO]: Socket.IO server initialized
+2025-07-02 02:37:14 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:37:14 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:37:14 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:37:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:37:14 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:37:14 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:37:14 [INFO]: 📊 Environment: development
+2025-07-02 02:37:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:37:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:39:56 [INFO]: Socket.IO server initialized
+2025-07-02 02:39:58 [INFO]: Socket.IO server initialized
+2025-07-02 02:39:58 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:39:58 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:39:58 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:39:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:39:58 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:39:58 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:39:58 [INFO]: 📊 Environment: development
+2025-07-02 02:39:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:39:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:40:29 [INFO]: Socket.IO server initialized
+2025-07-02 02:40:30 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:40:30 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:40:30 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:40:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:40:30 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:40:30 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:40:30 [INFO]: 📊 Environment: development
+2025-07-02 02:40:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:40:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:40:59 [INFO]: Socket.IO server initialized
+2025-07-02 02:41:00 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:41:00 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:41:00 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:41:00 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:41:00 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:41:00 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:41:00 [INFO]: 📊 Environment: development
+2025-07-02 02:41:00 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:41:00 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:41:33 [INFO]: Socket.IO server initialized
+2025-07-02 02:41:34 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:41:34 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:41:34 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:41:34 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:41:34 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:41:34 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:41:34 [INFO]: 📊 Environment: development
+2025-07-02 02:41:34 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:41:34 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:41:55 [INFO]: Socket.IO server initialized
+2025-07-02 02:41:57 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:41:57 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:41:57 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:41:57 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:41:57 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:41:57 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:41:57 [INFO]: 📊 Environment: development
+2025-07-02 02:41:57 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:41:57 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:42:42 [INFO]: Socket.IO server initialized
+2025-07-02 02:42:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 02:42:43 [INFO]: ✅ MySQL connected successfully
+2025-07-02 02:42:43 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 02:42:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 02:42:43 [INFO]: 📧 Notification service skipped for now
+2025-07-02 02:42:43 [INFO]: 🚀 Server running on port 5000
+2025-07-02 02:42:43 [INFO]: 📊 Environment: development
+2025-07-02 02:42:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 02:42:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 02:43:14 [INFO]: ::1 - - [01/Jul/2025:21:13:14 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:15 [INFO]: ::1 - - [01/Jul/2025:21:13:15 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:16 [INFO]: ::1 - - [01/Jul/2025:21:13:16 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:19 [INFO]: ::1 - - [01/Jul/2025:21:13:19 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:20 [INFO]: ::1 - - [01/Jul/2025:21:13:20 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:25 [INFO]: ::1 - - [01/Jul/2025:21:13:25 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:25 [INFO]: ::1 - - [01/Jul/2025:21:13:25 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:26 [INFO]: ::1 - - [01/Jul/2025:21:13:26 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 02:43:39 [INFO]: ::1 - - [01/Jul/2025:21:13:39 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"

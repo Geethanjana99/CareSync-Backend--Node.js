@@ -33,6 +33,5 @@ router.post('/health-metrics', PatientController.updateHealthMetrics);
 
 // Doctor search
 router.get('/doctors/search', PatientController.searchDoctors);
-router.get('/doctors/:doctorId/availability', PatientController.getDoctorAvailability);
 
 module.exports = router;

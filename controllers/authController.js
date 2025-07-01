@@ -95,8 +95,7 @@ class AuthController {
           languages_spoken: profileData.languages_spoken,
           office_address: profileData.office_address,
           bio: profileData.bio,
-          working_hours: profileData.working_hours,
-          availability_status: profileData.availability_status || 'available'
+          working_hours: profileData.working_hours
         };
         console.log('DoctorData being saved:', JSON.stringify(doctorData, null, 2)); // Debug log
         const doctor = new Doctor(doctorData);

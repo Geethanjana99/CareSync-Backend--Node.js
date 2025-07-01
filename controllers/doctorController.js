@@ -112,38 +112,6 @@ class DoctorController {
     }
   }
 
-  // Update availability
-  static async updateAvailability(req, res, next) {
-    try {
-      const { date, time_slots, is_available } = req.body;
-      
-      const doctor = await Doctor.findByUserId(req.user.id);
-      if (!doctor) {
-        return res.status(404).json({
-          success: false,
-          message: 'Doctor profile not found'
-        });
-      }
-
-      const availability = await Doctor.updateAvailability(doctor.id, {
-        date,
-        time_slots,
-        is_available
-      });
-
-      res.json({
-        success: true,
-        message: 'Availability updated successfully',
-        data: availability
-      });
-
-      logger.info(`Doctor availability updated: ${doctor.id} for ${date}`);
-    } catch (error) {
-      logger.error('Error updating availability:', error);
-      next(error);
-    }
-  }
-
   // Get today's appointments
   static async getTodayAppointments(req, res, next) {
     try {
@@ -825,6 +793,8 @@ class DoctorController {
       next(error);
     }
   }
+
+
 }
 
 module.exports = DoctorController;

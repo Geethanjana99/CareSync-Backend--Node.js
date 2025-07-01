@@ -266,7 +266,6 @@ class Queue {
     try {
       const query = `
         SELECT 
-          d.availability_status,
           d.working_hours,
           qs.regular_count,
           qs.emergency_used,

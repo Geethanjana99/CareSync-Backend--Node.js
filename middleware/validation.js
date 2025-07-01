@@ -164,23 +164,6 @@ const doctorValidation = {
       .isFloat({ min: 0 })
       .withMessage('Consultation fee must be a positive number'),
     handleValidationErrors
-  ],
-
-  updateAvailability: [
-    body('dayOfWeek')
-      .isIn(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
-      .withMessage('Invalid day of week'),
-    body('startTime')
-      .matches(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
-      .withMessage('Valid start time is required (HH:MM format)'),
-    body('endTime')
-      .matches(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
-      .withMessage('Valid end time is required (HH:MM format)'),
-    body('slotDuration')
-      .optional()
-      .isInt({ min: 15, max: 120 })
-      .withMessage('Slot duration must be between 15 and 120 minutes'),
-    handleValidationErrors
   ]
 };
 

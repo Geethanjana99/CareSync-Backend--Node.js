@@ -17,8 +17,6 @@ router.get('/dashboard', DoctorController.getDashboard);
 
 // Schedule and availability
 router.get('/schedule', DoctorController.getSchedule);
-router.put('/availability', doctorValidation.updateAvailability, DoctorController.updateAvailability);
-
 // Appointments
 router.get('/appointments/today', DoctorController.getTodayAppointments);
 router.get('/appointments', DoctorController.getAppointmentHistory);
