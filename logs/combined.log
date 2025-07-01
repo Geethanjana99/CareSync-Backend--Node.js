@@ -3754,3 +3754,785 @@
 2025-06-24 08:57:06 [INFO]: User logged in: patient.test.new@example.com
 2025-06-24 08:57:06 [INFO]: ::1 - - [24/Jun/2025:03:27:06 +0000] "POST /api/auth/login HTTP/1.1" 200 856 "-" "axios/1.9.0"
 2025-06-24 08:57:07 [INFO]: ::1 - - [24/Jun/2025:03:27:07 +0000] "GET /api/patients/appointments?limit=5 HTTP/1.1" 200 879 "-" "axios/1.9.0"
+2025-06-24 22:42:52 [INFO]: Socket.IO server initialized
+2025-06-24 22:42:55 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 22:42:55 [INFO]: ✅ MySQL connected successfully
+2025-06-24 22:42:55 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 22:42:55 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 22:42:55 [INFO]: 📧 Notification service skipped for now
+2025-06-24 22:42:55 [INFO]: 🚀 Server running on port 5000
+2025-06-24 22:42:55 [INFO]: 📊 Environment: development
+2025-06-24 22:42:55 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 22:42:55 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 22:43:02 [INFO]: User logged in: chanuth@gmail.com
+2025-06-24 22:43:02 [INFO]: ::1 - - [24/Jun/2025:17:13:02 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 22:45:09 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 22:46:29 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 22:48:34 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 22:48:36 [INFO]: MySQL connection pool closed
+2025-06-24 23:07:18 [INFO]: Socket.IO server initialized
+2025-06-24 23:07:20 [INFO]: ✅ MySQL database connected successfully
+2025-06-24 23:07:20 [INFO]: ✅ MySQL connected successfully
+2025-06-24 23:07:20 [ERROR]: ❌ MongoDB connection failed:
+2025-06-24 23:07:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-06-24 23:07:20 [INFO]: 📧 Notification service skipped for now
+2025-06-24 23:07:20 [INFO]: 🚀 Server running on port 5000
+2025-06-24 23:07:20 [INFO]: 📊 Environment: development
+2025-06-24 23:07:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-06-24 23:07:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-06-24 23:07:29 [INFO]: User logged in: chanuth@gmail.com
+2025-06-24 23:07:29 [INFO]: ::1 - - [24/Jun/2025:17:37:29 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 23:18:10 [INFO]: User logged in: chanuth@gmail.com
+2025-06-24 23:18:10 [INFO]: ::1 - - [24/Jun/2025:17:48:10 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 23:41:12 [INFO]: ::1 - - [24/Jun/2025:18:11:12 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 23:41:22 [INFO]: User logged in: chanuth@gmail.com
+2025-06-24 23:41:22 [INFO]: ::1 - - [24/Jun/2025:18:11:22 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 23:45:21 [INFO]: ::1 - - [24/Jun/2025:18:15:21 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-24 23:45:35 [INFO]: User logged in: chanuth@gmail.com
+2025-06-24 23:45:35 [INFO]: ::1 - - [24/Jun/2025:18:15:35 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 00:49:59 [ERROR]: MySQL query error:
+2025-06-25 00:49:59 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-06-25 00:49:59 [INFO]: ::1 - - [24/Jun/2025:19:19:59 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 00:50:05 [INFO]: User logged in: chanuth@gmail.com
+2025-06-25 00:50:05 [INFO]: ::1 - - [24/Jun/2025:19:20:05 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 01:02:59 [INFO]: ::1 - - [24/Jun/2025:19:32:59 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 01:03:07 [INFO]: User logged in: chanuth@gmail.com
+2025-06-25 01:03:07 [INFO]: ::1 - - [24/Jun/2025:19:33:07 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 01:07:11 [INFO]: ::1 - - [24/Jun/2025:19:37:11 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 01:07:19 [INFO]: User logged in: chanuth@gmail.com
+2025-06-25 01:07:19 [INFO]: ::1 - - [24/Jun/2025:19:37:19 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-06-25 01:27:28 [INFO]: User logged in: chanuth@gmail.com
+2025-06-25 01:27:28 [INFO]: ::1 - - [24/Jun/2025:19:57:28 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+2025-07-01 19:55:39 [INFO]: Socket.IO server initialized
+2025-07-01 19:55:54 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 19:55:54 [INFO]: ✅ MySQL connected successfully
+2025-07-01 19:55:54 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 19:55:54 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 19:55:54 [INFO]: 📧 Notification service skipped for now
+2025-07-01 19:55:54 [INFO]: 🚀 Server running on port 5000
+2025-07-01 19:55:54 [INFO]: 📊 Environment: development
+2025-07-01 19:55:54 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 19:55:54 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 19:58:12 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 19:58:12 [INFO]: ::1 - - [01/Jul/2025:14:28:12 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:08:14 [INFO]: ::1 - - [01/Jul/2025:14:38:14 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:09:15 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:09:15 [INFO]: ::1 - - [01/Jul/2025:14:39:15 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:10:00 [INFO]: ::1 - - [01/Jul/2025:14:40:00 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:10:16 [INFO]: ::1 - - [01/Jul/2025:14:40:16 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:10:34 [INFO]: ::1 - - [01/Jul/2025:14:40:34 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:10:54 [INFO]: ::1 - - [01/Jul/2025:14:40:54 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:11:08 [INFO]: ::1 - - [01/Jul/2025:14:41:08 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:11:53 [INFO]: ::1 - - [01/Jul/2025:14:41:53 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:11:56 [INFO]: ::1 - - [01/Jul/2025:14:41:56 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:12:17 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:12:17 [INFO]: ::1 - - [01/Jul/2025:14:42:17 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:12:19 [INFO]: ::1 - - [01/Jul/2025:14:42:19 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:12:58 [INFO]: ::1 - - [01/Jul/2025:14:42:58 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:12:59 [INFO]: ::1 - - [01/Jul/2025:14:42:59 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:02 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:13:02 [INFO]: ::1 - - [01/Jul/2025:14:43:02 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:04 [INFO]: ::1 - - [01/Jul/2025:14:43:04 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:25 [INFO]: ::1 - - [01/Jul/2025:14:43:25 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:36 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:13:36 [INFO]: ::1 - - [01/Jul/2025:14:43:36 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:44 [INFO]: ::1 - - [01/Jul/2025:14:43:44 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:48 [INFO]: ::1 - - [01/Jul/2025:14:43:48 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:49 [INFO]: ::1 - - [01/Jul/2025:14:43:49 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:13:49 [INFO]: ::1 - - [01/Jul/2025:14:43:49 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:16:06 [INFO]: ::1 - - [01/Jul/2025:14:46:06 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:16:08 [INFO]: ::1 - - [01/Jul/2025:14:46:08 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:17:18 [INFO]: ::1 - - [01/Jul/2025:14:47:18 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:19:31 [INFO]: Socket.IO server initialized
+2025-07-01 20:19:39 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 20:19:54 [INFO]: ::1 - - [01/Jul/2025:14:49:54 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:20:25 [INFO]: Socket.IO server initialized
+2025-07-01 20:20:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 20:20:32 [INFO]: ✅ MySQL connected successfully
+2025-07-01 20:20:32 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 20:20:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 20:20:32 [INFO]: 📧 Notification service skipped for now
+2025-07-01 20:20:32 [INFO]: 🚀 Server running on port 5000
+2025-07-01 20:20:32 [INFO]: 📊 Environment: development
+2025-07-01 20:20:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 20:20:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 20:21:14 [INFO]: ::1 - - [01/Jul/2025:14:51:14 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:21:23 [INFO]: ::1 - - [01/Jul/2025:14:51:23 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:21:24 [INFO]: ::1 - - [01/Jul/2025:14:51:24 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:21:28 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:21:28 [INFO]: ::1 - - [01/Jul/2025:14:51:28 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:21:30 [INFO]: ::1 - - [01/Jul/2025:14:51:30 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:28 [INFO]: ::1 - - [01/Jul/2025:14:53:28 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:30 [INFO]: ::1 - - [01/Jul/2025:14:53:30 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:31 [INFO]: ::1 - - [01/Jul/2025:14:53:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:31 [INFO]: ::1 - - [01/Jul/2025:14:53:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:32 [INFO]: ::1 - - [01/Jul/2025:14:53:32 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:32 [INFO]: ::1 - - [01/Jul/2025:14:53:32 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:34 [INFO]: ::1 - - [01/Jul/2025:14:53:34 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:45 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:23:45 [INFO]: ::1 - - [01/Jul/2025:14:53:45 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:48 [INFO]: ::1 - - [01/Jul/2025:14:53:48 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:23:49 [INFO]: ::1 - - [01/Jul/2025:14:53:49 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:25:58 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 20:30:19 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 20:36:52 [INFO]: ::1 - - [01/Jul/2025:15:06:52 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:36:53 [INFO]: ::1 - - [01/Jul/2025:15:06:53 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:39:36 [INFO]: ::1 - - [01/Jul/2025:15:09:36 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:39:38 [INFO]: ::1 - - [01/Jul/2025:15:09:38 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:30 [INFO]: ::1 - - [01/Jul/2025:15:10:30 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:31 [INFO]: ::1 - - [01/Jul/2025:15:10:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:31 [INFO]: ::1 - - [01/Jul/2025:15:10:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:31 [INFO]: ::1 - - [01/Jul/2025:15:10:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:32 [INFO]: ::1 - - [01/Jul/2025:15:10:32 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:32 [INFO]: ::1 - - [01/Jul/2025:15:10:32 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:32 [INFO]: ::1 - - [01/Jul/2025:15:10:32 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:33 [INFO]: ::1 - - [01/Jul/2025:15:10:33 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:34 [INFO]: ::1 - - [01/Jul/2025:15:10:34 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:34 [INFO]: ::1 - - [01/Jul/2025:15:10:34 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:35 [INFO]: ::1 - - [01/Jul/2025:15:10:35 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:35 [INFO]: ::1 - - [01/Jul/2025:15:10:35 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:36 [INFO]: ::1 - - [01/Jul/2025:15:10:36 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:37 [INFO]: ::1 - - [01/Jul/2025:15:10:37 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:40:45 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 20:47:46 [INFO]: ::1 - - [01/Jul/2025:15:17:46 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:47:48 [INFO]: ::1 - - [01/Jul/2025:15:17:48 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:47:59 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:47:59 [INFO]: ::1 - - [01/Jul/2025:15:17:59 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:48:00 [INFO]: ::1 - - [01/Jul/2025:15:18:00 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:48:43 [INFO]: ::1 - - [01/Jul/2025:15:18:43 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:48:45 [INFO]: ::1 - - [01/Jul/2025:15:18:45 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:48:47 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:48:47 [INFO]: ::1 - - [01/Jul/2025:15:18:47 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:48:49 [INFO]: ::1 - - [01/Jul/2025:15:18:49 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:50:15 [INFO]: ::1 - - [01/Jul/2025:15:20:15 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:50:20 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:50:20 [INFO]: ::1 - - [01/Jul/2025:15:20:20 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:50:21 [INFO]: ::1 - - [01/Jul/2025:15:20:21 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:50:24 [INFO]: ::1 - - [01/Jul/2025:15:20:24 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:50:51 [INFO]: ::1 - - [01/Jul/2025:15:20:51 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:50:59 [INFO]: ::1 - - [01/Jul/2025:15:20:59 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:51:00 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 20:51:00 [INFO]: ::1 - - [01/Jul/2025:15:21:00 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:51:02 [INFO]: ::1 - - [01/Jul/2025:15:21:02 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:52:19 [INFO]: ::1 - - [01/Jul/2025:15:22:19 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 20:59:19 [INFO]: ::1 - - [01/Jul/2025:15:29:19 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:08:02 [INFO]: ::1 - - [01/Jul/2025:15:38:02 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:08:02 [INFO]: ::1 - - [01/Jul/2025:15:38:02 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:10:18 [INFO]: ::1 - - [01/Jul/2025:15:40:18 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:10:18 [INFO]: ::1 - - [01/Jul/2025:15:40:18 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:10:18 [INFO]: ::1 - - [01/Jul/2025:15:40:18 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:10:19 [INFO]: User logged in: sarah.johnson@clinic.com
+2025-07-01 21:10:19 [INFO]: ::1 - - [01/Jul/2025:15:40:19 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.9.0"
+2025-07-01 21:10:19 [INFO]: ::1 - - [01/Jul/2025:15:40:19 +0000] "GET /api/admin/patients HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-07-01 21:15:08 [INFO]: ::1 - - [01/Jul/2025:15:45:08 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:15:08 [INFO]: ::1 - - [01/Jul/2025:15:45:08 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:15:08 [INFO]: ::1 - - [01/Jul/2025:15:45:08 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:15:09 [INFO]: User logged in: sarah.johnson@clinic.com
+2025-07-01 21:15:09 [INFO]: ::1 - - [01/Jul/2025:15:45:09 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.9.0"
+2025-07-01 21:15:09 [INFO]: ::1 - - [01/Jul/2025:15:45:09 +0000] "GET /api/admin/patients HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-07-01 21:16:36 [INFO]: ::1 - - [01/Jul/2025:15:46:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:16:37 [INFO]: ::1 - - [01/Jul/2025:15:46:37 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:16:37 [INFO]: ::1 - - [01/Jul/2025:15:46:37 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:16:37 [INFO]: User logged in: sarah.johnson@clinic.com
+2025-07-01 21:16:37 [INFO]: ::1 - - [01/Jul/2025:15:46:37 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.9.0"
+2025-07-01 21:16:37 [INFO]: ::1 - - [01/Jul/2025:15:46:37 +0000] "GET /api/admin/patients HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-07-01 21:17:52 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 21:19:44 [INFO]: User logged in: sarah.johnson@clinic.com
+2025-07-01 21:19:44 [INFO]: ::1 - - [01/Jul/2025:15:49:44 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.9.0"
+2025-07-01 21:19:44 [INFO]: ::1 - - [01/Jul/2025:15:49:44 +0000] "GET /api/auth/profile HTTP/1.1" 200 927 "-" "axios/1.9.0"
+2025-07-01 21:19:45 [INFO]: ::1 - - [01/Jul/2025:15:49:45 +0000] "GET /api/admin/patients HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-07-01 21:20:59 [INFO]: User logged in: sarah.johnson@clinic.com
+2025-07-01 21:20:59 [INFO]: ::1 - - [01/Jul/2025:15:50:59 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.9.0"
+2025-07-01 21:20:59 [INFO]: ::1 - - [01/Jul/2025:15:50:59 +0000] "GET /api/auth/profile HTTP/1.1" 200 927 "-" "axios/1.9.0"
+2025-07-01 21:21:00 [INFO]: ::1 - - [01/Jul/2025:15:51:00 +0000] "GET /api/admin/patients HTTP/1.1" 403 70 "-" "axios/1.9.0"
+2025-07-01 21:21:46 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 21:21:46 [INFO]: ::1 - - [01/Jul/2025:15:51:46 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:21:48 [INFO]: ::1 - - [01/Jul/2025:15:51:48 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:27:07 [INFO]: Socket.IO server initialized
+2025-07-01 21:27:23 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 21:27:23 [INFO]: ✅ MySQL connected successfully
+2025-07-01 21:27:23 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 21:27:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 21:27:23 [INFO]: 📧 Notification service skipped for now
+2025-07-01 21:27:23 [INFO]: 🚀 Server running on port 5000
+2025-07-01 21:27:23 [INFO]: 📊 Environment: development
+2025-07-01 21:27:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 21:27:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 21:32:15 [INFO]: Socket.IO server initialized
+2025-07-01 21:32:17 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 21:33:01 [INFO]: Socket.IO server initialized
+2025-07-01 21:33:03 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 21:33:03 [INFO]: ✅ MySQL connected successfully
+2025-07-01 21:33:03 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 21:33:03 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 21:33:03 [INFO]: 📧 Notification service skipped for now
+2025-07-01 21:33:03 [INFO]: 🚀 Server running on port 5001
+2025-07-01 21:33:03 [INFO]: 📊 Environment: development
+2025-07-01 21:33:03 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 21:33:03 [INFO]: 📋 API Documentation: http://localhost:5001/api/docs
+2025-07-01 21:33:36 [INFO]: ::1 - - [01/Jul/2025:16:03:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:33:36 [INFO]: ::1 - - [01/Jul/2025:16:03:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:36:47 [INFO]: ::1 - - [01/Jul/2025:16:06:47 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:37:08 [INFO]: ::1 - - [01/Jul/2025:16:07:08 +0000] "GET /api/health HTTP/1.1" 404 73 "-" "-"
+2025-07-01 21:37:33 [INFO]: ::1 - - [01/Jul/2025:16:07:33 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:37:59 [INFO]: ::1 - - [01/Jul/2025:16:07:59 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:37:59 [INFO]: ::1 - - [01/Jul/2025:16:07:59 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:37:59 [INFO]: ::1 - - [01/Jul/2025:16:07:59 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:37:59 [INFO]: ::1 - - [01/Jul/2025:16:07:59 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-01 21:39:51 [INFO]: ::1 - - [01/Jul/2025:16:09:51 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:40:00 [INFO]: ::1 - - [01/Jul/2025:16:10:00 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:40:01 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 21:40:01 [INFO]: ::1 - - [01/Jul/2025:16:10:01 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:40:03 [INFO]: ::1 - - [01/Jul/2025:16:10:03 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:43:38 [INFO]: Socket.IO server initialized
+2025-07-01 21:43:40 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 21:55:56 [INFO]: Socket.IO server initialized
+2025-07-01 21:55:57 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 21:55:57 [INFO]: ✅ MySQL connected successfully
+2025-07-01 21:55:57 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 21:55:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 21:55:58 [INFO]: 📧 Notification service skipped for now
+2025-07-01 21:55:58 [INFO]: 🚀 Server running on port 5000
+2025-07-01 21:55:58 [INFO]: 📊 Environment: development
+2025-07-01 21:55:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 21:55:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 21:56:11 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-07-01 21:56:11 [INFO]: ::1 - - [01/Jul/2025:16:26:11 +0000] "GET /api/auth/profile HTTP/1.1" 401 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:56:17 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 21:56:17 [INFO]: ::1 - - [01/Jul/2025:16:26:17 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 21:56:19 [INFO]: ::1 - - [01/Jul/2025:16:26:19 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:19:55 [INFO]: ::1 - - [01/Jul/2025:16:49:55 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:19:56 [INFO]: ::1 - - [01/Jul/2025:16:49:56 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:19:57 [INFO]: ::1 - - [01/Jul/2025:16:49:57 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:19:57 [INFO]: ::1 - - [01/Jul/2025:16:49:57 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:19:58 [INFO]: ::1 - - [01/Jul/2025:16:49:58 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:20:00 [INFO]: ::1 - - [01/Jul/2025:16:50:00 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:20:05 [INFO]: ::1 - - [01/Jul/2025:16:50:05 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:20:15 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 22:20:15 [INFO]: ::1 - - [01/Jul/2025:16:50:15 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:20:18 [INFO]: ::1 - - [01/Jul/2025:16:50:18 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:21:17 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-07-01 22:21:17 [INFO]: ::1 - - [01/Jul/2025:16:51:17 +0000] "GET /api/auth/profile HTTP/1.1" 401 48 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:21:21 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 22:21:21 [INFO]: ::1 - - [01/Jul/2025:16:51:21 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:21:23 [INFO]: ::1 - - [01/Jul/2025:16:51:23 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:22:07 [INFO]: ::1 - - [01/Jul/2025:16:52:07 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:22:09 [INFO]: ::1 - - [01/Jul/2025:16:52:09 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:22:11 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 22:22:11 [INFO]: ::1 - - [01/Jul/2025:16:52:11 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:22:13 [INFO]: ::1 - - [01/Jul/2025:16:52:13 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:22:31 [INFO]: ::1 - - [01/Jul/2025:16:52:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:22:31 [INFO]: ::1 - - [01/Jul/2025:16:52:31 +0000] "GET /api/admin/patients?limit=100 HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 22:26:57 [INFO]: Socket.IO server initialized
+2025-07-01 22:26:59 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 22:27:43 [INFO]: Socket.IO server initialized
+2025-07-01 22:27:45 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 22:27:45 [INFO]: ✅ MySQL connected successfully
+2025-07-01 22:27:45 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 22:27:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 22:27:45 [INFO]: 📧 Notification service skipped for now
+2025-07-01 22:27:45 [INFO]: 🚀 Server running on port 5000
+2025-07-01 22:27:45 [INFO]: 📊 Environment: development
+2025-07-01 22:27:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 22:27:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 22:28:57 [INFO]: ::1 - - [01/Jul/2025:16:58:57 +0000] "GET /api/admin/patients HTTP/1.1" 401 69 "-" "axios/1.9.0"
+2025-07-01 22:28:57 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-07-01 22:28:57 [INFO]: ::1 - - [01/Jul/2025:16:58:57 +0000] "GET /api/admin/patients HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-01 22:32:29 [INFO]: ::1 - - [01/Jul/2025:17:02:29 +0000] "GET /api/admin/patients HTTP/1.1" 401 69 "-" "axios/1.9.0"
+2025-07-01 22:32:29 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:47:12)
+2025-07-01 22:32:29 [INFO]: ::1 - - [01/Jul/2025:17:02:29 +0000] "GET /api/admin/patients HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-01 22:57:10 [INFO]: Socket.IO server initialized
+2025-07-01 22:57:15 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 22:57:15 [INFO]: ✅ MySQL connected successfully
+2025-07-01 22:57:16 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 22:57:16 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 22:57:16 [INFO]: 📧 Notification service skipped for now
+2025-07-01 22:57:16 [INFO]: 🚀 Server running on port 5000
+2025-07-01 22:57:16 [INFO]: 📊 Environment: development
+2025-07-01 22:57:16 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 22:57:16 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 22:58:14 [INFO]: ::1 - - [01/Jul/2025:17:28:14 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:00:20 [INFO]: ::1 - - [01/Jul/2025:17:30:20 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:00:22 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:00:22 [INFO]: ::1 - - [01/Jul/2025:17:30:22 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:07:20 [INFO]: ::1 - - [01/Jul/2025:17:37:20 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:10:32 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:10:32 [INFO]: ::1 - - [01/Jul/2025:17:40:32 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:10:35 [INFO]: ::1 - - [01/Jul/2025:17:40:35 +0000] "GET /api/admin/users?role=patient HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:11:42 [INFO]: ::1 - - [01/Jul/2025:17:41:42 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:11:44 [INFO]: ::1 - - [01/Jul/2025:17:41:44 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:11:46 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:11:46 [INFO]: ::1 - - [01/Jul/2025:17:41:46 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:11:48 [INFO]: ::1 - - [01/Jul/2025:17:41:48 +0000] "GET /api/admin/users?role=patient HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:11:59 [INFO]: Socket.IO server initialized
+2025-07-01 23:12:04 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 23:13:13 [INFO]: ::1 - - [01/Jul/2025:17:43:13 +0000] "GET /api/admin/users?role=patient HTTP/1.1" 401 69 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:16:26 [INFO]: ::1 - - [01/Jul/2025:17:46:26 +0000] "GET /api/admin/users?role=patient HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:16:27 [INFO]: ::1 - - [01/Jul/2025:17:46:27 +0000] "GET /api/admin/users?role=patient HTTP/1.1" 403 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:16:32 [INFO]: ::1 - - [01/Jul/2025:17:46:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:16:33 [INFO]: ::1 - - [01/Jul/2025:17:46:33 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:17:48 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:17:48 [INFO]: ::1 - - [01/Jul/2025:17:47:48 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:17:51 [INFO]: ::1 - - [01/Jul/2025:17:47:51 +0000] "GET /api/admin/users/patients/names HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:22:06 [INFO]: ::1 - - [01/Jul/2025:17:52:06 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:22:12 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:22:12 [INFO]: ::1 - - [01/Jul/2025:17:52:12 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:22:15 [INFO]: ::1 - - [01/Jul/2025:17:52:15 +0000] "GET /api/admin/users/patients/names HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:23:55 [INFO]: ::1 - - [01/Jul/2025:17:53:55 +0000] "GET /api/admin/patient-names HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:23:56 [INFO]: ::1 - - [01/Jul/2025:17:53:56 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:24:12 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:24:12 [INFO]: ::1 - - [01/Jul/2025:17:54:12 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:24:14 [INFO]: ::1 - - [01/Jul/2025:17:54:14 +0000] "GET /api/admin/patient-names HTTP/1.1" 403 70 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:24:32 [INFO]: Socket.IO server initialized
+2025-07-01 23:24:35 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 23:24:58 [INFO]: ::1 - - [01/Jul/2025:17:54:58 +0000] "GET /api/admin/patient-names HTTP/1.1" 401 69 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:26:23 [INFO]: ::1 - - [01/Jul/2025:17:56:23 +0000] "GET /api/billing/patient-names HTTP/1.1" 404 88 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:26:23 [INFO]: ::1 - - [01/Jul/2025:17:56:23 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:26:55 [INFO]: Socket.IO server initialized
+2025-07-01 23:26:59 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 23:26:59 [INFO]: ✅ MySQL connected successfully
+2025-07-01 23:26:59 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 23:26:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 23:26:59 [INFO]: 📧 Notification service skipped for now
+2025-07-01 23:26:59 [INFO]: 🚀 Server running on port 5000
+2025-07-01 23:26:59 [INFO]: 📊 Environment: development
+2025-07-01 23:26:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 23:26:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 23:27:11 [INFO]: ::1 - - [01/Jul/2025:17:57:11 +0000] "GET /api/billing/patient-names HTTP/1.1" 404 88 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:29:51 [INFO]: Socket.IO server initialized
+2025-07-01 23:29:52 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 23:29:52 [INFO]: ✅ MySQL connected successfully
+2025-07-01 23:29:52 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 23:29:52 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 23:29:52 [INFO]: 📧 Notification service skipped for now
+2025-07-01 23:29:52 [INFO]: 🚀 Server running on port 5000
+2025-07-01 23:29:52 [INFO]: 📊 Environment: development
+2025-07-01 23:29:52 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 23:29:52 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 23:30:09 [ERROR]: TypeError: mysql.execute is not a function
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-07-01 23:30:09 [ERROR]: TypeError: mysql.execute is not a function
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-07-01 23:30:09 [INFO]: ::1 - - [01/Jul/2025:18:00:09 +0000] "GET /api/billing/patient-names HTTP/1.1" 500 1496 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:31:12 [ERROR]: TypeError: mysql.execute is not a function
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-07-01 23:31:12 [ERROR]: TypeError: mysql.execute is not a function
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-07-01 23:31:12 [INFO]: ::1 - - [01/Jul/2025:18:01:12 +0000] "GET /api/billing/patient-names HTTP/1.1" 500 1496 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:31:38 [INFO]: Socket.IO server initialized
+2025-07-01 23:31:41 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 23:31:41 [INFO]: ✅ MySQL connected successfully
+2025-07-01 23:31:41 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 23:31:41 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 23:31:41 [INFO]: 📧 Notification service skipped for now
+2025-07-01 23:31:41 [INFO]: 🚀 Server running on port 5000
+2025-07-01 23:31:41 [INFO]: 📊 Environment: development
+2025-07-01 23:31:41 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 23:31:41 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 23:31:57 [ERROR]: MySQL query error:
+2025-07-01 23:31:57 [ERROR]: Error: Unknown column 'first_name' in 'field list'
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:15:46)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+2025-07-01 23:31:57 [ERROR]: Error: Unknown column 'first_name' in 'field list'
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:15:46)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+2025-07-01 23:31:57 [INFO]: ::1 - - [01/Jul/2025:18:01:57 +0000] "GET /api/billing/patient-names HTTP/1.1" 500 1498 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:36:01 [INFO]: Socket.IO server initialized
+2025-07-01 23:36:05 [INFO]: ✅ MySQL database connected successfully
+2025-07-01 23:36:05 [INFO]: ✅ MySQL connected successfully
+2025-07-01 23:36:05 [ERROR]: ❌ MongoDB connection failed:
+2025-07-01 23:36:05 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-01 23:36:05 [INFO]: 📧 Notification service skipped for now
+2025-07-01 23:36:05 [INFO]: 🚀 Server running on port 5000
+2025-07-01 23:36:05 [INFO]: 📊 Environment: development
+2025-07-01 23:36:05 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-01 23:36:05 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-01 23:36:19 [INFO]: ::1 - - [01/Jul/2025:18:06:19 +0000] "GET /api/billing/patient-names HTTP/1.1" 200 952 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:36:55 [INFO]: ::1 - - [01/Jul/2025:18:06:55 +0000] "GET /api/billing/patient-names HTTP/1.1" 200 952 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-01 23:38:00 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:38:00 [INFO]: ::1 - - [01/Jul/2025:18:08:00 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:38:02 [INFO]: ::1 - - [01/Jul/2025:18:08:02 +0000] "GET /api/billing/patient-names HTTP/1.1" 200 952 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:40:33 [INFO]: ::1 - - [01/Jul/2025:18:10:33 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:40:49 [INFO]: ::1 - - [01/Jul/2025:18:10:49 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:48:53 [INFO]: ::1 - - [01/Jul/2025:18:18:53 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:48:54 [INFO]: ::1 - - [01/Jul/2025:18:18:54 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:49:01 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:49:01 [INFO]: ::1 - - [01/Jul/2025:18:19:01 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:49:02 [INFO]: ::1 - - [01/Jul/2025:18:19:02 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:49:31 [INFO]: ::1 - - [01/Jul/2025:18:19:31 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:50:26 [INFO]: ::1 - - [01/Jul/2025:18:20:26 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:50:26 [INFO]: ::1 - - [01/Jul/2025:18:20:26 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:51:34 [INFO]: User logged in: chanuth@gmail.com
+2025-07-01 23:51:34 [INFO]: ::1 - - [01/Jul/2025:18:21:34 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-01 23:51:36 [INFO]: ::1 - - [01/Jul/2025:18:21:36 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:00:45 [INFO]: ::1 - - [01/Jul/2025:18:30:45 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:04 [INFO]: ::1 - - [01/Jul/2025:18:31:04 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:07 [INFO]: ::1 - - [01/Jul/2025:18:31:07 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:08 [INFO]: ::1 - - [01/Jul/2025:18:31:08 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:08 [INFO]: ::1 - - [01/Jul/2025:18:31:08 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:08 [INFO]: ::1 - - [01/Jul/2025:18:31:08 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:08 [INFO]: ::1 - - [01/Jul/2025:18:31:08 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:09 [INFO]: ::1 - - [01/Jul/2025:18:31:09 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:09 [INFO]: ::1 - - [01/Jul/2025:18:31:09 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:01:40 [INFO]: Socket.IO server initialized
+2025-07-02 00:01:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:03:28 [INFO]: ::1 - - [01/Jul/2025:18:33:28 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:06:51 [INFO]: ::1 - - [01/Jul/2025:18:36:51 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:07:01 [INFO]: ::1 - - [01/Jul/2025:18:37:01 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:10:17 [INFO]: ::1 - - [01/Jul/2025:18:40:17 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:10:33 [INFO]: ::1 - - [01/Jul/2025:18:40:33 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:10:50 [INFO]: Socket.IO server initialized
+2025-07-02 00:10:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:10:55 [INFO]: ::1 - - [01/Jul/2025:18:40:55 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:11:37 [INFO]: ::1 - - [01/Jul/2025:18:41:37 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:11:38 [INFO]: ::1 - - [01/Jul/2025:18:41:38 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:11:41 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 00:11:41 [INFO]: ::1 - - [01/Jul/2025:18:41:41 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:11:42 [INFO]: ::1 - - [01/Jul/2025:18:41:42 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:12:10 [INFO]: ::1 - - [01/Jul/2025:18:42:10 +0000] "POST /api/billing/invoices HTTP/1.1" 404 83 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:14:04 [INFO]: Socket.IO server initialized
+2025-07-02 00:14:07 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:14:07 [INFO]: ✅ MySQL connected successfully
+2025-07-02 00:14:07 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 00:14:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 00:14:07 [INFO]: 📧 Notification service skipped for now
+2025-07-02 00:14:07 [INFO]: 🚀 Server running on port 5000
+2025-07-02 00:14:07 [INFO]: 📊 Environment: development
+2025-07-02 00:14:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 00:14:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 00:14:34 [ERROR]: MySQL query error:
+2025-07-02 00:14:34 [ERROR]: Error: Table 'caresync.invoice_items' doesn't exist
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at InvoiceItem.save (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\InvoiceItem.js:32:27)
+    at createInvoice (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:77:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 00:14:34 [ERROR]: Error: Table 'caresync.invoice_items' doesn't exist
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at InvoiceItem.save (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\InvoiceItem.js:32:27)
+    at createInvoice (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:77:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-02 00:14:34 [INFO]: ::1 - - [01/Jul/2025:18:44:34 +0000] "POST /api/billing/invoices HTTP/1.1" 500 731 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:18:28 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:19:03 [INFO]: Invoice created: INV-TEST-001 for patient: John Smith
+2025-07-02 00:19:03 [INFO]: ::1 - - [01/Jul/2025:18:49:03 +0000] "POST /api/billing/invoices HTTP/1.1" 201 836 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:19:17 [ERROR]: MySQL query error:
+2025-07-02 00:19:17 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:19:17 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:19:17 [INFO]: ::1 - - [01/Jul/2025:18:49:17 +0000] "GET /api/billing/invoices HTTP/1.1" 500 1484 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:20:04 [INFO]: Invoice created: INV-1751395803893 for patient: hansani
+2025-07-02 00:20:04 [INFO]: ::1 - - [01/Jul/2025:18:50:04 +0000] "POST /api/billing/invoices HTTP/1.1" 201 617 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:20:43 [INFO]: ::1 - - [01/Jul/2025:18:50:43 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:21:59 [INFO]: Invoice created: INV-1751395917736 for patient: kush
+2025-07-02 00:21:59 [INFO]: ::1 - - [01/Jul/2025:18:51:59 +0000] "POST /api/billing/invoices HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:22:23 [ERROR]: MySQL query error:
+2025-07-02 00:22:23 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:22:23 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:22:23 [INFO]: ::1 - - [01/Jul/2025:18:52:23 +0000] "GET /api/billing/invoices HTTP/1.1" 500 1484 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:23:55 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:24:26 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:24:55 [INFO]: ::1 - - [01/Jul/2025:18:54:55 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:25:02 [ERROR]: MySQL query error:
+2025-07-02 00:25:02 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:25:02 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:25:02 [INFO]: ::1 - - [01/Jul/2025:18:55:02 +0000] "GET /api/billing/invoices HTTP/1.1" 500 1484 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:25:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:25:32 [ERROR]: MySQL query error:
+2025-07-02 00:26:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:26:11 [ERROR]: MySQL query error:
+2025-07-02 00:26:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:26:59 [ERROR]: MySQL query error:
+2025-07-02 00:26:59 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:26:59 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:90:46)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:116:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-07-02 00:26:59 [INFO]: ::1 - - [01/Jul/2025:18:56:59 +0000] "GET /api/billing/invoices HTTP/1.1" 500 1484 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:27:26 [INFO]: Socket.IO server initialized
+2025-07-02 00:27:28 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:27:28 [INFO]: ✅ MySQL connected successfully
+2025-07-02 00:27:28 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 00:27:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 00:27:28 [INFO]: 📧 Notification service skipped for now
+2025-07-02 00:27:28 [INFO]: 🚀 Server running on port 5000
+2025-07-02 00:27:28 [INFO]: 📊 Environment: development
+2025-07-02 00:27:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 00:27:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 00:27:38 [INFO]: ::1 - - [01/Jul/2025:18:57:38 +0000] "GET /api/billing/invoices HTTP/1.1" 200 1549 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:32:23 [INFO]: ::1 - - [01/Jul/2025:19:02:23 +0000] "GET /api/billing/invoices HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:32:23 [INFO]: ::1 - - [01/Jul/2025:19:02:23 +0000] "GET /favicon.ico HTTP/1.1" 404 74 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:43:33 [INFO]: Socket.IO server initialized
+2025-07-02 00:43:35 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 00:43:35 [INFO]: ✅ MySQL connected successfully
+2025-07-02 00:43:35 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 00:43:35 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 00:43:35 [INFO]: 📧 Notification service skipped for now
+2025-07-02 00:43:35 [INFO]: 🚀 Server running on port 5000
+2025-07-02 00:43:35 [INFO]: 📊 Environment: development
+2025-07-02 00:43:35 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 00:43:35 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 00:43:38 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 00:43:38 [INFO]: ::1 - - [01/Jul/2025:19:13:38 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:43:39 [INFO]: ::1 - - [01/Jul/2025:19:13:39 +0000] "GET /api/billing/patient-names HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:43:44 [INFO]: ::1 - - [01/Jul/2025:19:13:44 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:44:14 [INFO]: ::1 - - [01/Jul/2025:19:14:14 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:44:17 [INFO]: ::1 - - [01/Jul/2025:19:14:17 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:44:22 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 00:44:22 [INFO]: ::1 - - [01/Jul/2025:19:14:22 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:44:26 [INFO]: ::1 - - [01/Jul/2025:19:14:26 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:44:44 [INFO]: ::1 - - [01/Jul/2025:19:14:44 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:46:09 [INFO]: ::1 - - [01/Jul/2025:19:16:09 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:46:22 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 00:46:22 [INFO]: ::1 - - [01/Jul/2025:19:16:22 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:46:25 [INFO]: ::1 - - [01/Jul/2025:19:16:25 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:49:43 [INFO]: ::1 - - [01/Jul/2025:19:19:43 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:49:43 [INFO]: ::1 - - [01/Jul/2025:19:19:43 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:49:48 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 00:49:48 [INFO]: ::1 - - [01/Jul/2025:19:19:48 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:49:48 [INFO]: ::1 - - [01/Jul/2025:19:19:48 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:50:02 [INFO]: ::1 - - [01/Jul/2025:19:20:02 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:50:08 [INFO]: ::1 - - [01/Jul/2025:19:20:08 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 200 1169 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 00:50:16 [INFO]: ::1 - - [01/Jul/2025:19:20:16 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:50:23 [INFO]: ::1 - - [01/Jul/2025:19:20:23 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:05 [INFO]: ::1 - - [01/Jul/2025:19:21:05 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:06 [INFO]: ::1 - - [01/Jul/2025:19:21:06 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:12 [INFO]: ::1 - - [01/Jul/2025:19:21:12 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:15 [INFO]: ::1 - - [01/Jul/2025:19:21:15 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:16 [INFO]: ::1 - - [01/Jul/2025:19:21:16 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:19 [INFO]: ::1 - - [01/Jul/2025:19:21:19 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:51:20 [INFO]: ::1 - - [01/Jul/2025:19:21:20 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:54:34 [INFO]: ::1 - - [01/Jul/2025:19:24:34 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:54:35 [INFO]: ::1 - - [01/Jul/2025:19:24:35 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:57:56 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 00:57:56 [INFO]: ::1 - - [01/Jul/2025:19:27:56 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:57:58 [INFO]: ::1 - - [01/Jul/2025:19:27:58 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:58:07 [INFO]: ::1 - - [01/Jul/2025:19:28:07 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 00:59:54 [INFO]: ::1 - - [01/Jul/2025:19:29:54 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:01:46 [INFO]: ::1 - - [01/Jul/2025:19:31:46 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:01:51 [INFO]: ::1 - - [01/Jul/2025:19:31:51 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:01:53 [INFO]: ::1 - - [01/Jul/2025:19:31:53 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:04:43 [INFO]: Socket.IO server initialized
+2025-07-02 01:04:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:05:10 [INFO]: ::1 - - [01/Jul/2025:19:35:10 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:05:26 [INFO]: ::1 - - [01/Jul/2025:19:35:26 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:05:27 [INFO]: ::1 - - [01/Jul/2025:19:35:27 +0000] "GET /api/auth/profile HTTP/1.1" 200 903 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:05:49 [INFO]: User logged in: chanuth@gmail.com
+2025-07-02 01:05:49 [INFO]: ::1 - - [01/Jul/2025:19:35:49 +0000] "POST /api/auth/login HTTP/1.1" 200 830 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:05:49 [INFO]: ::1 - - [01/Jul/2025:19:35:49 +0000] "GET /api/billing/invoices?limit=3 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:05:53 [INFO]: ::1 - - [01/Jul/2025:19:35:53 +0000] "GET /api/billing/invoices HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:09:29 [INFO]: Socket.IO server initialized
+2025-07-02 01:09:35 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:09:35 [INFO]: ✅ MySQL connected successfully
+2025-07-02 01:09:35 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 01:09:35 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 01:09:35 [INFO]: 📧 Notification service skipped for now
+2025-07-02 01:09:35 [INFO]: 🚀 Server running on port 5000
+2025-07-02 01:09:35 [INFO]: 📊 Environment: development
+2025-07-02 01:09:35 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 01:09:35 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 01:12:00 [INFO]: ::1 - - [01/Jul/2025:19:42:00 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:12:26 [INFO]: Socket.IO server initialized
+2025-07-02 01:12:30 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:12:48 [INFO]: Socket.IO server initialized
+2025-07-02 01:12:50 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:13:30 [INFO]: Socket.IO server initialized
+2025-07-02 01:13:33 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:13:33 [INFO]: ✅ MySQL connected successfully
+2025-07-02 01:13:33 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 01:13:33 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 01:13:33 [INFO]: 📧 Notification service skipped for now
+2025-07-02 01:13:33 [INFO]: 🚀 Server running on port 5000
+2025-07-02 01:13:33 [INFO]: 📊 Environment: development
+2025-07-02 01:13:33 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 01:13:33 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 01:14:16 [INFO]: ::1 - - [01/Jul/2025:19:44:16 +0000] "GET /api/billing/invoices HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-02 01:14:16 [INFO]: ::1 - - [01/Jul/2025:19:44:16 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "-" "axios/1.9.0"
+2025-07-02 01:14:37 [INFO]: ::1 - - [01/Jul/2025:19:44:37 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:15:41 [INFO]: ::1 - - [01/Jul/2025:19:45:41 +0000] "GET /api/billing/invoices HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-02 01:15:41 [INFO]: ::1 - - [01/Jul/2025:19:45:41 +0000] "GET /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165 HTTP/1.1" 404 47 "-" "axios/1.9.0"
+2025-07-02 01:17:18 [INFO]: ::1 - - [01/Jul/2025:19:47:18 +0000] "GET /api/billing/invoices HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-02 01:17:18 [INFO]: ::1 - - [01/Jul/2025:19:47:18 +0000] "GET /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165 HTTP/1.1" 404 47 "-" "axios/1.9.0"
+2025-07-02 01:17:38 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 01:19:50 [INFO]: ::1 - - [01/Jul/2025:19:49:50 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:19:55 [INFO]: ::1 - - [01/Jul/2025:19:49:55 +0000] "PATCH /api/billing/invoices/33105cc2-a71c-40cc-b076-2c5f79935165/status HTTP/1.1" 404 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-02 01:21:45 [INFO]: ✅ MySQL database connected successfully

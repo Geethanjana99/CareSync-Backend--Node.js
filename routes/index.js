@@ -8,6 +8,7 @@ const patientRoutes = require('./patients');
 const doctorRoutes = require('./doctors');
 const medicalReportRoutes = require('./medical-reports');
 const adminRoutes = require('./admin');
+const billingRoutes = require('./billing');
 
 // Health check endpoint
 router.get('/health', (req, res) => {
@@ -26,6 +27,7 @@ router.use('/patients', patientRoutes);
 router.use('/doctors', doctorRoutes);
 router.use('/medical-reports', medicalReportRoutes);
 router.use('/admin', adminRoutes);
+router.use('/billing', billingRoutes);
 
 // API documentation endpoint
 router.get('/docs', (req, res) => {
@@ -123,6 +125,21 @@ router.get('/docs', (req, res) => {
           'GET /medical-reports - Get all medical reports',
           'GET /statistics - Get system statistics',
           'GET /health - Get system health'
+        ]
+      },
+      billing: {
+        base: '/api/billing',
+        endpoints: [
+          'GET /invoices - Get all invoices',
+          'GET /invoices/:id - Get specific invoice',
+          'POST /invoices - Create new invoice',
+          'PUT /invoices/:id - Update invoice',
+          'DELETE /invoices/:id - Delete invoice',
+          'GET /payments - Get all payments',
+          'GET /payments/:id - Get specific payment',
+          'POST /payments - Process new payment',
+          'PUT /payments/:id - Update payment status',
+          'DELETE /payments/:id - Cancel payment'
         ]
       }
     },
