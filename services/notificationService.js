@@ -195,54 +195,69 @@ class NotificationService {
       sms: results[1].value || results[1].reason
     };
   }
-
   // Send appointment cancellation notification
   async sendAppointmentCancellation(appointment, patient, doctor, reason) {
-    const appointmentDate = new Date(appointment.appointment_datetime);
-    const formattedDate = appointmentDate.toLocaleDateString();
-    const formattedTime = appointmentDate.toLocaleTimeString();
+    // Create datetime from appointment_date and appointment_time
+    const appointmentDateTime = new Date(`${appointment.appointment_date}T${appointment.appointment_time}`);
+    const formattedDate = appointmentDateTime.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    const formattedTime = appointmentDateTime.toLocaleTimeString('en-US', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
 
     const emailSubject = 'Appointment Cancelled';
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #dc3545;">Appointment Cancelled</h2>
-        <p>Dear ${patient.first_name} ${patient.last_name},</p>
+        <p>Dear ${patient.name || patient.patient_name},</p>
         <p>Your appointment has been cancelled:</p>
         
         <div style="background-color: #f8d7da; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #dc3545;">
           <h3 style="margin-top: 0; color: #721c24;">Cancelled Appointment</h3>
-          <p><strong>Doctor:</strong> Dr. ${doctor.first_name} ${doctor.last_name}</p>
+          <p><strong>Doctor:</strong> Dr. ${doctor.name || doctor.doctor_name}</p>
+          <p><strong>Specialty:</strong> ${doctor.specialty}</p>
           <p><strong>Date:</strong> ${formattedDate}</p>
           <p><strong>Time:</strong> ${formattedTime}</p>
-          <p><strong>Appointment ID:</strong> ${appointment.id}</p>
+          <p><strong>Appointment ID:</strong> ${appointment.appointment_id}</p>
           ${reason ? `<p><strong>Reason:</strong> ${reason}</p>` : ''}
         </div>
 
         <p>If you would like to reschedule, please contact us or book a new appointment through our system.</p>
         <p>We apologize for any inconvenience this may cause.</p>
 
-        <p>Best regards,<br>Clinical Appointment Scheduling Team</p>
+        <p>Best regards,<br>CareSync Team</p>
       </div>
     `;
 
-    const smsMessage = `Appointment cancelled: Dr. ${doctor.first_name} ${doctor.last_name} - ${formattedDate} at ${formattedTime}. Contact us to reschedule.`;
+    const smsMessage = `Appointment cancelled: Dr. ${doctor.name || doctor.doctor_name} - ${formattedDate} at ${formattedTime}. Contact us to reschedule.`;
 
-    const results = await Promise.allSettled([
-      this.sendEmail({
-        to: patient.email,
-        subject: emailSubject,
-        html: emailHtml
-      }),
-      patient.phone ? this.sendSMS({
-        to: patient.phone,
-        message: smsMessage
-      }) : Promise.resolve({ success: true, skipped: 'No phone number' })
-    ]);
+    try {
+      const results = await Promise.allSettled([
+        this.sendEmail({
+          to: patient.email || patient.patient_email,
+          subject: emailSubject,
+          html: emailHtml
+        }),
+        (patient.phone || patient.patient_phone) ? this.sendSMS({
+          to: patient.phone || patient.patient_phone,
+          message: smsMessage
+        }) : Promise.resolve({ success: true, skipped: 'No phone number' })
+      ]);
 
-    return {
-      email: results[0].value || results[0].reason,
-      sms: results[1].value || results[1].reason
-    };
+      return {
+        email: results[0].value || results[0].reason,
+        sms: results[1].value || results[1].reason
+      };
+    } catch (error) {
+      logger.error('Error sending cancellation notifications:', error);
+      throw error;
+    }
   }
 
   // Send password reset notification
@@ -330,6 +345,92 @@ class NotificationService {
       subject: emailSubject,
       html: emailHtml
     });
+  }
+
+  // Send appointment reschedule notification
+  async sendAppointmentReschedule(appointment, patient, doctor, oldDate, oldTime) {
+    // Create datetime from appointment_date and appointment_time
+    const newAppointmentDateTime = new Date(`${appointment.appointment_date}T${appointment.appointment_time}`);
+    const oldAppointmentDateTime = new Date(`${oldDate}T${oldTime}`);
+    
+    const newFormattedDate = newAppointmentDateTime.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    const newFormattedTime = newAppointmentDateTime.toLocaleTimeString('en-US', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
+
+    const oldFormattedDate = oldAppointmentDateTime.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    const oldFormattedTime = oldAppointmentDateTime.toLocaleTimeString('en-US', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
+
+    const emailSubject = 'Appointment Rescheduled';
+    const emailHtml = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #2c5aa0;">Appointment Rescheduled</h2>
+        <p>Dear ${patient.name || patient.patient_name},</p>
+        <p>Your appointment has been successfully rescheduled:</p>
+        
+        <div style="background-color: #fff3cd; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #ffc107;">
+          <h3 style="margin-top: 0; color: #856404;">Previous Appointment</h3>
+          <p><strong>Doctor:</strong> Dr. ${doctor.name || doctor.doctor_name}</p>
+          <p><strong>Specialty:</strong> ${doctor.specialty}</p>
+          <p><strong>Date:</strong> ${oldFormattedDate}</p>
+          <p><strong>Time:</strong> ${oldFormattedTime}</p>
+        </div>
+
+        <div style="background-color: #d1ecf1; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+          <h3 style="margin-top: 0; color: #0c5460;">New Appointment</h3>
+          <p><strong>Doctor:</strong> Dr. ${doctor.name || doctor.doctor_name}</p>
+          <p><strong>Specialty:</strong> ${doctor.specialty}</p>
+          <p><strong>Date:</strong> ${newFormattedDate}</p>
+          <p><strong>Time:</strong> ${newFormattedTime}</p>
+          <p><strong>Appointment ID:</strong> ${appointment.appointment_id}</p>
+        </div>
+
+        <p>Please make note of your new appointment time and arrive 15 minutes early.</p>
+        <p>If you need to make any further changes, please contact us as soon as possible.</p>
+
+        <p>Best regards,<br>CareSync Team</p>
+      </div>
+    `;
+
+    const smsMessage = `Appointment rescheduled: Dr. ${doctor.name || doctor.doctor_name} - NEW TIME: ${newFormattedDate} at ${newFormattedTime}. Please arrive 15 min early.`;
+
+    try {
+      const results = await Promise.allSettled([
+        this.sendEmail({
+          to: patient.email || patient.patient_email,
+          subject: emailSubject,
+          html: emailHtml
+        }),
+        (patient.phone || patient.patient_phone) ? this.sendSMS({
+          to: patient.phone || patient.patient_phone,
+          message: smsMessage
+        }) : Promise.resolve({ success: true, skipped: 'No phone number' })
+      ]);
+
+      return {
+        email: results[0].value || results[0].reason,
+        sms: results[1].value || results[1].reason
+      };
+    } catch (error) {
+      logger.error('Error sending reschedule notifications:', error);
+      throw error;
+    }
   }
 }
 

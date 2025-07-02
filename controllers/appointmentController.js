@@ -2,6 +2,7 @@ const Appointment = require('../models/Appointment');
 const Patient = require('../models/Patient');
 const Doctor = require('../models/Doctor');
 const logger = require('../config/logger');
+const notificationService = require('../services/notificationService');
 
 const appointmentController = {
   // Create new appointment
@@ -227,7 +228,7 @@ const appointmentController = {
   update: async (req, res) => {
     try {
       const { appointmentId } = req.params;
-      const updateData = req.body;
+      let updateData = req.body;
 
       const appointment = await Appointment.findById(appointmentId);
       if (!appointment) {
@@ -307,7 +308,6 @@ const appointmentController = {
       });
     }
   },
-
   // Cancel appointment
   cancel: async (req, res) => {
     try {
@@ -341,13 +341,49 @@ const appointmentController = {
         }
       }
 
+      // Check if appointment can be cancelled
+      if (appointment.status === 'cancelled') {
+        return res.status(400).json({
+          success: false,
+          message: 'Appointment is already cancelled'
+        });
+      }
+
+      if (appointment.status === 'completed') {
+        return res.status(400).json({
+          success: false,
+          message: 'Cannot cancel a completed appointment'
+        });
+      }
+
+      // Cancel the appointment
       await appointment.cancel(req.user.id, reason);
 
-      logger.info(`Appointment cancelled: ${appointment.appointment_id}`);
+      // Get appointment details for notification
+      const appointmentWithDetails = await Appointment.findWithDetails(appointment.id);
+      
+      // Send cancellation notifications
+      try {
+        await notificationService.sendAppointmentCancellation(
+          appointmentWithDetails,
+          appointmentWithDetails.patient,
+          appointmentWithDetails.doctor,
+          reason
+        );
+        logger.info(`Cancellation notifications sent for appointment: ${appointment.appointment_id}`);
+      } catch (notificationError) {
+        logger.error('Error sending cancellation notifications:', notificationError);
+        // Don't fail the cancellation if notification fails
+      }
+
+      logger.info(`Appointment cancelled: ${appointment.appointment_id} by ${req.user.role}`);
 
       res.json({
         success: true,
-        message: 'Appointment cancelled successfully'
+        message: 'Appointment cancelled successfully',
+        data: {
+          appointment: appointmentWithDetails
+        }
       });
 
     } catch (error) {
@@ -525,6 +561,121 @@ const appointmentController = {
       res.status(500).json({
         success: false,
         message: 'Failed to get appointment statistics',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
+    }
+  },
+
+  // Reschedule appointment
+  reschedule: async (req, res) => {
+    try {
+      const { appointmentId } = req.params;
+      const { appointment_date, appointment_time } = req.body;
+
+      if (!appointment_date || !appointment_time) {
+        return res.status(400).json({
+          success: false,
+          message: 'New appointment date and time are required'
+        });
+      }
+
+      const appointment = await Appointment.findById(appointmentId);
+      if (!appointment) {
+        return res.status(404).json({
+          success: false,
+          message: 'Appointment not found'
+        });
+      }
+
+      // Check authorization
+      if (req.user.role === 'patient') {
+        const patient = await Patient.findByUserId(req.user.id);
+        if (appointment.patient_id !== patient?.id) {
+          return res.status(403).json({
+            success: false,
+            message: 'Access denied'
+          });
+        }
+      } else if (req.user.role === 'doctor') {
+        const doctor = await Doctor.findByUserId(req.user.id);
+        if (appointment.doctor_id !== doctor?.id) {
+          return res.status(403).json({
+            success: false,
+            message: 'Access denied'
+          });
+        }
+      }
+
+      // Check if appointment can be rescheduled
+      if (appointment.status === 'cancelled') {
+        return res.status(400).json({
+          success: false,
+          message: 'Cannot reschedule a cancelled appointment'
+        });
+      }
+
+      if (appointment.status === 'completed') {
+        return res.status(400).json({
+          success: false,
+          message: 'Cannot reschedule a completed appointment'
+        });
+      }
+
+      // Check if the new slot is available
+      const isSlotAvailable = await Appointment.isSlotAvailable(
+        appointment.doctor_id,
+        appointment_date,
+        appointment_time,
+        appointmentId // Exclude current appointment from availability check
+      );
+
+      if (!isSlotAvailable) {
+        return res.status(400).json({
+          success: false,
+          message: 'Selected time slot is not available'
+        });
+      }
+
+      // Update the appointment
+      await appointment.update({
+        appointment_date,
+        appointment_time,
+        status: 'scheduled' // Reset status to scheduled after reschedule
+      });
+
+      // Get updated appointment details for notification
+      const appointmentWithDetails = await Appointment.findWithDetails(appointment.id);
+      
+      // Send reschedule notifications
+      try {
+        await notificationService.sendAppointmentReschedule(
+          appointmentWithDetails,
+          appointmentWithDetails.patient,
+          appointmentWithDetails.doctor,
+          appointment.appointment_date, // old date
+          appointment.appointment_time  // old time
+        );
+        logger.info(`Reschedule notifications sent for appointment: ${appointment.appointment_id}`);
+      } catch (notificationError) {
+        logger.error('Error sending reschedule notifications:', notificationError);
+        // Don't fail the reschedule if notification fails
+      }
+
+      logger.info(`Appointment rescheduled: ${appointment.appointment_id} by ${req.user.role}`);
+
+      res.json({
+        success: true,
+        message: 'Appointment rescheduled successfully',
+        data: {
+          appointment: appointmentWithDetails
+        }
+      });
+
+    } catch (error) {
+      logger.error('Reschedule appointment error:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to reschedule appointment',
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
