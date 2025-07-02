@@ -6738,3 +6738,35 @@
 2025-07-02 02:43:25 [INFO]: ::1 - - [01/Jul/2025:21:13:25 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 2025-07-02 02:43:26 [INFO]: ::1 - - [01/Jul/2025:21:13:26 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 2025-07-02 02:43:39 [INFO]: ::1 - - [01/Jul/2025:21:13:39 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:19 [INFO]: Socket.IO server initialized
+2025-07-02 09:38:20 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 09:38:20 [INFO]: ✅ MySQL connected successfully
+2025-07-02 09:38:20 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 09:38:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 09:38:20 [INFO]: 📧 Notification service skipped for now
+2025-07-02 09:38:20 [INFO]: 🚀 Server running on port 5000
+2025-07-02 09:38:20 [INFO]: 📊 Environment: development
+2025-07-02 09:38:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 09:38:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 09:38:24 [INFO]: ::1 - - [02/Jul/2025:04:08:24 +0000] "GET /api/auth/profile HTTP/1.1" 200 971 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:29 [INFO]: ::1 - - [02/Jul/2025:04:08:29 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:31 [INFO]: ::1 - - [02/Jul/2025:04:08:31 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:34 [INFO]: ::1 - - [02/Jul/2025:04:08:34 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:41 [INFO]: ::1 - - [02/Jul/2025:04:08:41 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:43 [INFO]: ::1 - - [02/Jul/2025:04:08:43 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:46 [INFO]: User logged in: kashmila@gmail.com
+2025-07-02 09:38:46 [INFO]: ::1 - - [02/Jul/2025:04:08:46 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:47 [INFO]: ::1 - - [02/Jul/2025:04:08:47 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:50 [INFO]: ::1 - - [02/Jul/2025:04:08:50 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:38:53 [INFO]: ::1 - - [02/Jul/2025:04:08:53 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:39:14 [INFO]: Queue appointment booked: b086a9dc-8c9f-4a92-9903-558fedfef327 for patient 6c1cbe55-e2c2-4236-9a46-ea3fe1c9cbdd
+2025-07-02 09:39:14 [INFO]: ::1 - - [02/Jul/2025:04:09:14 +0000] "POST /api/patients/appointments/queue HTTP/1.1" 201 639 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:39:55 [INFO]: User logged out: kashmila@gmail.com
+2025-07-02 09:39:55 [INFO]: ::1 - - [02/Jul/2025:04:09:55 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:39:55 [INFO]: ::1 - - [02/Jul/2025:04:09:55 +0000] "GET /api/auth/profile HTTP/1.1" 200 971 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:43:02 [INFO]: New user registered: miyuru@gmail.com with role: admin
+2025-07-02 09:43:02 [INFO]: ::1 - - [02/Jul/2025:04:13:02 +0000] "POST /api/auth/register HTTP/1.1" 201 238 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:43:23 [INFO]: User logged in: miyuru@gmail.com
+2025-07-02 09:43:23 [INFO]: ::1 - - [02/Jul/2025:04:13:23 +0000] "POST /api/auth/login HTTP/1.1" 200 826 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:43:29 [INFO]: ::1 - - [02/Jul/2025:04:13:29 +0000] "GET /api/auth/profile HTTP/1.1" 200 899 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 09:43:29 [INFO]: ::1 - - [02/Jul/2025:04:13:29 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
