@@ -6,7 +6,16 @@ const morgan = require('morgan');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 require('express-async-errors');
-require('dotenv').config();
+
+// Load environment variables with explicit path
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
+console.log('🔍 Server startup environment check:');
+console.log('Current working directory:', process.cwd());
+console.log('__dirname:', __dirname);
+console.log('JWT_SECRET loaded:', !!process.env.JWT_SECRET);
+console.log('NODE_ENV:', process.env.NODE_ENV);
 
 // Import configurations
 const connectMySQL = require('./config/mysql');
@@ -108,6 +117,12 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/auth', authRoutes);
+
+// Public doctor search endpoint (no authentication required) - MUST come before protected doctor routes
+const PatientController = require('./controllers/patientController');
+app.get('/api/doctors/search', PatientController.searchDoctors);
+
+// Protected routes
 // app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
 app.use('/api/patients', patientRoutes);
 app.use('/api/doctors', doctorRoutes);

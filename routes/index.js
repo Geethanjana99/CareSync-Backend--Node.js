@@ -9,6 +9,9 @@ const doctorRoutes = require('./doctors');
 const medicalReportRoutes = require('./medical-reports');
 const adminRoutes = require('./admin');
 
+// Import controllers for public endpoints
+const PatientController = require('../controllers/patientController');
+
 // Health check endpoint
 router.get('/health', (req, res) => {
   res.json({
@@ -19,17 +22,20 @@ router.get('/health', (req, res) => {
   });
 });
 
-// Mount routes
+// Public endpoints (no authentication required)
+router.get('/doctors/search', PatientController.searchDoctors);
+
+// Mock routes for development/testing (no authentication required)
+router.use('/mock/patients', require('./mock-patients'));
+router.use('/mock/doctors', require('./mock-doctors'));
+
+// Mount protected routes
 router.use('/auth', authRoutes);
 router.use('/appointments', appointmentRoutes);
 router.use('/patients', patientRoutes);
 router.use('/doctors', doctorRoutes);
 router.use('/medical-reports', medicalReportRoutes);
 router.use('/admin', adminRoutes);
-
-// Temporary mock routes for testing (no authentication required)
-router.use('/mock/patients', require('./mock-patients'));
-router.use('/mock/doctors', require('./mock-doctors'));
 
 // API documentation endpoint
 router.get('/docs', (req, res) => {
@@ -140,7 +146,7 @@ router.get('/docs', (req, res) => {
   });
 });
 
-// 404 handler for API routes
+// 404 catch-all handler for undefined API routes
 router.use('*', (req, res) => {
   res.status(404).json({
     success: false,
