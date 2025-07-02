@@ -1,0 +1,72 @@
+2025-07-02 10:04:17 [WARN]: Email service not configured - missing environment variables
+2025-07-02 10:04:17 [ERROR]: Error: accountSid must start with AC
+    at new Client (E:\Project 2\backend\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (E:\Project 2\backend\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (E:\Project 2\backend\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (E:\Project 2\backend\services\notificationService.js:36:26)
+    at new NotificationService (E:\Project 2\backend\services\notificationService.js:9:10)
+    at Object.<anonymous> (E:\Project 2\backend\services\notificationService.js:437:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-07-02 10:04:17 [INFO]: Socket.IO server initialized
+2025-07-02 10:04:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 10:04:18 [INFO]: ✅ MySQL connected successfully
+2025-07-02 10:04:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 10:04:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 10:04:18 [INFO]: 📧 Notification service skipped for now
+2025-07-02 10:04:18 [INFO]: 🚀 Server running on port 5000
+2025-07-02 10:04:18 [INFO]: 📊 Environment: development
+2025-07-02 10:04:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 10:04:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 10:06:59 [INFO]: ::1 - - [02/Jul/2025:04:36:59 +0000] "GET /api/mock/auth/profile HTTP/1.1" 401 44 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:07:06 [INFO]: ::1 - - [02/Jul/2025:04:37:06 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:07:13 [INFO]: ::1 - - [02/Jul/2025:04:37:13 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:07:15 [INFO]: ::1 - - [02/Jul/2025:04:37:15 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:07:16 [INFO]: ::1 - - [02/Jul/2025:04:37:16 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:07:20 [INFO]: ::1 - - [02/Jul/2025:04:37:20 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:07:21 [INFO]: ::1 - - [02/Jul/2025:04:37:21 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:08:04 [INFO]: ::1 - - [02/Jul/2025:04:38:04 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:08:05 [INFO]: ::1 - - [02/Jul/2025:04:38:05 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:08:05 [INFO]: ::1 - - [02/Jul/2025:04:38:05 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:08:06 [INFO]: ::1 - - [02/Jul/2025:04:38:06 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:08:06 [INFO]: ::1 - - [02/Jul/2025:04:38:06 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:11:38 [INFO]: ::1 - - [02/Jul/2025:04:41:38 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:11:58 [INFO]: Patient profile created for user: 6f050ffe-3d8d-4abb-a508-e4eaff77c35d
+2025-07-02 10:11:58 [INFO]: New user registered: 9973geetha@gmail.com with role: patient
+2025-07-02 10:11:58 [INFO]: ::1 - - [02/Jul/2025:04:41:58 +0000] "POST /api/auth/register HTTP/1.1" 201 276 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:12:06 [INFO]: ::1 - - [02/Jul/2025:04:42:06 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:15:48 [WARN]: Email service not configured - missing environment variables
+2025-07-02 10:15:48 [ERROR]: Error: accountSid must start with AC
+    at new Client (E:\Project 2\backend\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (E:\Project 2\backend\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (E:\Project 2\backend\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (E:\Project 2\backend\services\notificationService.js:36:26)
+    at new NotificationService (E:\Project 2\backend\services\notificationService.js:9:10)
+    at Object.<anonymous> (E:\Project 2\backend\services\notificationService.js:437:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-07-02 10:15:49 [INFO]: Socket.IO server initialized
+2025-07-02 10:15:50 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 10:15:50 [INFO]: ✅ MySQL connected successfully
+2025-07-02 10:15:50 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 10:15:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-02 10:15:50 [INFO]: 📧 Notification service skipped for now
+2025-07-02 10:15:50 [INFO]: 🚀 Server running on port 5000
+2025-07-02 10:15:50 [INFO]: 📊 Environment: development
+2025-07-02 10:15:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-02 10:15:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-02 10:16:21 [INFO]: ✅ MySQL database connected successfully
+2025-07-02 10:16:47 [INFO]: ::1 - - [02/Jul/2025:04:46:47 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 10:17:09 [INFO]: ::1 - - [02/Jul/2025:04:47:09 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 10:17:54 [INFO]: ::1 - - [02/Jul/2025:04:47:54 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 10:18:26 [INFO]: ::1 - - [02/Jul/2025:04:48:26 +0000] "POST /api/mock/auth/login HTTP/1.1" 200 378 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202"
+2025-07-02 10:18:43 [INFO]: ::1 - - [02/Jul/2025:04:48:43 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:18:44 [INFO]: ::1 - - [02/Jul/2025:04:48:44 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:18:47 [INFO]: ::1 - - [02/Jul/2025:04:48:47 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:18:48 [INFO]: ::1 - - [02/Jul/2025:04:48:48 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:18:48 [INFO]: ::1 - - [02/Jul/2025:04:48:48 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-02 10:18:48 [INFO]: ::1 - - [02/Jul/2025:04:48:48 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"

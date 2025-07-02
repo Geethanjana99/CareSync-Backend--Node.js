@@ -1,0 +1,24 @@
+2025-07-02 10:04:17 [ERROR]: Error: accountSid must start with AC
+    at new Client (E:\Project 2\backend\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (E:\Project 2\backend\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (E:\Project 2\backend\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (E:\Project 2\backend\services\notificationService.js:36:26)
+    at new NotificationService (E:\Project 2\backend\services\notificationService.js:9:10)
+    at Object.<anonymous> (E:\Project 2\backend\services\notificationService.js:437:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-07-02 10:04:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-02 10:15:48 [ERROR]: Error: accountSid must start with AC
+    at new Client (E:\Project 2\backend\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
+    at new Twilio (E:\Project 2\backend\node_modules\twilio\lib\rest\Twilio.js:33:9)
+    at TwilioSDK (E:\Project 2\backend\node_modules\twilio\lib\index.js:40:12)
+    at NotificationService.initializeServices (E:\Project 2\backend\services\notificationService.js:36:26)
+    at new NotificationService (E:\Project 2\backend\services\notificationService.js:9:10)
+    at Object.<anonymous> (E:\Project 2\backend\services\notificationService.js:437:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-07-02 10:15:50 [ERROR]: ❌ MongoDB connection failed:
