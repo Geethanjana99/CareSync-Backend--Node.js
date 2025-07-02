@@ -17,8 +17,6 @@ router.get('/dashboard', DoctorController.getDashboard);
 
 // Schedule and availability
 router.get('/schedule', DoctorController.getSchedule);
-router.put('/availability', doctorValidation.updateAvailability, DoctorController.updateAvailability);
-
 // Appointments
 router.get('/appointments/today', DoctorController.getTodayAppointments);
 router.get('/appointments', DoctorController.getAppointmentHistory);
@@ -32,5 +30,12 @@ router.get('/patients/:patientId', DoctorController.getPatientDetails);
 // Earnings and statistics
 router.get('/earnings', DoctorController.getEarnings);
 router.get('/statistics', DoctorController.getStatistics);
+
+// Queue management
+router.get('/queue', DoctorController.getQueue);
+router.get('/queue/summary', DoctorController.getQueueSummary);
+router.put('/queue/current', DoctorController.updateCurrentQueueNumber);
+router.post('/queue/start/:appointmentId', DoctorController.startNextConsultation);
+router.post('/queue/complete/:appointmentId', DoctorController.completeConsultation);
 
 module.exports = router;

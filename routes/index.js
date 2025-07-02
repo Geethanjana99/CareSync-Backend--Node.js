@@ -10,6 +10,9 @@ const medicalReportRoutes = require('./medical-reports');
 const adminRoutes = require('./admin');
 const billingRoutes = require('./billing');
 
+// Import controllers for public endpoints
+const PatientController = require('../controllers/patientController');
+
 // Health check endpoint
 router.get('/health', (req, res) => {
   res.json({
@@ -20,7 +23,10 @@ router.get('/health', (req, res) => {
   });
 });
 
-// Mount routes
+// Public endpoints (no authentication required)
+router.get('/doctors/search', PatientController.searchDoctors);
+
+// Mount protected routes
 router.use('/auth', authRoutes);
 router.use('/appointments', appointmentRoutes);
 router.use('/patients', patientRoutes);
