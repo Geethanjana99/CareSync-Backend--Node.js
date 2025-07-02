@@ -445,6 +445,35 @@ class AdminController {
       next(error);
     }
   }
+  // Get patient names for billing/invoice purposes
+  static async getPatientNames(req, res, next) {
+    try {
+      const mysql = require('../config/mysql');
+      
+      const query = `
+        SELECT id, name, email
+        FROM users 
+        WHERE role = 'patient' AND status = 'active'
+        ORDER BY name
+      `;
+      
+      const [patients] = await mysql.execute(query);
+      
+      const patientList = patients.map(patient => ({
+        id: patient.id,
+        name: patient.name || patient.email,
+        email: patient.email
+      }));
+
+      res.json({
+        success: true,
+        data: patientList
+      });
+    } catch (error) {
+      logger.error('Error fetching patient names:', error);
+      next(error);
+    }
+  }
 }
 
 // Helper class for admin statistics

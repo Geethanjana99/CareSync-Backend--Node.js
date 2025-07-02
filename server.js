@@ -42,6 +42,7 @@ const doctorRoutes = require('./routes/doctors');
 const appointmentRoutes = require('./routes/appointments');
 const medicalReportsRoutes = require('./routes/medical-reports');
 const adminRoutes = require('./routes/admin');
+const billingRoutes = require('./routes/billing');
 const docsRoutes = require('./routes/docs');
 const indexRoutes = require('./routes/index');
 
@@ -128,7 +129,7 @@ app.use('/api/patients', patientRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.use('/api/appointments', appointmentRoutes);
 // app.use('/api/queue', authMiddleware, queueRoutes); // TODO: Create queue routes
-// app.use('/api/billing', authMiddleware, billingRoutes); // TODO: Create billing routes
+app.use('/api/billing', billingRoutes);
 app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
