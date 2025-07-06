@@ -206,3 +206,1687 @@
 2025-07-06 13:43:45 [INFO]: 📊 Environment: development
 2025-07-06 13:43:45 [INFO]: 🔗 Client URL: http://localhost:5173
 2025-07-06 13:43:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 13:59:01 [INFO]: Socket.IO server initialized
+2025-07-06 13:59:02 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 13:59:02 [INFO]: ✅ MySQL connected successfully
+2025-07-06 13:59:02 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 13:59:02 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 13:59:02 [INFO]: 📧 Notification service skipped for now
+2025-07-06 13:59:02 [INFO]: 🚀 Server running on port 5000
+2025-07-06 13:59:02 [INFO]: 📊 Environment: development
+2025-07-06 13:59:02 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 13:59:02 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 13:59:25 [INFO]: Socket.IO server initialized
+2025-07-06 13:59:26 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 13:59:26 [INFO]: ✅ MySQL connected successfully
+2025-07-06 13:59:26 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 13:59:26 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 13:59:26 [INFO]: 📧 Notification service skipped for now
+2025-07-06 13:59:26 [INFO]: 🚀 Server running on port 5000
+2025-07-06 13:59:26 [INFO]: 📊 Environment: development
+2025-07-06 13:59:26 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 13:59:26 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:25:41 [INFO]: Socket.IO server initialized
+2025-07-06 14:25:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:25:43 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:25:43 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:25:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:25:43 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:25:43 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:25:43 [INFO]: 📊 Environment: development
+2025-07-06 14:25:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:25:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:25:50 [INFO]: Socket.IO server initialized
+2025-07-06 14:25:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:26:13 [INFO]: Socket.IO server initialized
+2025-07-06 14:26:13 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:26:13 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:26:13 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:26:13 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:26:13 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:26:13 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:26:13 [INFO]: 📊 Environment: development
+2025-07-06 14:26:13 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:26:13 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:26:43 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 14:26:43 [INFO]: ::1 - - [06/Jul/2025:08:56:43 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:26:44 [ERROR]: MySQL query error:
+2025-07-06 14:26:44 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:26:44 [ERROR]: MySQL query error:
+2025-07-06 14:26:44 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:26:45 [INFO]: ::1 - - [06/Jul/2025:08:56:45 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:26:57 [ERROR]: MySQL query error:
+2025-07-06 14:26:57 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:26:57 [ERROR]: MySQL query error:
+2025-07-06 14:26:57 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:26:57 [INFO]: ::1 - - [06/Jul/2025:08:56:57 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:32 [INFO]: ::1 - - [06/Jul/2025:08:57:32 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:32 [INFO]: ::1 - - [06/Jul/2025:08:57:32 +0000] "GET /api/doctor/availability HTTP/1.1" 200 527 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:32 [ERROR]: MySQL query error:
+2025-07-06 14:27:32 [INFO]: ::1 - - [06/Jul/2025:08:57:32 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:32 [INFO]: ::1 - - [06/Jul/2025:08:57:32 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 398 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:41 [INFO]: User logged in: kashmila@gmail.com
+2025-07-06 14:27:41 [INFO]: ::1 - - [06/Jul/2025:08:57:41 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:41 [INFO]: ::1 - - [06/Jul/2025:08:57:41 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:43 [ERROR]: MySQL query error:
+2025-07-06 14:27:43 [INFO]: ::1 - - [06/Jul/2025:08:57:43 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 42 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:48 [INFO]: ::1 - - [06/Jul/2025:08:57:48 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:50 [INFO]: ::1 - - [06/Jul/2025:08:57:50 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:51 [INFO]: ::1 - - [06/Jul/2025:08:57:51 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:53 [ERROR]: MySQL query error:
+2025-07-06 14:27:53 [INFO]: ::1 - - [06/Jul/2025:08:57:53 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 42 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:56 [INFO]: User logged out: kashmila@gmail.com
+2025-07-06 14:27:56 [INFO]: ::1 - - [06/Jul/2025:08:57:56 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:27:56 [INFO]: ::1 - - [06/Jul/2025:08:57:56 +0000] "GET /api/auth/profile HTTP/1.1" 200 971 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:00 [INFO]: User logged in: doctor@uwu.com
+2025-07-06 14:28:00 [INFO]: ::1 - - [06/Jul/2025:08:58:00 +0000] "POST /api/auth/login HTTP/1.1" 200 825 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:00 [INFO]: ::1 - - [06/Jul/2025:08:58:00 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:02 [INFO]: ::1 - - [06/Jul/2025:08:58:02 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:04 [INFO]: ::1 - - [06/Jul/2025:08:58:04 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:04 [INFO]: ::1 - - [06/Jul/2025:08:58:04 +0000] "GET /api/auth/profile HTTP/1.1" 200 898 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:04 [INFO]: ::1 - - [06/Jul/2025:08:58:04 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:09 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 14:28:09 [INFO]: ::1 - - [06/Jul/2025:08:58:09 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:09 [ERROR]: MySQL query error:
+2025-07-06 14:28:09 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:28:09 [ERROR]: MySQL query error:
+2025-07-06 14:28:09 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:28:09 [INFO]: ::1 - - [06/Jul/2025:08:58:09 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 939 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:23 [ERROR]: MySQL query error:
+2025-07-06 14:28:23 [INFO]: ::1 - - [06/Jul/2025:08:58:23 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:23 [INFO]: ::1 - - [06/Jul/2025:08:58:23 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:23 [INFO]: ::1 - - [06/Jul/2025:08:58:23 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:27 [INFO]: ::1 - - [06/Jul/2025:08:58:27 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:31 [INFO]: ::1 - - [06/Jul/2025:08:58:31 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:32 [INFO]: ::1 - - [06/Jul/2025:08:58:32 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:35 [INFO]: ::1 - - [06/Jul/2025:08:58:35 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:28:36 [INFO]: ::1 - - [06/Jul/2025:08:58:36 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:32 [INFO]: ::1 - - [06/Jul/2025:08:59:32 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:34 [INFO]: ::1 - - [06/Jul/2025:08:59:34 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:35 [INFO]: ::1 - - [06/Jul/2025:08:59:35 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:36 [INFO]: ::1 - - [06/Jul/2025:08:59:36 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:36 [INFO]: ::1 - - [06/Jul/2025:08:59:36 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:36 [INFO]: ::1 - - [06/Jul/2025:08:59:36 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:36 [INFO]: ::1 - - [06/Jul/2025:08:59:36 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:37 [INFO]: ::1 - - [06/Jul/2025:08:59:37 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:29:43 [INFO]: ::1 - - [06/Jul/2025:08:59:43 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:13 [INFO]: ::1 - - [06/Jul/2025:09:00:13 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:14 [INFO]: ::1 - - [06/Jul/2025:09:00:14 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:14 [INFO]: ::1 - - [06/Jul/2025:09:00:14 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:19 [INFO]: ::1 - - [06/Jul/2025:09:00:19 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:20 [INFO]: ::1 - - [06/Jul/2025:09:00:20 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:20 [INFO]: ::1 - - [06/Jul/2025:09:00:20 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:21 [INFO]: ::1 - - [06/Jul/2025:09:00:21 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:25 [INFO]: ::1 - - [06/Jul/2025:09:00:25 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:25 [INFO]: ::1 - - [06/Jul/2025:09:00:25 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:26 [INFO]: ::1 - - [06/Jul/2025:09:00:26 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:26 [INFO]: ::1 - - [06/Jul/2025:09:00:26 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:26 [INFO]: ::1 - - [06/Jul/2025:09:00:26 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:26 [INFO]: ::1 - - [06/Jul/2025:09:00:26 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:26 [INFO]: ::1 - - [06/Jul/2025:09:00:26 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:30 [INFO]: User logged out: doctor@gmail.com
+2025-07-06 14:30:30 [INFO]: ::1 - - [06/Jul/2025:09:00:30 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:30 [INFO]: ::1 - - [06/Jul/2025:09:00:30 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:34 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 14:30:34 [INFO]: ::1 - - [06/Jul/2025:09:00:34 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:34 [ERROR]: MySQL query error:
+2025-07-06 14:30:34 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:30:34 [ERROR]: MySQL query error:
+2025-07-06 14:30:34 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:30:34 [INFO]: ::1 - - [06/Jul/2025:09:00:34 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 867 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:42 [INFO]: ::1 - - [06/Jul/2025:09:00:42 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 398 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:42 [INFO]: ::1 - - [06/Jul/2025:09:00:42 +0000] "GET /api/doctor/availability HTTP/1.1" 200 455 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:30:42 [ERROR]: MySQL query error:
+2025-07-06 14:30:42 [INFO]: ::1 - - [06/Jul/2025:09:00:42 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:25 [INFO]: ::1 - - [06/Jul/2025:09:01:25 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:29 [INFO]: ::1 - - [06/Jul/2025:09:01:29 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:31 [INFO]: ::1 - - [06/Jul/2025:09:01:31 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:32 [INFO]: ::1 - - [06/Jul/2025:09:01:32 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:34 [INFO]: ::1 - - [06/Jul/2025:09:01:34 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:34 [INFO]: ::1 - - [06/Jul/2025:09:01:34 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:34 [INFO]: ::1 - - [06/Jul/2025:09:01:34 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:35 [INFO]: ::1 - - [06/Jul/2025:09:01:35 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:35 [INFO]: ::1 - - [06/Jul/2025:09:01:35 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:35 [INFO]: ::1 - - [06/Jul/2025:09:01:35 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:31:35 [INFO]: ::1 - - [06/Jul/2025:09:01:35 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:32:56 [INFO]: ::1 - - [06/Jul/2025:09:02:56 +0000] "GET /api/doctor/availability HTTP/1.1" 200 453 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:32:56 [ERROR]: MySQL query error:
+2025-07-06 14:32:56 [INFO]: ::1 - - [06/Jul/2025:09:02:56 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:32:56 [INFO]: ::1 - - [06/Jul/2025:09:02:56 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:33:24 [INFO]: ::1 - - [06/Jul/2025:09:03:24 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:33:24 [ERROR]: MySQL query error:
+2025-07-06 14:33:24 [INFO]: ::1 - - [06/Jul/2025:09:03:24 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:33:24 [INFO]: ::1 - - [06/Jul/2025:09:03:24 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:33:35 [INFO]: ::1 - - [06/Jul/2025:09:03:35 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:33:35 [ERROR]: MySQL query error:
+2025-07-06 14:33:35 [INFO]: ::1 - - [06/Jul/2025:09:03:35 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:33:35 [INFO]: ::1 - - [06/Jul/2025:09:03:35 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:39:14 [INFO]: Socket.IO server initialized
+2025-07-06 14:39:17 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:39:17 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:39:17 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:39:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:39:17 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:39:17 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:39:17 [INFO]: 📊 Environment: development
+2025-07-06 14:39:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:39:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:39:55 [INFO]: ::1 - - [06/Jul/2025:09:09:55 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:39:55 [INFO]: ::1 - - [06/Jul/2025:09:09:55 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:39:56 [INFO]: ::1 - - [06/Jul/2025:09:09:56 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 2 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:39:56 [INFO]: ::1 - - [06/Jul/2025:09:09:56 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:41:37 [INFO]: Socket.IO server initialized
+2025-07-06 14:41:39 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:41:59 [INFO]: Socket.IO server initialized
+2025-07-06 14:42:01 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:42:57 [INFO]: Socket.IO server initialized
+2025-07-06 14:42:59 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:42:59 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:42:59 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:42:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:42:59 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:42:59 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:42:59 [INFO]: 📊 Environment: development
+2025-07-06 14:42:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:42:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:44:02 [INFO]: Socket.IO server initialized
+2025-07-06 14:44:03 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:44:03 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:44:03 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:44:03 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:44:03 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:44:03 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:44:03 [INFO]: 📊 Environment: development
+2025-07-06 14:44:03 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:44:03 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:44:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:44:33 [INFO]: Socket.IO server initialized
+2025-07-06 14:44:34 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:44:34 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:44:34 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:44:34 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:44:34 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:44:34 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:44:34 [INFO]: 📊 Environment: development
+2025-07-06 14:44:34 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:44:34 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:44:40 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:44:41 [ERROR]: MySQL query error:
+2025-07-06 14:44:53 [INFO]: Socket.IO server initialized
+2025-07-06 14:44:53 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:44:53 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:44:53 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:44:53 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:44:53 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:44:53 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:44:53 [INFO]: 📊 Environment: development
+2025-07-06 14:44:53 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:44:53 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:45:02 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:45:16 [INFO]: Socket.IO server initialized
+2025-07-06 14:45:17 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:45:17 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:45:17 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:45:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:45:17 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:45:17 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:45:17 [INFO]: 📊 Environment: development
+2025-07-06 14:45:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:45:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:45:22 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:45:41 [INFO]: Socket.IO server initialized
+2025-07-06 14:45:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:45:42 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:45:42 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:45:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:45:42 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:45:42 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:45:42 [INFO]: 📊 Environment: development
+2025-07-06 14:45:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:45:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:45:48 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:45:48 [ERROR]: MySQL query error:
+2025-07-06 14:45:56 [INFO]: Socket.IO server initialized
+2025-07-06 14:45:57 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:45:57 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:45:57 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:45:57 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:45:57 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:45:57 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:45:57 [INFO]: 📊 Environment: development
+2025-07-06 14:45:57 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:45:57 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:46:01 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:46:19 [INFO]: Socket.IO server initialized
+2025-07-06 14:46:19 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:46:19 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:46:19 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:46:19 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:46:19 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:46:19 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:46:19 [INFO]: 📊 Environment: development
+2025-07-06 14:46:19 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:46:19 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:46:28 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:47:30 [INFO]: Socket.IO server initialized
+2025-07-06 14:47:31 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:47:31 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:47:31 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:47:31 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:47:31 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:47:31 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:47:31 [INFO]: 📊 Environment: development
+2025-07-06 14:47:31 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:47:31 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:48:04 [INFO]: Socket.IO server initialized
+2025-07-06 14:48:04 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:48:04 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:48:04 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:48:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:48:04 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:48:04 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:48:04 [INFO]: 📊 Environment: development
+2025-07-06 14:48:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:48:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:48:21 [INFO]: Socket.IO server initialized
+2025-07-06 14:48:22 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:48:22 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:48:22 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:48:22 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:48:22 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:48:22 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:48:22 [INFO]: 📊 Environment: development
+2025-07-06 14:48:22 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:48:22 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:48:36 [INFO]: ::1 - - [06/Jul/2025:09:18:36 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "node-fetch"
+2025-07-06 14:48:50 [INFO]: Socket.IO server initialized
+2025-07-06 14:48:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:48:51 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:48:51 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:48:51 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:48:51 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:48:51 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:48:51 [INFO]: 📊 Environment: development
+2025-07-06 14:48:51 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:48:51 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:48:58 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:48:58 [ERROR]: MySQL query error:
+2025-07-06 14:49:10 [INFO]: Socket.IO server initialized
+2025-07-06 14:49:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:49:11 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:49:11 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:49:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:49:11 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:49:11 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:49:11 [INFO]: 📊 Environment: development
+2025-07-06 14:49:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:49:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:49:22 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:49:42 [INFO]: Socket.IO server initialized
+2025-07-06 14:49:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:49:43 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:49:43 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:49:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:49:43 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:49:43 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:49:43 [INFO]: 📊 Environment: development
+2025-07-06 14:49:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:49:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:50:07 [INFO]: Socket.IO server initialized
+2025-07-06 14:50:08 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:50:08 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:50:08 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:50:08 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:50:08 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:50:08 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:50:08 [INFO]: 📊 Environment: development
+2025-07-06 14:50:08 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:50:08 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:50:13 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:50:25 [INFO]: Socket.IO server initialized
+2025-07-06 14:50:26 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:50:26 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:50:26 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:50:26 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:50:26 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:50:26 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:50:26 [INFO]: 📊 Environment: development
+2025-07-06 14:50:26 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:50:26 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:50:40 [INFO]: User logged in: testdoctor@example.com
+2025-07-06 14:50:40 [INFO]: ::1 - - [06/Jul/2025:09:20:40 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "node-fetch"
+2025-07-06 14:50:40 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:15:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+2025-07-06 14:50:40 [INFO]: ::1 - - [06/Jul/2025:09:20:40 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 401 48 "-" "node-fetch"
+2025-07-06 14:51:20 [INFO]: Socket.IO server initialized
+2025-07-06 14:51:20 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:51:20 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:51:20 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:51:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:51:20 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:51:20 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:51:20 [INFO]: 📊 Environment: development
+2025-07-06 14:51:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:51:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:51:40 [INFO]: User logged in: testdoctor@example.com
+2025-07-06 14:51:40 [INFO]: ::1 - - [06/Jul/2025:09:21:40 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "node-fetch"
+2025-07-06 14:52:09 [INFO]: Socket.IO server initialized
+2025-07-06 14:52:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:52:11 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:52:11 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:52:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:52:11 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:52:11 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:52:11 [INFO]: 📊 Environment: development
+2025-07-06 14:52:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:52:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:52:15 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:52:35 [INFO]: Socket.IO server initialized
+2025-07-06 14:52:36 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:52:36 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:52:36 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:52:36 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:52:36 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:52:36 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:52:36 [INFO]: 📊 Environment: development
+2025-07-06 14:52:36 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:52:36 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:52:45 [INFO]: User logged in: testdoctor@example.com
+2025-07-06 14:52:45 [INFO]: ::1 - - [06/Jul/2025:09:22:45 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "node-fetch"
+2025-07-06 14:52:45 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:22:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+2025-07-06 14:52:45 [INFO]: ::1 - - [06/Jul/2025:09:22:45 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 401 48 "-" "node-fetch"
+2025-07-06 14:53:05 [INFO]: Socket.IO server initialized
+2025-07-06 14:53:07 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:53:07 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:53:07 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:53:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:53:07 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:53:07 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:53:07 [INFO]: 📊 Environment: development
+2025-07-06 14:53:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:53:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:53:13 [INFO]: User logged in: testdoctor@example.com
+2025-07-06 14:53:13 [INFO]: ::1 - - [06/Jul/2025:09:23:13 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "node-fetch"
+2025-07-06 14:53:14 [INFO]: ::1 - - [06/Jul/2025:09:23:14 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 2 "-" "node-fetch"
+2025-07-06 14:54:04 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 14:54:04 [INFO]: ::1 - - [06/Jul/2025:09:24:04 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:05 [ERROR]: MySQL query error:
+2025-07-06 14:54:05 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:54:06 [ERROR]: MySQL query error:
+2025-07-06 14:54:06 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:54:06 [INFO]: ::1 - - [06/Jul/2025:09:24:06 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 867 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:07 [INFO]: ::1 - - [06/Jul/2025:09:24:07 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:07 [INFO]: ::1 - - [06/Jul/2025:09:24:07 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:07 [INFO]: ::1 - - [06/Jul/2025:09:24:07 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:10 [INFO]: ::1 - - [06/Jul/2025:09:24:10 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:11 [INFO]: ::1 - - [06/Jul/2025:09:24:11 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:12 [INFO]: ::1 - - [06/Jul/2025:09:24:12 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:13 [INFO]: ::1 - - [06/Jul/2025:09:24:13 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:17 [INFO]: ::1 - - [06/Jul/2025:09:24:17 +0000] "GET /api/doctor/availability HTTP/1.1" 200 455 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:17 [INFO]: ::1 - - [06/Jul/2025:09:24:17 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:17 [INFO]: ::1 - - [06/Jul/2025:09:24:17 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:18 [INFO]: ::1 - - [06/Jul/2025:09:24:18 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:18 [INFO]: ::1 - - [06/Jul/2025:09:24:18 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:18 [INFO]: ::1 - - [06/Jul/2025:09:24:18 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:18 [INFO]: ::1 - - [06/Jul/2025:09:24:18 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:25 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 14:54:25 [INFO]: ::1 - - [06/Jul/2025:09:24:25 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:26 [ERROR]: MySQL query error:
+2025-07-06 14:54:26 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:54:26 [ERROR]: MySQL query error:
+2025-07-06 14:54:26 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 14:54:26 [INFO]: ::1 - - [06/Jul/2025:09:24:26 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:28 [INFO]: ::1 - - [06/Jul/2025:09:24:28 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:28 [INFO]: ::1 - - [06/Jul/2025:09:24:28 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:28 [INFO]: ::1 - - [06/Jul/2025:09:24:28 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:30 [INFO]: ::1 - - [06/Jul/2025:09:24:30 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:34 [INFO]: ::1 - - [06/Jul/2025:09:24:34 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:39 [INFO]: ::1 - - [06/Jul/2025:09:24:39 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:40 [INFO]: ::1 - - [06/Jul/2025:09:24:40 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:54:41 [INFO]: ::1 - - [06/Jul/2025:09:24:41 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 14:56:49 [INFO]: Socket.IO server initialized
+2025-07-06 14:56:49 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:56:49 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:56:49 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:56:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:56:49 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:56:49 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:56:49 [INFO]: 📊 Environment: development
+2025-07-06 14:56:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:56:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:57:13 [INFO]: Socket.IO server initialized
+2025-07-06 14:57:14 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:57:14 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:57:14 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:57:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:57:14 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:57:14 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:57:14 [INFO]: 📊 Environment: development
+2025-07-06 14:57:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:57:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:57:23 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:57:24 [ERROR]: MySQL query error:
+2025-07-06 14:57:41 [INFO]: Socket.IO server initialized
+2025-07-06 14:57:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:57:42 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:57:42 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:57:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:57:42 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:57:42 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:57:42 [INFO]: 📊 Environment: development
+2025-07-06 14:57:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:57:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:57:51 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:58:29 [INFO]: Socket.IO server initialized
+2025-07-06 14:58:30 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 14:58:30 [INFO]: ✅ MySQL connected successfully
+2025-07-06 14:58:30 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 14:58:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 14:58:30 [INFO]: 📧 Notification service skipped for now
+2025-07-06 14:58:30 [INFO]: 🚀 Server running on port 5000
+2025-07-06 14:58:30 [INFO]: 📊 Environment: development
+2025-07-06 14:58:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 14:58:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 14:58:40 [INFO]: User logged in: testdoctor@example.com
+2025-07-06 14:58:40 [INFO]: ::1 - - [06/Jul/2025:09:28:40 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "node-fetch"
+2025-07-06 14:58:41 [INFO]: ::1 - - [06/Jul/2025:09:28:41 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 2 "-" "node-fetch"
+2025-07-06 14:58:41 [INFO]: ::1 - - [06/Jul/2025:09:28:41 +0000] "GET /api/doctor/availability HTTP/1.1" 200 56 "-" "node-fetch"
+2025-07-06 14:58:42 [INFO]: ::1 - - [06/Jul/2025:09:28:42 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "node-fetch"
+2025-07-06 14:58:42 [INFO]: ::1 - - [06/Jul/2025:09:28:42 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "-" "node-fetch"
+2025-07-06 14:58:43 [INFO]: ::1 - - [06/Jul/2025:09:28:43 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 398 "-" "node-fetch"
+2025-07-06 14:58:43 [INFO]: ::1 - - [06/Jul/2025:09:28:43 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "node-fetch"
+2025-07-06 15:00:27 [INFO]: ::1 - - [06/Jul/2025:09:30:27 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:29 [INFO]: ::1 - - [06/Jul/2025:09:30:29 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:33 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 15:00:33 [INFO]: ::1 - - [06/Jul/2025:09:30:33 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:33 [ERROR]: MySQL query error:
+2025-07-06 15:00:33 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 15:00:34 [ERROR]: MySQL query error:
+2025-07-06 15:00:34 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 15:00:34 [INFO]: ::1 - - [06/Jul/2025:09:30:34 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:35 [INFO]: ::1 - - [06/Jul/2025:09:30:35 +0000] "GET /api/doctor/availability HTTP/1.1" 200 453 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:36 [INFO]: ::1 - - [06/Jul/2025:09:30:36 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:36 [INFO]: ::1 - - [06/Jul/2025:09:30:36 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:37 [INFO]: ::1 - - [06/Jul/2025:09:30:37 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:39 [INFO]: ::1 - - [06/Jul/2025:09:30:39 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:40 [INFO]: ::1 - - [06/Jul/2025:09:30:40 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:41 [INFO]: ::1 - - [06/Jul/2025:09:30:41 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:00:42 [INFO]: ::1 - - [06/Jul/2025:09:30:42 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:02:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:03:13 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:03:18 [INFO]: Socket.IO server initialized
+2025-07-06 15:03:20 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:03:20 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:03:20 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:03:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:03:20 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:03:20 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:03:20 [INFO]: 📊 Environment: development
+2025-07-06 15:03:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:03:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:03:40 [INFO]: Socket.IO server initialized
+2025-07-06 15:03:40 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:03:40 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:03:40 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:03:40 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:03:40 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:03:40 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:03:40 [INFO]: 📊 Environment: development
+2025-07-06 15:03:40 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:03:40 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:04:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:05:06 [INFO]: Socket.IO server initialized
+2025-07-06 15:05:07 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:05:07 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:05:07 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:05:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:05:07 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:05:07 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:05:07 [INFO]: 📊 Environment: development
+2025-07-06 15:05:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:05:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:05:12 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:05:13 [INFO]: ::1 - - [06/Jul/2025:09:35:13 +0000] "GET /api/doctor/queue/availability HTTP/1.1" 404 92 "-" "axios/1.9.0"
+2025-07-06 15:05:13 [INFO]: ::1 - - [06/Jul/2025:09:35:13 +0000] "PUT /api/doctor/queue/availability/working-hours HTTP/1.1" 404 106 "-" "axios/1.9.0"
+2025-07-06 15:05:13 [INFO]: ::1 - - [06/Jul/2025:09:35:13 +0000] "PUT /api/doctor/queue/availability/status HTTP/1.1" 404 99 "-" "axios/1.9.0"
+2025-07-06 15:05:13 [INFO]: ::1 - - [06/Jul/2025:09:35:13 +0000] "GET /api/doctor/queue/queue/status HTTP/1.1" 404 92 "-" "axios/1.9.0"
+2025-07-06 15:05:13 [INFO]: ::1 - - [06/Jul/2025:09:35:13 +0000] "GET /api/doctor/queue/appointments/today HTTP/1.1" 404 98 "-" "axios/1.9.0"
+2025-07-06 15:05:57 [INFO]: Socket.IO server initialized
+2025-07-06 15:05:58 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:05:58 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:05:58 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:05:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:05:58 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:05:58 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:05:58 [INFO]: 📊 Environment: development
+2025-07-06 15:05:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:05:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:06:06 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:06:06 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-07-06 15:06:06 [INFO]: ::1 - - [06/Jul/2025:09:36:06 +0000] "GET /api/doctor/availability HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 15:06:06 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-07-06 15:06:06 [INFO]: ::1 - - [06/Jul/2025:09:36:06 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 15:06:06 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-07-06 15:06:06 [INFO]: ::1 - - [06/Jul/2025:09:36:06 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 15:06:06 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-07-06 15:06:06 [INFO]: ::1 - - [06/Jul/2025:09:36:06 +0000] "GET /api/doctor/queue/status HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 15:06:06 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-07-06 15:06:06 [INFO]: ::1 - - [06/Jul/2025:09:36:06 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 15:06:30 [INFO]: Socket.IO server initialized
+2025-07-06 15:06:31 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:06:31 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:06:31 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:06:31 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:06:31 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:06:31 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:06:31 [INFO]: 📊 Environment: development
+2025-07-06 15:06:31 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:06:31 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:06:35 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:06:36 [ERROR]: MySQL query error:
+2025-07-06 15:06:36 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:06:36 [INFO]: ::1 - - [06/Jul/2025:09:36:36 +0000] "GET /api/doctor/availability HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-07-06 15:06:36 [ERROR]: MySQL query error:
+2025-07-06 15:06:36 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:06:36 [INFO]: ::1 - - [06/Jul/2025:09:36:36 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-07-06 15:06:36 [ERROR]: MySQL query error:
+2025-07-06 15:06:36 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:06:36 [INFO]: ::1 - - [06/Jul/2025:09:36:36 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-07-06 15:06:36 [ERROR]: MySQL query error:
+2025-07-06 15:06:36 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:06:36 [INFO]: ::1 - - [06/Jul/2025:09:36:36 +0000] "GET /api/doctor/queue/status HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-07-06 15:06:36 [ERROR]: MySQL query error:
+2025-07-06 15:06:36 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:06:36 [INFO]: ::1 - - [06/Jul/2025:09:36:36 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-07-06 15:07:36 [INFO]: Socket.IO server initialized
+2025-07-06 15:07:37 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:07:37 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:07:37 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:07:37 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:07:37 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:07:37 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:07:37 [INFO]: 📊 Environment: development
+2025-07-06 15:07:37 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:07:37 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:07:43 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:07:44 [INFO]: ::1 - - [06/Jul/2025:09:37:44 +0000] "GET /api/doctor/availability HTTP/1.1" 200 136 "-" "axios/1.9.0"
+2025-07-06 15:07:44 [INFO]: ::1 - - [06/Jul/2025:09:37:44 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "-" "axios/1.9.0"
+2025-07-06 15:07:44 [INFO]: ::1 - - [06/Jul/2025:09:37:44 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 15:07:45 [INFO]: ::1 - - [06/Jul/2025:09:37:45 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 398 "-" "axios/1.9.0"
+2025-07-06 15:07:45 [INFO]: ::1 - - [06/Jul/2025:09:37:45 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 2 "-" "axios/1.9.0"
+2025-07-06 15:08:53 [INFO]: Socket.IO server initialized
+2025-07-06 15:08:53 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:08:53 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:08:53 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:08:53 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:08:53 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:08:53 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:08:53 [INFO]: 📊 Environment: development
+2025-07-06 15:08:53 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:08:53 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:09:12 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:09:12 [ERROR]: MySQL query error:
+2025-07-06 15:09:21 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:09:41 [INFO]: Socket.IO server initialized
+2025-07-06 15:09:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:09:42 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:09:42 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:09:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:09:42 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:09:42 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:09:42 [INFO]: 📊 Environment: development
+2025-07-06 15:09:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:09:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:09:47 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:09:56 [INFO]: Socket.IO server initialized
+2025-07-06 15:09:57 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:09:57 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:09:57 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:09:57 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:09:57 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:09:57 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:09:57 [INFO]: 📊 Environment: development
+2025-07-06 15:09:57 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:09:57 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:10:02 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:10:13 [INFO]: Socket.IO server initialized
+2025-07-06 15:10:15 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:10:15 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:10:15 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:10:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:10:15 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:10:15 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:10:15 [INFO]: 📊 Environment: development
+2025-07-06 15:10:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:10:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:10:26 [INFO]: Socket.IO server initialized
+2025-07-06 15:10:27 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:10:27 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:10:27 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:10:27 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:10:27 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:10:27 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:10:27 [INFO]: 📊 Environment: development
+2025-07-06 15:10:27 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:10:27 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:10:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:10:40 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:10:41 [INFO]: ::1 - - [06/Jul/2025:09:40:41 +0000] "GET /api/doctor/availability HTTP/1.1" 200 180 "-" "axios/1.9.0"
+2025-07-06 15:10:41 [INFO]: ::1 - - [06/Jul/2025:09:40:41 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "-" "axios/1.9.0"
+2025-07-06 15:10:42 [INFO]: ::1 - - [06/Jul/2025:09:40:42 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 15:10:43 [INFO]: ::1 - - [06/Jul/2025:09:40:43 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 398 "-" "axios/1.9.0"
+2025-07-06 15:10:43 [INFO]: ::1 - - [06/Jul/2025:09:40:43 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 15:11:52 [INFO]: Socket.IO server initialized
+2025-07-06 15:11:52 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:11:52 [INFO]: ✅ MySQL connected successfully
+2025-07-06 15:11:52 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 15:11:52 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 15:11:52 [INFO]: 📧 Notification service skipped for now
+2025-07-06 15:11:52 [INFO]: 🚀 Server running on port 5000
+2025-07-06 15:11:52 [INFO]: 📊 Environment: development
+2025-07-06 15:11:52 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 15:11:52 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 15:12:49 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 15:12:50 [INFO]: ::1 - - [06/Jul/2025:09:42:50 +0000] "GET /api/doctor/availability HTTP/1.1" 200 180 "-" "axios/1.9.0"
+2025-07-06 15:12:50 [INFO]: ::1 - - [06/Jul/2025:09:42:50 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "-" "axios/1.9.0"
+2025-07-06 15:12:50 [INFO]: ::1 - - [06/Jul/2025:09:42:50 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 15:12:51 [INFO]: ::1 - - [06/Jul/2025:09:42:51 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 398 "-" "axios/1.9.0"
+2025-07-06 15:12:51 [INFO]: ::1 - - [06/Jul/2025:09:42:51 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 15:12:51 [INFO]: ::1 - - [06/Jul/2025:09:42:51 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 15:14:29 [ERROR]: MySQL query error:
+2025-07-06 15:14:29 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 15:14:29 [INFO]: ::1 - - [06/Jul/2025:09:44:29 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:14:42 [INFO]: ::1 - - [06/Jul/2025:09:44:42 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:14:50 [INFO]: User logged in: test@test.com
+2025-07-06 15:14:50 [INFO]: ::1 - - [06/Jul/2025:09:44:50 +0000] "POST /api/auth/login HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:14:50 [ERROR]: MySQL query error:
+2025-07-06 15:14:50 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 15:14:50 [INFO]: ::1 - - [06/Jul/2025:09:44:50 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:14:54 [ERROR]: MySQL query error:
+2025-07-06 15:14:54 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:14:54 [INFO]: ::1 - - [06/Jul/2025:09:44:54 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:14:59 [ERROR]: MySQL query error:
+2025-07-06 15:14:59 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:14:59 [INFO]: ::1 - - [06/Jul/2025:09:44:59 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:14:59 [ERROR]: MySQL query error:
+2025-07-06 15:14:59 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:14:59 [INFO]: ::1 - - [06/Jul/2025:09:44:59 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:00 [ERROR]: MySQL query error:
+2025-07-06 15:15:00 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:15:00 [INFO]: ::1 - - [06/Jul/2025:09:45:00 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:00 [ERROR]: MySQL query error:
+2025-07-06 15:15:00 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:15:00 [INFO]: ::1 - - [06/Jul/2025:09:45:00 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:00 [ERROR]: MySQL query error:
+2025-07-06 15:15:00 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 15:15:00 [INFO]: ::1 - - [06/Jul/2025:09:45:00 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:02 [INFO]: ::1 - - [06/Jul/2025:09:45:02 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:04 [ERROR]: MySQL query error:
+2025-07-06 15:15:04 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 15:15:04 [INFO]: ::1 - - [06/Jul/2025:09:45:04 +0000] "GET /api/patients/appointments HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:06 [ERROR]: MySQL query error:
+2025-07-06 15:15:06 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 15:15:06 [INFO]: ::1 - - [06/Jul/2025:09:45:06 +0000] "GET /api/patients/appointments HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 15:15:06 [ERROR]: MySQL query error:
+2025-07-06 15:15:06 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 15:15:06 [INFO]: ::1 - - [06/Jul/2025:09:45:06 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:37:57 [INFO]: Socket.IO server initialized
+2025-07-06 20:37:59 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:37:59 [INFO]: ✅ MySQL connected successfully
+2025-07-06 20:37:59 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 20:37:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 20:37:59 [INFO]: 📧 Notification service skipped for now
+2025-07-06 20:37:59 [INFO]: 🚀 Server running on port 5000
+2025-07-06 20:37:59 [INFO]: 📊 Environment: development
+2025-07-06 20:37:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 20:37:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 20:38:35 [INFO]: ::1 - - [06/Jul/2025:15:08:35 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:39 [INFO]: ::1 - - [06/Jul/2025:15:08:39 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:42 [INFO]: ::1 - - [06/Jul/2025:15:08:42 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:51 [INFO]: User logged in: test@test.com
+2025-07-06 20:38:51 [INFO]: ::1 - - [06/Jul/2025:15:08:51 +0000] "POST /api/auth/login HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:51 [ERROR]: MySQL query error:
+2025-07-06 20:38:51 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:38:51 [INFO]: ::1 - - [06/Jul/2025:15:08:51 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:52 [ERROR]: MySQL query error:
+2025-07-06 20:38:52 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:38:52 [INFO]: ::1 - - [06/Jul/2025:15:08:52 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:53 [ERROR]: MySQL query error:
+2025-07-06 20:38:53 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:38:53 [INFO]: ::1 - - [06/Jul/2025:15:08:53 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:54 [ERROR]: MySQL query error:
+2025-07-06 20:38:54 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:38:54 [INFO]: ::1 - - [06/Jul/2025:15:08:54 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:56 [INFO]: ::1 - - [06/Jul/2025:15:08:56 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:57 [ERROR]: MySQL query error:
+2025-07-06 20:38:57 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:38:57 [INFO]: ::1 - - [06/Jul/2025:15:08:57 +0000] "GET /api/patients/appointments HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:38:59 [ERROR]: MySQL query error:
+2025-07-06 20:38:59 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 20:38:59 [INFO]: ::1 - - [06/Jul/2025:15:08:59 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:39:02 [ERROR]: MySQL query error:
+2025-07-06 20:39:02 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+2025-07-06 20:39:02 [INFO]: ::1 - - [06/Jul/2025:15:09:02 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:39:05 [INFO]: ::1 - - [06/Jul/2025:15:09:05 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:39:06 [ERROR]: MySQL query error:
+2025-07-06 20:39:06 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:39:06 [INFO]: ::1 - - [06/Jul/2025:15:09:06 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:39:17 [ERROR]: MySQL query error:
+2025-07-06 20:39:17 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 20:39:17 [INFO]: ::1 - - [06/Jul/2025:15:09:17 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 20:41:29 [INFO]: Socket.IO server initialized
+2025-07-06 20:41:33 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:41:33 [INFO]: ✅ MySQL connected successfully
+2025-07-06 20:41:33 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 20:41:33 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 20:41:33 [INFO]: 📧 Notification service skipped for now
+2025-07-06 20:41:33 [INFO]: 🚀 Server running on port 5000
+2025-07-06 20:41:33 [INFO]: 📊 Environment: development
+2025-07-06 20:41:33 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 20:41:33 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 20:42:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:42:44 [INFO]: ::1 - - [06/Jul/2025:15:12:44 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 20:43:23 [INFO]: Socket.IO server initialized
+2025-07-06 20:43:28 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:43:28 [INFO]: ✅ MySQL connected successfully
+2025-07-06 20:43:28 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 20:43:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 20:43:28 [INFO]: 📧 Notification service skipped for now
+2025-07-06 20:43:28 [INFO]: 🚀 Server running on port 5000
+2025-07-06 20:43:28 [INFO]: 📊 Environment: development
+2025-07-06 20:43:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 20:43:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 20:43:35 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:44:02 [INFO]: Socket.IO server initialized
+2025-07-06 20:44:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:44:11 [INFO]: ✅ MySQL connected successfully
+2025-07-06 20:44:11 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 20:44:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 20:44:11 [INFO]: 📧 Notification service skipped for now
+2025-07-06 20:44:11 [INFO]: 🚀 Server running on port 5000
+2025-07-06 20:44:11 [INFO]: 📊 Environment: development
+2025-07-06 20:44:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 20:44:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 20:45:57 [INFO]: Socket.IO server initialized
+2025-07-06 20:46:23 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 20:46:23 [INFO]: ✅ MySQL connected successfully
+2025-07-06 20:46:23 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 20:46:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 20:46:23 [INFO]: 📧 Notification service skipped for now
+2025-07-06 20:46:23 [INFO]: 🚀 Server running on port 5000
+2025-07-06 20:46:23 [INFO]: 📊 Environment: development
+2025-07-06 20:46:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 20:46:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 20:47:50 [INFO]: ::1 - - [06/Jul/2025:15:17:50 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 401 69 "-" "axios/1.9.0"
+2025-07-06 20:47:50 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-07-06 20:47:50 [ERROR]: Request URL:
+2025-07-06 20:47:50 [ERROR]: Request method:
+2025-07-06 20:47:50 [ERROR]: Auth header:
+2025-07-06 20:47:50 [INFO]: ::1 - - [06/Jul/2025:15:17:50 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 20:47:50 [ERROR]: SyntaxError: Unexpected token '�', "�{ږ'" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at Object.jwsDecode [as decode] (E:\Project 2\backend\node_modules\jws\lib\verify-stream.js:71:20)
+    at module.exports (E:\Project 2\backend\node_modules\jsonwebtoken\decode.js:5:21)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:76:20)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+2025-07-06 20:47:50 [ERROR]: Request URL:
+2025-07-06 20:47:50 [ERROR]: Request method:
+2025-07-06 20:47:50 [ERROR]: Auth header:
+2025-07-06 20:47:50 [INFO]: ::1 - - [06/Jul/2025:15:17:50 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 500 64 "-" "axios/1.9.0"
+2025-07-06 21:01:28 [INFO]: Socket.IO server initialized
+2025-07-06 21:01:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:01:32 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:01:32 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:01:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:01:32 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:01:32 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:01:32 [INFO]: 📊 Environment: development
+2025-07-06 21:01:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:01:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:08:53 [ERROR]: MySQL query error:
+2025-07-06 21:08:53 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 21:08:53 [INFO]: ::1 - - [06/Jul/2025:15:38:53 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:03 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 21:09:03 [INFO]: ::1 - - [06/Jul/2025:15:39:03 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:03 [ERROR]: MySQL query error:
+2025-07-06 21:09:03 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:31:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-07-06 21:09:03 [INFO]: ::1 - - [06/Jul/2025:15:39:03 +0000] "GET /api/doctors/dashboard HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:06 [INFO]: ::1 - - [06/Jul/2025:15:39:06 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:07 [INFO]: ::1 - - [06/Jul/2025:15:39:07 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:08 [INFO]: ::1 - - [06/Jul/2025:15:39:08 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:08 [INFO]: ::1 - - [06/Jul/2025:15:39:08 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:09 [INFO]: ::1 - - [06/Jul/2025:15:39:09 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:09 [INFO]: ::1 - - [06/Jul/2025:15:39:09 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:09:20 [INFO]: ::1 - - [06/Jul/2025:15:39:20 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:18:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:18:20 [ERROR]: MySQL query error:
+2025-07-06 21:22:04 [INFO]: Socket.IO server initialized
+2025-07-06 21:22:07 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:22:07 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:22:07 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:22:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:22:07 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:22:07 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:22:07 [INFO]: 📊 Environment: development
+2025-07-06 21:22:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:22:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:24:13 [INFO]: ::1 - - [06/Jul/2025:15:54:13 +0000] "GET /api/doctors/dashboard HTTP/1.1" 401 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:24:53 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 21:24:53 [INFO]: ::1 - - [06/Jul/2025:15:54:53 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:24:55 [ERROR]: MySQL query error:
+2025-07-06 21:24:55 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 21:24:57 [ERROR]: MySQL query error:
+2025-07-06 21:24:57 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 21:24:57 [INFO]: ::1 - - [06/Jul/2025:15:54:57 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 867 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:02 [INFO]: ::1 - - [06/Jul/2025:15:55:02 +0000] "GET /api/doctor/availability HTTP/1.1" 200 455 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:03 [INFO]: ::1 - - [06/Jul/2025:15:55:03 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:03 [INFO]: ::1 - - [06/Jul/2025:15:55:03 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:07 [INFO]: ::1 - - [06/Jul/2025:15:55:07 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:08 [INFO]: ::1 - - [06/Jul/2025:15:55:08 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:09 [INFO]: ::1 - - [06/Jul/2025:15:55:09 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:10 [INFO]: ::1 - - [06/Jul/2025:15:55:10 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:42 [INFO]: ::1 - - [06/Jul/2025:15:55:42 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:43 [INFO]: ::1 - - [06/Jul/2025:15:55:43 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:44 [INFO]: ::1 - - [06/Jul/2025:15:55:44 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:46 [INFO]: ::1 - - [06/Jul/2025:15:55:46 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:47 [INFO]: ::1 - - [06/Jul/2025:15:55:47 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:47 [INFO]: ::1 - - [06/Jul/2025:15:55:47 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:54 [INFO]: User logged out: doctor@gmail.com
+2025-07-06 21:25:54 [INFO]: ::1 - - [06/Jul/2025:15:55:54 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:25:54 [INFO]: ::1 - - [06/Jul/2025:15:55:54 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:06 [INFO]: User logged in: kashmila@gmail.com
+2025-07-06 21:26:06 [INFO]: ::1 - - [06/Jul/2025:15:56:06 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:08 [INFO]: ::1 - - [06/Jul/2025:15:56:08 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:21 [INFO]: ::1 - - [06/Jul/2025:15:56:21 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:29 [INFO]: ::1 - - [06/Jul/2025:15:56:29 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:29 [INFO]: ::1 - - [06/Jul/2025:15:56:29 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:52 [INFO]: ::1 - - [06/Jul/2025:15:56:52 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:55 [INFO]: User logged out: kashmila@gmail.com
+2025-07-06 21:26:55 [INFO]: ::1 - - [06/Jul/2025:15:56:55 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:26:56 [INFO]: ::1 - - [06/Jul/2025:15:56:56 +0000] "GET /api/auth/profile HTTP/1.1" 200 971 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:02 [INFO]: ::1 - - [06/Jul/2025:15:57:02 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:10 [INFO]: User logged in: test@test.com
+2025-07-06 21:27:10 [INFO]: ::1 - - [06/Jul/2025:15:57:10 +0000] "POST /api/auth/login HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:12 [INFO]: ::1 - - [06/Jul/2025:15:57:12 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:18 [INFO]: ::1 - - [06/Jul/2025:15:57:18 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:21 [INFO]: ::1 - - [06/Jul/2025:15:57:21 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:25 [INFO]: ::1 - - [06/Jul/2025:15:57:25 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 807 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:30 [INFO]: ::1 - - [06/Jul/2025:15:57:30 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:33 [INFO]: ::1 - - [06/Jul/2025:15:57:33 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:40 [INFO]: ::1 - - [06/Jul/2025:15:57:40 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:41 [INFO]: ::1 - - [06/Jul/2025:15:57:41 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:43 [INFO]: ::1 - - [06/Jul/2025:15:57:43 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:44 [INFO]: ::1 - - [06/Jul/2025:15:57:44 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:46 [INFO]: User logged out: test@test.com
+2025-07-06 21:27:46 [INFO]: ::1 - - [06/Jul/2025:15:57:46 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:27:46 [INFO]: ::1 - - [06/Jul/2025:15:57:46 +0000] "GET /api/auth/profile HTTP/1.1" 200 915 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:29:56 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:30:09 [INFO]: Socket.IO server initialized
+2025-07-06 21:30:12 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:34:24 [INFO]: ::1 - - [06/Jul/2025:16:04:24 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-06 21:34:40 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:34:40 [ERROR]: MySQL query error:
+2025-07-06 21:35:24 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:36:00 [INFO]: ::1 - - [06/Jul/2025:16:06:00 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-07-06 21:36:46 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:36:47 [ERROR]: MySQL query error:
+2025-07-06 21:37:01 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:37:49 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:38:31 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:38:31 [INFO]: ::1 - - [06/Jul/2025:16:08:31 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:38:31 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:18:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+2025-07-06 21:38:31 [INFO]: ::1 - - [06/Jul/2025:16:08:31 +0000] "GET /api/doctor/availability HTTP/1.1" 401 48 "-" "axios/1.9.0"
+2025-07-06 21:39:15 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:39:15 [INFO]: ::1 - - [06/Jul/2025:16:09:15 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:39:15 [INFO]: ::1 - - [06/Jul/2025:16:09:15 +0000] "GET /api/doctor/availability HTTP/1.1" 200 348 "-" "axios/1.9.0"
+2025-07-06 21:39:17 [INFO]: ::1 - - [06/Jul/2025:16:09:17 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 383 "-" "axios/1.9.0"
+2025-07-06 21:39:18 [INFO]: ::1 - - [06/Jul/2025:16:09:18 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 2 "-" "axios/1.9.0"
+2025-07-06 21:39:18 [INFO]: User logged in: test.patient@example.com
+2025-07-06 21:39:18 [INFO]: ::1 - - [06/Jul/2025:16:09:18 +0000] "POST /api/auth/login HTTP/1.1" 200 789 "-" "axios/1.9.0"
+2025-07-06 21:39:19 [INFO]: ::1 - - [06/Jul/2025:16:09:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 19 "-" "axios/1.9.0"
+2025-07-06 21:40:15 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:40:16 [ERROR]: MySQL query error:
+2025-07-06 21:40:50 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:41:34 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:41:47 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:41:47 [INFO]: ::1 - - [06/Jul/2025:16:11:47 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:41:47 [INFO]: ::1 - - [06/Jul/2025:16:11:47 +0000] "GET /api/doctor/availability HTTP/1.1" 200 348 "-" "axios/1.9.0"
+2025-07-06 21:41:48 [INFO]: ::1 - - [06/Jul/2025:16:11:48 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 383 "-" "axios/1.9.0"
+2025-07-06 21:41:48 [INFO]: ::1 - - [06/Jul/2025:16:11:48 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 949 "-" "axios/1.9.0"
+2025-07-06 21:41:49 [INFO]: User logged in: test.patient@example.com
+2025-07-06 21:41:49 [INFO]: ::1 - - [06/Jul/2025:16:11:49 +0000] "POST /api/auth/login HTTP/1.1" 200 789 "-" "axios/1.9.0"
+2025-07-06 21:41:50 [INFO]: ::1 - - [06/Jul/2025:16:11:50 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 42 "-" "axios/1.9.0"
+2025-07-06 21:45:07 [INFO]: Socket.IO server initialized
+2025-07-06 21:45:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:45:18 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:45:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:45:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:45:18 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:45:18 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:45:18 [INFO]: 📊 Environment: development
+2025-07-06 21:45:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:45:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:45:35 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:45:35 [INFO]: ::1 - - [06/Jul/2025:16:15:35 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:45:37 [INFO]: ::1 - - [06/Jul/2025:16:15:37 +0000] "GET /api/doctor/availability HTTP/1.1" 200 348 "-" "axios/1.9.0"
+2025-07-06 21:45:38 [INFO]: ::1 - - [06/Jul/2025:16:15:38 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 383 "-" "axios/1.9.0"
+2025-07-06 21:45:38 [INFO]: ::1 - - [06/Jul/2025:16:15:38 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 949 "-" "axios/1.9.0"
+2025-07-06 21:45:39 [INFO]: User logged in: test.patient@example.com
+2025-07-06 21:45:39 [INFO]: ::1 - - [06/Jul/2025:16:15:39 +0000] "POST /api/auth/login HTTP/1.1" 200 789 "-" "axios/1.9.0"
+2025-07-06 21:45:40 [INFO]: ::1 - - [06/Jul/2025:16:15:40 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 21:46:34 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:46:34 [INFO]: ::1 - - [06/Jul/2025:16:16:34 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:46:35 [INFO]: ::1 - - [06/Jul/2025:16:16:35 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 21:46:35 [INFO]: ::1 - - [06/Jul/2025:16:16:35 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 21:46:36 [INFO]: ::1 - - [06/Jul/2025:16:16:36 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 21:46:36 [INFO]: ::1 - - [06/Jul/2025:16:16:36 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "-" "axios/1.9.0"
+2025-07-06 21:46:37 [INFO]: ::1 - - [06/Jul/2025:16:16:37 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 21:46:38 [INFO]: ::1 - - [06/Jul/2025:16:16:38 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 21:46:42 [INFO]: ::1 - - [06/Jul/2025:16:16:42 +0000] "PUT /api/doctor/appointments/test-appointment-1/call-next HTTP/1.1" 200 41 "-" "axios/1.9.0"
+2025-07-06 21:46:46 [INFO]: ::1 - - [06/Jul/2025:16:16:46 +0000] "PUT /api/doctor/appointments/test-appointment-1/complete HTTP/1.1" 200 49 "-" "axios/1.9.0"
+2025-07-06 21:46:52 [INFO]: ::1 - - [06/Jul/2025:16:16:52 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 949 "-" "axios/1.9.0"
+2025-07-06 21:46:53 [INFO]: User logged in: test.patient@example.com
+2025-07-06 21:46:53 [INFO]: ::1 - - [06/Jul/2025:16:16:53 +0000] "POST /api/auth/login HTTP/1.1" 200 789 "-" "axios/1.9.0"
+2025-07-06 21:46:53 [INFO]: ::1 - - [06/Jul/2025:16:16:53 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 21:47:50 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 21:47:50 [INFO]: ::1 - - [06/Jul/2025:16:17:50 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:47:52 [ERROR]: MySQL query error:
+2025-07-06 21:47:52 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 21:47:55 [ERROR]: MySQL query error:
+2025-07-06 21:47:55 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 21:47:56 [INFO]: ::1 - - [06/Jul/2025:16:17:56 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:47:59 [INFO]: ::1 - - [06/Jul/2025:16:17:59 +0000] "GET /api/doctor/availability HTTP/1.1" 200 453 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:48:03 [INFO]: ::1 - - [06/Jul/2025:16:18:03 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:48:04 [INFO]: ::1 - - [06/Jul/2025:16:18:04 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:48:06 [INFO]: ::1 - - [06/Jul/2025:16:18:06 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:48:09 [INFO]: ::1 - - [06/Jul/2025:16:18:09 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:48:10 [INFO]: ::1 - - [06/Jul/2025:16:18:10 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:49:15 [INFO]: Socket.IO server initialized
+2025-07-06 21:49:17 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:49:17 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:49:17 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:49:17 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:49:17 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:49:17 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:49:17 [INFO]: 📊 Environment: development
+2025-07-06 21:49:17 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:49:17 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:49:50 [INFO]: ::1 - - [06/Jul/2025:16:19:50 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:49:52 [INFO]: ::1 - - [06/Jul/2025:16:19:52 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:49:54 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 21:49:54 [INFO]: ::1 - - [06/Jul/2025:16:19:54 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:49:56 [ERROR]: MySQL query error:
+2025-07-06 21:49:56 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 21:49:58 [ERROR]: MySQL query error:
+2025-07-06 21:49:58 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 21:49:58 [INFO]: ::1 - - [06/Jul/2025:16:19:58 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:00 [INFO]: ::1 - - [06/Jul/2025:16:20:00 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:01 [INFO]: ::1 - - [06/Jul/2025:16:20:01 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:01 [INFO]: ::1 - - [06/Jul/2025:16:20:01 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:04 [INFO]: ::1 - - [06/Jul/2025:16:20:04 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:05 [INFO]: ::1 - - [06/Jul/2025:16:20:05 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:06 [INFO]: ::1 - - [06/Jul/2025:16:20:06 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:07 [INFO]: ::1 - - [06/Jul/2025:16:20:07 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:15 [INFO]: ::1 - - [06/Jul/2025:16:20:15 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:15 [INFO]: ::1 - - [06/Jul/2025:16:20:15 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:24 [INFO]: ::1 - - [06/Jul/2025:16:20:24 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:30 [INFO]: ::1 - - [06/Jul/2025:16:20:30 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:33 [INFO]: ::1 - - [06/Jul/2025:16:20:33 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:50:39 [INFO]: ::1 - - [06/Jul/2025:16:20:39 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:51:00 [INFO]: ::1 - - [06/Jul/2025:16:21:00 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:51:09 [INFO]: ::1 - - [06/Jul/2025:16:21:09 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:52:01 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:52:01 [INFO]: ::1 - - [06/Jul/2025:16:22:01 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:52:01 [INFO]: ::1 - - [06/Jul/2025:16:22:01 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 21:52:02 [INFO]: ::1 - - [06/Jul/2025:16:22:02 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 21:52:02 [INFO]: ::1 - - [06/Jul/2025:16:22:02 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 54 "-" "axios/1.9.0"
+2025-07-06 21:52:03 [INFO]: ::1 - - [06/Jul/2025:16:22:03 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 48 "-" "axios/1.9.0"
+2025-07-06 21:52:03 [INFO]: ::1 - - [06/Jul/2025:16:22:03 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 21:52:04 [INFO]: ::1 - - [06/Jul/2025:16:22:04 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 21:52:06 [INFO]: ::1 - - [06/Jul/2025:16:22:06 +0000] "PUT /api/doctor/appointments/test-appointment-1/call-next HTTP/1.1" 200 41 "-" "axios/1.9.0"
+2025-07-06 21:52:07 [INFO]: ::1 - - [06/Jul/2025:16:22:07 +0000] "PUT /api/doctor/appointments/test-appointment-1/complete HTTP/1.1" 200 49 "-" "axios/1.9.0"
+2025-07-06 21:52:08 [INFO]: ::1 - - [06/Jul/2025:16:22:08 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 949 "-" "axios/1.9.0"
+2025-07-06 21:52:09 [INFO]: User logged in: test.patient@example.com
+2025-07-06 21:52:09 [INFO]: ::1 - - [06/Jul/2025:16:22:09 +0000] "POST /api/auth/login HTTP/1.1" 200 789 "-" "axios/1.9.0"
+2025-07-06 21:52:10 [INFO]: ::1 - - [06/Jul/2025:16:22:10 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 21:55:02 [INFO]: Socket.IO server initialized
+2025-07-06 21:55:12 [ERROR]: ❌ MySQL connection failed:
+2025-07-06 21:55:12 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-07-06 21:55:12 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:55:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:55:12 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:55:12 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:55:12 [INFO]: 📊 Environment: development
+2025-07-06 21:55:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:55:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:55:30 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 21:55:30 [INFO]: ::1 - - [06/Jul/2025:16:25:30 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 21:55:31 [INFO]: ::1 - - [06/Jul/2025:16:25:31 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 21:55:32 [INFO]: ::1 - - [06/Jul/2025:16:25:32 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 40 "-" "axios/1.9.0"
+2025-07-06 21:55:33 [INFO]: ::1 - - [06/Jul/2025:16:25:33 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 383 "-" "axios/1.9.0"
+2025-07-06 21:56:49 [INFO]: Socket.IO server initialized
+2025-07-06 21:57:12 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:57:12 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:57:12 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:57:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:57:12 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:57:12 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:57:12 [INFO]: 📊 Environment: development
+2025-07-06 21:57:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:57:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:57:18 [INFO]: Socket.IO server initialized
+2025-07-06 21:57:33 [INFO]: Socket.IO server initialized
+2025-07-06 21:57:42 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:57:42 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:57:42 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:57:42 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:57:42 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:57:42 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:57:42 [INFO]: 📊 Environment: development
+2025-07-06 21:57:42 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:57:42 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:58:12 [INFO]: Socket.IO server initialized
+2025-07-06 21:58:18 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:58:18 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:58:18 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:58:18 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:58:18 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:58:18 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:58:18 [INFO]: 📊 Environment: development
+2025-07-06 21:58:18 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:58:18 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:58:37 [INFO]: Socket.IO server initialized
+2025-07-06 21:58:45 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:58:45 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:58:45 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:58:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:58:45 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:58:45 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:58:45 [INFO]: 📊 Environment: development
+2025-07-06 21:58:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:58:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 21:59:04 [INFO]: ::1 - - [06/Jul/2025:16:29:04 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:59:07 [INFO]: ::1 - - [06/Jul/2025:16:29:07 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:59:22 [INFO]: ::1 - - [06/Jul/2025:16:29:22 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 21:59:24 [INFO]: Socket.IO server initialized
+2025-07-06 21:59:32 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 21:59:32 [INFO]: ✅ MySQL connected successfully
+2025-07-06 21:59:32 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 21:59:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 21:59:32 [INFO]: 📧 Notification service skipped for now
+2025-07-06 21:59:32 [INFO]: 🚀 Server running on port 5000
+2025-07-06 21:59:32 [INFO]: 📊 Environment: development
+2025-07-06 21:59:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 21:59:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 22:00:03 [INFO]: Socket.IO server initialized
+2025-07-06 22:00:06 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 22:00:06 [INFO]: ✅ MySQL connected successfully
+2025-07-06 22:00:06 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 22:00:06 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 22:00:06 [INFO]: 📧 Notification service skipped for now
+2025-07-06 22:00:06 [INFO]: 🚀 Server running on port 5000
+2025-07-06 22:00:06 [INFO]: 📊 Environment: development
+2025-07-06 22:00:06 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 22:00:06 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 22:00:36 [INFO]: Socket.IO server initialized
+2025-07-06 22:00:45 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 22:00:45 [INFO]: ✅ MySQL connected successfully
+2025-07-06 22:00:45 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 22:00:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 22:00:45 [INFO]: 📧 Notification service skipped for now
+2025-07-06 22:00:45 [INFO]: 🚀 Server running on port 5000
+2025-07-06 22:00:45 [INFO]: 📊 Environment: development
+2025-07-06 22:00:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 22:00:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 22:01:18 [INFO]: Socket.IO server initialized
+2025-07-06 22:01:21 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 22:01:21 [INFO]: ✅ MySQL connected successfully
+2025-07-06 22:01:21 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 22:01:21 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 22:01:21 [INFO]: 📧 Notification service skipped for now
+2025-07-06 22:01:21 [INFO]: 🚀 Server running on port 5000
+2025-07-06 22:01:21 [INFO]: 📊 Environment: development
+2025-07-06 22:01:21 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 22:01:21 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 22:01:30 [INFO]: Socket.IO server initialized
+2025-07-06 22:01:38 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 22:01:38 [INFO]: ✅ MySQL connected successfully
+2025-07-06 22:01:38 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 22:01:38 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 22:01:38 [INFO]: 📧 Notification service skipped for now
+2025-07-06 22:01:38 [INFO]: 🚀 Server running on port 5000
+2025-07-06 22:01:38 [INFO]: 📊 Environment: development
+2025-07-06 22:01:38 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 22:01:38 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 22:02:33 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 22:02:33 [INFO]: ::1 - - [06/Jul/2025:16:32:33 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 22:02:34 [INFO]: ::1 - - [06/Jul/2025:16:32:34 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "-" "axios/1.9.0"
+2025-07-06 22:02:35 [INFO]: ::1 - - [06/Jul/2025:16:32:35 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "-" "axios/1.9.0"
+2025-07-06 22:02:36 [INFO]: ::1 - - [06/Jul/2025:16:32:36 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 407 "-" "axios/1.9.0"
+2025-07-06 22:04:12 [INFO]: Socket.IO server initialized
+2025-07-06 22:04:14 [INFO]: Socket.IO server initialized
+2025-07-06 22:04:22 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 22:04:22 [INFO]: ✅ MySQL connected successfully
+2025-07-06 22:04:23 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 22:04:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 22:04:23 [INFO]: 📧 Notification service skipped for now
+2025-07-06 22:04:23 [INFO]: 🚀 Server running on port 5000
+2025-07-06 22:04:23 [INFO]: 📊 Environment: development
+2025-07-06 22:04:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 22:04:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 22:05:14 [INFO]: User logged in: test.doctor@example.com
+2025-07-06 22:05:14 [INFO]: ::1 - - [06/Jul/2025:16:35:14 +0000] "POST /api/auth/login HTTP/1.1" 200 799 "-" "axios/1.9.0"
+2025-07-06 22:05:15 [INFO]: ::1 - - [06/Jul/2025:16:35:15 +0000] "GET /api/doctor/availability HTTP/1.1" 200 370 "-" "axios/1.9.0"
+2025-07-06 22:05:15 [INFO]: ::1 - - [06/Jul/2025:16:35:15 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 69 "-" "axios/1.9.0"
+2025-07-06 22:05:16 [INFO]: ::1 - - [06/Jul/2025:16:35:16 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 69 "-" "axios/1.9.0"
+2025-07-06 22:05:16 [INFO]: ::1 - - [06/Jul/2025:16:35:16 +0000] "PUT /api/doctor/availability/working-hours HTTP/1.1" 200 63 "-" "axios/1.9.0"
+2025-07-06 22:05:18 [INFO]: ::1 - - [06/Jul/2025:16:35:18 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 407 "-" "axios/1.9.0"
+2025-07-06 22:05:18 [INFO]: ::1 - - [06/Jul/2025:16:35:18 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "-" "axios/1.9.0"
+2025-07-06 22:05:19 [INFO]: ::1 - - [06/Jul/2025:16:35:19 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "-" "axios/1.9.0"
+2025-07-06 22:05:20 [INFO]: ::1 - - [06/Jul/2025:16:35:20 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 973 "-" "axios/1.9.0"
+2025-07-06 22:05:22 [INFO]: ::1 - - [06/Jul/2025:16:35:22 +0000] "PUT /api/doctor/appointments/test-appointment-3/call-next HTTP/1.1" 200 56 "-" "axios/1.9.0"
+2025-07-06 22:05:23 [INFO]: ::1 - - [06/Jul/2025:16:35:23 +0000] "PUT /api/doctor/appointments/test-appointment-3/complete HTTP/1.1" 200 64 "-" "axios/1.9.0"
+2025-07-06 22:05:24 [INFO]: User logged in: test.patient@example.com
+2025-07-06 22:05:24 [INFO]: ::1 - - [06/Jul/2025:16:35:24 +0000] "POST /api/auth/login HTTP/1.1" 200 789 "-" "axios/1.9.0"
+2025-07-06 22:05:25 [INFO]: ::1 - - [06/Jul/2025:16:35:25 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 - "-" "axios/1.9.0"
+2025-07-06 22:07:34 [INFO]: User logged out: doctor@gmail.com
+2025-07-06 22:07:34 [INFO]: ::1 - - [06/Jul/2025:16:37:34 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:37 [INFO]: ::1 - - [06/Jul/2025:16:37:37 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:42 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 22:07:42 [INFO]: ::1 - - [06/Jul/2025:16:37:42 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:45 [ERROR]: MySQL query error:
+2025-07-06 22:07:45 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 22:07:46 [ERROR]: MySQL query error:
+2025-07-06 22:07:46 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 22:07:46 [INFO]: ::1 - - [06/Jul/2025:16:37:46 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:56 [INFO]: ::1 - - [06/Jul/2025:16:37:56 +0000] "GET /api/doctor/availability HTTP/1.1" 200 479 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:57 [INFO]: ::1 - - [06/Jul/2025:16:37:57 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 200 26 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:57 [INFO]: ::1 - - [06/Jul/2025:16:37:57 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 422 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:58 [INFO]: ::1 - - [06/Jul/2025:16:37:58 +0000] "GET /api/doctor/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:59 [INFO]: ::1 - - [06/Jul/2025:16:37:59 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:07:59 [INFO]: ::1 - - [06/Jul/2025:16:37:59 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:04 [INFO]: ::1 - - [06/Jul/2025:16:38:04 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:06 [INFO]: ::1 - - [06/Jul/2025:16:38:06 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:09 [INFO]: ::1 - - [06/Jul/2025:16:38:09 +0000] "PUT /api/doctor/availability/status HTTP/1.1" 200 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:14 [INFO]: ::1 - - [06/Jul/2025:16:38:14 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:17 [INFO]: ::1 - - [06/Jul/2025:16:38:17 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:20 [INFO]: ::1 - - [06/Jul/2025:16:38:20 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:24 [INFO]: ::1 - - [06/Jul/2025:16:38:24 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:26 [INFO]: ::1 - - [06/Jul/2025:16:38:26 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:29 [INFO]: User logged out: doctor@gmail.com
+2025-07-06 22:08:29 [INFO]: ::1 - - [06/Jul/2025:16:38:29 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 22:08:31 [INFO]: ::1 - - [06/Jul/2025:16:38:31 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"

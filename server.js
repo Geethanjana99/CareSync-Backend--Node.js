@@ -45,6 +45,8 @@ const adminRoutes = require('./routes/admin');
 const billingRoutes = require('./routes/billing');
 const docsRoutes = require('./routes/docs');
 const indexRoutes = require('./routes/index');
+const doctorQueueRoutes = require('./routes/doctorQueue');
+const patientQueueRoutes = require('./routes/patientQueue');
 
 const app = express();
 const server = createServer(app);
@@ -129,6 +131,8 @@ app.use('/api/patients', patientRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.use('/api/appointments', appointmentRoutes);
 // app.use('/api/queue', authMiddleware, queueRoutes); // TODO: Create queue routes
+app.use('/api/doctor', doctorQueueRoutes);
+app.use('/api/patient', patientQueueRoutes);
 app.use('/api/billing', billingRoutes);
 app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes

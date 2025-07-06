@@ -4,15 +4,19 @@ const logger = require('../config/logger');
 
 const authMiddleware = async (req, res, next) => {
   try {
-    const token = req.header('Authorization')?.replace('Bearer ', '');
+    const authHeader = req.header('Authorization');
+    const token = authHeader?.replace('Bearer ', '');
     
     if (!token) {
       return res.status(401).json({
         success: false,
         message: 'No token provided, authorization denied'
       });
-    }    // Verify token
+    }
+    
+    // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    console.log('🔍 Decoded token:', decoded);
     
     // Get user from database
     const query = `
@@ -25,7 +29,10 @@ const authMiddleware = async (req, res, next) => {
       WHERE u.id = ? AND u.is_active = true
     `;
     
-    const users = await mysqlConnection.query(query, [decoded.userId]);
+    const userId = decoded.id || decoded.userId || decoded.sub;
+    console.log('🔍 Using userId:', userId);
+    
+    const users = await mysqlConnection.query(query, [userId]);
     
     if (users.length === 0) {
       return res.status(401).json({
