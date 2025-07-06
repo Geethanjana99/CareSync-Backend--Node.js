@@ -31,7 +31,7 @@ class AuthController {
   // Register new user
   static async register(req, res) {
     try {
-      const { name, email, password, role, phone, profileData } = req.body;
+      const { name, email, password, role, phone, patientData, doctorData } = req.body;
 
       // Check if user already exists
       const existingUser = await User.findByEmail(email);
@@ -55,50 +55,58 @@ class AuthController {
       };
 
       const user = new User(userData);
-      await user.save();      // Create role-specific profile
-      if (role === 'patient') {
-        // Create basic patient profile with minimal data
-        const patientData = {
+      await user.save();
+
+      // Create role-specific profile
+      if (role === 'patient' && patientData) {
+        const patientProfileData = {
           user_id: user.id,
-          gender: profileData?.gender || null,
-          date_of_birth: profileData?.date_of_birth || null,
-          address: profileData?.address || null,
-          emergency_contact_name: profileData?.emergency_contact_name || null,
-          emergency_contact_phone: profileData?.emergency_contact_phone || null,
-          preferred_language: profileData?.preferred_language || 'English'
+          date_of_birth: patientData.date_of_birth || null,
+          gender: patientData.gender || null,
+          address: patientData.address || null,
+          emergency_contact_name: patientData.emergency_contact_name || null,
+          emergency_contact_phone: patientData.emergency_contact_phone || null,
+          medical_history: patientData.medical_history || null,
+          allergies: patientData.allergies || null,
+          current_medications: patientData.current_medications || null,
+          insurance_provider: patientData.insurance_provider || null,
+          insurance_policy_number: patientData.insurance_policy_number || null,
+          blood_type: patientData.blood_type || null,
+          height: patientData.height || null,
+          weight: patientData.weight || null,
+          occupation: patientData.occupation || null,
+          marital_status: patientData.marital_status || null,
+          preferred_language: patientData.preferred_language || 'English'
         };
-        const patient = new Patient(patientData);
+        const patient = new Patient(patientProfileData);
         await patient.save();
-        logger.info(`Patient profile created for user: ${user.id}`);      } else if (role === 'doctor' && profileData) {
-        console.log('ProfileData received:', JSON.stringify(profileData, null, 2)); // Debug log
-        console.log('specialization value:', profileData.specialization);
-        console.log('specialty value:', profileData.specialty);
+        logger.info(`Patient profile created for user: ${user.id}`);
         
-        const specialty = profileData.specialization || profileData.specialty;
-        console.log('Final specialty value:', specialty);
+      } else if (role === 'doctor' && doctorData) {
+        console.log('DoctorData received:', JSON.stringify(doctorData, null, 2)); // Debug log
         
-        if (!specialty) {
+        if (!doctorData.specialty) {
           return res.status(400).json({
             success: false,
             message: 'Specialty is required for doctor registration'
           });
         }
         
-        const doctorData = {
+        const doctorProfileData = {
           user_id: user.id,
-          specialty: specialty,
-          license_number: profileData.license_number,
-          years_of_experience: profileData.experience_years || profileData.years_of_experience,
-          education: profileData.education,
-          certifications: profileData.certifications,
-          consultation_fee: profileData.consultation_fee,
-          languages_spoken: profileData.languages_spoken,
-          office_address: profileData.office_address,
-          bio: profileData.bio,
-          working_hours: profileData.working_hours
+          specialty: doctorData.specialty,
+          license_number: doctorData.license_number,
+          years_of_experience: doctorData.years_of_experience || null,
+          education: doctorData.education || null,
+          certifications: doctorData.certifications || null,
+          consultation_fee: doctorData.consultation_fee || null,
+          languages_spoken: doctorData.languages_spoken || null,
+          office_address: doctorData.office_address || null,
+          bio: doctorData.bio || null,
+          working_hours: doctorData.working_hours || null
         };
-        console.log('DoctorData being saved:', JSON.stringify(doctorData, null, 2)); // Debug log
-        const doctor = new Doctor(doctorData);
+        console.log('DoctorProfileData being saved:', JSON.stringify(doctorProfileData, null, 2)); // Debug log
+        const doctor = new Doctor(doctorProfileData);
         await doctor.save();
         logger.info(`Doctor profile created for user: ${user.id}`);
       }      // Don't generate tokens on registration - user must login explicitly

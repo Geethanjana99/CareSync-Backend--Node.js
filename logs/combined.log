@@ -144,3 +144,65 @@
 2025-07-06 11:59:56 [INFO]: ::1 - - [06/Jul/2025:06:29:56 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 2025-07-06 11:59:56 [INFO]: ::1 - - [06/Jul/2025:06:29:56 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 2025-07-06 12:00:00 [INFO]: ::1 - - [06/Jul/2025:06:30:00 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:05:03 [INFO]: User logged out: miyuru@gmail.com
+2025-07-06 12:05:03 [INFO]: ::1 - - [06/Jul/2025:06:35:03 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:05:03 [INFO]: ::1 - - [06/Jul/2025:06:35:03 +0000] "GET /api/auth/profile HTTP/1.1" 200 899 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:05:42 [INFO]: ::1 - - [06/Jul/2025:06:35:42 +0000] "POST /api/auth/register HTTP/1.1" 400 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:05:49 [INFO]: New user registered: chanuth123@gmail.com with role: billing
+2025-07-06 12:05:49 [INFO]: ::1 - - [06/Jul/2025:06:35:49 +0000] "POST /api/auth/register HTTP/1.1" 201 245 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:05:55 [INFO]: User logged in: chanuth123@gmail.com
+2025-07-06 12:05:55 [INFO]: ::1 - - [06/Jul/2025:06:35:55 +0000] "POST /api/auth/login HTTP/1.1" 200 833 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:06:46 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 12:06:47 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 12:06:48 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 12:07:17 [INFO]: ::1 - - [06/Jul/2025:06:37:17 +0000] "GET /api/auth/profile HTTP/1.1" 200 906 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 13:06:26 [INFO]: Socket.IO server initialized
+2025-07-06 13:06:26 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 13:06:26 [INFO]: ✅ MySQL connected successfully
+2025-07-06 13:06:27 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 13:06:27 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 13:06:27 [INFO]: 📧 Notification service skipped for now
+2025-07-06 13:06:27 [INFO]: 🚀 Server running on port 5000
+2025-07-06 13:06:27 [INFO]: 📊 Environment: development
+2025-07-06 13:06:27 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 13:06:27 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 13:06:53 [INFO]: Patient profile created for user: 15d83ba1-79cf-4906-9870-2f80b306a5bc
+2025-07-06 13:06:53 [INFO]: New user registered: john.doe.test@example.com with role: patient
+2025-07-06 13:06:53 [INFO]: ::1 - - [06/Jul/2025:07:36:53 +0000] "POST /api/auth/register HTTP/1.1" 201 259 "-" "axios/1.9.0"
+2025-07-06 13:06:53 [INFO]: New user registered: dr.sarah.smith.test@example.com with role: doctor
+2025-07-06 13:06:53 [INFO]: ::1 - - [06/Jul/2025:07:36:53 +0000] "POST /api/auth/register HTTP/1.1" 201 271 "-" "axios/1.9.0"
+2025-07-06 13:06:54 [INFO]: New user registered: admin.test@example.com with role: admin
+2025-07-06 13:06:54 [INFO]: ::1 - - [06/Jul/2025:07:36:54 +0000] "POST /api/auth/register HTTP/1.1" 201 256 "-" "axios/1.9.0"
+2025-07-06 13:27:09 [INFO]: ::1 - - [06/Jul/2025:07:57:09 +0000] "POST /api/auth/register HTTP/1.1" 400 65 "-" "axios/1.9.0"
+2025-07-06 13:27:48 [INFO]: Patient profile created for user: 1f3026a7-15b3-44ae-b5d2-148515744933
+2025-07-06 13:27:48 [INFO]: New user registered: john.doe.updated@example.com with role: patient
+2025-07-06 13:27:48 [INFO]: ::1 - - [06/Jul/2025:07:57:48 +0000] "POST /api/auth/register HTTP/1.1" 201 270 "-" "axios/1.9.0"
+2025-07-06 13:27:48 [INFO]: New user registered: dr.sarah.smith.updated@example.com with role: doctor
+2025-07-06 13:27:48 [INFO]: ::1 - - [06/Jul/2025:07:57:48 +0000] "POST /api/auth/register HTTP/1.1" 201 282 "-" "axios/1.9.0"
+2025-07-06 13:27:48 [INFO]: New user registered: admin.updated@example.com with role: admin
+2025-07-06 13:27:48 [INFO]: ::1 - - [06/Jul/2025:07:57:48 +0000] "POST /api/auth/register HTTP/1.1" 201 267 "-" "axios/1.9.0"
+2025-07-06 13:31:02 [INFO]: Socket.IO server initialized
+2025-07-06 13:31:02 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 13:33:10 [INFO]: Socket.IO server initialized
+2025-07-06 13:33:11 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 13:33:11 [INFO]: ✅ MySQL connected successfully
+2025-07-06 13:33:11 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 13:33:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 13:33:11 [INFO]: 📧 Notification service skipped for now
+2025-07-06 13:33:11 [INFO]: 🚀 Server running on port 5000
+2025-07-06 13:33:11 [INFO]: 📊 Environment: development
+2025-07-06 13:33:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 13:33:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 13:33:46 [INFO]: Doctor profile created for user: 1de93edd-f90c-411b-9f60-fbb9ad80e09f
+2025-07-06 13:33:46 [INFO]: New user registered: dr.debug.test@example.com with role: doctor
+2025-07-06 13:33:46 [INFO]: ::1 - - [06/Jul/2025:08:03:46 +0000] "POST /api/auth/register HTTP/1.1" 201 264 "-" "axios/1.9.0"
+2025-07-06 13:43:43 [INFO]: Socket.IO server initialized
+2025-07-06 13:43:45 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 13:43:45 [INFO]: ✅ MySQL connected successfully
+2025-07-06 13:43:45 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 13:43:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 13:43:45 [INFO]: 📧 Notification service skipped for now
+2025-07-06 13:43:45 [INFO]: 🚀 Server running on port 5000
+2025-07-06 13:43:45 [INFO]: 📊 Environment: development
+2025-07-06 13:43:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 13:43:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
