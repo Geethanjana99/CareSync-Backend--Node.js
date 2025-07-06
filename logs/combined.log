@@ -70,3 +70,77 @@
 2025-07-02 10:18:48 [INFO]: ::1 - - [02/Jul/2025:04:48:48 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 2025-07-02 10:18:48 [INFO]: ::1 - - [02/Jul/2025:04:48:48 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 2025-07-02 10:18:48 [INFO]: ::1 - - [02/Jul/2025:04:48:48 +0000] "POST /api/mock/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:53:11 [INFO]: Socket.IO server initialized
+2025-07-06 11:53:12 [INFO]: ✅ MySQL database connected successfully
+2025-07-06 11:53:12 [INFO]: ✅ MySQL connected successfully
+2025-07-06 11:53:12 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 11:53:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-07-06 11:53:12 [INFO]: 📧 Notification service skipped for now
+2025-07-06 11:53:12 [INFO]: 🚀 Server running on port 5000
+2025-07-06 11:53:12 [INFO]: 📊 Environment: development
+2025-07-06 11:53:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-07-06 11:53:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-07-06 11:57:37 [INFO]: ::1 - - [06/Jul/2025:06:27:37 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:57:40 [INFO]: ::1 - - [06/Jul/2025:06:27:40 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:57:44 [INFO]: User logged in: doctor@gmail.com
+2025-07-06 11:57:44 [INFO]: ::1 - - [06/Jul/2025:06:27:44 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:57:45 [ERROR]: MySQL query error:
+2025-07-06 11:57:45 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:45 [ERROR]: MySQL query error:
+2025-07-06 11:57:45 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:45 [INFO]: ::1 - - [06/Jul/2025:06:27:45 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:57:56 [ERROR]: MySQL query error:
+2025-07-06 11:57:56 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:56 [ERROR]: MySQL query error:
+2025-07-06 11:57:56 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:56 [INFO]: ::1 - - [06/Jul/2025:06:27:56 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:57:58 [INFO]: User logged out: doctor@gmail.com
+2025-07-06 11:57:58 [INFO]: ::1 - - [06/Jul/2025:06:27:58 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:57:58 [INFO]: ::1 - - [06/Jul/2025:06:27:58 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:03 [INFO]: User logged in: kashmila@gmail.com
+2025-07-06 11:58:03 [INFO]: ::1 - - [06/Jul/2025:06:28:03 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:04 [INFO]: ::1 - - [06/Jul/2025:06:28:04 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:07 [INFO]: ::1 - - [06/Jul/2025:06:28:07 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:13 [INFO]: ::1 - - [06/Jul/2025:06:28:13 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:20 [INFO]: User logged out: kashmila@gmail.com
+2025-07-06 11:58:20 [INFO]: ::1 - - [06/Jul/2025:06:28:20 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:20 [INFO]: ::1 - - [06/Jul/2025:06:28:20 +0000] "GET /api/auth/profile HTTP/1.1" 200 971 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:26 [INFO]: User logged in: miyuru@gmail.com
+2025-07-06 11:58:26 [INFO]: ::1 - - [06/Jul/2025:06:28:26 +0000] "POST /api/auth/login HTTP/1.1" 200 826 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:26 [INFO]: ::1 - - [06/Jul/2025:06:28:26 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:58:29 [INFO]: ::1 - - [06/Jul/2025:06:28:29 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:08 [INFO]: ::1 - - [06/Jul/2025:06:29:08 +0000] "POST /api/mock/patients HTTP/1.1" 201 506 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:14 [INFO]: ::1 - - [06/Jul/2025:06:29:14 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:18 [INFO]: ::1 - - [06/Jul/2025:06:29:18 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:18 [INFO]: ::1 - - [06/Jul/2025:06:29:18 +0000] "GET /api/auth/profile HTTP/1.1" 200 899 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:36 [INFO]: User logged in: miyuru@gmail.com
+2025-07-06 11:59:36 [INFO]: ::1 - - [06/Jul/2025:06:29:36 +0000] "POST /api/auth/login HTTP/1.1" 200 826 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:36 [INFO]: ::1 - - [06/Jul/2025:06:29:36 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:44 [INFO]: ::1 - - [06/Jul/2025:06:29:44 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:47 [INFO]: ::1 - - [06/Jul/2025:06:29:47 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:49 [INFO]: ::1 - - [06/Jul/2025:06:29:49 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:49 [INFO]: ::1 - - [06/Jul/2025:06:29:49 +0000] "GET /api/mock/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:51 [INFO]: ::1 - - [06/Jul/2025:06:29:51 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:56 [INFO]: ::1 - - [06/Jul/2025:06:29:56 +0000] "GET /api/mock/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 11:59:56 [INFO]: ::1 - - [06/Jul/2025:06:29:56 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-06 12:00:00 [INFO]: ::1 - - [06/Jul/2025:06:30:00 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"

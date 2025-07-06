@@ -22,3 +22,32 @@
     at Module.load (node:internal/modules/cjs/loader:1465:32)
     at Function._load (node:internal/modules/cjs/loader:1282:12)
 2025-07-02 10:15:50 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 11:53:12 [ERROR]: ❌ MongoDB connection failed:
+2025-07-06 11:57:45 [ERROR]: MySQL query error:
+2025-07-06 11:57:45 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:45 [ERROR]: MySQL query error:
+2025-07-06 11:57:45 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:56 [ERROR]: MySQL query error:
+2025-07-06 11:57:56 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-07-06 11:57:56 [ERROR]: MySQL query error:
+2025-07-06 11:57:56 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
