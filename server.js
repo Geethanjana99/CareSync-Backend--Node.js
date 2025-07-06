@@ -6,7 +6,16 @@ const morgan = require('morgan');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 require('express-async-errors');
-require('dotenv').config();
+
+// Load environment variables with explicit path
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
+console.log('🔍 Server startup environment check:');
+console.log('Current working directory:', process.cwd());
+console.log('__dirname:', __dirname);
+console.log('JWT_SECRET loaded:', !!process.env.JWT_SECRET);
+console.log('NODE_ENV:', process.env.NODE_ENV);
 
 // Import configurations
 const connectMySQL = require('./config/mysql');
@@ -33,6 +42,7 @@ const doctorRoutes = require('./routes/doctors');
 const appointmentRoutes = require('./routes/appointments');
 const medicalReportsRoutes = require('./routes/medical-reports');
 const adminRoutes = require('./routes/admin');
+const billingRoutes = require('./routes/billing');
 const docsRoutes = require('./routes/docs');
 const indexRoutes = require('./routes/index');
 
@@ -108,18 +118,30 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/auth', authRoutes);
+
+// Public doctor search endpoint (no authentication required) - MUST come before protected doctor routes
+const PatientController = require('./controllers/patientController');
+app.get('/api/doctors/search', PatientController.searchDoctors);
+
+// Protected routes
 // app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
 app.use('/api/patients', patientRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.use('/api/appointments', appointmentRoutes);
 // app.use('/api/queue', authMiddleware, queueRoutes); // TODO: Create queue routes
-// app.use('/api/billing', authMiddleware, billingRoutes); // TODO: Create billing routes
+app.use('/api/billing', billingRoutes);
 app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
 app.use('/api/admin', adminRoutes);
 
-// Serve uploaded files
+// Temporary mock routes for testing (no authentication required)
+app.use('/api/mock/auth', require('./routes/mock-auth'));
+app.use('/api/mock/patients', require('./routes/mock-patients'));
+app.use('/api/mock/doctors', require('./routes/mock-doctors'));
+app.use('/api/mock/appointments', require('./routes/mock-appointments'));
+
+// Serve static files for uploads
 app.use('/uploads', express.static('uploads'));
 
 // 404 handler

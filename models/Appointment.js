@@ -1,5 +1,6 @@
 const { mysqlConnection } = require('../config/mysql');
 const { v4: uuidv4 } = require('uuid');
+const Queue = require('./Queue');
 
 class Appointment {
   constructor(appointmentData) {
@@ -11,7 +12,7 @@ class Appointment {
     this.appointment_time = appointmentData.appointment_time;
     this.duration = appointmentData.duration || 30;
     this.appointment_type = appointmentData.appointment_type;
-    this.status = appointmentData.status || 'scheduled';
+    this.status = appointmentData.status || 'pending';
     this.reason_for_visit = appointmentData.reason_for_visit;
     this.symptoms = appointmentData.symptoms;
     this.priority = appointmentData.priority || 'medium';
@@ -24,7 +25,139 @@ class Appointment {
     this.estimated_wait_time = appointmentData.estimated_wait_time;
     this.actual_wait_time = appointmentData.actual_wait_time;
     this.consultation_fee = appointmentData.consultation_fee;
+    // Queue-based fields
+    this.queue_number = appointmentData.queue_number;
+    this.is_emergency = appointmentData.is_emergency || false;
+    this.queue_date = appointmentData.queue_date || appointmentData.appointment_date;
   }
+
+  // Create queue-based appointment
+  static async createQueueAppointment(appointmentData) {
+    try {
+      const appointment = new Appointment(appointmentData);
+      
+      // Generate appointment ID if not provided
+      if (!appointment.appointment_id) {
+        appointment.appointment_id = await appointment.generateAppointmentId();
+      }
+
+      // Set queue date to appointment date
+      appointment.queue_date = appointment.appointment_date;
+
+      // Get next queue number
+      appointment.queue_number = await Queue.getNextQueueNumber(
+        appointment.doctor_id, 
+        appointment.is_emergency,
+        appointment.queue_date
+      );
+
+      // For queue-based appointments, we don't need specific appointment_time
+      // Set a default time or null since queue determines the order
+      appointment.appointment_time = appointment.appointment_time || null;
+
+      const query = `
+        INSERT INTO appointments (
+          id, appointment_id, patient_id, doctor_id, appointment_date,
+          appointment_type, status, reason_for_visit, symptoms, priority,
+          notes, consultation_fee, queue_number, is_emergency, queue_date
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      `;
+
+      // Ensure all required fields have values (no undefined)
+      const params = [
+        appointment.id, 
+        appointment.appointment_id, 
+        appointment.patient_id, 
+        appointment.doctor_id,
+        appointment.appointment_date, 
+        appointment.appointment_type || 'consultation', 
+        appointment.status || 'scheduled',
+        appointment.reason_for_visit || '',
+        appointment.symptoms || '',
+        appointment.priority || 'normal',
+        appointment.notes || '',
+        appointment.consultation_fee || 0,
+        appointment.queue_number,
+        appointment.is_emergency ? 1 : 0,
+        appointment.queue_date
+      ];
+
+      // Debug: Check for undefined parameters
+      console.log('🔍 Appointment creation parameters:');
+      params.forEach((param, index) => {
+        if (param === undefined) {
+          console.log(`❌ Parameter ${index} is undefined`);
+        }
+      });
+      console.log('📋 Appointment data:', {
+        id: appointment.id,
+        appointment_id: appointment.appointment_id,
+        patient_id: appointment.patient_id,
+        doctor_id: appointment.doctor_id,
+        appointment_date: appointment.appointment_date,
+        appointment_type: appointment.appointment_type,
+        status: appointment.status,
+        queue_number: appointment.queue_number,
+        is_emergency: appointment.is_emergency
+      });
+
+      await mysqlConnection.query(query, params);
+      
+      // Return the appointment object we just created
+      return appointment;
+    } catch (error) {
+      console.error('Error creating queue appointment:', error);
+      throw error;
+    }
+  }
+
+  // Get patient's queue position
+  static async getPatientQueuePosition(patientId, doctorId, date = null) {
+    return await Queue.getPatientQueuePosition(patientId, doctorId, date);
+  }
+
+  // Get doctor's queue for a specific date
+  static async getDoctorQueue(doctorId, date = null) {
+    return await Queue.getDoctorQueue(doctorId, date);
+  }
+
+  // Update appointment status and queue progression
+  static async updateAppointmentStatus(appointmentId, newStatus, notes = null) {
+    try {
+      const appointment = await Appointment.findById(appointmentId);
+      if (!appointment) {
+        throw new Error('Appointment not found');
+      }
+
+      const query = `
+        UPDATE appointments 
+        SET status = ?, 
+            notes = COALESCE(?, notes),
+            ${newStatus === 'completed' ? 'completed_at = CURRENT_TIMESTAMP,' : ''}
+            ${newStatus === 'in-progress' ? 'confirmed_at = CURRENT_TIMESTAMP,' : ''}
+            updated_at = CURRENT_TIMESTAMP
+        WHERE id = ?
+      `;
+
+      await mysqlConnection.query(query, [newStatus, notes, appointmentId]);
+
+      // If starting or completing appointment, update queue current number
+      if (newStatus === 'in-progress') {
+        await Queue.updateCurrentNumber(
+          appointment.doctor_id, 
+          appointment.queue_number, 
+          appointment.is_emergency,
+          appointment.queue_date
+        );
+      }
+
+      return await Appointment.findById(appointmentId);
+    } catch (error) {
+      console.error('Error updating appointment status:', error);
+      throw error;
+    }
+  }
+
   async save() {
     // Generate appointment ID if not provided
     if (!this.appointment_id) {
@@ -33,10 +166,10 @@ class Appointment {
 
     const query = `
       INSERT INTO appointments (
-        id, appointment_id, patient_id, doctor_id, appointment_date, appointment_time,
-        duration, appointment_type, status, reason_for_visit, symptoms, priority,
-        notes, consultation_fee
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        id, appointment_id, patient_id, doctor_id, appointment_date,
+        appointment_type, status, reason_for_visit, symptoms, priority,
+        notes, consultation_fee, queue_number, is_emergency, queue_date
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
     const params = [
@@ -45,15 +178,16 @@ class Appointment {
       this.patient_id, 
       this.doctor_id,
       this.appointment_date, 
-      this.appointment_time, 
-      this.duration || 30,
       this.appointment_type, 
       this.status || 'scheduled', 
       this.reason_for_visit || null,
       this.symptoms || null, 
       this.priority || 'medium', 
       this.notes || null, 
-      this.consultation_fee || null
+      this.consultation_fee || null,
+      this.queue_number || null,
+      this.is_emergency || false,
+      this.queue_date || this.appointment_date
     ];
 
     await mysqlConnection.query(query, params);
@@ -84,7 +218,12 @@ class Appointment {
       LEFT JOIN doctors d ON a.doctor_id = d.id
       LEFT JOIN users du ON d.user_id = du.id
       WHERE a.doctor_id = ? AND DATE(a.appointment_date) = CURDATE()
-      ORDER BY a.appointment_time ASC
+      ORDER BY 
+        a.is_emergency DESC,
+        CASE 
+          WHEN a.is_emergency THEN ABS(a.queue_number)
+          ELSE a.queue_number
+        END ASC
     `;
     
     const results = await mysqlConnection.query(query, [doctorId]);
@@ -145,7 +284,7 @@ class Appointment {
       params.push(filters.priority);
     }
 
-    query += ' ORDER BY a.appointment_date DESC, a.appointment_time DESC';    if (filters.limit) {
+    query += ' ORDER BY a.appointment_date DESC, a.created_at DESC';    if (filters.limit) {
       query += ' LIMIT ?';
       params.push(filters.limit.toString());
     }    if (filters.offset) {
@@ -158,7 +297,7 @@ class Appointment {
 
   async update(updateData) {
     const allowedFields = [
-      'appointment_date', 'appointment_time', 'duration', 'appointment_type',
+      'appointment_date', 'appointment_type',
       'status', 'reason_for_visit', 'symptoms', 'priority', 'notes',
       'cancellation_reason', 'cancelled_by', 'cancelled_at', 'confirmed_at',
       'completed_at', 'estimated_wait_time', 'actual_wait_time', 'consultation_fee'
@@ -507,7 +646,7 @@ class Appointment {
       params.push(endDate);
     }
 
-    query += ' ORDER BY a.appointment_date DESC, a.appointment_time DESC';
+    query += ' ORDER BY a.appointment_date DESC, a.created_at DESC';
     query += ` LIMIT ${parseInt(limit)} OFFSET ${offset}`;
 
     const appointments = await mysqlConnection.query(query, params);
@@ -565,9 +704,8 @@ class Appointment {
       JOIN users u ON d.user_id = u.id
       WHERE a.patient_id = ? 
         AND a.status IN ('scheduled', 'confirmed')
-        AND (a.appointment_date > CURDATE() 
-             OR (a.appointment_date = CURDATE() AND a.appointment_time > CURTIME()))
-      ORDER BY a.appointment_date ASC, a.appointment_time ASC
+        AND a.appointment_date >= CURDATE()
+      ORDER BY a.appointment_date ASC, a.created_at ASC
     `;
 
     const params = [patientId];
@@ -577,6 +715,24 @@ class Appointment {
     }
 
     return await mysqlConnection.query(query, params);
+  }
+
+  // Find appointment by patient, doctor and date
+  static async findByPatientAndDoctorAndDate(patientId, doctorId, date) {
+    try {
+      const query = `
+        SELECT * FROM appointments 
+        WHERE patient_id = ? AND doctor_id = ? AND queue_date = ?
+        ORDER BY created_at DESC 
+        LIMIT 1
+      `;
+      
+      const result = await mysqlConnection.query(query, [patientId, doctorId, date]);
+      return result[0] || null;
+    } catch (error) {
+      console.error('Error finding appointment by patient, doctor and date:', error);
+      throw error;
+    }
   }
 
   // Add medical notes to appointment - for doctor use

@@ -13,6 +13,7 @@ router.get('/dashboard', AdminController.getDashboard);
 
 // User management
 router.get('/users', AdminController.getUsers);
+router.get('/users/patients/names', AdminController.getPatientNames);
 router.get('/users/:userId', AdminController.getUserDetails);
 router.patch('/users/:userId/status', AdminController.updateUserStatus);
 router.post('/users/admin', userValidation.register, AdminController.createAdminUser);
@@ -31,5 +32,8 @@ router.get('/medical-reports', AdminController.getMedicalReports);
 // System statistics and monitoring
 router.get('/statistics', AdminController.getSystemStatistics);
 router.get('/health', AdminController.getSystemHealth);
+
+// Patient names for billing
+router.get('/patient-names', AdminController.getPatientNames);
 
 module.exports = router;
