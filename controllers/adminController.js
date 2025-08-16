@@ -221,6 +221,30 @@ class AdminController {
     }
   }
 
+  // Get all doctors for admin use (e.g., appointment creation)
+  static async getDoctors(req, res, next) {
+    try {
+      const { page = 1, limit = 50, search, specialty } = req.query;
+      
+      const doctors = await Doctor.findAll({
+        search,
+        specialty,
+        limit: parseInt(limit),
+        offset: (parseInt(page) - 1) * parseInt(limit)
+      });
+
+      res.json({
+        success: true,
+        data: {
+          doctors
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching doctors:', error);
+      next(error);
+    }
+  }
+
   // Get doctor performance metrics
   static async getDoctorMetrics(req, res, next) {
     try {

@@ -477,6 +477,85 @@ class Appointment {
     return appointment;
   }
 
+  // Get all appointments with filters and full details
+  static async findAll(filters = {}) {
+    let query = `
+      SELECT a.*, 
+             a.id as appointmentId,
+             p.patient_id, pu.name as patientName, pu.email as patientEmail, 
+             pu.phone as patient_phone, p.date_of_birth, p.gender,
+             d.doctor_id, du.name as doctorName, du.email as doctor_email,
+             d.specialty as doctorSpecialty, d.consultation_fee as doctor_fee,
+             a.appointment_date as appointmentDate,
+             a.queue_number,
+             a.appointment_type as appointmentType,
+             a.reason_for_visit as reasonForVisit
+      FROM appointments a
+      JOIN patients p ON a.patient_id = p.id
+      JOIN users pu ON p.user_id = pu.id
+      JOIN doctors d ON a.doctor_id = d.id
+      JOIN users du ON d.user_id = du.id
+      WHERE 1=1
+    `;
+    
+    const params = [];
+
+    // Apply filters
+    if (filters.patient_id) {
+      query += ' AND a.patient_id = ?';
+      params.push(filters.patient_id);
+    }
+
+    if (filters.doctor_id) {
+      query += ' AND a.doctor_id = ?';
+      params.push(filters.doctor_id);
+    }
+
+    if (filters.status) {
+      if (Array.isArray(filters.status)) {
+        query += ` AND a.status IN (${filters.status.map(() => '?').join(',')})`;
+        params.push(...filters.status);
+      } else {
+        query += ' AND a.status = ?';
+        params.push(filters.status);
+      }
+    }
+
+    if (filters.date_from) {
+      query += ' AND a.appointment_date >= ?';
+      params.push(filters.date_from);
+    }
+
+    if (filters.date_to) {
+      query += ' AND a.appointment_date <= ?';
+      params.push(filters.date_to);
+    }
+
+    if (filters.appointment_type) {
+      query += ' AND a.appointment_type = ?';
+      params.push(filters.appointment_type);
+    }
+
+    if (filters.priority) {
+      query += ' AND a.priority = ?';
+      params.push(filters.priority);
+    }
+
+    // Order by appointment date and queue number
+    query += ' ORDER BY a.appointment_date DESC, a.queue_number ASC';
+
+    // Add pagination
+    if (filters.limit) {
+      query += ` LIMIT ${parseInt(filters.limit)}`;
+      if (filters.offset) {
+        query += ` OFFSET ${parseInt(filters.offset)}`;
+      }
+    }
+    
+    const appointments = await mysqlConnection.query(query, params);
+    return appointments;
+  }
+
   // Get appointment with full details
   static async findWithDetails(appointmentId) {
     const query = `

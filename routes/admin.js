@@ -23,6 +23,7 @@ router.get('/appointments', AdminController.getAppointments);
 router.get('/appointments/statistics', AdminController.getAppointmentStatistics);
 
 // Doctor management
+router.get('/doctors', AdminController.getDoctors);
 router.get('/doctors/metrics', AdminController.getDoctorMetrics);
 router.patch('/doctors/:doctorId/approval', AdminController.approveDoctorRegistration);
 
