@@ -42,6 +42,7 @@ const doctorRoutes = require('./routes/doctors');
 const appointmentRoutes = require('./routes/appointments');
 const medicalReportsRoutes = require('./routes/medical-reports');
 const adminRoutes = require('./routes/admin');
+const adminReportsRoutes = require('./routes/admin-reports');
 const billingRoutes = require('./routes/billing');
 const docsRoutes = require('./routes/docs');
 const indexRoutes = require('./routes/index');
@@ -134,6 +135,7 @@ app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
 app.use('/api/admin', adminRoutes);
+app.use('/api/admin/reports', adminReportsRoutes);
 
 // Temporary mock routes for testing (no authentication required)
 app.use('/api/mock/auth', require('./routes/mock-auth'));
