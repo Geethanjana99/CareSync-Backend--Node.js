@@ -226,12 +226,24 @@ class AdminController {
     try {
       const { page = 1, limit = 50, search, specialty } = req.query;
       
-      const doctors = await Doctor.findAll({
+      const filters = {
         search,
-        specialty,
-        limit: parseInt(limit),
-        offset: (parseInt(page) - 1) * parseInt(limit)
-      });
+        specialty
+      };
+
+      // Only add limit and offset if they are valid numbers
+      const parsedLimit = parseInt(limit);
+      const parsedPage = parseInt(page);
+      
+      if (!isNaN(parsedLimit) && parsedLimit > 0) {
+        filters.limit = parsedLimit;
+      }
+      
+      if (!isNaN(parsedPage) && parsedPage > 0 && !isNaN(parsedLimit)) {
+        filters.offset = (parsedPage - 1) * parsedLimit;
+      }
+
+      const doctors = await Doctor.findAll(filters);
 
       res.json({
         success: true,
