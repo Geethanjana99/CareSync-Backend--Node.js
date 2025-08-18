@@ -6,7 +6,7 @@ const auth = require('../middleware/auth');
 
 // All routes require patient authentication
 router.use(auth.authMiddleware);
-router.use(auth.authorize(['patient']));
+router.use(auth.authorize('patient'));
 
 // Profile management
 router.get('/profile', PatientController.getProfile);
@@ -18,6 +18,11 @@ router.get('/dashboard', PatientController.getDashboard);
 // Appointments
 router.get('/appointments', PatientController.getAppointmentHistory);
 router.get('/appointments/upcoming', PatientController.getUpcomingAppointments);
+
+// Queue-based appointments
+router.post('/appointments/queue', PatientController.bookQueueAppointment);
+router.get('/queue/position', PatientController.getQueuePosition);
+router.get('/queue/status', PatientController.getDoctorQueueStatus);
 
 // Medical reports
 router.get('/medical-reports', PatientController.getMedicalReports);

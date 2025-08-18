@@ -71,9 +71,8 @@ const appointmentValidation = {
       .withMessage('Valid appointment date is required'),
     body('appointmentTime')
       .matches(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
-      .withMessage('Valid appointment time is required (HH:MM format)'),
-    body('appointmentType')
-      .isIn(['consultation', 'follow-up', 'emergency', 'routine-checkup'])
+      .withMessage('Valid appointment time is required (HH:MM format)'),    body('appointmentType')
+      .isIn(['consultation', 'follow-up', 'emergency', 'procedure'])
       .withMessage('Invalid appointment type'),
     body('reasonForVisit')
       .optional()
@@ -85,6 +84,10 @@ const appointmentValidation = {
       .trim()
       .isLength({ max: 1000 })
       .withMessage('Symptoms must not exceed 1000 characters'),
+    body('priority')
+      .optional()
+      .isIn(['low', 'medium', 'high', 'urgent'])
+      .withMessage('Invalid priority level'),
     handleValidationErrors
   ],
 
@@ -160,23 +163,6 @@ const doctorValidation = {
       .optional()
       .isFloat({ min: 0 })
       .withMessage('Consultation fee must be a positive number'),
-    handleValidationErrors
-  ],
-
-  updateAvailability: [
-    body('dayOfWeek')
-      .isIn(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
-      .withMessage('Invalid day of week'),
-    body('startTime')
-      .matches(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
-      .withMessage('Valid start time is required (HH:MM format)'),
-    body('endTime')
-      .matches(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/)
-      .withMessage('Valid end time is required (HH:MM format)'),
-    body('slotDuration')
-      .optional()
-      .isInt({ min: 15, max: 120 })
-      .withMessage('Slot duration must be between 15 and 120 minutes'),
     handleValidationErrors
   ]
 };

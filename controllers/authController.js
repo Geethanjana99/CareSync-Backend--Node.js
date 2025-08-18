@@ -7,6 +7,14 @@ const logger = require('../config/logger');
 
 // Generate JWT token
 const generateToken = (userId) => {
+  console.log('🔍 generateToken called with userId:', userId);
+  console.log('🔍 JWT_SECRET exists:', !!process.env.JWT_SECRET);
+  console.log('🔍 JWT_SECRET length:', process.env.JWT_SECRET ? process.env.JWT_SECRET.length : 'N/A');
+  
+  if (!process.env.JWT_SECRET) {
+    throw new Error('JWT_SECRET is not defined in environment variables');
+  }
+  
   return jwt.sign({ userId }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRE || '7d'
   });
@@ -87,28 +95,27 @@ class AuthController {
           languages_spoken: profileData.languages_spoken,
           office_address: profileData.office_address,
           bio: profileData.bio,
-          working_hours: profileData.working_hours,
-          availability_status: profileData.availability_status || 'available'
+          working_hours: profileData.working_hours
         };
         console.log('DoctorData being saved:', JSON.stringify(doctorData, null, 2)); // Debug log
         const doctor = new Doctor(doctorData);
         await doctor.save();
         logger.info(`Doctor profile created for user: ${user.id}`);
-      }
-
-      // Generate tokens
-      const token = generateToken(user.id);
-      const refreshToken = generateRefreshToken(user.id);
-
+      }      // Don't generate tokens on registration - user must login explicitly
       logger.info(`New user registered: ${email} with role: ${role}`);
 
       res.status(201).json({
         success: true,
-        message: 'User registered successfully',
+        message: 'User registered successfully. Please login to continue.',
         data: {
-          user: user.toJSON(),
-          token,
-          refreshToken
+          user: {
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            role: user.role,
+            phone: user.phone
+          },
+          requiresLogin: true
         }
       });
 

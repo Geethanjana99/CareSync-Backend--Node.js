@@ -18,7 +18,6 @@ class Doctor {
     this.rating = doctorData.rating || 0.00;
     this.total_reviews = doctorData.total_reviews || 0;
     this.working_hours = doctorData.working_hours;
-    this.availability_status = doctorData.availability_status || 'available';
     this.commission_rate = doctorData.commission_rate || 25.00;
     this.status = doctorData.status || 'active';
   }
@@ -34,8 +33,8 @@ class Doctor {
         id, user_id, doctor_id, specialty, license_number, years_of_experience,
         education, certifications, consultation_fee, languages_spoken,
         office_address, bio, rating, total_reviews, working_hours,
-        availability_status, commission_rate, status
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        commission_rate, status
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;    const params = [
       this.id, 
       this.user_id, 
@@ -52,7 +51,6 @@ class Doctor {
       this.rating || 0.00, 
       this.total_reviews || 0,
       this.working_hours ? JSON.stringify(this.working_hours) : null, 
-      this.availability_status || 'available',
       this.commission_rate || 25.00, 
       this.status || 'active'
     ];
@@ -99,11 +97,6 @@ class Doctor {
       params.push(filters.specialty);
     }
 
-    if (filters.availability_status) {
-      query += ' AND d.availability_status = ?';
-      params.push(filters.availability_status);
-    }
-
     if (filters.min_rating) {
       query += ' AND d.rating >= ?';
       params.push(parseFloat(filters.min_rating));
@@ -129,7 +122,7 @@ class Doctor {
     const allowedFields = [
       'specialty', 'years_of_experience', 'education', 'certifications',
       'consultation_fee', 'languages_spoken', 'office_address', 'bio',
-      'working_hours', 'availability_status', 'commission_rate', 'status'
+      'working_hours', 'commission_rate', 'status'
     ];
 
     const updates = [];
@@ -192,58 +185,7 @@ class Doctor {
     return null;
   }
 
-  // Get doctor's availability
-  async getAvailability(filters = {}) {
-    let query = `
-      SELECT * FROM doctor_availability 
-      WHERE doctor_id = ? AND is_active = true
-    `;
-    const params = [this.id];
 
-    if (filters.day_of_week) {
-      query += ' AND day_of_week = ?';
-      params.push(filters.day_of_week);
-    }
-
-    if (filters.effective_date) {
-      query += ' AND effective_date <= ? AND (expiry_date IS NULL OR expiry_date >= ?)';
-      params.push(filters.effective_date, filters.effective_date);
-    }
-
-    query += ' ORDER BY day_of_week, start_time';
-
-    return await mysqlConnection.query(query, params);
-  }
-
-  // Set availability
-  async setAvailability(availabilityData) {
-    const query = `
-      INSERT INTO doctor_availability (
-        id, doctor_id, day_of_week, start_time, end_time, slot_duration,
-        max_appointments_per_slot, is_active, effective_date, expiry_date
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-      ON DUPLICATE KEY UPDATE
-        start_time = VALUES(start_time),
-        end_time = VALUES(end_time),
-        slot_duration = VALUES(slot_duration),
-        max_appointments_per_slot = VALUES(max_appointments_per_slot),
-        is_active = VALUES(is_active),
-        expiry_date = VALUES(expiry_date),
-        updated_at = CURRENT_TIMESTAMP
-    `;
-
-    const params = [
-      uuidv4(), this.id, availabilityData.day_of_week,
-      availabilityData.start_time, availabilityData.end_time,
-      availabilityData.slot_duration || 30,
-      availabilityData.max_appointments_per_slot || 1,
-      availabilityData.is_active !== undefined ? availabilityData.is_active : true,
-      availabilityData.effective_date,
-      availabilityData.expiry_date
-    ];
-
-    return await mysqlConnection.query(query, params);
-  }
 
   // Get today's appointments
   async getTodayAppointments() {

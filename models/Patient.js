@@ -249,6 +249,95 @@ class Patient {
     return null;
   }
 
+  // Static method to search doctors for patients
+  static async searchDoctors(filters = {}) {
+    try {
+      const {
+        specialty,
+        name,
+        location,
+        rating,
+        page = 1,
+        limit = 10
+      } = filters;
+
+      let query = `
+        SELECT 
+          d.id,
+          d.doctor_id,
+          d.specialty,
+          d.license_number,
+          d.years_of_experience,
+          d.consultation_fee,
+          d.bio,
+          d.rating,
+          d.total_reviews,
+          d.availability_status,
+          d.working_hours,
+          u.name,
+          u.email,
+          u.phone,
+          u.avatar_url
+        FROM doctors d
+        JOIN users u ON d.user_id = u.id
+        WHERE d.status = 'active' 
+          AND u.is_active = true 
+          AND d.availability_status IN ('available', 'busy')
+      `;
+      
+      const params = [];
+
+      if (specialty && specialty.trim() !== '') {
+        query += ' AND d.specialty = ?';
+        params.push(specialty);
+      }
+
+      if (name && name.trim() !== '') {
+        query += ' AND u.name LIKE ?';
+        params.push(`%${name}%`);
+      }
+
+      if (rating && !isNaN(parseFloat(rating))) {
+        query += ' AND d.rating >= ?';
+        params.push(parseFloat(rating));
+      }      // Order by rating and availability
+      query += ' ORDER BY d.rating DESC, d.total_reviews DESC, u.name ASC';
+
+      // Add pagination - use direct values for LIMIT and OFFSET to avoid MySQL parameter binding issues
+      const offset = (parseInt(page) - 1) * parseInt(limit);
+      query += ` LIMIT ${parseInt(limit)} OFFSET ${offset}`;
+
+      const pool = mysqlConnection.getPool();
+      const [doctors] = await pool.execute(query, params);
+
+      // Format the response
+      return doctors.map(doctor => ({
+        id: doctor.id,
+        doctor_id: doctor.doctor_id,
+        name: doctor.name,
+        specialty: doctor.specialty,
+        license_number: doctor.license_number,        years_of_experience: doctor.years_of_experience,
+        consultation_fee: parseFloat(doctor.consultation_fee || 0),
+        bio: doctor.bio,
+        rating: parseFloat(doctor.rating || 0),
+        total_reviews: doctor.total_reviews || 0,
+        availability_status: doctor.availability_status,
+        working_hours: doctor.working_hours 
+          ? (typeof doctor.working_hours === 'string' 
+             ? JSON.parse(doctor.working_hours) 
+             : doctor.working_hours)
+          : null,
+        email: doctor.email,
+        phone: doctor.phone,
+        avatar_url: doctor.avatar_url
+      }));
+
+    } catch (error) {
+      console.error('Error searching doctors:', error);
+      throw error;
+    }
+  }
+
   toJSON() {
     return {
       ...this,
