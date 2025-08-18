@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { mysqlConnection } = require('../config/mysql');
-const logger = require('../config/logger');
+const logger = require('../config/logger');('../config/logger');
 
 const authMiddleware = async (req, res, next) => {
   try {
@@ -11,8 +11,21 @@ const authMiddleware = async (req, res, next) => {
         success: false,
         message: 'No token provided, authorization denied'
       });
-    }    // Verify token
+    }
+    
+    // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    logger.info('Token decoded successfully', { userId: decoded.id || decoded.userId });
+    
+    // Get user ID from token
+    const userId = decoded.id || decoded.userId;
+    if (!userId) {
+      logger.error('No user ID found in token', { decoded });
+      return res.status(401).json({
+        success: false,
+        message: 'Invalid token format'
+      });
+    }
     
     // Get user from database
     const query = `
@@ -22,12 +35,14 @@ const authMiddleware = async (req, res, next) => {
       FROM users u
       LEFT JOIN patients p ON u.id = p.user_id
       LEFT JOIN doctors d ON u.id = d.user_id
-      WHERE u.id = ? AND u.is_active = true
+      WHERE u.id = ? AND u.is_active = 1
     `;
     
-    const users = await mysqlConnection.query(query, [decoded.userId]);
+    logger.info('Querying user from database', { userId });
+    const users = await mysqlConnection.query(query, [userId]);
     
     if (users.length === 0) {
+      logger.warn('User not found or inactive', { userId });
       return res.status(401).json({
         success: false,
         message: 'Token is not valid'
@@ -35,6 +50,7 @@ const authMiddleware = async (req, res, next) => {
     }
 
     const user = users[0];
+    logger.info('User found', { userId: user.id, role: user.role });
     
     // Check if user account is suspended
     if (user.patient_status === 'suspended' || user.doctor_status === 'suspended') {
@@ -80,8 +96,17 @@ const authMiddleware = async (req, res, next) => {
 };
 
 // Role-based authorization middleware
-const authorize = (...roles) => {
+const authorize = (roles) => {
+  // Convert to array if single role passed
+  const roleArray = Array.isArray(roles) ? roles : [roles];
+  
   return (req, res, next) => {
+    logger.info('Authorization check', { 
+      userExists: !!req.user, 
+      userRole: req.user?.role, 
+      requiredRoles: roleArray 
+    });
+    
     if (!req.user) {
       return res.status(401).json({
         success: false,
@@ -89,13 +114,18 @@ const authorize = (...roles) => {
       });
     }
 
-    if (!roles.includes(req.user.role)) {
+    if (!roleArray.includes(req.user.role)) {
+      logger.warn('Authorization failed', { 
+        userRole: req.user.role, 
+        requiredRoles: roleArray 
+      });
       return res.status(403).json({
         success: false,
         message: 'Access denied - insufficient permissions'
       });
     }
 
+    logger.info('Authorization successful', { userRole: req.user.role });
     next();
   };
 };

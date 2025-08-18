@@ -51,3 +51,252 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-08-02 08:12:17 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:00:00 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:01:44 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:15:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-08-03 09:06:52 [ERROR]: MySQL query error:
+2025-08-03 09:06:52 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:28:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-08-03 09:08:23 [ERROR]: MySQL query error:
+2025-08-03 09:08:23 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:28:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-08-03 09:09:10 [ERROR]: MySQL query error:
+2025-08-03 09:09:10 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:28:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-08-03 09:09:26 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:09:40 [ERROR]: TypeError: mysql.query is not a function
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+2025-08-03 09:10:16 [ERROR]: TypeError: mysql.query is not a function
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+2025-08-03 09:10:35 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:29:53 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:34:54 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:36:10 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:37:52 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:39:07 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 09:39:39 [ERROR]: MySQL query error:
+2025-08-03 09:41:10 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:07:43 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:07:43 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:08:11 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:15:02 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:33:18 [ERROR]: MySQL query error:
+2025-08-03 10:33:44 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:36:16 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:39:15 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 10:46:16 [ERROR]: ❌ MongoDB connection failed:
+2025-08-03 11:06:49 [ERROR]: ❌ MongoDB connection failed:
+2025-08-16 15:23:45 [ERROR]: ❌ MongoDB connection failed:
+2025-08-16 15:35:39 [ERROR]: ❌ MongoDB connection failed:
+2025-08-16 15:45:31 [ERROR]: ❌ MongoDB connection failed:
+2025-08-16 15:47:24 [ERROR]: MySQL query error:
+2025-08-16 15:47:24 [ERROR]: Error: Unknown column 'a.appointment_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:555:48)
+    at getAppointments (E:\Project 2\backend\controllers\appointmentController.js:153:46)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 15:47:40 [ERROR]: MySQL query error:
+2025-08-16 15:47:40 [ERROR]: Error: Unknown column 'a.appointment_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:555:48)
+    at getAppointments (E:\Project 2\backend\controllers\appointmentController.js:153:46)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 15:48:40 [ERROR]: MySQL query error:
+2025-08-16 15:48:40 [ERROR]: Error: Unknown column 'a.appointment_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Appointment.findAll (E:\Project 2\backend\models\Appointment.js:555:48)
+    at getAppointments (E:\Project 2\backend\controllers\appointmentController.js:153:46)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 15:48:58 [ERROR]: MySQL query error:
+2025-08-16 15:49:39 [ERROR]: MySQL query error:
+2025-08-16 16:02:49 [ERROR]: ❌ MongoDB connection failed:
+2025-08-16 16:07:56 [ERROR]: MySQL query error:
+2025-08-16 16:07:56 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:07:56 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:13:41 [ERROR]: MySQL query error:
+2025-08-16 16:13:41 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:13:41 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:13:52 [ERROR]: MySQL query error:
+2025-08-16 16:13:52 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:13:52 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:14:08 [ERROR]: MySQL query error:
+2025-08-16 16:14:08 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:14:08 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:229:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:40:04 [ERROR]: ❌ MongoDB connection failed:
+2025-08-16 16:41:12 [ERROR]: MySQL query error:
+2025-08-16 16:42:47 [ERROR]: MySQL query error:
+2025-08-16 16:42:47 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:246:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-08-16 16:42:47 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Doctor.findAll (E:\Project 2\backend\models\Doctor.js:118:34)
+    at getDoctors (E:\Project 2\backend\controllers\adminController.js:246:36)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (E:\Project 2\backend\node_modules\express\lib\router\route.js:119:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)

@@ -39,7 +39,7 @@ async function createTestAdmin() {
     // Create admin user
     const userId = uuidv4();
     const insertQuery = `
-      INSERT INTO users (id, name, email, password, role, is_verified, is_active, created_at, updated_at)
+      INSERT INTO users (id, name, email, password_hash, role, is_active, email_verified, created_at, updated_at)
       VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
     `;
     
@@ -49,8 +49,8 @@ async function createTestAdmin() {
       'admin@caresync.com',
       hashedPassword,
       'admin',
-      true,
-      true
+      1,
+      1
     ]);
     
     console.log('✅ Test admin user created successfully!');

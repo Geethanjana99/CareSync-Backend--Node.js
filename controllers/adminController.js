@@ -221,6 +221,42 @@ class AdminController {
     }
   }
 
+  // Get all doctors for admin use (e.g., appointment creation)
+  static async getDoctors(req, res, next) {
+    try {
+      const { page = 1, limit = 50, search, specialty } = req.query;
+      
+      const filters = {
+        search,
+        specialty
+      };
+
+      // Only add limit and offset if they are valid numbers
+      const parsedLimit = parseInt(limit);
+      const parsedPage = parseInt(page);
+      
+      if (!isNaN(parsedLimit) && parsedLimit > 0) {
+        filters.limit = parsedLimit;
+      }
+      
+      if (!isNaN(parsedPage) && parsedPage > 0 && !isNaN(parsedLimit)) {
+        filters.offset = (parsedPage - 1) * parsedLimit;
+      }
+
+      const doctors = await Doctor.findAll(filters);
+
+      res.json({
+        success: true,
+        data: {
+          doctors
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching doctors:', error);
+      next(error);
+    }
+  }
+
   // Get doctor performance metrics
   static async getDoctorMetrics(req, res, next) {
     try {
