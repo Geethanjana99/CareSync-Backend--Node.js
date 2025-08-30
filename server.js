@@ -134,6 +134,7 @@ app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
 app.use('/api/admin', adminRoutes);
+app.use('/api/insurance-claims', require('./routes/insurance-claims'));
 
 // Serve uploaded files
 app.use('/uploads', express.static('uploads'));
