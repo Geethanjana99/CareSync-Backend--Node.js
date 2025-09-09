@@ -8,8 +8,8 @@ const fs = require('fs').promises;
  */
 class DiabetesPredictionService {
   constructor() {
-    this.modelPath = path.join(process.cwd(), '..', 'Diabetes-Prediction');
-    this.scriptPath = path.join(this.modelPath, 'predict_api.py');
+  this.modelPath = path.join(process.cwd(), '..', 'Diabetes-Prediction');
+  this.scriptPath = path.join(this.modelPath, 'predict_api.py');
   }
 
   /**
@@ -76,95 +76,70 @@ class DiabetesPredictionService {
       await fs.access(this.scriptPath);
     } catch {
       // Script doesn't exist, create it
-      const scriptContent = `#!/usr/bin/env python3
+    const scriptContent = `#!/usr/bin/env python3
 """
 Diabetes Prediction API Script
-Standalone script for diabetes prediction using trained model
+Loads the actual CareSync Streamlit pipeline model (model.pkl) and predicts.
+Inputs: pregnancies, glucose, bmi, age, insulin
+Outputs: JSON { prediction: 0|1, probability: float }
 """
 import sys
 import json
 import numpy as np
-import pickle
 import os
 from pathlib import Path
 
 def load_model():
-    """Load the trained diabetes prediction model"""
-    model_path = Path(__file__).parent / 'model' / 'diabetes_model.pkl'
-    
+  try:
+    import joblib
+    # model.pkl is stored at the project root of Diabetes-Prediction
+    model_path = Path(__file__).parent / 'model.pkl'
     if not model_path.exists():
-        # If no saved model, use a simple logistic regression approach
-        from sklearn.linear_model import LogisticRegression
-        
-        # Create a simple model with reasonable weights based on diabetes research
-        model = LogisticRegression()
-        # Simulate training with typical diabetes risk factors
-        model.coef_ = np.array([[0.12, 0.35, 0.25, 0.18, 0.05]])  # pregnancies, glucose, BMI, age, insulin
-        model.intercept_ = np.array([-8.5])
-        model.classes_ = np.array([0, 1])
-        
-        return model
-    
-    try:
-        with open(model_path, 'rb') as f:
-            return pickle.load(f)
-    except Exception as e:
-        print(f"Error loading model: {e}", file=sys.stderr)
-        return None
+      raise FileNotFoundError(f"Model file not found: {model_path}")
+    model = joblib.load(str(model_path))
+    return model
+  except Exception as e:
+    print(f"Error loading model.pkl: {e}", file=sys.stderr)
+    return None
 
-def predict_diabetes(pregnancies, glucose, bmi, age, insulin=0):
-    """Make diabetes prediction"""
-    try:
-        model = load_model()
-        if model is None:
-            raise Exception("Failed to load prediction model")
-        
-        # Prepare input features
-        features = np.array([[pregnancies, glucose, bmi, age, insulin]])
-        
-        # Make prediction
-        prediction = model.predict(features)[0]
-        probability = model.predict_proba(features)[0][1]  # Probability of diabetes (class 1)
-        
-        return {
-            'prediction': int(prediction),
-            'probability': float(probability)
-        }
-        
-    except Exception as e:
-        return {
-            'error': str(e),
-            'prediction': 0,
-            'probability': 0.0
-        }
+def predict_diabetes(pregnancies, glucose, bmi, age, insulin=0.0):
+  try:
+    import pandas as pd
+    model = load_model()
+    if model is None:
+      raise Exception("Failed to load model.pkl")
+
+    # The saved pipeline expects a DataFrame with these columns
+    df = pd.DataFrame([[pregnancies, glucose, insulin, bmi, age]],
+              columns=['Pregnancies','Glucose','Insulin','BMI','Age'])
+
+    proba = float(model.predict_proba(df)[:, 1][0])
+    pred = int(1 if proba >= 0.32 else 0)  # Use same threshold as Streamlit config
+
+    return { 'prediction': pred, 'probability': proba }
+  except Exception as e:
+    return { 'error': str(e), 'prediction': 0, 'probability': 0.0 }
 
 def main():
-    """Main function to handle command line input"""
-    try:
-        if len(sys.argv) != 6:
-            print("Usage: python predict_api.py <pregnancies> <glucose> <bmi> <age> <insulin>", file=sys.stderr)
-            sys.exit(1)
-        
-        pregnancies = int(sys.argv[1])
-        glucose = float(sys.argv[2])
-        bmi = float(sys.argv[3])
-        age = int(sys.argv[4])
-        insulin = float(sys.argv[5])
-        
-        result = predict_diabetes(pregnancies, glucose, bmi, age, insulin)
-        print(json.dumps(result))
-        
-    except Exception as e:
-        error_result = {
-            'error': str(e),
-            'prediction': 0,
-            'probability': 0.0
-        }
-        print(json.dumps(error_result))
-        sys.exit(1)
+  try:
+    if len(sys.argv) != 6:
+      print("Usage: python predict_api.py <pregnancies> <glucose> <bmi> <age> <insulin>", file=sys.stderr)
+      sys.exit(1)
+
+    pregnancies = int(float(sys.argv[1]))
+    glucose = float(sys.argv[2])
+    bmi = float(sys.argv[3])
+    age = int(float(sys.argv[4]))
+    insulin = float(sys.argv[5])
+
+    result = predict_diabetes(pregnancies, glucose, bmi, age, insulin)
+    print(json.dumps(result))
+  except Exception as e:
+    print(json.dumps({ 'error': str(e), 'prediction': 0, 'probability': 0.0 }))
+    sys.exit(1)
 
 if __name__ == '__main__':
-    main()
+  main()
 `;
 
       await fs.writeFile(this.scriptPath, scriptContent);
