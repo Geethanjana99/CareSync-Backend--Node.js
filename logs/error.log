@@ -466,3 +466,8 @@
     at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
 2025-08-16 16:57:54 [ERROR]: ❌ MongoDB connection failed:
 2025-08-16 17:03:07 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 09:30:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 09:32:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 09:34:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 09:35:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 09:35:29 [ERROR]: Port 5000 in use, trying 5001

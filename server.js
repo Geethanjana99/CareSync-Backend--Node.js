@@ -184,14 +184,38 @@ async function startServer() {
       logger.warn('⚠️ Notification service initialization failed:', error.message);
     }
     
-    const PORT = process.env.PORT || 5000;
-    
-    server.listen(PORT, () => {
-      logger.info(`🚀 Server running on port ${PORT}`);
-      logger.info(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
-      logger.info(`🔗 Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
-      logger.info(`📋 API Documentation: http://localhost:${PORT}/api/docs`);
+    const basePort = parseInt(process.env.PORT, 10) || 5000;
+
+    // Listen with retry in case the port is already in use
+    const listenWithRetry = (startPort, maxAttempts = 10) => new Promise((resolve, reject) => {
+      let attempt = 0;
+      const tryListen = (portToTry) => {
+        const onError = (err) => {
+          if (err.code === 'EADDRINUSE' && attempt < maxAttempts) {
+            attempt += 1;
+            const nextPort = startPort + attempt;
+            logger.error(`Port ${portToTry} in use, trying ${nextPort}`);
+            // Try the next port
+            server.once('error', onError);
+            server.listen(nextPort, () => resolve(nextPort));
+          } else {
+            reject(err);
+          }
+        };
+
+        server.once('error', onError);
+        server.listen(portToTry, () => resolve(portToTry));
+      };
+
+      tryListen(startPort);
     });
+
+    const PORT = await listenWithRetry(basePort);
+
+    logger.info(`🚀 Server running on port ${PORT}`);
+    logger.info(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
+    logger.info(`🔗 Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
+    logger.info(`📋 API Documentation: http://localhost:${PORT}/api/docs`);
     
   } catch (error) {
     logger.error('Failed to start server:', error);

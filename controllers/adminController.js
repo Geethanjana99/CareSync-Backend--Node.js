@@ -510,39 +510,6 @@ class AdminController {
       next(error);
     }
   }
-}
-
-// Helper class for admin statistics
-class Admin {
-  static async getMonthlyStatistics() {
-    const currentDate = new Date();
-    const currentMonth = currentDate.getMonth() + 1;
-    const currentYear = currentDate.getFullYear();
-    
-    const startDate = new Date(currentYear, currentMonth - 1, 1);
-    const endDate = new Date(currentYear, currentMonth, 0);
-
-    const [
-      newUsers,
-      newAppointments,
-      completedAppointments,
-      revenue
-    ] = await Promise.all([
-      User.countByDateRange(startDate, endDate),
-      Appointment.countByDateRange(startDate, endDate),
-      Appointment.countByDateRangeAndStatus(startDate, endDate, 'completed'),
-      Appointment.getRevenueByDateRange(startDate, endDate)
-    ]);
-
-    return {
-      month: currentMonth,
-      year: currentYear,
-      newUsers,
-      newAppointments,
-      completedAppointments,
-      revenue
-    };
-  }
 
   // Admin book queue appointment for any patient
   static async bookQueueAppointmentForPatient(req, res, next) {
@@ -659,6 +626,39 @@ class Admin {
       logger.error('Error booking queue appointment for patient:', error);
       next(error);
     }
+  }
+}
+
+// Helper class for admin statistics
+class Admin {
+  static async getMonthlyStatistics() {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentYear = currentDate.getFullYear();
+    
+    const startDate = new Date(currentYear, currentMonth - 1, 1);
+    const endDate = new Date(currentYear, currentMonth, 0);
+
+    const [
+      newUsers,
+      newAppointments,
+      completedAppointments,
+      revenue
+    ] = await Promise.all([
+      User.countByDateRange(startDate, endDate),
+      Appointment.countByDateRange(startDate, endDate),
+      Appointment.countByDateRangeAndStatus(startDate, endDate, 'completed'),
+      Appointment.getRevenueByDateRange(startDate, endDate)
+    ]);
+
+    return {
+      month: currentMonth,
+      year: currentYear,
+      newUsers,
+      newAppointments,
+      completedAppointments,
+      revenue
+    };
   }
 }
 
