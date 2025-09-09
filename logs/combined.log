@@ -1854,3 +1854,77 @@
 2025-08-16 17:04:52 [INFO]: Querying user from database
 2025-08-16 17:04:52 [INFO]: User found
 2025-08-16 17:04:52 [INFO]: ::1 - - [16/Aug/2025:11:34:52 +0000] "POST /api/appointments HTTP/1.1" 400 176 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+2025-08-16 17:05:43 [INFO]: Token decoded successfully
+2025-08-16 17:05:43 [INFO]: Querying user from database
+2025-08-16 17:05:43 [INFO]: User found
+2025-08-16 17:05:43 [INFO]: ::1 - - [16/Aug/2025:11:35:43 +0000] "POST /api/appointments HTTP/1.1" 400 176 "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:08:59 [INFO]: Token decoded successfully
+2025-08-16 17:08:59 [INFO]: Querying user from database
+2025-08-16 17:08:59 [INFO]: Token decoded successfully
+2025-08-16 17:08:59 [INFO]: Querying user from database
+2025-08-16 17:08:59 [INFO]: Token decoded successfully
+2025-08-16 17:08:59 [INFO]: Querying user from database
+2025-08-16 17:08:59 [INFO]: User found
+2025-08-16 17:08:59 [INFO]: User found
+2025-08-16 17:08:59 [INFO]: Authorization check
+2025-08-16 17:08:59 [INFO]: Authorization successful
+2025-08-16 17:08:59 [INFO]: Token decoded successfully
+2025-08-16 17:08:59 [INFO]: Querying user from database
+2025-08-16 17:08:59 [INFO]: User found
+2025-08-16 17:08:59 [INFO]: Authorization check
+2025-08-16 17:08:59 [INFO]: Authorization successful
+2025-08-16 17:08:59 [INFO]: User found
+2025-08-16 17:08:59 [INFO]: Authorization check
+2025-08-16 17:08:59 [INFO]: Authorization successful
+2025-08-16 17:08:59 [INFO]: ::1 - - [16/Aug/2025:11:38:59 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:09:00 [INFO]: ::1 - - [16/Aug/2025:11:39:00 +0000] "GET /api/appointments?limit=100 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:09:00 [INFO]: ::1 - - [16/Aug/2025:11:39:00 +0000] "GET /api/admin/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:26:34 [INFO]: Token decoded successfully
+2025-08-16 17:26:34 [INFO]: Querying user from database
+2025-08-16 17:26:34 [INFO]: Token decoded successfully
+2025-08-16 17:26:34 [INFO]: Querying user from database
+2025-08-16 17:26:34 [INFO]: Token decoded successfully
+2025-08-16 17:26:34 [INFO]: Querying user from database
+2025-08-16 17:26:34 [INFO]: Token decoded successfully
+2025-08-16 17:26:34 [INFO]: Querying user from database
+2025-08-16 17:26:34 [INFO]: User found
+2025-08-16 17:26:34 [INFO]: Authorization check
+2025-08-16 17:26:34 [INFO]: Authorization successful
+2025-08-16 17:26:34 [INFO]: Token decoded successfully
+2025-08-16 17:26:34 [INFO]: Querying user from database
+2025-08-16 17:26:34 [INFO]: User found
+2025-08-16 17:26:34 [INFO]: User found
+2025-08-16 17:26:34 [INFO]: Authorization check
+2025-08-16 17:26:34 [INFO]: Authorization successful
+2025-08-16 17:26:34 [INFO]: User found
+2025-08-16 17:26:34 [INFO]: Authorization check
+2025-08-16 17:26:34 [INFO]: Authorization successful
+2025-08-16 17:26:35 [INFO]: ::1 - - [16/Aug/2025:11:56:35 +0000] "GET /api/admin/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:26:35 [INFO]: ::1 - - [16/Aug/2025:11:56:35 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:26:35 [INFO]: ::1 - - [16/Aug/2025:11:56:35 +0000] "GET /api/appointments?limit=100 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:26:36 [INFO]: User found
+2025-08-16 17:26:36 [INFO]: ::1 - - [16/Aug/2025:11:56:36 +0000] "GET /api/auth/profile HTTP/1.1" 200 905 "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:27:02 [INFO]: User logged in: admin@caresync.com
+2025-08-16 17:27:02 [INFO]: ::1 - - [16/Aug/2025:11:57:02 +0000] "POST /api/auth/login HTTP/1.1" 200 832 "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:27:03 [INFO]: ::1 - - [16/Aug/2025:11:57:03 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:27:26 [INFO]: Token decoded successfully
+2025-08-16 17:27:26 [INFO]: Querying user from database
+2025-08-16 17:27:26 [INFO]: Token decoded successfully
+2025-08-16 17:27:26 [INFO]: Querying user from database
+2025-08-16 17:27:26 [INFO]: Token decoded successfully
+2025-08-16 17:27:26 [INFO]: Querying user from database
+2025-08-16 17:27:26 [INFO]: User found
+2025-08-16 17:27:26 [INFO]: User found
+2025-08-16 17:27:26 [INFO]: Authorization check
+2025-08-16 17:27:26 [INFO]: Authorization successful
+2025-08-16 17:27:26 [INFO]: Token decoded successfully
+2025-08-16 17:27:26 [INFO]: Querying user from database
+2025-08-16 17:27:26 [INFO]: User found
+2025-08-16 17:27:26 [INFO]: Authorization check
+2025-08-16 17:27:26 [INFO]: Authorization successful
+2025-08-16 17:27:26 [INFO]: User found
+2025-08-16 17:27:26 [INFO]: Authorization check
+2025-08-16 17:27:26 [INFO]: Authorization successful
+2025-08-16 17:27:27 [INFO]: ::1 - - [16/Aug/2025:11:57:27 +0000] "GET /api/admin/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:27:27 [INFO]: ::1 - - [16/Aug/2025:11:57:27 +0000] "GET /api/appointments?limit=100 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+2025-08-16 17:27:27 [INFO]: ::1 - - [16/Aug/2025:11:57:27 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
