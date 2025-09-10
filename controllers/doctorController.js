@@ -794,6 +794,235 @@ class DoctorController {
     }
   }
 
+  // Get AI Predictions for doctor review
+  static async getAIPredictions(req, res, next) {
+    try {
+      const query = `
+        SELECT 
+          dp.id,
+          dp.patient_id,
+          dp.admin_id,
+          dp.pregnancies,
+          dp.glucose,
+          dp.bmi,
+          dp.age,
+          dp.insulin,
+          dp.prediction_result,
+          dp.prediction_probability,
+          dp.risk_level,
+          dp.status,
+          dp.notes,
+          dp.created_at,
+          dp.updated_at,
+          dp.processed_at,
+          u.name as patient_name,
+          u.email as patient_email,
+          apc.id as certification_id,
+          apc.certification_status,
+          apc.doctor_notes,
+          apc.clinical_assessment,
+          apc.recommendations,
+          apc.follow_up_required,
+          apc.follow_up_date,
+          apc.severity_assessment,
+          apc.certified_at
+        FROM diabetes_predictions dp
+        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN users u ON p.user_id = u.id
+        LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
+        WHERE dp.status IN ('processed')
+        ORDER BY dp.created_at DESC
+      `;
+      
+      const predictions = await mysqlConnection.query(query);
+
+      // Transform results to match frontend interface
+      const transformedPredictions = predictions.map(prediction => ({
+        id: prediction.id,
+        patientId: prediction.patient_id,
+        patientName: prediction.patient_name || `Patient ${prediction.patient_id}`,
+        patientEmail: prediction.patient_email,
+        pregnancies: prediction.pregnancies,
+        glucose: parseFloat(prediction.glucose),
+        bmi: parseFloat(prediction.bmi),
+        age: prediction.age,
+        insulin: parseFloat(prediction.insulin),
+        predictionResult: prediction.prediction_result,
+        predictionProbability: parseFloat(prediction.prediction_probability),
+        riskLevel: prediction.risk_level,
+        status: prediction.status,
+        createdAt: prediction.created_at,
+        processedAt: prediction.processed_at,
+        // Certification data
+        certification_status: prediction.certification_status,
+        doctor_notes: prediction.doctor_notes,
+        clinical_assessment: prediction.clinical_assessment,
+        recommendations: prediction.recommendations,
+        follow_up_required: prediction.follow_up_required,
+        follow_up_date: prediction.follow_up_date,
+        severity_assessment: prediction.severity_assessment,
+        certified_at: prediction.certified_at
+      }));
+      
+      res.json({
+        success: true,
+        data: {
+          predictions: transformedPredictions
+        },
+        meta: {
+          total: transformedPredictions.length
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching AI predictions for doctor:', error);
+      next(error);
+    }
+  }
+
+  // Review AI Prediction using certification table
+  static async reviewAIPrediction(req, res, next) {
+    try {
+      const { id } = req.params;
+      const { 
+        certification_status, 
+        doctor_notes, 
+        clinical_assessment,
+        recommendations,
+        follow_up_required,
+        follow_up_date,
+        severity_assessment 
+      } = req.body;
+      const doctorUserId = req.user.id;
+
+      // Get doctor information
+      const doctor = await Doctor.findByUserId(doctorUserId);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor not found'
+        });
+      }
+
+      // Check if prediction exists
+      const checkQuery = 'SELECT id FROM diabetes_predictions WHERE id = ?';
+      const [existingPrediction] = await mysqlConnection.query(checkQuery, [id]);
+      
+      if (!existingPrediction || existingPrediction.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: 'Prediction not found'
+        });
+      }
+
+      // Check if certification already exists
+      const certificationCheckQuery = 'SELECT id FROM ai_prediction_certifications WHERE prediction_id = ?';
+      const [existingCertification] = await mysqlConnection.query(certificationCheckQuery, [id]);
+
+      let certificationQuery;
+      let certificationParams;
+
+      if (existingCertification && existingCertification.length > 0) {
+        // Update existing certification
+        certificationQuery = `
+          UPDATE ai_prediction_certifications 
+          SET 
+            doctor_id = ?,
+            certification_status = ?,
+            doctor_notes = ?,
+            clinical_assessment = ?,
+            recommendations = ?,
+            follow_up_required = ?,
+            follow_up_date = ?,
+            severity_assessment = ?,
+            certified_at = CURRENT_TIMESTAMP,
+            updated_at = CURRENT_TIMESTAMP
+          WHERE prediction_id = ?
+        `;
+        certificationParams = [
+          doctor.id,
+          certification_status,
+          doctor_notes,
+          clinical_assessment,
+          recommendations,
+          follow_up_required || false,
+          follow_up_date || null,
+          severity_assessment,
+          id
+        ];
+      } else {
+        // Create new certification
+        certificationQuery = `
+          INSERT INTO ai_prediction_certifications 
+          (prediction_id, doctor_id, certification_status, doctor_notes, clinical_assessment, 
+           recommendations, follow_up_required, follow_up_date, severity_assessment)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `;
+        certificationParams = [
+          id,
+          doctor.id,
+          certification_status,
+          doctor_notes,
+          clinical_assessment,
+          recommendations,
+          follow_up_required || false,
+          follow_up_date || null,
+          severity_assessment
+        ];
+      }
+
+      await mysqlConnection.query(certificationQuery, certificationParams);
+
+      // Update prediction status to 'reviewed'
+      const updatePredictionQuery = 'UPDATE diabetes_predictions SET status = ? WHERE id = ?';
+      await mysqlConnection.query(updatePredictionQuery, ['reviewed', id]);
+
+      // Get updated prediction with certification
+      const selectQuery = `
+        SELECT 
+          dp.id,
+          dp.patient_id as patientId,
+          dp.patient_name as patientName,
+          dp.pregnancies,
+          dp.glucose,
+          dp.bmi,
+          dp.age,
+          dp.insulin,
+          dp.prediction_result as predictionResult,
+          dp.prediction_confidence as predictionProbability,
+          dp.risk_level as riskLevel,
+          dp.status,
+          dp.created_at as createdAt,
+          dp.summary,
+          apc.certification_status,
+          apc.doctor_notes,
+          apc.clinical_assessment,
+          apc.recommendations,
+          apc.follow_up_required,
+          apc.follow_up_date,
+          apc.severity_assessment,
+          apc.certified_at
+        FROM diabetes_predictions dp
+        LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
+        WHERE dp.id = ?
+      `;
+      
+      const [updatedPredictions] = await mysqlConnection.query(selectQuery, [id]);
+      
+      res.json({
+        success: true,
+        message: 'Prediction reviewed successfully',
+        data: {
+          prediction: updatedPredictions[0]
+        }
+      });
+
+      logger.info(`AI prediction ${id} reviewed by doctor ${doctor.id}`);
+    } catch (error) {
+      logger.error('Error reviewing AI prediction:', error);
+      next(error);
+    }
+  }
+
 
 }
 

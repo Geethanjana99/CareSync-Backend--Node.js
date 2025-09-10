@@ -17,6 +17,7 @@ router.get('/dashboard', DoctorController.getDashboard);
 
 // Schedule and availability
 router.get('/schedule', DoctorController.getSchedule);
+
 // Appointments
 router.get('/appointments/today', DoctorController.getTodayAppointments);
 router.get('/appointments', DoctorController.getAppointmentHistory);
@@ -37,5 +38,13 @@ router.get('/queue/summary', DoctorController.getQueueSummary);
 router.put('/queue/current', DoctorController.updateCurrentQueueNumber);
 router.post('/queue/start/:appointmentId', DoctorController.startNextConsultation);
 router.post('/queue/complete/:appointmentId', DoctorController.completeConsultation);
+
+// AI Predictions
+router.get('/ai-predictions', DoctorController.getAIPredictions);
+router.patch('/ai-predictions/:id/review', DoctorController.reviewAIPrediction);
+
+// AI Predictions - Doctor access
+router.get('/ai-predictions', DoctorController.getAIPredictions);
+router.patch('/ai-predictions/:id/review', DoctorController.reviewAIPrediction);
 
 module.exports = router;

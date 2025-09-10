@@ -4734,3 +4734,122 @@
 2025-09-10 15:10:24 [INFO]: Authorization successful
 2025-09-10 15:10:25 [INFO]: ::1 - - [10/Sep/2025:09:40:25 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 2025-09-10 15:10:25 [INFO]: ::1 - - [10/Sep/2025:09:40:25 +0000] "GET /api/admin/reports/patients HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:04:23 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:04:23 [INFO]: MySQL connection pool closed
+2025-09-10 17:04:58 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:05:28 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:05:28 [INFO]: MySQL connection pool closed
+2025-09-10 17:12:46 [INFO]: Socket.IO server initialized
+2025-09-10 17:12:47 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:12:47 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:12:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:12:47 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:12:47 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:12:47 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:12:47 [INFO]: 📊 Environment: development
+2025-09-10 17:12:47 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:12:47 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:13:38 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:13:38 [INFO]: ::1 - - [10/Sep/2025:11:43:38 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:39 [INFO]: Token decoded successfully
+2025-09-10 17:13:39 [INFO]: Querying user from database
+2025-09-10 17:13:39 [INFO]: User found
+2025-09-10 17:13:39 [INFO]: Authorization check
+2025-09-10 17:13:39 [INFO]: Authorization successful
+2025-09-10 17:13:40 [ERROR]: MySQL query error:
+2025-09-10 17:13:40 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:13:41 [INFO]: ::1 - - [10/Sep/2025:11:43:41 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:42 [ERROR]: MySQL query error:
+2025-09-10 17:13:42 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:13:42 [INFO]: ::1 - - [10/Sep/2025:11:43:42 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:45 [INFO]: ::1 - - [10/Sep/2025:11:43:45 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:46 [INFO]: ::1 - - [10/Sep/2025:11:43:46 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:46 [INFO]: ::1 - - [10/Sep/2025:11:43:46 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:47 [INFO]: ::1 - - [10/Sep/2025:11:43:47 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:47 [INFO]: ::1 - - [10/Sep/2025:11:43:47 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:48 [INFO]: ::1 - - [10/Sep/2025:11:43:48 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:49 [INFO]: ::1 - - [10/Sep/2025:11:43:49 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:49 [INFO]: ::1 - - [10/Sep/2025:11:43:49 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:49 [INFO]: ::1 - - [10/Sep/2025:11:43:49 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:49 [INFO]: ::1 - - [10/Sep/2025:11:43:49 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:51 [INFO]: ::1 - - [10/Sep/2025:11:43:51 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 404 92 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:51 [INFO]: ::1 - - [10/Sep/2025:11:43:51 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:51 [INFO]: ::1 - - [10/Sep/2025:11:43:51 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:51 [INFO]: ::1 - - [10/Sep/2025:11:43:51 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:52 [INFO]: ::1 - - [10/Sep/2025:11:43:52 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 404 92 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:52 [INFO]: ::1 - - [10/Sep/2025:11:43:52 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:52 [INFO]: ::1 - - [10/Sep/2025:11:43:52 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:13:53 [INFO]: ::1 - - [10/Sep/2025:11:43:53 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:17:42 [INFO]: ::1 - - [10/Sep/2025:11:47:42 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:18:16 [INFO]: ::1 - - [10/Sep/2025:11:48:16 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:18:38 [INFO]: ::1 - - [10/Sep/2025:11:48:38 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:19:07 [INFO]: ::1 - - [10/Sep/2025:11:49:07 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:19:21 [INFO]: ::1 - - [10/Sep/2025:11:49:21 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:19:41 [INFO]: ::1 - - [10/Sep/2025:11:49:41 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:19:59 [INFO]: ::1 - - [10/Sep/2025:11:49:59 +0000] "GET /api/doctor/ai-predictions HTTP/1.1" 404 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:21:27 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:21:27 [INFO]: Process terminated
+2025-09-10 17:22:15 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:23:09 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:23:36 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:23:36 [INFO]: MySQL connection pool closed
+2025-09-10 17:23:51 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:23:51 [INFO]: MySQL connection pool closed
+2025-09-10 17:27:17 [INFO]: Socket.IO server initialized
+2025-09-10 17:27:20 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:27:20 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:27:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:27:20 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:27:20 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:27:20 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:27:20 [INFO]: 📊 Environment: development
+2025-09-10 17:27:20 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:27:20 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:27:44 [INFO]: Token decoded successfully
+2025-09-10 17:27:44 [INFO]: Querying user from database
+2025-09-10 17:27:44 [INFO]: Token decoded successfully
+2025-09-10 17:27:44 [INFO]: Querying user from database
+2025-09-10 17:27:44 [INFO]: User found
+2025-09-10 17:27:44 [INFO]: Authorization check
+2025-09-10 17:27:44 [INFO]: Authorization successful
+2025-09-10 17:27:45 [INFO]: ::1 - - [10/Sep/2025:11:57:45 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:27:46 [INFO]: ::1 - - [10/Sep/2025:11:57:46 +0000] "GET /api/auth/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:27:46 [INFO]: User found
+2025-09-10 17:27:52 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:27:52 [INFO]: ::1 - - [10/Sep/2025:11:57:52 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:27:52 [INFO]: Token decoded successfully
+2025-09-10 17:27:52 [INFO]: Querying user from database
+2025-09-10 17:27:52 [INFO]: User found
+2025-09-10 17:27:52 [INFO]: Authorization check
+2025-09-10 17:27:52 [INFO]: Authorization successful
+2025-09-10 17:27:53 [INFO]: Token decoded successfully
+2025-09-10 17:27:53 [INFO]: Querying user from database
+2025-09-10 17:27:54 [INFO]: User found
+2025-09-10 17:27:54 [INFO]: Authorization check
+2025-09-10 17:27:54 [INFO]: Authorization successful
+2025-09-10 17:27:54 [ERROR]: MySQL query error:
+2025-09-10 17:27:54 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:27:54 [INFO]: ::1 - - [10/Sep/2025:11:57:54 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:27:55 [ERROR]: MySQL query error:
+2025-09-10 17:27:55 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:27:55 [INFO]: ::1 - - [10/Sep/2025:11:57:55 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
