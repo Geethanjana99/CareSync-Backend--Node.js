@@ -1,4 +1,4 @@
-const mysql = require('../config/mysql');
+const { mysqlConnection: mysql } = require('../config/mysql');
 const { v4: uuidv4 } = require('uuid');
 
 /**
@@ -283,9 +283,23 @@ class DiabetesPrediction {
     const updates = [];
     const params = [];
     
+    // Map camelCase to snake_case for database columns
+    const columnMapping = {
+      'predictionResult': 'prediction_result',
+      'predictionProbability': 'prediction_probability',
+      'riskLevel': 'risk_level',
+      'patientId': 'patient_id',
+      'adminId': 'admin_id',
+      'createdAt': 'created_at',
+      'updatedAt': 'updated_at',
+      'processedAt': 'processed_at'
+    };
+    
     Object.keys(data).forEach(key => {
       if (data[key] !== undefined) {
-        updates.push(`${key} = ?`);
+        // Use the mapped column name if available, otherwise use the key as-is
+        const columnName = columnMapping[key] || key;
+        updates.push(`${columnName} = ?`);
         params.push(data[key]);
       }
     });

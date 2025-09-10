@@ -8,7 +8,7 @@ const fs = require('fs').promises;
  */
 class DiabetesPredictionService {
   constructor() {
-  this.modelPath = path.join(process.cwd(), '..', 'Diabetes-Prediction');
+  this.modelPath = path.join(__dirname, '..', '..', 'Diabetes-Prediction');
   this.scriptPath = path.join(this.modelPath, 'predict_api.py');
   }
 
@@ -25,8 +25,8 @@ class DiabetesPredictionService {
       // Check if Python script exists, if not create it
       await this.ensurePredictionScript();
       
-      // Call Python prediction model
-      const result = await this.callPythonModel(inputData);
+      // Call Python prediction model with retry logic
+      const result = await this.callPythonModelWithRetry(inputData);
       
       return {
         prediction: result.prediction,
@@ -37,6 +37,34 @@ class DiabetesPredictionService {
       console.error('Diabetes prediction error:', error);
       throw new Error(`Prediction failed: ${error.message}`);
     }
+  }
+
+  /**
+   * Call Python model with retry logic
+   */
+  async callPythonModelWithRetry(inputData, maxRetries = 3) {
+    let lastError;
+    
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        console.log(`Diabetes prediction attempt ${attempt}/${maxRetries}`);
+        const result = await this.callPythonModel(inputData);
+        console.log(`Diabetes prediction successful on attempt ${attempt}`);
+        return result;
+      } catch (error) {
+        lastError = error;
+        console.error(`Diabetes prediction attempt ${attempt} failed:`, error.message);
+        
+        if (attempt < maxRetries) {
+          // Wait before retrying (exponential backoff)
+          const waitTime = Math.pow(2, attempt - 1) * 1000; // 1s, 2s, 4s
+          console.log(`Waiting ${waitTime}ms before retry...`);
+          await new Promise(resolve => setTimeout(resolve, waitTime));
+        }
+      }
+    }
+    
+    throw lastError;
   }
 
   /**
@@ -161,7 +189,13 @@ if __name__ == '__main__':
         bmi.toString(),
         age.toString(),
         insulin.toString()
-      ]);
+      ], {
+        cwd: this.modelPath, // Ensure we're in the correct directory
+        env: { 
+          ...process.env,
+          PYTHONWARNINGS: 'ignore::UserWarning:sklearn' // Suppress sklearn version warnings
+        }
+      });
 
       let stdout = '';
       let stderr = '';
@@ -175,8 +209,17 @@ if __name__ == '__main__':
       });
 
       pythonProcess.on('close', (code) => {
-        if (code !== 0) {
-          return reject(new Error(`Python script failed: ${stderr || 'Unknown error'}`));
+        // Filter out sklearn version warnings from stderr
+        const filteredStderr = stderr
+          .split('\n')
+          .filter(line => !line.includes('InconsistentVersionWarning') && 
+                         !line.includes('sklearn.base.py') &&
+                         !line.includes('model_persistence.html') &&
+                         line.trim() !== '')
+          .join('\n');
+
+        if (code !== 0 && filteredStderr) {
+          return reject(new Error(`Python script failed: ${filteredStderr || 'Unknown error'}`));
         }
 
         try {
@@ -188,7 +231,7 @@ if __name__ == '__main__':
           
           resolve(result);
         } catch (parseError) {
-          reject(new Error(`Failed to parse prediction result: ${parseError.message}`));
+          reject(new Error(`Failed to parse prediction result: ${parseError.message}. Output: ${stdout}`));
         }
       });
 

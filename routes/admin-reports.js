@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
 const AdminReportsController = require('../controllers/adminReportsController');
 const auth = require('../middleware/auth');
 const { body, query, param } = require('express-validator');
@@ -105,6 +106,17 @@ router.patch('/diabetes-predictions/:id', [
     .isIn(['pending', 'processed', 'reviewed'])
     .withMessage('Status must be pending, processed, or reviewed')
 ], AdminReportsController.updateDiabetesPrediction);
+
+/**
+ * @route   POST /api/admin/reports/diabetes-predictions/:id/retry
+ * @desc    Retry diabetes prediction processing
+ * @access  Admin
+ */
+router.post('/diabetes-predictions/:id/retry', [
+  param('id')
+    .isUUID()
+    .withMessage('Valid prediction ID required')
+], AdminReportsController.retryDiabetesPrediction);
 
 // ===================================================================
 // MEDICAL REPORTS UPLOAD ROUTES

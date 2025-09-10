@@ -519,3 +519,194 @@
     at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
     at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-09 11:57:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 20:49:19 [ERROR]: MySQL query error:
+2025-09-09 20:49:19 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-09 20:49:19 [ERROR]: MySQL query error:
+2025-09-09 20:49:19 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-09 20:49:19 [ERROR]: MySQL query error:
+2025-09-09 20:49:19 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-09 20:49:19 [ERROR]: MySQL query error:
+2025-09-09 20:49:19 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-09 20:49:31 [ERROR]: MySQL query error:
+2025-09-09 20:49:31 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-09 20:50:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 20:50:58 [ERROR]: MySQL query error:
+2025-09-09 20:51:35 [ERROR]: MySQL query error:
+2025-09-09 20:53:03 [ERROR]: MySQL query error:
+2025-09-09 20:54:16 [ERROR]: MySQL query error:
+2025-09-09 20:54:16 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-09 21:04:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:05:17 [ERROR]: MySQL query error:
+2025-09-09 21:08:12 [ERROR]: MySQL query error:
+2025-09-09 21:10:17 [ERROR]: MySQL query error:
+2025-09-09 21:35:33 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-09-09 21:35:33 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-09-09 21:35:33 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-09-09 21:40:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:43:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:43:22 [ERROR]: Port 5000 in use, trying 5001
+2025-09-09 21:43:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:44:42 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:45:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:47:10 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:47:42 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:49:32 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:50:23 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 21:59:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 22:02:08 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 22:07:48 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 22:09:17 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 22:09:17 [ERROR]: Port 5000 in use, trying 5001
+2025-09-09 22:17:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-09 22:23:36 [ERROR]: TypeError: Appointment.create is not a function
+    at bookQueueAppointmentForPatient (E:\Project 2\backend\controllers\adminController.js:613:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-09 22:23:36 [ERROR]: TypeError: Appointment.create is not a function
+    at bookQueueAppointmentForPatient (E:\Project 2\backend\controllers\adminController.js:613:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 10:02:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:05:32 [ERROR]: MySQL query error:
+2025-09-10 10:05:32 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-10 10:06:14 [ERROR]: MySQL query error:
+2025-09-10 10:06:14 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-10 10:08:34 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:08:34 [ERROR]: Port 5000 in use, trying 5001
+2025-09-10 10:08:58 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-09-10 10:11:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:12:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:13:09 [ERROR]: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:70:17)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (E:\Project 2\backend\node_modules\express\lib\router\index.js:47:12)
+2025-09-10 10:16:39 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:24:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:24:53 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 10:26:59 [ERROR]: ❌ MongoDB connection failed:
