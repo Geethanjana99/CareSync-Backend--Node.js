@@ -3638,3 +3638,385 @@
 2025-09-10 10:30:46 [INFO]: Authorization check
 2025-09-10 10:30:46 [INFO]: Authorization successful
 2025-09-10 10:30:47 [INFO]: ::1 - - [10/Sep/2025:05:00:47 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 200 547 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:24:39 [INFO]: Socket.IO server initialized
+2025-09-10 12:24:41 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 12:24:41 [INFO]: ✅ MySQL connected successfully
+2025-09-10 12:24:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:24:41 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 12:24:41 [INFO]: 📧 Notification service skipped for now
+2025-09-10 12:24:41 [INFO]: 🚀 Server running on port 5000
+2025-09-10 12:24:41 [INFO]: 📊 Environment: development
+2025-09-10 12:24:41 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 12:24:41 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 12:25:47 [INFO]: Socket.IO server initialized
+2025-09-10 12:25:49 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 12:25:49 [INFO]: ✅ MySQL connected successfully
+2025-09-10 12:25:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:25:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 12:25:49 [INFO]: 📧 Notification service skipped for now
+2025-09-10 12:25:49 [INFO]: 🚀 Server running on port 5000
+2025-09-10 12:25:49 [INFO]: 📊 Environment: development
+2025-09-10 12:25:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 12:25:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 12:26:05 [INFO]: Token decoded successfully
+2025-09-10 12:26:05 [INFO]: Querying user from database
+2025-09-10 12:26:05 [INFO]: Token decoded successfully
+2025-09-10 12:26:05 [INFO]: Querying user from database
+2025-09-10 12:26:05 [INFO]: Token decoded successfully
+2025-09-10 12:26:05 [INFO]: Querying user from database
+2025-09-10 12:26:07 [INFO]: User found
+2025-09-10 12:26:07 [INFO]: Authorization check
+2025-09-10 12:26:07 [INFO]: Authorization successful
+2025-09-10 12:26:07 [INFO]: Token decoded successfully
+2025-09-10 12:26:07 [INFO]: Querying user from database
+2025-09-10 12:26:08 [INFO]: User found
+2025-09-10 12:26:08 [INFO]: Authorization check
+2025-09-10 12:26:08 [INFO]: Authorization successful
+2025-09-10 12:26:08 [INFO]: ::1 - - [10/Sep/2025:06:56:08 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:26:09 [INFO]: User found
+2025-09-10 12:26:09 [INFO]: Authorization check
+2025-09-10 12:26:09 [INFO]: Authorization successful
+2025-09-10 12:26:09 [INFO]: Token decoded successfully
+2025-09-10 12:26:09 [INFO]: Querying user from database
+2025-09-10 12:26:09 [INFO]: User found
+2025-09-10 12:26:09 [INFO]: Authorization check
+2025-09-10 12:26:09 [INFO]: Authorization successful
+2025-09-10 12:26:09 [INFO]: Token decoded successfully
+2025-09-10 12:26:09 [INFO]: Querying user from database
+2025-09-10 12:26:09 [INFO]: User found
+2025-09-10 12:26:09 [INFO]: Authorization check
+2025-09-10 12:26:09 [INFO]: Authorization successful
+2025-09-10 12:26:09 [INFO]: User found
+2025-09-10 12:26:09 [INFO]: Authorization check
+2025-09-10 12:26:09 [INFO]: Authorization successful
+2025-09-10 12:26:09 [INFO]: ::1 - - [10/Sep/2025:06:56:09 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:26:09 [ERROR]: MySQL query error:
+2025-09-10 12:26:09 [INFO]: ::1 - - [10/Sep/2025:06:56:09 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:26:15 [INFO]: Token decoded successfully
+2025-09-10 12:26:15 [INFO]: Querying user from database
+2025-09-10 12:26:15 [INFO]: Token decoded successfully
+2025-09-10 12:26:15 [INFO]: Querying user from database
+2025-09-10 12:26:15 [INFO]: Token decoded successfully
+2025-09-10 12:26:15 [INFO]: Querying user from database
+2025-09-10 12:26:15 [INFO]: User found
+2025-09-10 12:26:15 [INFO]: Authorization check
+2025-09-10 12:26:15 [INFO]: Authorization successful
+2025-09-10 12:26:15 [INFO]: Token decoded successfully
+2025-09-10 12:26:15 [INFO]: Querying user from database
+2025-09-10 12:26:15 [INFO]: User found
+2025-09-10 12:26:15 [INFO]: Authorization check
+2025-09-10 12:26:15 [INFO]: Authorization successful
+2025-09-10 12:26:15 [INFO]: Token decoded successfully
+2025-09-10 12:26:15 [INFO]: Querying user from database
+2025-09-10 12:26:15 [INFO]: User found
+2025-09-10 12:26:15 [INFO]: Authorization check
+2025-09-10 12:26:15 [INFO]: Authorization successful
+2025-09-10 12:26:15 [INFO]: Token decoded successfully
+2025-09-10 12:26:15 [INFO]: Querying user from database
+2025-09-10 12:26:15 [INFO]: User found
+2025-09-10 12:26:15 [INFO]: Authorization check
+2025-09-10 12:26:15 [INFO]: Authorization successful
+2025-09-10 12:26:15 [INFO]: User found
+2025-09-10 12:26:16 [INFO]: Authorization check
+2025-09-10 12:26:16 [INFO]: Authorization successful
+2025-09-10 12:26:16 [INFO]: User found
+2025-09-10 12:26:16 [INFO]: Authorization check
+2025-09-10 12:26:16 [INFO]: Authorization successful
+2025-09-10 12:26:16 [INFO]: ::1 - - [10/Sep/2025:06:56:16 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:26:16 [ERROR]: MySQL query error:
+2025-09-10 12:26:16 [INFO]: ::1 - - [10/Sep/2025:06:56:16 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:26:16 [INFO]: ::1 - - [10/Sep/2025:06:56:16 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:30 [INFO]: Token decoded successfully
+2025-09-10 12:27:30 [INFO]: Querying user from database
+2025-09-10 12:27:30 [INFO]: Token decoded successfully
+2025-09-10 12:27:30 [INFO]: Querying user from database
+2025-09-10 12:27:30 [INFO]: Token decoded successfully
+2025-09-10 12:27:30 [INFO]: Querying user from database
+2025-09-10 12:27:30 [INFO]: Token decoded successfully
+2025-09-10 12:27:30 [INFO]: Querying user from database
+2025-09-10 12:27:30 [INFO]: User found
+2025-09-10 12:27:30 [INFO]: Authorization check
+2025-09-10 12:27:30 [INFO]: Authorization successful
+2025-09-10 12:27:30 [INFO]: Token decoded successfully
+2025-09-10 12:27:30 [INFO]: Querying user from database
+2025-09-10 12:27:30 [INFO]: User found
+2025-09-10 12:27:30 [INFO]: Authorization check
+2025-09-10 12:27:30 [INFO]: Authorization successful
+2025-09-10 12:27:30 [INFO]: Token decoded successfully
+2025-09-10 12:27:30 [INFO]: Querying user from database
+2025-09-10 12:27:30 [INFO]: User found
+2025-09-10 12:27:30 [INFO]: Authorization check
+2025-09-10 12:27:31 [INFO]: Authorization successful
+2025-09-10 12:27:31 [INFO]: Token decoded successfully
+2025-09-10 12:27:31 [INFO]: Querying user from database
+2025-09-10 12:27:31 [INFO]: User found
+2025-09-10 12:27:31 [INFO]: Authorization check
+2025-09-10 12:27:31 [INFO]: Authorization successful
+2025-09-10 12:27:31 [INFO]: User found
+2025-09-10 12:27:31 [INFO]: Authorization check
+2025-09-10 12:27:31 [INFO]: Authorization successful
+2025-09-10 12:27:31 [INFO]: User found
+2025-09-10 12:27:31 [INFO]: Authorization check
+2025-09-10 12:27:31 [INFO]: Authorization successful
+2025-09-10 12:27:31 [INFO]: ::1 - - [10/Sep/2025:06:57:31 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:31 [INFO]: ::1 - - [10/Sep/2025:06:57:31 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:31 [ERROR]: MySQL query error:
+2025-09-10 12:27:31 [INFO]: ::1 - - [10/Sep/2025:06:57:31 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:33 [INFO]: User found
+2025-09-10 12:27:33 [INFO]: ::1 - - [10/Sep/2025:06:57:33 +0000] "GET /api/auth/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:45 [INFO]: User logged in: admin@caresync.com
+2025-09-10 12:27:45 [INFO]: ::1 - - [10/Sep/2025:06:57:45 +0000] "POST /api/auth/login HTTP/1.1" 200 832 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:45 [INFO]: ::1 - - [10/Sep/2025:06:57:45 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:46 [INFO]: Token decoded successfully
+2025-09-10 12:27:46 [INFO]: Querying user from database
+2025-09-10 12:27:46 [INFO]: Token decoded successfully
+2025-09-10 12:27:46 [INFO]: Querying user from database
+2025-09-10 12:27:46 [INFO]: Token decoded successfully
+2025-09-10 12:27:46 [INFO]: Querying user from database
+2025-09-10 12:27:46 [INFO]: User found
+2025-09-10 12:27:46 [INFO]: Authorization check
+2025-09-10 12:27:46 [INFO]: Authorization successful
+2025-09-10 12:27:46 [INFO]: Token decoded successfully
+2025-09-10 12:27:46 [INFO]: Querying user from database
+2025-09-10 12:27:46 [INFO]: User found
+2025-09-10 12:27:46 [INFO]: Authorization check
+2025-09-10 12:27:46 [INFO]: Authorization successful
+2025-09-10 12:27:46 [INFO]: Token decoded successfully
+2025-09-10 12:27:46 [INFO]: Querying user from database
+2025-09-10 12:27:46 [INFO]: User found
+2025-09-10 12:27:46 [INFO]: Authorization check
+2025-09-10 12:27:46 [INFO]: Authorization successful
+2025-09-10 12:27:46 [INFO]: Token decoded successfully
+2025-09-10 12:27:46 [INFO]: Querying user from database
+2025-09-10 12:27:46 [INFO]: User found
+2025-09-10 12:27:46 [INFO]: Authorization check
+2025-09-10 12:27:47 [INFO]: Authorization successful
+2025-09-10 12:27:47 [INFO]: ::1 - - [10/Sep/2025:06:57:47 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:47 [INFO]: User found
+2025-09-10 12:27:47 [INFO]: Authorization check
+2025-09-10 12:27:47 [INFO]: Authorization successful
+2025-09-10 12:27:47 [INFO]: User found
+2025-09-10 12:27:47 [INFO]: Authorization check
+2025-09-10 12:27:47 [INFO]: Authorization successful
+2025-09-10 12:27:47 [ERROR]: MySQL query error:
+2025-09-10 12:27:47 [INFO]: ::1 - - [10/Sep/2025:06:57:47 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:47 [INFO]: ::1 - - [10/Sep/2025:06:57:47 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:27:50 [INFO]: Token decoded successfully
+2025-09-10 12:27:50 [INFO]: Querying user from database
+2025-09-10 12:27:50 [INFO]: User found
+2025-09-10 12:27:50 [INFO]: Authorization check
+2025-09-10 12:27:50 [INFO]: Authorization successful
+2025-09-10 12:27:50 [INFO]: Token decoded successfully
+2025-09-10 12:27:50 [INFO]: Querying user from database
+2025-09-10 12:27:50 [INFO]: User found
+2025-09-10 12:27:50 [INFO]: Authorization check
+2025-09-10 12:27:50 [INFO]: Authorization successful
+2025-09-10 12:28:01 [INFO]: ::1 - - [10/Sep/2025:06:58:01 +0000] "POST /api/admin/reports/diabetes-predictions HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:28:02 [INFO]: Token decoded successfully
+2025-09-10 12:28:02 [INFO]: Querying user from database
+2025-09-10 12:28:03 [INFO]: User found
+2025-09-10 12:28:03 [INFO]: Authorization check
+2025-09-10 12:28:03 [INFO]: Authorization successful
+2025-09-10 12:28:03 [INFO]: Token decoded successfully
+2025-09-10 12:28:03 [INFO]: Querying user from database
+2025-09-10 12:28:03 [INFO]: User found
+2025-09-10 12:28:03 [INFO]: Authorization check
+2025-09-10 12:28:03 [INFO]: Authorization successful
+2025-09-10 12:28:03 [ERROR]: MySQL query error:
+2025-09-10 12:28:03 [INFO]: ::1 - - [10/Sep/2025:06:58:03 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:21 [INFO]: Token decoded successfully
+2025-09-10 12:29:21 [INFO]: Querying user from database
+2025-09-10 12:29:21 [INFO]: Token decoded successfully
+2025-09-10 12:29:21 [INFO]: Querying user from database
+2025-09-10 12:29:21 [INFO]: Token decoded successfully
+2025-09-10 12:29:21 [INFO]: Querying user from database
+2025-09-10 12:29:21 [INFO]: Token decoded successfully
+2025-09-10 12:29:21 [INFO]: Querying user from database
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: Authorization check
+2025-09-10 12:29:22 [INFO]: Authorization successful
+2025-09-10 12:29:22 [INFO]: Token decoded successfully
+2025-09-10 12:29:22 [INFO]: Querying user from database
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: Authorization check
+2025-09-10 12:29:22 [INFO]: Authorization successful
+2025-09-10 12:29:22 [INFO]: Token decoded successfully
+2025-09-10 12:29:22 [INFO]: Querying user from database
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: Authorization check
+2025-09-10 12:29:22 [INFO]: Authorization successful
+2025-09-10 12:29:22 [INFO]: Token decoded successfully
+2025-09-10 12:29:22 [INFO]: Querying user from database
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: Authorization check
+2025-09-10 12:29:22 [INFO]: Authorization successful
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: Authorization check
+2025-09-10 12:29:22 [INFO]: Authorization successful
+2025-09-10 12:29:22 [INFO]: ::1 - - [10/Sep/2025:06:59:22 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:22 [INFO]: User found
+2025-09-10 12:29:22 [INFO]: Authorization check
+2025-09-10 12:29:22 [INFO]: Authorization successful
+2025-09-10 12:29:22 [INFO]: ::1 - - [10/Sep/2025:06:59:22 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:22 [ERROR]: MySQL query error:
+2025-09-10 12:29:22 [INFO]: ::1 - - [10/Sep/2025:06:59:22 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:22 [INFO]: ::1 - - [10/Sep/2025:06:59:22 +0000] "GET /api/auth/profile HTTP/1.1" 200 905 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:31 [INFO]: User logged in: admin@caresync.com
+2025-09-10 12:29:31 [INFO]: ::1 - - [10/Sep/2025:06:59:31 +0000] "POST /api/auth/login HTTP/1.1" 200 832 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:31 [INFO]: ::1 - - [10/Sep/2025:06:59:31 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:33 [INFO]: Token decoded successfully
+2025-09-10 12:29:33 [INFO]: Querying user from database
+2025-09-10 12:29:33 [INFO]: Token decoded successfully
+2025-09-10 12:29:33 [INFO]: Querying user from database
+2025-09-10 12:29:33 [INFO]: Token decoded successfully
+2025-09-10 12:29:33 [INFO]: Querying user from database
+2025-09-10 12:29:33 [INFO]: User found
+2025-09-10 12:29:33 [INFO]: Authorization check
+2025-09-10 12:29:33 [INFO]: Authorization successful
+2025-09-10 12:29:33 [INFO]: Token decoded successfully
+2025-09-10 12:29:33 [INFO]: Querying user from database
+2025-09-10 12:29:33 [INFO]: User found
+2025-09-10 12:29:33 [INFO]: Authorization check
+2025-09-10 12:29:33 [INFO]: Authorization successful
+2025-09-10 12:29:33 [INFO]: Token decoded successfully
+2025-09-10 12:29:33 [INFO]: Querying user from database
+2025-09-10 12:29:33 [INFO]: User found
+2025-09-10 12:29:33 [INFO]: Authorization check
+2025-09-10 12:29:33 [INFO]: Authorization successful
+2025-09-10 12:29:33 [INFO]: Token decoded successfully
+2025-09-10 12:29:33 [INFO]: Querying user from database
+2025-09-10 12:29:33 [INFO]: User found
+2025-09-10 12:29:33 [INFO]: Authorization check
+2025-09-10 12:29:33 [INFO]: Authorization successful
+2025-09-10 12:29:33 [INFO]: ::1 - - [10/Sep/2025:06:59:33 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:33 [INFO]: User found
+2025-09-10 12:29:33 [INFO]: Authorization check
+2025-09-10 12:29:33 [INFO]: Authorization successful
+2025-09-10 12:29:33 [INFO]: User found
+2025-09-10 12:29:33 [INFO]: Authorization check
+2025-09-10 12:29:33 [INFO]: Authorization successful
+2025-09-10 12:29:34 [ERROR]: MySQL query error:
+2025-09-10 12:29:34 [INFO]: ::1 - - [10/Sep/2025:06:59:34 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:34 [INFO]: ::1 - - [10/Sep/2025:06:59:34 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:44 [INFO]: Token decoded successfully
+2025-09-10 12:29:44 [INFO]: Querying user from database
+2025-09-10 12:29:45 [INFO]: User found
+2025-09-10 12:29:45 [INFO]: Authorization check
+2025-09-10 12:29:45 [INFO]: Authorization successful
+2025-09-10 12:29:45 [INFO]: Token decoded successfully
+2025-09-10 12:29:45 [INFO]: Querying user from database
+2025-09-10 12:29:45 [INFO]: User found
+2025-09-10 12:29:45 [INFO]: Authorization check
+2025-09-10 12:29:45 [INFO]: Authorization successful
+2025-09-10 12:29:50 [INFO]: ::1 - - [10/Sep/2025:06:59:50 +0000] "POST /api/admin/reports/diabetes-predictions HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:29:52 [INFO]: Token decoded successfully
+2025-09-10 12:29:52 [INFO]: Querying user from database
+2025-09-10 12:29:52 [INFO]: User found
+2025-09-10 12:29:52 [INFO]: Authorization check
+2025-09-10 12:29:52 [INFO]: Authorization successful
+2025-09-10 12:29:52 [INFO]: Token decoded successfully
+2025-09-10 12:29:52 [INFO]: Querying user from database
+2025-09-10 12:29:52 [INFO]: User found
+2025-09-10 12:29:52 [INFO]: Authorization check
+2025-09-10 12:29:52 [INFO]: Authorization successful
+2025-09-10 12:29:53 [ERROR]: MySQL query error:
+2025-09-10 12:29:53 [INFO]: ::1 - - [10/Sep/2025:06:59:53 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:15 [INFO]: Token decoded successfully
+2025-09-10 12:31:15 [INFO]: Querying user from database
+2025-09-10 12:31:15 [INFO]: Token decoded successfully
+2025-09-10 12:31:15 [INFO]: Querying user from database
+2025-09-10 12:31:15 [INFO]: Token decoded successfully
+2025-09-10 12:31:15 [INFO]: Querying user from database
+2025-09-10 12:31:15 [INFO]: Token decoded successfully
+2025-09-10 12:31:15 [INFO]: Querying user from database
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: Authorization check
+2025-09-10 12:31:16 [INFO]: Authorization successful
+2025-09-10 12:31:16 [INFO]: Token decoded successfully
+2025-09-10 12:31:16 [INFO]: Querying user from database
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: Authorization check
+2025-09-10 12:31:16 [INFO]: Authorization successful
+2025-09-10 12:31:16 [INFO]: Token decoded successfully
+2025-09-10 12:31:16 [INFO]: Querying user from database
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: Authorization check
+2025-09-10 12:31:16 [INFO]: Authorization successful
+2025-09-10 12:31:16 [INFO]: Token decoded successfully
+2025-09-10 12:31:16 [INFO]: Querying user from database
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: Authorization check
+2025-09-10 12:31:16 [INFO]: Authorization successful
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: Authorization check
+2025-09-10 12:31:16 [INFO]: Authorization successful
+2025-09-10 12:31:16 [INFO]: User found
+2025-09-10 12:31:16 [INFO]: Authorization check
+2025-09-10 12:31:16 [INFO]: Authorization successful
+2025-09-10 12:31:16 [INFO]: ::1 - - [10/Sep/2025:07:01:16 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:16 [INFO]: ::1 - - [10/Sep/2025:07:01:16 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:16 [INFO]: ::1 - - [10/Sep/2025:07:01:16 +0000] "GET /api/auth/profile HTTP/1.1" 200 905 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:16 [ERROR]: MySQL query error:
+2025-09-10 12:31:16 [INFO]: ::1 - - [10/Sep/2025:07:01:16 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:23 [INFO]: User logged in: admin@caresync.com
+2025-09-10 12:31:23 [INFO]: ::1 - - [10/Sep/2025:07:01:23 +0000] "POST /api/auth/login HTTP/1.1" 200 832 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:23 [INFO]: ::1 - - [10/Sep/2025:07:01:23 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:24 [INFO]: Token decoded successfully
+2025-09-10 12:31:24 [INFO]: Querying user from database
+2025-09-10 12:31:24 [INFO]: Token decoded successfully
+2025-09-10 12:31:24 [INFO]: Querying user from database
+2025-09-10 12:31:24 [INFO]: Token decoded successfully
+2025-09-10 12:31:24 [INFO]: Querying user from database
+2025-09-10 12:31:25 [INFO]: User found
+2025-09-10 12:31:25 [INFO]: Authorization check
+2025-09-10 12:31:25 [INFO]: Authorization successful
+2025-09-10 12:31:25 [INFO]: Token decoded successfully
+2025-09-10 12:31:25 [INFO]: Querying user from database
+2025-09-10 12:31:25 [INFO]: User found
+2025-09-10 12:31:25 [INFO]: Authorization check
+2025-09-10 12:31:25 [INFO]: Authorization successful
+2025-09-10 12:31:25 [INFO]: Token decoded successfully
+2025-09-10 12:31:25 [INFO]: Querying user from database
+2025-09-10 12:31:25 [INFO]: User found
+2025-09-10 12:31:25 [INFO]: Authorization check
+2025-09-10 12:31:25 [INFO]: Authorization successful
+2025-09-10 12:31:25 [INFO]: Token decoded successfully
+2025-09-10 12:31:25 [INFO]: Querying user from database
+2025-09-10 12:31:25 [INFO]: User found
+2025-09-10 12:31:25 [INFO]: Authorization check
+2025-09-10 12:31:25 [INFO]: Authorization successful
+2025-09-10 12:31:25 [INFO]: User found
+2025-09-10 12:31:25 [INFO]: Authorization check
+2025-09-10 12:31:25 [INFO]: Authorization successful
+2025-09-10 12:31:25 [INFO]: User found
+2025-09-10 12:31:25 [INFO]: Authorization check
+2025-09-10 12:31:25 [INFO]: Authorization successful
+2025-09-10 12:31:25 [INFO]: ::1 - - [10/Sep/2025:07:01:25 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:25 [ERROR]: MySQL query error:
+2025-09-10 12:31:25 [INFO]: ::1 - - [10/Sep/2025:07:01:25 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:25 [INFO]: ::1 - - [10/Sep/2025:07:01:25 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:30 [INFO]: Token decoded successfully
+2025-09-10 12:31:30 [INFO]: Querying user from database
+2025-09-10 12:31:30 [INFO]: User found
+2025-09-10 12:31:30 [INFO]: Authorization check
+2025-09-10 12:31:30 [INFO]: Authorization successful
+2025-09-10 12:31:30 [INFO]: Token decoded successfully
+2025-09-10 12:31:30 [INFO]: Querying user from database
+2025-09-10 12:31:30 [INFO]: User found
+2025-09-10 12:31:30 [INFO]: Authorization check
+2025-09-10 12:31:30 [INFO]: Authorization successful
+2025-09-10 12:31:34 [INFO]: ::1 - - [10/Sep/2025:07:01:34 +0000] "POST /api/admin/reports/diabetes-predictions HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 12:31:37 [INFO]: Token decoded successfully
+2025-09-10 12:31:37 [INFO]: Querying user from database
+2025-09-10 12:31:37 [INFO]: User found
+2025-09-10 12:31:37 [INFO]: Authorization check
+2025-09-10 12:31:37 [INFO]: Authorization successful
+2025-09-10 12:31:37 [INFO]: Token decoded successfully
+2025-09-10 12:31:37 [INFO]: Querying user from database
+2025-09-10 12:31:38 [INFO]: User found
+2025-09-10 12:31:38 [INFO]: Authorization check
+2025-09-10 12:31:38 [INFO]: Authorization successful
+2025-09-10 12:31:38 [ERROR]: MySQL query error:
+2025-09-10 12:31:38 [INFO]: ::1 - - [10/Sep/2025:07:01:38 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 500 119 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

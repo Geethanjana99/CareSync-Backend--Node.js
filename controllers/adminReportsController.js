@@ -48,8 +48,8 @@ class AdminReportsController {
 
       console.log('🔍 [DEBUG] Checking patient exists:', patientId);
 
-      // Verify patient exists
-      const patientQuery = 'SELECT * FROM patients WHERE id = ?';
+      // Verify patient exists - search by patient_id field
+      const patientQuery = 'SELECT * FROM patients WHERE patient_id = ?';
       const patients = await mysqlConnection.query(patientQuery, [patientId]);
       if (patients.length === 0) {
         console.log('❌ [DEBUG] Patient not found:', patientId);
@@ -204,25 +204,77 @@ class AdminReportsController {
       } = req.query;
 
       const offset = (page - 1) * limit;
-      const where = {};
+      
+      // Build WHERE clause
+      let whereClause = '1=1';
+      const params = [];
+      
+      if (patientId) {
+        whereClause += ' AND dp.patient_id = ?';
+        params.push(patientId);
+      }
+      
+      if (status) {
+        whereClause += ' AND dp.status = ?';
+        params.push(status);
+      }
 
-      if (patientId) where.patientId = patientId;
-      if (status) where.status = status;
+      // Query with JOIN to get patient names from users table
+      const query = `
+        SELECT 
+          dp.*,
+          u.name as patient_name,
+          u.email as patient_email
+        FROM diabetes_predictions dp
+        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN users u ON p.user_id = u.id
+        WHERE ${whereClause}
+        ORDER BY dp.${sortBy} ${sortOrder}
+        LIMIT ? OFFSET ?
+      `;
+      
+      params.push(parseInt(limit), parseInt(offset));
+      
+      const predictions = await mysqlConnection.query(query, params);
+      
+      // Get total count
+      const countQuery = `
+        SELECT COUNT(*) as total
+        FROM diabetes_predictions dp
+        WHERE ${whereClause}
+      `;
+      const countParams = params.slice(0, -2); // Remove limit and offset
+      const countResult = await mysqlConnection.query(countQuery, countParams);
+      const total = countResult[0].total;
 
-      const { count, rows: predictions } = await DiabetesPrediction.findAndCountAll({
-        where,
-        order: [[sortBy, sortOrder]],
-        limit: parseInt(limit),
-        offset: parseInt(offset)
-      });
+      // Transform results to include patient names
+      const transformedPredictions = predictions.map(prediction => ({
+        id: prediction.id,
+        patientId: prediction.patient_id,
+        patientName: prediction.patient_name || `Patient ${prediction.patient_id}`,
+        patientEmail: prediction.patient_email,
+        pregnancies: prediction.pregnancies,
+        glucose: prediction.glucose,
+        bmi: prediction.bmi,
+        age: prediction.age,
+        insulin: prediction.insulin,
+        predictionResult: prediction.prediction_result,
+        predictionProbability: prediction.prediction_probability,
+        riskLevel: prediction.risk_level,
+        status: prediction.status,
+        notes: prediction.notes,
+        createdAt: prediction.created_at,
+        updatedAt: prediction.updated_at,
+        processedAt: prediction.processed_at
+      }));
 
       res.json({
         success: true,
         data: {
-          predictions,
+          predictions: transformedPredictions,
           pagination: {
-            total: count,
-            pages: Math.ceil(count / limit),
+            total: total,
+            pages: Math.ceil(total / limit),
             page: parseInt(page),
             limit: parseInt(limit)
           }

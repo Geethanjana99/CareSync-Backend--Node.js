@@ -20,7 +20,8 @@ router.use(auth.authorize(['admin']));
  */
 router.post('/diabetes-predictions', [
   body('patientId')
-    .isUUID()
+    .notEmpty()
+    .isLength({ min: 1, max: 50 })
     .withMessage('Valid patient ID is required'),
   body('glucose')
     .isFloat({ min: 0, max: 300 })
