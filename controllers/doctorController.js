@@ -148,14 +148,17 @@ class DoctorController {
         });
       }
 
-      const appointments = await Appointment.findByDoctorId(doctor.id, {
-        page: parseInt(page),
+      const filters = {
+        doctor_id: doctor.id,
         limit: parseInt(limit),
-        status,
-        startDate,
-        endDate,
-        patientName
-      });
+        offset: (parseInt(page) - 1) * parseInt(limit)
+      };
+
+      if (status) filters.status = status;
+      if (startDate) filters.date_from = startDate;
+      if (endDate) filters.date_to = endDate;
+
+      const appointments = await Appointment.findAll(filters);
 
       res.json({
         success: true,

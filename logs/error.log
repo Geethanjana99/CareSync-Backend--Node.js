@@ -1138,3 +1138,202 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:17 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:17 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:30 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:30 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:43 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:43 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:20 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:20 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:40 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:40 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:08:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:08:34 [ERROR]: MySQL query error:
+2025-09-10 21:08:34 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:08:37 [ERROR]: MySQL query error:
+2025-09-10 21:08:37 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:27 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:27 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:31 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:31 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:32 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:32 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:34 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:34 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:35 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:35 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:38 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:38 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:10:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:11:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:12:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:14:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:46 [ERROR]: MySQL query error:
+2025-09-10 21:14:46 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:47 [ERROR]: MySQL query error:
+2025-09-10 21:14:47 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:14 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:14 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:16 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:16 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:05 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:05 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:55 [ERROR]: MySQL query error:
+2025-09-10 21:16:55 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:56 [ERROR]: MySQL query error:
+2025-09-10 21:16:56 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:03 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:03 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:06 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:06 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:18:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:20:56 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:25:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:29:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:30:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:30:44 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:31:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:32:24 [ERROR]: MySQL query error:
+2025-09-10 21:32:24 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:32:26 [ERROR]: MySQL query error:
+2025-09-10 21:32:26 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

@@ -5952,3 +5952,547 @@
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-09-10 21:01:10 [INFO]: ::1 - - [10/Sep/2025:15:31:10 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:05:15 [INFO]: Token decoded successfully
+2025-09-10 21:05:15 [INFO]: Querying user from database
+2025-09-10 21:05:16 [INFO]: User found
+2025-09-10 21:05:16 [INFO]: Authorization check
+2025-09-10 21:05:16 [INFO]: Authorization successful
+2025-09-10 21:05:17 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:17 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:17 [INFO]: ::1 - - [10/Sep/2025:15:35:17 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:05:29 [INFO]: Token decoded successfully
+2025-09-10 21:05:29 [INFO]: Querying user from database
+2025-09-10 21:05:29 [INFO]: User found
+2025-09-10 21:05:29 [INFO]: Authorization check
+2025-09-10 21:05:29 [INFO]: Authorization successful
+2025-09-10 21:05:30 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:30 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:30 [INFO]: ::1 - - [10/Sep/2025:15:35:30 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:05:42 [INFO]: Token decoded successfully
+2025-09-10 21:05:42 [INFO]: Querying user from database
+2025-09-10 21:05:42 [INFO]: User found
+2025-09-10 21:05:42 [INFO]: Authorization check
+2025-09-10 21:05:42 [INFO]: Authorization successful
+2025-09-10 21:05:43 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:43 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:05:43 [INFO]: ::1 - - [10/Sep/2025:15:35:43 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:06:18 [INFO]: Token decoded successfully
+2025-09-10 21:06:18 [INFO]: Querying user from database
+2025-09-10 21:06:18 [INFO]: User found
+2025-09-10 21:06:18 [INFO]: Authorization check
+2025-09-10 21:06:18 [INFO]: Authorization successful
+2025-09-10 21:06:20 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:20 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:20 [INFO]: ::1 - - [10/Sep/2025:15:36:20 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:06:40 [INFO]: Token decoded successfully
+2025-09-10 21:06:40 [INFO]: Querying user from database
+2025-09-10 21:06:40 [INFO]: Token decoded successfully
+2025-09-10 21:06:40 [INFO]: Querying user from database
+2025-09-10 21:06:40 [INFO]: User found
+2025-09-10 21:06:40 [INFO]: Authorization check
+2025-09-10 21:06:40 [INFO]: Authorization successful
+2025-09-10 21:06:40 [INFO]: User found
+2025-09-10 21:06:40 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:40 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:06:40 [INFO]: ::1 - - [10/Sep/2025:15:36:40 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:06:42 [INFO]: ::1 - - [10/Sep/2025:15:36:42 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:08:25 [INFO]: Socket.IO server initialized
+2025-09-10 21:08:29 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:08:29 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:08:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:08:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:08:29 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:08:29 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:08:29 [INFO]: 📊 Environment: development
+2025-09-10 21:08:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:08:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:08:32 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 21:08:32 [INFO]: ::ffff:127.0.0.1 - - [10/Sep/2025:15:38:32 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:08:32 [INFO]: Token decoded successfully
+2025-09-10 21:08:32 [INFO]: Querying user from database
+2025-09-10 21:08:32 [INFO]: User found
+2025-09-10 21:08:32 [INFO]: Authorization check
+2025-09-10 21:08:32 [INFO]: Authorization successful
+2025-09-10 21:08:34 [ERROR]: MySQL query error:
+2025-09-10 21:08:34 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:08:37 [ERROR]: MySQL query error:
+2025-09-10 21:08:37 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:08:37 [INFO]: ::ffff:127.0.0.1 - - [10/Sep/2025:15:38:37 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:08:50 [INFO]: ::1 - - [10/Sep/2025:15:38:50 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 401 69 "-" "-"
+2025-09-10 21:09:01 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:09:26 [INFO]: Token decoded successfully
+2025-09-10 21:09:26 [INFO]: Querying user from database
+2025-09-10 21:09:26 [INFO]: User found
+2025-09-10 21:09:26 [INFO]: Authorization check
+2025-09-10 21:09:26 [INFO]: Authorization successful
+2025-09-10 21:09:27 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:27 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:27 [INFO]: ::1 - - [10/Sep/2025:15:39:27 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:28 [INFO]: Token decoded successfully
+2025-09-10 21:09:28 [INFO]: Querying user from database
+2025-09-10 21:09:29 [INFO]: User found
+2025-09-10 21:09:29 [INFO]: Authorization check
+2025-09-10 21:09:29 [INFO]: Authorization successful
+2025-09-10 21:09:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:29 [INFO]: ::1 - - [10/Sep/2025:15:39:29 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:30 [INFO]: Token decoded successfully
+2025-09-10 21:09:30 [INFO]: Querying user from database
+2025-09-10 21:09:31 [INFO]: User found
+2025-09-10 21:09:31 [INFO]: Authorization check
+2025-09-10 21:09:31 [INFO]: Authorization successful
+2025-09-10 21:09:31 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:31 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:31 [INFO]: ::1 - - [10/Sep/2025:15:39:31 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:32 [INFO]: Token decoded successfully
+2025-09-10 21:09:32 [INFO]: Querying user from database
+2025-09-10 21:09:32 [INFO]: User found
+2025-09-10 21:09:32 [INFO]: Authorization check
+2025-09-10 21:09:32 [INFO]: Authorization successful
+2025-09-10 21:09:32 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:32 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:32 [INFO]: ::1 - - [10/Sep/2025:15:39:32 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:33 [INFO]: Token decoded successfully
+2025-09-10 21:09:33 [INFO]: Querying user from database
+2025-09-10 21:09:34 [INFO]: User found
+2025-09-10 21:09:34 [INFO]: Authorization check
+2025-09-10 21:09:34 [INFO]: Authorization successful
+2025-09-10 21:09:34 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:34 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:34 [INFO]: ::1 - - [10/Sep/2025:15:39:34 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:34 [INFO]: Token decoded successfully
+2025-09-10 21:09:34 [INFO]: Querying user from database
+2025-09-10 21:09:35 [INFO]: User found
+2025-09-10 21:09:35 [INFO]: Authorization check
+2025-09-10 21:09:35 [INFO]: Authorization successful
+2025-09-10 21:09:35 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:35 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:35 [INFO]: ::1 - - [10/Sep/2025:15:39:35 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:35 [INFO]: Token decoded successfully
+2025-09-10 21:09:35 [INFO]: Querying user from database
+2025-09-10 21:09:36 [INFO]: User found
+2025-09-10 21:09:36 [INFO]: Authorization check
+2025-09-10 21:09:36 [INFO]: Authorization successful
+2025-09-10 21:09:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:36 [INFO]: ::1 - - [10/Sep/2025:15:39:36 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:36 [INFO]: Token decoded successfully
+2025-09-10 21:09:36 [INFO]: Querying user from database
+2025-09-10 21:09:37 [INFO]: User found
+2025-09-10 21:09:37 [INFO]: Authorization check
+2025-09-10 21:09:37 [INFO]: Authorization successful
+2025-09-10 21:09:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:37 [INFO]: ::1 - - [10/Sep/2025:15:39:37 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:09:38 [INFO]: Token decoded successfully
+2025-09-10 21:09:38 [INFO]: Querying user from database
+2025-09-10 21:09:38 [INFO]: User found
+2025-09-10 21:09:38 [INFO]: Authorization check
+2025-09-10 21:09:38 [INFO]: Authorization successful
+2025-09-10 21:09:38 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:38 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:09:38 [INFO]: ::1 - - [10/Sep/2025:15:39:38 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:10:20 [INFO]: Socket.IO server initialized
+2025-09-10 21:10:22 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:10:22 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:10:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:10:22 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:10:22 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:10:22 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:10:22 [INFO]: 📊 Environment: development
+2025-09-10 21:10:22 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:10:22 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:10:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:10:59 [INFO]: Process terminated
+2025-09-10 21:11:26 [INFO]: Socket.IO server initialized
+2025-09-10 21:11:28 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:11:28 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:11:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:11:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:11:28 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:11:28 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:11:28 [INFO]: 📊 Environment: development
+2025-09-10 21:11:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:11:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:11:49 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:11:49 [INFO]: Process terminated
+2025-09-10 21:12:24 [INFO]: Socket.IO server initialized
+2025-09-10 21:12:25 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:12:25 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:12:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:12:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:12:25 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:12:25 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:12:25 [INFO]: 📊 Environment: development
+2025-09-10 21:12:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:12:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:14:35 [INFO]: Token decoded successfully
+2025-09-10 21:14:35 [INFO]: Querying user from database
+2025-09-10 21:14:35 [INFO]: Token decoded successfully
+2025-09-10 21:14:35 [INFO]: Querying user from database
+2025-09-10 21:14:35 [INFO]: User found
+2025-09-10 21:14:35 [INFO]: Authorization check
+2025-09-10 21:14:35 [INFO]: Authorization successful
+2025-09-10 21:14:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:36 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:36 [INFO]: ::1 - - [10/Sep/2025:15:44:36 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:14:37 [INFO]: Token decoded successfully
+2025-09-10 21:14:37 [INFO]: Querying user from database
+2025-09-10 21:14:37 [INFO]: User found
+2025-09-10 21:14:37 [INFO]: User found
+2025-09-10 21:14:37 [INFO]: Authorization check
+2025-09-10 21:14:37 [INFO]: Authorization successful
+2025-09-10 21:14:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:37 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:37 [INFO]: ::1 - - [10/Sep/2025:15:44:37 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:14:38 [INFO]: ::1 - - [10/Sep/2025:15:44:38 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:14:44 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 21:14:44 [INFO]: ::1 - - [10/Sep/2025:15:44:44 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:14:44 [INFO]: Token decoded successfully
+2025-09-10 21:14:44 [INFO]: Querying user from database
+2025-09-10 21:14:44 [INFO]: User found
+2025-09-10 21:14:44 [INFO]: Authorization check
+2025-09-10 21:14:44 [INFO]: Authorization successful
+2025-09-10 21:14:46 [ERROR]: MySQL query error:
+2025-09-10 21:14:46 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:47 [ERROR]: MySQL query error:
+2025-09-10 21:14:47 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:14:48 [INFO]: ::1 - - [10/Sep/2025:15:44:48 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:15:12 [INFO]: Token decoded successfully
+2025-09-10 21:15:12 [INFO]: Querying user from database
+2025-09-10 21:15:13 [INFO]: User found
+2025-09-10 21:15:13 [INFO]: Authorization check
+2025-09-10 21:15:13 [INFO]: Authorization successful
+2025-09-10 21:15:13 [INFO]: Token decoded successfully
+2025-09-10 21:15:13 [INFO]: Querying user from database
+2025-09-10 21:15:14 [INFO]: ::1 - - [10/Sep/2025:15:45:14 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:15:14 [INFO]: User found
+2025-09-10 21:15:14 [INFO]: Authorization check
+2025-09-10 21:15:14 [INFO]: Authorization successful
+2025-09-10 21:15:14 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:14 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:14 [INFO]: ::1 - - [10/Sep/2025:15:45:14 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:15:15 [INFO]: Token decoded successfully
+2025-09-10 21:15:15 [INFO]: Querying user from database
+2025-09-10 21:15:15 [INFO]: User found
+2025-09-10 21:15:15 [INFO]: Authorization check
+2025-09-10 21:15:15 [INFO]: Authorization successful
+2025-09-10 21:15:16 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:16 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:16 [INFO]: ::1 - - [10/Sep/2025:15:45:16 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:15:29 [INFO]: Token decoded successfully
+2025-09-10 21:15:29 [INFO]: Querying user from database
+2025-09-10 21:15:29 [INFO]: User found
+2025-09-10 21:15:29 [INFO]: Authorization check
+2025-09-10 21:15:29 [INFO]: Authorization successful
+2025-09-10 21:15:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:29 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:15:29 [INFO]: ::1 - - [10/Sep/2025:15:45:29 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:16:02 [INFO]: Token decoded successfully
+2025-09-10 21:16:02 [INFO]: Querying user from database
+2025-09-10 21:16:02 [INFO]: Token decoded successfully
+2025-09-10 21:16:02 [INFO]: Querying user from database
+2025-09-10 21:16:03 [INFO]: User found
+2025-09-10 21:16:03 [INFO]: Authorization check
+2025-09-10 21:16:03 [INFO]: Authorization successful
+2025-09-10 21:16:03 [INFO]: User found
+2025-09-10 21:16:05 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:05 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:05 [INFO]: ::1 - - [10/Sep/2025:15:46:05 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:16:06 [INFO]: ::1 - - [10/Sep/2025:15:46:06 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:16:54 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 21:16:54 [INFO]: ::1 - - [10/Sep/2025:15:46:54 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:16:54 [INFO]: Token decoded successfully
+2025-09-10 21:16:54 [INFO]: Querying user from database
+2025-09-10 21:16:54 [INFO]: User found
+2025-09-10 21:16:54 [INFO]: Authorization check
+2025-09-10 21:16:54 [INFO]: Authorization successful
+2025-09-10 21:16:55 [ERROR]: MySQL query error:
+2025-09-10 21:16:55 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:55 [INFO]: Token decoded successfully
+2025-09-10 21:16:55 [INFO]: Querying user from database
+2025-09-10 21:16:56 [ERROR]: MySQL query error:
+2025-09-10 21:16:56 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:16:56 [INFO]: ::1 - - [10/Sep/2025:15:46:56 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:17:01 [INFO]: User found
+2025-09-10 21:17:01 [INFO]: Authorization check
+2025-09-10 21:17:01 [INFO]: Authorization successful
+2025-09-10 21:17:03 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:03 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:03 [INFO]: ::1 - - [10/Sep/2025:15:47:03 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:17:06 [INFO]: Token decoded successfully
+2025-09-10 21:17:06 [INFO]: Querying user from database
+2025-09-10 21:17:06 [INFO]: User found
+2025-09-10 21:17:06 [INFO]: Authorization check
+2025-09-10 21:17:06 [INFO]: Authorization successful
+2025-09-10 21:17:06 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:06 [ERROR]: TypeError: Appointment.findByDoctorId is not a function
+    at getAppointmentHistory (E:\Project 2\backend\controllers\doctorController.js:151:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:17:06 [INFO]: ::1 - - [10/Sep/2025:15:47:06 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 500 320 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:18:48 [INFO]: Socket.IO server initialized
+2025-09-10 21:18:50 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:18:50 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:18:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:18:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:18:50 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:18:50 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:18:50 [INFO]: 📊 Environment: development
+2025-09-10 21:18:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:18:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:20:16 [INFO]: ::1 - - [10/Sep/2025:15:50:16 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-09-10 21:20:54 [INFO]: Socket.IO server initialized
+2025-09-10 21:20:56 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:20:56 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:20:56 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:20:56 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:20:56 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:20:56 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:20:56 [INFO]: 📊 Environment: development
+2025-09-10 21:20:56 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:20:56 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:21:29 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:21:29 [INFO]: Process terminated
+2025-09-10 21:21:50 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:21:50 [INFO]: Process terminated
+2025-09-10 21:21:51 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:21:51 [INFO]: Process terminated
+2025-09-10 21:21:51 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:21:51 [INFO]: Process terminated
+2025-09-10 21:25:02 [INFO]: Socket.IO server initialized
+2025-09-10 21:25:04 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:25:04 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:25:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:25:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:25:04 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:25:04 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:25:04 [INFO]: 📊 Environment: development
+2025-09-10 21:25:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:25:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:26:31 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:26:31 [INFO]: Process terminated
+2025-09-10 21:29:47 [INFO]: Socket.IO server initialized
+2025-09-10 21:29:49 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:29:49 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:29:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:29:49 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:29:49 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:29:49 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:29:49 [INFO]: 📊 Environment: development
+2025-09-10 21:29:49 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:29:49 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:30:05 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:30:05 [INFO]: Process terminated
+2025-09-10 21:30:13 [INFO]: Socket.IO server initialized
+2025-09-10 21:30:15 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:30:15 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:30:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:30:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:30:15 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:30:15 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:30:15 [INFO]: 📊 Environment: development
+2025-09-10 21:30:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:30:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:30:31 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 21:30:31 [INFO]: Process terminated
+2025-09-10 21:30:43 [INFO]: Socket.IO server initialized
+2025-09-10 21:30:44 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:30:44 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:30:44 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:30:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:30:44 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:30:44 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:30:44 [INFO]: 📊 Environment: development
+2025-09-10 21:30:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:30:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:31:09 [INFO]: Socket.IO server initialized
+2025-09-10 21:31:14 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 21:31:14 [INFO]: ✅ MySQL connected successfully
+2025-09-10 21:31:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 21:31:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 21:31:14 [INFO]: 📧 Notification service skipped for now
+2025-09-10 21:31:14 [INFO]: 🚀 Server running on port 5000
+2025-09-10 21:31:14 [INFO]: 📊 Environment: development
+2025-09-10 21:31:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 21:31:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 21:32:22 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 21:32:22 [INFO]: ::1 - - [10/Sep/2025:16:02:22 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:32:22 [INFO]: Token decoded successfully
+2025-09-10 21:32:22 [INFO]: Querying user from database
+2025-09-10 21:32:23 [INFO]: User found
+2025-09-10 21:32:23 [INFO]: Authorization check
+2025-09-10 21:32:23 [INFO]: Authorization successful
+2025-09-10 21:32:24 [ERROR]: MySQL query error:
+2025-09-10 21:32:24 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:32:26 [ERROR]: MySQL query error:
+2025-09-10 21:32:26 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 21:32:26 [INFO]: ::1 - - [10/Sep/2025:16:02:26 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:32:27 [INFO]: Token decoded successfully
+2025-09-10 21:32:27 [INFO]: Querying user from database
+2025-09-10 21:32:28 [INFO]: User found
+2025-09-10 21:32:28 [INFO]: Authorization check
+2025-09-10 21:32:28 [INFO]: Authorization successful
+2025-09-10 21:32:29 [INFO]: ::1 - - [10/Sep/2025:16:02:29 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 200 26 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:32:43 [INFO]: ::1 - - [10/Sep/2025:16:02:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-09-10 21:33:43 [INFO]: ::1 - - [10/Sep/2025:16:03:43 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-09-10 21:34:29 [INFO]: ::1 - - [10/Sep/2025:16:04:29 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-09-10 21:35:15 [INFO]: Token decoded successfully
+2025-09-10 21:35:15 [INFO]: Querying user from database
+2025-09-10 21:35:15 [INFO]: ::1 - - [10/Sep/2025:16:05:15 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:35:16 [INFO]: ::1 - - [10/Sep/2025:16:05:16 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:35:16 [INFO]: User found
+2025-09-10 21:35:16 [INFO]: Authorization check
+2025-09-10 21:35:16 [INFO]: Authorization successful
+2025-09-10 21:35:17 [INFO]: ::1 - - [10/Sep/2025:16:05:17 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 26 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:35:18 [INFO]: Token decoded successfully
+2025-09-10 21:35:18 [INFO]: Querying user from database
+2025-09-10 21:35:18 [INFO]: User found
+2025-09-10 21:35:18 [INFO]: Authorization check
+2025-09-10 21:35:18 [INFO]: Authorization successful
+2025-09-10 21:35:19 [INFO]: ::1 - - [10/Sep/2025:16:05:19 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:36:45 [INFO]: Token decoded successfully
+2025-09-10 21:36:45 [INFO]: Querying user from database
+2025-09-10 21:36:46 [INFO]: User found
+2025-09-10 21:36:46 [INFO]: Authorization check
+2025-09-10 21:36:46 [INFO]: Authorization successful
+2025-09-10 21:36:46 [INFO]: ::1 - - [10/Sep/2025:16:06:46 +0000] "GET /api/doctors/appointments?startDate=2025-09-10&endDate=2025-09-10&limit=100 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:36:46 [INFO]: Token decoded successfully
+2025-09-10 21:36:46 [INFO]: Querying user from database
+2025-09-10 21:36:46 [INFO]: ::1 - - [10/Sep/2025:16:06:46 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:36:46 [INFO]: ::1 - - [10/Sep/2025:16:06:46 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:36:46 [INFO]: User found
+2025-09-10 21:36:46 [INFO]: Authorization check
+2025-09-10 21:36:46 [INFO]: Authorization successful
+2025-09-10 21:36:47 [INFO]: Token decoded successfully
+2025-09-10 21:36:47 [INFO]: Querying user from database
+2025-09-10 21:36:47 [INFO]: ::1 - - [10/Sep/2025:16:06:47 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 21:36:47 [INFO]: User found
+2025-09-10 21:36:47 [INFO]: Authorization check
+2025-09-10 21:36:47 [INFO]: Authorization successful
+2025-09-10 21:36:48 [INFO]: ::1 - - [10/Sep/2025:16:06:48 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
