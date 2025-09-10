@@ -1030,6 +1030,267 @@ class DoctorController {
     }
   }
 
+  // Get doctor availability data
+  static async getDoctorAvailability(req, res, next) {
+    try {
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Get current date for queue status
+      const today = new Date().toISOString().split('T')[0];
+
+      // Get queue status for today
+      const queueQuery = `
+        SELECT is_active, available_from, available_to, current_number, 
+               current_emergency_number, regular_count, emergency_used, max_emergency_slots
+        FROM queue_status 
+        WHERE doctor_id = ? AND DATE(queue_date) = ?
+        LIMIT 1
+      `;
+      
+      const queueResult = await mysqlConnection.query(queueQuery, [doctor.id, today]);
+      const queueData = queueResult[0] && queueResult[0].length > 0 ? queueResult[0][0] : null;
+
+      // Prepare response data
+      const availabilityData = {
+        doctor_id: doctor.id,
+        availability_status: doctor.availability_status || 'offline',
+        working_hours: doctor.working_hours || {},
+        queue: queueData ? {
+          is_active: Boolean(queueData.is_active),
+          available_from: queueData.available_from,
+          available_to: queueData.available_to,
+          current_number: queueData.current_number,
+          current_emergency_number: queueData.current_emergency_number,
+          regular_count: queueData.regular_count,
+          emergency_used: queueData.emergency_used,
+          max_emergency_slots: queueData.max_emergency_slots,
+          date: today
+        } : {
+          is_active: false,
+          available_from: '09:00:00',
+          available_to: '17:00:00',
+          current_number: '0',
+          current_emergency_number: 'E0',
+          regular_count: 0,
+          emergency_used: 0,
+          max_emergency_slots: 5,
+          date: today
+        }
+      };
+
+      res.json({
+        success: true,
+        data: availabilityData
+      });
+
+      logger.info(`Doctor ${doctor.id} availability data fetched`);
+    } catch (error) {
+      logger.error('Error fetching doctor availability:', error);
+      next(error);
+    }
+  }
+
+  // Get queue status
+  static async getQueueStatus(req, res, next) {
+    try {
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Get current date for queue status
+      const today = new Date().toISOString().split('T')[0];
+
+      // Get queue status for today
+      const queueQuery = `
+        SELECT id, is_active, available_from, available_to, current_number, 
+               current_emergency_number, regular_count, emergency_used, max_emergency_slots,
+               queue_date, created_at, updated_at
+        FROM queue_status 
+        WHERE doctor_id = ? AND DATE(queue_date) = ?
+        LIMIT 1
+      `;
+      
+      const queueResult = await mysqlConnection.query(queueQuery, [doctor.id, today]);
+      const queueData = queueResult[0] && queueResult[0].length > 0 ? queueResult[0][0] : null;
+
+      // Prepare response data
+      const queueStatus = queueData ? {
+        id: queueData.id,
+        doctor_id: doctor.id,
+        is_active: Boolean(queueData.is_active),
+        available_from: queueData.available_from,
+        available_to: queueData.available_to,
+        current_number: queueData.current_number,
+        current_emergency_number: queueData.current_emergency_number,
+        regular_count: queueData.regular_count,
+        emergency_used: queueData.emergency_used,
+        max_emergency_slots: queueData.max_emergency_slots,
+        queue_date: queueData.queue_date,
+        created_at: queueData.created_at,
+        updated_at: queueData.updated_at
+      } : {
+        doctor_id: doctor.id,
+        is_active: false,
+        available_from: '09:00:00',
+        available_to: '17:00:00',
+        current_number: '0',
+        current_emergency_number: 'E0',
+        regular_count: 0,
+        emergency_used: 0,
+        max_emergency_slots: 5,
+        queue_date: today,
+        created_at: null,
+        updated_at: null
+      };
+
+      res.json({
+        success: true,
+        data: queueStatus
+      });
+
+      logger.info(`Doctor ${doctor.id} queue status fetched`);
+    } catch (error) {
+      logger.error('Error fetching queue status:', error);
+      next(error);
+    }
+  }
+
+  // Update availability status
+  static async updateAvailabilityStatus(req, res, next) {
+    try {
+      const { status } = req.body;
+      
+      // Validate status
+      const validStatuses = ['available', 'busy', 'offline'];
+      if (!validStatuses.includes(status)) {
+        return res.status(400).json({
+          success: false,
+          message: 'Invalid status. Must be one of: available, busy, offline'
+        });
+      }
+
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Update availability status in database
+      const updateQuery = `
+        UPDATE doctors 
+        SET availability_status = ?, updated_at = CURRENT_TIMESTAMP 
+        WHERE id = ?
+      `;
+      
+      await mysqlConnection.query(updateQuery, [status, doctor.id]);
+
+      res.json({
+        success: true,
+        message: 'Availability status updated successfully',
+        data: {
+          availability_status: status
+        }
+      });
+
+      logger.info(`Doctor ${doctor.id} availability status updated to: ${status}`);
+    } catch (error) {
+      logger.error('Error updating availability status:', error);
+      next(error);
+    }
+  }
+
+  // Toggle queue status
+  static async toggleQueue(req, res, next) {
+    try {
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Get current date
+      const today = new Date().toISOString().split('T')[0];
+
+      // Check if queue exists for today using a simpler approach
+      const checkQuery = `
+        SELECT id, is_active FROM queue_status 
+        WHERE doctor_id = ? AND DATE(queue_date) = ?
+        LIMIT 1
+      `;
+      
+      let queryResult;
+      try {
+        queryResult = await mysqlConnection.query(checkQuery, [doctor.id, today]);
+      } catch (queryError) {
+        logger.error('Queue query error:', queryError);
+        throw new Error('Database query failed');
+      }
+
+      // Handle the query result properly
+      const rows = queryResult[0]; // First element should be the rows array
+      let newStatus;
+      
+      if (!rows || !Array.isArray(rows) || rows.length === 0) {
+        // No queue exists for today - create one
+        const createQuery = `
+          INSERT INTO queue_status (
+            id, doctor_id, queue_date, current_number, current_emergency_number,
+            max_emergency_slots, emergency_used, regular_count, available_from,
+            available_to, is_active, created_at, updated_at
+          ) VALUES (UUID(), ?, ?, '0', 'E0', 5, 0, 0, '09:00:00', '17:00:00', 1, NOW(), NOW())
+        `;
+        
+        await mysqlConnection.query(createQuery, [doctor.id, today]);
+        newStatus = true;
+      } else {
+        // Queue exists - toggle its status
+        const existingRecord = rows[0];
+        if (!existingRecord) {
+          throw new Error('Queue record is null');
+        }
+        
+        const currentStatus = existingRecord.is_active;
+        newStatus = currentStatus === 1 ? false : true; // Convert from 1/0 to boolean and toggle
+        
+        const updateQuery = `
+          UPDATE queue_status 
+          SET is_active = ?, updated_at = NOW()
+          WHERE doctor_id = ? AND DATE(queue_date) = ?
+        `;
+        
+        await mysqlConnection.query(updateQuery, [newStatus ? 1 : 0, doctor.id, today]);
+      }
+
+      res.json({
+        success: true,
+        message: `Queue ${newStatus ? 'activated' : 'deactivated'} successfully`,
+        data: {
+          is_active: newStatus,
+          date: today
+        }
+      });
+
+      logger.info(`Doctor ${doctor.id} queue status toggled to: ${newStatus ? 'active' : 'inactive'}`);
+    } catch (error) {
+      logger.error('Error toggling queue status:', error);
+      next(error);
+    }
+  }
+
 
 }
 

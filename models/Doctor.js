@@ -18,6 +18,7 @@ class Doctor {
     this.rating = doctorData.rating || 0.00;
     this.total_reviews = doctorData.total_reviews || 0;
     this.working_hours = doctorData.working_hours;
+    this.availability_status = doctorData.availability_status || 'offline';
     this.commission_rate = doctorData.commission_rate || 25.00;
     this.status = doctorData.status || 'active';
   }

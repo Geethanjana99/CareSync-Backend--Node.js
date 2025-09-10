@@ -128,6 +128,7 @@ app.get('/api/doctors/search', PatientController.searchDoctors);
 // app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
 app.use('/api/patients', patientRoutes);
 app.use('/api/doctors', doctorRoutes);
+app.use('/api/doctor', doctorRoutes); // Singular route for frontend compatibility
 app.use('/api/appointments', appointmentRoutes);
 // app.use('/api/queue', authMiddleware, queueRoutes); // TODO: Create queue routes
 app.use('/api/billing', billingRoutes);
