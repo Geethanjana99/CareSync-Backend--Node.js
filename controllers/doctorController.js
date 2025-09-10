@@ -830,7 +830,7 @@ class DoctorController {
         LEFT JOIN patients p ON dp.patient_id = p.patient_id
         LEFT JOIN users u ON p.user_id = u.id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
-        WHERE dp.status IN ('processed')
+        WHERE dp.status IN ('processed', 'reviewed')
         ORDER BY dp.created_at DESC
       `;
       
@@ -851,6 +851,7 @@ class DoctorController {
         predictionProbability: parseFloat(prediction.prediction_probability),
         riskLevel: prediction.risk_level,
         status: prediction.status,
+        isReviewed: prediction.status === 'reviewed',
         createdAt: prediction.created_at,
         processedAt: prediction.processed_at,
         // Certification data
