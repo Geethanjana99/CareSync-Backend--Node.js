@@ -723,3 +723,61 @@
 2025-09-10 12:31:16 [ERROR]: MySQL query error:
 2025-09-10 12:31:25 [ERROR]: MySQL query error:
 2025-09-10 12:31:38 [ERROR]: MySQL query error:
+2025-09-10 12:34:25 [ERROR]: MySQL query error:
+2025-09-10 12:34:37 [ERROR]: MySQL query error:
+2025-09-10 12:36:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:36:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:37:03 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:37:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:37:34 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:37:34 [ERROR]: Port 5000 in use, trying 5001
+2025-09-10 12:37:34 [ERROR]: Port 5000 in use, trying 5002
+2025-09-10 12:38:51 [ERROR]: MySQL query error:
+2025-09-10 12:39:02 [ERROR]: MySQL query error:
+2025-09-10 12:39:18 [ERROR]: MySQL query error:
+2025-09-10 12:42:57 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:42:57 [ERROR]: Port 5000 in use, trying 5001
+2025-09-10 12:42:57 [ERROR]: Port 5000 in use, trying 5002
+2025-09-10 12:43:33 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:43:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:44:17 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 12:44:17 [ERROR]: Port 5000 in use, trying 5001
+2025-09-10 12:44:17 [ERROR]: Port 5000 in use, trying 5002
+2025-09-10 12:44:17 [ERROR]: Port 5000 in use, trying 5003
+2025-09-10 12:45:06 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 13:46:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 13:56:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 13:57:51 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 13:57:58 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:45:03 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:46:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:46:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:47:01 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:47:53 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:48:53 [ERROR]: MySQL query error:
+2025-09-10 14:49:03 [ERROR]: MySQL query error:
+2025-09-10 14:50:23 [ERROR]: MySQL query error:
+2025-09-10 14:52:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:53:00 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:54:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 14:54:30 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-10 14:55:23 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:02:10 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:02:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:03:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:03:30 [ERROR]: MySQL query error:
+2025-09-10 15:04:16 [ERROR]: MySQL query error:
+2025-09-10 15:04:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:05:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:08:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 15:09:17 [ERROR]: ❌ MongoDB connection failed:

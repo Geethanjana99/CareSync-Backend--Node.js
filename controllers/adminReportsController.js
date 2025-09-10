@@ -205,6 +205,13 @@ class AdminReportsController {
 
       const offset = (page - 1) * limit;
       
+      // Validate sortBy to prevent SQL injection
+      const allowedSortColumns = ['created_at', 'updated_at', 'patient_id', 'status', 'glucose', 'bmi', 'age'];
+      const validSortBy = allowedSortColumns.includes(sortBy) ? sortBy : 'created_at';
+      
+      // Validate sortOrder to prevent SQL injection
+      const validSortOrder = ['ASC', 'DESC'].includes(sortOrder.toUpperCase()) ? sortOrder.toUpperCase() : 'DESC';
+      
       // Build WHERE clause
       let whereClause = '1=1';
       const params = [];
@@ -222,28 +229,58 @@ class AdminReportsController {
       // Query with JOIN to get patient names from users table
       const query = `
         SELECT 
-          dp.*,
+          dp.id,
+          dp.patient_id,
+          dp.pregnancies,
+          dp.glucose,
+          dp.bmi,
+          dp.age,
+          dp.insulin,
+          dp.prediction_result,
+          dp.prediction_probability,
+          dp.risk_level,
+          dp.status,
+          dp.notes,
+          dp.created_at,
+          dp.updated_at,
+          dp.processed_at,
           u.name as patient_name,
           u.email as patient_email
         FROM diabetes_predictions dp
         LEFT JOIN patients p ON dp.patient_id = p.patient_id
         LEFT JOIN users u ON p.user_id = u.id
         WHERE ${whereClause}
-        ORDER BY dp.${sortBy} ${sortOrder}
-        LIMIT ? OFFSET ?
+        ORDER BY dp.${validSortBy} ${validSortOrder}
+        LIMIT ${parseInt(limit)} OFFSET ${parseInt(offset)}
       `;
       
-      params.push(parseInt(limit), parseInt(offset));
+      // Remove LIMIT and OFFSET from params since we're using direct values
+      const queryParams = params.slice(0, -2);
       
-      const predictions = await mysqlConnection.query(query, params);
+      const predictions = await mysqlConnection.query(query, queryParams);
       
-      // Get total count
+      // Get total count - rebuild the query with proper parameters
+      let countWhereClause = '1=1';
+      const countParams = [];
+      
+      if (patientId) {
+        countWhereClause += ' AND dp.patient_id = ?';
+        countParams.push(patientId);
+      }
+      
+      if (status) {
+        countWhereClause += ' AND dp.status = ?';
+        countParams.push(status);
+      }
+      
       const countQuery = `
         SELECT COUNT(*) as total
         FROM diabetes_predictions dp
-        WHERE ${whereClause}
+        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN users u ON p.user_id = u.id
+        WHERE ${countWhereClause}
       `;
-      const countParams = params.slice(0, -2); // Remove limit and offset
+      
       const countResult = await mysqlConnection.query(countQuery, countParams);
       const total = countResult[0].total;
 
