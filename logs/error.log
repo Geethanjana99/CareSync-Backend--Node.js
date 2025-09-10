@@ -811,3 +811,189 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:00 [ERROR]: MySQL query error:
+2025-09-10 17:33:00 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:01 [ERROR]: MySQL query error:
+2025-09-10 17:33:01 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:07 [ERROR]: MySQL query error:
+2025-09-10 17:33:07 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:07 [ERROR]: MySQL query error:
+2025-09-10 17:33:07 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:34 [ERROR]: MySQL query error:
+2025-09-10 17:33:34 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:35 [ERROR]: MySQL query error:
+2025-09-10 17:33:35 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:37:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:38:38 [ERROR]: MySQL query error:
+2025-09-10 17:38:38 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:38:39 [ERROR]: MySQL query error:
+2025-09-10 17:38:39 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:40:45 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:42:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:44:44 [ERROR]: MySQL query error:
+2025-09-10 17:44:44 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:44:46 [ERROR]: MySQL query error:
+2025-09-10 17:44:46 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:14 [ERROR]: MySQL query error:
+2025-09-10 17:45:14 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:14 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:30 [ERROR]: MySQL query error:
+2025-09-10 17:45:30 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:30 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:46:27 [ERROR]: MySQL query error:
+2025-09-10 17:46:27 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:46:27 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:53:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:56:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 18:03:19 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 18:16:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 18:16:56 [ERROR]: MySQL query error:
+2025-09-10 18:16:56 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:16:58 [ERROR]: MySQL query error:
+2025-09-10 18:16:58 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:17:47 [ERROR]: MySQL query error:
+2025-09-10 18:17:47 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:17:47 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:18:05 [ERROR]: MySQL query error:
+2025-09-10 18:19:12 [ERROR]: MySQL query error:
+2025-09-10 18:20:10 [ERROR]: MySQL query error:
+2025-09-10 18:21:23 [ERROR]: MySQL query error:
+2025-09-10 18:21:23 [ERROR]: Error: Duplicate entry '245f75b1-5dd0-4003-8063-f1d96fd1c173-78912290-eb79-46f5-9502-eae' for key 'ai_prediction_certifications.unique_prediction_certification'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:23 [ERROR]: Error: Duplicate entry '245f75b1-5dd0-4003-8063-f1d96fd1c173-78912290-eb79-46f5-9502-eae' for key 'ai_prediction_certifications.unique_prediction_certification'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:54 [ERROR]: MySQL query error:
+2025-09-10 18:21:54 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:54 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:22:37 [ERROR]: MySQL query error:
+2025-09-10 18:22:37 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:22:37 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:24:19 [ERROR]: MySQL query error:
+2025-09-10 18:24:19 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:24:20 [ERROR]: MySQL query error:
+2025-09-10 18:24:20 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:29:28 [ERROR]: ❌ MongoDB connection failed:

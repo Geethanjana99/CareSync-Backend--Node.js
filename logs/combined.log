@@ -4853,3 +4853,761 @@
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-09-10 17:27:55 [INFO]: ::1 - - [10/Sep/2025:11:57:55 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:31:25 [INFO]: Token decoded successfully
+2025-09-10 17:31:25 [INFO]: Querying user from database
+2025-09-10 17:31:25 [INFO]: User found
+2025-09-10 17:31:25 [INFO]: Authorization check
+2025-09-10 17:31:25 [INFO]: Authorization successful
+2025-09-10 17:31:26 [INFO]: ::1 - - [10/Sep/2025:12:01:26 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:32:48 [INFO]: Token decoded successfully
+2025-09-10 17:32:48 [INFO]: Querying user from database
+2025-09-10 17:32:48 [INFO]: Token decoded successfully
+2025-09-10 17:32:48 [INFO]: Querying user from database
+2025-09-10 17:32:48 [INFO]: User found
+2025-09-10 17:32:48 [INFO]: Authorization check
+2025-09-10 17:32:48 [INFO]: Authorization successful
+2025-09-10 17:32:48 [INFO]: User found
+2025-09-10 17:32:48 [INFO]: ::1 - - [10/Sep/2025:12:02:48 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:32:49 [INFO]: ::1 - - [10/Sep/2025:12:02:49 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:32:54 [INFO]: Token decoded successfully
+2025-09-10 17:32:54 [INFO]: Querying user from database
+2025-09-10 17:32:54 [INFO]: User found
+2025-09-10 17:32:55 [INFO]: ::1 - - [10/Sep/2025:12:02:55 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:32:55 [INFO]: Token decoded successfully
+2025-09-10 17:32:55 [INFO]: Querying user from database
+2025-09-10 17:32:55 [INFO]: User found
+2025-09-10 17:32:55 [INFO]: ::1 - - [10/Sep/2025:12:02:55 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:32:59 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:32:59 [INFO]: ::1 - - [10/Sep/2025:12:02:59 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:32:59 [INFO]: Token decoded successfully
+2025-09-10 17:32:59 [INFO]: Querying user from database
+2025-09-10 17:32:59 [INFO]: User found
+2025-09-10 17:32:59 [INFO]: Authorization check
+2025-09-10 17:32:59 [INFO]: Authorization successful
+2025-09-10 17:33:00 [INFO]: Token decoded successfully
+2025-09-10 17:33:00 [INFO]: Querying user from database
+2025-09-10 17:33:00 [INFO]: User found
+2025-09-10 17:33:00 [INFO]: Authorization check
+2025-09-10 17:33:00 [INFO]: Authorization successful
+2025-09-10 17:33:00 [ERROR]: MySQL query error:
+2025-09-10 17:33:00 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:01 [INFO]: ::1 - - [10/Sep/2025:12:03:01 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:33:01 [ERROR]: MySQL query error:
+2025-09-10 17:33:01 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:01 [INFO]: ::1 - - [10/Sep/2025:12:03:01 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:33:06 [INFO]: Token decoded successfully
+2025-09-10 17:33:06 [INFO]: Querying user from database
+2025-09-10 17:33:06 [INFO]: Token decoded successfully
+2025-09-10 17:33:06 [INFO]: Querying user from database
+2025-09-10 17:33:06 [INFO]: User found
+2025-09-10 17:33:06 [INFO]: Authorization check
+2025-09-10 17:33:06 [INFO]: Authorization successful
+2025-09-10 17:33:06 [INFO]: User found
+2025-09-10 17:33:06 [INFO]: ::1 - - [10/Sep/2025:12:03:06 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:33:07 [ERROR]: MySQL query error:
+2025-09-10 17:33:07 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:07 [ERROR]: MySQL query error:
+2025-09-10 17:33:07 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:07 [INFO]: ::1 - - [10/Sep/2025:12:03:07 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:33:33 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:33:33 [INFO]: ::1 - - [10/Sep/2025:12:03:33 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:33:33 [INFO]: Token decoded successfully
+2025-09-10 17:33:33 [INFO]: Querying user from database
+2025-09-10 17:33:34 [INFO]: User found
+2025-09-10 17:33:34 [INFO]: Authorization check
+2025-09-10 17:33:34 [INFO]: Authorization successful
+2025-09-10 17:33:34 [INFO]: Token decoded successfully
+2025-09-10 17:33:34 [INFO]: Querying user from database
+2025-09-10 17:33:34 [ERROR]: MySQL query error:
+2025-09-10 17:33:34 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:35 [ERROR]: MySQL query error:
+2025-09-10 17:33:35 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:33:35 [INFO]: ::1 - - [10/Sep/2025:12:03:35 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:33:35 [INFO]: User found
+2025-09-10 17:33:35 [INFO]: Authorization check
+2025-09-10 17:33:35 [INFO]: Authorization successful
+2025-09-10 17:33:36 [INFO]: ::1 - - [10/Sep/2025:12:03:36 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:34:42 [INFO]: Token decoded successfully
+2025-09-10 17:34:42 [INFO]: Querying user from database
+2025-09-10 17:34:42 [INFO]: User found
+2025-09-10 17:34:42 [INFO]: Authorization check
+2025-09-10 17:34:42 [INFO]: Authorization successful
+2025-09-10 17:34:42 [INFO]: ::1 - - [10/Sep/2025:12:04:42 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:34:58 [INFO]: Token decoded successfully
+2025-09-10 17:34:58 [INFO]: Querying user from database
+2025-09-10 17:34:58 [INFO]: User found
+2025-09-10 17:34:58 [INFO]: Authorization check
+2025-09-10 17:34:58 [INFO]: Authorization successful
+2025-09-10 17:34:59 [INFO]: ::1 - - [10/Sep/2025:12:04:59 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:35:09 [INFO]: Token decoded successfully
+2025-09-10 17:35:09 [INFO]: Querying user from database
+2025-09-10 17:35:09 [INFO]: User found
+2025-09-10 17:35:09 [INFO]: Authorization check
+2025-09-10 17:35:09 [INFO]: Authorization successful
+2025-09-10 17:35:09 [INFO]: ::1 - - [10/Sep/2025:12:05:09 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:35:16 [INFO]: Token decoded successfully
+2025-09-10 17:35:16 [INFO]: Querying user from database
+2025-09-10 17:35:16 [INFO]: User found
+2025-09-10 17:35:16 [INFO]: Authorization check
+2025-09-10 17:35:16 [INFO]: Authorization successful
+2025-09-10 17:35:16 [INFO]: ::1 - - [10/Sep/2025:12:05:16 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:35:45 [INFO]: Token decoded successfully
+2025-09-10 17:35:45 [INFO]: Querying user from database
+2025-09-10 17:35:46 [INFO]: User found
+2025-09-10 17:35:46 [INFO]: Authorization check
+2025-09-10 17:35:46 [INFO]: Authorization successful
+2025-09-10 17:35:46 [INFO]: ::1 - - [10/Sep/2025:12:05:46 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:36:01 [INFO]: Token decoded successfully
+2025-09-10 17:36:01 [INFO]: Querying user from database
+2025-09-10 17:36:02 [INFO]: User found
+2025-09-10 17:36:02 [INFO]: Authorization check
+2025-09-10 17:36:02 [INFO]: Authorization successful
+2025-09-10 17:36:02 [INFO]: ::1 - - [10/Sep/2025:12:06:02 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:36:13 [INFO]: Token decoded successfully
+2025-09-10 17:36:13 [INFO]: Querying user from database
+2025-09-10 17:36:13 [INFO]: User found
+2025-09-10 17:36:13 [INFO]: Authorization check
+2025-09-10 17:36:13 [INFO]: Authorization successful
+2025-09-10 17:36:14 [INFO]: ::1 - - [10/Sep/2025:12:06:14 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:36:24 [INFO]: Token decoded successfully
+2025-09-10 17:36:24 [INFO]: Querying user from database
+2025-09-10 17:36:24 [INFO]: User found
+2025-09-10 17:36:24 [INFO]: Authorization check
+2025-09-10 17:36:24 [INFO]: Authorization successful
+2025-09-10 17:36:25 [INFO]: ::1 - - [10/Sep/2025:12:06:25 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:37:38 [INFO]: Socket.IO server initialized
+2025-09-10 17:37:40 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:37:40 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:37:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:37:40 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:37:40 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:37:40 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:37:40 [INFO]: 📊 Environment: development
+2025-09-10 17:37:40 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:37:40 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:38:29 [INFO]: Token decoded successfully
+2025-09-10 17:38:29 [INFO]: Querying user from database
+2025-09-10 17:38:30 [INFO]: User found
+2025-09-10 17:38:30 [INFO]: ::1 - - [10/Sep/2025:12:08:30 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:38:30 [INFO]: Token decoded successfully
+2025-09-10 17:38:30 [INFO]: Querying user from database
+2025-09-10 17:38:30 [INFO]: Token decoded successfully
+2025-09-10 17:38:30 [INFO]: Querying user from database
+2025-09-10 17:38:31 [INFO]: User found
+2025-09-10 17:38:31 [INFO]: ::1 - - [10/Sep/2025:12:08:31 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:38:32 [INFO]: User found
+2025-09-10 17:38:32 [INFO]: Authorization check
+2025-09-10 17:38:32 [INFO]: Authorization successful
+2025-09-10 17:38:33 [INFO]: ::1 - - [10/Sep/2025:12:08:33 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:38:36 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:38:36 [INFO]: ::1 - - [10/Sep/2025:12:08:36 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:38:36 [INFO]: Token decoded successfully
+2025-09-10 17:38:36 [INFO]: Querying user from database
+2025-09-10 17:38:36 [INFO]: User found
+2025-09-10 17:38:36 [INFO]: Authorization check
+2025-09-10 17:38:36 [INFO]: Authorization successful
+2025-09-10 17:38:38 [ERROR]: MySQL query error:
+2025-09-10 17:38:38 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:38:38 [INFO]: Token decoded successfully
+2025-09-10 17:38:38 [INFO]: Querying user from database
+2025-09-10 17:38:39 [ERROR]: MySQL query error:
+2025-09-10 17:38:39 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:38:40 [INFO]: ::1 - - [10/Sep/2025:12:08:40 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:38:40 [INFO]: User found
+2025-09-10 17:38:40 [INFO]: Authorization check
+2025-09-10 17:38:40 [INFO]: Authorization successful
+2025-09-10 17:38:40 [INFO]: ::1 - - [10/Sep/2025:12:08:40 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:38:52 [INFO]: Token decoded successfully
+2025-09-10 17:38:52 [INFO]: Querying user from database
+2025-09-10 17:38:53 [INFO]: User found
+2025-09-10 17:38:53 [INFO]: Authorization check
+2025-09-10 17:38:53 [INFO]: Authorization successful
+2025-09-10 17:38:53 [INFO]: ::1 - - [10/Sep/2025:12:08:53 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:39:09 [INFO]: Token decoded successfully
+2025-09-10 17:39:09 [INFO]: Querying user from database
+2025-09-10 17:39:10 [INFO]: User found
+2025-09-10 17:39:10 [INFO]: Authorization check
+2025-09-10 17:39:10 [INFO]: Authorization successful
+2025-09-10 17:39:10 [INFO]: ::1 - - [10/Sep/2025:12:09:10 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:39:18 [INFO]: Token decoded successfully
+2025-09-10 17:39:18 [INFO]: Querying user from database
+2025-09-10 17:39:18 [INFO]: User found
+2025-09-10 17:39:18 [INFO]: Authorization check
+2025-09-10 17:39:18 [INFO]: Authorization successful
+2025-09-10 17:39:19 [INFO]: ::1 - - [10/Sep/2025:12:09:19 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:40:43 [INFO]: Socket.IO server initialized
+2025-09-10 17:40:45 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:40:45 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:40:45 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:40:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:40:45 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:40:45 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:40:45 [INFO]: 📊 Environment: development
+2025-09-10 17:40:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:40:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:41:58 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:41:58 [INFO]: Process terminated
+2025-09-10 17:42:09 [INFO]: Socket.IO server initialized
+2025-09-10 17:42:11 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:42:11 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:42:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:42:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:42:11 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:42:11 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:42:11 [INFO]: 📊 Environment: development
+2025-09-10 17:42:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:42:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:44:22 [INFO]: Token decoded successfully
+2025-09-10 17:44:22 [INFO]: Querying user from database
+2025-09-10 17:44:22 [INFO]: Token decoded successfully
+2025-09-10 17:44:22 [INFO]: Querying user from database
+2025-09-10 17:44:23 [INFO]: User found
+2025-09-10 17:44:23 [INFO]: Authorization check
+2025-09-10 17:44:23 [INFO]: Authorization successful
+2025-09-10 17:44:24 [INFO]: ::1 - - [10/Sep/2025:12:14:24 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:44:33 [INFO]: User found
+2025-09-10 17:44:33 [INFO]: ::1 - - [10/Sep/2025:12:14:33 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:44:42 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:44:42 [INFO]: ::1 - - [10/Sep/2025:12:14:42 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:44:42 [INFO]: Token decoded successfully
+2025-09-10 17:44:42 [INFO]: Querying user from database
+2025-09-10 17:44:43 [INFO]: User found
+2025-09-10 17:44:43 [INFO]: Authorization check
+2025-09-10 17:44:43 [INFO]: Authorization successful
+2025-09-10 17:44:43 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 17:44:43 [INFO]: ::1 - - [10/Sep/2025:12:14:43 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:44:44 [ERROR]: MySQL query error:
+2025-09-10 17:44:44 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:44:46 [ERROR]: MySQL query error:
+2025-09-10 17:44:46 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:44:47 [INFO]: ::1 - - [10/Sep/2025:12:14:47 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:44:47 [INFO]: Token decoded successfully
+2025-09-10 17:44:47 [INFO]: Querying user from database
+2025-09-10 17:44:48 [INFO]: User found
+2025-09-10 17:44:48 [INFO]: Authorization check
+2025-09-10 17:44:48 [INFO]: Authorization successful
+2025-09-10 17:44:48 [INFO]: ::1 - - [10/Sep/2025:12:14:48 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:45:12 [INFO]: Token decoded successfully
+2025-09-10 17:45:12 [INFO]: Querying user from database
+2025-09-10 17:45:12 [INFO]: User found
+2025-09-10 17:45:12 [INFO]: Authorization check
+2025-09-10 17:45:12 [INFO]: Authorization successful
+2025-09-10 17:45:14 [ERROR]: MySQL query error:
+2025-09-10 17:45:14 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:14 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:14 [INFO]: ::1 - - [10/Sep/2025:12:15:14 +0000] "PATCH /api/doctors/ai-predictions/b4dd835f-eac3-4e62-a6b5-aa14a5ed2c5d/review HTTP/1.1" 400 680 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:45:29 [INFO]: Token decoded successfully
+2025-09-10 17:45:29 [INFO]: Querying user from database
+2025-09-10 17:45:29 [INFO]: User found
+2025-09-10 17:45:29 [INFO]: Authorization check
+2025-09-10 17:45:29 [INFO]: Authorization successful
+2025-09-10 17:45:30 [ERROR]: MySQL query error:
+2025-09-10 17:45:30 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:30 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:45:30 [INFO]: ::1 - - [10/Sep/2025:12:15:30 +0000] "PATCH /api/doctors/ai-predictions/b4dd835f-eac3-4e62-a6b5-aa14a5ed2c5d/review HTTP/1.1" 400 680 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:46:26 [INFO]: Token decoded successfully
+2025-09-10 17:46:26 [INFO]: Querying user from database
+2025-09-10 17:46:26 [INFO]: User found
+2025-09-10 17:46:26 [INFO]: Authorization check
+2025-09-10 17:46:26 [INFO]: Authorization successful
+2025-09-10 17:46:27 [ERROR]: MySQL query error:
+2025-09-10 17:46:27 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:46:27 [ERROR]: Error: Cannot add or update a child row: a foreign key constraint fails ("caresync"."ai_prediction_certifications", CONSTRAINT "ai_prediction_certifications_ibfk_2" FOREIGN KEY ("doctor_id") REFERENCES "users" ("id") ON DELETE CASCADE)
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 17:46:27 [INFO]: ::1 - - [10/Sep/2025:12:16:27 +0000] "PATCH /api/doctors/ai-predictions/b4dd835f-eac3-4e62-a6b5-aa14a5ed2c5d/review HTTP/1.1" 400 680 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 17:53:27 [INFO]: Socket.IO server initialized
+2025-09-10 17:53:29 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:53:29 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:53:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:53:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:53:29 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:53:29 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:53:29 [INFO]: 📊 Environment: development
+2025-09-10 17:53:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:53:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:53:53 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:53 [INFO]: Process terminated
+2025-09-10 17:53:57 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:57 [INFO]: Process terminated
+2025-09-10 17:53:57 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:57 [INFO]: Process terminated
+2025-09-10 17:53:57 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:57 [INFO]: Process terminated
+2025-09-10 17:53:57 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:57 [INFO]: Process terminated
+2025-09-10 17:53:58 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:58 [INFO]: Process terminated
+2025-09-10 17:53:58 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:58 [INFO]: Process terminated
+2025-09-10 17:53:58 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:58 [INFO]: Process terminated
+2025-09-10 17:53:58 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:58 [INFO]: Process terminated
+2025-09-10 17:53:58 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:58 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:53:59 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:53:59 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:00 [INFO]: Process terminated
+2025-09-10 17:54:01 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:01 [INFO]: Process terminated
+2025-09-10 17:54:08 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:08 [INFO]: Process terminated
+2025-09-10 17:54:08 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:08 [INFO]: Process terminated
+2025-09-10 17:54:08 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:08 [INFO]: Process terminated
+2025-09-10 17:54:09 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:09 [INFO]: Process terminated
+2025-09-10 17:54:16 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:16 [INFO]: Process terminated
+2025-09-10 17:54:17 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:17 [INFO]: Process terminated
+2025-09-10 17:54:17 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:54:17 [INFO]: Process terminated
+2025-09-10 17:56:40 [INFO]: Socket.IO server initialized
+2025-09-10 17:56:41 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 17:56:41 [INFO]: ✅ MySQL connected successfully
+2025-09-10 17:56:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 17:56:41 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 17:56:41 [INFO]: 📧 Notification service skipped for now
+2025-09-10 17:56:41 [INFO]: 🚀 Server running on port 5000
+2025-09-10 17:56:41 [INFO]: 📊 Environment: development
+2025-09-10 17:56:41 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 17:56:41 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 17:58:29 [INFO]: ::1 - - [10/Sep/2025:12:28:29 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.9.0"
+2025-09-10 17:58:36 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:58:36 [INFO]: Process terminated
+2025-09-10 17:58:38 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:58:38 [INFO]: Process terminated
+2025-09-10 17:58:39 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 17:58:39 [INFO]: Process terminated
+2025-09-10 18:03:18 [INFO]: Socket.IO server initialized
+2025-09-10 18:03:19 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:03:19 [INFO]: ✅ MySQL connected successfully
+2025-09-10 18:03:19 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 18:03:19 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 18:03:19 [INFO]: 📧 Notification service skipped for now
+2025-09-10 18:03:19 [INFO]: 🚀 Server running on port 5000
+2025-09-10 18:03:19 [INFO]: 📊 Environment: development
+2025-09-10 18:03:19 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 18:03:19 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 18:04:32 [INFO]: Token decoded successfully
+2025-09-10 18:04:32 [INFO]: Querying user from database
+2025-09-10 18:04:32 [INFO]: User found
+2025-09-10 18:04:33 [INFO]: ::1 - - [10/Sep/2025:12:34:33 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:34 [INFO]: Token decoded successfully
+2025-09-10 18:04:34 [INFO]: Querying user from database
+2025-09-10 18:04:34 [INFO]: User found
+2025-09-10 18:04:34 [INFO]: ::1 - - [10/Sep/2025:12:34:34 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:38 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 18:04:38 [INFO]: ::1 - - [10/Sep/2025:12:34:38 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:38 [INFO]: Token decoded successfully
+2025-09-10 18:04:38 [INFO]: Querying user from database
+2025-09-10 18:04:38 [INFO]: User found
+2025-09-10 18:04:38 [INFO]: Authorization check
+2025-09-10 18:04:38 [INFO]: Authorization successful
+2025-09-10 18:04:38 [INFO]: ::1 - - [10/Sep/2025:12:34:38 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:41 [INFO]: Token decoded successfully
+2025-09-10 18:04:41 [INFO]: Querying user from database
+2025-09-10 18:04:41 [INFO]: Token decoded successfully
+2025-09-10 18:04:41 [INFO]: Querying user from database
+2025-09-10 18:04:41 [INFO]: User found
+2025-09-10 18:04:41 [INFO]: User logged out: doctor@gmail.com
+2025-09-10 18:04:41 [INFO]: ::1 - - [10/Sep/2025:12:34:41 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:42 [INFO]: User found
+2025-09-10 18:04:43 [INFO]: ::1 - - [10/Sep/2025:12:34:43 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:45 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 18:04:45 [INFO]: ::1 - - [10/Sep/2025:12:34:45 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:45 [INFO]: Token decoded successfully
+2025-09-10 18:04:45 [INFO]: Querying user from database
+2025-09-10 18:04:45 [INFO]: User found
+2025-09-10 18:04:45 [INFO]: Authorization check
+2025-09-10 18:04:45 [INFO]: Authorization successful
+2025-09-10 18:04:45 [INFO]: ::1 - - [10/Sep/2025:12:34:45 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:04:47 [INFO]: Token decoded successfully
+2025-09-10 18:04:47 [INFO]: Querying user from database
+2025-09-10 18:04:47 [INFO]: User found
+2025-09-10 18:04:47 [INFO]: Authorization check
+2025-09-10 18:04:47 [INFO]: Authorization successful
+2025-09-10 18:04:47 [INFO]: ::1 - - [10/Sep/2025:12:34:47 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:05:41 [INFO]: Token decoded successfully
+2025-09-10 18:05:41 [INFO]: Querying user from database
+2025-09-10 18:05:41 [INFO]: User found
+2025-09-10 18:05:41 [INFO]: Authorization check
+2025-09-10 18:05:41 [INFO]: Authorization successful
+2025-09-10 18:05:42 [INFO]: ::1 - - [10/Sep/2025:12:35:42 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:05:43 [INFO]: Token decoded successfully
+2025-09-10 18:05:43 [INFO]: Querying user from database
+2025-09-10 18:05:43 [INFO]: Token decoded successfully
+2025-09-10 18:05:43 [INFO]: Querying user from database
+2025-09-10 18:05:43 [INFO]: User found
+2025-09-10 18:05:43 [INFO]: User found
+2025-09-10 18:05:43 [INFO]: Authorization check
+2025-09-10 18:05:43 [INFO]: Authorization successful
+2025-09-10 18:05:44 [INFO]: ::1 - - [10/Sep/2025:12:35:44 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:05:44 [INFO]: ::1 - - [10/Sep/2025:12:35:44 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:05:52 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 18:05:52 [INFO]: ::1 - - [10/Sep/2025:12:35:52 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:05:52 [INFO]: Token decoded successfully
+2025-09-10 18:05:52 [INFO]: Querying user from database
+2025-09-10 18:05:53 [INFO]: User found
+2025-09-10 18:05:53 [INFO]: Authorization check
+2025-09-10 18:05:53 [INFO]: Authorization successful
+2025-09-10 18:05:54 [INFO]: ::1 - - [10/Sep/2025:12:35:54 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:05:55 [INFO]: Token decoded successfully
+2025-09-10 18:05:55 [INFO]: Querying user from database
+2025-09-10 18:05:55 [INFO]: User found
+2025-09-10 18:05:55 [INFO]: Authorization check
+2025-09-10 18:05:55 [INFO]: Authorization successful
+2025-09-10 18:05:56 [INFO]: ::1 - - [10/Sep/2025:12:35:56 +0000] "GET /api/doctors/dashboard HTTP/1.1" 404 54 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:07:30 [INFO]: SIGINT received, shutting down gracefully
+2025-09-10 18:07:30 [INFO]: Process terminated
+2025-09-10 18:16:48 [INFO]: Socket.IO server initialized
+2025-09-10 18:16:50 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:16:50 [INFO]: ✅ MySQL connected successfully
+2025-09-10 18:16:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 18:16:50 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 18:16:50 [INFO]: 📧 Notification service skipped for now
+2025-09-10 18:16:50 [INFO]: 🚀 Server running on port 5000
+2025-09-10 18:16:50 [INFO]: 📊 Environment: development
+2025-09-10 18:16:50 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 18:16:50 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 18:16:54 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 18:16:54 [INFO]: ::1 - - [10/Sep/2025:12:46:54 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:16:54 [INFO]: Token decoded successfully
+2025-09-10 18:16:54 [INFO]: Querying user from database
+2025-09-10 18:16:55 [INFO]: User found
+2025-09-10 18:16:55 [INFO]: Authorization check
+2025-09-10 18:16:55 [INFO]: Authorization successful
+2025-09-10 18:16:56 [ERROR]: MySQL query error:
+2025-09-10 18:16:56 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:16:58 [ERROR]: MySQL query error:
+2025-09-10 18:16:58 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:16:59 [INFO]: ::1 - - [10/Sep/2025:12:46:59 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 867 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:17:01 [INFO]: Token decoded successfully
+2025-09-10 18:17:01 [INFO]: Querying user from database
+2025-09-10 18:17:02 [INFO]: User found
+2025-09-10 18:17:02 [INFO]: Authorization check
+2025-09-10 18:17:02 [INFO]: Authorization successful
+2025-09-10 18:17:03 [INFO]: ::1 - - [10/Sep/2025:12:47:03 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:17:12 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:17:32 [INFO]: ::1 - - [10/Sep/2025:12:47:32 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 404 92 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:17:32 [INFO]: ::1 - - [10/Sep/2025:12:47:32 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:17:32 [INFO]: ::1 - - [10/Sep/2025:12:47:32 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:17:35 [INFO]: Token decoded successfully
+2025-09-10 18:17:35 [INFO]: Querying user from database
+2025-09-10 18:17:35 [INFO]: User found
+2025-09-10 18:17:35 [INFO]: Authorization check
+2025-09-10 18:17:35 [INFO]: Authorization successful
+2025-09-10 18:17:36 [INFO]: ::1 - - [10/Sep/2025:12:47:36 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:17:44 [INFO]: Token decoded successfully
+2025-09-10 18:17:44 [INFO]: Querying user from database
+2025-09-10 18:17:44 [INFO]: User found
+2025-09-10 18:17:44 [INFO]: Authorization check
+2025-09-10 18:17:44 [INFO]: Authorization successful
+2025-09-10 18:17:47 [ERROR]: MySQL query error:
+2025-09-10 18:17:47 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:17:47 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:17:47 [INFO]: ::1 - - [10/Sep/2025:12:47:47 +0000] "PATCH /api/doctors/ai-predictions/245f75b1-5dd0-4003-8063-f1d96fd1c173/review HTTP/1.1" 500 505 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:18:03 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:18:05 [ERROR]: MySQL query error:
+2025-09-10 18:19:11 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:19:12 [ERROR]: MySQL query error:
+2025-09-10 18:19:36 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:20:10 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:20:10 [ERROR]: MySQL query error:
+2025-09-10 18:20:42 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:21:04 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:21:22 [INFO]: Token decoded successfully
+2025-09-10 18:21:22 [INFO]: Querying user from database
+2025-09-10 18:21:22 [INFO]: User found
+2025-09-10 18:21:22 [INFO]: Authorization check
+2025-09-10 18:21:22 [INFO]: Authorization successful
+2025-09-10 18:21:23 [ERROR]: MySQL query error:
+2025-09-10 18:21:23 [ERROR]: Error: Duplicate entry '245f75b1-5dd0-4003-8063-f1d96fd1c173-78912290-eb79-46f5-9502-eae' for key 'ai_prediction_certifications.unique_prediction_certification'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:23 [ERROR]: Error: Duplicate entry '245f75b1-5dd0-4003-8063-f1d96fd1c173-78912290-eb79-46f5-9502-eae' for key 'ai_prediction_certifications.unique_prediction_certification'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:973:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:23 [INFO]: ::1 - - [10/Sep/2025:12:51:23 +0000] "PATCH /api/doctors/ai-predictions/245f75b1-5dd0-4003-8063-f1d96fd1c173/review HTTP/1.1" 400 585 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:21:53 [INFO]: Token decoded successfully
+2025-09-10 18:21:53 [INFO]: Querying user from database
+2025-09-10 18:21:53 [INFO]: User found
+2025-09-10 18:21:53 [INFO]: Authorization check
+2025-09-10 18:21:53 [INFO]: Authorization successful
+2025-09-10 18:21:54 [ERROR]: MySQL query error:
+2025-09-10 18:21:54 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:54 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:21:54 [INFO]: ::1 - - [10/Sep/2025:12:51:54 +0000] "PATCH /api/doctors/ai-predictions/245f75b1-5dd0-4003-8063-f1d96fd1c173/review HTTP/1.1" 500 505 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:22:36 [INFO]: Token decoded successfully
+2025-09-10 18:22:36 [INFO]: Querying user from database
+2025-09-10 18:22:36 [INFO]: User found
+2025-09-10 18:22:36 [INFO]: Authorization check
+2025-09-10 18:22:36 [INFO]: Authorization successful
+2025-09-10 18:22:37 [ERROR]: MySQL query error:
+2025-09-10 18:22:37 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:22:37 [ERROR]: Error: Unknown column 'dp.patient_name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at reviewAIPrediction (E:\Project 2\backend\controllers\doctorController.js:1009:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:22:37 [INFO]: ::1 - - [10/Sep/2025:12:52:37 +0000] "PATCH /api/doctors/ai-predictions/245f75b1-5dd0-4003-8063-f1d96fd1c173/review HTTP/1.1" 500 505 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:23:07 [INFO]: Token decoded successfully
+2025-09-10 18:23:07 [INFO]: Querying user from database
+2025-09-10 18:23:07 [INFO]: User found
+2025-09-10 18:23:07 [INFO]: Authorization check
+2025-09-10 18:23:07 [INFO]: Authorization successful
+2025-09-10 18:23:07 [INFO]: ::1 - - [10/Sep/2025:12:53:07 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:10 [INFO]: Token decoded successfully
+2025-09-10 18:24:10 [INFO]: Querying user from database
+2025-09-10 18:24:10 [INFO]: Token decoded successfully
+2025-09-10 18:24:10 [INFO]: Querying user from database
+2025-09-10 18:24:10 [INFO]: User found
+2025-09-10 18:24:10 [INFO]: Authorization check
+2025-09-10 18:24:10 [INFO]: Authorization successful
+2025-09-10 18:24:11 [INFO]: ::1 - - [10/Sep/2025:12:54:11 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:11 [INFO]: User found
+2025-09-10 18:24:11 [INFO]: ::1 - - [10/Sep/2025:12:54:11 +0000] "GET /api/auth/profile HTTP/1.1" 200 923 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:17 [INFO]: User logged in: doctor@gmail.com
+2025-09-10 18:24:17 [INFO]: ::1 - - [10/Sep/2025:12:54:17 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:17 [INFO]: Token decoded successfully
+2025-09-10 18:24:17 [INFO]: Querying user from database
+2025-09-10 18:24:17 [INFO]: User found
+2025-09-10 18:24:17 [INFO]: Authorization check
+2025-09-10 18:24:17 [INFO]: Authorization successful
+2025-09-10 18:24:19 [ERROR]: MySQL query error:
+2025-09-10 18:24:19 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:496:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:367:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:24:20 [ERROR]: MySQL query error:
+2025-09-10 18:24:20 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:568:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:377:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10 18:24:20 [INFO]: ::1 - - [10/Sep/2025:12:54:20 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:27 [INFO]: ::1 - - [10/Sep/2025:12:54:27 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 404 92 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:27 [INFO]: ::1 - - [10/Sep/2025:12:54:27 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:27 [INFO]: ::1 - - [10/Sep/2025:12:54:27 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:36 [INFO]: ::1 - - [10/Sep/2025:12:54:36 +0000] "GET /api/doctor/appointments/today HTTP/1.1" 404 92 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:36 [INFO]: ::1 - - [10/Sep/2025:12:54:36 +0000] "GET /api/doctor/queue/status HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:36 [INFO]: ::1 - - [10/Sep/2025:12:54:36 +0000] "GET /api/doctor/availability HTTP/1.1" 404 86 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:24:37 [INFO]: Token decoded successfully
+2025-09-10 18:24:37 [INFO]: Querying user from database
+2025-09-10 18:24:38 [INFO]: User found
+2025-09-10 18:24:38 [INFO]: Authorization check
+2025-09-10 18:24:38 [INFO]: Authorization successful
+2025-09-10 18:24:38 [INFO]: ::1 - - [10/Sep/2025:12:54:38 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:29:24 [INFO]: Socket.IO server initialized
+2025-09-10 18:29:28 [INFO]: ✅ MySQL database connected successfully
+2025-09-10 18:29:28 [INFO]: ✅ MySQL connected successfully
+2025-09-10 18:29:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-10 18:29:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-10 18:29:28 [INFO]: 📧 Notification service skipped for now
+2025-09-10 18:29:28 [INFO]: 🚀 Server running on port 5000
+2025-09-10 18:29:28 [INFO]: 📊 Environment: development
+2025-09-10 18:29:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-10 18:29:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-10 18:30:46 [INFO]: Token decoded successfully
+2025-09-10 18:30:46 [INFO]: Querying user from database
+2025-09-10 18:30:47 [INFO]: User found
+2025-09-10 18:30:47 [INFO]: Authorization check
+2025-09-10 18:30:47 [INFO]: Authorization successful
+2025-09-10 18:30:51 [INFO]: AI prediction b4dd835f-eac3-4e62-a6b5-aa14a5ed2c5d reviewed by doctor 78912290-eb79-46f5-9502-eae48d6be227
+2025-09-10 18:30:51 [INFO]: ::1 - - [10/Sep/2025:13:00:51 +0000] "PATCH /api/doctors/ai-predictions/b4dd835f-eac3-4e62-a6b5-aa14a5ed2c5d/review HTTP/1.1" 200 71 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-10 18:31:09 [INFO]: Token decoded successfully
+2025-09-10 18:31:09 [INFO]: Querying user from database
+2025-09-10 18:31:09 [INFO]: User found
+2025-09-10 18:31:09 [INFO]: Authorization check
+2025-09-10 18:31:09 [INFO]: Authorization successful
+2025-09-10 18:31:11 [INFO]: AI prediction fd664e54-0513-4050-a422-8e56a4b66b4f reviewed by doctor 78912290-eb79-46f5-9502-eae48d6be227
+2025-09-10 18:31:11 [INFO]: ::1 - - [10/Sep/2025:13:01:11 +0000] "PATCH /api/doctors/ai-predictions/fd664e54-0513-4050-a422-8e56a4b66b4f/review HTTP/1.1" 200 71 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

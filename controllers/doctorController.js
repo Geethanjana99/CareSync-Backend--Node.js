@@ -981,18 +981,19 @@ class DoctorController {
         SELECT 
           dp.id,
           dp.patient_id as patientId,
-          dp.patient_name as patientName,
+          u.name as patientName,
+          u.email as patientEmail,
           dp.pregnancies,
           dp.glucose,
           dp.bmi,
           dp.age,
           dp.insulin,
           dp.prediction_result as predictionResult,
-          dp.prediction_confidence as predictionProbability,
+          dp.prediction_probability as predictionProbability,
           dp.risk_level as riskLevel,
           dp.status,
           dp.created_at as createdAt,
-          dp.summary,
+          dp.notes as summary,
           apc.certification_status,
           apc.doctor_notes,
           apc.clinical_assessment,
@@ -1002,6 +1003,8 @@ class DoctorController {
           apc.severity_assessment,
           apc.certified_at
         FROM diabetes_predictions dp
+        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN users u ON p.user_id = u.id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
         WHERE dp.id = ?
       `;

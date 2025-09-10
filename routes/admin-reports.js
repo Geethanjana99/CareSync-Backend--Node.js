@@ -70,7 +70,7 @@ router.get('/diabetes-predictions', [
     .withMessage('Limit must be between 1 and 100'),
   query('sortBy')
     .optional()
-    .isIn(['created_at', 'updated_at', 'prediction_result', 'prediction_confidence'])
+    .isIn(['created_at', 'updated_at', 'prediction_result', 'prediction_probability'])
     .withMessage('Invalid sort field'),
   query('sortOrder')
     .optional()
