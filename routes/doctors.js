@@ -51,6 +51,7 @@ router.patch('/ai-predictions/:id/review', DoctorController.reviewAIPrediction);
 // Availability and queue management
 router.get('/availability', DoctorController.getDoctorAvailability);
 router.put('/availability/status', DoctorController.updateAvailabilityStatus);
+router.put('/availability/working-hours', DoctorController.updateWorkingHours);
 router.get('/queue/status', DoctorController.getQueueStatus);
 router.put('/queue/toggle', DoctorController.toggleQueue);
 

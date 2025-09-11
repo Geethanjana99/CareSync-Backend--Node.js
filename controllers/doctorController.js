@@ -1211,6 +1211,54 @@ class DoctorController {
     }
   }
 
+  // Update working hours
+  static async updateWorkingHours(req, res, next) {
+    try {
+      const { working_hours } = req.body;
+      
+      if (!working_hours) {
+        return res.status(400).json({
+          success: false,
+          message: 'Working hours data is required'
+        });
+      }
+
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Update working hours in database
+      const updateQuery = `
+        UPDATE doctors 
+        SET working_hours = ?, updated_at = CURRENT_TIMESTAMP 
+        WHERE id = ?
+      `;
+      
+      const workingHoursJson = typeof working_hours === 'string' 
+        ? working_hours 
+        : JSON.stringify(working_hours);
+      
+      await mysqlConnection.query(updateQuery, [workingHoursJson, doctor.id]);
+
+      res.json({
+        success: true,
+        message: 'Working hours updated successfully',
+        data: {
+          working_hours: working_hours
+        }
+      });
+
+      logger.info(`Doctor ${doctor.id} working hours updated`);
+    } catch (error) {
+      logger.error('Error updating working hours:', error);
+      next(error);
+    }
+  }
+
   // Toggle queue status
   static async toggleQueue(req, res, next) {
     try {
