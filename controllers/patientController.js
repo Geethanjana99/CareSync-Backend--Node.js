@@ -333,7 +333,9 @@ class PatientController {
         reasonForVisit,
         symptoms,
         priority = 'medium',
-        isEmergency = false
+        isEmergency = false,
+        paymentMethod = 'counter',
+        paymentStatus = 'unpaid'
       } = req.body;
 
       const patient = await Patient.findByUserId(req.user.id);
@@ -409,10 +411,59 @@ class PatientController {
         notes: '', // Default empty notes
         consultation_fee: doctorInfo.consultation_fee || 0, // Use doctor's fee or default to 0
         is_emergency: isEmergency,
-        status: 'scheduled' // Use valid enum value instead of 'pending'
+        status: 'scheduled', // Use valid enum value instead of 'pending'
+        payment_status: paymentStatus, // Add payment status
+        scheduled_by: req.user.id // Track who scheduled the appointment
       };
 
       const appointment = await Appointment.createQueueAppointment(appointmentData);
+
+      // If payment was made immediately, create billing record
+      if (paymentStatus === 'paid' && paymentMethod !== 'counter') {
+        try {
+          const invoiceNumber = `INV-${Date.now()}-${appointment.appointment_id}`;
+          const billingData = {
+            appointment_id: appointment.id,
+            patient_id: patient.id,
+            doctor_id: internalDoctorId,
+            invoice_number: invoiceNumber,
+            amount: doctorInfo.consultation_fee || 0,
+            tax_amount: 0,
+            total_amount: doctorInfo.consultation_fee || 0,
+            payment_method: paymentMethod,
+            payment_status: paymentStatus,
+            transaction_id: `TXN-${Date.now()}`,
+            payment_gateway: paymentMethod === 'card' ? 'stripe' : paymentMethod,
+            paid_at: new Date()
+          };
+
+          await mysqlConnection.query(`
+            INSERT INTO billing (
+              appointment_id, patient_id, doctor_id, invoice_number, 
+              amount, tax_amount, total_amount, payment_method, 
+              payment_status, transaction_id, payment_gateway, paid_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          `, [
+            billingData.appointment_id,
+            billingData.patient_id,
+            billingData.doctor_id,
+            billingData.invoice_number,
+            billingData.amount,
+            billingData.tax_amount,
+            billingData.total_amount,
+            billingData.payment_method,
+            billingData.payment_status,
+            billingData.transaction_id,
+            billingData.payment_gateway,
+            billingData.paid_at
+          ]);
+
+          logger.info(`Billing record created for appointment ${appointment.id}: ${invoiceNumber}`);
+        } catch (billingError) {
+          logger.error('Error creating billing record:', billingError);
+          // Continue with appointment booking even if billing fails
+        }
+      }
 
       res.status(201).json({
         success: true,
@@ -421,6 +472,9 @@ class PatientController {
           appointment,
           queueNumber: appointment.queue_number,
           isEmergency: appointment.is_emergency,
+          paymentStatus: paymentStatus,
+          paymentMethod: paymentMethod,
+          consultationFee: doctorInfo.consultation_fee || 0,
           message: isEmergency 
             ? `Emergency appointment booked. Your emergency number is ${appointment.queue_number}`
             : `Appointment booked. Your queue number is ${appointment.queue_number}`
