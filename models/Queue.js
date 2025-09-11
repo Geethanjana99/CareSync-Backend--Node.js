@@ -64,7 +64,12 @@ class Queue {
         regularPatients: appointments.filter(a => !a.is_emergency).length,
         pending: appointments.filter(a => a.status === 'pending').length,
         inProgress: appointments.filter(a => a.status === 'in-progress').length,
-        completed: appointments.filter(a => a.status === 'completed').length
+        completed: appointments.filter(a => a.status === 'completed').length,
+        // Payment statistics
+        paidAppointments: appointments.filter(a => a.payment_status === 'paid').length,
+        unpaidAppointments: appointments.filter(a => a.payment_status === 'unpaid').length,
+        partiallyPaidAppointments: appointments.filter(a => a.payment_status === 'partially_paid').length,
+        refundedAppointments: appointments.filter(a => a.payment_status === 'refunded').length
       };
     } catch (error) {
       logger.error('Error fetching doctor queue:', error);

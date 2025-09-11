@@ -1339,6 +1339,71 @@ class DoctorController {
     }
   }
 
+  // Update payment status for an appointment
+  static async updatePaymentStatus(req, res, next) {
+    try {
+      const { appointmentId } = req.params;
+      const { paymentStatus } = req.body;
+      
+      // Validate payment status
+      const validStatuses = ['unpaid', 'paid', 'partially_paid', 'refunded'];
+      if (!validStatuses.includes(paymentStatus)) {
+        return res.status(400).json({
+          success: false,
+          message: 'Invalid payment status. Must be one of: unpaid, paid, partially_paid, refunded'
+        });
+      }
+
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Check if appointment belongs to this doctor
+      const appointmentQuery = `
+        SELECT * FROM appointments 
+        WHERE id = ? AND doctor_id = ?
+      `;
+      
+      const [appointment] = await mysqlConnection.query(appointmentQuery, [appointmentId, doctor.id]);
+      
+      if (!appointment) {
+        return res.status(404).json({
+          success: false,
+          message: 'Appointment not found or does not belong to this doctor'
+        });
+      }
+
+      // Update payment status
+      const updateQuery = `
+        UPDATE appointments 
+        SET payment_status = ?, updated_at = NOW()
+        WHERE id = ?
+      `;
+      
+      await mysqlConnection.query(updateQuery, [paymentStatus, appointmentId]);
+
+      // Log the payment status change
+      logger.info(`Payment status updated for appointment ${appointmentId} to ${paymentStatus} by doctor ${doctor.id}`);
+
+      res.json({
+        success: true,
+        message: 'Payment status updated successfully',
+        data: {
+          appointmentId,
+          paymentStatus,
+          updatedAt: new Date()
+        }
+      });
+    } catch (error) {
+      logger.error('Error updating payment status:', error);
+      next(error);
+    }
+  }
+
 
 }
 

@@ -10330,3 +10330,123 @@
 2025-09-11 15:08:40 [INFO]: 📊 Environment: development
 2025-09-11 15:08:40 [INFO]: 🔗 Client URL: http://localhost:5173
 2025-09-11 15:08:40 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:23:54 [INFO]: Socket.IO server initialized
+2025-09-11 15:23:56 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:23:56 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:23:56 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:23:56 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:23:56 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:23:56 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:23:56 [INFO]: 📊 Environment: development
+2025-09-11 15:23:56 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:23:56 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:34:04 [INFO]: Socket.IO server initialized
+2025-09-11 15:34:07 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:34:07 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:34:07 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:34:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:34:07 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:34:07 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:34:07 [INFO]: 📊 Environment: development
+2025-09-11 15:34:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:34:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:35:13 [INFO]: Socket.IO server initialized
+2025-09-11 15:35:13 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:35:13 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:35:13 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:35:13 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:35:13 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:35:13 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:35:13 [INFO]: 📊 Environment: development
+2025-09-11 15:35:13 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:35:13 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:35:27 [INFO]: Socket.IO server initialized
+2025-09-11 15:35:28 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:35:28 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:35:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:35:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:35:28 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:35:28 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:35:28 [INFO]: 📊 Environment: development
+2025-09-11 15:35:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:35:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:36:50 [INFO]: Socket.IO server initialized
+2025-09-11 15:36:51 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:36:51 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:36:51 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:36:51 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:36:51 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:36:51 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:36:51 [INFO]: 📊 Environment: development
+2025-09-11 15:36:51 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:36:51 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:37:49 [INFO]: Socket.IO server initialized
+2025-09-11 15:37:52 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:37:52 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:37:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:37:52 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:37:52 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:37:52 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:37:52 [INFO]: 📊 Environment: development
+2025-09-11 15:37:52 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:37:52 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:38:11 [INFO]: Socket.IO server initialized
+2025-09-11 15:38:13 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:38:13 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:38:13 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:38:13 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:38:13 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:38:13 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:38:13 [INFO]: 📊 Environment: development
+2025-09-11 15:38:13 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:38:13 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:38:30 [INFO]: Socket.IO server initialized
+2025-09-11 15:38:32 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:38:32 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:38:32 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:38:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:38:32 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:38:32 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:38:32 [INFO]: 📊 Environment: development
+2025-09-11 15:38:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:38:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:40:35 [INFO]: Socket.IO server initialized
+2025-09-11 15:40:41 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:40:41 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:40:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:40:41 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:40:41 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:40:41 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:40:41 [INFO]: 📊 Environment: development
+2025-09-11 15:40:41 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:40:41 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:41:21 [INFO]: Socket.IO server initialized
+2025-09-11 15:41:22 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:41:22 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:41:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:41:22 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:41:22 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:41:22 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:41:22 [INFO]: 📊 Environment: development
+2025-09-11 15:41:22 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:41:22 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:42:42 [INFO]: Socket.IO server initialized
+2025-09-11 15:42:46 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:42:46 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:42:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:42:46 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:42:46 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:42:46 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:42:46 [INFO]: 📊 Environment: development
+2025-09-11 15:42:46 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:42:46 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-11 15:43:47 [INFO]: Socket.IO server initialized
+2025-09-11 15:43:48 [INFO]: ✅ MySQL database connected successfully
+2025-09-11 15:43:48 [INFO]: ✅ MySQL connected successfully
+2025-09-11 15:43:48 [ERROR]: ❌ MongoDB connection failed:
+2025-09-11 15:43:48 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-11 15:43:48 [INFO]: 📧 Notification service skipped for now
+2025-09-11 15:43:48 [INFO]: 🚀 Server running on port 5000
+2025-09-11 15:43:48 [INFO]: 📊 Environment: development
+2025-09-11 15:43:48 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-11 15:43:48 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs

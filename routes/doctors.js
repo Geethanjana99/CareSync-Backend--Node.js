@@ -39,6 +39,7 @@ router.get('/queue/summary', DoctorController.getQueueSummary);
 router.put('/queue/current', DoctorController.updateCurrentQueueNumber);
 router.post('/queue/start/:appointmentId', DoctorController.startNextConsultation);
 router.post('/queue/complete/:appointmentId', DoctorController.completeConsultation);
+router.put('/appointments/:appointmentId/payment-status', DoctorController.updatePaymentStatus);
 
 // AI Predictions
 router.get('/ai-predictions', DoctorController.getAIPredictions);
