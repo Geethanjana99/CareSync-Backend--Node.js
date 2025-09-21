@@ -10653,3 +10653,449 @@
 2025-09-11 19:38:50 [INFO]: Authorization check
 2025-09-11 19:38:50 [INFO]: Authorization successful
 2025-09-11 19:38:51 [INFO]: ::1 - - [11/Sep/2025:14:08:51 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:42:56 [INFO]: Socket.IO server initialized
+2025-09-13 12:42:57 [INFO]: ✅ MySQL database connected successfully
+2025-09-13 12:42:57 [INFO]: ✅ MySQL connected successfully
+2025-09-13 12:42:57 [ERROR]: ❌ MongoDB connection failed:
+2025-09-13 12:42:57 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-13 12:42:57 [INFO]: 📧 Notification service skipped for now
+2025-09-13 12:42:57 [INFO]: 🚀 Server running on port 5000
+2025-09-13 12:42:57 [INFO]: 📊 Environment: development
+2025-09-13 12:42:57 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-13 12:42:57 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-13 12:43:53 [INFO]: Token decoded successfully
+2025-09-13 12:43:53 [INFO]: Querying user from database
+2025-09-13 12:43:54 [INFO]: User found
+2025-09-13 12:43:54 [INFO]: ::1 - - [13/Sep/2025:07:13:54 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:43:55 [INFO]: Token decoded successfully
+2025-09-13 12:43:55 [INFO]: Querying user from database
+2025-09-13 12:43:55 [INFO]: User found
+2025-09-13 12:43:55 [INFO]: ::1 - - [13/Sep/2025:07:13:55 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:43:55 [INFO]: Token decoded successfully
+2025-09-13 12:43:55 [INFO]: Querying user from database
+2025-09-13 12:43:55 [INFO]: User found
+2025-09-13 12:43:55 [INFO]: Authorization check
+2025-09-13 12:43:55 [INFO]: Authorization successful
+2025-09-13 12:43:56 [INFO]: ::1 - - [13/Sep/2025:07:13:56 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:43:57 [INFO]: Token decoded successfully
+2025-09-13 12:43:57 [INFO]: Querying user from database
+2025-09-13 12:43:57 [INFO]: User found
+2025-09-13 12:43:57 [INFO]: Authorization check
+2025-09-13 12:43:57 [INFO]: Authorization successful
+2025-09-13 12:43:58 [INFO]: ::1 - - [13/Sep/2025:07:13:58 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:43:59 [INFO]: ::1 - - [13/Sep/2025:07:13:59 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:44:01 [INFO]: ::1 - - [13/Sep/2025:07:14:01 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:44:02 [INFO]: ::1 - - [13/Sep/2025:07:14:02 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:44:07 [INFO]: Token decoded successfully
+2025-09-13 12:44:07 [INFO]: Querying user from database
+2025-09-13 12:44:07 [INFO]: User found
+2025-09-13 12:44:07 [INFO]: Authorization check
+2025-09-13 12:44:07 [INFO]: Authorization successful
+2025-09-13 12:44:07 [INFO]: ::1 - - [13/Sep/2025:07:14:07 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:48:52 [INFO]: Socket.IO server initialized
+2025-09-13 12:48:54 [INFO]: ✅ MySQL database connected successfully
+2025-09-13 12:48:54 [INFO]: ✅ MySQL connected successfully
+2025-09-13 12:48:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-13 12:48:54 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-13 12:48:54 [INFO]: 📧 Notification service skipped for now
+2025-09-13 12:48:54 [INFO]: 🚀 Server running on port 5000
+2025-09-13 12:48:54 [INFO]: 📊 Environment: development
+2025-09-13 12:48:54 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-13 12:48:54 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-13 12:49:06 [INFO]: Socket.IO server initialized
+2025-09-13 12:49:07 [INFO]: ✅ MySQL database connected successfully
+2025-09-13 12:49:07 [INFO]: ✅ MySQL connected successfully
+2025-09-13 12:49:07 [ERROR]: ❌ MongoDB connection failed:
+2025-09-13 12:49:07 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-13 12:49:07 [INFO]: 📧 Notification service skipped for now
+2025-09-13 12:49:07 [INFO]: 🚀 Server running on port 5000
+2025-09-13 12:49:07 [INFO]: 📊 Environment: development
+2025-09-13 12:49:07 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-13 12:49:07 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-13 12:53:46 [INFO]: Socket.IO server initialized
+2025-09-13 12:53:47 [INFO]: ✅ MySQL database connected successfully
+2025-09-13 12:53:47 [INFO]: ✅ MySQL connected successfully
+2025-09-13 12:53:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-13 12:53:47 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-13 12:53:47 [INFO]: 📧 Notification service skipped for now
+2025-09-13 12:53:47 [INFO]: 🚀 Server running on port 5000
+2025-09-13 12:53:47 [INFO]: 📊 Environment: development
+2025-09-13 12:53:47 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-13 12:53:47 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-13 12:54:39 [INFO]: User logged in: kashmila@gmail.com
+2025-09-13 12:54:39 [INFO]: ::1 - - [13/Sep/2025:07:24:39 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:54:40 [INFO]: Token decoded successfully
+2025-09-13 12:54:40 [INFO]: Querying user from database
+2025-09-13 12:54:40 [INFO]: User found
+2025-09-13 12:54:40 [INFO]: Authorization check
+2025-09-13 12:54:40 [INFO]: Authorization successful
+2025-09-13 12:54:40 [INFO]: ::1 - - [13/Sep/2025:07:24:40 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:54:43 [INFO]: Token decoded successfully
+2025-09-13 12:54:43 [INFO]: Querying user from database
+2025-09-13 12:54:43 [INFO]: Token decoded successfully
+2025-09-13 12:54:43 [INFO]: Querying user from database
+2025-09-13 12:54:43 [INFO]: User found
+2025-09-13 12:54:43 [INFO]: Authorization check
+2025-09-13 12:54:43 [INFO]: Authorization successful
+2025-09-13 12:54:43 [ERROR]: MySQL query error:
+2025-09-13 12:54:43 [INFO]: ::1 - - [13/Sep/2025:07:24:43 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:54:45 [INFO]: User found
+2025-09-13 12:54:45 [INFO]: Authorization check
+2025-09-13 12:54:45 [INFO]: Authorization successful
+2025-09-13 12:54:45 [ERROR]: MySQL query error:
+2025-09-13 12:54:45 [INFO]: ::1 - - [13/Sep/2025:07:24:45 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 500 115 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 12:55:40 [INFO]: ::1 - - [13/Sep/2025:07:25:40 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.11.0"
+2025-09-13 18:49:17 [INFO]: Token decoded successfully
+2025-09-13 18:49:17 [INFO]: Querying user from database
+2025-09-13 18:49:27 [ERROR]: MySQL query error:
+2025-09-13 18:49:27 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-13 18:49:27 [INFO]: ::1 - - [13/Sep/2025:13:19:27 +0000] "GET /api/auth/profile HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:49:27 [INFO]: Token decoded successfully
+2025-09-13 18:49:27 [INFO]: Querying user from database
+2025-09-13 18:49:32 [ERROR]: MySQL query error:
+2025-09-13 18:49:32 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-13 18:49:32 [INFO]: ::1 - - [13/Sep/2025:13:19:32 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:49:33 [INFO]: ::1 - - [13/Sep/2025:13:19:33 +0000] "GET /api/auth/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:49:37 [ERROR]: MySQL query error:
+2025-09-13 18:49:37 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-13 18:49:47 [ERROR]: MySQL query error:
+2025-09-13 18:49:47 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-13 18:49:47 [INFO]: ::1 - - [13/Sep/2025:13:19:47 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:49:58 [ERROR]: MySQL query error:
+2025-09-13 18:49:58 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-13 18:49:58 [INFO]: ::1 - - [13/Sep/2025:13:19:58 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:50:15 [ERROR]: MySQL query error:
+2025-09-13 18:50:15 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-13 18:50:15 [INFO]: ::1 - - [13/Sep/2025:13:20:15 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:51:41 [ERROR]: MySQL query error:
+2025-09-13 18:51:41 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.findByEmail (E:\Project 2\backend\models\User.js:46:41)
+    at login (E:\Project 2\backend\controllers\authController.js:138:31)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (E:\Project 2\backend\middleware\validation.js:12:3)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+2025-09-13 18:51:41 [INFO]: ::1 - - [13/Sep/2025:13:21:41 +0000] "POST /api/auth/login HTTP/1.1" 500 70 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:58:59 [INFO]: User logged in: kashmila@gmail.com
+2025-09-13 18:58:59 [INFO]: ::1 - - [13/Sep/2025:13:28:59 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:58:59 [INFO]: Token decoded successfully
+2025-09-13 18:58:59 [INFO]: Querying user from database
+2025-09-13 18:58:59 [INFO]: User found
+2025-09-13 18:58:59 [INFO]: Authorization check
+2025-09-13 18:58:59 [INFO]: Authorization successful
+2025-09-13 18:59:00 [INFO]: ::1 - - [13/Sep/2025:13:29:00 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:04 [INFO]: ::1 - - [13/Sep/2025:13:29:04 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:05 [INFO]: Token decoded successfully
+2025-09-13 18:59:05 [INFO]: Querying user from database
+2025-09-13 18:59:06 [INFO]: User found
+2025-09-13 18:59:06 [INFO]: Authorization check
+2025-09-13 18:59:06 [INFO]: Authorization successful
+2025-09-13 18:59:06 [INFO]: ::1 - - [13/Sep/2025:13:29:06 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:10 [INFO]: ::1 - - [13/Sep/2025:13:29:10 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:11 [INFO]: Token decoded successfully
+2025-09-13 18:59:11 [INFO]: Querying user from database
+2025-09-13 18:59:11 [INFO]: Token decoded successfully
+2025-09-13 18:59:11 [INFO]: Querying user from database
+2025-09-13 18:59:11 [INFO]: User found
+2025-09-13 18:59:11 [INFO]: Authorization check
+2025-09-13 18:59:11 [INFO]: Authorization successful
+2025-09-13 18:59:11 [ERROR]: MySQL query error:
+2025-09-13 18:59:11 [INFO]: ::1 - - [13/Sep/2025:13:29:11 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:12 [INFO]: User found
+2025-09-13 18:59:12 [INFO]: Authorization check
+2025-09-13 18:59:12 [INFO]: Authorization successful
+2025-09-13 18:59:13 [ERROR]: MySQL query error:
+2025-09-13 18:59:13 [INFO]: ::1 - - [13/Sep/2025:13:29:13 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 500 115 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:32 [INFO]: ::1 - - [13/Sep/2025:13:29:32 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:41 [INFO]: Token decoded successfully
+2025-09-13 18:59:41 [INFO]: Querying user from database
+2025-09-13 18:59:41 [INFO]: Token decoded successfully
+2025-09-13 18:59:41 [INFO]: Querying user from database
+2025-09-13 18:59:41 [INFO]: User found
+2025-09-13 18:59:41 [INFO]: Authorization check
+2025-09-13 18:59:41 [INFO]: Authorization successful
+2025-09-13 18:59:41 [INFO]: User found
+2025-09-13 18:59:41 [INFO]: Authorization check
+2025-09-13 18:59:41 [INFO]: Authorization successful
+2025-09-13 18:59:42 [ERROR]: MySQL query error:
+2025-09-13 18:59:42 [INFO]: ::1 - - [13/Sep/2025:13:29:42 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 500 115 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 18:59:42 [ERROR]: MySQL query error:
+2025-09-13 18:59:42 [INFO]: ::1 - - [13/Sep/2025:13:29:42 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-13 19:27:57 [INFO]: Socket.IO server initialized
+2025-09-13 19:28:02 [INFO]: ✅ MySQL database connected successfully
+2025-09-13 19:28:02 [INFO]: ✅ MySQL connected successfully
+2025-09-13 19:28:02 [ERROR]: ❌ MongoDB connection failed:
+2025-09-13 19:28:02 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-13 19:28:02 [INFO]: 📧 Notification service skipped for now
+2025-09-13 19:28:02 [INFO]: 🚀 Server running on port 5000
+2025-09-13 19:28:02 [INFO]: 📊 Environment: development
+2025-09-13 19:28:02 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-13 19:28:02 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-13 19:29:23 [INFO]: SIGINT received, shutting down gracefully
+2025-09-13 19:29:23 [INFO]: Process terminated
+2025-09-13 19:29:51 [INFO]: Socket.IO server initialized
+2025-09-13 19:29:55 [INFO]: ✅ MySQL database connected successfully
+2025-09-13 19:29:55 [INFO]: ✅ MySQL connected successfully
+2025-09-13 19:29:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-13 19:29:55 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-13 19:29:55 [INFO]: 📧 Notification service skipped for now
+2025-09-13 19:29:55 [INFO]: 🚀 Server running on port 5000
+2025-09-13 19:29:55 [INFO]: 📊 Environment: development
+2025-09-13 19:29:55 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-13 19:29:55 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-13 19:31:18 [INFO]: ::1 - - [13/Sep/2025:14:01:18 +0000] "GET /api/patient/health-predictions HTTP/1.1" 401 69 "-" "axios/1.11.0"
+2025-09-13 19:31:18 [INFO]: ::1 - - [13/Sep/2025:14:01:18 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 401 69 "-" "axios/1.11.0"
+2025-09-13 19:31:50 [INFO]: ::1 - - [13/Sep/2025:14:01:50 +0000] "GET /api/patient/health-predictions HTTP/1.1" 401 69 "-" "axios/1.11.0"
+2025-09-13 19:31:50 [INFO]: ::1 - - [13/Sep/2025:14:01:50 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 401 69 "-" "axios/1.11.0"
+2025-09-14 13:49:00 [INFO]: SIGINT received, shutting down gracefully
+2025-09-14 13:49:00 [INFO]: Process terminated
+2025-09-21 12:05:26 [INFO]: Socket.IO server initialized
+2025-09-21 12:05:27 [INFO]: ✅ MySQL database connected successfully
+2025-09-21 12:05:27 [INFO]: ✅ MySQL connected successfully
+2025-09-21 12:05:27 [ERROR]: ❌ MongoDB connection failed:
+2025-09-21 12:05:27 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-21 12:05:27 [INFO]: 📧 Notification service skipped for now
+2025-09-21 12:05:27 [INFO]: 🚀 Server running on port 5000
+2025-09-21 12:05:27 [INFO]: 📊 Environment: development
+2025-09-21 12:05:27 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-21 12:05:27 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-21 12:05:41 [ERROR]: TokenExpiredError: jwt expired
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-21 12:05:41 [INFO]: ::1 - - [21/Sep/2025:06:35:41 +0000] "GET /api/auth/profile HTTP/1.1" 401 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:05:49 [INFO]: User logged in: kashmila@gmail.com
+2025-09-21 12:05:49 [INFO]: ::1 - - [21/Sep/2025:06:35:49 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:05:49 [INFO]: Token decoded successfully
+2025-09-21 12:05:49 [INFO]: Querying user from database
+2025-09-21 12:05:49 [INFO]: User found
+2025-09-21 12:05:49 [INFO]: Authorization check
+2025-09-21 12:05:49 [INFO]: Authorization successful
+2025-09-21 12:05:49 [INFO]: ::1 - - [21/Sep/2025:06:35:49 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:05:52 [INFO]: ::1 - - [21/Sep/2025:06:35:52 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:05:54 [INFO]: Token decoded successfully
+2025-09-21 12:05:54 [INFO]: Querying user from database
+2025-09-21 12:05:54 [INFO]: Token decoded successfully
+2025-09-21 12:05:54 [INFO]: Querying user from database
+2025-09-21 12:05:54 [INFO]: User found
+2025-09-21 12:05:54 [INFO]: Authorization check
+2025-09-21 12:05:54 [INFO]: Authorization successful
+2025-09-21 12:05:54 [ERROR]: MySQL query error:
+2025-09-21 12:05:54 [INFO]: ::1 - - [21/Sep/2025:06:35:54 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:05:55 [INFO]: User found
+2025-09-21 12:05:55 [INFO]: Authorization check
+2025-09-21 12:05:55 [INFO]: Authorization successful
+2025-09-21 12:05:55 [INFO]: ::1 - - [21/Sep/2025:06:35:55 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:06:04 [INFO]: Token decoded successfully
+2025-09-21 12:06:04 [INFO]: Querying user from database
+2025-09-21 12:06:04 [INFO]: User found
+2025-09-21 12:06:04 [INFO]: Authorization check
+2025-09-21 12:06:04 [INFO]: Authorization successful
+2025-09-21 12:06:05 [INFO]: ::1 - - [21/Sep/2025:06:36:05 +0000] "POST /api/patient/health-predictions HTTP/1.1" 201 515 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:06:05 [INFO]: Token decoded successfully
+2025-09-21 12:06:05 [INFO]: Querying user from database
+2025-09-21 12:06:05 [INFO]: Token decoded successfully
+2025-09-21 12:06:05 [INFO]: Querying user from database
+2025-09-21 12:06:05 [INFO]: User found
+2025-09-21 12:06:05 [INFO]: Authorization check
+2025-09-21 12:06:05 [INFO]: Authorization successful
+2025-09-21 12:06:05 [INFO]: User found
+2025-09-21 12:06:05 [INFO]: Authorization check
+2025-09-21 12:06:05 [INFO]: Authorization successful
+2025-09-21 12:06:05 [ERROR]: MySQL query error:
+2025-09-21 12:06:05 [INFO]: ::1 - - [21/Sep/2025:06:36:05 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:06:05 [INFO]: ::1 - - [21/Sep/2025:06:36:05 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 445 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:13:22 [INFO]: Token decoded successfully
+2025-09-21 12:13:22 [INFO]: Querying user from database
+2025-09-21 12:13:22 [INFO]: User found
+2025-09-21 12:13:22 [INFO]: Authorization check
+2025-09-21 12:13:22 [INFO]: Authorization successful
+2025-09-21 12:13:22 [INFO]: ::1 - - [21/Sep/2025:06:43:22 +0000] "POST /api/patient/health-predictions HTTP/1.1" 201 515 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:13:22 [INFO]: Token decoded successfully
+2025-09-21 12:13:22 [INFO]: Querying user from database
+2025-09-21 12:13:22 [INFO]: Token decoded successfully
+2025-09-21 12:13:22 [INFO]: Querying user from database
+2025-09-21 12:13:23 [INFO]: User found
+2025-09-21 12:13:23 [INFO]: Authorization check
+2025-09-21 12:13:23 [INFO]: Authorization successful
+2025-09-21 12:13:23 [INFO]: User found
+2025-09-21 12:13:23 [INFO]: Authorization check
+2025-09-21 12:13:23 [INFO]: Authorization successful
+2025-09-21 12:13:23 [ERROR]: MySQL query error:
+2025-09-21 12:13:23 [INFO]: ::1 - - [21/Sep/2025:06:43:23 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:13:23 [INFO]: ::1 - - [21/Sep/2025:06:43:23 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 660 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:14:04 [INFO]: Token decoded successfully
+2025-09-21 12:14:04 [INFO]: Querying user from database
+2025-09-21 12:14:04 [INFO]: Token decoded successfully
+2025-09-21 12:14:04 [INFO]: Querying user from database
+2025-09-21 12:14:04 [INFO]: User found
+2025-09-21 12:14:04 [INFO]: Authorization check
+2025-09-21 12:14:04 [INFO]: Authorization successful
+2025-09-21 12:14:04 [INFO]: User found
+2025-09-21 12:14:04 [INFO]: Authorization check
+2025-09-21 12:14:04 [INFO]: Authorization successful
+2025-09-21 12:14:04 [ERROR]: MySQL query error:
+2025-09-21 12:14:04 [INFO]: ::1 - - [21/Sep/2025:06:44:04 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 500 117 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:14:04 [INFO]: ::1 - - [21/Sep/2025:06:44:04 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:14:27 [INFO]: User logged in: admin@caresync.com
+2025-09-21 12:14:27 [INFO]: ::1 - - [21/Sep/2025:06:44:27 +0000] "POST /api/auth/login HTTP/1.1" 200 832 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:14:27 [INFO]: ::1 - - [21/Sep/2025:06:44:27 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:07 [INFO]: Token decoded successfully
+2025-09-21 12:19:07 [INFO]: Querying user from database
+2025-09-21 12:19:07 [INFO]: Token decoded successfully
+2025-09-21 12:19:07 [INFO]: Querying user from database
+2025-09-21 12:19:07 [INFO]: Token decoded successfully
+2025-09-21 12:19:07 [INFO]: Querying user from database
+2025-09-21 12:19:07 [INFO]: User found
+2025-09-21 12:19:07 [INFO]: Authorization check
+2025-09-21 12:19:07 [INFO]: Authorization successful
+2025-09-21 12:19:07 [INFO]: Token decoded successfully
+2025-09-21 12:19:07 [INFO]: Querying user from database
+2025-09-21 12:19:07 [INFO]: User found
+2025-09-21 12:19:07 [INFO]: Authorization check
+2025-09-21 12:19:07 [INFO]: Authorization successful
+2025-09-21 12:19:07 [INFO]: Token decoded successfully
+2025-09-21 12:19:07 [INFO]: Querying user from database
+2025-09-21 12:19:07 [INFO]: User found
+2025-09-21 12:19:07 [INFO]: Authorization check
+2025-09-21 12:19:07 [INFO]: Authorization successful
+2025-09-21 12:19:07 [INFO]: User found
+2025-09-21 12:19:07 [INFO]: Authorization check
+2025-09-21 12:19:07 [INFO]: Authorization successful
+2025-09-21 12:19:07 [INFO]: ::1 - - [21/Sep/2025:06:49:07 +0000] "GET /api/admin/reports/patients HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:08 [INFO]: ::1 - - [21/Sep/2025:06:49:08 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:08 [INFO]: User found
+2025-09-21 12:19:08 [INFO]: Authorization check
+2025-09-21 12:19:08 [INFO]: Authorization successful
+2025-09-21 12:19:08 [INFO]: Token decoded successfully
+2025-09-21 12:19:08 [INFO]: Querying user from database
+2025-09-21 12:19:08 [INFO]: User found
+2025-09-21 12:19:08 [INFO]: Authorization check
+2025-09-21 12:19:08 [INFO]: Authorization successful
+2025-09-21 12:19:08 [INFO]: ::1 - - [21/Sep/2025:06:49:08 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:13 [INFO]: ::1 - - [21/Sep/2025:06:49:13 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:15 [INFO]: Token decoded successfully
+2025-09-21 12:19:15 [INFO]: Querying user from database
+2025-09-21 12:19:15 [INFO]: Token decoded successfully
+2025-09-21 12:19:15 [INFO]: Querying user from database
+2025-09-21 12:19:15 [INFO]: Token decoded successfully
+2025-09-21 12:19:15 [INFO]: Querying user from database
+2025-09-21 12:19:15 [INFO]: User found
+2025-09-21 12:19:15 [INFO]: User found
+2025-09-21 12:19:15 [INFO]: Authorization check
+2025-09-21 12:19:15 [INFO]: Authorization successful
+2025-09-21 12:19:15 [INFO]: User found
+2025-09-21 12:19:15 [INFO]: Authorization check
+2025-09-21 12:19:15 [INFO]: Authorization successful
+2025-09-21 12:19:15 [INFO]: Token decoded successfully
+2025-09-21 12:19:15 [INFO]: Querying user from database
+2025-09-21 12:19:15 [INFO]: User found
+2025-09-21 12:19:15 [INFO]: Authorization check
+2025-09-21 12:19:15 [INFO]: Authorization successful
+2025-09-21 12:19:15 [INFO]: ::1 - - [21/Sep/2025:06:49:15 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:15 [INFO]: ::1 - - [21/Sep/2025:06:49:15 +0000] "GET /api/admin/doctors HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:15 [INFO]: ::1 - - [21/Sep/2025:06:49:15 +0000] "GET /api/appointments?limit=100 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:18 [INFO]: Token decoded successfully
+2025-09-21 12:19:18 [INFO]: Querying user from database
+2025-09-21 12:19:18 [INFO]: Token decoded successfully
+2025-09-21 12:19:18 [INFO]: Querying user from database
+2025-09-21 12:19:18 [INFO]: Token decoded successfully
+2025-09-21 12:19:18 [INFO]: Querying user from database
+2025-09-21 12:19:18 [INFO]: User found
+2025-09-21 12:19:18 [INFO]: Authorization check
+2025-09-21 12:19:18 [INFO]: Authorization successful
+2025-09-21 12:19:18 [INFO]: Token decoded successfully
+2025-09-21 12:19:18 [INFO]: Querying user from database
+2025-09-21 12:19:18 [INFO]: User found
+2025-09-21 12:19:18 [INFO]: Authorization check
+2025-09-21 12:19:18 [INFO]: Authorization successful
+2025-09-21 12:19:18 [INFO]: Token decoded successfully
+2025-09-21 12:19:18 [INFO]: Querying user from database
+2025-09-21 12:19:18 [INFO]: User found
+2025-09-21 12:19:18 [INFO]: Authorization check
+2025-09-21 12:19:18 [INFO]: Authorization successful
+2025-09-21 12:19:18 [INFO]: Token decoded successfully
+2025-09-21 12:19:18 [INFO]: Querying user from database
+2025-09-21 12:19:18 [INFO]: User found
+2025-09-21 12:19:18 [INFO]: Authorization check
+2025-09-21 12:19:18 [INFO]: Authorization successful
+2025-09-21 12:19:18 [INFO]: User found
+2025-09-21 12:19:18 [INFO]: Authorization check
+2025-09-21 12:19:18 [INFO]: Authorization successful
+2025-09-21 12:19:18 [INFO]: User found
+2025-09-21 12:19:18 [INFO]: Authorization check
+2025-09-21 12:19:18 [INFO]: Authorization successful
+2025-09-21 12:19:18 [INFO]: ::1 - - [21/Sep/2025:06:49:18 +0000] "GET /api/admin/reports/medical-reports HTTP/1.1" 500 94 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:18 [INFO]: ::1 - - [21/Sep/2025:06:49:18 +0000] "GET /api/admin/reports/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-21 12:19:18 [INFO]: ::1 - - [21/Sep/2025:06:49:18 +0000] "GET /api/admin/reports/diabetes-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

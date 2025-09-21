@@ -43,6 +43,7 @@ const appointmentRoutes = require('./routes/appointments');
 const medicalReportsRoutes = require('./routes/medical-reports');
 const adminRoutes = require('./routes/admin');
 const adminReportsRoutes = require('./routes/admin-reports');
+const patientHealthPredictionRoutes = require('./routes/patientHealthPredictions');
 const billingRoutes = require('./routes/billing');
 const docsRoutes = require('./routes/docs');
 const indexRoutes = require('./routes/index');
@@ -127,6 +128,7 @@ app.get('/api/doctors/search', PatientController.searchDoctors);
 // Protected routes
 // app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
 app.use('/api/patients', patientRoutes);
+app.use('/api/patient/health-predictions', patientHealthPredictionRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.use('/api/doctor', doctorRoutes); // Singular route for frontend compatibility
 app.use('/api/appointments', appointmentRoutes);
