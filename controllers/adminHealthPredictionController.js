@@ -2,7 +2,6 @@ const { validationResult } = require('express-validator');
 const { mysqlConnection } = require('../config/mysql');
 const DiabetesPrediction = require('../models/DiabetesPrediction');
 const logger = require('../config/logger');
-const axios = require('axios');
 
 class AdminHealthPredictionController {
   
@@ -304,36 +303,27 @@ class AdminHealthPredictionController {
         updated_at: new Date()
       });
 
-      // Prepare data for AI prediction
-      const predictionData = {
-        pregnancies: submission.pregnancies,
+      // Prepare data for diabetes prediction using working service
+      const inputData = {
+        pregnancies: submission.pregnancies || 0,
         glucose: submission.glucose,
-        blood_pressure: 0, // Default value - not collected in our form
-        skin_thickness: 0, // Default value - not collected in our form
-        insulin: submission.insulin,
         bmi: submission.bmi,
-        diabetes_pedigree_function: 0.5, // Default value - not collected in our form
-        age: submission.age
+        age: submission.age,
+        insulin: submission.insulin || 0
       };
 
-      logger.info(`📊 [ADMIN] Sending data to AI prediction API:`, predictionData);
+      logger.info(`📊 [ADMIN] Sending data to diabetes prediction service:`, inputData);
 
       try {
-        // Call the diabetes prediction API
-        const AI_PREDICTION_URL = process.env.AI_PREDICTION_URL || 'http://localhost:8000/predict';
-        
-        const aiResponse = await axios.post(AI_PREDICTION_URL, predictionData, {
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          timeout: 30000 // 30 second timeout
-        });
+        // Use the same working diabetes prediction service
+        const predictionService = require('../services/diabetesPredictionService');
+        const result = await predictionService.predict(inputData);
 
-        logger.info(`🎯 [ADMIN] AI prediction response:`, aiResponse.data);
+        logger.info(`🎯 [ADMIN] Diabetes prediction service response:`, result);
 
-        // Process AI response
-        const prediction = aiResponse.data.prediction; // 0 or 1
-        const probability = aiResponse.data.probability; // probability value
+        // Process prediction results
+        const prediction = result.prediction; // 0 or 1
+        const probability = result.probability; // probability value
         
         // Determine risk level based on probability
         let riskLevel;
@@ -378,7 +368,7 @@ class AdminHealthPredictionController {
         });
 
       } catch (aiError) {
-        logger.error(`❌ [ADMIN] AI prediction API error: ${aiError.message}`);
+        logger.error(`❌ [ADMIN] Diabetes prediction service error: ${aiError.message}`);
         
         // Update submission status to pending for retry
         await DiabetesPrediction.update(id, {
@@ -388,8 +378,8 @@ class AdminHealthPredictionController {
 
         res.status(500).json({
           success: false,
-          message: 'Failed to process AI prediction',
-          error: 'AI service temporarily unavailable. Please try again later.',
+          message: 'Failed to process diabetes prediction',
+          error: 'Diabetes prediction service temporarily unavailable. Please try again later.',
           details: aiError.message
         });
       }

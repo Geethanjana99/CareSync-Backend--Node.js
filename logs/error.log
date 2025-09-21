@@ -2121,3 +2121,19 @@
 2025-09-21 15:08:11 [ERROR]: ❌ [ADMIN] AI prediction API error: 
 2025-09-21 15:11:53 [ERROR]: ❌ [ADMIN] AI prediction API error: 
 2025-09-21 15:12:02 [ERROR]: ❌ [ADMIN] AI prediction API error: 
+2025-09-21 15:14:15 [ERROR]: ❌ [ADMIN] AI prediction API error: 
+2025-09-21 15:18:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-21 15:24:59 [ERROR]: MySQL query error:
+2025-09-21 15:24:59 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-21 15:25:00 [ERROR]: MySQL query error:
+2025-09-21 15:25:00 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
