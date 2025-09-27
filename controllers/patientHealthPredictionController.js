@@ -48,30 +48,19 @@ class PatientHealthDataController {
         notes
       } = req.body;
 
-      // Get patient ID from the logged-in user
-      const patientId = req.user.patientId;
+      // Get patient using the same pattern as other controllers
+      const Patient = require('../models/Patient');
+      const patient = await Patient.findByUserId(req.user.id);
       
-      if (!patientId) {
-        return res.status(400).json({
+      if (!patient) {
+        return res.status(404).json({
           success: false,
           message: 'Patient profile not found. Please complete your profile first.'
         });
       }
 
-      console.log('🔍 [DEBUG] Using patient ID from logged user:', patientId);
-
-      // Verify patient exists and belongs to logged user
-      const patientQuery = 'SELECT * FROM patients WHERE patient_id = ? AND user_id = ?';
-      const patients = await mysqlConnection.query(patientQuery, [patientId, req.user.id]);
-      if (patients.length === 0) {
-        console.log('❌ [DEBUG] Patient not found or access denied:', patientId);
-        return res.status(404).json({
-          success: false,
-          message: 'Patient profile not found or access denied'
-        });
-      }
-      const patient = patients[0];
-      console.log('✅ [DEBUG] Patient found:', patient.id);
+      const patientId = patient.id;
+      console.log('🔍 [DEBUG] Using patient ID:', patientId);
 
       console.log('🔍 [DEBUG] Creating health data submission record...');
 
@@ -151,14 +140,21 @@ class PatientHealthDataController {
         });
       }
 
-      const patientId = req.user.patientId;
+      // Get patient using the same pattern as other controllers
+      const Patient = require('../models/Patient');
+      const patient = await Patient.findByUserId(req.user.id);
       
-      if (!patientId) {
-        return res.status(400).json({
+      console.log('Patient lookup result:', { userId: req.user.id, patient });
+      
+      if (!patient) {
+        return res.status(404).json({
           success: false,
           message: 'Patient profile not found.'
         });
       }
+
+      const patientId = patient.id;
+      console.log('Patient ID extracted:', patientId);
 
       const { 
         page = 1, 
@@ -167,7 +163,12 @@ class PatientHealthDataController {
         sortOrder = 'DESC'
       } = req.query;
 
-      const offset = (page - 1) * limit;
+      const pageNum = parseInt(page) || 1;
+      const limitNum = parseInt(limit) || 10;
+      const offset = (pageNum - 1) * limitNum;
+      
+      // Debug logging
+      console.log('Query parameters:', { page, limit, pageNum, limitNum, offset, patientId });
       
       // Validate sortBy to prevent SQL injection
       const allowedSortColumns = ['created_at', 'updated_at', 'status'];
@@ -176,7 +177,16 @@ class PatientHealthDataController {
       // Validate sortOrder to prevent SQL injection
       const validSortOrder = ['ASC', 'DESC'].includes(sortOrder.toUpperCase()) ? sortOrder.toUpperCase() : 'DESC';
       
-      // Query submissions with doctor certifications (if available)
+      // Validate parameters before query
+      if (!patientId || isNaN(limitNum) || isNaN(offset)) {
+        console.error('Invalid query parameters:', { patientId, limitNum, offset });
+        return res.status(500).json({
+          success: false,
+          message: 'Invalid query parameters'
+        });
+      }
+      
+      // Build query with LIMIT/OFFSET as literals to avoid MySQL2 prepared statement issues
       const query = `
         SELECT 
           dp.id,
@@ -205,28 +215,33 @@ class PatientHealthDataController {
           du.name as doctor_name,
           d.specialty as doctor_specialty
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
         LEFT JOIN doctors d ON apc.doctor_id = d.id
         LEFT JOIN users du ON d.user_id = du.id
-        WHERE dp.patient_id = ? AND p.user_id = ?
+        WHERE dp.patient_id = ?
         ORDER BY dp.created_at DESC
-        LIMIT ? OFFSET ?
+        LIMIT ${limitNum} OFFSET ${offset}
       `;
       
-      const submissions = await mysqlConnection.query(query, [patientId, req.user.id, parseInt(limit), parseInt(offset)]);
+      console.log('SQL Query parameters:', [patientId]);
+      console.log('LIMIT/OFFSET values:', { limitNum, offset });
+      const submissions = await mysqlConnection.query(query, [patientId]);
+      console.log('Query executed successfully, found rows:', submissions.length);
       
       // Count total for pagination
       const countQuery = `
         SELECT COUNT(*) as total
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
-        WHERE dp.patient_id = ? AND p.user_id = ?
+        WHERE dp.patient_id = ?
       `;
       
-      const countResult = await mysqlConnection.query(countQuery, [patientId, req.user.id]);
+      const countResult = await mysqlConnection.query(countQuery, [patientId]);
       const total = countResult[0].total;
+      
+      console.log('Count query result:', { total, countResult });
+      console.log('Raw submissions data:', submissions);
 
       // Transform results to patient-friendly format
       const transformedSubmissions = submissions.map(submission => ({
@@ -259,6 +274,18 @@ class PatientHealthDataController {
           doctorSpecialty: submission.doctor_specialty
         } : null
       }));
+      
+      console.log('Transformed submissions:', transformedSubmissions);
+      console.log('Final response being sent:', {
+        submissionsCount: transformedSubmissions.length,
+        total,
+        pagination: {
+          total,
+          page: parseInt(page),
+          limit: parseInt(limit),
+          pages: Math.ceil(total / limit)
+        }
+      });
 
       res.json({
         success: true,
@@ -301,14 +328,19 @@ class PatientHealthDataController {
       }
 
       const { id } = req.params;
-      const patientId = req.user.patientId;
-
-      if (!patientId) {
-        return res.status(400).json({
+      
+      // Get patient using the same pattern as other controllers
+      const Patient = require('../models/Patient');
+      const patient = await Patient.findByUserId(req.user.id);
+      
+      if (!patient) {
+        return res.status(404).json({
           success: false,
           message: 'Patient profile not found.'
         });
       }
+
+      const patientId = patient.id;
 
       // Find submission that belongs to the logged-in patient with doctor certification
       const query = `
@@ -329,15 +361,15 @@ class PatientHealthDataController {
           d.specialty as doctor_specialty,
           d.license_number as doctor_license
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
         LEFT JOIN doctors d ON apc.doctor_id = d.id
         LEFT JOIN users du ON d.user_id = du.id
-        WHERE dp.id = ? AND dp.patient_id = ? AND p.user_id = ?
+        WHERE dp.id = ? AND dp.patient_id = ?
       `;
 
-      const results = await mysqlConnection.query(query, [id, patientId, req.user.id]);
+      const results = await mysqlConnection.query(query, [id, patientId]);
 
       if (results.length === 0) {
         return res.status(404).json({
@@ -413,14 +445,18 @@ class PatientHealthDataController {
         });
       }
 
-      const patientId = req.user.patientId;
+      // Get patient using the same pattern as other controllers
+      const Patient = require('../models/Patient');
+      const patient = await Patient.findByUserId(req.user.id);
       
-      if (!patientId) {
-        return res.status(400).json({
+      if (!patient) {
+        return res.status(404).json({
           success: false,
           message: 'Patient profile not found.'
         });
       }
+
+      const patientId = patient.id;
 
       // Get patient statistics
       const statsQuery = `
@@ -434,12 +470,11 @@ class PatientHealthDataController {
           SUM(CASE WHEN apc.severity_assessment = 'low' THEN 1 ELSE 0 END) as low_severity,
           SUM(CASE WHEN apc.follow_up_required = 1 THEN 1 ELSE 0 END) as followup_required
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
-        WHERE dp.patient_id = ? AND p.user_id = ?
+        WHERE dp.patient_id = ?
       `;
 
-      const statsResult = await mysqlConnection.query(statsQuery, [patientId, req.user.id]);
+      const statsResult = await mysqlConnection.query(statsQuery, [patientId]);
       const stats = statsResult[0];
 
       // Get recent submissions with doctor reviews

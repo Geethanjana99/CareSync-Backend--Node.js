@@ -116,6 +116,20 @@ class PatientController {
       }
 
       const appointments = await Appointment.findAll(filters);
+      
+      console.log('Patient appointments query result:');
+      console.log('Filters used:', filters);
+      console.log('Number of appointments found:', appointments.length);
+      if (appointments.length > 0) {
+        console.log('Sample appointment data:', {
+          id: appointments[0].id,
+          doctor_name: appointments[0].doctor_name,
+          doctorName: appointments[0].doctorName,
+          specialty: appointments[0].specialty,
+          doctorSpecialty: appointments[0].doctorSpecialty,
+          doctor_id: appointments[0].doctor_id
+        });
+      }
 
       res.json({
         success: true,
