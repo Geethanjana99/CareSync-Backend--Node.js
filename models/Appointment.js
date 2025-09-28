@@ -116,6 +116,11 @@ class Appointment {
     return await Queue.getPatientQueuePosition(patientId, doctorId, date);
   }
 
+  // Get patient's queue positions for all doctors on a date
+  static async getAllPatientQueuePositions(patientId, date = null) {
+    return await Queue.getAllPatientQueuePositions(patientId, date);
+  }
+
   // Get doctor's queue for a specific date
   static async getDoctorQueue(doctorId, date = null) {
     return await Queue.getDoctorQueue(doctorId, date);

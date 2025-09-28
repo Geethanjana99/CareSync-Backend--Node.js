@@ -10,11 +10,11 @@ class Queue {
       const query = `
         SELECT 
           qs.*,
-          d.name as doctor_name,
-          d.specialty
+          u.name as doctor_name,
+          doc.specialty
         FROM queue_status qs
         JOIN doctors doc ON qs.doctor_id = doc.id
-        JOIN users d ON doc.user_id = d.id
+        JOIN users u ON doc.user_id = u.id
         WHERE qs.doctor_id = ? AND qs.queue_date = ?
       `;
       
@@ -217,12 +217,16 @@ class Queue {
       // Get current numbers being served
       const queueStatus = await this.getQueueStatus(doctorId, queueDate);
       
+      // Default values if queue status doesn't exist
+      const currentNumber = queueStatus?.current_number || '0';
+      const currentEmergencyNumber = queueStatus?.current_emergency_number || 'E0';
+      
       let position = 0;
       let currentlyServing = false;
       
       if (appointment.is_emergency) {
-        const emergencyNum = parseInt(appointment.queue_number.substring(1));
-        const currentEmergencyNum = parseInt(queueStatus.current_emergency_number.substring(1));
+        const emergencyNum = parseInt(appointment.queue_number.toString().substring(1));
+        const currentEmergencyNum = parseInt(currentEmergencyNumber.substring(1));
         
         if (emergencyNum <= currentEmergencyNum) {
           currentlyServing = emergencyNum === currentEmergencyNum;
@@ -232,7 +236,7 @@ class Queue {
         }
       } else {
         const patientNum = parseInt(appointment.queue_number);
-        const currentNum = parseInt(queueStatus.current_number);
+        const currentNum = parseInt(currentNumber);
         
         if (patientNum <= currentNum) {
           currentlyServing = patientNum === currentNum;
@@ -261,10 +265,68 @@ class Queue {
         status: appointment.status,
         position: Math.max(0, position),
         currentlyServing,
-        currentNumber: appointment.is_emergency ? queueStatus.current_emergency_number : queueStatus.current_number
+        currentNumber: appointment.is_emergency ? currentEmergencyNumber : currentNumber
       };
     } catch (error) {
       logger.error('Error getting patient queue position:', error);
+      throw error;
+    }
+  }
+
+  // Get patient's positions in all queues for a specific date
+  static async getAllPatientQueuePositions(patientId, date = null) {
+    if (!patientId) {
+      throw new Error('Patient ID is required');
+    }
+    
+    const queueDate = date || new Date().toISOString().split('T')[0];
+    
+    try {
+      // Get all appointments for the patient on the given date
+      const appointmentsQuery = `
+        SELECT 
+          a.doctor_id, a.queue_number, a.is_emergency, a.status,
+          u.name as doctor_name, d.specialty
+        FROM appointments a
+        JOIN doctors d ON a.doctor_id = d.id
+        JOIN users u ON d.user_id = u.id
+        WHERE a.patient_id = ? AND a.queue_date = ?
+        ORDER BY a.is_emergency DESC, a.queue_number ASC
+      `;
+      
+      const appointments = await mysqlConnection.query(appointmentsQuery, [patientId, queueDate]);
+      
+      if (!appointments || appointments.length === 0) {
+        return [];
+      }
+      
+      // Get queue position for each appointment
+      const positions = [];
+      for (const appointment of appointments) {
+        try {
+          const position = await this.getPatientQueuePosition(
+            patientId, 
+            appointment.doctor_id, 
+            queueDate
+          );
+          
+          if (position) {
+            positions.push({
+              doctorId: appointment.doctor_id,
+              doctorName: appointment.doctor_name,
+              specialty: appointment.specialty,
+              ...position
+            });
+          }
+        } catch (error) {
+          logger.error(`Error getting position for doctor ${appointment.doctor_id}:`, error);
+          // Continue with other appointments even if one fails
+        }
+      }
+      
+      return positions;
+    } catch (error) {
+      logger.error('Error getting all patient queue positions:', error);
       throw error;
     }
   }

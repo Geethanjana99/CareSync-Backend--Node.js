@@ -507,14 +507,6 @@ class PatientController {
     try {
       const { doctorId, date } = req.query;
       
-      // Validate required parameters
-      if (!doctorId) {
-        return res.status(400).json({
-          success: false,
-          message: 'doctorId is required as query parameter'
-        });
-      }
-      
       const patient = await Patient.findByUserId(req.user.id);
       
       if (!patient) {
@@ -527,22 +519,79 @@ class PatientController {
       // Use current date if not provided
       const queueDate = date || new Date().toISOString().split('T')[0];
 
-      const position = await Appointment.getPatientQueuePosition(
-        patient.id, 
-        doctorId, 
-        queueDate
-      );
+      // Simple query to get patient's appointments for the date
+      const { mysqlConnection } = require('../config/mysql');
+      let query, params;
 
-      if (!position) {
+      if (doctorId) {
+        // Get appointment for specific doctor
+        query = `
+          SELECT 
+            a.queue_number,
+            a.is_emergency,
+            a.status,
+            a.doctor_id,
+            u.name as doctor_name,
+            d.specialty,
+            (SELECT COUNT(*) FROM appointments a2 
+             WHERE a2.doctor_id = a.doctor_id 
+             AND a2.queue_date = a.queue_date 
+             AND a2.queue_number < a.queue_number
+             AND a2.status IN ('scheduled', 'confirmed', 'in-progress')) as position
+          FROM appointments a
+          JOIN doctors d ON a.doctor_id = d.id
+          JOIN users u ON d.user_id = u.id
+          WHERE a.patient_id = ? AND a.doctor_id = ? AND a.queue_date = ?
+        `;
+        params = [patient.id, doctorId, queueDate];
+      } else {
+        // Get appointments for all doctors
+        query = `
+          SELECT 
+            a.queue_number,
+            a.is_emergency,
+            a.status,
+            a.doctor_id,
+            u.name as doctor_name,
+            d.specialty,
+            (SELECT COUNT(*) FROM appointments a2 
+             WHERE a2.doctor_id = a.doctor_id 
+             AND a2.queue_date = a.queue_date 
+             AND a2.queue_number < a.queue_number
+             AND a2.status IN ('scheduled', 'confirmed', 'in-progress')) as position
+          FROM appointments a
+          JOIN doctors d ON a.doctor_id = d.id
+          JOIN users u ON d.user_id = u.id
+          WHERE a.patient_id = ? AND a.queue_date = ?
+          ORDER BY a.is_emergency DESC, a.queue_number ASC
+        `;
+        params = [patient.id, queueDate];
+      }
+
+      const appointments = await mysqlConnection.query(query, params);
+
+      if (!appointments || appointments.length === 0) {
         return res.status(404).json({
           success: false,
-          message: 'No appointment found for this date'
+          message: 'No appointments found for this date'
         });
       }
 
+      // Format response
+      const formattedAppointments = appointments.map(apt => ({
+        queueNumber: apt.queue_number,
+        isEmergency: apt.is_emergency,
+        status: apt.status,
+        position: apt.position + 1, // Add 1 because position 0 means "next"
+        doctorId: apt.doctor_id,
+        doctorName: apt.doctor_name,
+        specialty: apt.specialty,
+        currentlyServing: apt.position === 0
+      }));
+
       res.json({
         success: true,
-        data: position
+        data: doctorId ? formattedAppointments[0] : formattedAppointments
       });
     } catch (error) {
       logger.error('Error getting queue position:', error);

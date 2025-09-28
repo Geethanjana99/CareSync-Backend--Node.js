@@ -14086,3 +14086,1429 @@
     at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
 2025-09-28 09:14:56 [INFO]: ::1 - - [28/Sep/2025:03:44:56 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:16:12 [INFO]: Token decoded successfully
+2025-09-28 09:16:12 [INFO]: Querying user from database
+2025-09-28 09:16:15 [INFO]: User found
+2025-09-28 09:16:15 [INFO]: Authorization check
+2025-09-28 09:16:15 [INFO]: Authorization successful
+2025-09-28 09:16:15 [INFO]: ::1 - - [28/Sep/2025:03:46:15 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:17:08 [INFO]: Token decoded successfully
+2025-09-28 09:17:08 [INFO]: Querying user from database
+2025-09-28 09:17:08 [INFO]: User found
+2025-09-28 09:17:08 [INFO]: Authorization check
+2025-09-28 09:17:08 [INFO]: Authorization successful
+2025-09-28 09:17:08 [INFO]: ::1 - - [28/Sep/2025:03:47:08 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:17:10 [INFO]: Token decoded successfully
+2025-09-28 09:17:10 [INFO]: Querying user from database
+2025-09-28 09:17:10 [INFO]: Token decoded successfully
+2025-09-28 09:17:10 [INFO]: Querying user from database
+2025-09-28 09:17:10 [INFO]: User found
+2025-09-28 09:17:10 [INFO]: Authorization check
+2025-09-28 09:17:10 [INFO]: Authorization successful
+2025-09-28 09:17:10 [INFO]: ::1 - - [28/Sep/2025:03:47:10 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:17:12 [INFO]: User found
+2025-09-28 09:17:12 [INFO]: ::1 - - [28/Sep/2025:03:47:12 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:17:12 [INFO]: Token decoded successfully
+2025-09-28 09:17:12 [INFO]: Querying user from database
+2025-09-28 09:17:13 [INFO]: User found
+2025-09-28 09:17:13 [INFO]: Authorization check
+2025-09-28 09:17:13 [INFO]: Authorization successful
+2025-09-28 09:17:13 [INFO]: ::1 - - [28/Sep/2025:03:47:13 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:17:25 [INFO]: User logged in: doctor@gmail.com
+2025-09-28 09:17:25 [INFO]: ::1 - - [28/Sep/2025:03:47:25 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:17:25 [INFO]: Token decoded successfully
+2025-09-28 09:17:25 [INFO]: Querying user from database
+2025-09-28 09:17:25 [INFO]: User found
+2025-09-28 09:17:25 [INFO]: Authorization check
+2025-09-28 09:17:25 [INFO]: Authorization successful
+2025-09-28 09:17:26 [ERROR]: MySQL query error:
+2025-09-28 09:17:26 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:17:28 [ERROR]: MySQL query error:
+2025-09-28 09:17:28 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:17:28 [INFO]: ::1 - - [28/Sep/2025:03:47:28 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:18:00 [INFO]: ::1 - - [28/Sep/2025:03:48:00 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:18:08 [INFO]: User logged in: doctor@gmail.com
+2025-09-28 09:18:08 [INFO]: ::1 - - [28/Sep/2025:03:48:08 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:18:08 [INFO]: Token decoded successfully
+2025-09-28 09:18:08 [INFO]: Querying user from database
+2025-09-28 09:18:09 [INFO]: User found
+2025-09-28 09:18:09 [INFO]: Authorization check
+2025-09-28 09:18:09 [INFO]: Authorization successful
+2025-09-28 09:18:11 [ERROR]: MySQL query error:
+2025-09-28 09:18:11 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:18:11 [ERROR]: MySQL query error:
+2025-09-28 09:18:11 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:18:11 [INFO]: ::1 - - [28/Sep/2025:03:48:11 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:19:14 [INFO]: ::1 - - [28/Sep/2025:03:49:14 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:19:22 [INFO]: User logged in: kashmila@gmail.com
+2025-09-28 09:19:22 [INFO]: ::1 - - [28/Sep/2025:03:49:22 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:19:22 [INFO]: Token decoded successfully
+2025-09-28 09:19:22 [INFO]: Querying user from database
+2025-09-28 09:19:22 [INFO]: User found
+2025-09-28 09:19:22 [INFO]: Authorization check
+2025-09-28 09:19:22 [INFO]: Authorization successful
+2025-09-28 09:19:23 [INFO]: ::1 - - [28/Sep/2025:03:49:23 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:19:49 [INFO]: User logged in: kashmila@gmail.com
+2025-09-28 09:19:49 [INFO]: ::1 - - [28/Sep/2025:03:49:49 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:19:49 [INFO]: Token decoded successfully
+2025-09-28 09:19:49 [INFO]: Querying user from database
+2025-09-28 09:19:49 [INFO]: User found
+2025-09-28 09:19:49 [INFO]: Authorization check
+2025-09-28 09:19:49 [INFO]: Authorization successful
+2025-09-28 09:19:50 [INFO]: ::1 - - [28/Sep/2025:03:49:50 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:21:07 [INFO]: SIGINT received, shutting down gracefully
+2025-09-28 09:21:07 [INFO]: Process terminated
+2025-09-28 09:25:53 [ERROR]: MySQL query error:
+2025-09-28 09:38:09 [INFO]: Socket.IO server initialized
+2025-09-28 09:38:11 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 09:38:11 [INFO]: ✅ MySQL connected successfully
+2025-09-28 09:38:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 09:38:11 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 09:38:11 [INFO]: 📧 Notification service skipped for now
+2025-09-28 09:38:11 [INFO]: 🚀 Server running on port 5000
+2025-09-28 09:38:11 [INFO]: 📊 Environment: development
+2025-09-28 09:38:11 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 09:38:11 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 09:38:43 [INFO]: User logged in: kashmila@gmail.com
+2025-09-28 09:38:43 [INFO]: ::1 - - [28/Sep/2025:04:08:43 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:38:43 [INFO]: Token decoded successfully
+2025-09-28 09:38:43 [INFO]: Querying user from database
+2025-09-28 09:38:44 [INFO]: User found
+2025-09-28 09:38:44 [INFO]: Authorization check
+2025-09-28 09:38:44 [INFO]: Authorization successful
+2025-09-28 09:38:45 [INFO]: ::1 - - [28/Sep/2025:04:08:45 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:38:46 [INFO]: Token decoded successfully
+2025-09-28 09:38:46 [INFO]: Querying user from database
+2025-09-28 09:38:46 [INFO]: User found
+2025-09-28 09:38:46 [INFO]: Authorization check
+2025-09-28 09:38:46 [INFO]: Authorization successful
+2025-09-28 09:38:46 [INFO]: ::1 - - [28/Sep/2025:04:08:46 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:38:49 [INFO]: Token decoded successfully
+2025-09-28 09:38:49 [INFO]: Querying user from database
+2025-09-28 09:38:49 [INFO]: User found
+2025-09-28 09:38:49 [INFO]: Authorization check
+2025-09-28 09:38:49 [INFO]: Authorization successful
+2025-09-28 09:38:49 [INFO]: ::1 - - [28/Sep/2025:04:08:49 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:38:56 [INFO]: Token decoded successfully
+2025-09-28 09:38:56 [INFO]: Querying user from database
+2025-09-28 09:38:56 [INFO]: User found
+2025-09-28 09:38:56 [INFO]: Authorization check
+2025-09-28 09:38:56 [INFO]: Authorization successful
+2025-09-28 09:38:56 [INFO]: ::1 - - [28/Sep/2025:04:08:56 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:39:16 [INFO]: Token decoded successfully
+2025-09-28 09:39:16 [INFO]: Querying user from database
+2025-09-28 09:39:16 [INFO]: User found
+2025-09-28 09:39:16 [INFO]: Authorization check
+2025-09-28 09:39:16 [INFO]: Authorization successful
+2025-09-28 09:39:16 [INFO]: ::1 - - [28/Sep/2025:04:09:16 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:39:46 [INFO]: Token decoded successfully
+2025-09-28 09:39:46 [INFO]: Querying user from database
+2025-09-28 09:39:50 [INFO]: User found
+2025-09-28 09:39:50 [INFO]: Authorization check
+2025-09-28 09:39:50 [INFO]: Authorization successful
+2025-09-28 09:39:50 [INFO]: ::1 - - [28/Sep/2025:04:09:50 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:40:16 [INFO]: Token decoded successfully
+2025-09-28 09:40:16 [INFO]: Querying user from database
+2025-09-28 09:40:19 [INFO]: User found
+2025-09-28 09:40:19 [INFO]: Authorization check
+2025-09-28 09:40:19 [INFO]: Authorization successful
+2025-09-28 09:40:19 [INFO]: ::1 - - [28/Sep/2025:04:10:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:40:46 [INFO]: Token decoded successfully
+2025-09-28 09:40:46 [INFO]: Querying user from database
+2025-09-28 09:40:49 [INFO]: User found
+2025-09-28 09:40:49 [INFO]: Authorization check
+2025-09-28 09:40:49 [INFO]: Authorization successful
+2025-09-28 09:40:49 [INFO]: ::1 - - [28/Sep/2025:04:10:49 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:41:16 [INFO]: Token decoded successfully
+2025-09-28 09:41:16 [INFO]: Querying user from database
+2025-09-28 09:41:16 [INFO]: User found
+2025-09-28 09:41:16 [INFO]: Authorization check
+2025-09-28 09:41:16 [INFO]: Authorization successful
+2025-09-28 09:41:16 [INFO]: ::1 - - [28/Sep/2025:04:11:16 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:41:46 [INFO]: Token decoded successfully
+2025-09-28 09:41:46 [INFO]: Querying user from database
+2025-09-28 09:41:47 [INFO]: User found
+2025-09-28 09:41:47 [INFO]: Authorization check
+2025-09-28 09:41:47 [INFO]: Authorization successful
+2025-09-28 09:41:47 [INFO]: ::1 - - [28/Sep/2025:04:11:47 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:43:02 [INFO]: Socket.IO server initialized
+2025-09-28 09:43:04 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 09:43:04 [INFO]: ✅ MySQL connected successfully
+2025-09-28 09:43:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 09:43:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 09:43:04 [INFO]: 📧 Notification service skipped for now
+2025-09-28 09:43:04 [INFO]: 🚀 Server running on port 5000
+2025-09-28 09:43:04 [INFO]: 📊 Environment: development
+2025-09-28 09:43:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 09:43:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 09:43:12 [INFO]: Token decoded successfully
+2025-09-28 09:43:12 [INFO]: Querying user from database
+2025-09-28 09:43:13 [INFO]: User found
+2025-09-28 09:43:13 [INFO]: Authorization check
+2025-09-28 09:43:13 [INFO]: Authorization successful
+2025-09-28 09:43:14 [ERROR]: MySQL query error:
+2025-09-28 09:43:14 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:14 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:14 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:15 [ERROR]: MySQL query error:
+2025-09-28 09:43:15 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:15 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:15 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:17 [ERROR]: MySQL query error:
+2025-09-28 09:43:17 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:17 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:17 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:19 [ERROR]: MySQL query error:
+2025-09-28 09:43:19 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:19 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:19 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [ERROR]: MySQL query error:
+2025-09-28 09:43:20 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [ERROR]: MySQL query error:
+2025-09-28 09:43:20 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [ERROR]: Error: Unknown column 'd.specialty' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getQueueStatus (E:\Project 2\backend\models\Queue.js:21:44)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:218:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:43:20 [INFO]: ::1 - - [28/Sep/2025:04:13:20 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:43:28 [INFO]: SIGINT received, shutting down gracefully
+2025-09-28 09:43:28 [INFO]: Process terminated
+2025-09-28 09:43:59 [INFO]: Socket.IO server initialized
+2025-09-28 09:44:01 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 09:44:01 [INFO]: ✅ MySQL connected successfully
+2025-09-28 09:44:01 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 09:44:01 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 09:44:01 [INFO]: 📧 Notification service skipped for now
+2025-09-28 09:44:01 [INFO]: 🚀 Server running on port 5000
+2025-09-28 09:44:01 [INFO]: 📊 Environment: development
+2025-09-28 09:44:01 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 09:44:01 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 09:44:12 [INFO]: Token decoded successfully
+2025-09-28 09:44:12 [INFO]: Querying user from database
+2025-09-28 09:44:13 [INFO]: User found
+2025-09-28 09:44:13 [INFO]: Authorization check
+2025-09-28 09:44:13 [INFO]: Authorization successful
+2025-09-28 09:44:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:18 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:18 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:44:18 [INFO]: ::1 - - [28/Sep/2025:04:14:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:45:12 [INFO]: Token decoded successfully
+2025-09-28 09:45:12 [INFO]: Querying user from database
+2025-09-28 09:45:13 [INFO]: User found
+2025-09-28 09:45:13 [INFO]: Authorization check
+2025-09-28 09:45:13 [INFO]: Authorization successful
+2025-09-28 09:45:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:235:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:303:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:45:16 [INFO]: ::1 - - [28/Sep/2025:04:15:16 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:45:20 [INFO]: SIGINT received, shutting down gracefully
+2025-09-28 09:45:20 [INFO]: Process terminated
+2025-09-28 09:45:41 [INFO]: Socket.IO server initialized
+2025-09-28 09:45:44 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 09:45:44 [INFO]: ✅ MySQL connected successfully
+2025-09-28 09:45:44 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 09:45:44 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 09:45:44 [INFO]: 📧 Notification service skipped for now
+2025-09-28 09:45:44 [INFO]: 🚀 Server running on port 5000
+2025-09-28 09:45:44 [INFO]: 📊 Environment: development
+2025-09-28 09:45:44 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 09:45:44 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 09:46:12 [INFO]: Token decoded successfully
+2025-09-28 09:46:12 [INFO]: Querying user from database
+2025-09-28 09:46:13 [INFO]: User found
+2025-09-28 09:46:13 [INFO]: Authorization check
+2025-09-28 09:46:13 [INFO]: Authorization successful
+2025-09-28 09:46:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:46:17 [INFO]: ::1 - - [28/Sep/2025:04:16:17 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:46:53 [INFO]: Socket.IO server initialized
+2025-09-28 09:46:54 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 09:46:54 [INFO]: ✅ MySQL connected successfully
+2025-09-28 09:46:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 09:46:54 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 09:46:54 [INFO]: 📧 Notification service skipped for now
+2025-09-28 09:46:54 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 09:46:54 [INFO]: 🚀 Server running on port 5000
+2025-09-28 09:46:54 [INFO]: 📊 Environment: development
+2025-09-28 09:46:54 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 09:46:54 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 09:47:12 [INFO]: Token decoded successfully
+2025-09-28 09:47:12 [INFO]: Querying user from database
+2025-09-28 09:47:13 [INFO]: User found
+2025-09-28 09:47:13 [INFO]: Authorization check
+2025-09-28 09:47:13 [INFO]: Authorization successful
+2025-09-28 09:47:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:47:16 [INFO]: ::1 - - [28/Sep/2025:04:17:16 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:48:12 [INFO]: Token decoded successfully
+2025-09-28 09:48:12 [INFO]: Querying user from database
+2025-09-28 09:48:12 [INFO]: User found
+2025-09-28 09:48:12 [INFO]: Authorization check
+2025-09-28 09:48:12 [INFO]: Authorization successful
+2025-09-28 09:48:13 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:13 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:48:16 [INFO]: ::1 - - [28/Sep/2025:04:18:16 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:49:12 [INFO]: Token decoded successfully
+2025-09-28 09:49:12 [INFO]: Querying user from database
+2025-09-28 09:49:12 [INFO]: User found
+2025-09-28 09:49:12 [INFO]: Authorization check
+2025-09-28 09:49:12 [INFO]: Authorization successful
+2025-09-28 09:49:13 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:13 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:49:16 [INFO]: ::1 - - [28/Sep/2025:04:19:16 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:50:12 [INFO]: Token decoded successfully
+2025-09-28 09:50:12 [INFO]: Querying user from database
+2025-09-28 09:50:12 [INFO]: User found
+2025-09-28 09:50:12 [INFO]: Authorization check
+2025-09-28 09:50:12 [INFO]: Authorization successful
+2025-09-28 09:50:18 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:18 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:23 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:23 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:24 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:24 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:26 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:26 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:26 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:26 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:27 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:27 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:50:27 [INFO]: ::1 - - [28/Sep/2025:04:20:27 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:51:12 [INFO]: Token decoded successfully
+2025-09-28 09:51:12 [INFO]: Querying user from database
+2025-09-28 09:51:13 [INFO]: User found
+2025-09-28 09:51:13 [INFO]: Authorization check
+2025-09-28 09:51:13 [INFO]: Authorization successful
+2025-09-28 09:51:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:14 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:51:17 [INFO]: ::1 - - [28/Sep/2025:04:21:17 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:52:12 [INFO]: Token decoded successfully
+2025-09-28 09:52:12 [INFO]: Querying user from database
+2025-09-28 09:52:12 [INFO]: User found
+2025-09-28 09:52:12 [INFO]: Authorization check
+2025-09-28 09:52:12 [INFO]: Authorization successful
+2025-09-28 09:52:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:15 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:16 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:17 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:18 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:18 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:52:18 [INFO]: ::1 - - [28/Sep/2025:04:22:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:52:19 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-28 09:52:19 [INFO]: ::1 - - [28/Sep/2025:04:22:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 401 48 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584"
+2025-09-28 09:53:12 [INFO]: Token decoded successfully
+2025-09-28 09:53:12 [INFO]: Querying user from database
+2025-09-28 09:53:13 [INFO]: User found
+2025-09-28 09:53:13 [INFO]: Authorization check
+2025-09-28 09:53:13 [INFO]: Authorization successful
+2025-09-28 09:53:20 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:20 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:22 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:22 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:23 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:23 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:24 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:24 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:25 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:25 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:27 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:27 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:27 [INFO]: ::1 - - [28/Sep/2025:04:23:27 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:53:27 [INFO]: Token decoded successfully
+2025-09-28 09:53:27 [INFO]: Querying user from database
+2025-09-28 09:53:28 [INFO]: User found
+2025-09-28 09:53:28 [INFO]: Authorization check
+2025-09-28 09:53:28 [INFO]: Authorization successful
+2025-09-28 09:53:32 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:32 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:33 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:33 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:33 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:33 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:34 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:34 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:35 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:35 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:37 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:37 [ERROR]: TypeError: Cannot read properties of null (reading 'current_emergency_number')
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:255:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Queue.getAllPatientQueuePositions (E:\Project 2\backend\models\Queue.js:307:28)
+    at async Appointment.getAllPatientQueuePositions (E:\Project 2\backend\models\Appointment.js:121:12)
+    at async getQueuePosition (E:\Project 2\backend\controllers\patientController.js:543:27)
+2025-09-28 09:53:37 [INFO]: ::1 - - [28/Sep/2025:04:23:37 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 65 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:53:46 [INFO]: Socket.IO server initialized
+2025-09-28 09:53:56 [ERROR]: ❌ MySQL connection failed:
+2025-09-28 09:53:56 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-09-28 09:53:56 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 09:53:56 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 09:53:56 [INFO]: 📧 Notification service skipped for now
+2025-09-28 09:53:56 [INFO]: 🚀 Server running on port 5000
+2025-09-28 09:53:56 [INFO]: 📊 Environment: development
+2025-09-28 09:53:56 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 09:53:56 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 09:54:05 [INFO]: Token decoded successfully
+2025-09-28 09:54:05 [INFO]: Querying user from database
+2025-09-28 09:54:05 [INFO]: Token decoded successfully
+2025-09-28 09:54:05 [INFO]: Querying user from database
+2025-09-28 09:54:08 [INFO]: User found
+2025-09-28 09:54:08 [INFO]: User found
+2025-09-28 09:54:08 [INFO]: Authorization check
+2025-09-28 09:54:08 [INFO]: Authorization successful
+2025-09-28 09:54:09 [INFO]: ::1 - - [28/Sep/2025:04:24:09 +0000] "GET /api/auth/profile HTTP/1.1" 200 412 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:54:10 [INFO]: ::1 - - [28/Sep/2025:04:24:10 +0000] "GET /api/patient/queue/position HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:54:10 [INFO]: Token decoded successfully
+2025-09-28 09:54:10 [INFO]: Querying user from database
+2025-09-28 09:54:10 [INFO]: User found
+2025-09-28 09:54:10 [INFO]: Authorization check
+2025-09-28 09:54:10 [INFO]: Authorization successful
+2025-09-28 09:54:11 [INFO]: ::1 - - [28/Sep/2025:04:24:11 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:54:13 [INFO]: Token decoded successfully
+2025-09-28 09:54:13 [INFO]: Querying user from database
+2025-09-28 09:54:13 [INFO]: User found
+2025-09-28 09:54:13 [INFO]: Authorization check
+2025-09-28 09:54:13 [INFO]: Authorization successful
+2025-09-28 09:54:14 [INFO]: ::1 - - [28/Sep/2025:04:24:14 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:54:39 [INFO]: Token decoded successfully
+2025-09-28 09:54:39 [INFO]: Querying user from database
+2025-09-28 09:54:39 [INFO]: User found
+2025-09-28 09:54:39 [INFO]: Authorization check
+2025-09-28 09:54:39 [INFO]: Authorization successful
+2025-09-28 09:54:40 [INFO]: ::1 - - [28/Sep/2025:04:24:40 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:55:09 [INFO]: Token decoded successfully
+2025-09-28 09:55:09 [INFO]: Querying user from database
+2025-09-28 09:55:09 [INFO]: User found
+2025-09-28 09:55:09 [INFO]: Authorization check
+2025-09-28 09:55:09 [INFO]: Authorization successful
+2025-09-28 09:55:10 [INFO]: ::1 - - [28/Sep/2025:04:25:10 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:55:39 [INFO]: Token decoded successfully
+2025-09-28 09:55:39 [INFO]: Querying user from database
+2025-09-28 09:55:40 [INFO]: User found
+2025-09-28 09:55:40 [INFO]: Authorization check
+2025-09-28 09:55:40 [INFO]: Authorization successful
+2025-09-28 09:55:40 [INFO]: ::1 - - [28/Sep/2025:04:25:40 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:56:09 [INFO]: Token decoded successfully
+2025-09-28 09:56:09 [INFO]: Querying user from database
+2025-09-28 09:56:09 [INFO]: User found
+2025-09-28 09:56:09 [INFO]: Authorization check
+2025-09-28 09:56:09 [INFO]: Authorization successful
+2025-09-28 09:56:10 [INFO]: ::1 - - [28/Sep/2025:04:26:10 +0000] "GET /api/patient/queue/position HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:56:18 [INFO]: Token decoded successfully
+2025-09-28 09:56:18 [INFO]: Querying user from database
+2025-09-28 09:56:18 [INFO]: User found
+2025-09-28 09:56:18 [INFO]: Authorization check
+2025-09-28 09:56:18 [INFO]: Authorization successful
+2025-09-28 09:56:19 [INFO]: ::1 - - [28/Sep/2025:04:26:19 +0000] "GET /api/patients/appointments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:57:05 [INFO]: User logged in: doctor@gmail.com
+2025-09-28 09:57:05 [INFO]: ::1 - - [28/Sep/2025:04:27:05 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:05 [INFO]: User logged in: doctor@gmail.com
+2025-09-28 09:57:05 [INFO]: ::1 - - [28/Sep/2025:04:27:05 +0000] "POST /api/auth/login HTTP/1.1" 200 845 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:05 [INFO]: Token decoded successfully
+2025-09-28 09:57:05 [INFO]: Querying user from database
+2025-09-28 09:57:06 [INFO]: User found
+2025-09-28 09:57:06 [INFO]: Authorization check
+2025-09-28 09:57:06 [INFO]: Authorization successful
+2025-09-28 09:57:07 [ERROR]: MySQL query error:
+2025-09-28 09:57:07 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:57:11 [ERROR]: MySQL query error:
+2025-09-28 09:57:11 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:57:11 [INFO]: ::1 - - [28/Sep/2025:04:27:11 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:11 [INFO]: Token decoded successfully
+2025-09-28 09:57:11 [INFO]: Querying user from database
+2025-09-28 09:57:11 [INFO]: User found
+2025-09-28 09:57:11 [INFO]: Authorization check
+2025-09-28 09:57:11 [INFO]: Authorization successful
+2025-09-28 09:57:13 [ERROR]: MySQL query error:
+2025-09-28 09:57:13 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:57:13 [ERROR]: MySQL query error:
+2025-09-28 09:57:13 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 09:57:13 [INFO]: ::1 - - [28/Sep/2025:04:27:13 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:37 [INFO]: Token decoded successfully
+2025-09-28 09:57:37 [INFO]: Querying user from database
+2025-09-28 09:57:38 [INFO]: User found
+2025-09-28 09:57:38 [INFO]: Authorization check
+2025-09-28 09:57:38 [INFO]: Authorization successful
+2025-09-28 09:57:39 [INFO]: ::1 - - [28/Sep/2025:04:27:39 +0000] "GET /api/doctors/appointments?startDate=2025-09-28&endDate=2025-09-28&limit=100 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:47 [INFO]: Token decoded successfully
+2025-09-28 09:57:47 [INFO]: Querying user from database
+2025-09-28 09:57:47 [INFO]: Token decoded successfully
+2025-09-28 09:57:47 [INFO]: Querying user from database
+2025-09-28 09:57:47 [INFO]: Token decoded successfully
+2025-09-28 09:57:47 [INFO]: Querying user from database
+2025-09-28 09:57:47 [INFO]: User found
+2025-09-28 09:57:47 [INFO]: Authorization check
+2025-09-28 09:57:47 [INFO]: Authorization successful
+2025-09-28 09:57:47 [INFO]: User found
+2025-09-28 09:57:47 [INFO]: Authorization check
+2025-09-28 09:57:47 [INFO]: Authorization successful
+2025-09-28 09:57:47 [INFO]: User found
+2025-09-28 09:57:47 [INFO]: Authorization check
+2025-09-28 09:57:47 [INFO]: Authorization successful
+2025-09-28 09:57:49 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 09:57:49 [INFO]: ::1 - - [28/Sep/2025:04:27:49 +0000] "GET /api/doctor/availability HTTP/1.1" 200 746 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:49 [INFO]: ::1 - - [28/Sep/2025:04:27:49 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:49 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 queue status fetched
+2025-09-28 09:57:49 [INFO]: ::1 - - [28/Sep/2025:04:27:49 +0000] "GET /api/doctor/queue/status HTTP/1.1" 200 324 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:57:57 [INFO]: Token decoded successfully
+2025-09-28 09:57:57 [INFO]: Querying user from database
+2025-09-28 09:57:58 [INFO]: User found
+2025-09-28 09:57:58 [INFO]: Authorization check
+2025-09-28 09:57:58 [INFO]: Authorization successful
+2025-09-28 09:57:59 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 queue status toggled to: active
+2025-09-28 09:57:59 [INFO]: ::1 - - [28/Sep/2025:04:27:59 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 103 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:58:10 [INFO]: Token decoded successfully
+2025-09-28 09:58:10 [INFO]: Querying user from database
+2025-09-28 09:58:11 [INFO]: User found
+2025-09-28 09:58:11 [INFO]: Authorization check
+2025-09-28 09:58:11 [INFO]: Authorization successful
+2025-09-28 09:58:12 [INFO]: Payment status updated for appointment 0d517aba-aaaa-44dc-b726-ee61776f87f2 to paid by doctor 78912290-eb79-46f5-9502-eae48d6be227
+2025-09-28 09:58:12 [INFO]: ::1 - - [28/Sep/2025:04:28:12 +0000] "PUT /api/doctors/appointments/0d517aba-aaaa-44dc-b726-ee61776f87f2/payment-status HTTP/1.1" 200 190 "http://localhost:5173/doctor/queue" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:58:12 [INFO]: Token decoded successfully
+2025-09-28 09:58:12 [INFO]: Querying user from database
+2025-09-28 09:58:12 [INFO]: Token decoded successfully
+2025-09-28 09:58:12 [INFO]: Querying user from database
+2025-09-28 09:58:12 [INFO]: User found
+2025-09-28 09:58:12 [INFO]: Authorization check
+2025-09-28 09:58:12 [INFO]: Authorization successful
+2025-09-28 09:58:12 [INFO]: User found
+2025-09-28 09:58:12 [INFO]: Authorization check
+2025-09-28 09:58:12 [INFO]: Authorization successful
+2025-09-28 09:58:13 [INFO]: ::1 - - [28/Sep/2025:04:28:13 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:58:13 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 queue status fetched
+2025-09-28 09:58:13 [INFO]: ::1 - - [28/Sep/2025:04:28:13 +0000] "GET /api/doctor/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:58:17 [INFO]: Token decoded successfully
+2025-09-28 09:58:17 [INFO]: Querying user from database
+2025-09-28 09:58:17 [INFO]: User found
+2025-09-28 09:58:17 [INFO]: Authorization check
+2025-09-28 09:58:17 [INFO]: Authorization successful
+2025-09-28 09:58:17 [INFO]: ::1 - - [28/Sep/2025:04:28:17 +0000] "PUT /api/doctor/appointments/90ebc093-15c0-43ff-aee8-79d7849cbc91/call-next HTTP/1.1" 404 133 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 09:58:24 [INFO]: Token decoded successfully
+2025-09-28 09:58:24 [INFO]: Querying user from database
+2025-09-28 09:58:25 [INFO]: User found
+2025-09-28 09:58:25 [INFO]: Authorization check
+2025-09-28 09:58:25 [INFO]: Authorization successful
+2025-09-28 09:58:26 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 queue status toggled to: active
+2025-09-28 09:58:26 [INFO]: ::1 - - [28/Sep/2025:04:28:26 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 103 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
