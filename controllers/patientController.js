@@ -506,6 +506,15 @@ class PatientController {
   static async getQueuePosition(req, res, next) {
     try {
       const { doctorId, date } = req.query;
+      
+      // Validate required parameters
+      if (!doctorId) {
+        return res.status(400).json({
+          success: false,
+          message: 'doctorId is required as query parameter'
+        });
+      }
+      
       const patient = await Patient.findByUserId(req.user.id);
       
       if (!patient) {
@@ -515,10 +524,13 @@ class PatientController {
         });
       }
 
+      // Use current date if not provided
+      const queueDate = date || new Date().toISOString().split('T')[0];
+
       const position = await Appointment.getPatientQueuePosition(
         patient.id, 
         doctorId, 
-        date
+        queueDate
       );
 
       if (!position) {

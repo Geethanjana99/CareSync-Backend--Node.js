@@ -13584,3 +13584,505 @@
 2025-09-28 00:42:30 [INFO]: ::1 - - [27/Sep/2025:19:12:30 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 2025-09-28 00:42:30 [INFO]: ::1 - - [27/Sep/2025:19:12:30 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 2025-09-28 00:42:32 [INFO]: ::1 - - [27/Sep/2025:19:12:32 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:43:02 [INFO]: ::1 - - [27/Sep/2025:19:13:02 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:43:32 [INFO]: ::1 - - [27/Sep/2025:19:13:32 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:44:02 [INFO]: ::1 - - [27/Sep/2025:19:14:02 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:44:32 [INFO]: ::1 - - [27/Sep/2025:19:14:32 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:45:02 [INFO]: ::1 - - [27/Sep/2025:19:15:02 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:45:32 [INFO]: ::1 - - [27/Sep/2025:19:15:32 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:46:18 [INFO]: ::1 - - [27/Sep/2025:19:16:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 404 89 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:46:45 [INFO]: SIGINT received, shutting down gracefully
+2025-09-28 00:46:45 [INFO]: Process terminated
+2025-09-28 00:47:22 [INFO]: Socket.IO server initialized
+2025-09-28 00:47:24 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 00:47:24 [INFO]: ✅ MySQL connected successfully
+2025-09-28 00:47:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 00:47:24 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 00:47:24 [INFO]: 📧 Notification service skipped for now
+2025-09-28 00:47:24 [INFO]: 🚀 Server running on port 5000
+2025-09-28 00:47:24 [INFO]: 📊 Environment: development
+2025-09-28 00:47:24 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 00:47:24 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 00:48:18 [INFO]: Token decoded successfully
+2025-09-28 00:48:18 [INFO]: Querying user from database
+2025-09-28 00:48:19 [INFO]: User found
+2025-09-28 00:48:19 [INFO]: Authorization check
+2025-09-28 00:48:19 [INFO]: Authorization successful
+2025-09-28 00:48:19 [ERROR]: MySQL query error:
+2025-09-28 00:48:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:48:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:48:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:48:19 [INFO]: ::1 - - [27/Sep/2025:19:18:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:49:18 [INFO]: Token decoded successfully
+2025-09-28 00:49:18 [INFO]: Querying user from database
+2025-09-28 00:49:18 [INFO]: User found
+2025-09-28 00:49:18 [INFO]: Authorization check
+2025-09-28 00:49:18 [INFO]: Authorization successful
+2025-09-28 00:49:19 [ERROR]: MySQL query error:
+2025-09-28 00:49:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:49:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:49:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:49:19 [INFO]: ::1 - - [27/Sep/2025:19:19:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:50:18 [INFO]: Token decoded successfully
+2025-09-28 00:50:18 [INFO]: Querying user from database
+2025-09-28 00:50:19 [INFO]: User found
+2025-09-28 00:50:19 [INFO]: Authorization check
+2025-09-28 00:50:19 [INFO]: Authorization successful
+2025-09-28 00:50:19 [ERROR]: MySQL query error:
+2025-09-28 00:50:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:50:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:50:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:50:19 [INFO]: ::1 - - [27/Sep/2025:19:20:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:51:18 [INFO]: Token decoded successfully
+2025-09-28 00:51:18 [INFO]: Querying user from database
+2025-09-28 00:51:19 [INFO]: User found
+2025-09-28 00:51:19 [INFO]: Authorization check
+2025-09-28 00:51:19 [INFO]: Authorization successful
+2025-09-28 00:51:19 [ERROR]: MySQL query error:
+2025-09-28 00:51:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:51:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:51:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:51:19 [INFO]: ::1 - - [27/Sep/2025:19:21:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:52:18 [INFO]: Token decoded successfully
+2025-09-28 00:52:18 [INFO]: Querying user from database
+2025-09-28 00:52:18 [INFO]: User found
+2025-09-28 00:52:18 [INFO]: Authorization check
+2025-09-28 00:52:18 [INFO]: Authorization successful
+2025-09-28 00:52:19 [ERROR]: MySQL query error:
+2025-09-28 00:52:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:19 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:19 [INFO]: ::1 - - [27/Sep/2025:19:22:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:52:38 [INFO]: Token decoded successfully
+2025-09-28 00:52:38 [INFO]: Querying user from database
+2025-09-28 00:52:38 [INFO]: User found
+2025-09-28 00:52:38 [INFO]: Authorization check
+2025-09-28 00:52:38 [INFO]: Authorization successful
+2025-09-28 00:52:38 [ERROR]: MySQL query error:
+2025-09-28 00:52:38 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:38 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:38 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:38 [INFO]: ::1 - - [27/Sep/2025:19:22:38 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:52:51 [INFO]: Token decoded successfully
+2025-09-28 00:52:51 [INFO]: Querying user from database
+2025-09-28 00:52:51 [INFO]: User found
+2025-09-28 00:52:51 [INFO]: Authorization check
+2025-09-28 00:52:51 [INFO]: Authorization successful
+2025-09-28 00:52:51 [ERROR]: MySQL query error:
+2025-09-28 00:52:51 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:51 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:51 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:52:51 [INFO]: ::1 - - [27/Sep/2025:19:22:51 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:53:02 [INFO]: Token decoded successfully
+2025-09-28 00:53:02 [INFO]: Querying user from database
+2025-09-28 00:53:02 [INFO]: User found
+2025-09-28 00:53:02 [INFO]: Authorization check
+2025-09-28 00:53:02 [INFO]: Authorization successful
+2025-09-28 00:53:03 [ERROR]: MySQL query error:
+2025-09-28 00:53:03 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:53:03 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:53:03 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:53:03 [INFO]: ::1 - - [27/Sep/2025:19:23:03 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:53:32 [INFO]: Token decoded successfully
+2025-09-28 00:53:32 [INFO]: Querying user from database
+2025-09-28 00:53:32 [INFO]: User found
+2025-09-28 00:53:32 [INFO]: Authorization check
+2025-09-28 00:53:32 [INFO]: Authorization successful
+2025-09-28 00:53:33 [ERROR]: MySQL query error:
+2025-09-28 00:53:33 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:53:33 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:53:33 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.getPatientQueuePosition (E:\Project 2\backend\models\Queue.js:206:51)
+    at Appointment.getPatientQueuePosition (E:\Project 2\backend\models\Appointment.js:116:24)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:518:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 00:53:33 [INFO]: ::1 - - [27/Sep/2025:19:23:33 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 747 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:53:50 [INFO]: SIGINT received, shutting down gracefully
+2025-09-28 00:53:50 [INFO]: Process terminated
+2025-09-28 00:53:55 [INFO]: Socket.IO server initialized
+2025-09-28 00:53:57 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 00:53:57 [INFO]: ✅ MySQL connected successfully
+2025-09-28 00:53:57 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 00:53:57 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 00:53:57 [INFO]: 📧 Notification service skipped for now
+2025-09-28 00:53:57 [INFO]: 🚀 Server running on port 5000
+2025-09-28 00:53:57 [INFO]: 📊 Environment: development
+2025-09-28 00:53:57 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 00:53:57 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 00:54:18 [INFO]: Token decoded successfully
+2025-09-28 00:54:18 [INFO]: Querying user from database
+2025-09-28 00:54:19 [INFO]: User found
+2025-09-28 00:54:19 [INFO]: Authorization check
+2025-09-28 00:54:19 [INFO]: Authorization successful
+2025-09-28 00:54:19 [INFO]: ::1 - - [27/Sep/2025:19:24:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:55:18 [INFO]: Token decoded successfully
+2025-09-28 00:55:18 [INFO]: Querying user from database
+2025-09-28 00:55:18 [INFO]: User found
+2025-09-28 00:55:18 [INFO]: Authorization check
+2025-09-28 00:55:18 [INFO]: Authorization successful
+2025-09-28 00:55:18 [INFO]: ::1 - - [27/Sep/2025:19:25:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:56:18 [INFO]: Token decoded successfully
+2025-09-28 00:56:18 [INFO]: Querying user from database
+2025-09-28 00:56:18 [INFO]: User found
+2025-09-28 00:56:18 [INFO]: Authorization check
+2025-09-28 00:56:18 [INFO]: Authorization successful
+2025-09-28 00:56:18 [INFO]: ::1 - - [27/Sep/2025:19:26:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:57:18 [INFO]: Token decoded successfully
+2025-09-28 00:57:18 [INFO]: Querying user from database
+2025-09-28 00:57:18 [INFO]: User found
+2025-09-28 00:57:18 [INFO]: Authorization check
+2025-09-28 00:57:18 [INFO]: Authorization successful
+2025-09-28 00:57:18 [INFO]: ::1 - - [27/Sep/2025:19:27:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:58:18 [INFO]: Token decoded successfully
+2025-09-28 00:58:18 [INFO]: Querying user from database
+2025-09-28 00:58:18 [INFO]: User found
+2025-09-28 00:58:18 [INFO]: Authorization check
+2025-09-28 00:58:18 [INFO]: Authorization successful
+2025-09-28 00:58:18 [INFO]: ::1 - - [27/Sep/2025:19:28:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 00:59:18 [INFO]: Token decoded successfully
+2025-09-28 00:59:18 [INFO]: Querying user from database
+2025-09-28 00:59:18 [INFO]: User found
+2025-09-28 00:59:18 [INFO]: Authorization check
+2025-09-28 00:59:18 [INFO]: Authorization successful
+2025-09-28 00:59:18 [INFO]: ::1 - - [27/Sep/2025:19:29:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:00:18 [INFO]: Token decoded successfully
+2025-09-28 01:00:18 [INFO]: Querying user from database
+2025-09-28 01:00:18 [INFO]: User found
+2025-09-28 01:00:18 [INFO]: Authorization check
+2025-09-28 01:00:18 [INFO]: Authorization successful
+2025-09-28 01:00:18 [INFO]: ::1 - - [27/Sep/2025:19:30:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:01:18 [INFO]: Token decoded successfully
+2025-09-28 01:01:18 [INFO]: Querying user from database
+2025-09-28 01:01:18 [INFO]: User found
+2025-09-28 01:01:18 [INFO]: Authorization check
+2025-09-28 01:01:18 [INFO]: Authorization successful
+2025-09-28 01:01:18 [INFO]: ::1 - - [27/Sep/2025:19:31:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:02:18 [INFO]: Token decoded successfully
+2025-09-28 01:02:18 [INFO]: Querying user from database
+2025-09-28 01:02:18 [INFO]: User found
+2025-09-28 01:02:18 [INFO]: Authorization check
+2025-09-28 01:02:18 [INFO]: Authorization successful
+2025-09-28 01:02:18 [INFO]: ::1 - - [27/Sep/2025:19:32:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:03:18 [INFO]: Token decoded successfully
+2025-09-28 01:03:18 [INFO]: Querying user from database
+2025-09-28 01:03:24 [INFO]: User found
+2025-09-28 01:03:24 [INFO]: Authorization check
+2025-09-28 01:03:24 [INFO]: Authorization successful
+2025-09-28 01:03:24 [INFO]: ::1 - - [27/Sep/2025:19:33:24 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:04:18 [INFO]: Token decoded successfully
+2025-09-28 01:04:18 [INFO]: Querying user from database
+2025-09-28 01:04:18 [INFO]: User found
+2025-09-28 01:04:18 [INFO]: Authorization check
+2025-09-28 01:04:18 [INFO]: Authorization successful
+2025-09-28 01:04:18 [INFO]: ::1 - - [27/Sep/2025:19:34:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:05:18 [INFO]: Token decoded successfully
+2025-09-28 01:05:18 [INFO]: Querying user from database
+2025-09-28 01:05:18 [INFO]: User found
+2025-09-28 01:05:18 [INFO]: Authorization check
+2025-09-28 01:05:18 [INFO]: Authorization successful
+2025-09-28 01:05:18 [INFO]: ::1 - - [27/Sep/2025:19:35:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:06:18 [INFO]: Token decoded successfully
+2025-09-28 01:06:18 [INFO]: Querying user from database
+2025-09-28 01:06:18 [INFO]: User found
+2025-09-28 01:06:18 [INFO]: Authorization check
+2025-09-28 01:06:18 [INFO]: Authorization successful
+2025-09-28 01:06:18 [INFO]: ::1 - - [27/Sep/2025:19:36:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:07:18 [INFO]: Token decoded successfully
+2025-09-28 01:07:18 [INFO]: Querying user from database
+2025-09-28 01:07:18 [INFO]: User found
+2025-09-28 01:07:18 [INFO]: Authorization check
+2025-09-28 01:07:18 [INFO]: Authorization successful
+2025-09-28 01:07:18 [INFO]: ::1 - - [27/Sep/2025:19:37:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:08:18 [INFO]: Token decoded successfully
+2025-09-28 01:08:18 [INFO]: Querying user from database
+2025-09-28 01:08:18 [INFO]: User found
+2025-09-28 01:08:18 [INFO]: Authorization check
+2025-09-28 01:08:18 [INFO]: Authorization successful
+2025-09-28 01:08:18 [INFO]: ::1 - - [27/Sep/2025:19:38:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:09:18 [INFO]: Token decoded successfully
+2025-09-28 01:09:18 [INFO]: Querying user from database
+2025-09-28 01:09:18 [INFO]: User found
+2025-09-28 01:09:18 [INFO]: Authorization check
+2025-09-28 01:09:18 [INFO]: Authorization successful
+2025-09-28 01:09:18 [INFO]: ::1 - - [27/Sep/2025:19:39:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:10:18 [INFO]: Token decoded successfully
+2025-09-28 01:10:18 [INFO]: Querying user from database
+2025-09-28 01:10:18 [INFO]: User found
+2025-09-28 01:10:18 [INFO]: Authorization check
+2025-09-28 01:10:18 [INFO]: Authorization successful
+2025-09-28 01:10:18 [INFO]: ::1 - - [27/Sep/2025:19:40:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:11:18 [INFO]: Token decoded successfully
+2025-09-28 01:11:18 [INFO]: Querying user from database
+2025-09-28 01:11:18 [INFO]: User found
+2025-09-28 01:11:18 [INFO]: Authorization check
+2025-09-28 01:11:18 [INFO]: Authorization successful
+2025-09-28 01:11:18 [INFO]: ::1 - - [27/Sep/2025:19:41:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:12:18 [INFO]: Token decoded successfully
+2025-09-28 01:12:18 [INFO]: Querying user from database
+2025-09-28 01:12:18 [INFO]: User found
+2025-09-28 01:12:18 [INFO]: Authorization check
+2025-09-28 01:12:18 [INFO]: Authorization successful
+2025-09-28 01:12:18 [INFO]: ::1 - - [27/Sep/2025:19:42:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:13:18 [INFO]: Token decoded successfully
+2025-09-28 01:13:18 [INFO]: Querying user from database
+2025-09-28 01:13:19 [INFO]: User found
+2025-09-28 01:13:19 [INFO]: Authorization check
+2025-09-28 01:13:19 [INFO]: Authorization successful
+2025-09-28 01:13:19 [INFO]: ::1 - - [27/Sep/2025:19:43:19 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:14:18 [INFO]: Token decoded successfully
+2025-09-28 01:14:18 [INFO]: Querying user from database
+2025-09-28 01:14:18 [INFO]: User found
+2025-09-28 01:14:18 [INFO]: Authorization check
+2025-09-28 01:14:18 [INFO]: Authorization successful
+2025-09-28 01:14:18 [INFO]: ::1 - - [27/Sep/2025:19:44:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:15:18 [INFO]: Token decoded successfully
+2025-09-28 01:15:18 [INFO]: Querying user from database
+2025-09-28 01:15:18 [INFO]: User found
+2025-09-28 01:15:18 [INFO]: Authorization check
+2025-09-28 01:15:18 [INFO]: Authorization successful
+2025-09-28 01:15:18 [INFO]: ::1 - - [27/Sep/2025:19:45:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:16:18 [INFO]: Token decoded successfully
+2025-09-28 01:16:18 [INFO]: Querying user from database
+2025-09-28 01:16:18 [INFO]: User found
+2025-09-28 01:16:18 [INFO]: Authorization check
+2025-09-28 01:16:18 [INFO]: Authorization successful
+2025-09-28 01:16:18 [INFO]: ::1 - - [27/Sep/2025:19:46:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:17:18 [INFO]: Token decoded successfully
+2025-09-28 01:17:18 [INFO]: Querying user from database
+2025-09-28 01:17:18 [INFO]: User found
+2025-09-28 01:17:18 [INFO]: Authorization check
+2025-09-28 01:17:18 [INFO]: Authorization successful
+2025-09-28 01:17:18 [INFO]: ::1 - - [27/Sep/2025:19:47:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:18:18 [INFO]: Token decoded successfully
+2025-09-28 01:18:18 [INFO]: Querying user from database
+2025-09-28 01:18:18 [INFO]: User found
+2025-09-28 01:18:18 [INFO]: Authorization check
+2025-09-28 01:18:18 [INFO]: Authorization successful
+2025-09-28 01:18:18 [INFO]: ::1 - - [27/Sep/2025:19:48:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:19:18 [INFO]: Token decoded successfully
+2025-09-28 01:19:18 [INFO]: Querying user from database
+2025-09-28 01:19:18 [INFO]: User found
+2025-09-28 01:19:18 [INFO]: Authorization check
+2025-09-28 01:19:18 [INFO]: Authorization successful
+2025-09-28 01:19:18 [INFO]: ::1 - - [27/Sep/2025:19:49:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:20:18 [INFO]: Token decoded successfully
+2025-09-28 01:20:18 [INFO]: Querying user from database
+2025-09-28 01:20:18 [INFO]: User found
+2025-09-28 01:20:18 [INFO]: Authorization check
+2025-09-28 01:20:18 [INFO]: Authorization successful
+2025-09-28 01:20:18 [INFO]: ::1 - - [27/Sep/2025:19:50:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:21:18 [INFO]: Token decoded successfully
+2025-09-28 01:21:18 [INFO]: Querying user from database
+2025-09-28 01:21:18 [INFO]: User found
+2025-09-28 01:21:18 [INFO]: Authorization check
+2025-09-28 01:21:18 [INFO]: Authorization successful
+2025-09-28 01:21:18 [INFO]: ::1 - - [27/Sep/2025:19:51:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 01:22:18 [INFO]: Token decoded successfully
+2025-09-28 01:22:18 [INFO]: Querying user from database
+2025-09-28 01:22:18 [INFO]: User found
+2025-09-28 01:22:18 [INFO]: Authorization check
+2025-09-28 01:22:18 [INFO]: Authorization successful
+2025-09-28 01:22:18 [INFO]: ::1 - - [27/Sep/2025:19:52:18 +0000] "GET /api/patient/queue/position HTTP/1.1" 400 69 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 02:36:24 [INFO]: Token decoded successfully
+2025-09-28 02:36:24 [INFO]: Querying user from database
+2025-09-28 02:36:24 [ERROR]: MySQL query error:
+2025-09-28 02:36:24 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-28 02:36:24 [INFO]: ::1 - - [27/Sep/2025:21:06:24 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 02:39:35 [INFO]: Token decoded successfully
+2025-09-28 02:39:35 [INFO]: Querying user from database
+2025-09-28 02:39:35 [ERROR]: MySQL query error:
+2025-09-28 02:39:35 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-28 02:39:35 [INFO]: ::1 - - [27/Sep/2025:21:09:35 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 09:14:56 [INFO]: Token decoded successfully
+2025-09-28 09:14:56 [INFO]: Querying user from database
+2025-09-28 09:14:56 [ERROR]: MySQL query error:
+2025-09-28 09:14:56 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-28 09:14:56 [INFO]: ::1 - - [28/Sep/2025:03:44:56 +0000] "GET /api/patient/queue/position HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

@@ -193,6 +193,11 @@ class Queue {
 
   // Get patient's position in queue
   static async getPatientQueuePosition(patientId, doctorId, date = null) {
+    // Validate required parameters
+    if (!patientId || !doctorId) {
+      throw new Error('Patient ID and Doctor ID are required');
+    }
+    
     const queueDate = date || new Date().toISOString().split('T')[0];
     
     try {

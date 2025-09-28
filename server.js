@@ -129,6 +129,7 @@ app.get('/api/doctors/search', PatientController.searchDoctors);
 // Protected routes
 // app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
 app.use('/api/patients', patientRoutes);
+app.use('/api/patient', patientRoutes); // Singular route for frontend compatibility (includes queue endpoints)
 app.use('/api/patient/health-predictions', patientHealthPredictionRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.use('/api/doctor', doctorRoutes); // Singular route for frontend compatibility
