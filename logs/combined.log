@@ -18335,3 +18335,445 @@
 2025-09-28 12:44:09 [INFO]: Authorization check
 2025-09-28 12:44:09 [INFO]: Authorization successful
 2025-09-28 12:44:10 [INFO]: ::1 - - [28/Sep/2025:07:14:10 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:27 [INFO]: Token decoded successfully
+2025-09-28 15:03:27 [INFO]: Querying user from database
+2025-09-28 15:03:27 [INFO]: Token decoded successfully
+2025-09-28 15:03:27 [INFO]: Querying user from database
+2025-09-28 15:03:27 [INFO]: Token decoded successfully
+2025-09-28 15:03:27 [INFO]: Querying user from database
+2025-09-28 15:03:27 [INFO]: Token decoded successfully
+2025-09-28 15:03:27 [INFO]: Querying user from database
+2025-09-28 15:03:28 [INFO]: Token decoded successfully
+2025-09-28 15:03:28 [INFO]: Querying user from database
+2025-09-28 15:03:28 [INFO]: Token decoded successfully
+2025-09-28 15:03:28 [INFO]: Querying user from database
+2025-09-28 15:03:28 [INFO]: Token decoded successfully
+2025-09-28 15:03:28 [INFO]: Querying user from database
+2025-09-28 15:03:28 [INFO]: Token decoded successfully
+2025-09-28 15:03:28 [INFO]: Querying user from database
+2025-09-28 15:03:29 [INFO]: User found
+2025-09-28 15:03:29 [INFO]: Authorization check
+2025-09-28 15:03:29 [INFO]: Authorization successful
+2025-09-28 15:03:29 [INFO]: User found
+2025-09-28 15:03:29 [INFO]: Authorization check
+2025-09-28 15:03:29 [INFO]: Authorization successful
+2025-09-28 15:03:29 [INFO]: User found
+2025-09-28 15:03:29 [INFO]: Authorization check
+2025-09-28 15:03:29 [INFO]: Authorization successful
+2025-09-28 15:03:29 [INFO]: User found
+2025-09-28 15:03:29 [INFO]: User found
+2025-09-28 15:03:29 [INFO]: Authorization check
+2025-09-28 15:03:29 [INFO]: Authorization successful
+2025-09-28 15:03:29 [INFO]: User found
+2025-09-28 15:03:29 [INFO]: Authorization check
+2025-09-28 15:03:29 [INFO]: Authorization successful
+2025-09-28 15:03:29 [INFO]: ::1 - - [28/Sep/2025:09:33:29 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:29 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:03:29 [INFO]: ::1 - - [28/Sep/2025:09:33:29 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:29 [INFO]: ::1 - - [28/Sep/2025:09:33:29 +0000] "GET /api/auth/profile HTTP/1.1" 200 403 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:29 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:03:29 [INFO]: ::1 - - [28/Sep/2025:09:33:29 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:29 [INFO]: Token decoded successfully
+2025-09-28 15:03:29 [INFO]: Querying user from database
+2025-09-28 15:03:30 [INFO]: ::1 - - [28/Sep/2025:09:33:30 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:30 [INFO]: Token decoded successfully
+2025-09-28 15:03:30 [INFO]: Querying user from database
+2025-09-28 15:03:30 [INFO]: Token decoded successfully
+2025-09-28 15:03:30 [INFO]: Querying user from database
+2025-09-28 15:03:30 [INFO]: User found
+2025-09-28 15:03:30 [INFO]: Authorization check
+2025-09-28 15:03:30 [INFO]: Authorization successful
+2025-09-28 15:03:30 [INFO]: User found
+2025-09-28 15:03:30 [INFO]: Authorization check
+2025-09-28 15:03:30 [INFO]: Authorization successful
+2025-09-28 15:03:30 [INFO]: User found
+2025-09-28 15:03:30 [INFO]: Authorization check
+2025-09-28 15:03:30 [INFO]: Authorization successful
+2025-09-28 15:03:30 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:03:30 [INFO]: ::1 - - [28/Sep/2025:09:33:30 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:30 [INFO]: ::1 - - [28/Sep/2025:09:33:30 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:30 [INFO]: User found
+2025-09-28 15:03:30 [INFO]: Authorization check
+2025-09-28 15:03:30 [INFO]: Authorization successful
+2025-09-28 15:03:30 [INFO]: User found
+2025-09-28 15:03:30 [INFO]: ::1 - - [28/Sep/2025:09:33:30 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:30 [INFO]: Token decoded successfully
+2025-09-28 15:03:30 [INFO]: Querying user from database
+2025-09-28 15:03:30 [INFO]: User found
+2025-09-28 15:03:30 [INFO]: Authorization check
+2025-09-28 15:03:30 [INFO]: Authorization successful
+2025-09-28 15:03:31 [INFO]: ::1 - - [28/Sep/2025:09:33:31 +0000] "GET /api/auth/profile HTTP/1.1" 200 403 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:31 [INFO]: Token decoded successfully
+2025-09-28 15:03:31 [INFO]: Querying user from database
+2025-09-28 15:03:31 [INFO]: Token decoded successfully
+2025-09-28 15:03:31 [INFO]: Querying user from database
+2025-09-28 15:03:31 [INFO]: Token decoded successfully
+2025-09-28 15:03:31 [INFO]: Querying user from database
+2025-09-28 15:03:31 [INFO]: ::1 - - [28/Sep/2025:09:33:31 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:31 [INFO]: User found
+2025-09-28 15:03:31 [INFO]: Authorization check
+2025-09-28 15:03:31 [INFO]: Authorization successful
+2025-09-28 15:03:31 [INFO]: ::1 - - [28/Sep/2025:09:33:31 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:03:31 [INFO]: User found
+2025-09-28 15:03:31 [INFO]: Authorization check
+2025-09-28 15:03:31 [INFO]: Authorization successful
+2025-09-28 15:03:31 [INFO]: User found
+2025-09-28 15:03:31 [INFO]: Authorization check
+2025-09-28 15:03:31 [INFO]: Authorization successful
+2025-09-28 15:03:31 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:03:31 [INFO]: ::1 - - [28/Sep/2025:09:33:31 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:32 [INFO]: ::1 - - [28/Sep/2025:09:33:32 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 200 964 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:32 [INFO]: ::1 - - [28/Sep/2025:09:33:32 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:32 [INFO]: ::1 - - [28/Sep/2025:09:33:32 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:03:32 [INFO]: Token decoded successfully
+2025-09-28 15:03:32 [INFO]: Querying user from database
+2025-09-28 15:03:32 [INFO]: User found
+2025-09-28 15:03:32 [INFO]: Authorization check
+2025-09-28 15:03:32 [INFO]: Authorization successful
+2025-09-28 15:03:34 [INFO]: ::1 - - [28/Sep/2025:09:33:34 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 15:05:13 [INFO]: Token decoded successfully
+2025-09-28 15:05:13 [INFO]: Querying user from database
+2025-09-28 15:05:13 [INFO]: Token decoded successfully
+2025-09-28 15:05:13 [INFO]: Querying user from database
+2025-09-28 15:05:13 [INFO]: Token decoded successfully
+2025-09-28 15:05:13 [INFO]: Querying user from database
+2025-09-28 15:05:13 [INFO]: Token decoded successfully
+2025-09-28 15:05:13 [INFO]: Querying user from database
+2025-09-28 15:05:13 [INFO]: User found
+2025-09-28 15:05:13 [INFO]: Authorization check
+2025-09-28 15:05:13 [INFO]: Authorization successful
+2025-09-28 15:05:13 [INFO]: User found
+2025-09-28 15:05:13 [INFO]: Authorization check
+2025-09-28 15:05:13 [INFO]: Authorization successful
+2025-09-28 15:05:14 [INFO]: User found
+2025-09-28 15:05:14 [INFO]: Authorization check
+2025-09-28 15:05:14 [INFO]: Authorization successful
+2025-09-28 15:05:14 [INFO]: User found
+2025-09-28 15:05:14 [INFO]: Authorization check
+2025-09-28 15:05:14 [INFO]: Authorization successful
+2025-09-28 15:05:14 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:05:14 [INFO]: ::1 - - [28/Sep/2025:09:35:14 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:15 [INFO]: ::1 - - [28/Sep/2025:09:35:15 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:16 [INFO]: ::1 - - [28/Sep/2025:09:35:16 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:16 [INFO]: ::1 - - [28/Sep/2025:09:35:16 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:40 [INFO]: Token decoded successfully
+2025-09-28 15:05:40 [INFO]: Querying user from database
+2025-09-28 15:05:40 [INFO]: Token decoded successfully
+2025-09-28 15:05:40 [INFO]: Querying user from database
+2025-09-28 15:05:40 [INFO]: Token decoded successfully
+2025-09-28 15:05:40 [INFO]: Querying user from database
+2025-09-28 15:05:40 [INFO]: Token decoded successfully
+2025-09-28 15:05:40 [INFO]: Querying user from database
+2025-09-28 15:05:40 [INFO]: Token decoded successfully
+2025-09-28 15:05:40 [INFO]: Querying user from database
+2025-09-28 15:05:40 [INFO]: User found
+2025-09-28 15:05:40 [INFO]: Authorization check
+2025-09-28 15:05:40 [INFO]: Authorization successful
+2025-09-28 15:05:40 [INFO]: User found
+2025-09-28 15:05:40 [INFO]: Authorization check
+2025-09-28 15:05:40 [INFO]: Authorization successful
+2025-09-28 15:05:40 [INFO]: User found
+2025-09-28 15:05:40 [INFO]: User found
+2025-09-28 15:05:40 [INFO]: Authorization check
+2025-09-28 15:05:40 [INFO]: Authorization successful
+2025-09-28 15:05:41 [INFO]: User found
+2025-09-28 15:05:41 [INFO]: Authorization check
+2025-09-28 15:05:41 [INFO]: Authorization successful
+2025-09-28 15:05:41 [INFO]: ::1 - - [28/Sep/2025:09:35:41 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:41 [INFO]: ::1 - - [28/Sep/2025:09:35:41 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:41 [INFO]: Token decoded successfully
+2025-09-28 15:05:41 [INFO]: Querying user from database
+2025-09-28 15:05:41 [INFO]: User found
+2025-09-28 15:05:41 [INFO]: Authorization check
+2025-09-28 15:05:41 [INFO]: Authorization successful
+2025-09-28 15:05:41 [INFO]: ::1 - - [28/Sep/2025:09:35:41 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:41 [INFO]: Token decoded successfully
+2025-09-28 15:05:41 [INFO]: Querying user from database
+2025-09-28 15:05:41 [INFO]: ::1 - - [28/Sep/2025:09:35:41 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:41 [INFO]: User found
+2025-09-28 15:05:41 [INFO]: Authorization check
+2025-09-28 15:05:41 [INFO]: Authorization successful
+2025-09-28 15:05:42 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:05:42 [INFO]: ::1 - - [28/Sep/2025:09:35:42 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:42 [INFO]: Token decoded successfully
+2025-09-28 15:05:42 [INFO]: Querying user from database
+2025-09-28 15:05:42 [INFO]: ::1 - - [28/Sep/2025:09:35:42 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:42 [INFO]: User found
+2025-09-28 15:05:42 [INFO]: Authorization check
+2025-09-28 15:05:42 [INFO]: Authorization successful
+2025-09-28 15:05:42 [INFO]: ::1 - - [28/Sep/2025:09:35:42 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:42 [INFO]: Token decoded successfully
+2025-09-28 15:05:42 [INFO]: Querying user from database
+2025-09-28 15:05:42 [INFO]: User found
+2025-09-28 15:05:42 [INFO]: Authorization check
+2025-09-28 15:05:42 [INFO]: Authorization successful
+2025-09-28 15:05:42 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:05:42 [INFO]: ::1 - - [28/Sep/2025:09:35:42 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:43 [INFO]: ::1 - - [28/Sep/2025:09:35:43 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:58 [INFO]: Token decoded successfully
+2025-09-28 15:05:58 [INFO]: Querying user from database
+2025-09-28 15:05:58 [INFO]: Token decoded successfully
+2025-09-28 15:05:58 [INFO]: Querying user from database
+2025-09-28 15:05:58 [INFO]: Token decoded successfully
+2025-09-28 15:05:58 [INFO]: Querying user from database
+2025-09-28 15:05:58 [INFO]: Token decoded successfully
+2025-09-28 15:05:58 [INFO]: Querying user from database
+2025-09-28 15:05:58 [INFO]: User found
+2025-09-28 15:05:58 [INFO]: Authorization check
+2025-09-28 15:05:58 [INFO]: Authorization successful
+2025-09-28 15:05:58 [INFO]: User found
+2025-09-28 15:05:58 [INFO]: Authorization check
+2025-09-28 15:05:58 [INFO]: Authorization successful
+2025-09-28 15:05:58 [INFO]: User found
+2025-09-28 15:05:58 [INFO]: Authorization check
+2025-09-28 15:05:58 [INFO]: Authorization successful
+2025-09-28 15:05:59 [INFO]: User found
+2025-09-28 15:05:59 [INFO]: Authorization check
+2025-09-28 15:05:59 [INFO]: Authorization successful
+2025-09-28 15:05:59 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:05:59 [INFO]: ::1 - - [28/Sep/2025:09:35:59 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:05:59 [INFO]: ::1 - - [28/Sep/2025:09:35:59 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:00 [INFO]: ::1 - - [28/Sep/2025:09:36:00 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:00 [INFO]: ::1 - - [28/Sep/2025:09:36:00 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:19 [INFO]: Token decoded successfully
+2025-09-28 15:06:19 [INFO]: Querying user from database
+2025-09-28 15:06:19 [INFO]: Token decoded successfully
+2025-09-28 15:06:19 [INFO]: Querying user from database
+2025-09-28 15:06:19 [INFO]: Token decoded successfully
+2025-09-28 15:06:19 [INFO]: Querying user from database
+2025-09-28 15:06:19 [INFO]: User found
+2025-09-28 15:06:19 [INFO]: Authorization check
+2025-09-28 15:06:19 [INFO]: Authorization successful
+2025-09-28 15:06:19 [INFO]: User found
+2025-09-28 15:06:19 [INFO]: Authorization check
+2025-09-28 15:06:19 [INFO]: Authorization successful
+2025-09-28 15:06:19 [INFO]: User found
+2025-09-28 15:06:19 [INFO]: Authorization check
+2025-09-28 15:06:19 [INFO]: Authorization successful
+2025-09-28 15:06:20 [INFO]: ::1 - - [28/Sep/2025:09:36:20 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:20 [INFO]: Token decoded successfully
+2025-09-28 15:06:20 [INFO]: Querying user from database
+2025-09-28 15:06:20 [INFO]: User found
+2025-09-28 15:06:20 [INFO]: Authorization check
+2025-09-28 15:06:20 [INFO]: Authorization successful
+2025-09-28 15:06:20 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:06:20 [INFO]: ::1 - - [28/Sep/2025:09:36:20 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:20 [INFO]: ::1 - - [28/Sep/2025:09:36:20 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:21 [INFO]: ::1 - - [28/Sep/2025:09:36:21 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:26 [INFO]: Token decoded successfully
+2025-09-28 15:06:26 [INFO]: Querying user from database
+2025-09-28 15:06:26 [INFO]: Token decoded successfully
+2025-09-28 15:06:26 [INFO]: Querying user from database
+2025-09-28 15:06:26 [INFO]: Token decoded successfully
+2025-09-28 15:06:26 [INFO]: Querying user from database
+2025-09-28 15:06:26 [INFO]: User found
+2025-09-28 15:06:26 [INFO]: Authorization check
+2025-09-28 15:06:26 [INFO]: Authorization successful
+2025-09-28 15:06:26 [INFO]: User found
+2025-09-28 15:06:26 [INFO]: Authorization check
+2025-09-28 15:06:26 [INFO]: Authorization successful
+2025-09-28 15:06:26 [INFO]: User found
+2025-09-28 15:06:26 [INFO]: Authorization check
+2025-09-28 15:06:26 [INFO]: Authorization successful
+2025-09-28 15:06:26 [INFO]: ::1 - - [28/Sep/2025:09:36:26 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:27 [INFO]: Token decoded successfully
+2025-09-28 15:06:27 [INFO]: Querying user from database
+2025-09-28 15:06:27 [INFO]: User found
+2025-09-28 15:06:27 [INFO]: Authorization check
+2025-09-28 15:06:27 [INFO]: Authorization successful
+2025-09-28 15:06:27 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:06:27 [INFO]: ::1 - - [28/Sep/2025:09:36:27 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:27 [INFO]: ::1 - - [28/Sep/2025:09:36:27 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:28 [INFO]: ::1 - - [28/Sep/2025:09:36:28 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:44 [INFO]: Token decoded successfully
+2025-09-28 15:06:44 [INFO]: Querying user from database
+2025-09-28 15:06:44 [INFO]: Token decoded successfully
+2025-09-28 15:06:44 [INFO]: Querying user from database
+2025-09-28 15:06:44 [INFO]: Token decoded successfully
+2025-09-28 15:06:44 [INFO]: Querying user from database
+2025-09-28 15:06:44 [INFO]: User found
+2025-09-28 15:06:44 [INFO]: Authorization check
+2025-09-28 15:06:44 [INFO]: Authorization successful
+2025-09-28 15:06:44 [INFO]: User found
+2025-09-28 15:06:44 [INFO]: Authorization check
+2025-09-28 15:06:44 [INFO]: Authorization successful
+2025-09-28 15:06:45 [INFO]: User found
+2025-09-28 15:06:45 [INFO]: Authorization check
+2025-09-28 15:06:45 [INFO]: Authorization successful
+2025-09-28 15:06:45 [INFO]: ::1 - - [28/Sep/2025:09:36:45 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:45 [INFO]: Token decoded successfully
+2025-09-28 15:06:45 [INFO]: Querying user from database
+2025-09-28 15:06:45 [INFO]: User found
+2025-09-28 15:06:45 [INFO]: Authorization check
+2025-09-28 15:06:45 [INFO]: Authorization successful
+2025-09-28 15:06:45 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:06:45 [INFO]: ::1 - - [28/Sep/2025:09:36:45 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:45 [INFO]: ::1 - - [28/Sep/2025:09:36:45 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:06:46 [INFO]: ::1 - - [28/Sep/2025:09:36:46 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:09:33 [INFO]: Socket.IO server initialized
+2025-09-28 15:09:36 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 15:09:36 [INFO]: ✅ MySQL connected successfully
+2025-09-28 15:09:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 15:09:36 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 15:09:36 [INFO]: 📧 Notification service skipped for now
+2025-09-28 15:09:36 [INFO]: 🚀 Server running on port 5000
+2025-09-28 15:09:36 [INFO]: 📊 Environment: development
+2025-09-28 15:09:36 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 15:09:36 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 15:12:41 [INFO]: Token decoded successfully
+2025-09-28 15:12:41 [INFO]: Querying user from database
+2025-09-28 15:12:41 [INFO]: Token decoded successfully
+2025-09-28 15:12:41 [INFO]: Querying user from database
+2025-09-28 15:12:41 [INFO]: Token decoded successfully
+2025-09-28 15:12:41 [INFO]: Querying user from database
+2025-09-28 15:12:41 [INFO]: Token decoded successfully
+2025-09-28 15:12:41 [INFO]: Querying user from database
+2025-09-28 15:12:45 [INFO]: User found
+2025-09-28 15:12:45 [INFO]: Authorization check
+2025-09-28 15:12:45 [INFO]: Authorization successful
+2025-09-28 15:12:46 [INFO]: User found
+2025-09-28 15:12:46 [INFO]: ::1 - - [28/Sep/2025:09:42:46 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:46 [INFO]: User found
+2025-09-28 15:12:46 [INFO]: Authorization check
+2025-09-28 15:12:46 [INFO]: Authorization successful
+2025-09-28 15:12:46 [INFO]: ::1 - - [28/Sep/2025:09:42:46 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:46 [INFO]: Token decoded successfully
+2025-09-28 15:12:46 [INFO]: Querying user from database
+2025-09-28 15:12:46 [INFO]: Token decoded successfully
+2025-09-28 15:12:46 [INFO]: Querying user from database
+2025-09-28 15:12:46 [INFO]: User found
+2025-09-28 15:12:46 [INFO]: Authorization check
+2025-09-28 15:12:46 [INFO]: Authorization successful
+2025-09-28 15:12:46 [INFO]: User found
+2025-09-28 15:12:46 [INFO]: Authorization check
+2025-09-28 15:12:46 [INFO]: Authorization successful
+2025-09-28 15:12:47 [INFO]: ::1 - - [28/Sep/2025:09:42:47 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:47 [INFO]: User found
+2025-09-28 15:12:47 [INFO]: Authorization check
+2025-09-28 15:12:47 [INFO]: Authorization successful
+2025-09-28 15:12:47 [INFO]: ::1 - - [28/Sep/2025:09:42:47 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 200 959 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:47 [INFO]: ::1 - - [28/Sep/2025:09:42:47 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:47 [INFO]: Token decoded successfully
+2025-09-28 15:12:47 [INFO]: Querying user from database
+2025-09-28 15:12:48 [INFO]: User found
+2025-09-28 15:12:48 [INFO]: Authorization check
+2025-09-28 15:12:48 [INFO]: Authorization successful
+2025-09-28 15:12:48 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:12:48 [INFO]: ::1 - - [28/Sep/2025:09:42:48 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:48 [INFO]: Token decoded successfully
+2025-09-28 15:12:48 [INFO]: Querying user from database
+2025-09-28 15:12:48 [INFO]: User found
+2025-09-28 15:12:48 [INFO]: Authorization check
+2025-09-28 15:12:48 [INFO]: Authorization successful
+2025-09-28 15:12:49 [INFO]: ::1 - - [28/Sep/2025:09:42:49 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:12:49 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:12:49 [INFO]: ::1 - - [28/Sep/2025:09:42:49 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:26 [INFO]: Token decoded successfully
+2025-09-28 15:13:26 [INFO]: Querying user from database
+2025-09-28 15:13:26 [INFO]: Token decoded successfully
+2025-09-28 15:13:26 [INFO]: Querying user from database
+2025-09-28 15:13:26 [INFO]: Token decoded successfully
+2025-09-28 15:13:26 [INFO]: Querying user from database
+2025-09-28 15:13:26 [INFO]: Token decoded successfully
+2025-09-28 15:13:26 [INFO]: Querying user from database
+2025-09-28 15:13:26 [INFO]: User found
+2025-09-28 15:13:26 [INFO]: Authorization check
+2025-09-28 15:13:26 [INFO]: Authorization successful
+2025-09-28 15:13:26 [INFO]: User found
+2025-09-28 15:13:27 [INFO]: User found
+2025-09-28 15:13:27 [INFO]: Authorization check
+2025-09-28 15:13:27 [INFO]: Authorization successful
+2025-09-28 15:13:27 [INFO]: User found
+2025-09-28 15:13:27 [INFO]: Authorization check
+2025-09-28 15:13:27 [INFO]: Authorization successful
+2025-09-28 15:13:30 [INFO]: ::1 - - [28/Sep/2025:09:43:30 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:30 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:13:30 [INFO]: ::1 - - [28/Sep/2025:09:43:30 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:30 [INFO]: Token decoded successfully
+2025-09-28 15:13:30 [INFO]: Querying user from database
+2025-09-28 15:13:32 [INFO]: User found
+2025-09-28 15:13:32 [INFO]: Authorization check
+2025-09-28 15:13:32 [INFO]: Authorization successful
+2025-09-28 15:13:32 [INFO]: ::1 - - [28/Sep/2025:09:43:32 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:32 [INFO]: Token decoded successfully
+2025-09-28 15:13:32 [INFO]: Querying user from database
+2025-09-28 15:13:32 [INFO]: Token decoded successfully
+2025-09-28 15:13:32 [INFO]: Querying user from database
+2025-09-28 15:13:32 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:13:32 [INFO]: ::1 - - [28/Sep/2025:09:43:32 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:33 [INFO]: User found
+2025-09-28 15:13:33 [INFO]: Authorization check
+2025-09-28 15:13:33 [INFO]: Authorization successful
+2025-09-28 15:13:33 [INFO]: User found
+2025-09-28 15:13:33 [INFO]: Authorization check
+2025-09-28 15:13:33 [INFO]: Authorization successful
+2025-09-28 15:13:33 [INFO]: ::1 - - [28/Sep/2025:09:43:33 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:33 [INFO]: Token decoded successfully
+2025-09-28 15:13:33 [INFO]: Querying user from database
+2025-09-28 15:13:33 [INFO]: ::1 - - [28/Sep/2025:09:43:33 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:33 [INFO]: User found
+2025-09-28 15:13:33 [INFO]: Authorization check
+2025-09-28 15:13:33 [INFO]: Authorization successful
+2025-09-28 15:13:33 [INFO]: ::1 - - [28/Sep/2025:09:43:33 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:13:34 [INFO]: ::1 - - [28/Sep/2025:09:43:34 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:14:00 [INFO]: Token decoded successfully
+2025-09-28 15:14:00 [INFO]: Querying user from database
+2025-09-28 15:14:05 [INFO]: User found
+2025-09-28 15:14:05 [INFO]: Authorization check
+2025-09-28 15:14:05 [INFO]: Authorization successful
+2025-09-28 15:14:10 [INFO]: ::1 - - [28/Sep/2025:09:44:10 +0000] "GET /api/doctors/appointments?startDate=2025-09-28&endDate=2025-09-28&limit=100 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:20:49 [INFO]: Token decoded successfully
+2025-09-28 15:20:49 [INFO]: Querying user from database
+2025-09-28 15:20:49 [INFO]: Token decoded successfully
+2025-09-28 15:20:49 [INFO]: Querying user from database
+2025-09-28 15:20:49 [INFO]: Token decoded successfully
+2025-09-28 15:20:49 [INFO]: Querying user from database
+2025-09-28 15:20:50 [INFO]: User found
+2025-09-28 15:20:50 [INFO]: Authorization check
+2025-09-28 15:20:50 [INFO]: Authorization successful
+2025-09-28 15:20:50 [INFO]: User found
+2025-09-28 15:20:50 [INFO]: Authorization check
+2025-09-28 15:20:50 [INFO]: Authorization successful
+2025-09-28 15:20:50 [INFO]: User found
+2025-09-28 15:20:50 [INFO]: Authorization check
+2025-09-28 15:20:50 [INFO]: Authorization successful
+2025-09-28 15:20:51 [INFO]: ::1 - - [28/Sep/2025:09:50:51 +0000] "GET /api/doctors/queue/status HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:20:51 [INFO]: Token decoded successfully
+2025-09-28 15:20:51 [INFO]: Querying user from database
+2025-09-28 15:20:51 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 availability data fetched
+2025-09-28 15:20:51 [INFO]: ::1 - - [28/Sep/2025:09:50:51 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:20:52 [INFO]: User found
+2025-09-28 15:20:52 [INFO]: Authorization check
+2025-09-28 15:20:52 [INFO]: Authorization successful
+2025-09-28 15:20:52 [INFO]: ::1 - - [28/Sep/2025:09:50:52 +0000] "GET /api/doctors/queue? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:20:54 [INFO]: ::1 - - [28/Sep/2025:09:50:54 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:21:30 [INFO]: Token decoded successfully
+2025-09-28 15:21:30 [INFO]: Querying user from database
+2025-09-28 15:21:31 [INFO]: User found
+2025-09-28 15:21:31 [INFO]: Authorization check
+2025-09-28 15:21:31 [INFO]: Authorization successful
+2025-09-28 15:21:32 [INFO]: ::1 - - [28/Sep/2025:09:51:32 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:21:40 [INFO]: Token decoded successfully
+2025-09-28 15:21:40 [INFO]: Querying user from database
+2025-09-28 15:21:41 [INFO]: User found
+2025-09-28 15:21:41 [INFO]: Authorization check
+2025-09-28 15:21:41 [INFO]: Authorization successful
+2025-09-28 15:21:42 [INFO]: ::1 - - [28/Sep/2025:09:51:42 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:21:42 [INFO]: Token decoded successfully
+2025-09-28 15:21:42 [INFO]: Querying user from database
+2025-09-28 15:21:42 [INFO]: User found
+2025-09-28 15:21:42 [INFO]: Authorization check
+2025-09-28 15:21:42 [INFO]: Authorization successful
+2025-09-28 15:21:44 [INFO]: ::1 - - [28/Sep/2025:09:51:44 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:21:44 [INFO]: Token decoded successfully
+2025-09-28 15:21:44 [INFO]: Querying user from database
+2025-09-28 15:21:45 [INFO]: User found
+2025-09-28 15:21:45 [INFO]: Authorization check
+2025-09-28 15:21:45 [INFO]: Authorization successful
+2025-09-28 15:21:49 [INFO]: ::1 - - [28/Sep/2025:09:51:49 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-28 15:21:49 [INFO]: Token decoded successfully
+2025-09-28 15:21:49 [INFO]: Querying user from database
+2025-09-28 15:21:50 [INFO]: User found
+2025-09-28 15:21:50 [INFO]: Authorization check
+2025-09-28 15:21:50 [INFO]: Authorization successful
+2025-09-28 15:21:51 [INFO]: ::1 - - [28/Sep/2025:09:51:51 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

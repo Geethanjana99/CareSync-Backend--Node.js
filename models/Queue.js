@@ -437,7 +437,7 @@ class Queue {
     }
   }
 
-  // Get next paid patient in queue (emergency first, then regular)
+  // Get next paid patient in queue (simplified - no emergency handling)
   static async getNextPaidPatient(doctorId, date = null) {
     const queueDate = date || new Date().toISOString().split('T')[0];
     
@@ -452,12 +452,11 @@ class Queue {
         };
       }
 
-      // Get current numbers being served
+      // Get current number being served
       const currentNumber = queueStatus.current_number || '0';
-      const currentEmergencyNumber = queueStatus.current_emergency_number || 'E0';
 
-      // First, look for next emergency patient (paid and pending/in-progress)
-      const emergencyQuery = `
+      // Look for next patient (paid and scheduled/confirmed/in-progress)
+      const patientQuery = `
         SELECT 
           a.*,
           u.name as patient_name,
@@ -469,38 +468,6 @@ class Queue {
         JOIN users u ON p.user_id = u.id
         WHERE a.doctor_id = ? 
           AND a.queue_date = ?
-          AND a.is_emergency = TRUE
-          AND a.payment_status = 'paid'
-          AND a.status IN ('scheduled', 'confirmed', 'in-progress')
-          AND CAST(SUBSTRING(a.queue_number, 2) AS UNSIGNED) > CAST(SUBSTRING(?, 2) AS UNSIGNED)
-        ORDER BY CAST(SUBSTRING(a.queue_number, 2) AS UNSIGNED) ASC
-        LIMIT 1
-      `;
-      
-      const [emergencyPatient] = await mysqlConnection.query(emergencyQuery, [doctorId, queueDate, currentEmergencyNumber]);
-
-      if (emergencyPatient) {
-        return {
-          success: true,
-          type: 'emergency',
-          patient: emergencyPatient
-        };
-      }
-
-      // If no emergency patient, look for next regular patient (paid and pending/in-progress)
-      const regularQuery = `
-        SELECT 
-          a.*,
-          u.name as patient_name,
-          u.phone as patient_phone,
-          p.date_of_birth,
-          TIMESTAMPDIFF(YEAR, p.date_of_birth, CURDATE()) as patient_age
-        FROM appointments a
-        JOIN patients p ON a.patient_id = p.id
-        JOIN users u ON p.user_id = u.id
-        WHERE a.doctor_id = ? 
-          AND a.queue_date = ?
-          AND a.is_emergency = FALSE
           AND a.payment_status = 'paid'
           AND a.status IN ('scheduled', 'confirmed', 'in-progress')
           AND CAST(a.queue_number AS UNSIGNED) > CAST(? AS UNSIGNED)
@@ -508,13 +475,13 @@ class Queue {
         LIMIT 1
       `;
       
-      const [regularPatient] = await mysqlConnection.query(regularQuery, [doctorId, queueDate, currentNumber]);
+      const [patient] = await mysqlConnection.query(patientQuery, [doctorId, queueDate, currentNumber]);
 
-      if (regularPatient) {
+      if (patient) {
         return {
           success: true,
           type: 'regular',
-          patient: regularPatient
+          patient: patient
         };
       }
 

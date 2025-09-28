@@ -3632,3 +3632,4 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 15:09:36 [ERROR]: ❌ MongoDB connection failed:
