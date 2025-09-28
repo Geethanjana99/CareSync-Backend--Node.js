@@ -56,10 +56,31 @@ router.post('/', (req, res) => {
   
   const { firstName, lastName, email, phone, dateOfBirth, gender, address, emergencyContact, emergencyPhone } = req.body;
   
+  // Basic validation
+  if (!firstName || !lastName || !email || !phone || !dateOfBirth || !gender) {
+    return res.status(400).json({
+      success: false,
+      message: 'Missing required fields: firstName, lastName, email, phone, dateOfBirth, gender'
+    });
+  }
+
+  // Check if email already exists
+  const existingPatient = mockPatients.find(p => p.email === email);
+  if (existingPatient) {
+    return res.status(400).json({
+      success: false,
+      message: 'Patient with this email already exists'
+    });
+  }
+  
+  // Generate new patient ID
+  const newId = String(Math.max(...mockPatients.map(p => parseInt(p.id)), 0) + 1);
+  const newPatientId = `P-${newId.padStart(3, '0')}`;
+  
   // Generate new patient
   const newPatient = {
-    id: String(mockPatients.length + 1),
-    patient_id: `P-${String(mockPatients.length + 1).padStart(3, '0')}`,
+    id: newId,
+    patient_id: newPatientId,
     name: `${firstName} ${lastName}`,
     email,
     phone,

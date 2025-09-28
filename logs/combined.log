@@ -15512,3 +15512,86 @@
 2025-09-28 09:58:25 [INFO]: Authorization successful
 2025-09-28 09:58:26 [INFO]: Doctor 78912290-eb79-46f5-9502-eae48d6be227 queue status toggled to: active
 2025-09-28 09:58:26 [INFO]: ::1 - - [28/Sep/2025:04:28:26 +0000] "PUT /api/doctor/queue/toggle HTTP/1.1" 200 103 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-28 16:18:51 [INFO]: Socket.IO server initialized
+2025-09-28 16:18:52 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 16:18:52 [INFO]: ✅ MySQL connected successfully
+2025-09-28 16:18:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:18:52 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 16:18:52 [INFO]: 📧 Notification service skipped for now
+2025-09-28 16:18:52 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:18:52 [INFO]: 🚀 Server running on port 5000
+2025-09-28 16:18:52 [INFO]: 📊 Environment: development
+2025-09-28 16:18:52 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 16:18:52 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 16:36:20 [INFO]: Socket.IO server initialized
+2025-09-28 16:36:21 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 16:36:21 [INFO]: ✅ MySQL connected successfully
+2025-09-28 16:36:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:36:21 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 16:36:21 [INFO]: 📧 Notification service skipped for now
+2025-09-28 16:36:21 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:36:21 [ERROR]: Port 5000 in use, trying 5002
+2025-09-28 16:36:21 [INFO]: 🚀 Server running on port 5000
+2025-09-28 16:36:21 [INFO]: 📊 Environment: development
+2025-09-28 16:36:21 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 16:36:21 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 16:52:42 [INFO]: Socket.IO server initialized
+2025-09-28 16:52:45 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 16:52:45 [INFO]: ✅ MySQL connected successfully
+2025-09-28 16:52:45 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:52:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 16:52:45 [INFO]: 📧 Notification service skipped for now
+2025-09-28 16:52:45 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:52:45 [INFO]: 🚀 Server running on port 5000
+2025-09-28 16:52:45 [INFO]: 📊 Environment: development
+2025-09-28 16:52:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 16:52:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 16:56:11 [INFO]: Socket.IO server initialized
+2025-09-28 16:56:12 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 16:56:12 [INFO]: ✅ MySQL connected successfully
+2025-09-28 16:56:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:56:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 16:56:12 [INFO]: 📧 Notification service skipped for now
+2025-09-28 16:56:12 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:56:12 [ERROR]: Port 5000 in use, trying 5002
+2025-09-28 16:56:12 [INFO]: 🚀 Server running on port 5000
+2025-09-28 16:56:12 [INFO]: 📊 Environment: development
+2025-09-28 16:56:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 16:56:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 17:02:49 [INFO]: Socket.IO server initialized
+2025-09-28 17:02:59 [ERROR]: ❌ MySQL connection failed:
+2025-09-28 17:02:59 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-09-28 17:02:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 17:02:59 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 17:02:59 [INFO]: 📧 Notification service skipped for now
+2025-09-28 17:02:59 [INFO]: 🚀 Server running on port 5000
+2025-09-28 17:02:59 [INFO]: 📊 Environment: development
+2025-09-28 17:02:59 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 17:02:59 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 17:04:24 [INFO]: User logged in: amiyuru2@gmail.com
+2025-09-28 17:04:24 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:11:34:24 +0000] "POST /api/auth/login HTTP/1.1" 200 842 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 17:04:24 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:11:34:24 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 17:04:32 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:11:34:32 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 785 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 17:04:35 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:11:34:35 +0000] "GET /api/mock/doctors HTTP/1.1" 200 879 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 17:37:58 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:12:07:58 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:10:28 [INFO]: Token decoded successfully
+2025-09-28 22:10:28 [INFO]: Querying user from database
+2025-09-28 22:10:37 [INFO]: User found
+2025-09-28 22:10:39 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:40:39 +0000] "GET /api/auth/profile HTTP/1.1" 200 400 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:10:39 [INFO]: Token decoded successfully
+2025-09-28 22:10:39 [INFO]: Querying user from database
+2025-09-28 22:10:39 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:40:39 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:10:39 [INFO]: User found
+2025-09-28 22:10:40 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:40:40 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:11:08 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:41:08 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:11:20 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:41:20 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:11:20 [INFO]: Token decoded successfully
+2025-09-28 22:11:20 [INFO]: Querying user from database
+2025-09-28 22:11:23 [INFO]: User found
+2025-09-28 22:11:24 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:41:24 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:11:24 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:41:24 +0000] "GET /api/mock/doctors HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:12:39 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:42:39 +0000] "POST /api/mock/doctors HTTP/1.1" 201 330 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:12:39 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:42:39 +0000] "GET /api/mock/doctors HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:16:15 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:46:15 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:18:56 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:48:56 +0000] "POST /api/mock/patients HTTP/1.1" 201 497 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:18:56 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:48:56 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"

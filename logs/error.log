@@ -3461,3 +3461,15 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-28 16:18:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:18:52 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:36:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:36:21 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:36:21 [ERROR]: Port 5000 in use, trying 5002
+2025-09-28 16:52:45 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:52:45 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:56:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 16:56:12 [ERROR]: Port 5000 in use, trying 5001
+2025-09-28 16:56:12 [ERROR]: Port 5000 in use, trying 5002
+2025-09-28 17:02:59 [ERROR]: ❌ MySQL connection failed:
+2025-09-28 17:02:59 [ERROR]: ❌ MongoDB connection failed:
