@@ -22,8 +22,13 @@ class AdminReportsController {
    */
   static async createDiabetesPrediction(req, res) {
     try {
+      console.log('🔍 [DEBUG] Starting createDiabetesPrediction');
+      console.log('Request body:', JSON.stringify(req.body, null, 2));
+      console.log('Request user:', req.user ? { id: req.user.id, role: req.user.role } : 'NO USER');
+      
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
+        console.log('❌ [DEBUG] Validation errors:', errors.array());
         return res.status(400).json({
           success: false,
           message: 'Validation failed',
@@ -41,16 +46,22 @@ class AdminReportsController {
         notes
       } = req.body;
 
-      // Verify patient exists
-      const patientQuery = 'SELECT * FROM patients WHERE id = ?';
+      console.log('🔍 [DEBUG] Checking patient exists:', patientId);
+
+      // Verify patient exists - search by patient_id field
+      const patientQuery = 'SELECT * FROM patients WHERE patient_id = ?';
       const patients = await mysqlConnection.query(patientQuery, [patientId]);
       if (patients.length === 0) {
+        console.log('❌ [DEBUG] Patient not found:', patientId);
         return res.status(404).json({
           success: false,
           message: 'Patient not found'
         });
       }
       const patient = patients[0];
+      console.log('✅ [DEBUG] Patient found:', patient.id);
+
+      console.log('🔍 [DEBUG] Creating prediction record...');
 
       // Create prediction record
       const prediction = await DiabetesPrediction.create({
@@ -65,9 +76,13 @@ class AdminReportsController {
         status: 'pending'
       });
 
+      console.log('✅ [DEBUG] Prediction record created:', prediction.id);
+
       // Call the prediction model
       try {
+        console.log('🔍 [DEBUG] Calling prediction model...');
         const predictionResult = await prediction.callPredictionModel();
+        console.log('✅ [DEBUG] Prediction model result:', predictionResult);
         
         // Update prediction with results
         await prediction.update({
@@ -78,15 +93,42 @@ class AdminReportsController {
           processedAt: new Date()
         });
 
+        console.log('✅ [DEBUG] Prediction updated with results');
+
         // Reload with updated data
         await prediction.reload();
+
+        // Generate Streamlit URL with pre-filled parameters
+        const streamlitUrl = AdminReportsController.generateStreamlitUrl({
+          pregnancies: prediction.pregnancies,
+          glucose: prediction.glucose,
+          bmi: prediction.bmi,
+          age: prediction.age,
+          insulin: prediction.insulin
+        });
+
+        console.log('✅ [DEBUG] Generated Streamlit URL:', streamlitUrl);
 
         res.status(201).json({
           success: true,
           message: 'Diabetes prediction created successfully',
           data: {
             prediction: prediction.toJSON(),
-            summary: prediction.getResultSummary()
+            summary: prediction.getResultSummary(),
+            streamlitUrl: streamlitUrl,
+            actions: {
+              viewDetails: {
+                url: streamlitUrl,
+                label: 'View Detailed Analysis',
+                description: 'Open interactive analysis in Streamlit with your input parameters'
+              },
+              retryPrediction: {
+                endpoint: `/api/admin/reports/diabetes-predictions/${prediction.id}/retry`,
+                method: 'POST',
+                label: 'Retry Prediction',
+                description: 'Retry prediction processing if needed'
+              }
+            }
           }
         });
 
@@ -99,22 +141,50 @@ class AdminReportsController {
           notes: (notes || '') + `\n\nPrediction Error: ${predictionError.message}`
         });
 
+        // Generate Streamlit URL even for failed predictions
+        const streamlitUrl = AdminReportsController.generateStreamlitUrl({
+          pregnancies: prediction.pregnancies,
+          glucose: prediction.glucose,
+          bmi: prediction.bmi,
+          age: prediction.age,
+          insulin: prediction.insulin
+        });
+
         res.status(201).json({
           success: true,
           message: 'Diabetes prediction record created, but model prediction failed. Please retry processing.',
           data: {
             prediction: prediction.toJSON(),
-            error: 'Prediction model temporarily unavailable'
+            error: 'Prediction model temporarily unavailable',
+            streamlitUrl: streamlitUrl,
+            actions: {
+              viewDetails: {
+                url: streamlitUrl,
+                label: 'View Manual Analysis',
+                description: 'Open Streamlit for manual analysis with your input parameters'
+              },
+              retryPrediction: {
+                endpoint: `/api/admin/reports/diabetes-predictions/${prediction.id}/retry`,
+                method: 'POST',
+                label: 'Retry Prediction',
+                description: 'Retry automatic prediction processing'
+              }
+            }
           }
         });
       }
 
     } catch (error) {
-      console.error('Error creating diabetes prediction:', error);
+      console.error('❌ [DEBUG] Error creating diabetes prediction:', error);
+      console.error('❌ [DEBUG] Error stack:', error.stack);
+      console.error('❌ [DEBUG] Error name:', error.name);
+      console.error('❌ [DEBUG] Error message:', error.message);
+      
       res.status(500).json({
         success: false,
         message: 'Failed to create diabetes prediction',
-        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined,
+        details: process.env.NODE_ENV === 'development' ? error.stack : undefined
       });
     }
   }
@@ -134,41 +204,114 @@ class AdminReportsController {
       } = req.query;
 
       const offset = (page - 1) * limit;
-      const where = {};
+      
+      // Validate sortBy to prevent SQL injection
+      const allowedSortColumns = ['created_at', 'updated_at', 'patient_id', 'status', 'glucose', 'bmi', 'age'];
+      const validSortBy = allowedSortColumns.includes(sortBy) ? sortBy : 'created_at';
+      
+      // Validate sortOrder to prevent SQL injection
+      const validSortOrder = ['ASC', 'DESC'].includes(sortOrder.toUpperCase()) ? sortOrder.toUpperCase() : 'DESC';
+      
+      // Build WHERE clause
+      let whereClause = '1=1';
+      const params = [];
+      
+      if (patientId) {
+        whereClause += ' AND dp.patient_id = ?';
+        params.push(patientId);
+      }
+      
+      if (status) {
+        whereClause += ' AND dp.status = ?';
+        params.push(status);
+      }
 
-      if (patientId) where.patientId = patientId;
-      if (status) where.status = status;
+      // Query with JOIN to get patient names from users table
+      const query = `
+        SELECT 
+          dp.id,
+          dp.patient_id,
+          dp.pregnancies,
+          dp.glucose,
+          dp.bmi,
+          dp.age,
+          dp.insulin,
+          dp.prediction_result,
+          dp.prediction_probability,
+          dp.risk_level,
+          dp.status,
+          dp.notes,
+          dp.created_at,
+          dp.updated_at,
+          dp.processed_at,
+          u.name as patient_name,
+          u.email as patient_email
+        FROM diabetes_predictions dp
+        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN users u ON p.user_id = u.id
+        WHERE ${whereClause}
+        ORDER BY dp.${validSortBy} ${validSortOrder}
+        LIMIT ${parseInt(limit)} OFFSET ${parseInt(offset)}
+      `;
+      
+      // Remove LIMIT and OFFSET from params since we're using direct values
+      const queryParams = params.slice(0, -2);
+      
+      const predictions = await mysqlConnection.query(query, queryParams);
+      
+      // Get total count - rebuild the query with proper parameters
+      let countWhereClause = '1=1';
+      const countParams = [];
+      
+      if (patientId) {
+        countWhereClause += ' AND dp.patient_id = ?';
+        countParams.push(patientId);
+      }
+      
+      if (status) {
+        countWhereClause += ' AND dp.status = ?';
+        countParams.push(status);
+      }
+      
+      const countQuery = `
+        SELECT COUNT(*) as total
+        FROM diabetes_predictions dp
+        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN users u ON p.user_id = u.id
+        WHERE ${countWhereClause}
+      `;
+      
+      const countResult = await mysqlConnection.query(countQuery, countParams);
+      const total = countResult[0].total;
 
-      const { count, rows: predictions } = await DiabetesPrediction.findAndCountAll({
-        where,
-        include: [
-          {
-            model: Patient,
-            as: 'patient',
-            include: [{
-              model: User,
-              as: 'user',
-              attributes: ['name', 'email']
-            }]
-          },
-          {
-            model: User,
-            as: 'admin',
-            attributes: ['name', 'email']
-          }
-        ],
-        order: [[sortBy, sortOrder]],
-        limit: parseInt(limit),
-        offset: parseInt(offset)
-      });
+      // Transform results to include patient names
+      const transformedPredictions = predictions.map(prediction => ({
+        id: prediction.id,
+        patientId: prediction.patient_id,
+        patientName: prediction.patient_name || `Patient ${prediction.patient_id}`,
+        patientEmail: prediction.patient_email,
+        pregnancies: prediction.pregnancies,
+        glucose: prediction.glucose,
+        bmi: prediction.bmi,
+        age: prediction.age,
+        insulin: prediction.insulin,
+        predictionResult: prediction.prediction_result,
+        predictionProbability: prediction.prediction_probability,
+        riskLevel: prediction.risk_level,
+        status: prediction.status,
+        notes: prediction.notes,
+        createdAt: prediction.created_at,
+        updatedAt: prediction.updated_at,
+        processedAt: prediction.processed_at
+      }));
 
       res.json({
         success: true,
         data: {
-          predictions,
+          predictions: transformedPredictions,
           pagination: {
-            total: count,
-            pages: Math.ceil(count / limit),
+            total: total,
+            pages: Math.ceil(total / limit),
             page: parseInt(page),
             limit: parseInt(limit)
           }
@@ -192,24 +335,7 @@ class AdminReportsController {
     try {
       const { id } = req.params;
 
-      const prediction = await DiabetesPrediction.findByPk(id, {
-        include: [
-          {
-            model: Patient,
-            as: 'patient',
-            include: [{
-              model: User,
-              as: 'user',
-              attributes: ['name', 'email']
-            }]
-          },
-          {
-            model: User,
-            as: 'admin',
-            attributes: ['name', 'email']
-          }
-        ]
-      });
+  const prediction = await DiabetesPrediction.findByPk(id);
 
       if (!prediction) {
         return res.status(404).json({
@@ -266,6 +392,98 @@ class AdminReportsController {
       res.status(500).json({
         success: false,
         message: 'Failed to update diabetes prediction',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
+    }
+  }
+
+  /**
+   * Retry diabetes prediction processing
+   */
+  static async retryDiabetesPrediction(req, res) {
+    try {
+      const { id } = req.params;
+
+      const prediction = await DiabetesPrediction.findByPk(id);
+      if (!prediction) {
+        return res.status(404).json({
+          success: false,
+          message: 'Diabetes prediction not found'
+        });
+      }
+
+      // Only allow retry for pending predictions
+      if (prediction.status !== 'pending') {
+        return res.status(400).json({
+          success: false,
+          message: 'Can only retry predictions with pending status'
+        });
+      }
+
+      try {
+        // Attempt to call the prediction model again
+        const predictionResult = await prediction.callPredictionModel();
+        
+        // Update prediction with results
+        await prediction.update({
+          predictionResult: predictionResult.prediction,
+          predictionProbability: predictionResult.probability,
+          riskLevel: predictionResult.riskLevel,
+          status: 'processed',
+          processedAt: new Date(),
+          notes: (prediction.notes || '') + '\n\nRetry successful: ' + new Date().toISOString()
+        });
+
+        // Reload with updated data
+        await prediction.reload();
+
+        // Generate Streamlit URL for successful retry
+        const streamlitUrl = AdminReportsController.generateStreamlitUrl({
+          pregnancies: prediction.pregnancies,
+          glucose: prediction.glucose,
+          bmi: prediction.bmi,
+          age: prediction.age,
+          insulin: prediction.insulin
+        });
+
+        res.json({
+          success: true,
+          message: 'Diabetes prediction processed successfully',
+          data: {
+            prediction: prediction.toJSON(),
+            summary: prediction.getResultSummary(),
+            streamlitUrl: streamlitUrl,
+            actions: {
+              viewDetails: {
+                url: streamlitUrl,
+                label: 'View Detailed Analysis',
+                description: 'Open interactive analysis in Streamlit with your input parameters'
+              }
+            }
+          }
+        });
+
+      } catch (predictionError) {
+        console.error('Retry prediction model error:', predictionError);
+        
+        // Update notes with retry attempt info
+        await prediction.update({
+          notes: (prediction.notes || '') + `\n\nRetry failed at ${new Date().toISOString()}: ${predictionError.message}`
+        });
+
+        res.status(422).json({
+          success: false,
+          message: 'Diabetes prediction retry failed. Please check model availability.',
+          error: predictionError.message,
+          data: { prediction: prediction.toJSON() }
+        });
+      }
+
+    } catch (error) {
+      console.error('Error retrying diabetes prediction:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to retry diabetes prediction',
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
@@ -686,6 +904,25 @@ class AdminReportsController {
         error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
+  }
+
+  /**
+   * Generate Streamlit URL with pre-filled parameters
+   */
+  static generateStreamlitUrl(inputData) {
+    const baseUrl = process.env.STREAMLIT_BASE_URL || 'http://localhost:8502';
+    
+    // Create URL parameters for Streamlit
+    const params = new URLSearchParams({
+      pregnancies: inputData.pregnancies || 0,
+      glucose: inputData.glucose || 0,
+      bmi: inputData.bmi || 0,
+      age: inputData.age || 0,
+      insulin: inputData.insulin || 0,
+      auto_predict: 'true' // Flag to auto-run prediction
+    });
+    
+    return `${baseUrl}/?${params.toString()}`;
   }
 }
 

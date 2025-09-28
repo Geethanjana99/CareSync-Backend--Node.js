@@ -1,4 +1,4 @@
-const mysql = require('../config/mysql');
+const { mysqlConnection: mysql } = require('../config/mysql');
 const { v4: uuidv4 } = require('uuid');
 const path = require('path');
 const fs = require('fs').promises;

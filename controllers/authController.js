@@ -262,10 +262,32 @@ class AuthController {
         });
       }
 
+      // Format user data consistently with login response
+      const userData = {
+        id: userWithProfile.id,
+        name: userWithProfile.name,
+        email: userWithProfile.email,
+        role: userWithProfile.role,
+        phone: userWithProfile.phone,
+        avatar_url: userWithProfile.avatar_url,
+        is_active: userWithProfile.is_active,
+        email_verified: userWithProfile.email_verified,
+        last_login: userWithProfile.last_login,
+        created_at: userWithProfile.created_at,
+        updated_at: userWithProfile.updated_at,
+        // Include profile data if available
+        profile: {
+          patient_id: userWithProfile.patient_id,
+          doctor_id: userWithProfile.doctor_id,
+          specialty: userWithProfile.specialty,
+          // Add other relevant profile fields as needed
+        }
+      };
+
       res.json({
         success: true,
         data: {
-          user: userWithProfile
+          user: userData
         }
       });
 

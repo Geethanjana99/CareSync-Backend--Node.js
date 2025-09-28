@@ -43,6 +43,8 @@ const appointmentRoutes = require('./routes/appointments');
 const medicalReportsRoutes = require('./routes/medical-reports');
 const adminRoutes = require('./routes/admin');
 const adminReportsRoutes = require('./routes/admin-reports');
+const adminHealthPredictionRoutes = require('./routes/adminHealthPredictions');
+const patientHealthPredictionRoutes = require('./routes/patientHealthPredictions');
 const billingRoutes = require('./routes/billing');
 const docsRoutes = require('./routes/docs');
 const indexRoutes = require('./routes/index');
@@ -127,7 +129,10 @@ app.get('/api/doctors/search', PatientController.searchDoctors);
 // Protected routes
 // app.use('/api/users', authMiddleware, userRoutes); // TODO: Create user routes
 app.use('/api/patients', patientRoutes);
+app.use('/api/patient', patientRoutes); // Singular route for frontend compatibility (includes queue endpoints)
+app.use('/api/patient/health-predictions', patientHealthPredictionRoutes);
 app.use('/api/doctors', doctorRoutes);
+app.use('/api/doctor', doctorRoutes); // Singular route for frontend compatibility
 app.use('/api/appointments', appointmentRoutes);
 // app.use('/api/queue', authMiddleware, queueRoutes); // TODO: Create queue routes
 app.use('/api/billing', billingRoutes);
@@ -136,6 +141,7 @@ app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
 app.use('/api/admin', adminRoutes);
 app.use('/api/admin/reports', adminReportsRoutes);
+app.use('/api/admin/health-predictions', adminHealthPredictionRoutes);
 
 // Temporary mock routes for testing (no authentication required)
 app.use('/api/mock/auth', require('./routes/mock-auth'));
@@ -184,14 +190,38 @@ async function startServer() {
       logger.warn('⚠️ Notification service initialization failed:', error.message);
     }
     
-    const PORT = process.env.PORT || 5000;
-    
-    server.listen(PORT, () => {
-      logger.info(`🚀 Server running on port ${PORT}`);
-      logger.info(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
-      logger.info(`🔗 Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
-      logger.info(`📋 API Documentation: http://localhost:${PORT}/api/docs`);
+    const basePort = parseInt(process.env.PORT, 10) || 5000;
+
+    // Listen with retry in case the port is already in use
+    const listenWithRetry = (startPort, maxAttempts = 10) => new Promise((resolve, reject) => {
+      let attempt = 0;
+      const tryListen = (portToTry) => {
+        const onError = (err) => {
+          if (err.code === 'EADDRINUSE' && attempt < maxAttempts) {
+            attempt += 1;
+            const nextPort = startPort + attempt;
+            logger.error(`Port ${portToTry} in use, trying ${nextPort}`);
+            // Try the next port
+            server.once('error', onError);
+            server.listen(nextPort, () => resolve(nextPort));
+          } else {
+            reject(err);
+          }
+        };
+
+        server.once('error', onError);
+        server.listen(portToTry, () => resolve(portToTry));
+      };
+
+      tryListen(startPort);
     });
+
+    const PORT = await listenWithRetry(basePort);
+
+    logger.info(`🚀 Server running on port ${PORT}`);
+    logger.info(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
+    logger.info(`🔗 Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
+    logger.info(`📋 API Documentation: http://localhost:${PORT}/api/docs`);
     
   } catch (error) {
     logger.error('Failed to start server:', error);

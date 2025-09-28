@@ -59,8 +59,8 @@ class Appointment {
         INSERT INTO appointments (
           id, appointment_id, patient_id, doctor_id, appointment_date,
           appointment_type, status, reason_for_visit, symptoms, priority,
-          notes, consultation_fee, queue_number, is_emergency, queue_date
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          notes, consultation_fee, payment_status, queue_number, is_emergency, queue_date
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
       // Ensure all required fields have values (no undefined)
@@ -77,6 +77,7 @@ class Appointment {
         appointment.priority || 'normal',
         appointment.notes || '',
         appointment.consultation_fee || 0,
+        appointment.payment_status || 'unpaid',
         appointment.queue_number,
         appointment.is_emergency ? 1 : 0,
         appointment.queue_date
@@ -114,6 +115,11 @@ class Appointment {
   // Get patient's queue position
   static async getPatientQueuePosition(patientId, doctorId, date = null) {
     return await Queue.getPatientQueuePosition(patientId, doctorId, date);
+  }
+
+  // Get patient's queue positions for all doctors on a date
+  static async getAllPatientQueuePositions(patientId, date = null) {
+    return await Queue.getAllPatientQueuePositions(patientId, date);
   }
 
   // Get doctor's queue for a specific date
@@ -168,8 +174,8 @@ class Appointment {
       INSERT INTO appointments (
         id, appointment_id, patient_id, doctor_id, appointment_date,
         appointment_type, status, reason_for_visit, symptoms, priority,
-        notes, consultation_fee, queue_number, is_emergency, queue_date
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        notes, consultation_fee, payment_status, queue_number, is_emergency, queue_date
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
     const params = [
@@ -185,6 +191,7 @@ class Appointment {
       this.priority || 'medium', 
       this.notes || null, 
       this.consultation_fee || null,
+      this.payment_status || 'unpaid',
       this.queue_number || null,
       this.is_emergency || false,
       this.queue_date || this.appointment_date
@@ -484,8 +491,8 @@ class Appointment {
              a.id as appointmentId,
              p.patient_id, pu.name as patientName, pu.email as patientEmail, 
              pu.phone as patient_phone, p.date_of_birth, p.gender,
-             d.doctor_id, du.name as doctorName, du.email as doctor_email,
-             d.specialty as doctorSpecialty, d.consultation_fee as doctor_fee,
+             d.doctor_id, du.name as doctor_name, du.email as doctor_email,
+             d.specialty, d.consultation_fee as doctor_fee,
              a.appointment_date as appointmentDate,
              a.queue_number,
              a.appointment_type as appointmentType,

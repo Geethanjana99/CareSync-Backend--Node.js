@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
 const AdminReportsController = require('../controllers/adminReportsController');
 const auth = require('../middleware/auth');
 const { body, query, param } = require('express-validator');
@@ -19,7 +20,8 @@ router.use(auth.authorize(['admin']));
  */
 router.post('/diabetes-predictions', [
   body('patientId')
-    .isUUID()
+    .notEmpty()
+    .isLength({ min: 1, max: 50 })
     .withMessage('Valid patient ID is required'),
   body('glucose')
     .isFloat({ min: 0, max: 300 })
@@ -68,7 +70,7 @@ router.get('/diabetes-predictions', [
     .withMessage('Limit must be between 1 and 100'),
   query('sortBy')
     .optional()
-    .isIn(['created_at', 'updated_at', 'prediction_result', 'prediction_confidence'])
+    .isIn(['created_at', 'updated_at', 'prediction_result', 'prediction_probability'])
     .withMessage('Invalid sort field'),
   query('sortOrder')
     .optional()
@@ -105,6 +107,17 @@ router.patch('/diabetes-predictions/:id', [
     .isIn(['pending', 'processed', 'reviewed'])
     .withMessage('Status must be pending, processed, or reviewed')
 ], AdminReportsController.updateDiabetesPrediction);
+
+/**
+ * @route   POST /api/admin/reports/diabetes-predictions/:id/retry
+ * @desc    Retry diabetes prediction processing
+ * @access  Admin
+ */
+router.post('/diabetes-predictions/:id/retry', [
+  param('id')
+    .isUUID()
+    .withMessage('Valid prediction ID required')
+], AdminReportsController.retryDiabetesPrediction);
 
 // ===================================================================
 // MEDICAL REPORTS UPLOAD ROUTES

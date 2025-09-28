@@ -58,7 +58,9 @@ const authMiddleware = async (req, res, next) => {
         success: false,
         message: 'Account is suspended'
       });
-    }    // Add user info to request
+    }
+
+    // Add user info to request
     req.user = {
       id: user.id,
       name: user.name,

@@ -116,6 +116,20 @@ class PatientController {
       }
 
       const appointments = await Appointment.findAll(filters);
+      
+      console.log('Patient appointments query result:');
+      console.log('Filters used:', filters);
+      console.log('Number of appointments found:', appointments.length);
+      if (appointments.length > 0) {
+        console.log('Sample appointment data:', {
+          id: appointments[0].id,
+          doctor_name: appointments[0].doctor_name,
+          doctorName: appointments[0].doctorName,
+          specialty: appointments[0].specialty,
+          doctorSpecialty: appointments[0].doctorSpecialty,
+          doctor_id: appointments[0].doctor_id
+        });
+      }
 
       res.json({
         success: true,
@@ -333,7 +347,9 @@ class PatientController {
         reasonForVisit,
         symptoms,
         priority = 'medium',
-        isEmergency = false
+        isEmergency = false,
+        paymentMethod = 'counter',
+        paymentStatus = 'unpaid'
       } = req.body;
 
       const patient = await Patient.findByUserId(req.user.id);
@@ -409,10 +425,59 @@ class PatientController {
         notes: '', // Default empty notes
         consultation_fee: doctorInfo.consultation_fee || 0, // Use doctor's fee or default to 0
         is_emergency: isEmergency,
-        status: 'scheduled' // Use valid enum value instead of 'pending'
+        status: 'scheduled', // Use valid enum value instead of 'pending'
+        payment_status: paymentStatus, // Add payment status
+        scheduled_by: req.user.id // Track who scheduled the appointment
       };
 
       const appointment = await Appointment.createQueueAppointment(appointmentData);
+
+      // If payment was made immediately, create billing record
+      if (paymentStatus === 'paid' && paymentMethod !== 'counter') {
+        try {
+          const invoiceNumber = `INV-${Date.now()}-${appointment.appointment_id}`;
+          const billingData = {
+            appointment_id: appointment.id,
+            patient_id: patient.id,
+            doctor_id: internalDoctorId,
+            invoice_number: invoiceNumber,
+            amount: doctorInfo.consultation_fee || 0,
+            tax_amount: 0,
+            total_amount: doctorInfo.consultation_fee || 0,
+            payment_method: paymentMethod,
+            payment_status: paymentStatus,
+            transaction_id: `TXN-${Date.now()}`,
+            payment_gateway: paymentMethod === 'card' ? 'stripe' : paymentMethod,
+            paid_at: new Date()
+          };
+
+          await mysqlConnection.query(`
+            INSERT INTO billing (
+              appointment_id, patient_id, doctor_id, invoice_number, 
+              amount, tax_amount, total_amount, payment_method, 
+              payment_status, transaction_id, payment_gateway, paid_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          `, [
+            billingData.appointment_id,
+            billingData.patient_id,
+            billingData.doctor_id,
+            billingData.invoice_number,
+            billingData.amount,
+            billingData.tax_amount,
+            billingData.total_amount,
+            billingData.payment_method,
+            billingData.payment_status,
+            billingData.transaction_id,
+            billingData.payment_gateway,
+            billingData.paid_at
+          ]);
+
+          logger.info(`Billing record created for appointment ${appointment.id}: ${invoiceNumber}`);
+        } catch (billingError) {
+          logger.error('Error creating billing record:', billingError);
+          // Continue with appointment booking even if billing fails
+        }
+      }
 
       res.status(201).json({
         success: true,
@@ -421,6 +486,9 @@ class PatientController {
           appointment,
           queueNumber: appointment.queue_number,
           isEmergency: appointment.is_emergency,
+          paymentStatus: paymentStatus,
+          paymentMethod: paymentMethod,
+          consultationFee: doctorInfo.consultation_fee || 0,
           message: isEmergency 
             ? `Emergency appointment booked. Your emergency number is ${appointment.queue_number}`
             : `Appointment booked. Your queue number is ${appointment.queue_number}`
@@ -434,10 +502,11 @@ class PatientController {
     }
   }
 
-  // Get patient's queue position
+  // Get patient's queue position (enhanced with paid-only filtering when queue is active)
   static async getQueuePosition(req, res, next) {
     try {
       const { doctorId, date } = req.query;
+      
       const patient = await Patient.findByUserId(req.user.id);
       
       if (!patient) {
@@ -447,23 +516,224 @@ class PatientController {
         });
       }
 
-      const position = await Appointment.getPatientQueuePosition(
-        patient.id, 
-        doctorId, 
-        date
-      );
+      // Use current date if not provided
+      const queueDate = date || new Date().toISOString().split('T')[0];
 
-      if (!position) {
-        return res.status(404).json({
-          success: false,
-          message: 'No appointment found for this date'
+      const { mysqlConnection } = require('../config/mysql');
+      
+      if (doctorId) {
+        // Get appointment for specific doctor with enhanced queue logic
+        
+        // First get the appointment and queue status
+        const appointmentQuery = `
+          SELECT 
+            a.*,
+            u.name as doctor_name,
+            d.specialty
+          FROM appointments a
+          JOIN doctors d ON a.doctor_id = d.id
+          JOIN users u ON d.user_id = u.id
+          WHERE a.patient_id = ? AND a.doctor_id = ? AND a.queue_date = ?
+        `;
+        
+        const [appointment] = await mysqlConnection.query(appointmentQuery, [patient.id, doctorId, queueDate]);
+
+        if (!appointment) {
+          return res.status(404).json({
+            success: false,
+            message: 'No appointment found for this date and doctor'
+          });
+        }
+
+        // Get queue status to check if active
+        const queueStatusQuery = `
+          SELECT * FROM queue_status 
+          WHERE doctor_id = ? AND queue_date = ?
+        `;
+        
+        const [queueStatus] = await mysqlConnection.query(queueStatusQuery, [doctorId, queueDate]);
+        
+        const isQueueActive = queueStatus && queueStatus.is_active;
+        
+        // Calculate position based on queue active status
+        let positionQuery, positionParams;
+        
+        if (isQueueActive) {
+          // Count only paid patients ahead in active queue
+          if (appointment.is_emergency) {
+            positionQuery = `
+              SELECT COUNT(*) as position
+              FROM appointments 
+              WHERE doctor_id = ? 
+                AND queue_date = ? 
+                AND is_emergency = TRUE 
+                AND payment_status = 'paid'
+                AND status IN ('pending', 'in-progress')
+                AND CAST(SUBSTRING(queue_number, 2) AS UNSIGNED) < CAST(SUBSTRING(?, 2) AS UNSIGNED)
+            `;
+            positionParams = [doctorId, queueDate, appointment.queue_number];
+          } else {
+            // For regular patients, also need to count emergency patients ahead
+            const emergencyCountQuery = `
+              SELECT COUNT(*) as emergency_count
+              FROM appointments 
+              WHERE doctor_id = ? 
+                AND queue_date = ? 
+                AND is_emergency = TRUE 
+                AND payment_status = 'paid'
+                AND status IN ('pending', 'in-progress')
+            `;
+            
+            const [emergencyCount] = await mysqlConnection.query(emergencyCountQuery, [doctorId, queueDate]);
+            
+            positionQuery = `
+              SELECT COUNT(*) as position
+              FROM appointments 
+              WHERE doctor_id = ? 
+                AND queue_date = ? 
+                AND is_emergency = FALSE 
+                AND payment_status = 'paid'
+                AND status IN ('pending', 'in-progress')
+                AND CAST(queue_number AS UNSIGNED) < CAST(? AS UNSIGNED)
+            `;
+            positionParams = [doctorId, queueDate, appointment.queue_number];
+            
+            // Add emergency patients to position
+            const [regularPosition] = await mysqlConnection.query(positionQuery, positionParams);
+            const totalPosition = emergencyCount.emergency_count + regularPosition.position;
+            
+            return res.json({
+              success: true,
+              data: {
+                queueNumber: appointment.queue_number,
+                isEmergency: appointment.is_emergency,
+                status: appointment.status,
+                paymentStatus: appointment.payment_status,
+                position: appointment.payment_status === 'paid' ? totalPosition + 1 : null,
+                doctorId: appointment.doctor_id,
+                doctorName: appointment.doctor_name,
+                specialty: appointment.specialty,
+                queueActive: isQueueActive,
+                currentlyServing: totalPosition === 0 && appointment.payment_status === 'paid',
+                nextPatient: totalPosition === 0 && appointment.payment_status === 'paid',
+                message: appointment.payment_status !== 'paid' 
+                  ? 'Please complete payment to join the active queue'
+                  : totalPosition === 0 ? 'You are next!' : `${totalPosition + 1} patients ahead of you`
+              }
+            });
+          }
+        } else {
+          // Queue not active - show traditional position among all patients
+          positionQuery = `
+            SELECT COUNT(*) as position
+            FROM appointments 
+            WHERE doctor_id = ? 
+              AND queue_date = ? 
+              AND queue_number < ?
+              AND status IN ('pending', 'scheduled', 'confirmed', 'in-progress')
+          `;
+          positionParams = [doctorId, queueDate, appointment.queue_number];
+        }
+
+        const [positionResult] = await mysqlConnection.query(positionQuery, positionParams);
+        const position = positionResult.position;
+
+        // For emergency patients in active queue
+        if (isQueueActive && appointment.is_emergency) {
+          return res.json({
+            success: true,
+            data: {
+              queueNumber: appointment.queue_number,
+              isEmergency: appointment.is_emergency,
+              status: appointment.status,
+              paymentStatus: appointment.payment_status,
+              position: appointment.payment_status === 'paid' ? position + 1 : null,
+              doctorId: appointment.doctor_id,
+              doctorName: appointment.doctor_name,
+              specialty: appointment.specialty,
+              queueActive: isQueueActive,
+              currentlyServing: position === 0 && appointment.payment_status === 'paid',
+              nextPatient: position === 0 && appointment.payment_status === 'paid',
+              message: appointment.payment_status !== 'paid' 
+                ? 'Please complete payment to join the active queue'
+                : position === 0 ? 'You are next!' : `${position + 1} emergency patients ahead of you`
+            }
+          });
+        }
+
+        // Standard response for inactive queue or regular patients
+        res.json({
+          success: true,
+          data: {
+            queueNumber: appointment.queue_number,
+            isEmergency: appointment.is_emergency,
+            status: appointment.status,
+            paymentStatus: appointment.payment_status,
+            position: position + 1,
+            doctorId: appointment.doctor_id,
+            doctorName: appointment.doctor_name,
+            specialty: appointment.specialty,
+            queueActive: isQueueActive,
+            currentlyServing: position === 0,
+            nextPatient: position === 0,
+            message: !isQueueActive 
+              ? 'Doctor has not started the queue yet'
+              : appointment.payment_status !== 'paid' 
+                ? 'Please complete payment to join the active queue'
+                : position === 0 ? 'You are next!' : `${position + 1} patients ahead of you`
+          }
+        });
+
+      } else {
+        // Get appointments for all doctors (fallback to original logic)
+        const query = `
+          SELECT 
+            a.queue_number,
+            a.is_emergency,
+            a.status,
+            a.payment_status,
+            a.doctor_id,
+            u.name as doctor_name,
+            d.specialty,
+            (SELECT COUNT(*) FROM appointments a2 
+             WHERE a2.doctor_id = a.doctor_id 
+             AND a2.queue_date = a.queue_date 
+             AND a2.queue_number < a.queue_number
+             AND a2.status IN ('scheduled', 'confirmed', 'in-progress')) as position
+          FROM appointments a
+          JOIN doctors d ON a.doctor_id = d.id
+          JOIN users u ON d.user_id = u.id
+          WHERE a.patient_id = ? AND a.queue_date = ?
+          ORDER BY a.is_emergency DESC, a.queue_number ASC
+        `;
+        
+        const appointments = await mysqlConnection.query(query, [patient.id, queueDate]);
+
+        if (!appointments || appointments.length === 0) {
+          return res.status(404).json({
+            success: false,
+            message: 'No appointments found for this date'
+          });
+        }
+
+        // Format response for multiple appointments
+        const formattedAppointments = appointments.map(apt => ({
+          queueNumber: apt.queue_number,
+          isEmergency: apt.is_emergency,
+          status: apt.status,
+          paymentStatus: apt.payment_status,
+          position: apt.position + 1,
+          doctorId: apt.doctor_id,
+          doctorName: apt.doctor_name,
+          specialty: apt.specialty,
+          currentlyServing: apt.position === 0
+        }));
+
+        res.json({
+          success: true,
+          data: formattedAppointments
         });
       }
-
-      res.json({
-        success: true,
-        data: position
-      });
     } catch (error) {
       logger.error('Error getting queue position:', error);
       next(error);
@@ -483,6 +753,243 @@ class PatientController {
       });
     } catch (error) {
       logger.error('Error getting doctor queue status:', error);
+      next(error);
+    }
+  }
+
+  // Get next patient notification - tells patient if they are next or should be ready
+  static async getNextPatientNotification(req, res, next) {
+    try {
+      const { doctorId, date } = req.query;
+      
+      const patient = await Patient.findByUserId(req.user.id);
+      
+      if (!patient) {
+        return res.status(404).json({
+          success: false,
+          message: 'Patient profile not found'
+        });
+      }
+
+      const queueDate = date || new Date().toISOString().split('T')[0];
+      const { mysqlConnection } = require('../config/mysql');
+
+      // Get patient's appointment
+      const appointmentQuery = `
+        SELECT 
+          a.*,
+          u.name as doctor_name,
+          d.specialty
+        FROM appointments a
+        JOIN doctors d ON a.doctor_id = d.id
+        JOIN users u ON d.user_id = u.id
+        WHERE a.patient_id = ? AND a.doctor_id = ? AND a.queue_date = ?
+      `;
+      
+      const [appointment] = await mysqlConnection.query(appointmentQuery, [patient.id, doctorId, queueDate]);
+
+      if (!appointment) {
+        return res.status(404).json({
+          success: false,
+          message: 'No appointment found for this date and doctor'
+        });
+      }
+
+      // Check if patient has paid
+      if (appointment.payment_status !== 'paid') {
+        return res.json({
+          success: true,
+          data: {
+            status: 'payment_required',
+            message: 'Please complete payment to join the queue',
+            appointment: {
+              queueNumber: appointment.queue_number,
+              isEmergency: appointment.is_emergency,
+              doctorName: appointment.doctor_name,
+              specialty: appointment.specialty,
+              paymentStatus: appointment.payment_status
+            }
+          }
+        });
+      }
+
+      // Get queue status
+      const queueStatusQuery = `
+        SELECT * FROM queue_status 
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
+      
+      const [queueStatus] = await mysqlConnection.query(queueStatusQuery, [doctorId, queueDate]);
+
+      if (!queueStatus || !queueStatus.is_active) {
+        return res.json({
+          success: true,
+          data: {
+            status: 'queue_not_active',
+            message: 'Doctor has not started the queue yet',
+            appointment: {
+              queueNumber: appointment.queue_number,
+              isEmergency: appointment.is_emergency,
+              doctorName: appointment.doctor_name,
+              specialty: appointment.specialty
+            }
+          }
+        });
+      }
+
+      // Get current position among paid patients only
+      const currentNumber = queueStatus.current_number || '0';
+      const currentEmergencyNumber = queueStatus.current_emergency_number || 'E0';
+
+      let positionQuery, positionParams;
+      let nextPatientQuery, nextPatientParams;
+
+      if (appointment.is_emergency) {
+        // For emergency patients
+        const patientNumber = parseInt(appointment.queue_number.substring(1));
+        const currentEmergencyNum = parseInt(currentEmergencyNumber.substring(1));
+
+        if (patientNumber <= currentEmergencyNum) {
+          // Patient's turn has passed or is current
+          return res.json({
+            success: true,
+            data: {
+              status: appointment.status === 'completed' ? 'completed' : 'current_or_missed',
+              message: appointment.status === 'completed' 
+                ? 'Your consultation is completed' 
+                : 'Your turn is now or has passed. Please check with the doctor.',
+              appointment: {
+                queueNumber: appointment.queue_number,
+                isEmergency: appointment.is_emergency,
+                doctorName: appointment.doctor_name,
+                status: appointment.status
+              }
+            }
+          });
+        }
+
+        // Count emergency patients ahead who are paid
+        positionQuery = `
+          SELECT COUNT(*) as position
+          FROM appointments 
+          WHERE doctor_id = ? 
+            AND queue_date = ? 
+            AND is_emergency = TRUE 
+            AND payment_status = 'paid'
+            AND CAST(SUBSTRING(queue_number, 2) AS UNSIGNED) > CAST(SUBSTRING(?, 2) AS UNSIGNED)
+            AND CAST(SUBSTRING(queue_number, 2) AS UNSIGNED) < ?
+        `;
+        positionParams = [doctorId, queueDate, currentEmergencyNumber, patientNumber];
+
+        // Check if this patient is next emergency
+        nextPatientQuery = `
+          SELECT MIN(CAST(SUBSTRING(queue_number, 2) AS UNSIGNED)) as next_number
+          FROM appointments 
+          WHERE doctor_id = ? 
+            AND queue_date = ? 
+            AND is_emergency = TRUE 
+            AND payment_status = 'paid'
+            AND status IN ('pending', 'in-progress')
+            AND CAST(SUBSTRING(queue_number, 2) AS UNSIGNED) > CAST(SUBSTRING(?, 2) AS UNSIGNED)
+        `;
+        nextPatientParams = [doctorId, queueDate, currentEmergencyNumber];
+
+      } else {
+        // For regular patients
+        const patientNumber = parseInt(appointment.queue_number);
+        const currentRegularNum = parseInt(currentNumber);
+
+        if (patientNumber <= currentRegularNum) {
+          // Patient's turn has passed or is current
+          return res.json({
+            success: true,
+            data: {
+              status: appointment.status === 'completed' ? 'completed' : 'current_or_missed',
+              message: appointment.status === 'completed' 
+                ? 'Your consultation is completed' 
+                : 'Your turn is now or has passed. Please check with the doctor.',
+              appointment: {
+                queueNumber: appointment.queue_number,
+                isEmergency: appointment.is_emergency,
+                doctorName: appointment.doctor_name,
+                status: appointment.status
+              }
+            }
+          });
+        }
+
+        // Count regular patients ahead who are paid
+        positionQuery = `
+          SELECT COUNT(*) as position
+          FROM appointments 
+          WHERE doctor_id = ? 
+            AND queue_date = ? 
+            AND is_emergency = FALSE 
+            AND payment_status = 'paid'
+            AND CAST(queue_number AS UNSIGNED) > ?
+            AND CAST(queue_number AS UNSIGNED) < ?
+        `;
+        positionParams = [doctorId, queueDate, currentRegularNum, patientNumber];
+
+        // Check if this patient is next regular (after all emergency patients)
+        nextPatientQuery = `
+          SELECT MIN(CAST(queue_number AS UNSIGNED)) as next_number
+          FROM appointments 
+          WHERE doctor_id = ? 
+            AND queue_date = ? 
+            AND is_emergency = FALSE 
+            AND payment_status = 'paid'
+            AND status IN ('pending', 'in-progress')
+            AND CAST(queue_number AS UNSIGNED) > ?
+        `;
+        nextPatientParams = [doctorId, queueDate, currentRegularNum];
+      }
+
+      const [positionResult] = await mysqlConnection.query(positionQuery, positionParams);
+      const [nextPatientResult] = await mysqlConnection.query(nextPatientQuery, nextPatientParams);
+
+      const position = positionResult.position + 1; // Add 1 because position 0 means current
+      const isNext = appointment.is_emergency 
+        ? nextPatientResult.next_number === parseInt(appointment.queue_number.substring(1))
+        : nextPatientResult.next_number === parseInt(appointment.queue_number);
+
+      // Generate appropriate notification message
+      let status, message;
+      
+      if (isNext) {
+        status = 'be_ready';
+        message = 'BE READY! You are next in line. Please prepare for your consultation.';
+      } else if (position <= 2) {
+        status = 'prepare';
+        message = `You are ${position === 1 ? 'next' : `${position} patients away`}. Please prepare.`;
+      } else {
+        status = 'waiting';
+        message = `You are ${position} patients away from your turn.`;
+      }
+
+      res.json({
+        success: true,
+        data: {
+          status,
+          message,
+          position,
+          isNext,
+          appointment: {
+            queueNumber: appointment.queue_number,
+            isEmergency: appointment.is_emergency,
+            doctorName: appointment.doctor_name,
+            specialty: appointment.specialty,
+            status: appointment.status
+          },
+          queueInfo: {
+            currentNumber: appointment.is_emergency ? currentEmergencyNumber : currentNumber,
+            isActive: queueStatus.is_active
+          }
+        }
+      });
+
+    } catch (error) {
+      logger.error('Error getting patient notification:', error);
       next(error);
     }
   }
