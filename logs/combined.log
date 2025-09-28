@@ -15595,3 +15595,95 @@
 2025-09-28 22:16:15 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:46:15 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
 2025-09-28 22:18:56 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:48:56 +0000] "POST /api/mock/patients HTTP/1.1" 201 497 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
 2025-09-28 22:18:56 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:48:56 +0000] "GET /api/mock/patients?page=1&limit=20&search=&status=active HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:20:29 [INFO]: Token decoded successfully
+2025-09-28 22:20:29 [INFO]: Querying user from database
+2025-09-28 22:20:29 [INFO]: Token decoded successfully
+2025-09-28 22:20:29 [INFO]: Querying user from database
+2025-09-28 22:20:29 [INFO]: User found
+2025-09-28 22:20:29 [INFO]: Authorization check
+2025-09-28 22:20:29 [INFO]: Authorization successful
+2025-09-28 22:20:29 [INFO]: Token decoded successfully
+2025-09-28 22:20:29 [INFO]: Querying user from database
+2025-09-28 22:20:30 [INFO]: User found
+2025-09-28 22:20:30 [INFO]: Authorization check
+2025-09-28 22:20:30 [INFO]: Authorization successful
+2025-09-28 22:20:30 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: ede90886-3c4f-4765-a6ec-272f832ef06d
+2025-09-28 22:20:30 [INFO]: ✅ [ADMIN] Retrieved 9 patient submissions
+2025-09-28 22:20:30 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:50:30 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:20:32 [INFO]: User found
+2025-09-28 22:20:32 [INFO]: Authorization check
+2025-09-28 22:20:32 [INFO]: Authorization successful
+2025-09-28 22:20:32 [INFO]: Token decoded successfully
+2025-09-28 22:20:32 [INFO]: Querying user from database
+2025-09-28 22:20:33 [INFO]: User found
+2025-09-28 22:20:33 [INFO]: Authorization check
+2025-09-28 22:20:33 [INFO]: Authorization successful
+2025-09-28 22:20:33 [INFO]: 📊 [ADMIN] Getting admin dashboard for: ede90886-3c4f-4765-a6ec-272f832ef06d
+2025-09-28 22:20:34 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2025-09-28 22:20:34 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:50:34 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:21:35 [INFO]: Socket.IO server initialized
+2025-09-28 22:21:36 [INFO]: ✅ MySQL database connected successfully
+2025-09-28 22:21:36 [INFO]: ✅ MySQL connected successfully
+2025-09-28 22:21:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 22:21:36 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-28 22:21:36 [INFO]: 📧 Notification service skipped for now
+2025-09-28 22:21:36 [INFO]: 🚀 Server running on port 5000
+2025-09-28 22:21:36 [INFO]: 📊 Environment: development
+2025-09-28 22:21:36 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-28 22:21:36 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-28 22:21:36 [INFO]: Token decoded successfully
+2025-09-28 22:21:36 [INFO]: Querying user from database
+2025-09-28 22:21:36 [INFO]: Token decoded successfully
+2025-09-28 22:21:36 [INFO]: Querying user from database
+2025-09-28 22:21:36 [INFO]: Token decoded successfully
+2025-09-28 22:21:36 [INFO]: Querying user from database
+2025-09-28 22:21:37 [INFO]: User found
+2025-09-28 22:21:37 [INFO]: Authorization check
+2025-09-28 22:21:37 [INFO]: Authorization successful
+2025-09-28 22:21:37 [INFO]: Token decoded successfully
+2025-09-28 22:21:37 [INFO]: Querying user from database
+2025-09-28 22:21:37 [INFO]: User found
+2025-09-28 22:21:37 [INFO]: Authorization check
+2025-09-28 22:21:37 [INFO]: Authorization successful
+2025-09-28 22:21:37 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: ede90886-3c4f-4765-a6ec-272f832ef06d
+2025-09-28 22:21:37 [INFO]: ✅ [ADMIN] Retrieved 9 patient submissions
+2025-09-28 22:21:37 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:51:37 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:21:37 [INFO]: User found
+2025-09-28 22:21:37 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:51:37 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:21:38 [INFO]: Token decoded successfully
+2025-09-28 22:21:38 [INFO]: Querying user from database
+2025-09-28 22:21:38 [INFO]: User found
+2025-09-28 22:21:38 [INFO]: Authorization check
+2025-09-28 22:21:38 [INFO]: Authorization successful
+2025-09-28 22:21:38 [INFO]: Token decoded successfully
+2025-09-28 22:21:38 [INFO]: Querying user from database
+2025-09-28 22:21:38 [INFO]: User found
+2025-09-28 22:21:38 [INFO]: Authorization check
+2025-09-28 22:21:38 [INFO]: Authorization successful
+2025-09-28 22:21:38 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: ede90886-3c4f-4765-a6ec-272f832ef06d
+2025-09-28 22:21:38 [INFO]: ✅ [ADMIN] Retrieved 9 patient submissions
+2025-09-28 22:21:38 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:51:38 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:21:39 [INFO]: User found
+2025-09-28 22:21:39 [INFO]: Authorization check
+2025-09-28 22:21:39 [INFO]: Authorization successful
+2025-09-28 22:21:39 [INFO]: Token decoded successfully
+2025-09-28 22:21:39 [INFO]: Querying user from database
+2025-09-28 22:21:39 [INFO]: User found
+2025-09-28 22:21:39 [INFO]: Authorization check
+2025-09-28 22:21:39 [INFO]: Authorization successful
+2025-09-28 22:21:39 [INFO]: 📊 [ADMIN] Getting admin dashboard for: ede90886-3c4f-4765-a6ec-272f832ef06d
+2025-09-28 22:21:41 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2025-09-28 22:21:41 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:51:41 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
+2025-09-28 22:21:41 [INFO]: Token decoded successfully
+2025-09-28 22:21:41 [INFO]: Querying user from database
+2025-09-28 22:21:42 [INFO]: User found
+2025-09-28 22:21:42 [INFO]: Authorization check
+2025-09-28 22:21:42 [INFO]: Authorization successful
+2025-09-28 22:21:42 [INFO]: Token decoded successfully
+2025-09-28 22:21:42 [INFO]: Querying user from database
+2025-09-28 22:21:42 [INFO]: User found
+2025-09-28 22:21:42 [INFO]: Authorization check
+2025-09-28 22:21:42 [INFO]: Authorization successful
+2025-09-28 22:21:42 [INFO]: 📊 [ADMIN] Getting admin dashboard for: ede90886-3c4f-4765-a6ec-272f832ef06d
+2025-09-28 22:21:43 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2025-09-28 22:21:43 [INFO]: ::ffff:127.0.0.1 - - [28/Sep/2025:16:51:43 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0"
