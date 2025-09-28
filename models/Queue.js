@@ -27,15 +27,19 @@ class Queue {
   }
 
   // Get current queue for a doctor with all appointments
-  static async getDoctorQueue(doctorId, date = null) {
+  static async getDoctorQueue(doctorId, date = null, onlyPaid = null) {
     const queueDate = date || new Date().toISOString().split('T')[0];
     
     try {
       // Get queue status
       const queueStatus = await this.getQueueStatus(doctorId, queueDate);
       
-      // Get all appointments in queue
-      const appointmentsQuery = `
+      // Determine if we should filter by paid patients only
+      // If onlyPaid is explicitly set, use that. Otherwise, use queue active status
+      const filterPaidOnly = onlyPaid !== null ? onlyPaid : (queueStatus && queueStatus.is_active);
+      
+      // Build appointments query with conditional payment filter
+      let appointmentsQuery = `
         SELECT 
           a.*,
           u.name as patient_name,
@@ -46,6 +50,14 @@ class Queue {
         JOIN patients p ON a.patient_id = p.id
         JOIN users u ON p.user_id = u.id
         WHERE a.doctor_id = ? AND a.queue_date = ?
+      `;
+      
+      // Add payment filter if queue is active
+      if (filterPaidOnly) {
+        appointmentsQuery += ` AND a.payment_status = 'paid'`;
+      }
+      
+      appointmentsQuery += `
         ORDER BY 
           a.is_emergency DESC,
           CASE 
@@ -56,20 +68,38 @@ class Queue {
       
       const appointments = await mysqlConnection.query(appointmentsQuery, [doctorId, queueDate]);
       
+      // Get all appointments for statistics (regardless of payment status)
+      const allAppointmentsQuery = `
+        SELECT * FROM appointments 
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
+      const allAppointments = await mysqlConnection.query(allAppointmentsQuery, [doctorId, queueDate]);
+      
       return {
         queueStatus,
-        appointments,
-        totalPatients: appointments.length,
-        emergencyPatients: appointments.filter(a => a.is_emergency).length,
-        regularPatients: appointments.filter(a => !a.is_emergency).length,
-        pending: appointments.filter(a => a.status === 'pending').length,
-        inProgress: appointments.filter(a => a.status === 'in-progress').length,
-        completed: appointments.filter(a => a.status === 'completed').length,
-        // Payment statistics
-        paidAppointments: appointments.filter(a => a.payment_status === 'paid').length,
-        unpaidAppointments: appointments.filter(a => a.payment_status === 'unpaid').length,
-        partiallyPaidAppointments: appointments.filter(a => a.payment_status === 'partially_paid').length,
-        refundedAppointments: appointments.filter(a => a.payment_status === 'refunded').length
+        appointments, // Filtered appointments (paid only if queue is active)
+        allAppointments, // All appointments for complete statistics
+        isFiltered: filterPaidOnly,
+        totalPatients: allAppointments.length,
+        displayedPatients: appointments.length, // Patients currently shown (paid only if filtered)
+        emergencyPatients: allAppointments.filter(a => a.is_emergency).length,
+        regularPatients: allAppointments.filter(a => !a.is_emergency).length,
+        pending: allAppointments.filter(a => a.status === 'pending').length,
+        inProgress: allAppointments.filter(a => a.status === 'in-progress').length,
+        completed: allAppointments.filter(a => a.status === 'completed').length,
+        // Payment statistics (from all appointments)
+        paidAppointments: allAppointments.filter(a => a.payment_status === 'paid').length,
+        unpaidAppointments: allAppointments.filter(a => a.payment_status === 'unpaid').length,
+        partiallyPaidAppointments: allAppointments.filter(a => a.payment_status === 'partially_paid').length,
+        refundedAppointments: allAppointments.filter(a => a.payment_status === 'refunded').length,
+        // Filtered statistics (from displayed appointments)
+        filteredStats: {
+          pending: appointments.filter(a => a.status === 'pending').length,
+          inProgress: appointments.filter(a => a.status === 'in-progress').length,
+          completed: appointments.filter(a => a.status === 'completed').length,
+          emergency: appointments.filter(a => a.is_emergency).length,
+          regular: appointments.filter(a => !a.is_emergency).length
+        }
       };
     } catch (error) {
       logger.error('Error fetching doctor queue:', error);
@@ -403,6 +433,127 @@ class Queue {
       };
     } catch (error) {
       logger.error('Error getting queue summary:', error);
+      throw error;
+    }
+  }
+
+  // Get next paid patient in queue (emergency first, then regular)
+  static async getNextPaidPatient(doctorId, date = null) {
+    const queueDate = date || new Date().toISOString().split('T')[0];
+    
+    try {
+      // Get queue status to check if active
+      const queueStatus = await this.getQueueStatus(doctorId, queueDate);
+      
+      if (!queueStatus || !queueStatus.is_active) {
+        return {
+          success: false,
+          message: 'Queue is not active'
+        };
+      }
+
+      // Get current numbers being served
+      const currentNumber = queueStatus.current_number || '0';
+      const currentEmergencyNumber = queueStatus.current_emergency_number || 'E0';
+
+      // First, look for next emergency patient (paid and pending/in-progress)
+      const emergencyQuery = `
+        SELECT 
+          a.*,
+          u.name as patient_name,
+          u.phone as patient_phone,
+          p.date_of_birth,
+          TIMESTAMPDIFF(YEAR, p.date_of_birth, CURDATE()) as patient_age
+        FROM appointments a
+        JOIN patients p ON a.patient_id = p.id
+        JOIN users u ON p.user_id = u.id
+        WHERE a.doctor_id = ? 
+          AND a.queue_date = ?
+          AND a.is_emergency = TRUE
+          AND a.payment_status = 'paid'
+          AND a.status IN ('scheduled', 'confirmed', 'in-progress')
+          AND CAST(SUBSTRING(a.queue_number, 2) AS UNSIGNED) > CAST(SUBSTRING(?, 2) AS UNSIGNED)
+        ORDER BY CAST(SUBSTRING(a.queue_number, 2) AS UNSIGNED) ASC
+        LIMIT 1
+      `;
+      
+      const [emergencyPatient] = await mysqlConnection.query(emergencyQuery, [doctorId, queueDate, currentEmergencyNumber]);
+
+      if (emergencyPatient) {
+        return {
+          success: true,
+          type: 'emergency',
+          patient: emergencyPatient
+        };
+      }
+
+      // If no emergency patient, look for next regular patient (paid and pending/in-progress)
+      const regularQuery = `
+        SELECT 
+          a.*,
+          u.name as patient_name,
+          u.phone as patient_phone,
+          p.date_of_birth,
+          TIMESTAMPDIFF(YEAR, p.date_of_birth, CURDATE()) as patient_age
+        FROM appointments a
+        JOIN patients p ON a.patient_id = p.id
+        JOIN users u ON p.user_id = u.id
+        WHERE a.doctor_id = ? 
+          AND a.queue_date = ?
+          AND a.is_emergency = FALSE
+          AND a.payment_status = 'paid'
+          AND a.status IN ('scheduled', 'confirmed', 'in-progress')
+          AND CAST(a.queue_number AS UNSIGNED) > CAST(? AS UNSIGNED)
+        ORDER BY CAST(a.queue_number AS UNSIGNED) ASC
+        LIMIT 1
+      `;
+      
+      const [regularPatient] = await mysqlConnection.query(regularQuery, [doctorId, queueDate, currentNumber]);
+
+      if (regularPatient) {
+        return {
+          success: true,
+          type: 'regular',
+          patient: regularPatient
+        };
+      }
+
+      return {
+        success: false,
+        message: 'No more paid patients in queue'
+      };
+    } catch (error) {
+      logger.error('Error getting next paid patient:', error);
+      throw error;
+    }
+  }
+
+  // Advance queue to next paid patient and update current number
+  static async advanceToNextPaidPatient(doctorId, date = null) {
+    const queueDate = date || new Date().toISOString().split('T')[0];
+    
+    try {
+      const nextPatient = await this.getNextPaidPatient(doctorId, queueDate);
+      
+      if (!nextPatient.success) {
+        return nextPatient;
+      }
+
+      const patient = nextPatient.patient;
+      const isEmergency = patient.is_emergency;
+      
+      // Update current number in queue_status
+      await this.updateCurrentNumber(doctorId, patient.queue_number, isEmergency, queueDate);
+      
+      return {
+        success: true,
+        message: 'Queue advanced to next paid patient',
+        patient: patient,
+        type: nextPatient.type,
+        currentNumber: patient.queue_number
+      };
+    } catch (error) {
+      logger.error('Error advancing queue to next paid patient:', error);
       throw error;
     }
   }

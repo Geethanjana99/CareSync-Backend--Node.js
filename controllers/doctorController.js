@@ -715,10 +715,11 @@ class DoctorController {
     }
   }
 
-  // Start consultation for next patient in queue
+  // Start consultation for next patient in queue (paid patients only)
   static async startNextConsultation(req, res, next) {
     try {
       const { appointmentId } = req.params;
+      const { date } = req.body;
       const doctor = await Doctor.findByUserId(req.user.id);
       
       if (!doctor) {
@@ -728,27 +729,75 @@ class DoctorController {
         });
       }
 
-      const appointment = await Appointment.findById(appointmentId);
-      if (!appointment || appointment.doctor_id !== doctor.id) {
-        return res.status(404).json({
-          success: false,
-          message: 'Appointment not found'
+      // If appointmentId is provided, start that specific appointment
+      if (appointmentId && appointmentId !== 'auto') {
+        const appointment = await Appointment.findById(appointmentId);
+        if (!appointment || appointment.doctor_id !== doctor.id) {
+          return res.status(404).json({
+            success: false,
+            message: 'Appointment not found'
+          });
+        }
+
+        // Check if patient has paid
+        if (appointment.payment_status !== 'paid') {
+          return res.status(400).json({
+            success: false,
+            message: 'Cannot start consultation for unpaid appointment'
+          });
+        }
+
+        // Update appointment status to in-progress and advance queue
+        const updatedAppointment = await Appointment.updateAppointmentStatus(
+          appointmentId, 
+          'in-progress'
+        );
+
+        // Update queue current number
+        await Queue.updateCurrentNumber(
+          doctor.id, 
+          appointment.queue_number, 
+          appointment.is_emergency, 
+          date
+        );
+
+        res.json({
+          success: true,
+          message: 'Consultation started',
+          data: updatedAppointment
         });
+
+        logger.info(`Consultation started for appointment: ${appointmentId}`);
+      } else {
+        // Auto-advance to next paid patient
+        const nextPatient = await Queue.advanceToNextPaidPatient(doctor.id, date);
+        
+        if (!nextPatient.success) {
+          return res.status(404).json({
+            success: false,
+            message: nextPatient.message
+          });
+        }
+
+        // Start consultation for the next paid patient
+        const updatedAppointment = await Appointment.updateAppointmentStatus(
+          nextPatient.patient.id, 
+          'in-progress'
+        );
+
+        res.json({
+          success: true,
+          message: 'Started consultation with next paid patient',
+          data: {
+            appointment: updatedAppointment,
+            patient: nextPatient.patient,
+            type: nextPatient.type,
+            queueNumber: nextPatient.currentNumber
+          }
+        });
+
+        logger.info(`Auto-started consultation for next paid patient: ${nextPatient.patient.id}`);
       }
-
-      // Update appointment status to in-progress
-      const updatedAppointment = await Appointment.updateAppointmentStatus(
-        appointmentId, 
-        'in-progress'
-      );
-
-      res.json({
-        success: true,
-        message: 'Consultation started',
-        data: updatedAppointment
-      });
-
-      logger.info(`Consultation started for appointment: ${appointmentId}`);
     } catch (error) {
       logger.error('Error starting consultation:', error);
       next(error);
@@ -1400,6 +1449,220 @@ class DoctorController {
       });
     } catch (error) {
       logger.error('Error updating payment status:', error);
+      next(error);
+    }
+  }
+
+  // Start queue for the day - activate queue processing
+  static async startQueue(req, res, next) {
+    try {
+      const { date } = req.body;
+      const queueDate = date || new Date().toISOString().split('T')[0];
+      
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Check if queue already exists and is active
+      const checkQuery = `
+        SELECT * FROM queue_status 
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
+      
+      const [existingQueue] = await mysqlConnection.query(checkQuery, [doctor.id, queueDate]);
+      
+      if (existingQueue && existingQueue.is_active) {
+        return res.status(400).json({
+          success: false,
+          message: 'Queue is already active for this date'
+        });
+      }
+
+      // Create or update queue status to active
+      if (existingQueue) {
+        const updateQuery = `
+          UPDATE queue_status 
+          SET is_active = TRUE, updated_at = NOW()
+          WHERE doctor_id = ? AND queue_date = ?
+        `;
+        await mysqlConnection.query(updateQuery, [doctor.id, queueDate]);
+      } else {
+        // Create new queue status
+        const createQuery = `
+          INSERT INTO queue_status (
+            doctor_id, queue_date, is_active, current_number, 
+            current_emergency_number, available_from, available_to
+          ) VALUES (?, ?, TRUE, '0', 'E0', '09:00:00', '17:00:00')
+        `;
+        await mysqlConnection.query(createQuery, [doctor.id, queueDate]);
+      }
+
+      // Get paid appointments count for today
+      const paidCountQuery = `
+        SELECT COUNT(*) as paidCount
+        FROM appointments 
+        WHERE doctor_id = ? AND queue_date = ? AND payment_status = 'paid'
+      `;
+      
+      const [countResult] = await mysqlConnection.query(paidCountQuery, [doctor.id, queueDate]);
+
+      logger.info(`Queue started for doctor ${doctor.id} on ${queueDate}`);
+
+      res.json({
+        success: true,
+        message: 'Queue started successfully',
+        data: {
+          doctorId: doctor.id,
+          queueDate,
+          isActive: true,
+          paidPatientsCount: countResult.paidCount,
+          startedAt: new Date()
+        }
+      });
+    } catch (error) {
+      logger.error('Error starting queue:', error);
+      next(error);
+    }
+  }
+
+  // Stop queue for the day - deactivate queue processing
+  static async stopQueue(req, res, next) {
+    try {
+      const { date } = req.body;
+      const queueDate = date || new Date().toISOString().split('T')[0];
+      
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Check if queue exists and is active
+      const checkQuery = `
+        SELECT * FROM queue_status 
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
+      
+      const [existingQueue] = await mysqlConnection.query(checkQuery, [doctor.id, queueDate]);
+      
+      if (!existingQueue) {
+        return res.status(404).json({
+          success: false,
+          message: 'No queue found for this date'
+        });
+      }
+
+      if (!existingQueue.is_active) {
+        return res.status(400).json({
+          success: false,
+          message: 'Queue is already stopped'
+        });
+      }
+
+      // Update queue status to inactive
+      const updateQuery = `
+        UPDATE queue_status 
+        SET is_active = FALSE, updated_at = NOW()
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
+      
+      await mysqlConnection.query(updateQuery, [doctor.id, queueDate]);
+
+      // Get completion statistics
+      const statsQuery = `
+        SELECT 
+          COUNT(*) as totalAppointments,
+          SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) as completedAppointments,
+          SUM(CASE WHEN payment_status = 'paid' AND status = 'completed' THEN 1 ELSE 0 END) as completedPaidAppointments
+        FROM appointments 
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
+      
+      const [stats] = await mysqlConnection.query(statsQuery, [doctor.id, queueDate]);
+
+      logger.info(`Queue stopped for doctor ${doctor.id} on ${queueDate}`);
+
+      res.json({
+        success: true,
+        message: 'Queue stopped successfully',
+        data: {
+          doctorId: doctor.id,
+          queueDate,
+          isActive: false,
+          stoppedAt: new Date(),
+          statistics: {
+            totalAppointments: stats.totalAppointments,
+            completedAppointments: stats.completedAppointments,
+            completedPaidAppointments: stats.completedPaidAppointments
+          }
+        }
+      });
+    } catch (error) {
+      logger.error('Error stopping queue:', error);
+      next(error);
+    }
+  }
+
+  // Get queue status - check if queue is active and get basic info
+  static async getQueueStatus(req, res, next) {
+    try {
+      const { date } = req.query;
+      const queueDate = date || new Date().toISOString().split('T')[0];
+      
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      const queueStatus = await Queue.getQueueStatus(doctor.id, queueDate);
+      
+      res.json({
+        success: true,
+        data: queueStatus || {
+          isActive: false,
+          message: 'No queue found for this date'
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching queue status:', error);
+      next(error);
+    }
+  }
+
+  // Get next paid patient in queue without starting consultation
+  static async getNextPaidPatient(req, res, next) {
+    try {
+      const { date } = req.query;
+      
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      const nextPatient = await Queue.getNextPaidPatient(doctor.id, date);
+      
+      res.json({
+        success: nextPatient.success,
+        message: nextPatient.message || 'Next paid patient retrieved',
+        data: nextPatient.success ? {
+          patient: nextPatient.patient,
+          type: nextPatient.type
+        } : null
+      });
+    } catch (error) {
+      logger.error('Error getting next paid patient:', error);
       next(error);
     }
   }

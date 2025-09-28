@@ -59,8 +59,8 @@ class Appointment {
         INSERT INTO appointments (
           id, appointment_id, patient_id, doctor_id, appointment_date,
           appointment_type, status, reason_for_visit, symptoms, priority,
-          notes, consultation_fee, queue_number, is_emergency, queue_date
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          notes, consultation_fee, payment_status, queue_number, is_emergency, queue_date
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
       // Ensure all required fields have values (no undefined)
@@ -77,6 +77,7 @@ class Appointment {
         appointment.priority || 'normal',
         appointment.notes || '',
         appointment.consultation_fee || 0,
+        appointment.payment_status || 'unpaid',
         appointment.queue_number,
         appointment.is_emergency ? 1 : 0,
         appointment.queue_date
@@ -173,8 +174,8 @@ class Appointment {
       INSERT INTO appointments (
         id, appointment_id, patient_id, doctor_id, appointment_date,
         appointment_type, status, reason_for_visit, symptoms, priority,
-        notes, consultation_fee, queue_number, is_emergency, queue_date
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        notes, consultation_fee, payment_status, queue_number, is_emergency, queue_date
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
     const params = [
@@ -190,6 +191,7 @@ class Appointment {
       this.priority || 'medium', 
       this.notes || null, 
       this.consultation_fee || null,
+      this.payment_status || 'unpaid',
       this.queue_number || null,
       this.is_emergency || false,
       this.queue_date || this.appointment_date
