@@ -4352,3 +4352,5 @@
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:483:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-09-29 16:58:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 23:41:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 23:50:17 [ERROR]: ❌ MongoDB connection failed:
