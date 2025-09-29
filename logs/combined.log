@@ -21666,3 +21666,323 @@
 2025-09-29 12:05:08 [INFO]: Authorization check
 2025-09-29 12:05:08 [INFO]: Authorization successful
 2025-09-29 12:05:08 [INFO]: ::1 - - [29/Sep/2025:06:35:08 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:05:45 [INFO]: Socket.IO server initialized
+2025-09-29 12:05:46 [INFO]: ✅ MySQL database connected successfully
+2025-09-29 12:05:46 [INFO]: ✅ MySQL connected successfully
+2025-09-29 12:05:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:05:46 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-29 12:05:46 [INFO]: 📧 Notification service skipped for now
+2025-09-29 12:05:46 [INFO]: 🚀 Server running on port 5000
+2025-09-29 12:05:46 [INFO]: 📊 Environment: development
+2025-09-29 12:05:46 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-29 12:05:46 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-29 12:06:07 [INFO]: Token decoded successfully
+2025-09-29 12:06:07 [INFO]: Querying user from database
+2025-09-29 12:06:07 [INFO]: User found
+2025-09-29 12:06:07 [INFO]: Authorization check
+2025-09-29 12:06:07 [INFO]: Authorization successful
+2025-09-29 12:06:08 [INFO]: ::1 - - [29/Sep/2025:06:36:08 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:06:08 [INFO]: Token decoded successfully
+2025-09-29 12:06:08 [INFO]: Querying user from database
+2025-09-29 12:06:08 [INFO]: User found
+2025-09-29 12:06:08 [INFO]: Authorization check
+2025-09-29 12:06:08 [INFO]: Authorization successful
+2025-09-29 12:06:08 [INFO]: ::1 - - [29/Sep/2025:06:36:08 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:07 [INFO]: Token decoded successfully
+2025-09-29 12:07:07 [INFO]: Querying user from database
+2025-09-29 12:07:08 [INFO]: User found
+2025-09-29 12:07:08 [INFO]: Authorization check
+2025-09-29 12:07:08 [INFO]: Authorization successful
+2025-09-29 12:07:08 [INFO]: ::1 - - [29/Sep/2025:06:37:08 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:08 [INFO]: Token decoded successfully
+2025-09-29 12:07:08 [INFO]: Querying user from database
+2025-09-29 12:07:08 [INFO]: User found
+2025-09-29 12:07:08 [INFO]: Authorization check
+2025-09-29 12:07:08 [INFO]: Authorization successful
+2025-09-29 12:07:14 [INFO]: Socket.IO server initialized
+2025-09-29 12:07:15 [INFO]: ✅ MySQL database connected successfully
+2025-09-29 12:07:15 [INFO]: ✅ MySQL connected successfully
+2025-09-29 12:07:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:07:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-29 12:07:15 [INFO]: 📧 Notification service skipped for now
+2025-09-29 12:07:15 [INFO]: 🚀 Server running on port 5000
+2025-09-29 12:07:15 [INFO]: 📊 Environment: development
+2025-09-29 12:07:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-29 12:07:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-29 12:07:17 [INFO]: Token decoded successfully
+2025-09-29 12:07:17 [INFO]: Querying user from database
+2025-09-29 12:07:17 [INFO]: Token decoded successfully
+2025-09-29 12:07:17 [INFO]: Querying user from database
+2025-09-29 12:07:18 [INFO]: User found
+2025-09-29 12:07:18 [INFO]: Authorization check
+2025-09-29 12:07:18 [INFO]: Authorization successful
+2025-09-29 12:07:18 [INFO]: ::1 - - [29/Sep/2025:06:37:18 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:18 [INFO]: User found
+2025-09-29 12:07:18 [INFO]: ::1 - - [29/Sep/2025:06:37:18 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:20 [INFO]: Token decoded successfully
+2025-09-29 12:07:20 [INFO]: Querying user from database
+2025-09-29 12:07:20 [INFO]: Token decoded successfully
+2025-09-29 12:07:20 [INFO]: Querying user from database
+2025-09-29 12:07:20 [INFO]: User found
+2025-09-29 12:07:20 [INFO]: Authorization check
+2025-09-29 12:07:20 [INFO]: Authorization successful
+2025-09-29 12:07:20 [INFO]: User found
+2025-09-29 12:07:20 [INFO]: Authorization check
+2025-09-29 12:07:20 [INFO]: Authorization successful
+2025-09-29 12:07:20 [INFO]: ::1 - - [29/Sep/2025:06:37:20 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:20 [INFO]: ::1 - - [29/Sep/2025:06:37:20 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:20 [INFO]: Token decoded successfully
+2025-09-29 12:07:20 [INFO]: Querying user from database
+2025-09-29 12:07:20 [INFO]: User found
+2025-09-29 12:07:20 [INFO]: Authorization check
+2025-09-29 12:07:20 [INFO]: Authorization successful
+2025-09-29 12:07:21 [INFO]: ::1 - - [29/Sep/2025:06:37:21 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:46 [INFO]: Token decoded successfully
+2025-09-29 12:07:46 [INFO]: Querying user from database
+2025-09-29 12:07:46 [INFO]: Token decoded successfully
+2025-09-29 12:07:46 [INFO]: Querying user from database
+2025-09-29 12:07:47 [INFO]: User found
+2025-09-29 12:07:47 [INFO]: Authorization check
+2025-09-29 12:07:47 [INFO]: Authorization successful
+2025-09-29 12:07:47 [INFO]: Token decoded successfully
+2025-09-29 12:07:47 [INFO]: Querying user from database
+2025-09-29 12:07:47 [INFO]: User found
+2025-09-29 12:07:47 [INFO]: Authorization check
+2025-09-29 12:07:47 [INFO]: Authorization successful
+2025-09-29 12:07:47 [INFO]: Token decoded successfully
+2025-09-29 12:07:47 [INFO]: Querying user from database
+2025-09-29 12:07:47 [INFO]: User found
+2025-09-29 12:07:47 [INFO]: Authorization check
+2025-09-29 12:07:47 [INFO]: Authorization successful
+2025-09-29 12:07:47 [INFO]: User found
+2025-09-29 12:07:47 [INFO]: Authorization check
+2025-09-29 12:07:47 [INFO]: Authorization successful
+2025-09-29 12:07:47 [INFO]: ::1 - - [29/Sep/2025:06:37:47 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:47 [INFO]: ::1 - - [29/Sep/2025:06:37:47 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:50 [INFO]: Token decoded successfully
+2025-09-29 12:07:50 [INFO]: Querying user from database
+2025-09-29 12:07:50 [INFO]: User found
+2025-09-29 12:07:50 [INFO]: Authorization check
+2025-09-29 12:07:50 [INFO]: Authorization successful
+2025-09-29 12:07:50 [INFO]: ::1 - - [29/Sep/2025:06:37:50 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:50 [INFO]: Token decoded successfully
+2025-09-29 12:07:50 [INFO]: Querying user from database
+2025-09-29 12:07:51 [INFO]: User found
+2025-09-29 12:07:51 [INFO]: Authorization check
+2025-09-29 12:07:51 [INFO]: Authorization successful
+2025-09-29 12:07:51 [INFO]: ::1 - - [29/Sep/2025:06:37:51 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:55 [INFO]: Token decoded successfully
+2025-09-29 12:07:55 [INFO]: Querying user from database
+2025-09-29 12:07:55 [INFO]: User found
+2025-09-29 12:07:55 [INFO]: Authorization check
+2025-09-29 12:07:55 [INFO]: Authorization successful
+2025-09-29 12:07:55 [INFO]: ::1 - - [29/Sep/2025:06:37:55 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:56 [INFO]: ::1 - - [29/Sep/2025:06:37:56 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:56 [INFO]: Token decoded successfully
+2025-09-29 12:07:56 [INFO]: Querying user from database
+2025-09-29 12:07:56 [INFO]: User found
+2025-09-29 12:07:56 [INFO]: Authorization check
+2025-09-29 12:07:56 [INFO]: Authorization successful
+2025-09-29 12:07:57 [INFO]: ::1 - - [29/Sep/2025:06:37:57 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:07:59 [INFO]: ::1 - - [29/Sep/2025:06:37:59 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:08:01 [INFO]: Token decoded successfully
+2025-09-29 12:08:01 [INFO]: Querying user from database
+2025-09-29 12:08:01 [INFO]: User found
+2025-09-29 12:08:01 [INFO]: Authorization check
+2025-09-29 12:08:01 [INFO]: Authorization successful
+2025-09-29 12:08:01 [INFO]: ::1 - - [29/Sep/2025:06:38:01 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:08:03 [INFO]: ::1 - - [29/Sep/2025:06:38:03 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:08:04 [INFO]: Token decoded successfully
+2025-09-29 12:08:04 [INFO]: Querying user from database
+2025-09-29 12:08:05 [INFO]: User found
+2025-09-29 12:08:05 [INFO]: Authorization check
+2025-09-29 12:08:05 [INFO]: Authorization successful
+2025-09-29 12:08:05 [INFO]: ::1 - - [29/Sep/2025:06:38:05 +0000] "GET /api/patients/appointments HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:08:06 [INFO]: Token decoded successfully
+2025-09-29 12:08:06 [INFO]: Querying user from database
+2025-09-29 12:08:06 [INFO]: User found
+2025-09-29 12:08:06 [INFO]: Authorization check
+2025-09-29 12:08:06 [INFO]: Authorization successful
+2025-09-29 12:08:06 [INFO]: ::1 - - [29/Sep/2025:06:38:06 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:08:06 [INFO]: Token decoded successfully
+2025-09-29 12:08:06 [INFO]: Querying user from database
+2025-09-29 12:08:06 [INFO]: User found
+2025-09-29 12:08:06 [INFO]: Authorization check
+2025-09-29 12:08:06 [INFO]: Authorization successful
+2025-09-29 12:08:07 [INFO]: ::1 - - [29/Sep/2025:06:38:07 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:06 [INFO]: Token decoded successfully
+2025-09-29 12:09:06 [INFO]: Querying user from database
+2025-09-29 12:09:06 [INFO]: User found
+2025-09-29 12:09:06 [INFO]: Authorization check
+2025-09-29 12:09:06 [INFO]: Authorization successful
+2025-09-29 12:09:07 [INFO]: ::1 - - [29/Sep/2025:06:39:07 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:07 [INFO]: Token decoded successfully
+2025-09-29 12:09:07 [INFO]: Querying user from database
+2025-09-29 12:09:07 [INFO]: User found
+2025-09-29 12:09:07 [INFO]: Authorization check
+2025-09-29 12:09:07 [INFO]: Authorization successful
+2025-09-29 12:09:07 [INFO]: ::1 - - [29/Sep/2025:06:39:07 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:36 [INFO]: Token decoded successfully
+2025-09-29 12:09:36 [INFO]: Querying user from database
+2025-09-29 12:09:36 [INFO]: Token decoded successfully
+2025-09-29 12:09:36 [INFO]: Querying user from database
+2025-09-29 12:09:37 [INFO]: User found
+2025-09-29 12:09:37 [INFO]: User found
+2025-09-29 12:09:37 [INFO]: Authorization check
+2025-09-29 12:09:37 [INFO]: Authorization successful
+2025-09-29 12:09:38 [INFO]: ::1 - - [29/Sep/2025:06:39:38 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:38 [INFO]: ::1 - - [29/Sep/2025:06:39:38 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:38 [INFO]: Token decoded successfully
+2025-09-29 12:09:38 [INFO]: Querying user from database
+2025-09-29 12:09:39 [INFO]: Token decoded successfully
+2025-09-29 12:09:39 [INFO]: Querying user from database
+2025-09-29 12:09:39 [INFO]: User found
+2025-09-29 12:09:39 [INFO]: Authorization check
+2025-09-29 12:09:39 [INFO]: Authorization successful
+2025-09-29 12:09:39 [INFO]: User found
+2025-09-29 12:09:39 [INFO]: Authorization check
+2025-09-29 12:09:39 [INFO]: Authorization successful
+2025-09-29 12:09:41 [INFO]: ::1 - - [29/Sep/2025:06:39:41 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:44 [INFO]: ::1 - - [29/Sep/2025:06:39:44 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:09:44 [INFO]: Token decoded successfully
+2025-09-29 12:09:44 [INFO]: Querying user from database
+2025-09-29 12:09:45 [INFO]: User found
+2025-09-29 12:09:45 [INFO]: Authorization check
+2025-09-29 12:09:45 [INFO]: Authorization successful
+2025-09-29 12:09:46 [INFO]: ::1 - - [29/Sep/2025:06:39:46 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:10:12 [INFO]: Token decoded successfully
+2025-09-29 12:10:12 [INFO]: Querying user from database
+2025-09-29 12:10:12 [INFO]: Token decoded successfully
+2025-09-29 12:10:12 [INFO]: Querying user from database
+2025-09-29 12:10:12 [INFO]: User found
+2025-09-29 12:10:12 [INFO]: Authorization check
+2025-09-29 12:10:12 [INFO]: Authorization successful
+2025-09-29 12:10:12 [INFO]: User found
+2025-09-29 12:10:12 [INFO]: ::1 - - [29/Sep/2025:06:40:12 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:10:12 [INFO]: ::1 - - [29/Sep/2025:06:40:12 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:10:14 [INFO]: Token decoded successfully
+2025-09-29 12:10:14 [INFO]: Querying user from database
+2025-09-29 12:10:14 [INFO]: Token decoded successfully
+2025-09-29 12:10:14 [INFO]: Querying user from database
+2025-09-29 12:10:14 [INFO]: User found
+2025-09-29 12:10:14 [INFO]: Authorization check
+2025-09-29 12:10:14 [INFO]: Authorization successful
+2025-09-29 12:10:14 [INFO]: User found
+2025-09-29 12:10:14 [INFO]: Authorization check
+2025-09-29 12:10:14 [INFO]: Authorization successful
+2025-09-29 12:10:14 [INFO]: ::1 - - [29/Sep/2025:06:40:14 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:10:14 [INFO]: ::1 - - [29/Sep/2025:06:40:14 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:10:15 [INFO]: Token decoded successfully
+2025-09-29 12:10:15 [INFO]: Querying user from database
+2025-09-29 12:10:16 [INFO]: User found
+2025-09-29 12:10:16 [INFO]: Authorization check
+2025-09-29 12:10:16 [INFO]: Authorization successful
+2025-09-29 12:10:16 [INFO]: ::1 - - [29/Sep/2025:06:40:16 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:11:14 [INFO]: Token decoded successfully
+2025-09-29 12:11:14 [INFO]: Querying user from database
+2025-09-29 12:11:14 [INFO]: User found
+2025-09-29 12:11:14 [INFO]: Authorization check
+2025-09-29 12:11:14 [INFO]: Authorization successful
+2025-09-29 12:11:15 [INFO]: ::1 - - [29/Sep/2025:06:41:15 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:11:15 [INFO]: Token decoded successfully
+2025-09-29 12:11:15 [INFO]: Querying user from database
+2025-09-29 12:11:15 [INFO]: User found
+2025-09-29 12:11:15 [INFO]: Authorization check
+2025-09-29 12:11:15 [INFO]: Authorization successful
+2025-09-29 12:11:15 [INFO]: ::1 - - [29/Sep/2025:06:41:15 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:12:14 [INFO]: Token decoded successfully
+2025-09-29 12:12:14 [INFO]: Querying user from database
+2025-09-29 12:12:14 [INFO]: User found
+2025-09-29 12:12:14 [INFO]: Authorization check
+2025-09-29 12:12:14 [INFO]: Authorization successful
+2025-09-29 12:12:14 [INFO]: ::1 - - [29/Sep/2025:06:42:14 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:12:14 [INFO]: Token decoded successfully
+2025-09-29 12:12:14 [INFO]: Querying user from database
+2025-09-29 12:12:14 [INFO]: User found
+2025-09-29 12:12:14 [INFO]: Authorization check
+2025-09-29 12:12:14 [INFO]: Authorization successful
+2025-09-29 12:12:14 [INFO]: ::1 - - [29/Sep/2025:06:42:14 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:12:56 [INFO]: Token decoded successfully
+2025-09-29 12:12:56 [INFO]: Querying user from database
+2025-09-29 12:12:56 [INFO]: User found
+2025-09-29 12:12:56 [INFO]: Authorization check
+2025-09-29 12:12:56 [INFO]: Authorization successful
+2025-09-29 12:12:56 [INFO]: ::1 - - [29/Sep/2025:06:42:56 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:12:56 [INFO]: Token decoded successfully
+2025-09-29 12:12:56 [INFO]: Querying user from database
+2025-09-29 12:12:56 [INFO]: User found
+2025-09-29 12:12:56 [INFO]: Authorization check
+2025-09-29 12:12:56 [INFO]: Authorization successful
+2025-09-29 12:12:57 [INFO]: ::1 - - [29/Sep/2025:06:42:57 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:13:28 [INFO]: Token decoded successfully
+2025-09-29 12:13:28 [INFO]: Querying user from database
+2025-09-29 12:13:28 [INFO]: User found
+2025-09-29 12:13:28 [INFO]: Authorization check
+2025-09-29 12:13:28 [INFO]: Authorization successful
+2025-09-29 12:13:28 [INFO]: ::1 - - [29/Sep/2025:06:43:28 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:13:28 [INFO]: Token decoded successfully
+2025-09-29 12:13:28 [INFO]: Querying user from database
+2025-09-29 12:13:29 [INFO]: User found
+2025-09-29 12:13:29 [INFO]: Authorization check
+2025-09-29 12:13:29 [INFO]: Authorization successful
+2025-09-29 12:13:29 [INFO]: ::1 - - [29/Sep/2025:06:43:29 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:14:28 [INFO]: Token decoded successfully
+2025-09-29 12:14:28 [INFO]: Querying user from database
+2025-09-29 12:14:28 [INFO]: User found
+2025-09-29 12:14:28 [INFO]: Authorization check
+2025-09-29 12:14:28 [INFO]: Authorization successful
+2025-09-29 12:14:29 [INFO]: ::1 - - [29/Sep/2025:06:44:29 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:14:29 [INFO]: Token decoded successfully
+2025-09-29 12:14:29 [INFO]: Querying user from database
+2025-09-29 12:14:29 [INFO]: User found
+2025-09-29 12:14:29 [INFO]: Authorization check
+2025-09-29 12:14:29 [INFO]: Authorization successful
+2025-09-29 12:14:29 [INFO]: ::1 - - [29/Sep/2025:06:44:29 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:15:29 [INFO]: Token decoded successfully
+2025-09-29 12:15:29 [INFO]: Querying user from database
+2025-09-29 12:15:29 [INFO]: User found
+2025-09-29 12:15:29 [INFO]: Authorization check
+2025-09-29 12:15:29 [INFO]: Authorization successful
+2025-09-29 12:15:29 [INFO]: ::1 - - [29/Sep/2025:06:45:29 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:15:30 [INFO]: Token decoded successfully
+2025-09-29 12:15:30 [INFO]: Querying user from database
+2025-09-29 12:15:30 [INFO]: User found
+2025-09-29 12:15:30 [INFO]: Authorization check
+2025-09-29 12:15:30 [INFO]: Authorization successful
+2025-09-29 12:15:31 [INFO]: ::1 - - [29/Sep/2025:06:45:31 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:16:29 [INFO]: Token decoded successfully
+2025-09-29 12:16:29 [INFO]: Querying user from database
+2025-09-29 12:16:29 [INFO]: User found
+2025-09-29 12:16:29 [INFO]: Authorization check
+2025-09-29 12:16:29 [INFO]: Authorization successful
+2025-09-29 12:16:29 [INFO]: ::1 - - [29/Sep/2025:06:46:29 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:16:29 [INFO]: Token decoded successfully
+2025-09-29 12:16:29 [INFO]: Querying user from database
+2025-09-29 12:16:30 [INFO]: User found
+2025-09-29 12:16:30 [INFO]: Authorization check
+2025-09-29 12:16:30 [INFO]: Authorization successful
+2025-09-29 12:16:30 [INFO]: ::1 - - [29/Sep/2025:06:46:30 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:17:29 [INFO]: Token decoded successfully
+2025-09-29 12:17:29 [INFO]: Querying user from database
+2025-09-29 12:17:29 [INFO]: User found
+2025-09-29 12:17:29 [INFO]: Authorization check
+2025-09-29 12:17:29 [INFO]: Authorization successful
+2025-09-29 12:17:29 [INFO]: ::1 - - [29/Sep/2025:06:47:29 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:17:29 [INFO]: Token decoded successfully
+2025-09-29 12:17:30 [INFO]: Querying user from database
+2025-09-29 12:17:30 [INFO]: User found
+2025-09-29 12:17:30 [INFO]: Authorization check
+2025-09-29 12:17:30 [INFO]: Authorization successful
+2025-09-29 12:17:30 [INFO]: ::1 - - [29/Sep/2025:06:47:30 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:18:29 [INFO]: Token decoded successfully
+2025-09-29 12:18:29 [INFO]: Querying user from database
+2025-09-29 12:18:29 [INFO]: User found
+2025-09-29 12:18:29 [INFO]: Authorization check
+2025-09-29 12:18:29 [INFO]: Authorization successful
+2025-09-29 12:18:29 [INFO]: ::1 - - [29/Sep/2025:06:48:29 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 12:18:29 [INFO]: Token decoded successfully
+2025-09-29 12:18:29 [INFO]: Querying user from database
+2025-09-29 12:18:30 [INFO]: User found
+2025-09-29 12:18:30 [INFO]: Authorization check
+2025-09-29 12:18:30 [INFO]: Authorization successful
+2025-09-29 12:18:30 [INFO]: ::1 - - [29/Sep/2025:06:48:30 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

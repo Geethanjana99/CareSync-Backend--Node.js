@@ -30,6 +30,12 @@ class Appointment {
     this.queue_number = appointmentData.queue_number;
     this.is_emergency = appointmentData.is_emergency || false;
     this.queue_date = appointmentData.queue_date || appointmentData.appointment_date;
+    
+    // Additional fields for queue display (preserve JOIN data)
+    this.patient_name = appointmentData.patient_name;
+    this.patient_phone = appointmentData.patient_phone;
+    this.doctor_name = appointmentData.doctor_name;
+    this.specialty = appointmentData.specialty;
   }
 
   // Create queue-based appointment
