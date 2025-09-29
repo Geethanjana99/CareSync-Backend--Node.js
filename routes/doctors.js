@@ -4,7 +4,10 @@ const DoctorController = require('../controllers/doctorController');
 const { doctorValidation } = require('../middleware/validation');
 const auth = require('../middleware/auth');
 
-// All routes require doctor authentication
+// Public endpoint for getting doctor names (no auth required)
+router.get('/names', DoctorController.getDoctorNames);
+
+// All routes below require doctor authentication
 router.use(auth.authMiddleware);
 router.use(auth.authorize('doctor'));
 
@@ -36,24 +39,21 @@ router.get('/statistics', DoctorController.getStatistics);
 router.get('/queue', DoctorController.getQueue);
 router.get('/queue/status', DoctorController.getQueueStatus);
 router.get('/queue/summary', DoctorController.getQueueSummary);
+router.get('/queue/next-patient', DoctorController.getNextPaidPatient);
 router.put('/queue/current', DoctorController.updateCurrentQueueNumber);
+router.post('/queue/start', DoctorController.startQueue);
+router.post('/queue/stop', DoctorController.stopQueue);
 router.post('/queue/start/:appointmentId', DoctorController.startNextConsultation);
 router.post('/queue/complete/:appointmentId', DoctorController.completeConsultation);
 router.put('/appointments/:appointmentId/payment-status', DoctorController.updatePaymentStatus);
 
-// AI Predictions
-router.get('/ai-predictions', DoctorController.getAIPredictions);
-router.patch('/ai-predictions/:id/review', DoctorController.reviewAIPrediction);
-
-// AI Predictions - Doctor access
-router.get('/ai-predictions', DoctorController.getAIPredictions);
-router.patch('/ai-predictions/:id/review', DoctorController.reviewAIPrediction);
-
-// Availability and queue management
+// Availability and queue management  
 router.get('/availability', DoctorController.getDoctorAvailability);
 router.put('/availability/status', DoctorController.updateAvailabilityStatus);
 router.put('/availability/working-hours', DoctorController.updateWorkingHours);
-router.get('/queue/status', DoctorController.getQueueStatus);
-router.put('/queue/toggle', DoctorController.toggleQueue);
+
+// AI Predictions
+router.get('/ai-predictions', DoctorController.getAIPredictions);
+router.patch('/ai-predictions/:id/review', DoctorController.reviewAIPrediction);
 
 module.exports = router;

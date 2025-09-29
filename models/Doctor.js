@@ -80,31 +80,18 @@ class Doctor {
 
   static async findAll(filters = {}) {
     let query = `
-      SELECT d.*, u.name, u.email, u.phone, u.avatar_url, u.created_at
-      FROM doctors d
-      JOIN users u ON d.user_id = u.id
-      WHERE d.status = 'active' AND u.is_active = true
+      SELECT id, name FROM users WHERE role = 'doctor' AND is_active = true
     `;
     const params = [];
 
     if (filters.search) {
-      query += ` AND (u.name LIKE ? OR d.specialty LIKE ? OR d.doctor_id LIKE ?)`;
+      query += ` AND name LIKE ?`;
       const searchTerm = `%${filters.search}%`;
-      params.push(searchTerm, searchTerm, searchTerm);
+      params.push(searchTerm);
     }
 
-    if (filters.specialty) {
-      query += ' AND d.specialty = ?';
-      params.push(filters.specialty);
-    }
-
-    if (filters.min_rating) {
-      query += ' AND d.rating >= ?';
-      params.push(parseFloat(filters.min_rating));
-    }
-
-    // Sort by rating and reviews by default
-    query += ' ORDER BY d.rating DESC, d.total_reviews DESC, u.name ASC';
+    // Sort by name
+    query += ' ORDER BY name ASC';
 
     // Add LIMIT and OFFSET using string concatenation (MySQL2 doesn't like parameterized LIMIT/OFFSET sometimes)
     const limit = filters.limit && !isNaN(parseInt(filters.limit)) && parseInt(filters.limit) > 0 

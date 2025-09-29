@@ -6,28 +6,53 @@ const InvoiceItem = require('../models/InvoiceItem');
 class BillingController {
   // Get patient names for billing/invoice purposes
   static async getPatientNames(req, res, next) {
-    try {      const query = `
-        SELECT id, name, email
-        FROM users 
-        WHERE role = 'patient' AND is_active = 1
-        ORDER BY name
+    try {
+      // Create connection to database
+      const mysql = require('mysql2/promise');
+      const connection = await mysql.createConnection({
+        host: 'caresyncdb-caresync.e.aivencloud.com',
+        port: 16006,
+        user: 'avnadmin',
+        password: 'AVNS_6xeaVpCVApextDTAKfU',
+        database: 'caresync',
+        ssl: { rejectUnauthorized: false }
+      });
+
+      // Query for active patients with complete profiles
+      const query = `
+        SELECT u.id, u.name, u.email, p.patient_id as patient_code
+        FROM users u
+        INNER JOIN patients p ON u.id = p.user_id
+        WHERE u.role = 'patient' 
+          AND u.is_active = true 
+          AND p.status = 'active'
+        ORDER BY u.name
       `;
       
-      const patients = await mysqlConnection.query(query);
+      const [patients] = await connection.execute(query);
+      await connection.end();
       
       const patientList = patients.map(patient => ({
         id: patient.id,
         name: patient.name || patient.email,
-        email: patient.email
+        email: patient.email,
+        patientCode: patient.patient_code
       }));
+
+      logger.info(`Billing: Loaded ${patientList.length} patients for billing`);
 
       res.json({
         success: true,
-        data: patientList
+        data: patientList,
+        message: `Found ${patientList.length} active patients`
       });
     } catch (error) {
       logger.error('Error fetching patient names for billing:', error);
-      next(error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to load patients for billing',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
     }
   }
   // Create a new invoice
