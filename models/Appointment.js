@@ -278,14 +278,21 @@ class Appointment {
       }
     }
 
-    if (filters.date_from) {
-      query += ' AND a.appointment_date >= ?';
+    if (filters.date_from && filters.date_to && filters.date_from === filters.date_to) {
+      // If startDate and endDate are the same, filter for exact date match
+      query += ' AND DATE(a.queue_date) = ?';
       params.push(filters.date_from);
-    }
+    } else {
+      // If different dates, use range filtering
+      if (filters.date_from) {
+        query += ' AND a.queue_date >= ?';
+        params.push(filters.date_from);
+      }
 
-    if (filters.date_to) {
-      query += ' AND a.appointment_date <= ?';
-      params.push(filters.date_to);
+      if (filters.date_to) {
+        query += ' AND a.queue_date <= ?';
+        params.push(filters.date_to);
+      }
     }
 
     if (filters.appointment_type) {
@@ -298,7 +305,7 @@ class Appointment {
       params.push(filters.priority);
     }
 
-    query += ' ORDER BY a.appointment_date DESC, a.created_at DESC';    if (filters.limit) {
+    query += ' ORDER BY a.queue_date DESC, a.created_at DESC';    if (filters.limit) {
       query += ' LIMIT ?';
       params.push(filters.limit.toString());
     }    if (filters.offset) {
@@ -535,14 +542,21 @@ class Appointment {
       }
     }
 
-    if (filters.date_from) {
-      query += ' AND a.appointment_date >= ?';
+    if (filters.date_from && filters.date_to && filters.date_from === filters.date_to) {
+      // If startDate and endDate are the same, filter for exact date match
+      query += ' AND DATE(a.queue_date) = ?';
       params.push(filters.date_from);
-    }
+    } else {
+      // If different dates, use range filtering
+      if (filters.date_from) {
+        query += ' AND a.queue_date >= ?';
+        params.push(filters.date_from);
+      }
 
-    if (filters.date_to) {
-      query += ' AND a.appointment_date <= ?';
-      params.push(filters.date_to);
+      if (filters.date_to) {
+        query += ' AND a.queue_date <= ?';
+        params.push(filters.date_to);
+      }
     }
 
     if (filters.appointment_type) {
@@ -556,7 +570,7 @@ class Appointment {
     }
 
     // Order by appointment date and queue number
-    query += ' ORDER BY a.appointment_date DESC, a.queue_number ASC';
+    query += ' ORDER BY a.queue_date DESC, a.queue_number ASC';
 
     // Add pagination
     if (filters.limit) {
