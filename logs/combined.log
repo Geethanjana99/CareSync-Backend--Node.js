@@ -31368,3 +31368,1167 @@
 2025-09-29 19:20:49 [INFO]: Authorization check
 2025-09-29 19:20:49 [INFO]: Authorization successful
 2025-09-29 19:20:49 [INFO]: ::1 - - [29/Sep/2025:13:50:49 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:21:49 [INFO]: Token decoded successfully
+2025-09-29 19:21:49 [INFO]: Querying user from database
+2025-09-29 19:21:49 [INFO]: Token decoded successfully
+2025-09-29 19:21:49 [INFO]: Querying user from database
+2025-09-29 19:21:49 [INFO]: Token decoded successfully
+2025-09-29 19:21:49 [INFO]: Querying user from database
+2025-09-29 19:21:49 [INFO]: User found
+2025-09-29 19:21:49 [INFO]: Authorization check
+2025-09-29 19:21:49 [INFO]: Authorization successful
+2025-09-29 19:21:49 [INFO]: User found
+2025-09-29 19:21:49 [INFO]: Authorization check
+2025-09-29 19:21:49 [INFO]: Authorization successful
+2025-09-29 19:21:49 [INFO]: User found
+2025-09-29 19:21:49 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:21:49 [INFO]: ::1 - - [29/Sep/2025:13:51:49 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:21:49 [INFO]: ::1 - - [29/Sep/2025:13:51:49 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:21:49 [INFO]: ::1 - - [29/Sep/2025:13:51:49 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:21:50 [INFO]: Token decoded successfully
+2025-09-29 19:21:50 [INFO]: Querying user from database
+2025-09-29 19:21:50 [INFO]: Token decoded successfully
+2025-09-29 19:21:50 [INFO]: Querying user from database
+2025-09-29 19:21:50 [INFO]: User found
+2025-09-29 19:21:50 [INFO]: Authorization check
+2025-09-29 19:21:50 [INFO]: Authorization successful
+2025-09-29 19:21:50 [INFO]: User found
+2025-09-29 19:21:50 [INFO]: Authorization check
+2025-09-29 19:21:50 [INFO]: Authorization successful
+2025-09-29 19:21:50 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:21:50 [INFO]: ::1 - - [29/Sep/2025:13:51:50 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:21:50 [INFO]: ::1 - - [29/Sep/2025:13:51:50 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:22:22 [INFO]: Socket.IO server initialized
+2025-09-29 19:22:30 [INFO]: ✅ MySQL database connected successfully
+2025-09-29 19:22:30 [INFO]: ✅ MySQL connected successfully
+2025-09-29 19:22:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:22:30 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-29 19:22:30 [INFO]: 📧 Notification service skipped for now
+2025-09-29 19:22:30 [INFO]: 🚀 Server running on port 5000
+2025-09-29 19:22:30 [INFO]: 📊 Environment: development
+2025-09-29 19:22:30 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-29 19:22:30 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-29 19:23:25 [INFO]: Token decoded successfully
+2025-09-29 19:23:25 [INFO]: Querying user from database
+2025-09-29 19:23:25 [INFO]: Token decoded successfully
+2025-09-29 19:23:25 [INFO]: Querying user from database
+2025-09-29 19:23:25 [INFO]: User found
+2025-09-29 19:23:25 [INFO]: Authorization check
+2025-09-29 19:23:25 [INFO]: Authorization successful
+2025-09-29 19:23:26 [INFO]: ::1 - - [29/Sep/2025:13:53:26 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:23:26 [INFO]: User found
+2025-09-29 19:23:26 [INFO]: Authorization check
+2025-09-29 19:23:26 [INFO]: Authorization successful
+2025-09-29 19:23:27 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:23:27 [INFO]: ::1 - - [29/Sep/2025:13:53:27 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:25:24 [INFO]: Token decoded successfully
+2025-09-29 19:25:25 [INFO]: Querying user from database
+2025-09-29 19:25:25 [INFO]: Token decoded successfully
+2025-09-29 19:25:25 [INFO]: Querying user from database
+2025-09-29 19:25:25 [INFO]: User found
+2025-09-29 19:25:25 [INFO]: Authorization check
+2025-09-29 19:25:25 [INFO]: Authorization successful
+2025-09-29 19:25:25 [INFO]: User found
+2025-09-29 19:25:25 [INFO]: Authorization check
+2025-09-29 19:25:25 [INFO]: Authorization successful
+2025-09-29 19:25:25 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:25:25 [INFO]: ::1 - - [29/Sep/2025:13:55:25 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:25:25 [INFO]: ::1 - - [29/Sep/2025:13:55:25 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:25:39 [INFO]: Token decoded successfully
+2025-09-29 19:25:39 [INFO]: Querying user from database
+2025-09-29 19:25:39 [INFO]: Token decoded successfully
+2025-09-29 19:25:39 [INFO]: Querying user from database
+2025-09-29 19:25:40 [INFO]: User found
+2025-09-29 19:25:40 [INFO]: Authorization check
+2025-09-29 19:25:40 [INFO]: Authorization successful
+2025-09-29 19:25:40 [INFO]: User found
+2025-09-29 19:25:40 [INFO]: Authorization check
+2025-09-29 19:25:40 [INFO]: Authorization successful
+2025-09-29 19:25:40 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:25:40 [INFO]: ::1 - - [29/Sep/2025:13:55:40 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:25:41 [INFO]: ::1 - - [29/Sep/2025:13:55:41 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:26:01 [INFO]: Token decoded successfully
+2025-09-29 19:26:01 [INFO]: Querying user from database
+2025-09-29 19:26:01 [INFO]: Token decoded successfully
+2025-09-29 19:26:01 [INFO]: Querying user from database
+2025-09-29 19:26:01 [INFO]: User found
+2025-09-29 19:26:01 [INFO]: Authorization check
+2025-09-29 19:26:01 [INFO]: Authorization successful
+2025-09-29 19:26:01 [INFO]: User found
+2025-09-29 19:26:01 [INFO]: Authorization check
+2025-09-29 19:26:01 [INFO]: Authorization successful
+2025-09-29 19:26:02 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:26:02 [INFO]: ::1 - - [29/Sep/2025:13:56:02 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:26:02 [INFO]: ::1 - - [29/Sep/2025:13:56:02 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:26:30 [INFO]: Token decoded successfully
+2025-09-29 19:26:30 [INFO]: Querying user from database
+2025-09-29 19:26:30 [INFO]: Token decoded successfully
+2025-09-29 19:26:30 [INFO]: Querying user from database
+2025-09-29 19:26:52 [ERROR]: MySQL query error:
+2025-09-29 19:26:52 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:26:52 [INFO]: ::1 - - [29/Sep/2025:13:56:52 +0000] "GET /api/doctors/availability HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:26:52 [ERROR]: MySQL query error:
+2025-09-29 19:26:52 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:26:52 [INFO]: ::1 - - [29/Sep/2025:13:56:52 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:26:52 [INFO]: Token decoded successfully
+2025-09-29 19:26:52 [INFO]: Querying user from database
+2025-09-29 19:26:53 [INFO]: ::1 - - [29/Sep/2025:13:56:53 +0000] "GET /api/doctors/appointments/today HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:26:54 [INFO]: Token decoded successfully
+2025-09-29 19:26:54 [INFO]: Querying user from database
+2025-09-29 19:26:54 [INFO]: Token decoded successfully
+2025-09-29 19:26:54 [INFO]: Querying user from database
+2025-09-29 19:26:54 [INFO]: Token decoded successfully
+2025-09-29 19:26:54 [INFO]: Querying user from database
+2025-09-29 19:27:01 [INFO]: ::1 - - [29/Sep/2025:13:57:01 +0000] "GET /api/doctors/appointments/today HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:01 [INFO]: ::1 - - [29/Sep/2025:13:57:01 +0000] "GET /api/auth/profile HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:01 [INFO]: ::1 - - [29/Sep/2025:13:57:01 +0000] "GET /api/doctors/availability HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:02 [ERROR]: MySQL query error:
+2025-09-29 19:27:02 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:27:03 [ERROR]: MySQL query error:
+2025-09-29 19:27:03 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:27:04 [ERROR]: MySQL query error:
+2025-09-29 19:27:04 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:27:04 [ERROR]: MySQL query error:
+2025-09-29 19:27:04 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:27:15 [INFO]: User logged in: doctor@gmail.com
+2025-09-29 19:27:15 [INFO]: ::1 - - [29/Sep/2025:13:57:15 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:15 [INFO]: Token decoded successfully
+2025-09-29 19:27:15 [INFO]: Querying user from database
+2025-09-29 19:27:16 [INFO]: User found
+2025-09-29 19:27:16 [INFO]: Authorization check
+2025-09-29 19:27:16 [INFO]: Authorization successful
+2025-09-29 19:27:19 [ERROR]: MySQL query error:
+2025-09-29 19:27:19 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:706:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:577:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:27:20 [ERROR]: MySQL query error:
+2025-09-29 19:27:20 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:778:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:587:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:27:20 [INFO]: ::1 - - [29/Sep/2025:13:57:20 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:28 [INFO]: Token decoded successfully
+2025-09-29 19:27:28 [INFO]: Querying user from database
+2025-09-29 19:27:28 [INFO]: User found
+2025-09-29 19:27:28 [INFO]: Authorization check
+2025-09-29 19:27:28 [INFO]: Authorization successful
+2025-09-29 19:27:28 [INFO]: ::1 - - [29/Sep/2025:13:57:28 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:29 [INFO]: Token decoded successfully
+2025-09-29 19:27:29 [INFO]: Querying user from database
+2025-09-29 19:27:29 [INFO]: Token decoded successfully
+2025-09-29 19:27:29 [INFO]: Querying user from database
+2025-09-29 19:27:29 [INFO]: User found
+2025-09-29 19:27:29 [INFO]: Authorization check
+2025-09-29 19:27:29 [INFO]: Authorization successful
+2025-09-29 19:27:29 [INFO]: User found
+2025-09-29 19:27:29 [INFO]: Authorization check
+2025-09-29 19:27:29 [INFO]: Authorization successful
+2025-09-29 19:27:30 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:27:30 [INFO]: ::1 - - [29/Sep/2025:13:57:30 +0000] "GET /api/doctors/availability HTTP/1.1" 200 746 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:27:30 [INFO]: ::1 - - [29/Sep/2025:13:57:30 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:31:07 [INFO]: User logged in: patient@gmail.com
+2025-09-29 19:31:07 [INFO]: ::1 - - [29/Sep/2025:14:01:07 +0000] "POST /api/auth/login HTTP/1.1" 200 852 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:31:07 [INFO]: Token decoded successfully
+2025-09-29 19:31:07 [INFO]: Querying user from database
+2025-09-29 19:31:07 [INFO]: User found
+2025-09-29 19:31:07 [INFO]: Authorization check
+2025-09-29 19:31:07 [INFO]: Authorization successful
+2025-09-29 19:31:08 [INFO]: ::1 - - [29/Sep/2025:14:01:08 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:31:09 [INFO]: Token decoded successfully
+2025-09-29 19:31:09 [INFO]: Querying user from database
+2025-09-29 19:31:09 [INFO]: User found
+2025-09-29 19:31:09 [INFO]: Authorization check
+2025-09-29 19:31:09 [INFO]: Authorization successful
+2025-09-29 19:31:10 [ERROR]: MySQL query error:
+2025-09-29 19:31:10 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:31:10 [INFO]: ::1 - - [29/Sep/2025:14:01:10 +0000] "GET /api/patients/queue/position? HTTP/1.1" 200 521 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:31:10 [INFO]: Token decoded successfully
+2025-09-29 19:31:10 [INFO]: Querying user from database
+2025-09-29 19:31:10 [INFO]: User found
+2025-09-29 19:31:10 [INFO]: Authorization check
+2025-09-29 19:31:10 [INFO]: Authorization successful
+2025-09-29 19:31:10 [INFO]: ::1 - - [29/Sep/2025:14:01:10 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:31:23 [INFO]: Token decoded successfully
+2025-09-29 19:31:23 [INFO]: Querying user from database
+2025-09-29 19:31:23 [INFO]: User found
+2025-09-29 19:31:23 [INFO]: Authorization check
+2025-09-29 19:31:23 [INFO]: Authorization successful
+2025-09-29 19:31:24 [ERROR]: MySQL query error:
+2025-09-29 19:31:24 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:31:24 [INFO]: ::1 - - [29/Sep/2025:14:01:24 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:31:24 [INFO]: Token decoded successfully
+2025-09-29 19:31:24 [INFO]: Querying user from database
+2025-09-29 19:31:24 [INFO]: User found
+2025-09-29 19:31:24 [INFO]: Authorization check
+2025-09-29 19:31:24 [INFO]: Authorization successful
+2025-09-29 19:31:24 [INFO]: ::1 - - [29/Sep/2025:14:01:24 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:32:24 [INFO]: Token decoded successfully
+2025-09-29 19:32:24 [INFO]: Querying user from database
+2025-09-29 19:32:24 [INFO]: User found
+2025-09-29 19:32:24 [INFO]: Authorization check
+2025-09-29 19:32:24 [INFO]: Authorization successful
+2025-09-29 19:32:25 [ERROR]: MySQL query error:
+2025-09-29 19:32:25 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:32:25 [INFO]: ::1 - - [29/Sep/2025:14:02:25 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:32:25 [INFO]: Token decoded successfully
+2025-09-29 19:32:25 [INFO]: Querying user from database
+2025-09-29 19:32:25 [INFO]: User found
+2025-09-29 19:32:25 [INFO]: Authorization check
+2025-09-29 19:32:25 [INFO]: Authorization successful
+2025-09-29 19:32:25 [INFO]: ::1 - - [29/Sep/2025:14:02:25 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:33:24 [INFO]: Token decoded successfully
+2025-09-29 19:33:24 [INFO]: Querying user from database
+2025-09-29 19:33:24 [INFO]: User found
+2025-09-29 19:33:24 [INFO]: Authorization check
+2025-09-29 19:33:24 [INFO]: Authorization successful
+2025-09-29 19:33:25 [ERROR]: MySQL query error:
+2025-09-29 19:33:25 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:33:25 [INFO]: ::1 - - [29/Sep/2025:14:03:25 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:33:25 [INFO]: Token decoded successfully
+2025-09-29 19:33:25 [INFO]: Querying user from database
+2025-09-29 19:33:25 [INFO]: User found
+2025-09-29 19:33:25 [INFO]: Authorization check
+2025-09-29 19:33:25 [INFO]: Authorization successful
+2025-09-29 19:33:25 [INFO]: ::1 - - [29/Sep/2025:14:03:25 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:33:27 [INFO]: Token decoded successfully
+2025-09-29 19:33:27 [INFO]: Querying user from database
+2025-09-29 19:33:27 [INFO]: Token decoded successfully
+2025-09-29 19:33:27 [INFO]: Querying user from database
+2025-09-29 19:33:27 [INFO]: User found
+2025-09-29 19:33:27 [INFO]: Authorization check
+2025-09-29 19:33:27 [INFO]: Authorization successful
+2025-09-29 19:33:27 [INFO]: User found
+2025-09-29 19:33:27 [INFO]: Authorization check
+2025-09-29 19:33:27 [INFO]: Authorization successful
+2025-09-29 19:33:28 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:33:28 [INFO]: ::1 - - [29/Sep/2025:14:03:28 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:33:28 [INFO]: ::1 - - [29/Sep/2025:14:03:28 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:34:24 [INFO]: Token decoded successfully
+2025-09-29 19:34:24 [INFO]: Querying user from database
+2025-09-29 19:34:24 [INFO]: User found
+2025-09-29 19:34:24 [INFO]: Authorization check
+2025-09-29 19:34:24 [INFO]: Authorization successful
+2025-09-29 19:34:25 [ERROR]: MySQL query error:
+2025-09-29 19:34:25 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:34:25 [INFO]: ::1 - - [29/Sep/2025:14:04:25 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:34:25 [INFO]: Token decoded successfully
+2025-09-29 19:34:25 [INFO]: Querying user from database
+2025-09-29 19:34:25 [INFO]: User found
+2025-09-29 19:34:25 [INFO]: Authorization check
+2025-09-29 19:34:25 [INFO]: Authorization successful
+2025-09-29 19:34:25 [INFO]: ::1 - - [29/Sep/2025:14:04:25 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:34:53 [INFO]: Token decoded successfully
+2025-09-29 19:34:53 [INFO]: Querying user from database
+2025-09-29 19:34:53 [INFO]: Token decoded successfully
+2025-09-29 19:34:53 [INFO]: Querying user from database
+2025-09-29 19:34:53 [INFO]: User found
+2025-09-29 19:34:53 [INFO]: Authorization check
+2025-09-29 19:34:53 [INFO]: Authorization successful
+2025-09-29 19:34:53 [INFO]: User found
+2025-09-29 19:34:53 [INFO]: Authorization check
+2025-09-29 19:34:53 [INFO]: Authorization successful
+2025-09-29 19:34:54 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 19:34:54 [INFO]: ::1 - - [29/Sep/2025:14:04:54 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:34:54 [INFO]: ::1 - - [29/Sep/2025:14:04:54 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 19:35:24 [INFO]: Token decoded successfully
+2025-09-29 19:35:24 [INFO]: Querying user from database
+2025-09-29 19:35:24 [INFO]: User found
+2025-09-29 19:35:24 [INFO]: Authorization check
+2025-09-29 19:35:24 [INFO]: Authorization successful
+2025-09-29 19:35:25 [ERROR]: MySQL query error:
+2025-09-29 19:35:25 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 19:35:25 [INFO]: ::1 - - [29/Sep/2025:14:05:25 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:35:25 [INFO]: Token decoded successfully
+2025-09-29 19:35:25 [INFO]: Querying user from database
+2025-09-29 19:35:25 [INFO]: User found
+2025-09-29 19:35:25 [INFO]: Authorization check
+2025-09-29 19:35:25 [INFO]: Authorization successful
+2025-09-29 19:35:25 [INFO]: ::1 - - [29/Sep/2025:14:05:25 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 19:37:20 [INFO]: Token decoded successfully
+2025-09-29 19:37:20 [INFO]: Querying user from database
+2025-09-29 19:37:20 [ERROR]: MySQL query error:
+2025-09-29 19:37:20 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 19:37:20 [INFO]: ::1 - - [29/Sep/2025:14:07:20 +0000] "GET /api/patients/queue/position? HTTP/1.1" 500 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:15:14 [INFO]: Token decoded successfully
+2025-09-29 21:15:14 [INFO]: Querying user from database
+2025-09-29 21:15:24 [INFO]: User found
+2025-09-29 21:15:24 [INFO]: Authorization check
+2025-09-29 21:15:24 [INFO]: Authorization successful
+2025-09-29 21:15:28 [ERROR]: MySQL query error:
+2025-09-29 21:15:28 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:15:28 [INFO]: ::1 - - [29/Sep/2025:15:45:28 +0000] "GET /api/patients/queue/position? HTTP/1.1" 200 521 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:15:28 [INFO]: Token decoded successfully
+2025-09-29 21:15:28 [INFO]: Querying user from database
+2025-09-29 21:15:28 [INFO]: User found
+2025-09-29 21:15:28 [INFO]: Authorization check
+2025-09-29 21:15:28 [INFO]: Authorization successful
+2025-09-29 21:15:29 [INFO]: ::1 - - [29/Sep/2025:15:45:29 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:37:01 [INFO]: Token decoded successfully
+2025-09-29 21:37:01 [INFO]: Querying user from database
+2025-09-29 21:37:01 [INFO]: Token decoded successfully
+2025-09-29 21:37:01 [INFO]: Querying user from database
+2025-09-29 21:37:01 [INFO]: Token decoded successfully
+2025-09-29 21:37:01 [INFO]: Querying user from database
+2025-09-29 21:37:04 [INFO]: User found
+2025-09-29 21:37:04 [INFO]: User found
+2025-09-29 21:37:04 [INFO]: Authorization check
+2025-09-29 21:37:04 [INFO]: Authorization successful
+2025-09-29 21:37:04 [INFO]: User found
+2025-09-29 21:37:04 [INFO]: Authorization check
+2025-09-29 21:37:04 [INFO]: Authorization successful
+2025-09-29 21:37:05 [INFO]: ::1 - - [29/Sep/2025:16:07:05 +0000] "GET /api/auth/profile HTTP/1.1" 200 412 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:05 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 21:37:05 [INFO]: ::1 - - [29/Sep/2025:16:07:05 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:05 [INFO]: Token decoded successfully
+2025-09-29 21:37:05 [INFO]: Querying user from database
+2025-09-29 21:37:06 [INFO]: User found
+2025-09-29 21:37:06 [INFO]: Authorization check
+2025-09-29 21:37:06 [INFO]: Authorization successful
+2025-09-29 21:37:06 [INFO]: ::1 - - [29/Sep/2025:16:07:06 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:06 [INFO]: Token decoded successfully
+2025-09-29 21:37:06 [INFO]: Querying user from database
+2025-09-29 21:37:06 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 21:37:06 [INFO]: ::1 - - [29/Sep/2025:16:07:06 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:06 [INFO]: User found
+2025-09-29 21:37:06 [INFO]: Authorization check
+2025-09-29 21:37:06 [INFO]: Authorization successful
+2025-09-29 21:37:06 [INFO]: ::1 - - [29/Sep/2025:16:07:06 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:42 [INFO]: Token decoded successfully
+2025-09-29 21:37:42 [INFO]: Querying user from database
+2025-09-29 21:37:42 [INFO]: User found
+2025-09-29 21:37:42 [INFO]: Authorization check
+2025-09-29 21:37:42 [INFO]: Authorization successful
+2025-09-29 21:37:42 [INFO]: ::1 - - [29/Sep/2025:16:07:42 +0000] "GET /api/doctors/appointments?startDate=2025-09-29&endDate=2025-09-29&limit=100 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:43 [INFO]: Token decoded successfully
+2025-09-29 21:37:43 [INFO]: Querying user from database
+2025-09-29 21:37:43 [INFO]: User found
+2025-09-29 21:37:43 [INFO]: Authorization check
+2025-09-29 21:37:43 [INFO]: Authorization successful
+2025-09-29 21:37:44 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 retrieved 2 patients
+2025-09-29 21:37:44 [INFO]: ::1 - - [29/Sep/2025:16:07:44 +0000] "GET /api/doctors/patients HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:37:46 [INFO]: Token decoded successfully
+2025-09-29 21:37:46 [INFO]: Querying user from database
+2025-09-29 21:37:46 [INFO]: User found
+2025-09-29 21:37:46 [INFO]: Authorization check
+2025-09-29 21:37:46 [INFO]: Authorization successful
+2025-09-29 21:37:47 [ERROR]: MySQL query error:
+2025-09-29 21:37:47 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:706:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:577:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:37:48 [ERROR]: MySQL query error:
+2025-09-29 21:37:48 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:778:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:587:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:37:48 [INFO]: ::1 - - [29/Sep/2025:16:07:48 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:26 [INFO]: Token decoded successfully
+2025-09-29 21:38:26 [INFO]: Querying user from database
+2025-09-29 21:38:26 [INFO]: Token decoded successfully
+2025-09-29 21:38:26 [INFO]: Querying user from database
+2025-09-29 21:38:26 [INFO]: User found
+2025-09-29 21:38:26 [INFO]: Authorization check
+2025-09-29 21:38:26 [INFO]: Authorization successful
+2025-09-29 21:38:26 [INFO]: User found
+2025-09-29 21:38:26 [INFO]: Authorization check
+2025-09-29 21:38:26 [INFO]: Authorization successful
+2025-09-29 21:38:26 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 21:38:26 [INFO]: ::1 - - [29/Sep/2025:16:08:26 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:27 [INFO]: ::1 - - [29/Sep/2025:16:08:27 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:33 [INFO]: Token decoded successfully
+2025-09-29 21:38:33 [INFO]: Querying user from database
+2025-09-29 21:38:33 [INFO]: User found
+2025-09-29 21:38:33 [INFO]: Authorization check
+2025-09-29 21:38:33 [INFO]: Authorization successful
+2025-09-29 21:38:35 [INFO]: Queue started for doctor 11aedc76-46d6-4907-83ee-152d097196b8 on 2025-09-29
+2025-09-29 21:38:35 [INFO]: ::1 - - [29/Sep/2025:16:08:35 +0000] "POST /api/doctors/queue/start HTTP/1.1" 200 218 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:35 [INFO]: Token decoded successfully
+2025-09-29 21:38:35 [INFO]: Querying user from database
+2025-09-29 21:38:35 [INFO]: Token decoded successfully
+2025-09-29 21:38:35 [INFO]: Querying user from database
+2025-09-29 21:38:35 [INFO]: User found
+2025-09-29 21:38:35 [INFO]: Authorization check
+2025-09-29 21:38:35 [INFO]: Authorization successful
+2025-09-29 21:38:35 [INFO]: User found
+2025-09-29 21:38:35 [INFO]: Authorization check
+2025-09-29 21:38:35 [INFO]: Authorization successful
+2025-09-29 21:38:35 [INFO]: ::1 - - [29/Sep/2025:16:08:35 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:35 [INFO]: Token decoded successfully
+2025-09-29 21:38:35 [INFO]: Querying user from database
+2025-09-29 21:38:35 [INFO]: User found
+2025-09-29 21:38:35 [INFO]: Authorization check
+2025-09-29 21:38:35 [INFO]: Authorization successful
+2025-09-29 21:38:35 [INFO]: ::1 - - [29/Sep/2025:16:08:35 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:36 [INFO]: ::1 - - [29/Sep/2025:16:08:36 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:37 [INFO]: Token decoded successfully
+2025-09-29 21:38:37 [INFO]: Querying user from database
+2025-09-29 21:38:37 [INFO]: User found
+2025-09-29 21:38:37 [INFO]: Authorization check
+2025-09-29 21:38:37 [INFO]: Authorization successful
+2025-09-29 21:38:37 [INFO]: ::1 - - [29/Sep/2025:16:08:37 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:44 [INFO]: Token decoded successfully
+2025-09-29 21:38:44 [INFO]: Querying user from database
+2025-09-29 21:38:44 [INFO]: User found
+2025-09-29 21:38:44 [INFO]: Authorization check
+2025-09-29 21:38:44 [INFO]: Authorization successful
+2025-09-29 21:38:46 [INFO]: Queue stopped for doctor 11aedc76-46d6-4907-83ee-152d097196b8 on 2025-09-29
+2025-09-29 21:38:46 [INFO]: ::1 - - [29/Sep/2025:16:08:46 +0000] "POST /api/doctors/queue/stop HTTP/1.1" 200 294 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:46 [INFO]: Token decoded successfully
+2025-09-29 21:38:46 [INFO]: Querying user from database
+2025-09-29 21:38:46 [INFO]: User found
+2025-09-29 21:38:46 [INFO]: Authorization check
+2025-09-29 21:38:46 [INFO]: Authorization successful
+2025-09-29 21:38:47 [INFO]: ::1 - - [29/Sep/2025:16:08:47 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:38:47 [INFO]: Token decoded successfully
+2025-09-29 21:38:47 [INFO]: Querying user from database
+2025-09-29 21:38:47 [INFO]: User found
+2025-09-29 21:38:47 [INFO]: Authorization check
+2025-09-29 21:38:47 [INFO]: Authorization successful
+2025-09-29 21:38:47 [INFO]: ::1 - - [29/Sep/2025:16:08:47 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:40:51 [ERROR]: MySQL query error:
+2025-09-29 21:40:51 [ERROR]: Error: Duplicate entry 'helaka@gmail.com' for key 'users.email'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at User.save (E:\Project 2\backend\models\User.js:34:27)
+    at register (E:\Project 2\backend\controllers\authController.js:58:18)
+2025-09-29 21:40:51 [INFO]: ::1 - - [29/Sep/2025:16:10:51 +0000] "POST /api/auth/register HTTP/1.1" 500 116 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:40:52 [INFO]: Patient profile created for user: 6043ccae-d336-483a-b626-18002b8d11b0
+2025-09-29 21:40:52 [INFO]: New user registered: helaka@gmail.com with role: patient
+2025-09-29 21:40:52 [INFO]: ::1 - - [29/Sep/2025:16:10:52 +0000] "POST /api/auth/register HTTP/1.1" 201 251 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:40:59 [INFO]: User logged in: helaka@gmail.com
+2025-09-29 21:40:59 [INFO]: ::1 - - [29/Sep/2025:16:10:59 +0000] "POST /api/auth/login HTTP/1.1" 200 841 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:40:59 [INFO]: Token decoded successfully
+2025-09-29 21:40:59 [INFO]: Querying user from database
+2025-09-29 21:40:59 [INFO]: User found
+2025-09-29 21:40:59 [INFO]: Authorization check
+2025-09-29 21:40:59 [INFO]: Authorization successful
+2025-09-29 21:41:00 [INFO]: ::1 - - [29/Sep/2025:16:11:00 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 87 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:41:01 [INFO]: Token decoded successfully
+2025-09-29 21:41:01 [INFO]: Querying user from database
+2025-09-29 21:41:02 [INFO]: User found
+2025-09-29 21:41:02 [INFO]: Authorization check
+2025-09-29 21:41:02 [INFO]: Authorization successful
+2025-09-29 21:41:02 [INFO]: ::1 - - [29/Sep/2025:16:11:02 +0000] "GET /api/patients/appointments HTTP/1.1" 200 88 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:41:05 [INFO]: Token decoded successfully
+2025-09-29 21:41:05 [INFO]: Querying user from database
+2025-09-29 21:41:05 [INFO]: User found
+2025-09-29 21:41:05 [INFO]: ::1 - - [29/Sep/2025:16:11:05 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:41:05 [INFO]: ::1 - - [29/Sep/2025:16:11:05 +0000] "GET /api/auth/profile HTTP/1.1" 200 399 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:41:06 [INFO]: ::1 - - [29/Sep/2025:16:11:06 +0000] "GET /api/doctors/search?limit=50 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:41:31 [INFO]: Token decoded successfully
+2025-09-29 21:41:31 [INFO]: Querying user from database
+2025-09-29 21:41:31 [INFO]: User found
+2025-09-29 21:41:31 [INFO]: Authorization check
+2025-09-29 21:41:31 [INFO]: Authorization successful
+2025-09-29 21:41:35 [ERROR]: MySQL query error:
+2025-09-29 21:41:35 [ERROR]: Error: Data truncated for column 'payment_method' at row 1
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at bookQueueAppointment (E:\Project 2\backend\controllers\patientController.js:453:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:41:35 [INFO]: Queue appointment booked: 44b76b62-1132-4b3a-b985-d08da13135c7 for patient 38b5d176-dde6-4f81-a0d7-6638fbc05b5a
+2025-09-29 21:41:35 [INFO]: ::1 - - [29/Sep/2025:16:11:35 +0000] "POST /api/patients/appointments/queue HTTP/1.1" 201 722 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:00 [INFO]: User logged in: doctor@gmail.com
+2025-09-29 21:42:00 [INFO]: ::1 - - [29/Sep/2025:16:12:00 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:00 [INFO]: Token decoded successfully
+2025-09-29 21:42:00 [INFO]: Querying user from database
+2025-09-29 21:42:00 [INFO]: User found
+2025-09-29 21:42:00 [INFO]: Authorization check
+2025-09-29 21:42:00 [INFO]: Authorization successful
+2025-09-29 21:42:01 [ERROR]: MySQL query error:
+2025-09-29 21:42:01 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:706:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:577:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:42:01 [ERROR]: MySQL query error:
+2025-09-29 21:42:01 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:778:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:587:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:42:01 [INFO]: ::1 - - [29/Sep/2025:16:12:01 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:04 [INFO]: Token decoded successfully
+2025-09-29 21:42:04 [INFO]: Querying user from database
+2025-09-29 21:42:04 [INFO]: Token decoded successfully
+2025-09-29 21:42:04 [INFO]: Querying user from database
+2025-09-29 21:42:04 [INFO]: User found
+2025-09-29 21:42:04 [INFO]: Authorization check
+2025-09-29 21:42:04 [INFO]: Authorization successful
+2025-09-29 21:42:04 [INFO]: User found
+2025-09-29 21:42:04 [INFO]: Authorization check
+2025-09-29 21:42:04 [INFO]: Authorization successful
+2025-09-29 21:42:05 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 21:42:05 [INFO]: ::1 - - [29/Sep/2025:16:12:05 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:05 [INFO]: ::1 - - [29/Sep/2025:16:12:05 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:10 [INFO]: Token decoded successfully
+2025-09-29 21:42:10 [INFO]: Querying user from database
+2025-09-29 21:42:10 [INFO]: User found
+2025-09-29 21:42:10 [INFO]: Authorization check
+2025-09-29 21:42:10 [INFO]: Authorization successful
+2025-09-29 21:42:11 [INFO]: Queue started for doctor 11aedc76-46d6-4907-83ee-152d097196b8 on 2025-09-29
+2025-09-29 21:42:11 [INFO]: ::1 - - [29/Sep/2025:16:12:11 +0000] "POST /api/doctors/queue/start HTTP/1.1" 200 218 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:11 [INFO]: Token decoded successfully
+2025-09-29 21:42:11 [INFO]: Querying user from database
+2025-09-29 21:42:11 [INFO]: Token decoded successfully
+2025-09-29 21:42:11 [INFO]: Querying user from database
+2025-09-29 21:42:11 [INFO]: User found
+2025-09-29 21:42:11 [INFO]: Authorization check
+2025-09-29 21:42:11 [INFO]: Authorization successful
+2025-09-29 21:42:11 [INFO]: User found
+2025-09-29 21:42:11 [INFO]: Authorization check
+2025-09-29 21:42:11 [INFO]: Authorization successful
+2025-09-29 21:42:12 [INFO]: ::1 - - [29/Sep/2025:16:12:12 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 200 874 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:12 [INFO]: ::1 - - [29/Sep/2025:16:12:12 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:12 [INFO]: Token decoded successfully
+2025-09-29 21:42:12 [INFO]: Querying user from database
+2025-09-29 21:42:12 [INFO]: User found
+2025-09-29 21:42:12 [INFO]: Authorization check
+2025-09-29 21:42:12 [INFO]: Authorization successful
+2025-09-29 21:42:12 [INFO]: ::1 - - [29/Sep/2025:16:12:12 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:13 [INFO]: Token decoded successfully
+2025-09-29 21:42:13 [INFO]: Querying user from database
+2025-09-29 21:42:13 [INFO]: User found
+2025-09-29 21:42:13 [INFO]: Authorization check
+2025-09-29 21:42:13 [INFO]: Authorization successful
+2025-09-29 21:42:15 [INFO]: ::1 - - [29/Sep/2025:16:12:15 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:34 [INFO]: User logged in: helaka@gmail.com
+2025-09-29 21:42:34 [INFO]: ::1 - - [29/Sep/2025:16:12:34 +0000] "POST /api/auth/login HTTP/1.1" 200 841 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:35 [INFO]: Token decoded successfully
+2025-09-29 21:42:35 [INFO]: Querying user from database
+2025-09-29 21:42:36 [INFO]: User found
+2025-09-29 21:42:36 [INFO]: Authorization check
+2025-09-29 21:42:36 [INFO]: Authorization successful
+2025-09-29 21:42:41 [INFO]: Token decoded successfully
+2025-09-29 21:42:41 [INFO]: Querying user from database
+2025-09-29 21:42:43 [INFO]: User found
+2025-09-29 21:42:43 [INFO]: Authorization check
+2025-09-29 21:42:43 [INFO]: Authorization successful
+2025-09-29 21:42:47 [INFO]: ::1 - - [29/Sep/2025:16:12:47 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:55 [ERROR]: MySQL query error:
+2025-09-29 21:42:55 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:42:55 [INFO]: ::1 - - [29/Sep/2025:16:12:55 +0000] "GET /api/patients/queue/position? HTTP/1.1" 200 519 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:42:55 [INFO]: Token decoded successfully
+2025-09-29 21:42:55 [INFO]: Querying user from database
+2025-09-29 21:42:56 [INFO]: User found
+2025-09-29 21:42:56 [INFO]: Authorization check
+2025-09-29 21:42:56 [INFO]: Authorization successful
+2025-09-29 21:42:57 [INFO]: ::1 - - [29/Sep/2025:16:12:57 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 200 297 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:24 [INFO]: User logged in: doctor@gmail.com
+2025-09-29 21:43:24 [INFO]: ::1 - - [29/Sep/2025:16:13:24 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:24 [INFO]: Token decoded successfully
+2025-09-29 21:43:24 [INFO]: Querying user from database
+2025-09-29 21:43:24 [INFO]: User found
+2025-09-29 21:43:24 [INFO]: Authorization check
+2025-09-29 21:43:24 [INFO]: Authorization successful
+2025-09-29 21:43:25 [ERROR]: MySQL query error:
+2025-09-29 21:43:25 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:706:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:577:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:43:25 [ERROR]: MySQL query error:
+2025-09-29 21:43:25 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:778:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:587:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:43:26 [INFO]: ::1 - - [29/Sep/2025:16:13:26 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:27 [INFO]: Token decoded successfully
+2025-09-29 21:43:27 [INFO]: Querying user from database
+2025-09-29 21:43:27 [INFO]: Token decoded successfully
+2025-09-29 21:43:27 [INFO]: Querying user from database
+2025-09-29 21:43:27 [INFO]: Token decoded successfully
+2025-09-29 21:43:27 [INFO]: Querying user from database
+2025-09-29 21:43:27 [INFO]: User found
+2025-09-29 21:43:27 [INFO]: Authorization check
+2025-09-29 21:43:27 [INFO]: Authorization successful
+2025-09-29 21:43:27 [INFO]: User found
+2025-09-29 21:43:27 [INFO]: Authorization check
+2025-09-29 21:43:27 [INFO]: Authorization successful
+2025-09-29 21:43:27 [INFO]: User found
+2025-09-29 21:43:27 [INFO]: Authorization check
+2025-09-29 21:43:27 [INFO]: Authorization successful
+2025-09-29 21:43:28 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 21:43:28 [INFO]: ::1 - - [29/Sep/2025:16:13:28 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:28 [INFO]: ::1 - - [29/Sep/2025:16:13:28 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:28 [INFO]: ::1 - - [29/Sep/2025:16:13:28 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:30 [INFO]: Token decoded successfully
+2025-09-29 21:43:30 [INFO]: Querying user from database
+2025-09-29 21:43:30 [INFO]: User found
+2025-09-29 21:43:30 [INFO]: Authorization check
+2025-09-29 21:43:30 [INFO]: Authorization successful
+2025-09-29 21:43:30 [INFO]: ::1 - - [29/Sep/2025:16:13:30 +0000] "GET /api/doctors/appointments?startDate=2025-09-29&endDate=2025-09-29&limit=100 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:32 [INFO]: Token decoded successfully
+2025-09-29 21:43:32 [INFO]: Querying user from database
+2025-09-29 21:43:32 [INFO]: User found
+2025-09-29 21:43:32 [INFO]: Authorization check
+2025-09-29 21:43:32 [INFO]: Authorization successful
+2025-09-29 21:43:33 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 retrieved 3 patients
+2025-09-29 21:43:33 [INFO]: ::1 - - [29/Sep/2025:16:13:33 +0000] "GET /api/doctors/patients HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:38 [INFO]: Token decoded successfully
+2025-09-29 21:43:38 [INFO]: Querying user from database
+2025-09-29 21:43:38 [INFO]: Token decoded successfully
+2025-09-29 21:43:38 [INFO]: Querying user from database
+2025-09-29 21:43:38 [INFO]: Token decoded successfully
+2025-09-29 21:43:38 [INFO]: Querying user from database
+2025-09-29 21:43:38 [INFO]: User found
+2025-09-29 21:43:38 [INFO]: Authorization check
+2025-09-29 21:43:38 [INFO]: Authorization successful
+2025-09-29 21:43:38 [INFO]: User found
+2025-09-29 21:43:38 [INFO]: Authorization check
+2025-09-29 21:43:38 [INFO]: Authorization successful
+2025-09-29 21:43:38 [INFO]: User found
+2025-09-29 21:43:38 [INFO]: Authorization check
+2025-09-29 21:43:38 [INFO]: Authorization successful
+2025-09-29 21:43:39 [INFO]: ::1 - - [29/Sep/2025:16:13:39 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:39 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-29 21:43:39 [INFO]: ::1 - - [29/Sep/2025:16:13:39 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:39 [INFO]: ::1 - - [29/Sep/2025:16:13:39 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:45 [INFO]: Token decoded successfully
+2025-09-29 21:43:45 [INFO]: Querying user from database
+2025-09-29 21:43:45 [INFO]: User found
+2025-09-29 21:43:45 [INFO]: Authorization check
+2025-09-29 21:43:45 [INFO]: Authorization successful
+2025-09-29 21:43:46 [INFO]: Queue stopped for doctor 11aedc76-46d6-4907-83ee-152d097196b8 on 2025-09-29
+2025-09-29 21:43:46 [INFO]: ::1 - - [29/Sep/2025:16:13:46 +0000] "POST /api/doctors/queue/stop HTTP/1.1" 200 294 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:46 [INFO]: Token decoded successfully
+2025-09-29 21:43:46 [INFO]: Querying user from database
+2025-09-29 21:43:46 [INFO]: User found
+2025-09-29 21:43:46 [INFO]: Authorization check
+2025-09-29 21:43:46 [INFO]: Authorization successful
+2025-09-29 21:43:46 [INFO]: ::1 - - [29/Sep/2025:16:13:46 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:46 [INFO]: Token decoded successfully
+2025-09-29 21:43:46 [INFO]: Querying user from database
+2025-09-29 21:43:46 [INFO]: User found
+2025-09-29 21:43:46 [INFO]: Authorization check
+2025-09-29 21:43:46 [INFO]: Authorization successful
+2025-09-29 21:43:47 [INFO]: ::1 - - [29/Sep/2025:16:13:47 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:50 [INFO]: Token decoded successfully
+2025-09-29 21:43:50 [INFO]: Querying user from database
+2025-09-29 21:43:50 [INFO]: User found
+2025-09-29 21:43:50 [INFO]: Authorization check
+2025-09-29 21:43:50 [INFO]: Authorization successful
+2025-09-29 21:43:59 [INFO]: Queue started for doctor 11aedc76-46d6-4907-83ee-152d097196b8 on 2025-09-29
+2025-09-29 21:43:59 [INFO]: ::1 - - [29/Sep/2025:16:13:59 +0000] "POST /api/doctors/queue/start HTTP/1.1" 200 218 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:43:59 [INFO]: Token decoded successfully
+2025-09-29 21:43:59 [INFO]: Querying user from database
+2025-09-29 21:43:59 [INFO]: Token decoded successfully
+2025-09-29 21:43:59 [INFO]: Querying user from database
+2025-09-29 21:44:01 [INFO]: User found
+2025-09-29 21:44:01 [INFO]: Authorization check
+2025-09-29 21:44:01 [INFO]: Authorization successful
+2025-09-29 21:44:01 [INFO]: User found
+2025-09-29 21:44:01 [INFO]: Authorization check
+2025-09-29 21:44:01 [INFO]: Authorization successful
+2025-09-29 21:44:02 [INFO]: ::1 - - [29/Sep/2025:16:14:02 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:02 [INFO]: ::1 - - [29/Sep/2025:16:14:02 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:02 [INFO]: Token decoded successfully
+2025-09-29 21:44:02 [INFO]: Querying user from database
+2025-09-29 21:44:02 [INFO]: User found
+2025-09-29 21:44:02 [INFO]: Authorization check
+2025-09-29 21:44:02 [INFO]: Authorization successful
+2025-09-29 21:44:03 [INFO]: ::1 - - [29/Sep/2025:16:14:03 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:04 [INFO]: Token decoded successfully
+2025-09-29 21:44:04 [INFO]: Querying user from database
+2025-09-29 21:44:04 [INFO]: User found
+2025-09-29 21:44:04 [INFO]: Authorization check
+2025-09-29 21:44:04 [INFO]: Authorization successful
+2025-09-29 21:44:04 [INFO]: ::1 - - [29/Sep/2025:16:14:04 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:11 [INFO]: Token decoded successfully
+2025-09-29 21:44:11 [INFO]: Querying user from database
+2025-09-29 21:44:11 [INFO]: User found
+2025-09-29 21:44:11 [INFO]: Authorization check
+2025-09-29 21:44:11 [INFO]: Authorization successful
+2025-09-29 21:44:12 [INFO]: Consultation started for appointment: 44b76b62-1132-4b3a-b985-d08da13135c7
+2025-09-29 21:44:12 [INFO]: ::1 - - [29/Sep/2025:16:14:12 +0000] "POST /api/doctors/queue/start/44b76b62-1132-4b3a-b985-d08da13135c7 HTTP/1.1" 200 684 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:12 [INFO]: Token decoded successfully
+2025-09-29 21:44:12 [INFO]: Querying user from database
+2025-09-29 21:44:12 [INFO]: User found
+2025-09-29 21:44:12 [INFO]: Authorization check
+2025-09-29 21:44:12 [INFO]: Authorization successful
+2025-09-29 21:44:13 [INFO]: ::1 - - [29/Sep/2025:16:14:13 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:13 [INFO]: Token decoded successfully
+2025-09-29 21:44:13 [INFO]: Querying user from database
+2025-09-29 21:44:13 [INFO]: User found
+2025-09-29 21:44:13 [INFO]: Authorization check
+2025-09-29 21:44:13 [INFO]: Authorization successful
+2025-09-29 21:44:13 [INFO]: ::1 - - [29/Sep/2025:16:14:13 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 200 72 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:18 [INFO]: Token decoded successfully
+2025-09-29 21:44:18 [INFO]: Querying user from database
+2025-09-29 21:44:18 [INFO]: User found
+2025-09-29 21:44:18 [INFO]: Authorization check
+2025-09-29 21:44:18 [INFO]: Authorization successful
+2025-09-29 21:44:19 [INFO]: Consultation completed for appointment: APT-031
+2025-09-29 21:44:19 [INFO]: ::1 - - [29/Sep/2025:16:14:19 +0000] "POST /api/doctors/queue/complete/APT-031 HTTP/1.1" 200 866 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:19 [INFO]: Token decoded successfully
+2025-09-29 21:44:19 [INFO]: Querying user from database
+2025-09-29 21:44:19 [INFO]: User found
+2025-09-29 21:44:19 [INFO]: Authorization check
+2025-09-29 21:44:19 [INFO]: Authorization successful
+2025-09-29 21:44:19 [INFO]: ::1 - - [29/Sep/2025:16:14:19 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:20 [INFO]: Token decoded successfully
+2025-09-29 21:44:20 [INFO]: Querying user from database
+2025-09-29 21:44:20 [INFO]: User found
+2025-09-29 21:44:20 [INFO]: Authorization check
+2025-09-29 21:44:20 [INFO]: Authorization successful
+2025-09-29 21:44:21 [INFO]: ::1 - - [29/Sep/2025:16:14:21 +0000] "GET /api/doctors/queue/next-patient? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:22 [INFO]: Token decoded successfully
+2025-09-29 21:44:22 [INFO]: Querying user from database
+2025-09-29 21:44:22 [INFO]: User found
+2025-09-29 21:44:22 [INFO]: Authorization check
+2025-09-29 21:44:22 [INFO]: Authorization successful
+2025-09-29 21:44:22 [INFO]: ::1 - - [29/Sep/2025:16:14:22 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:30 [INFO]: User logged in: helaka@gmail.com
+2025-09-29 21:44:30 [INFO]: ::1 - - [29/Sep/2025:16:14:30 +0000] "POST /api/auth/login HTTP/1.1" 200 841 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:30 [INFO]: Token decoded successfully
+2025-09-29 21:44:30 [INFO]: Querying user from database
+2025-09-29 21:44:30 [INFO]: User found
+2025-09-29 21:44:30 [INFO]: Authorization check
+2025-09-29 21:44:30 [INFO]: Authorization successful
+2025-09-29 21:44:32 [INFO]: ::1 - - [29/Sep/2025:16:14:32 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 200 87 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:33 [INFO]: Token decoded successfully
+2025-09-29 21:44:33 [INFO]: Querying user from database
+2025-09-29 21:44:33 [INFO]: Token decoded successfully
+2025-09-29 21:44:33 [INFO]: Querying user from database
+2025-09-29 21:44:33 [INFO]: User found
+2025-09-29 21:44:33 [INFO]: Authorization check
+2025-09-29 21:44:33 [INFO]: Authorization successful
+2025-09-29 21:44:33 [INFO]: Token decoded successfully
+2025-09-29 21:44:33 [INFO]: Querying user from database
+2025-09-29 21:44:33 [INFO]: User found
+2025-09-29 21:44:33 [INFO]: Authorization check
+2025-09-29 21:44:33 [INFO]: Authorization successful
+2025-09-29 21:44:33 [INFO]: Token decoded successfully
+2025-09-29 21:44:33 [INFO]: Querying user from database
+2025-09-29 21:44:33 [INFO]: User found
+2025-09-29 21:44:33 [INFO]: Authorization check
+2025-09-29 21:44:33 [INFO]: Authorization successful
+2025-09-29 21:44:33 [INFO]: User found
+2025-09-29 21:44:33 [INFO]: Authorization check
+2025-09-29 21:44:33 [INFO]: Authorization successful
+2025-09-29 21:44:34 [INFO]: ::1 - - [29/Sep/2025:16:14:34 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:34 [INFO]: ::1 - - [29/Sep/2025:16:14:34 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 200 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:44:58 [INFO]: Token decoded successfully
+2025-09-29 21:44:58 [INFO]: Querying user from database
+2025-09-29 21:44:58 [INFO]: User found
+2025-09-29 21:44:58 [INFO]: Authorization check
+2025-09-29 21:44:58 [INFO]: Authorization successful
+2025-09-29 21:44:58 [INFO]: Token decoded successfully
+2025-09-29 21:44:58 [INFO]: Querying user from database
+2025-09-29 21:44:59 [INFO]: User found
+2025-09-29 21:44:59 [INFO]: Authorization check
+2025-09-29 21:44:59 [INFO]: Authorization successful
+2025-09-29 21:45:00 [INFO]: ::1 - - [29/Sep/2025:16:15:00 +0000] "POST /api/patient/health-predictions HTTP/1.1" 201 547 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:45:00 [INFO]: Token decoded successfully
+2025-09-29 21:45:00 [INFO]: Querying user from database
+2025-09-29 21:45:00 [INFO]: Token decoded successfully
+2025-09-29 21:45:00 [INFO]: Querying user from database
+2025-09-29 21:45:00 [INFO]: User found
+2025-09-29 21:45:00 [INFO]: Authorization check
+2025-09-29 21:45:00 [INFO]: Authorization successful
+2025-09-29 21:45:00 [INFO]: Token decoded successfully
+2025-09-29 21:45:00 [INFO]: Querying user from database
+2025-09-29 21:45:00 [INFO]: User found
+2025-09-29 21:45:00 [INFO]: Authorization check
+2025-09-29 21:45:00 [INFO]: Authorization successful
+2025-09-29 21:45:00 [INFO]: User found
+2025-09-29 21:45:00 [INFO]: Authorization check
+2025-09-29 21:45:00 [INFO]: Authorization successful
+2025-09-29 21:45:00 [INFO]: Token decoded successfully
+2025-09-29 21:45:00 [INFO]: Querying user from database
+2025-09-29 21:45:00 [INFO]: ::1 - - [29/Sep/2025:16:15:00 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:45:00 [INFO]: User found
+2025-09-29 21:45:00 [INFO]: Authorization check
+2025-09-29 21:45:00 [INFO]: Authorization successful
+2025-09-29 21:45:02 [INFO]: ::1 - - [29/Sep/2025:16:15:02 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 200 421 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:45:22 [INFO]: Token decoded successfully
+2025-09-29 21:45:22 [INFO]: Querying user from database
+2025-09-29 21:45:22 [INFO]: Token decoded successfully
+2025-09-29 21:45:22 [INFO]: Querying user from database
+2025-09-29 21:45:23 [INFO]: User found
+2025-09-29 21:45:23 [INFO]: User found
+2025-09-29 21:45:23 [INFO]: Authorization check
+2025-09-29 21:45:23 [INFO]: Authorization successful
+2025-09-29 21:45:23 [INFO]: ::1 - - [29/Sep/2025:16:15:23 +0000] "GET /api/auth/profile HTTP/1.1" 200 410 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:45:33 [ERROR]: MySQL query error:
+2025-09-29 21:45:33 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:45:33 [INFO]: ::1 - - [29/Sep/2025:16:15:33 +0000] "GET /api/patients/queue/position? HTTP/1.1" 200 519 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:45:33 [INFO]: Token decoded successfully
+2025-09-29 21:45:33 [INFO]: Querying user from database
+2025-09-29 21:45:33 [INFO]: Token decoded successfully
+2025-09-29 21:45:33 [INFO]: Querying user from database
+2025-09-29 21:45:35 [INFO]: User found
+2025-09-29 21:45:35 [INFO]: Authorization check
+2025-09-29 21:45:35 [INFO]: Authorization successful
+2025-09-29 21:45:35 [INFO]: User found
+2025-09-29 21:45:35 [INFO]: Authorization check
+2025-09-29 21:45:35 [INFO]: Authorization successful
+2025-09-29 21:45:38 [INFO]: ::1 - - [29/Sep/2025:16:15:38 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:45:38 [ERROR]: MySQL query error:
+2025-09-29 21:45:38 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:45:38 [INFO]: ::1 - - [29/Sep/2025:16:15:38 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:45:38 [INFO]: Token decoded successfully
+2025-09-29 21:45:38 [INFO]: Querying user from database
+2025-09-29 21:45:39 [INFO]: User found
+2025-09-29 21:45:39 [INFO]: Authorization check
+2025-09-29 21:45:39 [INFO]: Authorization successful
+2025-09-29 21:45:42 [INFO]: ::1 - - [29/Sep/2025:16:15:42 +0000] "GET /api/patients/queue/notification?doctorId=11aedc76-46d6-4907-83ee-152d097196b8 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:45:53 [INFO]: Token decoded successfully
+2025-09-29 21:45:53 [INFO]: Querying user from database
+2025-09-29 21:45:53 [INFO]: Token decoded successfully
+2025-09-29 21:45:53 [INFO]: Querying user from database
+2025-09-29 21:45:54 [INFO]: User found
+2025-09-29 21:45:54 [INFO]: Authorization check
+2025-09-29 21:45:54 [INFO]: Authorization successful
+2025-09-29 21:45:54 [INFO]: Token decoded successfully
+2025-09-29 21:45:54 [INFO]: Querying user from database
+2025-09-29 21:45:55 [INFO]: User found
+2025-09-29 21:45:55 [INFO]: Authorization check
+2025-09-29 21:45:55 [INFO]: Authorization successful
+2025-09-29 21:45:55 [INFO]: Token decoded successfully
+2025-09-29 21:45:55 [INFO]: Querying user from database
+2025-09-29 21:45:58 [INFO]: User found
+2025-09-29 21:45:58 [INFO]: Authorization check
+2025-09-29 21:45:58 [INFO]: Authorization successful
+2025-09-29 21:46:01 [INFO]: User found
+2025-09-29 21:46:01 [INFO]: Authorization check
+2025-09-29 21:46:01 [INFO]: Authorization successful
+2025-09-29 21:46:05 [INFO]: ::1 - - [29/Sep/2025:16:16:05 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:06 [INFO]: ::1 - - [29/Sep/2025:16:16:06 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:07 [INFO]: User logged in: admin@gmail.com
+2025-09-29 21:46:07 [INFO]: ::1 - - [29/Sep/2025:16:16:07 +0000] "POST /api/auth/login HTTP/1.1" 200 824 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:07 [INFO]: ::1 - - [29/Sep/2025:16:16:07 +0000] "GET /api/mock/patients?page=1&limit=5&search=&status=active HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:11 [INFO]: Token decoded successfully
+2025-09-29 21:46:11 [INFO]: Querying user from database
+2025-09-29 21:46:11 [INFO]: Token decoded successfully
+2025-09-29 21:46:11 [INFO]: Querying user from database
+2025-09-29 21:46:11 [INFO]: User found
+2025-09-29 21:46:11 [INFO]: Authorization check
+2025-09-29 21:46:11 [INFO]: Authorization successful
+2025-09-29 21:46:11 [INFO]: Token decoded successfully
+2025-09-29 21:46:11 [INFO]: Querying user from database
+2025-09-29 21:46:11 [INFO]: User found
+2025-09-29 21:46:11 [INFO]: Authorization check
+2025-09-29 21:46:11 [INFO]: Authorization successful
+2025-09-29 21:46:11 [INFO]: Token decoded successfully
+2025-09-29 21:46:11 [INFO]: Querying user from database
+2025-09-29 21:46:11 [INFO]: User found
+2025-09-29 21:46:11 [INFO]: Authorization check
+2025-09-29 21:46:11 [INFO]: Authorization successful
+2025-09-29 21:46:11 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2025-09-29 21:46:11 [INFO]: User found
+2025-09-29 21:46:11 [INFO]: Authorization check
+2025-09-29 21:46:11 [INFO]: Authorization successful
+2025-09-29 21:46:11 [INFO]: 📊 [ADMIN] Getting admin dashboard for: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2025-09-29 21:46:12 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2025-09-29 21:46:12 [INFO]: ::1 - - [29/Sep/2025:16:16:12 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:12 [INFO]: ✅ [ADMIN] Retrieved 3 patient submissions
+2025-09-29 21:46:12 [INFO]: ::1 - - [29/Sep/2025:16:16:12 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:19 [INFO]: Token decoded successfully
+2025-09-29 21:46:19 [INFO]: Querying user from database
+2025-09-29 21:46:19 [INFO]: User found
+2025-09-29 21:46:19 [INFO]: Authorization check
+2025-09-29 21:46:19 [INFO]: Authorization successful
+2025-09-29 21:46:19 [INFO]: Token decoded successfully
+2025-09-29 21:46:19 [INFO]: Querying user from database
+2025-09-29 21:46:20 [INFO]: User found
+2025-09-29 21:46:20 [INFO]: Authorization check
+2025-09-29 21:46:20 [INFO]: Authorization successful
+2025-09-29 21:46:20 [INFO]: 🤖 [ADMIN] Processing patient submission with AI: 5661bc19-a292-4c7c-b6b1-2303cdb32fd7 by admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2025-09-29 21:46:22 [INFO]: 📊 [ADMIN] Sending data to diabetes prediction service:
+2025-09-29 21:46:27 [INFO]: 🎯 [ADMIN] Diabetes prediction service response:
+2025-09-29 21:46:28 [INFO]: ✅ [ADMIN] Successfully processed submission 5661bc19-a292-4c7c-b6b1-2303cdb32fd7 with AI prediction
+2025-09-29 21:46:28 [INFO]: ::1 - - [29/Sep/2025:16:16:28 +0000] "POST /api/admin/health-predictions/5661bc19-a292-4c7c-b6b1-2303cdb32fd7/process HTTP/1.1" 200 744 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:28 [INFO]: Token decoded successfully
+2025-09-29 21:46:28 [INFO]: Querying user from database
+2025-09-29 21:46:28 [INFO]: Token decoded successfully
+2025-09-29 21:46:28 [INFO]: Querying user from database
+2025-09-29 21:46:28 [INFO]: User found
+2025-09-29 21:46:28 [INFO]: Authorization check
+2025-09-29 21:46:28 [INFO]: Authorization successful
+2025-09-29 21:46:28 [INFO]: Token decoded successfully
+2025-09-29 21:46:28 [INFO]: Querying user from database
+2025-09-29 21:46:28 [INFO]: User found
+2025-09-29 21:46:28 [INFO]: Authorization check
+2025-09-29 21:46:28 [INFO]: Authorization successful
+2025-09-29 21:46:28 [INFO]: Token decoded successfully
+2025-09-29 21:46:28 [INFO]: Querying user from database
+2025-09-29 21:46:28 [INFO]: User found
+2025-09-29 21:46:28 [INFO]: Authorization check
+2025-09-29 21:46:28 [INFO]: Authorization successful
+2025-09-29 21:46:28 [INFO]: 🔍 [ADMIN] Getting patient health submissions for admin: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2025-09-29 21:46:28 [INFO]: User found
+2025-09-29 21:46:28 [INFO]: Authorization check
+2025-09-29 21:46:28 [INFO]: Authorization successful
+2025-09-29 21:46:28 [INFO]: 📊 [ADMIN] Getting admin dashboard for: 8063ddb0-bf44-4edd-8e7a-f0780795a1b7
+2025-09-29 21:46:28 [INFO]: ✅ [ADMIN] Retrieved 3 patient submissions
+2025-09-29 21:46:28 [INFO]: ::1 - - [29/Sep/2025:16:16:28 +0000] "GET /api/admin/health-predictions?page=1&limit=10&status=all HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:28 [INFO]: ✅ [ADMIN] Retrieved admin dashboard successfully
+2025-09-29 21:46:28 [INFO]: ::1 - - [29/Sep/2025:16:16:28 +0000] "GET /api/admin/health-predictions/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:42 [INFO]: User logged in: doctor@gmail.com
+2025-09-29 21:46:42 [INFO]: ::1 - - [29/Sep/2025:16:16:42 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:42 [INFO]: Token decoded successfully
+2025-09-29 21:46:42 [INFO]: Querying user from database
+2025-09-29 21:46:42 [INFO]: User found
+2025-09-29 21:46:42 [INFO]: Authorization check
+2025-09-29 21:46:42 [INFO]: Authorization successful
+2025-09-29 21:46:43 [ERROR]: MySQL query error:
+2025-09-29 21:46:43 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:706:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:577:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:46:43 [ERROR]: MySQL query error:
+2025-09-29 21:46:43 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:778:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:587:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 21:46:43 [INFO]: ::1 - - [29/Sep/2025:16:16:43 +0000] "GET /api/doctors/dashboard HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:46:47 [INFO]: Token decoded successfully
+2025-09-29 21:46:47 [INFO]: Querying user from database
+2025-09-29 21:46:47 [INFO]: User found
+2025-09-29 21:46:47 [INFO]: Authorization check
+2025-09-29 21:46:47 [INFO]: Authorization successful
+2025-09-29 21:46:47 [INFO]: ::1 - - [29/Sep/2025:16:16:47 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:47:05 [INFO]: Token decoded successfully
+2025-09-29 21:47:05 [INFO]: Querying user from database
+2025-09-29 21:47:05 [INFO]: User found
+2025-09-29 21:47:05 [INFO]: Authorization check
+2025-09-29 21:47:05 [INFO]: Authorization successful
+2025-09-29 21:47:06 [INFO]: AI prediction 5661bc19-a292-4c7c-b6b1-2303cdb32fd7 reviewed by doctor 11aedc76-46d6-4907-83ee-152d097196b8
+2025-09-29 21:47:06 [INFO]: ::1 - - [29/Sep/2025:16:17:06 +0000] "PATCH /api/doctors/ai-predictions/5661bc19-a292-4c7c-b6b1-2303cdb32fd7/review HTTP/1.1" 200 71 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-29 21:47:18 [INFO]: User logged in: helaka@gmail.com
+2025-09-29 21:47:18 [INFO]: ::1 - - [29/Sep/2025:16:17:18 +0000] "POST /api/auth/login HTTP/1.1" 200 841 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:47:19 [INFO]: Token decoded successfully
+2025-09-29 21:47:19 [INFO]: Querying user from database
+2025-09-29 21:47:19 [INFO]: User found
+2025-09-29 21:47:19 [INFO]: Authorization check
+2025-09-29 21:47:19 [INFO]: Authorization successful
+2025-09-29 21:47:19 [INFO]: ::1 - - [29/Sep/2025:16:17:19 +0000] "GET /api/patients/appointments?status=scheduled&status=confirmed&limit=5 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:47:20 [INFO]: Token decoded successfully
+2025-09-29 21:47:20 [INFO]: Querying user from database
+2025-09-29 21:47:20 [INFO]: Token decoded successfully
+2025-09-29 21:47:20 [INFO]: Querying user from database
+2025-09-29 21:47:20 [INFO]: User found
+2025-09-29 21:47:20 [INFO]: Authorization check
+2025-09-29 21:47:20 [INFO]: Authorization successful
+2025-09-29 21:47:20 [INFO]: Token decoded successfully
+2025-09-29 21:47:20 [INFO]: Querying user from database
+2025-09-29 21:47:20 [INFO]: User found
+2025-09-29 21:47:20 [INFO]: Authorization check
+2025-09-29 21:47:20 [INFO]: Authorization successful
+2025-09-29 21:47:20 [INFO]: Token decoded successfully
+2025-09-29 21:47:20 [INFO]: Querying user from database
+2025-09-29 21:47:21 [INFO]: User found
+2025-09-29 21:47:21 [INFO]: Authorization check
+2025-09-29 21:47:21 [INFO]: Authorization successful
+2025-09-29 21:47:21 [INFO]: User found
+2025-09-29 21:47:21 [INFO]: Authorization check
+2025-09-29 21:47:21 [INFO]: Authorization successful
+2025-09-29 21:47:21 [INFO]: ::1 - - [29/Sep/2025:16:17:21 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 200 779 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 21:47:21 [INFO]: ::1 - - [29/Sep/2025:16:17:21 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 200 231 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 23:15:05 [INFO]: Token decoded successfully
+2025-09-29 23:15:05 [INFO]: Querying user from database
+2025-09-29 23:15:05 [INFO]: Token decoded successfully
+2025-09-29 23:15:05 [INFO]: Querying user from database
+2025-09-29 23:15:05 [INFO]: Token decoded successfully
+2025-09-29 23:15:05 [INFO]: Querying user from database
+2025-09-29 23:15:06 [INFO]: User found
+2025-09-29 23:15:06 [INFO]: Authorization check
+2025-09-29 23:15:06 [INFO]: Authorization successful
+2025-09-29 23:15:06 [INFO]: Token decoded successfully
+2025-09-29 23:15:06 [INFO]: Querying user from database
+2025-09-29 23:15:06 [INFO]: User found
+2025-09-29 23:15:06 [INFO]: Authorization check
+2025-09-29 23:15:06 [INFO]: Authorization successful
+2025-09-29 23:15:06 [INFO]: Token decoded successfully
+2025-09-29 23:15:06 [INFO]: Querying user from database
+2025-09-29 23:15:06 [INFO]: User found
+2025-09-29 23:15:06 [INFO]: Authorization check
+2025-09-29 23:15:06 [INFO]: Authorization successful
+2025-09-29 23:15:06 [INFO]: User found
+2025-09-29 23:15:06 [INFO]: Authorization check
+2025-09-29 23:15:06 [INFO]: Authorization successful
+2025-09-29 23:15:08 [INFO]: ::1 - - [29/Sep/2025:17:45:08 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 23:15:08 [INFO]: User found
+2025-09-29 23:15:08 [INFO]: ::1 - - [29/Sep/2025:17:45:08 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 23:15:08 [INFO]: ::1 - - [29/Sep/2025:17:45:08 +0000] "GET /api/auth/profile HTTP/1.1" 200 399 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 23:15:08 [INFO]: Token decoded successfully
+2025-09-29 23:15:08 [INFO]: Querying user from database
+2025-09-29 23:15:08 [INFO]: Token decoded successfully
+2025-09-29 23:15:08 [INFO]: Querying user from database
+2025-09-29 23:15:09 [INFO]: User found
+2025-09-29 23:15:09 [INFO]: Authorization check
+2025-09-29 23:15:09 [INFO]: Authorization successful
+2025-09-29 23:15:09 [INFO]: Token decoded successfully
+2025-09-29 23:15:09 [INFO]: Querying user from database
+2025-09-29 23:15:09 [INFO]: User found
+2025-09-29 23:15:09 [INFO]: Authorization check
+2025-09-29 23:15:09 [INFO]: Authorization successful
+2025-09-29 23:15:09 [INFO]: User found
+2025-09-29 23:15:09 [INFO]: Authorization check
+2025-09-29 23:15:09 [INFO]: Authorization successful
+2025-09-29 23:15:09 [INFO]: Token decoded successfully
+2025-09-29 23:15:09 [INFO]: Querying user from database
+2025-09-29 23:15:09 [INFO]: User found
+2025-09-29 23:15:09 [INFO]: Authorization check
+2025-09-29 23:15:09 [INFO]: Authorization successful
+2025-09-29 23:15:09 [INFO]: ::1 - - [29/Sep/2025:17:45:09 +0000] "GET /api/patient/health-predictions/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
+2025-09-29 23:15:12 [INFO]: ::1 - - [29/Sep/2025:17:45:12 +0000] "GET /api/patient/health-predictions?page=1&limit=10 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"
