@@ -531,6 +531,278 @@ class AdminController {
     }
   }
 
+  // Get all patients with comprehensive details
+  static async getAllPatients(req, res, next) {
+    try {
+      const { 
+        page = 1, 
+        limit = 20, 
+        search = '',
+        status = 'active'
+      } = req.query;
+
+      // Create direct connection for admin operations
+      const mysql = require('mysql2/promise');
+      const connection = await mysql.createConnection({
+        host: 'caresyncdb-caresync.e.aivencloud.com',
+        port: 16006,
+        user: 'avnadmin',
+        password: 'AVNS_6xeaVpCVApextDTAKfU',
+        database: 'caresync',
+        ssl: { rejectUnauthorized: false }
+      });
+      
+      let whereClause = "WHERE u.role = 'patient' AND u.is_active = 1";
+      let countParams = [];
+      let dataParams = [];
+      
+      if (search && search.trim() !== '') {
+        whereClause += " AND (u.name LIKE ? OR u.email LIKE ? OR p.patient_id LIKE ?)";
+        const searchPattern = `%${search.trim()}%`;
+        countParams.push(searchPattern, searchPattern, searchPattern);
+        dataParams.push(searchPattern, searchPattern, searchPattern);
+      }
+      
+      if (status && status !== 'all' && status !== '') {
+        whereClause += " AND p.status = ?";
+        countParams.push(status);
+        dataParams.push(status);
+      }
+      
+      const countQuery = `
+        SELECT COUNT(*) as total
+        FROM users u
+        INNER JOIN patients p ON u.id = p.user_id
+        ${whereClause}
+      `;
+      
+      const pageNum = Math.max(1, parseInt(page) || 1);
+      const limitNum = Math.max(1, Math.min(100, parseInt(limit) || 20));
+      const offset = (pageNum - 1) * limitNum;
+      
+      const dataQuery = `
+        SELECT 
+          u.id,
+          u.name,
+          u.email,
+          u.phone,
+          u.created_at,
+          u.is_active,
+          p.patient_id,
+          p.date_of_birth,
+          p.gender,
+          p.address,
+          p.emergency_contact_name,
+          p.emergency_contact_phone,
+          p.status
+        FROM users u
+        INNER JOIN patients p ON u.id = p.user_id
+        ${whereClause}
+        ORDER BY u.created_at DESC
+        LIMIT ${limitNum} OFFSET ${offset}
+      `;
+      
+      console.log('Executing count query:', countQuery);
+      console.log('Count params:', countParams);
+      
+      const [countResult] = await connection.execute(countQuery, countParams);
+      
+      console.log('Executing data query:', dataQuery);
+      console.log('Data params:', dataParams);
+      
+      const [patients] = await connection.execute(dataQuery, dataParams);
+      
+      await connection.end();
+      
+      const formattedPatients = patients.map(patient => ({
+        id: patient.id,
+        patient_id: patient.patient_id,
+        name: patient.name || 'N/A',
+        email: patient.email,
+        phone: patient.phone || 'N/A',
+        date_of_birth: patient.date_of_birth,
+        gender: patient.gender || 'N/A',
+        address: patient.address || 'N/A',
+        emergency_contact_name: patient.emergency_contact_name || 'N/A',
+        emergency_contact_phone: patient.emergency_contact_phone || 'N/A',
+        status: patient.status || 'active',
+        created_at: patient.created_at
+      }));
+
+      const totalCount = countResult[0].total;
+      const totalPages = Math.ceil(totalCount / limitNum);
+
+      logger.info(`Admin: Loaded ${formattedPatients.length} patients (page ${pageNum}/${totalPages})`);
+
+      res.json({
+        success: true,
+        data: {
+          patients: formattedPatients,
+          pagination: {
+            currentPage: pageNum,
+            totalPages,
+            totalCount,
+            limit: limitNum
+          }
+        },
+        message: `Found ${totalCount} patients`
+      });
+    } catch (error) {
+      logger.error('Error fetching all patients:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to load patients',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
+    }
+  }
+
+  // Get all doctors with comprehensive details
+  static async getAllDoctors(req, res, next) {
+    try {
+      const { 
+        page = 1, 
+        limit = 20, 
+        search = '',
+        status = 'active',
+        specialty = ''
+      } = req.query;
+
+      // Create direct connection for admin operations
+      const mysql = require('mysql2/promise');
+      const connection = await mysql.createConnection({
+        host: 'caresyncdb-caresync.e.aivencloud.com',
+        port: 16006,
+        user: 'avnadmin',
+        password: 'AVNS_6xeaVpCVApextDTAKfU',
+        database: 'caresync',
+        ssl: { rejectUnauthorized: false }
+      });
+      
+      let whereClause = "WHERE u.role = 'doctor' AND u.is_active = 1";
+      let countParams = [];
+      let dataParams = [];
+      
+      if (search && search.trim() !== '') {
+        whereClause += " AND (u.name LIKE ? OR u.email LIKE ? OR d.license_number LIKE ? OR d.specialty LIKE ?)";
+        const searchPattern = `%${search.trim()}%`;
+        countParams.push(searchPattern, searchPattern, searchPattern, searchPattern);
+        dataParams.push(searchPattern, searchPattern, searchPattern, searchPattern);
+      }
+      
+      if (specialty && specialty.trim() !== '') {
+        whereClause += " AND d.specialty = ?";
+        countParams.push(specialty);
+        dataParams.push(specialty);
+      }
+      
+      if (status && status !== 'all' && status !== '') {
+        whereClause += " AND d.status = ?";
+        countParams.push(status);
+        dataParams.push(status);
+      }
+      
+      const countQuery = `
+        SELECT COUNT(*) as total
+        FROM users u
+        INNER JOIN doctors d ON u.id = d.user_id
+        ${whereClause}
+      `;
+      
+      const pageNum = Math.max(1, parseInt(page) || 1);
+      const limitNum = Math.max(1, Math.min(100, parseInt(limit) || 20));
+      const offset = (pageNum - 1) * limitNum;
+      
+      const dataQuery = `
+        SELECT 
+          u.id,
+          u.name,
+          u.email,
+          u.phone,
+          u.created_at,
+          u.is_active,
+          d.doctor_id,
+          d.specialty,
+          d.license_number,
+          d.years_of_experience,
+          d.education,
+          d.certifications,
+          d.consultation_fee,
+          d.working_hours,
+          d.availability_status,
+          d.status,
+          d.rating,
+          d.total_reviews,
+          d.office_address,
+          d.bio
+        FROM users u
+        INNER JOIN doctors d ON u.id = d.user_id
+        ${whereClause}
+        ORDER BY u.created_at DESC
+        LIMIT ${limitNum} OFFSET ${offset}
+      `;
+      
+      console.log('Executing doctors count query:', countQuery);
+      console.log('Count params:', countParams);
+      
+      const [countResult] = await connection.execute(countQuery, countParams);
+      
+      console.log('Executing doctors data query:', dataQuery);
+      console.log('Data params:', dataParams);
+      
+      const [doctors] = await connection.execute(dataQuery, dataParams);
+      
+      await connection.end();
+      
+      const formattedDoctors = doctors.map(doctor => ({
+        id: doctor.id,
+        doctor_id: doctor.doctor_id,
+        name: doctor.name || 'N/A',
+        email: doctor.email,
+        phone: doctor.phone || 'N/A',
+        specialty: doctor.specialty || 'N/A',
+        license_number: doctor.license_number || 'N/A',
+        years_of_experience: doctor.years_of_experience || 0,
+        education: doctor.education || 'N/A',
+        certifications: doctor.certifications || 'N/A',
+        consultation_fee: doctor.consultation_fee || 0,
+        available_days: doctor.available_days || 'N/A',
+        available_hours: doctor.available_hours || 'N/A',
+        status: doctor.status || 'active',
+        approval_status: doctor.approval_status || 'pending',
+        average_rating: doctor.average_rating || 0,
+        total_reviews: doctor.total_reviews || 0,
+        created_at: doctor.created_at
+      }));
+
+      const totalCount = countResult[0].total;
+      const totalPages = Math.ceil(totalCount / limitNum);
+
+      logger.info(`Admin: Loaded ${formattedDoctors.length} doctors (page ${pageNum}/${totalPages})`);
+
+      res.json({
+        success: true,
+        data: {
+          doctors: formattedDoctors,
+          pagination: {
+            currentPage: pageNum,
+            totalPages,
+            totalCount,
+            limit: limitNum
+          }
+        },
+        message: `Found ${totalCount} doctors`
+      });
+    } catch (error) {
+      logger.error('Error fetching all doctors:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to load doctors',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
+    }
+  }
+
   // Admin book queue appointment for any patient
   static async bookQueueAppointmentForPatient(req, res, next) {
     try {

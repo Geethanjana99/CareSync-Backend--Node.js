@@ -4375,3 +4375,76 @@
 2025-09-29 23:52:01 [ERROR]: ❌ MongoDB connection failed:
 >>>>>>> dev
 2025-09-30 00:03:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:06:27 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:07:13 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:10:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:14:13 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:18:57 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:20:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:20:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:22:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:22:39 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:24:27 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:26:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:29:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:29:30 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:31:13 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:31:17 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:31:20 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:31:30 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:31:35 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:32:31 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:32:34 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:32:36 [ERROR]: Error: Incorrect arguments to mysqld_stmt_execute
+    at PromiseConnection.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\connection.js:47:22)
+    at getAllPatients (E:\Project 2\backend\controllers\adminController.js:599:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 00:34:07 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:34:37 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:36:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:40:58 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:41:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:49:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:05:53 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:16:03 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:20:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:25:19 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:30:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:30:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:31:55 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 01:34:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:34:31 [ERROR]: ❌ MongoDB connection failed:
