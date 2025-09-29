@@ -280,7 +280,14 @@ class DoctorController {
         });
       }
 
-      const appointment = await Appointment.findById(appointmentId);
+      // Use findByAppointmentId to look for appointment_id field (APT-011 format)
+      let appointment = await Appointment.findByAppointmentId(appointmentId);
+      
+      // If not found by appointment_id, try by primary id (UUID format) for backward compatibility
+      if (!appointment) {
+        appointment = await Appointment.findById(appointmentId);
+      }
+      
       if (!appointment || appointment.doctor_id !== doctor.id) {
         return res.status(404).json({
           success: false,
@@ -288,7 +295,7 @@ class DoctorController {
         });
       }
 
-      const updatedAppointment = await Appointment.updateStatus(appointmentId, status, notes);
+      const updatedAppointment = await Appointment.updateStatus(appointment.id, status, notes);
 
       res.json({
         success: true,
@@ -827,7 +834,14 @@ class DoctorController {
 
       // If appointmentId is provided, start that specific appointment
       if (appointmentId && appointmentId !== 'auto') {
-        const appointment = await Appointment.findById(appointmentId);
+        // Use findByAppointmentId to look for appointment_id field (APT-011 format)
+        let appointment = await Appointment.findByAppointmentId(appointmentId);
+        
+        // If not found by appointment_id, try by primary id (UUID format) for backward compatibility
+        if (!appointment) {
+          appointment = await Appointment.findById(appointmentId);
+        }
+        
         if (!appointment || appointment.doctor_id !== doctor.id) {
           return res.status(404).json({
             success: false,
@@ -843,9 +857,9 @@ class DoctorController {
           });
         }
 
-        // Update appointment status to in-progress and advance queue
+        // Update appointment status to in-progress and advance queue using the primary id
         const updatedAppointment = await Appointment.updateAppointmentStatus(
-          appointmentId, 
+          appointment.id, // Use the primary id (UUID) for the update
           'in-progress'
         );
 
@@ -914,7 +928,14 @@ class DoctorController {
         });
       }
 
-      const appointment = await Appointment.findById(appointmentId);
+      // Use findByAppointmentId to look for appointment_id field (APT-011 format)
+      let appointment = await Appointment.findByAppointmentId(appointmentId);
+      
+      // If not found by appointment_id, try by primary id (UUID format) for backward compatibility
+      if (!appointment) {
+        appointment = await Appointment.findById(appointmentId);
+      }
+      
       if (!appointment || appointment.doctor_id !== doctor.id) {
         return res.status(404).json({
           success: false,
@@ -922,9 +943,9 @@ class DoctorController {
         });
       }
 
-      // Update appointment status to completed
+      // Update appointment status to completed using the primary id
       const updatedAppointment = await Appointment.updateAppointmentStatus(
-        appointmentId, 
+        appointment.id, // Use the primary id (UUID) for the update
         'completed',
         JSON.stringify({ notes, prescription, diagnosis })
       );
@@ -1441,13 +1462,22 @@ class DoctorController {
         });
       }
 
-      // Check if appointment belongs to this doctor
-      const appointmentQuery = `
+      // Check if appointment belongs to this doctor (try both appointment_id and id)
+      let appointmentQuery = `
         SELECT * FROM appointments 
-        WHERE id = ? AND doctor_id = ?
+        WHERE appointment_id = ? AND doctor_id = ?
       `;
       
-      const [appointment] = await mysqlConnection.query(appointmentQuery, [appointmentId, doctor.id]);
+      let [appointment] = await mysqlConnection.query(appointmentQuery, [appointmentId, doctor.id]);
+      
+      // If not found by appointment_id, try by primary id (UUID format) for backward compatibility
+      if (!appointment) {
+        appointmentQuery = `
+          SELECT * FROM appointments 
+          WHERE id = ? AND doctor_id = ?
+        `;
+        [appointment] = await mysqlConnection.query(appointmentQuery, [appointmentId, doctor.id]);
+      }
       
       if (!appointment) {
         return res.status(404).json({
@@ -1456,14 +1486,14 @@ class DoctorController {
         });
       }
 
-      // Update payment status
+      // Update payment status using the primary id
       const updateQuery = `
         UPDATE appointments 
         SET payment_status = ?, updated_at = NOW()
         WHERE id = ?
       `;
       
-      await mysqlConnection.query(updateQuery, [paymentStatus, appointmentId]);
+      await mysqlConnection.query(updateQuery, [paymentStatus, appointment.id]);
 
       // Log the payment status change
       logger.info(`Payment status updated for appointment ${appointmentId} to ${paymentStatus} by doctor ${doctor.id}`);
