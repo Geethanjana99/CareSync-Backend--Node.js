@@ -598,6 +598,9 @@ class PatientController {
             const [regularPosition] = await mysqlConnection.query(positionQuery, positionParams);
             const totalPosition = emergencyCount.emergency_count + regularPosition.position;
             
+            // Calculate estimated wait time for regular patient with emergency consideration
+            const estimatedWaitTime = await PatientController.calculateEstimatedWaitTime(doctorId, totalPosition + 1, queueDate);
+            
             return res.json({
               success: true,
               data: {
@@ -606,6 +609,7 @@ class PatientController {
                 status: appointment.status,
                 paymentStatus: appointment.payment_status,
                 position: appointment.payment_status === 'paid' ? totalPosition + 1 : null,
+                estimated_wait_time: estimatedWaitTime,
                 doctorId: appointment.doctor_id,
                 doctorName: appointment.doctor_name,
                 specialty: appointment.specialty,
@@ -614,7 +618,9 @@ class PatientController {
                 nextPatient: totalPosition === 0 && appointment.payment_status === 'paid',
                 message: appointment.payment_status !== 'paid' 
                   ? 'Please complete payment to join the active queue'
-                  : totalPosition === 0 ? 'You are next!' : `${totalPosition + 1} patients ahead of you`
+                  : appointment.status === 'completed'
+                    ? 'Your consultation is completed'
+                    : totalPosition === 0 ? 'You are next! Be ready for your consultation.' : `${totalPosition + 1} patients ahead of you`
               }
             });
           }
@@ -653,6 +659,9 @@ class PatientController {
             queue_date: queueDate
           };
 
+          // Calculate estimated wait time for emergency patient
+          const estimatedWaitTime = await PatientController.calculateEstimatedWaitTime(doctorId, position + 1, queueDate);
+
           return res.json({
             success: true,
             data: {
@@ -661,6 +670,7 @@ class PatientController {
               status: appointment.status,
               paymentStatus: appointment.payment_status,
               position: appointment.payment_status === 'paid' ? position + 1 : null,
+              estimated_wait_time: estimatedWaitTime,
               doctorId: appointment.doctor_id,
               doctorName: appointment.doctor_name,
               specialty: appointment.specialty,
@@ -673,7 +683,9 @@ class PatientController {
               currentEmergencyNumber: enhancedQueueStatus.current_emergency_number,
               message: appointment.payment_status !== 'paid' 
                 ? 'Please complete payment to join the active queue'
-                : position === 0 ? 'You are next!' : `${position + 1} emergency patients ahead of you`
+                : appointment.status === 'completed'
+                  ? 'Your consultation is completed'
+                  : position === 0 ? 'You are next! Be ready for your consultation.' : `${position + 1} emergency patients ahead of you`
             }
           });
         }
@@ -695,6 +707,9 @@ class PatientController {
           queue_date: queueDate
         };
 
+        // Calculate estimated wait time
+        const estimatedWaitTime = await PatientController.calculateEstimatedWaitTime(doctorId, position + 1, queueDate);
+        
         // Standard response for inactive queue or regular patients
         res.json({
           success: true,
@@ -704,6 +719,7 @@ class PatientController {
             status: appointment.status,
             paymentStatus: appointment.payment_status,
             position: position + 1,
+            estimated_wait_time: estimatedWaitTime,
             doctorId: appointment.doctor_id,
             doctorName: appointment.doctor_name,
             specialty: appointment.specialty,
@@ -718,7 +734,9 @@ class PatientController {
               ? 'Doctor has not started the queue yet'
               : appointment.payment_status !== 'paid' 
                 ? 'Please complete payment to join the active queue'
-                : position === 0 ? 'You are next!' : `${position + 1} patients ahead of you`
+                : appointment.status === 'completed'
+                  ? 'Your consultation is completed'
+                  : position === 0 ? 'You are next! Be ready for your consultation.' : `${position + 1} patients ahead of you`
           }
         });
 
@@ -796,14 +814,17 @@ class PatientController {
         );
 
         // Format response for multiple appointments with queue status
-        const formattedAppointments = appointments.map(apt => {
+        const formattedAppointments = await Promise.all(appointments.map(async (apt) => {
           const queueStatus = queueStatusMap[apt.doctor_id];
+          const estimatedWaitTime = await PatientController.calculateEstimatedWaitTime(apt.doctor_id, apt.position + 1, queueDate);
+          
           return {
             queueNumber: apt.queue_number,
             isEmergency: apt.is_emergency,
             status: apt.status,
             paymentStatus: apt.payment_status,
             position: apt.position + 1,
+            estimated_wait_time: estimatedWaitTime,
             doctorId: apt.doctor_id,
             doctorName: apt.doctor_name,
             specialty: apt.specialty,
@@ -814,7 +835,7 @@ class PatientController {
             currentNumber: queueStatus.current_number,
             currentEmergencyNumber: queueStatus.current_emergency_number
           };
-        });
+        }));
 
         res.json({
           success: true,
@@ -894,7 +915,26 @@ class PatientController {
               isEmergency: appointment.is_emergency,
               doctorName: appointment.doctor_name,
               specialty: appointment.specialty,
-              paymentStatus: appointment.payment_status
+              paymentStatus: appointment.payment_status,
+              status: appointment.status
+            }
+          }
+        });
+      }
+
+      // Check if appointment is already completed
+      if (appointment.status === 'completed') {
+        return res.json({
+          success: true,
+          data: {
+            status: 'completed',
+            message: 'Your consultation has been completed',
+            appointment: {
+              queueNumber: appointment.queue_number,
+              isEmergency: appointment.is_emergency,
+              doctorName: appointment.doctor_name,
+              specialty: appointment.specialty,
+              status: appointment.status
             }
           }
         });
@@ -1032,6 +1072,43 @@ class PatientController {
         nextPatientParams = [doctorId, queueDate, currentRegularNum];
       }
 
+      // Check if patient is currently being served
+      let isCurrentlyServing = false;
+      if (appointment.is_emergency) {
+        const patientNumber = parseInt(appointment.queue_number.substring(1));
+        const currentEmergencyNum = parseInt(currentEmergencyNumber.substring(1));
+        isCurrentlyServing = patientNumber === currentEmergencyNum;
+      } else {
+        const patientNumber = parseInt(appointment.queue_number);
+        const currentRegularNum = parseInt(currentNumber);
+        isCurrentlyServing = patientNumber === currentRegularNum;
+      }
+
+      // If patient is currently being served
+      if (isCurrentlyServing) {
+        return res.json({
+          success: true,
+          data: {
+            status: 'your_turn',
+            message: "IT'S YOUR TURN! Please proceed to the doctor immediately.",
+            position: 0,
+            isNext: false,
+            isCurrent: true,
+            appointment: {
+              queueNumber: appointment.queue_number,
+              isEmergency: appointment.is_emergency,
+              doctorName: appointment.doctor_name,
+              specialty: appointment.specialty,
+              status: appointment.status
+            },
+            queueInfo: {
+              currentNumber: appointment.is_emergency ? currentEmergencyNumber : currentNumber,
+              isActive: queueStatus.is_active
+            }
+          }
+        });
+      }
+
       const [positionResult] = await mysqlConnection.query(positionQuery, positionParams);
       const [nextPatientResult] = await mysqlConnection.query(nextPatientQuery, nextPatientParams);
 
@@ -1078,6 +1155,48 @@ class PatientController {
     } catch (error) {
       logger.error('Error getting patient notification:', error);
       next(error);
+    }
+  }
+
+  // Calculate estimated wait time based on average consultation time and queue position
+  static async calculateEstimatedWaitTime(doctorId, position, date = null) {
+    try {
+      const { mysqlConnection } = require('../config/mysql');
+      const queueDate = date || new Date().toISOString().split('T')[0];
+
+      // Get average consultation time for this doctor from completed appointments
+      const avgTimeQuery = `
+        SELECT 
+          AVG(
+            CASE 
+              WHEN completed_at IS NOT NULL AND start_time IS NOT NULL 
+              THEN TIMESTAMPDIFF(MINUTE, start_time, completed_at)
+              ELSE 15  -- Default 15 minutes if no historical data
+            END
+          ) as avg_consultation_minutes
+        FROM appointments 
+        WHERE doctor_id = ? 
+          AND status = 'completed' 
+          AND completed_at IS NOT NULL 
+          AND start_time IS NOT NULL
+          AND queue_date >= DATE_SUB(?, INTERVAL 30 DAY)  -- Last 30 days
+      `;
+      
+      const [result] = await mysqlConnection.query(avgTimeQuery, [doctorId, queueDate]);
+      
+      // Use calculated average or default to 15 minutes
+      const avgConsultationTime = result.avg_consultation_minutes || 15;
+      
+      // Estimated wait time = (position - 1) * average consultation time
+      // Subtract 1 because position 1 means you're next (0 wait time)
+      const estimatedMinutes = Math.max(0, (position - 1) * avgConsultationTime);
+      
+      return Math.round(estimatedMinutes);
+      
+    } catch (error) {
+      logger.error('Error calculating estimated wait time:', error);
+      // Return default estimate of 15 minutes per person ahead
+      return Math.max(0, (position - 1) * 15);
     }
   }
 

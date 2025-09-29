@@ -4352,3 +4352,143 @@
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:483:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-09-29 16:58:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:09:35 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:09:44 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:09:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:09:58 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:09:58 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:10:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:10:51 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:10:51 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:10:57 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:10:57 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:06 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:06 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:14 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:14 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:32 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:32 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:46 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:46 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:55 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:11:55 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:12:53 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:12:55 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:12:55 [ERROR]: TypeError: this.calculateEstimatedWaitTime is not a function
+    at E:\Project 2\backend\controllers\patientController.js:819:48
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:13:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:13:26 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:13:35 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:13:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:14:32 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:15:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:15:33 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:15:57 [ERROR]: MySQL query error:
+2025-09-29 18:15:57 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:16:50 [ERROR]: MySQL query error:
+2025-09-29 18:16:50 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:16:51 [ERROR]: MySQL query error:
+2025-09-29 18:16:51 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 18:17:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:18:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:18:53 [ERROR]: MySQL query error:
+2025-09-29 18:18:53 [ERROR]: Error: Unknown column 'start_time' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at PatientController.calculateEstimatedWaitTime (E:\Project 2\backend\controllers\patientController.js:1185:46)
+    at E:\Project 2\backend\controllers\patientController.js:819:61
+    at Array.map (<anonymous>)
+    at getQueuePosition (E:\Project 2\backend\controllers\patientController.js:817:70)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
