@@ -75,8 +75,41 @@ class Queue {
       `;
       const allAppointments = await mysqlConnection.query(allAppointmentsQuery, [doctorId, queueDate]);
       
+      // Ensure queueStatus has properly converted boolean values and all necessary fields
+      const enhancedQueueStatus = queueStatus ? {
+        id: queueStatus.id,
+        doctor_id: queueStatus.doctor_id,
+        is_active: Boolean(queueStatus.is_active), // Ensure boolean conversion
+        available_from: queueStatus.available_from,
+        available_to: queueStatus.available_to,
+        current_number: queueStatus.current_number,
+        current_emergency_number: queueStatus.current_emergency_number,
+        regular_count: queueStatus.regular_count || 0,
+        emergency_used: queueStatus.emergency_used || 0,
+        max_emergency_slots: queueStatus.max_emergency_slots || 5,
+        queue_date: queueStatus.queue_date,
+        created_at: queueStatus.created_at,
+        updated_at: queueStatus.updated_at,
+        doctor_name: queueStatus.doctor_name,
+        specialty: queueStatus.specialty
+      } : {
+        doctor_id: doctorId,
+        is_active: false,
+        available_from: '09:00:00',
+        available_to: '17:00:00',
+        current_number: '0',
+        current_emergency_number: 'E0',
+        regular_count: 0,
+        emergency_used: 0,
+        max_emergency_slots: 5,
+        queue_date: queueDate,
+        created_at: null,
+        updated_at: null,
+        message: 'No queue found for this date'
+      };
+
       return {
-        queueStatus,
+        queueStatus: enhancedQueueStatus,
         appointments, // Filtered appointments (paid only if queue is active)
         allAppointments, // All appointments for complete statistics
         isFiltered: filterPaidOnly,

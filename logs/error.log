@@ -3848,3 +3848,311 @@
 2025-09-29 11:57:59 [ERROR]: ❌ MongoDB connection failed:
 2025-09-29 12:05:46 [ERROR]: ❌ MongoDB connection failed:
 2025-09-29 12:07:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:19:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:20:29 [ERROR]: MySQL query error:
+2025-09-29 12:20:29 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:499:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:370:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 12:20:30 [ERROR]: MySQL query error:
+2025-09-29 12:20:30 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 12:22:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:23:26 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:23:42 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:23:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:24:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:25:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:25:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:30:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:32:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:38:34 [ERROR]: MySQL query error:
+2025-09-29 12:38:34 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 12:39:22 [ERROR]: MySQL query error:
+2025-09-29 12:39:22 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 12:39:42 [ERROR]: MySQL query error:
+2025-09-29 12:39:42 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 12:39:54 [ERROR]: MySQL query error:
+2025-09-29 12:39:54 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 12:40:07 [ERROR]: MySQL query error:
+2025-09-29 12:40:07 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:42:41)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (E:\Project 2\backend\node_modules\express\lib\router\index.js:175:3)
+2025-09-29 12:41:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:44:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:44:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:44:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:45:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:52:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 12:53:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:02:01 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:04:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:07:06 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:07:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:11:48 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:13:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:13:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:17:38 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:22:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:26:45 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:27:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:29:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:36:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:36:16 [ERROR]: MySQL query error:
+2025-09-29 13:36:56 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:37:12 [ERROR]: MySQL query error:
+2025-09-29 13:37:12 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:12 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:12 [ERROR]: MySQL query error:
+2025-09-29 13:37:12 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:12 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:13 [ERROR]: MySQL query error:
+2025-09-29 13:37:13 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:13 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:13 [ERROR]: MySQL query error:
+2025-09-29 13:37:13 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:13 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:20 [ERROR]: MySQL query error:
+2025-09-29 13:37:20 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:20 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:20 [ERROR]: MySQL query error:
+2025-09-29 13:37:20 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:20 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:22 [ERROR]: MySQL query error:
+2025-09-29 13:37:22 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:22 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:23 [ERROR]: MySQL query error:
+2025-09-29 13:37:23 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:23 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:37:51 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:39:27 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:39:54 [ERROR]: MySQL query error:
+2025-09-29 13:39:54 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:54 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:55 [ERROR]: MySQL query error:
+2025-09-29 13:39:55 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:55 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:55 [ERROR]: MySQL query error:
+2025-09-29 13:39:55 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:55 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:56 [ERROR]: MySQL query error:
+2025-09-29 13:39:56 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:39:56 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:24 [ERROR]: MySQL query error:
+2025-09-29 13:41:24 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:24 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:24 [ERROR]: MySQL query error:
+2025-09-29 13:41:24 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:24 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:25 [ERROR]: MySQL query error:
+2025-09-29 13:41:25 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:25 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:25 [ERROR]: MySQL query error:
+2025-09-29 13:41:25 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:41:25 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:42:03 [ERROR]: MySQL query error:
+2025-09-29 13:42:03 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:42:03 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:42:04 [ERROR]: MySQL query error:
+2025-09-29 13:42:04 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:42:04 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getTodayAppointments (E:\Project 2\backend\controllers\doctorController.js:156:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 13:42:39 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 13:52:24 [ERROR]: ❌ MongoDB connection failed:
