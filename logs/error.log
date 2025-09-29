@@ -3829,3 +3829,20 @@
     at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:571:44)
     at getDashboard (E:\Project 2\backend\controllers\doctorController.js:380:26)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-29 11:51:02 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:52:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:11 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:19 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:37 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:44 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:53:57 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:54:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:54:13 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:54:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:55:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:56:00 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:56:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 11:57:59 [ERROR]: ❌ MongoDB connection failed:
