@@ -26,6 +26,7 @@ router.patch('/appointments/:appointmentId/action', DoctorController.handleAppoi
 router.post('/appointments/:appointmentId/notes', DoctorController.addMedicalNotes);
 
 // Patient information
+router.get('/patients', DoctorController.getMyPatients);
 router.get('/patients/:patientId', DoctorController.getPatientDetails);
 
 // Earnings and statistics

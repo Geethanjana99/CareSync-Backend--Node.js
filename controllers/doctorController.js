@@ -310,6 +310,110 @@ class DoctorController {
     }
   }
 
+  // Get doctor's patients (who have had appointments)
+  static async getMyPatients(req, res, next) {
+    try {
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Get distinct patients who have had appointments with this doctor (simplified)
+      const patients = await mysqlConnection.query(`
+        SELECT 
+          p.id as patient_id,
+          pu.name as patient_name,
+          pu.email as patient_email,
+          pu.phone as patient_phone,
+          p.date_of_birth,
+          p.gender,
+          p.blood_type,
+          p.allergies,
+          p.medical_history,
+          p.current_medications
+        FROM patients p
+        JOIN users pu ON p.user_id = pu.id
+        WHERE p.id IN (
+          SELECT DISTINCT patient_id 
+          FROM appointments 
+          WHERE doctor_id = ?
+        )
+        ORDER BY pu.name
+      `, [doctor.id]);
+
+      console.log('🔍 Found patients:', patients.length);
+
+      // Get appointment counts separately for each patient
+      for (let patient of patients) {
+        const appointmentCounts = await mysqlConnection.query(`
+          SELECT 
+            COUNT(*) as total_appointments,
+            MAX(appointment_date) as last_visit,
+            MAX(CASE WHEN status = 'completed' THEN appointment_date END) as last_completed_visit,
+            SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) as completed_appointments,
+            SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) as cancelled_appointments
+          FROM appointments 
+          WHERE patient_id = ? AND doctor_id = ?
+        `, [patient.patient_id, doctor.id]);
+
+        console.log(`🔍 Patient ${patient.patient_name} appointments:`, appointmentCounts[0]);
+
+        // Add the counts to the patient object
+        patient.total_appointments = appointmentCounts[0].total_appointments;
+        patient.last_visit = appointmentCounts[0].last_visit;
+        patient.last_completed_visit = appointmentCounts[0].last_completed_visit;
+        patient.completed_appointments = appointmentCounts[0].completed_appointments;
+        patient.cancelled_appointments = appointmentCounts[0].cancelled_appointments;
+      }
+
+      // Debug: Check actual appointments for the first patient
+      if (patients[0]) {
+        const debugAppointments = await mysqlConnection.query(`
+          SELECT id, patient_id, doctor_id, appointment_date, status 
+          FROM appointments 
+          WHERE patient_id = ? AND doctor_id = ?
+        `, [patients[0].patient_id, doctor.id]);
+        console.log('🔍 Debug - Actual appointments for patient:', debugAppointments);
+      }
+
+      // Format the response
+      const formattedPatients = patients.map(patient => ({
+        id: patient.patient_id,
+        name: patient.patient_name,
+        email: patient.patient_email,
+        phone: patient.patient_phone,
+        dateOfBirth: patient.date_of_birth,
+        gender: patient.gender,
+        bloodType: patient.blood_type,
+        allergies: patient.allergies,
+        medicalHistory: patient.medical_history,
+        currentMedications: patient.current_medications,
+        totalAppointments: patient.total_appointments,
+        completedAppointments: patient.completed_appointments,
+        cancelledAppointments: patient.cancelled_appointments,
+        lastVisit: patient.last_visit,
+        lastCompletedVisit: patient.last_completed_visit,
+        status: patient.last_completed_visit ? 'active' : 'inactive'
+      }));
+
+      res.json({
+        success: true,
+        data: {
+          patients: formattedPatients,
+          total: formattedPatients.length
+        }
+      });
+
+      logger.info(`Doctor ${doctor.id} retrieved ${formattedPatients.length} patients`);
+    } catch (error) {
+      logger.error('Error fetching doctor patients:', error);
+      next(error);
+    }
+  }
+
   // Get patient details for appointment
   static async getPatientDetails(req, res, next) {
     try {
