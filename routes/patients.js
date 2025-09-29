@@ -23,6 +23,7 @@ router.get('/appointments/upcoming', PatientController.getUpcomingAppointments);
 router.post('/appointments/queue', PatientController.bookQueueAppointment);
 router.get('/queue/position', PatientController.getQueuePosition);
 router.get('/queue/status', PatientController.getDoctorQueueStatus);
+router.get('/queue/notification', PatientController.getNextPatientNotification);
 
 // Medical reports
 router.get('/medical-reports', PatientController.getMedicalReports);

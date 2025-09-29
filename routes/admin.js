@@ -21,8 +21,10 @@ router.post('/users/admin', userValidation.register, AdminController.createAdmin
 // Appointment management
 router.get('/appointments', AdminController.getAppointments);
 router.get('/appointments/statistics', AdminController.getAppointmentStatistics);
+router.post('/appointments/queue', AdminController.bookQueueAppointmentForPatient);
 
 // Doctor management
+router.get('/doctors', AdminController.getDoctors);
 router.get('/doctors/metrics', AdminController.getDoctorMetrics);
 router.patch('/doctors/:doctorId/approval', AdminController.approveDoctorRegistration);
 

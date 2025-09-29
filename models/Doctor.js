@@ -18,6 +18,7 @@ class Doctor {
     this.rating = doctorData.rating || 0.00;
     this.total_reviews = doctorData.total_reviews || 0;
     this.working_hours = doctorData.working_hours;
+    this.availability_status = doctorData.availability_status || 'offline';
     this.commission_rate = doctorData.commission_rate || 25.00;
     this.status = doctorData.status || 'active';
   }
@@ -92,15 +93,17 @@ class Doctor {
     // Sort by name
     query += ' ORDER BY name ASC';
 
-    if (filters.limit) {
-      query += ' LIMIT ?';
-      params.push(parseInt(filters.limit));
-    }
+    // Add LIMIT and OFFSET using string concatenation (MySQL2 doesn't like parameterized LIMIT/OFFSET sometimes)
+    const limit = filters.limit && !isNaN(parseInt(filters.limit)) && parseInt(filters.limit) > 0 
+      ? parseInt(filters.limit) 
+      : 50; // Default limit
+    
+    const offset = filters.offset && !isNaN(parseInt(filters.offset)) && parseInt(filters.offset) >= 0 
+      ? parseInt(filters.offset) 
+      : 0; // Default offset
 
-    if (filters.offset) {
-      query += ' OFFSET ?';
-      params.push(parseInt(filters.offset));
-    }
+    // Use string concatenation for LIMIT/OFFSET to avoid MySQL2 parameter issues
+    query += ` LIMIT ${limit} OFFSET ${offset}`;
 
     return await mysqlConnection.query(query, params);
   }

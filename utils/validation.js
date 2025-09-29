@@ -115,20 +115,24 @@ class ValidationUtils {
     };
   }
 
-  // Validate appointment date (future dates only)
+  // Validate appointment date (current date and future dates allowed)
   static isValidAppointmentDate(dateString) {
     if (!dateString) return false;
     
     const appointmentDate = new Date(dateString);
-    const now = new Date();
+    const today = new Date();
     
     // Check if date is valid
     if (isNaN(appointmentDate.getTime())) {
       return false;
     }
     
-    // Check if date is in the future
-    return appointmentDate > now;
+    // Set both dates to start of day for proper comparison
+    appointmentDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    
+    // Check if date is today or in the future
+    return appointmentDate >= today;
   }
 
   // Validate medical license number

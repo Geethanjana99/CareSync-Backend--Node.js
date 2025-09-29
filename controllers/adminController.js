@@ -221,6 +221,42 @@ class AdminController {
     }
   }
 
+  // Get all doctors for admin use (e.g., appointment creation)
+  static async getDoctors(req, res, next) {
+    try {
+      const { page = 1, limit = 50, search, specialty } = req.query;
+      
+      const filters = {
+        search,
+        specialty
+      };
+
+      // Only add limit and offset if they are valid numbers
+      const parsedLimit = parseInt(limit);
+      const parsedPage = parseInt(page);
+      
+      if (!isNaN(parsedLimit) && parsedLimit > 0) {
+        filters.limit = parsedLimit;
+      }
+      
+      if (!isNaN(parsedPage) && parsedPage > 0 && !isNaN(parsedLimit)) {
+        filters.offset = (parsedPage - 1) * parsedLimit;
+      }
+
+      const doctors = await Doctor.findAll(filters);
+
+      res.json({
+        success: true,
+        data: {
+          doctors
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching doctors:', error);
+      next(error);
+    }
+  }
+
   // Get doctor performance metrics
   static async getDoctorMetrics(req, res, next) {
     try {
@@ -448,29 +484,155 @@ class AdminController {
   // Get patient names for billing/invoice purposes
   static async getPatientNames(req, res, next) {
     try {
-      const mysql = require('../config/mysql');
+      // Create direct connection for admin operations
+      const mysql = require('mysql2/promise');
+      const connection = await mysql.createConnection({
+        host: 'caresyncdb-caresync.e.aivencloud.com',
+        port: 16006,
+        user: 'avnadmin',
+        password: 'AVNS_6xeaVpCVApextDTAKfU',
+        database: 'caresync',
+        ssl: { rejectUnauthorized: false }
+      });
       
       const query = `
-        SELECT id, name, email
-        FROM users 
-        WHERE role = 'patient' AND status = 'active'
-        ORDER BY name
+        SELECT u.id, u.name, u.email, p.patient_id as patient_code, p.status as patient_status
+        FROM users u
+        INNER JOIN patients p ON u.id = p.user_id
+        WHERE u.role = 'patient' AND u.is_active = true
+        ORDER BY u.name
       `;
       
-      const [patients] = await mysql.execute(query);
+      const [patients] = await connection.execute(query);
+      await connection.end();
       
       const patientList = patients.map(patient => ({
         id: patient.id,
         name: patient.name || patient.email,
-        email: patient.email
+        email: patient.email,
+        patientCode: patient.patient_code,
+        status: patient.patient_status
       }));
+
+      logger.info(`Admin: Loaded ${patientList.length} patients`);
 
       res.json({
         success: true,
-        data: patientList
+        data: patientList,
+        message: `Found ${patientList.length} patients`
       });
     } catch (error) {
       logger.error('Error fetching patient names:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to load patients',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
+    }
+  }
+
+  // Admin book queue appointment for any patient
+  static async bookQueueAppointmentForPatient(req, res, next) {
+    try {
+      const {
+        patientId,
+        doctorId,
+        appointmentDate,
+        appointmentType = 'consultation',
+        reasonForVisit,
+        symptoms,
+        priority = 'medium'
+      } = req.body;
+
+      // Validate required fields
+      if (!patientId || !doctorId || !appointmentDate || !reasonForVisit) {
+        return res.status(400).json({
+          success: false,
+          message: 'Patient ID, Doctor ID, appointment date, and reason for visit are required'
+        });
+      }
+
+      // Get patient by ID (not by user ID like the regular method)
+      const patient = await Patient.findById(patientId);
+      if (!patient) {
+        return res.status(404).json({
+          success: false,
+          message: 'Patient not found'
+        });
+      }
+
+      // Convert public doctor ID to internal ID if needed
+      let internalDoctorId = doctorId;
+      
+      // Check if doctorId is a public ID (like 'D001') and convert to internal ID
+      if (typeof doctorId === 'string' && doctorId.startsWith('D')) {
+        const { mysqlConnection } = require('../config/mysql');
+        const doctorResult = await mysqlConnection.query(
+          'SELECT id FROM doctors WHERE doctor_id = ?',
+          [doctorId]
+        );
+        
+        if (doctorResult.length === 0) {
+          return res.status(400).json({
+            success: false,
+            message: 'Doctor not found'
+          });
+        }
+        
+        internalDoctorId = doctorResult[0].id;
+      }
+
+      // Validate appointment date (allow current date)
+      const selectedDate = new Date(appointmentDate);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      // Set selected date to start of day for proper comparison
+      selectedDate.setHours(0, 0, 0, 0);
+      
+      if (selectedDate < today) {
+        return res.status(400).json({
+          success: false,
+          message: 'Cannot book appointment for past dates'
+        });
+      }
+
+      // Create appointment using queue system
+      const appointmentData = {
+        patient_id: patient.id,
+        doctor_id: internalDoctorId,
+        appointment_date: appointmentDate,
+        appointment_type: appointmentType,
+        reason_for_visit: reasonForVisit,
+        symptoms: symptoms || null,
+        priority: priority,
+        status: 'scheduled',
+        created_by_admin: req.user.id
+      };
+
+      // Get next queue number for the date
+      const { mysqlConnection } = require('../config/mysql');
+      const queueResult = await mysqlConnection.query(
+        'SELECT COALESCE(MAX(queue_number), 0) + 1 as next_queue FROM appointments WHERE appointment_date = ? AND doctor_id = ?',
+        [appointmentDate, internalDoctorId]
+      );
+      
+      const queueNumber = queueResult[0].next_queue;
+      appointmentData.queue_number = queueNumber;
+
+      const appointment = await Appointment.create(appointmentData);
+
+      res.status(201).json({
+        success: true,
+        message: `Appointment scheduled successfully. Queue number: ${queueNumber}`,
+        data: {
+          appointment,
+          queueNumber
+        }
+      });
+
+    } catch (error) {
+      logger.error('Error booking queue appointment for patient:', error);
       next(error);
     }
   }
