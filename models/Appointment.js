@@ -25,10 +25,17 @@ class Appointment {
     this.estimated_wait_time = appointmentData.estimated_wait_time;
     this.actual_wait_time = appointmentData.actual_wait_time;
     this.consultation_fee = appointmentData.consultation_fee;
+    this.payment_status = appointmentData.payment_status; // Add payment_status field
     // Queue-based fields
     this.queue_number = appointmentData.queue_number;
     this.is_emergency = appointmentData.is_emergency || false;
     this.queue_date = appointmentData.queue_date || appointmentData.appointment_date;
+    
+    // Additional fields for queue display (preserve JOIN data)
+    this.patient_name = appointmentData.patient_name;
+    this.patient_phone = appointmentData.patient_phone;
+    this.doctor_name = appointmentData.doctor_name;
+    this.specialty = appointmentData.specialty;
   }
 
   // Create queue-based appointment
@@ -47,7 +54,7 @@ class Appointment {
       // Get next queue number
       appointment.queue_number = await Queue.getNextQueueNumber(
         appointment.doctor_id, 
-        appointment.is_emergency,
+        false, // Always false - no emergency appointments
         appointment.queue_date
       );
 
@@ -271,14 +278,21 @@ class Appointment {
       }
     }
 
-    if (filters.date_from) {
-      query += ' AND a.appointment_date >= ?';
+    if (filters.date_from && filters.date_to && filters.date_from === filters.date_to) {
+      // If startDate and endDate are the same, filter for exact date match
+      query += ' AND DATE(a.queue_date) = ?';
       params.push(filters.date_from);
-    }
+    } else {
+      // If different dates, use range filtering
+      if (filters.date_from) {
+        query += ' AND a.queue_date >= ?';
+        params.push(filters.date_from);
+      }
 
-    if (filters.date_to) {
-      query += ' AND a.appointment_date <= ?';
-      params.push(filters.date_to);
+      if (filters.date_to) {
+        query += ' AND a.queue_date <= ?';
+        params.push(filters.date_to);
+      }
     }
 
     if (filters.appointment_type) {
@@ -291,7 +305,7 @@ class Appointment {
       params.push(filters.priority);
     }
 
-    query += ' ORDER BY a.appointment_date DESC, a.created_at DESC';    if (filters.limit) {
+    query += ' ORDER BY a.queue_date DESC, a.created_at DESC';    if (filters.limit) {
       query += ' LIMIT ?';
       params.push(filters.limit.toString());
     }    if (filters.offset) {
@@ -528,14 +542,21 @@ class Appointment {
       }
     }
 
-    if (filters.date_from) {
-      query += ' AND a.appointment_date >= ?';
+    if (filters.date_from && filters.date_to && filters.date_from === filters.date_to) {
+      // If startDate and endDate are the same, filter for exact date match
+      query += ' AND DATE(a.queue_date) = ?';
       params.push(filters.date_from);
-    }
+    } else {
+      // If different dates, use range filtering
+      if (filters.date_from) {
+        query += ' AND a.queue_date >= ?';
+        params.push(filters.date_from);
+      }
 
-    if (filters.date_to) {
-      query += ' AND a.appointment_date <= ?';
-      params.push(filters.date_to);
+      if (filters.date_to) {
+        query += ' AND a.queue_date <= ?';
+        params.push(filters.date_to);
+      }
     }
 
     if (filters.appointment_type) {
@@ -549,7 +570,7 @@ class Appointment {
     }
 
     // Order by appointment date and queue number
-    query += ' ORDER BY a.appointment_date DESC, a.queue_number ASC';
+    query += ' ORDER BY a.queue_date DESC, a.queue_number ASC';
 
     // Add pagination
     if (filters.limit) {
