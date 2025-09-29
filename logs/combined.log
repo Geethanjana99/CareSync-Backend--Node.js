@@ -28353,3 +28353,13 @@
 2025-09-29 23:52:01 [INFO]: 🔗 Client URL: http://localhost:5173
 2025-09-29 23:52:01 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
 >>>>>>> dev
+2025-09-30 00:03:02 [INFO]: Socket.IO server initialized
+2025-09-30 00:03:04 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 00:03:04 [INFO]: ✅ MySQL connected successfully
+2025-09-30 00:03:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 00:03:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 00:03:04 [INFO]: 📧 Notification service skipped for now
+2025-09-30 00:03:04 [INFO]: 🚀 Server running on port 5000
+2025-09-30 00:03:04 [INFO]: 📊 Environment: development
+2025-09-30 00:03:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 00:03:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
