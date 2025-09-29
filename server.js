@@ -140,8 +140,10 @@ app.use('/api/medical-reports', medicalReportsRoutes);
 // app.use('/api/notifications', authMiddleware, notificationRoutes); // TODO: Create notification routes
 // app.use('/api/analytics', authMiddleware, analyticsRoutes); // TODO: Create analytics routes
 app.use('/api/admin', adminRoutes);
+app.use('/api/insurance-claims', require('./routes/insurance-claims'));
 app.use('/api/admin/reports', adminReportsRoutes);
 app.use('/api/admin/health-predictions', adminHealthPredictionRoutes);
+
 
 // Temporary mock routes for testing (no authentication required)
 app.use('/api/mock/auth', require('./routes/mock-auth'));

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-07-02 10:04:17 [ERROR]: Error: accountSid must start with AC
     at new Client (E:\Project 2\backend\node_modules\twilio\lib\base\BaseTwilio.js:71:23)
     at new Twilio (E:\Project 2\backend\node_modules\twilio\lib\rest\Twilio.js:33:9)
@@ -4354,3 +4355,6 @@
 2025-09-29 16:58:40 [ERROR]: ❌ MongoDB connection failed:
 2025-09-29 23:41:21 [ERROR]: ❌ MongoDB connection failed:
 2025-09-29 23:50:17 [ERROR]: ❌ MongoDB connection failed:
+=======
+>>>>>>> 5c28f0e471d63078dd8c8f932c6785f4fef39174
+2025-09-29 23:52:01 [ERROR]: ❌ MongoDB connection failed:
