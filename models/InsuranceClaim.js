@@ -1,34 +1,70 @@
 // models/InsuranceClaim.js
-const db = require('../config/mysql');
+const { mysqlConnection } = require('../config/mysql');
 
 class InsuranceClaim {
   constructor(data) {
-    this.id = data.id;
+    this.id = data.id || `CLM-${Date.now().toString().slice(-6)}`;
+    this.claim_id = data.claim_id;
     this.patient_id = data.patient_id;
+    this.patient_name = data.patient_name;
     this.appointment_id = data.appointment_id;
-    this.claim_amount = data.claim_amount;
-    this.status = data.status;
-    this.submitted_at = data.submitted_at;
-    this.processed_at = data.processed_at;
+    this.doctor_name = data.doctor_name;
+    this.service_date = data.service_date;
+    this.claim_date = data.claim_date || new Date().toISOString().split('T')[0];
+    this.amount = data.amount;
+    this.insurance_provider = data.insurance_provider;
+    this.status = data.status || 'pending';
+    this.denial_reason = data.denial_reason;
+    this.approved_amount = data.approved_amount;
+    this.paid_amount = data.paid_amount;
+    this.service_type = data.service_type;
     this.notes = data.notes;
+    this.created_at = data.created_at;
   }
 
   static async create(claimData) {
-    const [result] = await db.execute(
-      'INSERT INTO insurance_claims (patient_id, appointment_id, claim_amount, status, submitted_at, notes) VALUES (?, ?, ?, ?, NOW(), ?)',
-      [claimData.patient_id, claimData.appointment_id, claimData.claim_amount, claimData.status || 'pending', claimData.notes || null]
-    );
-    return { id: result.insertId, ...claimData };
+    const id = claimData.id || `CLM-${Date.now().toString().slice(-6)}`;
+    
+    const query = `
+      INSERT INTO insurance_claims (
+        id, patient_name, doctor_name, service_date, claim_date, 
+        amount, insurance_provider, status, service_type, notes
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `;
+
+    const params = [
+      id,
+      claimData.patient_name || claimData.patientName,
+      claimData.doctor_name || claimData.doctorName,
+      claimData.service_date || claimData.serviceDate,
+      claimData.claim_date || claimData.claimDate || new Date().toISOString().split('T')[0],
+      claimData.amount,
+      claimData.insurance_provider || claimData.insuranceProvider,
+      claimData.status || 'pending',
+      claimData.service_type || claimData.serviceType,
+      claimData.notes || ''
+    ];
+
+    await mysqlConnection.query(query, params);
+    return { id, ...claimData };
   }
 
   static async findAll() {
-    const [rows] = await db.execute('SELECT * FROM insurance_claims');
+    const query = 'SELECT * FROM insurance_claims ORDER BY created_at DESC';
+    const rows = await mysqlConnection.query(query);
     return rows.map(row => new InsuranceClaim(row));
   }
 
   static async findById(id) {
-    const [rows] = await db.execute('SELECT * FROM insurance_claims WHERE id = ?', [id]);
+    const query = 'SELECT * FROM insurance_claims WHERE id = ?';
+    const rows = await mysqlConnection.query(query, [id]);
     return rows.length ? new InsuranceClaim(rows[0]) : null;
+  }
+
+  static async updateStatus(id, status) {
+    const query = 'UPDATE insurance_claims SET status = ? WHERE id = ?';
+    const result = await mysqlConnection.query(query, [status, id]);
+    return result;
   }
 }
 

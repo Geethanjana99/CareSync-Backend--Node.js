@@ -4,7 +4,10 @@ const DoctorController = require('../controllers/doctorController');
 const { doctorValidation } = require('../middleware/validation');
 const auth = require('../middleware/auth');
 
-// All routes require doctor authentication
+// Public endpoint for getting doctor names (no auth required)
+router.get('/names', DoctorController.getDoctorNames);
+
+// All routes below require doctor authentication
 router.use(auth.authMiddleware);
 router.use(auth.authorize('doctor'));
 

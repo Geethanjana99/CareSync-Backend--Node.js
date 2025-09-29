@@ -23,3 +23,550 @@
     at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
     at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
     at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-08-30 13:28:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-08 19:52:05 [ERROR]: ❌ MySQL connection failed:
+2025-09-08 19:52:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-08 19:52:42 [ERROR]: MySQL query error:
+2025-09-08 19:52:42 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-08 19:53:12 [ERROR]: MySQL query error:
+2025-09-08 19:53:12 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-08 19:54:09 [ERROR]: ❌ MySQL connection failed:
+2025-09-08 19:54:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-08 19:54:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-08 20:25:25 [ERROR]: MySQL query error:
+2025-09-08 20:25:25 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-09-08 20:25:28 [ERROR]: MySQL query error:
+2025-09-08 20:25:28 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-08 20:30:41 [ERROR]: MySQL query error:
+2025-09-08 20:30:41 [ERROR]: Error: getaddrinfo ENOTFOUND caresyncdb-caresync.e.aivencloud.com
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-09-11 10:54:01 [ERROR]: MySQL query error:
+2025-09-11 10:54:01 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 10:54:07 [ERROR]: MySQL query error:
+2025-09-11 10:54:07 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:20:35 [ERROR]: MySQL query error:
+2025-09-11 11:20:35 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:46)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+2025-09-11 11:20:37 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:46)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+2025-09-11 11:20:55 [ERROR]: MySQL query error:
+2025-09-11 11:20:55 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-09-11 11:20:56 [ERROR]: MySQL query error:
+2025-09-11 11:20:56 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:20:56 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:20:56 [ERROR]: MySQL query error:
+2025-09-11 11:20:56 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:20:56 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:52:56 [ERROR]: MySQL query error:
+2025-09-11 11:52:56 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:52:56 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:52:57 [ERROR]: MySQL query error:
+2025-09-11 11:52:57 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:52:57 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 11:52:57 [ERROR]: MySQL query error:
+2025-09-11 11:52:57 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-09-11 11:56:19 [ERROR]: MySQL query error:
+2025-09-11 11:56:19 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 12:12:45 [ERROR]: MySQL query error:
+2025-09-11 12:12:45 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 12:12:45 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Invoice.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Invoice.js:83:45)
+    at getInvoices (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:115:38)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-11 12:12:45 [ERROR]: MySQL query error:
+2025-09-11 12:12:45 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-09-11 16:36:17 [ERROR]: MySQL query error:
+2025-09-11 16:36:17 [ERROR]: Error: connect ETIMEDOUT
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-28 21:20:00 [ERROR]: TokenExpiredError: jwt expired
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-09-28 21:20:00 [ERROR]: TokenExpiredError: jwt expired
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-09-28 21:20:00 [ERROR]: TokenExpiredError: jwt expired
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-09-28 21:20:01 [ERROR]: TokenExpiredError: jwt expired
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-09-28 21:20:51 [ERROR]: TokenExpiredError: jwt expired
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:15:25)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+2025-09-28 21:21:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-28 21:38:02 [ERROR]: MySQL query error:
+2025-09-28 21:38:02 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at authMiddleware (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\auth.js:28:41)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:175:3)
+2025-09-28 21:38:04 [ERROR]: MySQL query error:
+2025-09-28 21:38:04 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at User.findByEmail (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\User.js:46:41)
+    at login (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\authController.js:138:31)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at handleValidationErrors (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\middleware\validation.js:12:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-29 14:27:38 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 15:17:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 15:17:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 15:17:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 15:22:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 15:22:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 15:22:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:51:58 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:51:59 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:52:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:52:06 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:58:37 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:58:37 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:58:43 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:58:43 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:58:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 16:58:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:02:51 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:02:51 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:06:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:06:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:06:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:06:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:06:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:06:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:21:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:21:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:23:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:23:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:24:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:24:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:24:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:24:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:38:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:38:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:38:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:38:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:44:16 [ERROR]: MySQL query error:
+2025-09-29 17:44:16 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:46)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+2025-09-29 17:44:16 [ERROR]: Error: read ECONNRESET
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at getPatientNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\billingController.js:16:46)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\index.js:284:15
+2025-09-29 17:47:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:47:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:47:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:47:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:54:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:54:20 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:54:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:54:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:55:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 17:55:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:04:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:04:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:04:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:04:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:00 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:00 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:15 [ERROR]: MySQL query error:
+2025-09-29 18:08:15 [ERROR]: Error: Unknown column 'd.rating' in 'order clause'
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Doctor.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Doctor.js:115:34)
+    at getDoctorNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\doctorController.js:13:36)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-29 18:08:15 [ERROR]: Error: Unknown column 'd.rating' in 'order clause'
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Doctor.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Doctor.js:115:34)
+    at getDoctorNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\doctorController.js:13:36)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-29 18:08:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:08:34 [ERROR]: MySQL query error:
+2025-09-29 18:08:34 [ERROR]: Error: Unknown column 'd.rating' in 'order clause'
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Doctor.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Doctor.js:115:34)
+    at getDoctorNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\doctorController.js:13:36)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-29 18:08:34 [ERROR]: Error: Unknown column 'd.rating' in 'order clause'
+    at PromisePool.execute (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\config\mysql.js:49:38)
+    at Doctor.findAll (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\models\Doctor.js:115:34)
+    at getDoctorNames (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\controllers\doctorController.js:13:36)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\route.js:119:3)
+    at newFn (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\Project02\CareSync-Backend--Node.js\node_modules\express\lib\router\layer.js:95:5)
+2025-09-29 18:10:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:10:21 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:10:35 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:10:35 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:10:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:10:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:14:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:14:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:14:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:14:30 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:15:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:15:41 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:17:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:17:24 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:18:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:18:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:18:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:18:50 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:19:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:19:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:22:17 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:22:17 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:23:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:23:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:23:48 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:23:48 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:28:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:28:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:28:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:28:36 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:28:48 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:28:49 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:29:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:29:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:29:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:29:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:40:00 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:42:06 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:42:06 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:42:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:42:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:54:34 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:54:34 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:55:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:55:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:58:33 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 18:58:33 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:01:43 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:01:43 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:01:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:01:56 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:03:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-29 19:03:31 [ERROR]: ❌ MongoDB connection failed:

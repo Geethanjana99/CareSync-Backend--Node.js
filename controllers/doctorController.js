@@ -7,6 +7,23 @@ const logger = require('../config/logger');
 const { mysqlConnection } = require('../config/mysql');
 
 class DoctorController {
+  // get all doctors 
+  static async getDoctorNames(req, res, next) {
+    try {
+      const doctors = await Doctor.findAll();
+      const doctorNames = doctors.map(doc => ({
+        id: doc.id,
+        name: doc.name || doc.full_name || doc.display_name
+      }));
+      res.json({
+        success: true,
+        data: doctorNames
+      });
+    } catch (error) {
+      logger.error('Error fetching doctor names:', error);
+      next(error);
+    }
+  }
   // Get doctor profile
   static async getProfile(req, res, next) {
     try {
