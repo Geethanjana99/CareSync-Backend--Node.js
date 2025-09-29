@@ -107,7 +107,7 @@ class Queue {
     }
   }
 
-  // Get next queue number for booking
+  // Get next queue number for booking (regular appointments only)
   static async getNextQueueNumber(doctorId, isEmergency = false, date = null) {
     const queueDate = date || new Date().toISOString().split('T')[0];
     
@@ -115,54 +115,24 @@ class Queue {
       // Ensure queue status exists for the date
       await this.ensureQueueExists(doctorId, queueDate);
       
-      if (isEmergency) {
-        // Check emergency slots availability
-        const emergencyQuery = `
-          SELECT emergency_used, max_emergency_slots
-          FROM queue_status
-          WHERE doctor_id = ? AND queue_date = ?
-        `;
-        
-        const [queueStatus] = await mysqlConnection.query(emergencyQuery, [doctorId, queueDate]);
-        
-        if (queueStatus.emergency_used < queueStatus.max_emergency_slots) {
-          // Assign emergency number as negative integer (e.g., -1, -2, -3)
-          const emergencyNumber = -(queueStatus.emergency_used + 1);
-          
-          // Update emergency count
-          await mysqlConnection.query(`
-            UPDATE queue_status 
-            SET emergency_used = emergency_used + 1
-            WHERE doctor_id = ? AND queue_date = ?
-          `, [doctorId, queueDate]);
-          
-          return emergencyNumber;
-        } else {
-          // No emergency slots available, assign regular number
-          isEmergency = false;
-        }
-      }
+      // Always assign regular number (no emergency appointments)
+      const regularQuery = `
+        SELECT regular_count
+        FROM queue_status
+        WHERE doctor_id = ? AND queue_date = ?
+      `;
       
-      if (!isEmergency) {
-        // Get next regular number
-        const regularQuery = `
-          SELECT regular_count
-          FROM queue_status
-          WHERE doctor_id = ? AND queue_date = ?
-        `;
-        
-        const [queueStatus] = await mysqlConnection.query(regularQuery, [doctorId, queueDate]);
-        const nextNumber = (queueStatus.regular_count || 0) + 1;
-        
-        // Update regular count
-        await mysqlConnection.query(`
-          UPDATE queue_status 
-          SET regular_count = regular_count + 1
-          WHERE doctor_id = ? AND queue_date = ?
-        `, [doctorId, queueDate]);
-        
-        return nextNumber;
-      }
+      const [queueStatus] = await mysqlConnection.query(regularQuery, [doctorId, queueDate]);
+      const nextNumber = (queueStatus.regular_count || 0) + 1;
+      
+      // Update regular count
+      await mysqlConnection.query(`
+        UPDATE queue_status 
+        SET regular_count = regular_count + 1
+        WHERE doctor_id = ? AND queue_date = ?
+      `, [doctorId, queueDate]);
+      
+      return nextNumber;
     } catch (error) {
       logger.error('Error getting next queue number:', error);
       throw error;

@@ -25,6 +25,7 @@ class Appointment {
     this.estimated_wait_time = appointmentData.estimated_wait_time;
     this.actual_wait_time = appointmentData.actual_wait_time;
     this.consultation_fee = appointmentData.consultation_fee;
+    this.payment_status = appointmentData.payment_status; // Add payment_status field
     // Queue-based fields
     this.queue_number = appointmentData.queue_number;
     this.is_emergency = appointmentData.is_emergency || false;
@@ -47,7 +48,7 @@ class Appointment {
       // Get next queue number
       appointment.queue_number = await Queue.getNextQueueNumber(
         appointment.doctor_id, 
-        appointment.is_emergency,
+        false, // Always false - no emergency appointments
         appointment.queue_date
       );
 

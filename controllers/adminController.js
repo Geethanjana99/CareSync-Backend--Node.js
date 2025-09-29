@@ -484,30 +484,50 @@ class AdminController {
   // Get patient names for billing/invoice purposes
   static async getPatientNames(req, res, next) {
     try {
-      const mysql = require('../config/mysql');
+      // Create direct connection for admin operations
+      const mysql = require('mysql2/promise');
+      const connection = await mysql.createConnection({
+        host: 'caresyncdb-caresync.e.aivencloud.com',
+        port: 16006,
+        user: 'avnadmin',
+        password: 'AVNS_6xeaVpCVApextDTAKfU',
+        database: 'caresync',
+        ssl: { rejectUnauthorized: false }
+      });
       
       const query = `
-        SELECT id, name, email
-        FROM users 
-        WHERE role = 'patient' AND status = 'active'
-        ORDER BY name
+        SELECT u.id, u.name, u.email, p.patient_id as patient_code, p.status as patient_status
+        FROM users u
+        INNER JOIN patients p ON u.id = p.user_id
+        WHERE u.role = 'patient' AND u.is_active = true
+        ORDER BY u.name
       `;
       
-      const [patients] = await mysql.execute(query);
+      const [patients] = await connection.execute(query);
+      await connection.end();
       
       const patientList = patients.map(patient => ({
         id: patient.id,
         name: patient.name || patient.email,
-        email: patient.email
+        email: patient.email,
+        patientCode: patient.patient_code,
+        status: patient.patient_status
       }));
+
+      logger.info(`Admin: Loaded ${patientList.length} patients`);
 
       res.json({
         success: true,
-        data: patientList
+        data: patientList,
+        message: `Found ${patientList.length} patients`
       });
     } catch (error) {
       logger.error('Error fetching patient names:', error);
-      next(error);
+      res.status(500).json({
+        success: false,
+        message: 'Failed to load patients',
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
     }
   }
 
@@ -521,8 +541,7 @@ class AdminController {
         appointmentType = 'consultation',
         reasonForVisit,
         symptoms,
-        priority = 'medium',
-        isEmergency = false
+        priority = 'medium'
       } = req.body;
 
       // Validate required fields
@@ -563,10 +582,13 @@ class AdminController {
         internalDoctorId = doctorResult[0].id;
       }
 
-      // Validate appointment date
+      // Validate appointment date (allow current date)
       const selectedDate = new Date(appointmentDate);
       const today = new Date();
       today.setHours(0, 0, 0, 0);
+      
+      // Set selected date to start of day for proper comparison
+      selectedDate.setHours(0, 0, 0, 0);
       
       if (selectedDate < today) {
         return res.status(400).json({
@@ -598,18 +620,6 @@ class AdminController {
       const queueNumber = queueResult[0].next_queue;
       appointmentData.queue_number = queueNumber;
 
-      // If it's an emergency, move to front of queue
-      if (isEmergency) {
-        appointmentData.priority = 'urgent';
-        appointmentData.queue_number = 1;
-        
-        // Shift all other appointments for that day
-        await mysqlConnection.query(
-          'UPDATE appointments SET queue_number = queue_number + 1 WHERE appointment_date = ? AND doctor_id = ? AND queue_number >= 1',
-          [appointmentDate, internalDoctorId]
-        );
-      }
-
       const appointment = await Appointment.create(appointmentData);
 
       res.status(201).json({
@@ -617,8 +627,7 @@ class AdminController {
         message: `Appointment scheduled successfully. Queue number: ${queueNumber}`,
         data: {
           appointment,
-          queueNumber,
-          isEmergency
+          queueNumber
         }
       });
 

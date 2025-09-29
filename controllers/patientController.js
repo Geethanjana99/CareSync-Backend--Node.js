@@ -347,7 +347,6 @@ class PatientController {
         reasonForVisit,
         symptoms,
         priority = 'medium',
-        isEmergency = false,
         paymentMethod = 'counter',
         paymentStatus = 'unpaid'
       } = req.body;
@@ -424,7 +423,7 @@ class PatientController {
         priority: priority || 'normal',
         notes: '', // Default empty notes
         consultation_fee: doctorInfo.consultation_fee || 0, // Use doctor's fee or default to 0
-        is_emergency: isEmergency,
+        is_emergency: false, // Always set to false (no emergency appointments)
         status: 'scheduled', // Use valid enum value instead of 'pending'
         payment_status: paymentStatus, // Add payment status
         scheduled_by: req.user.id // Track who scheduled the appointment
@@ -485,13 +484,10 @@ class PatientController {
         data: {
           appointment,
           queueNumber: appointment.queue_number,
-          isEmergency: appointment.is_emergency,
           paymentStatus: paymentStatus,
           paymentMethod: paymentMethod,
           consultationFee: doctorInfo.consultation_fee || 0,
-          message: isEmergency 
-            ? `Emergency appointment booked. Your emergency number is ${appointment.queue_number}`
-            : `Appointment booked. Your queue number is ${appointment.queue_number}`
+          message: `Appointment booked. Your queue number is ${appointment.queue_number}`
         }
       });
 
