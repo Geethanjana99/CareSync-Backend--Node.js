@@ -4457,3 +4457,62 @@
     at bookQueueAppointment (E:\Project 2\backend\controllers\patientController.js:453:33)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-09-30 07:48:34 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:42:37 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:44:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:45:42 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:45:58 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:46:33 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:46:47 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:47:34 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:47:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:48:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:48:57 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:49:18 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:49:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:49:58 [ERROR]: TypeError: mysqlConnection.execute is not a function
+    at getPatients (E:\Project 2\backend\controllers\doctorController.js:412:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 08:49:58 [ERROR]: TypeError: mysqlConnection.execute is not a function
+    at getPatients (E:\Project 2\backend\controllers\doctorController.js:412:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 08:50:18 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:50:25 [ERROR]: MySQL query error:
+2025-09-30 08:50:25 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getPatients (E:\Project 2\backend\controllers\doctorController.js:412:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 08:50:25 [ERROR]: Error: Unknown column 'p.name' in 'field list'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at getPatients (E:\Project 2\backend\controllers\doctorController.js:412:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 08:50:58 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:51:17 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:55:31 [ERROR]: MySQL query error:
+2025-09-30 08:55:31 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:674:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:545:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 08:55:33 [ERROR]: MySQL query error:
+2025-09-30 08:55:33 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:746:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:555:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 08:57:02 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:57:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:57:37 [ERROR]: MySQL query error:
+2025-09-30 08:58:16 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 08:58:24 [ERROR]: MySQL query error:
+2025-09-30 08:59:33 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:00:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:01:02 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:01:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:02:08 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:02:26 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:03:08 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:04:00 [ERROR]: ❌ MongoDB connection failed:

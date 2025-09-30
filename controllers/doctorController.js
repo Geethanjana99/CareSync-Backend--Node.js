@@ -369,6 +369,61 @@ class DoctorController {
     }
   }
 
+  // Get all patients who have had appointments with this doctor
+  static async getPatients(req, res, next) {
+    try {
+      const doctor = await Doctor.findByUserId(req.user.id);
+      if (!doctor) {
+        return res.status(404).json({
+          success: false,
+          message: 'Doctor profile not found'
+        });
+      }
+
+      // Query to get all unique patients who have had appointments with this doctor
+      const query = `
+        SELECT DISTINCT
+          p.id,
+          u.name,
+          u.email,
+          u.phone,
+          p.date_of_birth as dateOfBirth,
+          p.gender,
+          p.blood_type as bloodType,
+          p.allergies,
+          p.medical_history as medicalHistory,
+          p.current_medications as currentMedications,
+          COUNT(a.id) as totalAppointments,
+          SUM(CASE WHEN a.status = 'completed' THEN 1 ELSE 0 END) as completedAppointments,
+          SUM(CASE WHEN a.status = 'cancelled' THEN 1 ELSE 0 END) as cancelledAppointments,
+          MAX(a.appointment_date) as lastVisit,
+          MAX(CASE WHEN a.status = 'completed' THEN a.appointment_date END) as lastCompletedVisit,
+          CASE 
+            WHEN MAX(a.appointment_date) >= DATE_SUB(NOW(), INTERVAL 6 MONTH) THEN 'active'
+            ELSE 'inactive'
+          END as status
+        FROM patients p
+        INNER JOIN appointments a ON p.id = a.patient_id
+        INNER JOIN users u ON p.user_id = u.id
+        WHERE a.doctor_id = ?
+        GROUP BY p.id, u.name, u.email, u.phone, p.date_of_birth, p.gender, p.blood_type, p.allergies, p.medical_history, p.current_medications
+        ORDER BY lastVisit DESC
+      `;
+
+      const [patients] = await mysqlConnection.query(query, [doctor.id]);
+
+      res.json({
+        success: true,
+        data: {
+          patients: Array.isArray(patients) ? patients : (patients ? [patients] : [])
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching doctor patients:', error);
+      next(error);
+    }
+  }
+
   // Add medical notes to appointment
   static async addMedicalNotes(req, res, next) {
     try {
