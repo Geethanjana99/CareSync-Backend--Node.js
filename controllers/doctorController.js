@@ -380,8 +380,21 @@ class DoctorController {
         });
       }
 
-      // Query to get all unique patients who have had appointments with this doctor
-      const query = `
+      // Use direct mysql2 connection for reliable results
+      const mysql = require('mysql2/promise');
+      const directConnection = await mysql.createConnection({
+        host: 'caresyncdb-caresync.e.aivencloud.com',
+        port: 16006,
+        user: 'avnadmin',
+        password: 'AVNS_6xeaVpCVApextDTAKfU',
+        database: 'caresync',
+        ssl: {
+          rejectUnauthorized: false
+        }
+      });
+
+      // Get patients with aggregated appointment data
+      const [patients] = await directConnection.execute(`
         SELECT DISTINCT
           p.id,
           u.name,
@@ -408,14 +421,14 @@ class DoctorController {
         WHERE a.doctor_id = ?
         GROUP BY p.id, u.name, u.email, u.phone, p.date_of_birth, p.gender, p.blood_type, p.allergies, p.medical_history, p.current_medications
         ORDER BY lastVisit DESC
-      `;
+      `, [doctor.id]);
 
-      const [patients] = await mysqlConnection.query(query, [doctor.id]);
+      await directConnection.end();
 
       res.json({
         success: true,
         data: {
-          patients: Array.isArray(patients) ? patients : (patients ? [patients] : [])
+          patients: patients
         }
       });
     } catch (error) {

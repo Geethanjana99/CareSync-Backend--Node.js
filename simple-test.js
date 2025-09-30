@@ -49,6 +49,10 @@ async function simpleTest() {
       patientsCount: patientsResponse.data.data?.patients?.length || 0
     });
     
+    if (patientsResponse.data.data?.debug?.appointmentDetails) {
+      console.log('\nAppointment details:', patientsResponse.data.data.debug.appointmentDetails);
+    }
+    
     if (patientsResponse.data.data?.patients?.length > 0) {
       console.log('\nSample patient data:');
       const samplePatient = patientsResponse.data.data.patients[0];
