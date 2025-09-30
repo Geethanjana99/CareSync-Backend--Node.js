@@ -4448,3 +4448,12 @@
     at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
 2025-09-30 01:34:15 [ERROR]: ❌ MongoDB connection failed:
 2025-09-30 01:34:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 01:36:39 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 07:35:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 07:40:18 [ERROR]: MySQL query error:
+2025-09-30 07:40:18 [ERROR]: Error: Data truncated for column 'payment_method' at row 1
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at bookQueueAppointment (E:\Project 2\backend\controllers\patientController.js:453:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 07:48:34 [ERROR]: ❌ MongoDB connection failed:

@@ -153,32 +153,4 @@ router.put('/:id', (req, res) => {
   });
 });
 
-// Delete patient by ID (soft delete - no auth required for testing)
-router.delete('/:id', (req, res) => {
-  console.log('🗑️ Mock API: Deleting patient...', req.params.id);
-  
-  const { id } = req.params;
-  const patientIndex = mockPatients.findIndex(p => p.id === id);
-  
-  if (patientIndex === -1) {
-    return res.status(404).json({
-      success: false,
-      message: 'Patient not found'
-    });
-  }
-  
-  // Remove patient from mock data (in real system, this would be a soft delete)
-  const deletedPatient = mockPatients.splice(patientIndex, 1)[0];
-  
-  console.log('✅ Mock API: Patient deleted successfully');
-  
-  res.json({
-    success: true,
-    message: 'Patient deleted successfully',
-    data: {
-      patient: deletedPatient
-    }
-  });
-});
-
 module.exports = router;
