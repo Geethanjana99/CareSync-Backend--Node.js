@@ -30752,3 +30752,1015 @@
 2025-09-30 09:09:03 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
 2025-09-30 09:09:03 [INFO]: ::1 - - [30/Sep/2025:03:39:03 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 2025-09-30 09:09:03 [INFO]: ::1 - - [30/Sep/2025:03:39:03 +0000] "GET /api/doctors/ai-predictions HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:30:12 [INFO]: Socket.IO server initialized
+2025-09-30 09:30:14 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:30:14 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:30:14 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:30:14 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:30:14 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:30:14 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:30:14 [INFO]: 📊 Environment: development
+2025-09-30 09:30:14 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:30:14 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:31:47 [INFO]: Token decoded successfully
+2025-09-30 09:31:47 [INFO]: Querying user from database
+2025-09-30 09:31:48 [INFO]: User found
+2025-09-30 09:31:48 [INFO]: Authorization check
+2025-09-30 09:31:48 [INFO]: Authorization successful
+2025-09-30 09:31:49 [INFO]: ::1 - - [30/Sep/2025:04:01:49 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:31:49 [INFO]: Token decoded successfully
+2025-09-30 09:31:49 [INFO]: Querying user from database
+2025-09-30 09:31:49 [INFO]: User found
+2025-09-30 09:31:49 [INFO]: Authorization check
+2025-09-30 09:31:49 [INFO]: Authorization successful
+2025-09-30 09:31:51 [INFO]: ::1 - - [30/Sep/2025:04:01:51 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:32:37 [INFO]: Socket.IO server initialized
+2025-09-30 09:32:40 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:32:40 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:32:40 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:32:40 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:32:40 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:32:40 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:32:40 [INFO]: 📊 Environment: development
+2025-09-30 09:32:40 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:32:40 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:32:47 [INFO]: Token decoded successfully
+2025-09-30 09:32:47 [INFO]: Querying user from database
+2025-09-30 09:32:48 [INFO]: User found
+2025-09-30 09:32:48 [INFO]: Authorization check
+2025-09-30 09:32:48 [INFO]: Authorization successful
+2025-09-30 09:32:50 [INFO]: ::1 - - [30/Sep/2025:04:02:50 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:32:50 [INFO]: Token decoded successfully
+2025-09-30 09:32:50 [INFO]: Querying user from database
+2025-09-30 09:32:50 [INFO]: User found
+2025-09-30 09:32:50 [INFO]: Authorization check
+2025-09-30 09:32:50 [INFO]: Authorization successful
+2025-09-30 09:32:53 [INFO]: ::1 - - [30/Sep/2025:04:02:53 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:33:08 [INFO]: Socket.IO server initialized
+2025-09-30 09:33:09 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:33:09 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:33:09 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:33:09 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:33:09 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:33:09 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:33:09 [INFO]: 📊 Environment: development
+2025-09-30 09:33:09 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:33:09 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:33:47 [INFO]: Token decoded successfully
+2025-09-30 09:33:47 [INFO]: Querying user from database
+2025-09-30 09:33:48 [INFO]: User found
+2025-09-30 09:33:48 [INFO]: Authorization check
+2025-09-30 09:33:48 [INFO]: Authorization successful
+2025-09-30 09:33:48 [INFO]: ::1 - - [30/Sep/2025:04:03:48 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:33:48 [INFO]: Token decoded successfully
+2025-09-30 09:33:48 [INFO]: Querying user from database
+2025-09-30 09:33:48 [INFO]: User found
+2025-09-30 09:33:48 [INFO]: Authorization check
+2025-09-30 09:33:48 [INFO]: Authorization successful
+2025-09-30 09:33:49 [INFO]: ::1 - - [30/Sep/2025:04:03:49 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:34:04 [INFO]: Socket.IO server initialized
+2025-09-30 09:34:05 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:34:05 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:34:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:34:05 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:34:05 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:34:05 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:34:05 [INFO]: 📊 Environment: development
+2025-09-30 09:34:05 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:34:05 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:34:47 [INFO]: Token decoded successfully
+2025-09-30 09:34:47 [INFO]: Querying user from database
+2025-09-30 09:34:48 [INFO]: User found
+2025-09-30 09:34:48 [INFO]: Authorization check
+2025-09-30 09:34:48 [INFO]: Authorization successful
+2025-09-30 09:34:51 [INFO]: ::1 - - [30/Sep/2025:04:04:51 +0000] "GET /api/patients/queue/position? HTTP/1.1" 200 609 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:34:51 [INFO]: Token decoded successfully
+2025-09-30 09:34:51 [INFO]: Querying user from database
+2025-09-30 09:34:51 [INFO]: User found
+2025-09-30 09:34:51 [INFO]: Authorization check
+2025-09-30 09:34:51 [INFO]: Authorization successful
+2025-09-30 09:34:52 [INFO]: ::1 - - [30/Sep/2025:04:04:52 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:35:47 [INFO]: Token decoded successfully
+2025-09-30 09:35:47 [INFO]: Querying user from database
+2025-09-30 09:35:47 [INFO]: User found
+2025-09-30 09:35:47 [INFO]: Authorization check
+2025-09-30 09:35:47 [INFO]: Authorization successful
+2025-09-30 09:35:48 [INFO]: ::1 - - [30/Sep/2025:04:05:48 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:35:48 [INFO]: Token decoded successfully
+2025-09-30 09:35:48 [INFO]: Querying user from database
+2025-09-30 09:35:48 [INFO]: User found
+2025-09-30 09:35:48 [INFO]: Authorization check
+2025-09-30 09:35:48 [INFO]: Authorization successful
+2025-09-30 09:35:49 [INFO]: ::1 - - [30/Sep/2025:04:05:49 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:36:47 [INFO]: Token decoded successfully
+2025-09-30 09:36:47 [INFO]: Querying user from database
+2025-09-30 09:36:48 [INFO]: User found
+2025-09-30 09:36:48 [INFO]: Authorization check
+2025-09-30 09:36:48 [INFO]: Authorization successful
+2025-09-30 09:36:48 [INFO]: ::1 - - [30/Sep/2025:04:06:48 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:36:48 [INFO]: Token decoded successfully
+2025-09-30 09:36:48 [INFO]: Querying user from database
+2025-09-30 09:36:49 [INFO]: User found
+2025-09-30 09:36:49 [INFO]: Authorization check
+2025-09-30 09:36:49 [INFO]: Authorization successful
+2025-09-30 09:36:49 [INFO]: ::1 - - [30/Sep/2025:04:06:49 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:37:47 [INFO]: Token decoded successfully
+2025-09-30 09:37:47 [INFO]: Querying user from database
+2025-09-30 09:37:47 [INFO]: User found
+2025-09-30 09:37:47 [INFO]: Authorization check
+2025-09-30 09:37:47 [INFO]: Authorization successful
+2025-09-30 09:37:48 [INFO]: ::1 - - [30/Sep/2025:04:07:48 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:37:48 [INFO]: Token decoded successfully
+2025-09-30 09:37:48 [INFO]: Querying user from database
+2025-09-30 09:37:48 [INFO]: User found
+2025-09-30 09:37:48 [INFO]: Authorization check
+2025-09-30 09:37:48 [INFO]: Authorization successful
+2025-09-30 09:37:50 [INFO]: ::1 - - [30/Sep/2025:04:07:50 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:38:47 [INFO]: Token decoded successfully
+2025-09-30 09:38:47 [INFO]: Querying user from database
+2025-09-30 09:38:47 [INFO]: User found
+2025-09-30 09:38:47 [INFO]: Authorization check
+2025-09-30 09:38:47 [INFO]: Authorization successful
+2025-09-30 09:38:58 [INFO]: ::1 - - [30/Sep/2025:04:08:58 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:38:58 [INFO]: Token decoded successfully
+2025-09-30 09:38:58 [INFO]: Querying user from database
+2025-09-30 09:39:00 [INFO]: User found
+2025-09-30 09:39:00 [INFO]: Authorization check
+2025-09-30 09:39:00 [INFO]: Authorization successful
+2025-09-30 09:39:01 [INFO]: ::1 - - [30/Sep/2025:04:09:01 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:39:47 [INFO]: Token decoded successfully
+2025-09-30 09:39:47 [INFO]: Querying user from database
+2025-09-30 09:39:48 [INFO]: User found
+2025-09-30 09:39:48 [INFO]: Authorization check
+2025-09-30 09:39:48 [INFO]: Authorization successful
+2025-09-30 09:39:55 [INFO]: Socket.IO server initialized
+2025-09-30 09:40:23 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:40:23 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:40:23 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:40:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:40:23 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:40:23 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:40:23 [INFO]: 📊 Environment: development
+2025-09-30 09:40:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:40:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:40:23 [INFO]: ::1 - - [30/Sep/2025:04:10:23 +0000] "GET /api/patient/queue-position/1 HTTP/1.1" 401 69 "-" "axios/1.12.2"
+2025-09-30 09:40:23 [INFO]: ::1 - - [30/Sep/2025:04:10:23 +0000] "GET /api/patient/queue-position/1 HTTP/1.1" 401 69 "-" "axios/1.12.2"
+2025-09-30 09:40:23 [INFO]: ::1 - - [30/Sep/2025:04:10:23 +0000] "GET /api/patient/queue-position/2 HTTP/1.1" 401 69 "-" "axios/1.12.2"
+2025-09-30 09:40:23 [INFO]: ::1 - - [30/Sep/2025:04:10:23 +0000] "GET /api/patient/queue-position/3 HTTP/1.1" 401 69 "-" "axios/1.12.2"
+2025-09-30 09:40:23 [INFO]: ::1 - - [30/Sep/2025:04:10:23 +0000] "GET /api/patient/queue-position/4 HTTP/1.1" 401 69 "-" "axios/1.12.2"
+2025-09-30 09:40:23 [INFO]: ::1 - - [30/Sep/2025:04:10:23 +0000] "GET /api/patient/queue-position/5 HTTP/1.1" 401 69 "-" "axios/1.12.2"
+2025-09-30 09:40:47 [INFO]: Token decoded successfully
+2025-09-30 09:40:47 [INFO]: Querying user from database
+2025-09-30 09:40:54 [INFO]: Socket.IO server initialized
+2025-09-30 09:41:04 [ERROR]: ❌ MySQL connection failed:
+2025-09-30 09:41:04 [WARN]: ⚠️ MySQL connection failed - continuing without MySQL:
+2025-09-30 09:41:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:41:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:41:04 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:41:04 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:41:04 [INFO]: 📊 Environment: development
+2025-09-30 09:41:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:41:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:41:13 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 09:41:13 [INFO]: ::1 - - [30/Sep/2025:04:11:13 +0000] "GET /api/patient/queue-position/1 HTTP/1.1" 401 48 "-" "axios/1.12.2"
+2025-09-30 09:41:13 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 09:41:13 [INFO]: ::1 - - [30/Sep/2025:04:11:13 +0000] "GET /api/patient/queue-position/1 HTTP/1.1" 401 48 "-" "axios/1.12.2"
+2025-09-30 09:41:13 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 09:41:13 [INFO]: ::1 - - [30/Sep/2025:04:11:13 +0000] "GET /api/patient/queue-position/2 HTTP/1.1" 401 48 "-" "axios/1.12.2"
+2025-09-30 09:41:13 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 09:41:13 [INFO]: ::1 - - [30/Sep/2025:04:11:13 +0000] "GET /api/patient/queue-position/3 HTTP/1.1" 401 48 "-" "axios/1.12.2"
+2025-09-30 09:41:13 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 09:41:13 [INFO]: ::1 - - [30/Sep/2025:04:11:13 +0000] "GET /api/patient/queue-position/4 HTTP/1.1" 401 48 "-" "axios/1.12.2"
+2025-09-30 09:41:13 [ERROR]: JsonWebTokenError: invalid signature
+    at E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (E:\Project 2\backend\node_modules\jsonwebtoken\verify.js:101:10)
+    at authMiddleware (E:\Project 2\backend\middleware\auth.js:17:25)
+    at newFn (E:\Project 2\backend\node_modules\express-async-errors\index.js:16:20)
+    at Layer.handle [as handle_request] (E:\Project 2\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Project 2\backend\node_modules\express\lib\router\index.js:328:13)
+    at E:\Project 2\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\Project 2\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\Project 2\backend\node_modules\express\lib\router\index.js:280:10)
+2025-09-30 09:41:13 [INFO]: ::1 - - [30/Sep/2025:04:11:13 +0000] "GET /api/patient/queue-position/5 HTTP/1.1" 401 48 "-" "axios/1.12.2"
+2025-09-30 09:41:47 [INFO]: Token decoded successfully
+2025-09-30 09:41:47 [INFO]: Querying user from database
+2025-09-30 09:41:49 [INFO]: User found
+2025-09-30 09:41:49 [INFO]: Authorization check
+2025-09-30 09:41:49 [INFO]: Authorization successful
+2025-09-30 09:41:50 [INFO]: Socket.IO server initialized
+2025-09-30 09:41:52 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:41:52 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:41:52 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:41:52 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:41:52 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:41:52 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:41:52 [INFO]: 📊 Environment: development
+2025-09-30 09:41:52 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:41:52 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:41:59 [INFO]: Socket.IO server initialized
+2025-09-30 09:42:02 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:42:02 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:42:02 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:42:02 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:42:02 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:42:02 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:42:02 [INFO]: 📊 Environment: development
+2025-09-30 09:42:02 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:42:02 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:42:09 [INFO]: Socket.IO server initialized
+2025-09-30 09:42:12 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:42:12 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:42:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:42:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:42:12 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:42:12 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:42:12 [INFO]: 📊 Environment: development
+2025-09-30 09:42:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:42:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:42:27 [INFO]: Socket.IO server initialized
+2025-09-30 09:42:29 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:42:29 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:42:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:42:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:42:29 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:42:29 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:42:29 [INFO]: 📊 Environment: development
+2025-09-30 09:42:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:42:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:42:33 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:42:33 [INFO]: ::1 - - [30/Sep/2025:04:12:33 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:42:34 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:42:34 [INFO]: ::1 - - [30/Sep/2025:04:12:34 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:42:44 [INFO]: Socket.IO server initialized
+2025-09-30 09:42:46 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:42:46 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:42:46 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:42:46 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:42:46 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:42:46 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:42:46 [INFO]: 📊 Environment: development
+2025-09-30 09:42:46 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:42:46 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:42:47 [INFO]: Token decoded successfully
+2025-09-30 09:42:47 [INFO]: Querying user from database
+2025-09-30 09:42:48 [INFO]: User found
+2025-09-30 09:42:48 [INFO]: Authorization check
+2025-09-30 09:42:48 [INFO]: Authorization successful
+2025-09-30 09:42:50 [INFO]: ::1 - - [30/Sep/2025:04:12:50 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:42:50 [INFO]: Token decoded successfully
+2025-09-30 09:42:50 [INFO]: Querying user from database
+2025-09-30 09:42:50 [INFO]: User found
+2025-09-30 09:42:50 [INFO]: Authorization check
+2025-09-30 09:42:50 [INFO]: Authorization successful
+2025-09-30 09:42:50 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:42:50 [INFO]: ::1 - - [30/Sep/2025:04:12:50 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:42:51 [INFO]: ::1 - - [30/Sep/2025:04:12:51 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:42:51 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:42:51 [INFO]: ::1 - - [30/Sep/2025:04:12:51 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:43:05 [INFO]: Socket.IO server initialized
+2025-09-30 09:43:06 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:43:06 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:43:06 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:43:06 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:43:06 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:43:06 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:43:06 [INFO]: 📊 Environment: development
+2025-09-30 09:43:06 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:43:06 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:43:08 [INFO]: Token decoded successfully
+2025-09-30 09:43:08 [INFO]: Querying user from database
+2025-09-30 09:43:09 [INFO]: User found
+2025-09-30 09:43:09 [INFO]: Authorization check
+2025-09-30 09:43:09 [INFO]: Authorization successful
+2025-09-30 09:43:10 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:43:10 [INFO]: ::1 - - [30/Sep/2025:04:13:10 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:43:10 [INFO]: Token decoded successfully
+2025-09-30 09:43:10 [INFO]: Querying user from database
+2025-09-30 09:43:10 [INFO]: ::1 - - [30/Sep/2025:04:13:10 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:43:10 [INFO]: Token decoded successfully
+2025-09-30 09:43:10 [INFO]: Querying user from database
+2025-09-30 09:43:10 [INFO]: User found
+2025-09-30 09:43:10 [INFO]: Authorization check
+2025-09-30 09:43:10 [INFO]: Authorization successful
+2025-09-30 09:43:10 [INFO]: ::1 - - [30/Sep/2025:04:13:10 +0000] "GET /api/patient/queue-position/1 HTTP/1.1" 404 91 "-" "axios/1.12.2"
+2025-09-30 09:43:11 [INFO]: User found
+2025-09-30 09:43:11 [INFO]: Authorization check
+2025-09-30 09:43:11 [INFO]: Authorization successful
+2025-09-30 09:43:11 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:43:11 [INFO]: ::1 - - [30/Sep/2025:04:13:11 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:43:11 [INFO]: Token decoded successfully
+2025-09-30 09:43:11 [INFO]: Querying user from database
+2025-09-30 09:43:11 [INFO]: User found
+2025-09-30 09:43:11 [INFO]: Authorization check
+2025-09-30 09:43:11 [INFO]: Authorization successful
+2025-09-30 09:43:11 [INFO]: ::1 - - [30/Sep/2025:04:13:11 +0000] "GET /api/patient/queue-position/1 HTTP/1.1" 404 91 "-" "axios/1.12.2"
+2025-09-30 09:43:11 [INFO]: Token decoded successfully
+2025-09-30 09:43:11 [INFO]: Querying user from database
+2025-09-30 09:43:11 [INFO]: User found
+2025-09-30 09:43:11 [INFO]: Authorization check
+2025-09-30 09:43:11 [INFO]: Authorization successful
+2025-09-30 09:43:11 [INFO]: ::1 - - [30/Sep/2025:04:13:11 +0000] "GET /api/patient/queue-position/2 HTTP/1.1" 404 91 "-" "axios/1.12.2"
+2025-09-30 09:43:11 [INFO]: Token decoded successfully
+2025-09-30 09:43:11 [INFO]: Querying user from database
+2025-09-30 09:43:12 [INFO]: User found
+2025-09-30 09:43:12 [INFO]: Authorization check
+2025-09-30 09:43:12 [INFO]: Authorization successful
+2025-09-30 09:43:12 [INFO]: ::1 - - [30/Sep/2025:04:13:12 +0000] "GET /api/patient/queue-position/3 HTTP/1.1" 404 91 "-" "axios/1.12.2"
+2025-09-30 09:43:12 [INFO]: Token decoded successfully
+2025-09-30 09:43:12 [INFO]: Querying user from database
+2025-09-30 09:43:12 [INFO]: User found
+2025-09-30 09:43:12 [INFO]: Authorization check
+2025-09-30 09:43:12 [INFO]: Authorization successful
+2025-09-30 09:43:12 [INFO]: ::1 - - [30/Sep/2025:04:13:12 +0000] "GET /api/patient/queue-position/4 HTTP/1.1" 404 91 "-" "axios/1.12.2"
+2025-09-30 09:43:12 [INFO]: Token decoded successfully
+2025-09-30 09:43:12 [INFO]: Querying user from database
+2025-09-30 09:43:12 [INFO]: User found
+2025-09-30 09:43:12 [INFO]: Authorization check
+2025-09-30 09:43:12 [INFO]: Authorization successful
+2025-09-30 09:43:12 [INFO]: ::1 - - [30/Sep/2025:04:13:12 +0000] "GET /api/patient/queue-position/5 HTTP/1.1" 404 91 "-" "axios/1.12.2"
+2025-09-30 09:43:12 [INFO]: ::1 - - [30/Sep/2025:04:13:12 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:43:30 [INFO]: Socket.IO server initialized
+2025-09-30 09:43:31 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:43:31 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:43:31 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:43:31 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:43:31 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:43:31 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:43:31 [INFO]: 📊 Environment: development
+2025-09-30 09:43:31 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:43:31 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:43:37 [INFO]: Socket.IO server initialized
+2025-09-30 09:43:38 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:43:38 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:43:38 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:43:38 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:43:38 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:43:38 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:43:38 [INFO]: 📊 Environment: development
+2025-09-30 09:43:38 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:43:38 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:43:52 [INFO]: Socket.IO server initialized
+2025-09-30 09:43:54 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:43:54 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:43:54 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:43:54 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:43:54 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:43:54 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:43:54 [INFO]: 📊 Environment: development
+2025-09-30 09:43:54 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:43:54 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:44:03 [INFO]: Socket.IO server initialized
+2025-09-30 09:44:04 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:44:04 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:44:04 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:44:04 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:44:04 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:44:04 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:44:04 [INFO]: 📊 Environment: development
+2025-09-30 09:44:04 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:44:04 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:44:05 [INFO]: Token decoded successfully
+2025-09-30 09:44:05 [INFO]: Querying user from database
+2025-09-30 09:44:06 [INFO]: User found
+2025-09-30 09:44:06 [INFO]: Authorization check
+2025-09-30 09:44:06 [INFO]: Authorization successful
+2025-09-30 09:44:10 [INFO]: ::1 - - [30/Sep/2025:04:14:10 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:44:10 [INFO]: Token decoded successfully
+2025-09-30 09:44:10 [INFO]: Querying user from database
+2025-09-30 09:44:10 [INFO]: User found
+2025-09-30 09:44:10 [INFO]: Authorization check
+2025-09-30 09:44:10 [INFO]: Authorization successful
+2025-09-30 09:44:11 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:44:11 [INFO]: ::1 - - [30/Sep/2025:04:14:11 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:44:11 [INFO]: Token decoded successfully
+2025-09-30 09:44:11 [INFO]: Querying user from database
+2025-09-30 09:44:12 [INFO]: User found
+2025-09-30 09:44:12 [INFO]: Authorization check
+2025-09-30 09:44:12 [INFO]: Authorization successful
+2025-09-30 09:44:12 [INFO]: ::1 - - [30/Sep/2025:04:14:12 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:44:13 [INFO]: ::1 - - [30/Sep/2025:04:14:13 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 609 "-" "axios/1.12.2"
+2025-09-30 09:44:14 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:44:14 [INFO]: ::1 - - [30/Sep/2025:04:14:14 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:44:14 [INFO]: Token decoded successfully
+2025-09-30 09:44:14 [INFO]: Querying user from database
+2025-09-30 09:44:14 [INFO]: User found
+2025-09-30 09:44:14 [INFO]: Authorization check
+2025-09-30 09:44:14 [INFO]: Authorization successful
+2025-09-30 09:44:14 [INFO]: ::1 - - [30/Sep/2025:04:14:14 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 609 "-" "axios/1.12.2"
+2025-09-30 09:44:57 [INFO]: Socket.IO server initialized
+2025-09-30 09:44:58 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:44:58 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:44:58 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:44:58 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:44:58 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:44:58 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:44:58 [INFO]: 📊 Environment: development
+2025-09-30 09:44:58 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:44:58 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:45:06 [INFO]: Socket.IO server initialized
+2025-09-30 09:45:08 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:45:08 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:45:08 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:45:08 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:45:08 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:45:08 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:45:08 [INFO]: 📊 Environment: development
+2025-09-30 09:45:08 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:45:08 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:45:12 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:45:12 [INFO]: ::1 - - [30/Sep/2025:04:15:12 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:45:12 [INFO]: Token decoded successfully
+2025-09-30 09:45:12 [INFO]: Querying user from database
+2025-09-30 09:45:13 [INFO]: User found
+2025-09-30 09:45:13 [INFO]: Authorization check
+2025-09-30 09:45:13 [INFO]: Authorization successful
+2025-09-30 09:45:16 [INFO]: ::1 - - [30/Sep/2025:04:15:16 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 609 "-" "axios/1.12.2"
+2025-09-30 09:45:17 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:45:17 [INFO]: ::1 - - [30/Sep/2025:04:15:17 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:45:17 [INFO]: Token decoded successfully
+2025-09-30 09:45:17 [INFO]: Querying user from database
+2025-09-30 09:45:17 [INFO]: User found
+2025-09-30 09:45:17 [INFO]: Authorization check
+2025-09-30 09:45:17 [INFO]: Authorization successful
+2025-09-30 09:45:19 [INFO]: ::1 - - [30/Sep/2025:04:15:19 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 609 "-" "axios/1.12.2"
+2025-09-30 09:45:22 [INFO]: Token decoded successfully
+2025-09-30 09:45:22 [INFO]: Querying user from database
+2025-09-30 09:45:22 [INFO]: User found
+2025-09-30 09:45:22 [INFO]: Authorization check
+2025-09-30 09:45:22 [INFO]: Authorization successful
+2025-09-30 09:45:24 [INFO]: ::1 - - [30/Sep/2025:04:15:24 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:45:24 [INFO]: Token decoded successfully
+2025-09-30 09:45:24 [INFO]: Querying user from database
+2025-09-30 09:45:24 [INFO]: User found
+2025-09-30 09:45:24 [INFO]: Authorization check
+2025-09-30 09:45:24 [INFO]: Authorization successful
+2025-09-30 09:45:26 [INFO]: ::1 - - [30/Sep/2025:04:15:26 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:46:05 [INFO]: Token decoded successfully
+2025-09-30 09:46:05 [INFO]: Querying user from database
+2025-09-30 09:46:06 [INFO]: User found
+2025-09-30 09:46:06 [INFO]: Authorization check
+2025-09-30 09:46:06 [INFO]: Authorization successful
+2025-09-30 09:46:08 [INFO]: ::1 - - [30/Sep/2025:04:16:08 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:46:08 [INFO]: Token decoded successfully
+2025-09-30 09:46:08 [INFO]: Querying user from database
+2025-09-30 09:46:08 [INFO]: User found
+2025-09-30 09:46:08 [INFO]: Authorization check
+2025-09-30 09:46:08 [INFO]: Authorization successful
+2025-09-30 09:46:09 [INFO]: ::1 - - [30/Sep/2025:04:16:09 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:47:03 [INFO]: Socket.IO server initialized
+2025-09-30 09:47:08 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:47:08 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:47:08 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:47:08 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:47:08 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:47:08 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:47:08 [INFO]: 📊 Environment: development
+2025-09-30 09:47:08 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:47:08 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:47:23 [INFO]: Socket.IO server initialized
+2025-09-30 09:47:25 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:47:25 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:47:25 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:47:25 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:47:25 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:47:25 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:47:25 [INFO]: 📊 Environment: development
+2025-09-30 09:47:25 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:47:25 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:47:47 [INFO]: Token decoded successfully
+2025-09-30 09:47:47 [INFO]: Querying user from database
+2025-09-30 09:48:02 [INFO]: User found
+2025-09-30 09:48:02 [INFO]: Authorization check
+2025-09-30 09:48:02 [INFO]: Authorization successful
+2025-09-30 09:48:07 [INFO]: Socket.IO server initialized
+2025-09-30 09:48:22 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:48:22 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:48:22 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:48:22 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:48:22 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:48:22 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:48:22 [INFO]: 📊 Environment: development
+2025-09-30 09:48:22 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:48:22 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:48:47 [INFO]: Token decoded successfully
+2025-09-30 09:48:47 [INFO]: Querying user from database
+2025-09-30 09:48:48 [INFO]: User found
+2025-09-30 09:48:48 [INFO]: Authorization check
+2025-09-30 09:48:48 [INFO]: Authorization successful
+2025-09-30 09:48:49 [INFO]: ::1 - - [30/Sep/2025:04:18:49 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:48:50 [INFO]: Token decoded successfully
+2025-09-30 09:48:50 [INFO]: Querying user from database
+2025-09-30 09:48:50 [INFO]: User found
+2025-09-30 09:48:50 [INFO]: Authorization check
+2025-09-30 09:48:50 [INFO]: Authorization successful
+2025-09-30 09:48:51 [INFO]: ::1 - - [30/Sep/2025:04:18:51 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:49:27 [INFO]: Socket.IO server initialized
+2025-09-30 09:49:28 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:49:28 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:49:28 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:49:28 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:49:28 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:49:28 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:49:28 [INFO]: 📊 Environment: development
+2025-09-30 09:49:28 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:49:28 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:49:29 [INFO]: Token decoded successfully
+2025-09-30 09:49:29 [INFO]: Querying user from database
+2025-09-30 09:49:30 [INFO]: User found
+2025-09-30 09:49:30 [INFO]: Authorization check
+2025-09-30 09:49:30 [INFO]: Authorization successful
+2025-09-30 09:49:31 [INFO]: ::1 - - [30/Sep/2025:04:19:31 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:49:31 [INFO]: Token decoded successfully
+2025-09-30 09:49:31 [INFO]: Querying user from database
+2025-09-30 09:49:32 [INFO]: User found
+2025-09-30 09:49:32 [INFO]: Authorization check
+2025-09-30 09:49:32 [INFO]: Authorization successful
+2025-09-30 09:49:33 [INFO]: ::1 - - [30/Sep/2025:04:19:33 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:49:36 [INFO]: Socket.IO server initialized
+2025-09-30 09:49:38 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:49:38 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:49:38 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:49:38 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:49:38 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:49:38 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:49:38 [INFO]: 📊 Environment: development
+2025-09-30 09:49:38 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:49:38 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:49:44 [INFO]: Socket.IO server initialized
+2025-09-30 09:49:45 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:49:45 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:49:45 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:49:45 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:49:45 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:49:45 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:49:45 [INFO]: 📊 Environment: development
+2025-09-30 09:49:45 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:49:45 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:50:05 [INFO]: Socket.IO server initialized
+2025-09-30 09:50:05 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:50:05 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:50:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:50:05 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:50:05 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:50:05 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:50:05 [INFO]: 📊 Environment: development
+2025-09-30 09:50:05 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:50:05 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:50:06 [INFO]: Token decoded successfully
+2025-09-30 09:50:06 [INFO]: Querying user from database
+2025-09-30 09:50:06 [INFO]: User found
+2025-09-30 09:50:06 [INFO]: Authorization check
+2025-09-30 09:50:06 [INFO]: Authorization successful
+2025-09-30 09:50:06 [INFO]: ::1 - - [30/Sep/2025:04:20:06 +0000] "GET /api/patients/queue/position? HTTP/1.1" 200 574 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:50:06 [INFO]: Token decoded successfully
+2025-09-30 09:50:06 [INFO]: Querying user from database
+2025-09-30 09:50:06 [INFO]: User found
+2025-09-30 09:50:06 [INFO]: Authorization check
+2025-09-30 09:50:06 [INFO]: Authorization successful
+2025-09-30 09:50:07 [INFO]: ::1 - - [30/Sep/2025:04:20:07 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:50:14 [INFO]: Socket.IO server initialized
+2025-09-30 09:50:15 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:50:15 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:50:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:50:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:50:15 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:50:15 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:50:15 [INFO]: 📊 Environment: development
+2025-09-30 09:50:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:50:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:50:20 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:50:20 [INFO]: ::1 - - [30/Sep/2025:04:20:20 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:50:20 [INFO]: Token decoded successfully
+2025-09-30 09:50:20 [INFO]: Querying user from database
+2025-09-30 09:50:20 [INFO]: User found
+2025-09-30 09:50:20 [INFO]: Authorization check
+2025-09-30 09:50:20 [INFO]: Authorization successful
+2025-09-30 09:50:21 [INFO]: ::1 - - [30/Sep/2025:04:20:21 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:50:21 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:50:21 [INFO]: ::1 - - [30/Sep/2025:04:20:21 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:50:21 [INFO]: Token decoded successfully
+2025-09-30 09:50:21 [INFO]: Querying user from database
+2025-09-30 09:50:22 [INFO]: User found
+2025-09-30 09:50:22 [INFO]: Authorization check
+2025-09-30 09:50:22 [INFO]: Authorization successful
+2025-09-30 09:50:22 [INFO]: ::1 - - [30/Sep/2025:04:20:22 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:51:05 [INFO]: Token decoded successfully
+2025-09-30 09:51:05 [INFO]: Querying user from database
+2025-09-30 09:51:05 [INFO]: User found
+2025-09-30 09:51:05 [INFO]: Authorization check
+2025-09-30 09:51:05 [INFO]: Authorization successful
+2025-09-30 09:51:06 [INFO]: ::1 - - [30/Sep/2025:04:21:06 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:51:06 [INFO]: Token decoded successfully
+2025-09-30 09:51:06 [INFO]: Querying user from database
+2025-09-30 09:51:06 [INFO]: User found
+2025-09-30 09:51:06 [INFO]: Authorization check
+2025-09-30 09:51:06 [INFO]: Authorization successful
+2025-09-30 09:51:07 [INFO]: ::1 - - [30/Sep/2025:04:21:07 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:52:02 [INFO]: Socket.IO server initialized
+2025-09-30 09:52:03 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:52:03 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:52:03 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:52:03 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:52:03 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:52:03 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:52:03 [INFO]: 📊 Environment: development
+2025-09-30 09:52:03 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:52:03 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:52:05 [INFO]: Token decoded successfully
+2025-09-30 09:52:05 [INFO]: Querying user from database
+2025-09-30 09:52:06 [INFO]: User found
+2025-09-30 09:52:06 [INFO]: Authorization check
+2025-09-30 09:52:06 [INFO]: Authorization successful
+2025-09-30 09:52:06 [INFO]: ::1 - - [30/Sep/2025:04:22:06 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:52:06 [INFO]: Token decoded successfully
+2025-09-30 09:52:06 [INFO]: Querying user from database
+2025-09-30 09:52:06 [INFO]: User found
+2025-09-30 09:52:06 [INFO]: Authorization check
+2025-09-30 09:52:06 [INFO]: Authorization successful
+2025-09-30 09:52:07 [INFO]: ::1 - - [30/Sep/2025:04:22:07 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:52:10 [INFO]: Socket.IO server initialized
+2025-09-30 09:52:12 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:52:12 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:52:12 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:52:12 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:52:12 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:52:12 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:52:12 [INFO]: 📊 Environment: development
+2025-09-30 09:52:12 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:52:12 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:52:22 [INFO]: Socket.IO server initialized
+2025-09-30 09:52:23 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:52:23 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:52:23 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:52:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:52:23 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:52:23 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:52:23 [INFO]: 📊 Environment: development
+2025-09-30 09:52:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:52:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:52:31 [INFO]: Socket.IO server initialized
+2025-09-30 09:52:32 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:52:32 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:52:32 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:52:32 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:52:32 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:52:32 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:52:32 [INFO]: 📊 Environment: development
+2025-09-30 09:52:32 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:52:32 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:53:00 [INFO]: Socket.IO server initialized
+2025-09-30 09:53:02 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:53:02 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:53:02 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:53:02 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:53:02 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:53:02 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:53:02 [INFO]: 📊 Environment: development
+2025-09-30 09:53:02 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:53:02 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:53:08 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:53:08 [INFO]: ::1 - - [30/Sep/2025:04:23:08 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:53:08 [INFO]: Token decoded successfully
+2025-09-30 09:53:08 [INFO]: Querying user from database
+2025-09-30 09:53:08 [INFO]: User found
+2025-09-30 09:53:08 [INFO]: Authorization check
+2025-09-30 09:53:08 [INFO]: Authorization successful
+2025-09-30 09:53:09 [INFO]: ::1 - - [30/Sep/2025:04:23:09 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:53:47 [INFO]: Token decoded successfully
+2025-09-30 09:53:47 [INFO]: Querying user from database
+2025-09-30 09:53:47 [INFO]: User found
+2025-09-30 09:53:47 [INFO]: Authorization check
+2025-09-30 09:53:47 [INFO]: Authorization successful
+2025-09-30 09:53:48 [INFO]: ::1 - - [30/Sep/2025:04:23:48 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:53:48 [INFO]: Token decoded successfully
+2025-09-30 09:53:48 [INFO]: Querying user from database
+2025-09-30 09:53:48 [INFO]: User found
+2025-09-30 09:53:48 [INFO]: Authorization check
+2025-09-30 09:53:48 [INFO]: Authorization successful
+2025-09-30 09:53:49 [INFO]: ::1 - - [30/Sep/2025:04:23:49 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:54:04 [INFO]: Socket.IO server initialized
+2025-09-30 09:54:05 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:54:05 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:54:05 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:54:05 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:54:05 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:54:05 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:54:05 [INFO]: 📊 Environment: development
+2025-09-30 09:54:05 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:54:05 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:54:10 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:54:10 [INFO]: ::1 - - [30/Sep/2025:04:24:10 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:54:11 [INFO]: Token decoded successfully
+2025-09-30 09:54:11 [INFO]: Querying user from database
+2025-09-30 09:54:11 [INFO]: User found
+2025-09-30 09:54:11 [INFO]: Authorization check
+2025-09-30 09:54:11 [INFO]: Authorization successful
+2025-09-30 09:54:11 [INFO]: ::1 - - [30/Sep/2025:04:24:11 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:54:11 [INFO]: ::1 - - [30/Sep/2025:04:24:11 +0000] "POST /api/auth/login HTTP/1.1" 401 55 "-" "axios/1.12.2"
+2025-09-30 09:54:22 [INFO]: Socket.IO server initialized
+2025-09-30 09:54:23 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:54:23 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:54:23 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:54:23 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:54:23 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:54:23 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:54:23 [INFO]: 📊 Environment: development
+2025-09-30 09:54:23 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:54:23 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:54:28 [INFO]: Socket.IO server initialized
+2025-09-30 09:54:29 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:54:29 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:54:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:54:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:54:29 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:54:29 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:54:29 [INFO]: 📊 Environment: development
+2025-09-30 09:54:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:54:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:54:47 [INFO]: Token decoded successfully
+2025-09-30 09:54:47 [INFO]: Querying user from database
+2025-09-30 09:54:47 [INFO]: User found
+2025-09-30 09:54:47 [INFO]: Authorization check
+2025-09-30 09:54:47 [INFO]: Authorization successful
+2025-09-30 09:54:48 [INFO]: ::1 - - [30/Sep/2025:04:24:48 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:54:48 [INFO]: Token decoded successfully
+2025-09-30 09:54:48 [INFO]: Querying user from database
+2025-09-30 09:54:48 [INFO]: User found
+2025-09-30 09:54:48 [INFO]: Authorization check
+2025-09-30 09:54:48 [INFO]: Authorization successful
+2025-09-30 09:54:49 [INFO]: ::1 - - [30/Sep/2025:04:24:49 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:54:53 [INFO]: Socket.IO server initialized
+2025-09-30 09:54:55 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:54:55 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:54:55 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:54:55 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:54:55 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:54:55 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:54:55 [INFO]: 📊 Environment: development
+2025-09-30 09:54:55 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:54:55 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:54:59 [INFO]: Socket.IO server initialized
+2025-09-30 09:55:00 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:55:00 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:55:00 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:55:00 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:55:00 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:55:00 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:55:00 [INFO]: 📊 Environment: development
+2025-09-30 09:55:00 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:55:00 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:55:05 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:55:05 [INFO]: ::1 - - [30/Sep/2025:04:25:05 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:55:05 [INFO]: Token decoded successfully
+2025-09-30 09:55:05 [INFO]: Querying user from database
+2025-09-30 09:55:05 [INFO]: User found
+2025-09-30 09:55:05 [INFO]: Authorization check
+2025-09-30 09:55:05 [INFO]: Authorization successful
+2025-09-30 09:55:06 [INFO]: ::1 - - [30/Sep/2025:04:25:06 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:55:07 [INFO]: User logged in: doctor@gmail.com
+2025-09-30 09:55:07 [INFO]: ::1 - - [30/Sep/2025:04:25:07 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.12.2"
+2025-09-30 09:55:07 [INFO]: Token decoded successfully
+2025-09-30 09:55:07 [INFO]: Querying user from database
+2025-09-30 09:55:07 [INFO]: User found
+2025-09-30 09:55:07 [INFO]: Authorization check
+2025-09-30 09:55:07 [INFO]: Authorization successful
+2025-09-30 09:55:07 [ERROR]: MySQL query error:
+2025-09-30 09:55:07 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.updateCurrentNumber (E:\Project 2\backend\models\Queue.js:214:29)
+    at updateCurrentQueueNumber (E:\Project 2\backend\controllers\doctorController.js:894:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 09:55:07 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.updateCurrentNumber (E:\Project 2\backend\models\Queue.js:214:29)
+    at updateCurrentQueueNumber (E:\Project 2\backend\controllers\doctorController.js:894:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 09:55:07 [ERROR]: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at Queue.updateCurrentNumber (E:\Project 2\backend\models\Queue.js:214:29)
+    at updateCurrentQueueNumber (E:\Project 2\backend\controllers\doctorController.js:894:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 09:55:07 [INFO]: ::1 - - [30/Sep/2025:04:25:07 +0000] "PUT /api/doctors/queue/current HTTP/1.1" 500 650 "-" "axios/1.12.2"
+2025-09-30 09:55:33 [INFO]: Socket.IO server initialized
+2025-09-30 09:55:35 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:55:35 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:55:35 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:55:35 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:55:35 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:55:35 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:55:35 [INFO]: 📊 Environment: development
+2025-09-30 09:55:35 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:55:35 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:55:42 [INFO]: Socket.IO server initialized
+2025-09-30 09:55:43 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:55:43 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:55:43 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:55:43 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:55:43 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:55:43 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:55:43 [INFO]: 📊 Environment: development
+2025-09-30 09:55:43 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:55:43 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:55:45 [INFO]: Token decoded successfully
+2025-09-30 09:55:45 [INFO]: Querying user from database
+2025-09-30 09:55:45 [INFO]: User found
+2025-09-30 09:55:45 [INFO]: Authorization check
+2025-09-30 09:55:45 [INFO]: Authorization successful
+2025-09-30 09:55:47 [INFO]: ::1 - - [30/Sep/2025:04:25:47 +0000] "GET /api/patients/queue/position? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:55:47 [INFO]: Token decoded successfully
+2025-09-30 09:55:47 [INFO]: Querying user from database
+2025-09-30 09:55:47 [INFO]: User found
+2025-09-30 09:55:47 [INFO]: Authorization check
+2025-09-30 09:55:47 [INFO]: Authorization successful
+2025-09-30 09:55:48 [INFO]: ::1 - - [30/Sep/2025:04:25:48 +0000] "GET /api/patients/queue/notification?doctorId=d7dae71b-355f-40bf-a666-7f9d2d1189d9 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:55:50 [INFO]: User logged in: patient1@gmail.com
+2025-09-30 09:55:50 [INFO]: ::1 - - [30/Sep/2025:04:25:50 +0000] "POST /api/auth/login HTTP/1.1" 200 851 "-" "axios/1.12.2"
+2025-09-30 09:55:50 [INFO]: Token decoded successfully
+2025-09-30 09:55:50 [INFO]: Querying user from database
+2025-09-30 09:55:51 [INFO]: User found
+2025-09-30 09:55:51 [INFO]: Authorization check
+2025-09-30 09:55:51 [INFO]: Authorization successful
+2025-09-30 09:55:51 [INFO]: ::1 - - [30/Sep/2025:04:25:51 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:55:52 [INFO]: User logged in: doctor@gmail.com
+2025-09-30 09:55:52 [INFO]: ::1 - - [30/Sep/2025:04:25:52 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.12.2"
+2025-09-30 09:55:52 [INFO]: Token decoded successfully
+2025-09-30 09:55:52 [INFO]: Querying user from database
+2025-09-30 09:55:52 [INFO]: User found
+2025-09-30 09:55:52 [INFO]: Authorization check
+2025-09-30 09:55:52 [INFO]: Authorization successful
+2025-09-30 09:55:53 [INFO]: ::1 - - [30/Sep/2025:04:25:53 +0000] "PUT /api/doctors/queue/current HTTP/1.1" 200 62 "-" "axios/1.12.2"
+2025-09-30 09:55:53 [INFO]: Token decoded successfully
+2025-09-30 09:55:53 [INFO]: Querying user from database
+2025-09-30 09:55:53 [INFO]: User found
+2025-09-30 09:55:53 [INFO]: Authorization check
+2025-09-30 09:55:53 [INFO]: Authorization successful
+2025-09-30 09:55:53 [INFO]: ::1 - - [30/Sep/2025:04:25:53 +0000] "GET /api/patients/queue/position HTTP/1.1" 200 574 "-" "axios/1.12.2"
+2025-09-30 09:55:53 [INFO]: Token decoded successfully
+2025-09-30 09:55:53 [INFO]: Querying user from database
+2025-09-30 09:55:53 [INFO]: User found
+2025-09-30 09:55:53 [INFO]: Authorization check
+2025-09-30 09:55:53 [INFO]: Authorization successful
+2025-09-30 09:55:53 [INFO]: ::1 - - [30/Sep/2025:04:25:53 +0000] "PUT /api/doctors/queue/current HTTP/1.1" 200 62 "-" "axios/1.12.2"
+2025-09-30 09:56:01 [INFO]: User logged in: doctor@gmail.com
+2025-09-30 09:56:01 [INFO]: ::1 - - [30/Sep/2025:04:26:01 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:56:01 [INFO]: Token decoded successfully
+2025-09-30 09:56:01 [INFO]: Querying user from database
+2025-09-30 09:56:01 [INFO]: User found
+2025-09-30 09:56:01 [INFO]: Authorization check
+2025-09-30 09:56:01 [INFO]: Authorization successful
+2025-09-30 09:56:02 [ERROR]: MySQL query error:
+2025-09-30 09:56:02 [ERROR]: Error: Unknown column 'a.appointment_time' in 'order clause'
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getUpcomingAppointmentsWithDetails (E:\Project 2\backend\controllers\doctorController.js:687:36)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:558:59)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 09:56:05 [ERROR]: MySQL query error:
+2025-09-30 09:56:05 [ERROR]: Error: Table 'caresync.doctor_reviews' doesn't exist
+    at PromisePool.execute (E:\Project 2\backend\node_modules\mysql2\lib\promise\pool.js:54:22)
+    at MySQLConnection.query (E:\Project 2\backend\config\mysql.js:49:38)
+    at DoctorController.getAverageRating (E:\Project 2\backend\controllers\doctorController.js:759:44)
+    at getDashboard (E:\Project 2\backend\controllers\doctorController.js:568:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-30 09:56:05 [INFO]: ::1 - - [30/Sep/2025:04:26:05 +0000] "GET /api/doctors/dashboard HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:56:12 [INFO]: Socket.IO server initialized
+2025-09-30 09:56:15 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:56:15 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:56:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:56:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:56:15 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:56:15 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:56:15 [INFO]: 📊 Environment: development
+2025-09-30 09:56:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:56:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:56:24 [INFO]: User logged in: doctor@gmail.com
+2025-09-30 09:56:24 [INFO]: ::1 - - [30/Sep/2025:04:26:24 +0000] "POST /api/auth/login HTTP/1.1" 200 854 "-" "axios/1.12.2"
+2025-09-30 09:56:24 [INFO]: Token decoded successfully
+2025-09-30 09:56:24 [INFO]: Querying user from database
+2025-09-30 09:56:24 [INFO]: User found
+2025-09-30 09:56:24 [INFO]: Authorization check
+2025-09-30 09:56:24 [INFO]: Authorization successful
+2025-09-30 09:56:27 [INFO]: ::1 - - [30/Sep/2025:04:26:27 +0000] "GET /api/doctors/queue/summary HTTP/1.1" 200 334 "-" "axios/1.12.2"
+2025-09-30 09:56:27 [INFO]: Token decoded successfully
+2025-09-30 09:56:27 [INFO]: Querying user from database
+2025-09-30 09:56:27 [INFO]: User found
+2025-09-30 09:56:27 [INFO]: Authorization check
+2025-09-30 09:56:27 [INFO]: Authorization successful
+2025-09-30 09:56:28 [INFO]: ::1 - - [30/Sep/2025:04:26:28 +0000] "PUT /api/doctors/queue/current HTTP/1.1" 200 62 "-" "axios/1.12.2"
+2025-09-30 09:56:28 [INFO]: Token decoded successfully
+2025-09-30 09:56:28 [INFO]: Querying user from database
+2025-09-30 09:56:28 [INFO]: User found
+2025-09-30 09:56:28 [INFO]: Authorization check
+2025-09-30 09:56:28 [INFO]: Authorization successful
+2025-09-30 09:56:29 [INFO]: ::1 - - [30/Sep/2025:04:26:29 +0000] "GET /api/doctors/queue/summary HTTP/1.1" 200 334 "-" "axios/1.12.2"
+2025-09-30 09:56:29 [INFO]: Token decoded successfully
+2025-09-30 09:56:29 [INFO]: Querying user from database
+2025-09-30 09:56:29 [INFO]: User found
+2025-09-30 09:56:29 [INFO]: Authorization check
+2025-09-30 09:56:29 [INFO]: Authorization successful
+2025-09-30 09:56:30 [INFO]: ::1 - - [30/Sep/2025:04:26:30 +0000] "PUT /api/doctors/queue/current HTTP/1.1" 200 62 "-" "axios/1.12.2"
+2025-09-30 09:56:43 [INFO]: Socket.IO server initialized
+2025-09-30 09:57:03 [INFO]: Socket.IO server initialized
+2025-09-30 09:57:15 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:57:15 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:57:15 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:57:15 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:57:15 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:57:15 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:57:15 [INFO]: 📊 Environment: development
+2025-09-30 09:57:15 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:57:15 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:57:21 [INFO]: Socket.IO server initialized
+2025-09-30 09:57:29 [INFO]: ✅ MySQL database connected successfully
+2025-09-30 09:57:29 [INFO]: ✅ MySQL connected successfully
+2025-09-30 09:57:29 [ERROR]: ❌ MongoDB connection failed:
+2025-09-30 09:57:29 [WARN]: ⚠️ MongoDB connection failed - continuing without MongoDB:
+2025-09-30 09:57:29 [INFO]: 📧 Notification service skipped for now
+2025-09-30 09:57:29 [INFO]: 🚀 Server running on port 5000
+2025-09-30 09:57:29 [INFO]: 📊 Environment: development
+2025-09-30 09:57:29 [INFO]: 🔗 Client URL: http://localhost:5173
+2025-09-30 09:57:29 [INFO]: 📋 API Documentation: http://localhost:5000/api/docs
+2025-09-30 09:57:30 [INFO]: Token decoded successfully
+2025-09-30 09:57:30 [INFO]: Querying user from database
+2025-09-30 09:57:30 [INFO]: Token decoded successfully
+2025-09-30 09:57:30 [INFO]: Querying user from database
+2025-09-30 09:57:30 [INFO]: Token decoded successfully
+2025-09-30 09:57:30 [INFO]: Querying user from database
+2025-09-30 09:57:30 [INFO]: User found
+2025-09-30 09:57:30 [INFO]: Authorization check
+2025-09-30 09:57:30 [INFO]: Authorization successful
+2025-09-30 09:57:33 [INFO]: User found
+2025-09-30 09:57:35 [INFO]: ::1 - - [30/Sep/2025:04:27:35 +0000] "GET /api/auth/profile HTTP/1.1" 200 412 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:57:35 [INFO]: User found
+2025-09-30 09:57:35 [INFO]: Authorization check
+2025-09-30 09:57:35 [INFO]: Authorization successful
+2025-09-30 09:57:36 [INFO]: ::1 - - [30/Sep/2025:04:27:36 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:57:36 [INFO]: Token decoded successfully
+2025-09-30 09:57:36 [INFO]: Querying user from database
+2025-09-30 09:57:37 [INFO]: User found
+2025-09-30 09:57:37 [INFO]: Authorization check
+2025-09-30 09:57:37 [INFO]: Authorization successful
+2025-09-30 09:57:38 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-30 09:57:38 [INFO]: ::1 - - [30/Sep/2025:04:27:38 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:57:38 [INFO]: Token decoded successfully
+2025-09-30 09:57:38 [INFO]: Querying user from database
+2025-09-30 09:57:39 [INFO]: User found
+2025-09-30 09:57:39 [INFO]: Authorization check
+2025-09-30 09:57:39 [INFO]: Authorization successful
+2025-09-30 09:57:39 [INFO]: ::1 - - [30/Sep/2025:04:27:39 +0000] "GET /api/doctors/appointments/today HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+2025-09-30 09:57:40 [INFO]: Doctor 11aedc76-46d6-4907-83ee-152d097196b8 availability data fetched
+2025-09-30 09:57:40 [INFO]: ::1 - - [30/Sep/2025:04:27:40 +0000] "GET /api/doctors/availability HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"

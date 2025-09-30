@@ -552,52 +552,69 @@ class PatientController {
         const isQueueActive = queueStatus && queueStatus.is_active;
         
         // Calculate position based on queue active status
-        let positionQuery, positionParams;
+        let position = 0;
+        let currentlyServing = false;
+        let isNextPatient = false;
+        let estimatedWaitingTime = 0;
         
         if (isQueueActive) {
-          // Count only paid patients ahead in active queue
+          // Get current serving numbers
+          const currentNumber = parseInt(queueStatus.current_number || '0');
+          const currentEmergencyNumber = queueStatus.current_emergency_number || 'E0';
+          
           if (appointment.is_emergency) {
-            positionQuery = `
-              SELECT COUNT(*) as position
-              FROM appointments 
-              WHERE doctor_id = ? 
-                AND queue_date = ? 
-                AND is_emergency = TRUE 
-                AND payment_status = 'paid'
-                AND status IN ('pending', 'in-progress')
-                AND CAST(SUBSTRING(queue_number, 2) AS UNSIGNED) < CAST(SUBSTRING(?, 2) AS UNSIGNED)
-            `;
-            positionParams = [doctorId, queueDate, appointment.queue_number];
+            const patientEmergencyNum = parseInt(appointment.queue_number.toString().substring(1));
+            const currentEmergencyNum = parseInt(currentEmergencyNumber.substring(1));
+            
+            // Check status for emergency patients
+            if (currentEmergencyNum === patientEmergencyNum) {
+              currentlyServing = true;
+              position = 0;
+              estimatedWaitingTime = "now";
+            } else if (currentEmergencyNum + 1 === patientEmergencyNum) {
+              isNextPatient = true;
+              position = 1;
+              estimatedWaitingTime = 15;
+            } else {
+              position = patientEmergencyNum - currentEmergencyNum;
+              estimatedWaitingTime = position * 15;
+            }
           } else {
-            // For regular patients, also need to count emergency patients ahead
-            const emergencyCountQuery = `
-              SELECT COUNT(*) as emergency_count
-              FROM appointments 
-              WHERE doctor_id = ? 
-                AND queue_date = ? 
-                AND is_emergency = TRUE 
-                AND payment_status = 'paid'
-                AND status IN ('pending', 'in-progress')
-            `;
+            const patientNum = parseInt(appointment.queue_number);
             
-            const [emergencyCount] = await mysqlConnection.query(emergencyCountQuery, [doctorId, queueDate]);
-            
-            positionQuery = `
-              SELECT COUNT(*) as position
-              FROM appointments 
-              WHERE doctor_id = ? 
-                AND queue_date = ? 
-                AND is_emergency = FALSE 
-                AND payment_status = 'paid'
-                AND status IN ('pending', 'in-progress')
-                AND CAST(queue_number AS UNSIGNED) < CAST(? AS UNSIGNED)
-            `;
-            positionParams = [doctorId, queueDate, appointment.queue_number];
-            
-            // Add emergency patients to position
-            const [regularPosition] = await mysqlConnection.query(positionQuery, positionParams);
-            const totalPosition = emergencyCount.emergency_count + regularPosition.position;
-            
+            // Check status for regular patients
+            if (currentNumber === patientNum) {
+              currentlyServing = true;
+              position = 0;
+              estimatedWaitingTime = "now";
+            } else if (currentNumber + 1 === patientNum) {
+              isNextPatient = true;
+              position = 1;
+              estimatedWaitingTime = 15;
+            } else {
+              position = patientNum - currentNumber;
+              estimatedWaitingTime = position * 15;
+            }
+          }
+          
+          // For emergency patients in active queue - return early
+          if (appointment.is_emergency) {
+            const enhancedQueueStatus = queueStatus ? {
+              is_active: Boolean(queueStatus.is_active),
+              current_number: queueStatus.current_number,
+              current_emergency_number: queueStatus.current_emergency_number,
+              available_from: queueStatus.available_from,
+              available_to: queueStatus.available_to,
+              queue_date: queueStatus.queue_date
+            } : {
+              is_active: false,
+              current_number: '0',
+              current_emergency_number: 'E0',
+              available_from: '09:00:00',
+              available_to: '17:00:00',
+              queue_date: queueDate
+            };
+
             return res.json({
               success: true,
               data: {
@@ -605,22 +622,29 @@ class PatientController {
                 isEmergency: appointment.is_emergency,
                 status: appointment.status,
                 paymentStatus: appointment.payment_status,
-                position: appointment.payment_status === 'paid' ? totalPosition + 1 : null,
+                position: appointment.payment_status === 'paid' ? position : null,
                 doctorId: appointment.doctor_id,
                 doctorName: appointment.doctor_name,
                 specialty: appointment.specialty,
                 queueActive: isQueueActive,
-                currentlyServing: totalPosition === 0 && appointment.payment_status === 'paid',
-                nextPatient: totalPosition === 0 && appointment.payment_status === 'paid',
+                currentlyServing: currentlyServing,
+                nextPatient: isNextPatient,
+                estimatedWaitingTime: estimatedWaitingTime,
+                queueStatus: enhancedQueueStatus,
+                currentNumber: enhancedQueueStatus.current_number,
+                currentEmergencyNumber: enhancedQueueStatus.current_emergency_number,
                 message: appointment.payment_status !== 'paid' 
                   ? 'Please complete payment to join the active queue'
-                  : totalPosition === 0 ? 'You are next!' : `${totalPosition + 1} patients ahead of you`
+                  : currentlyServing ? 'Your turn'
+                  : isNextPatient ? 'You are next!' 
+                  : position > 0 ? `${position} emergency patients ahead of you (Est. wait: ${estimatedWaitingTime} min)`
+                  : 'Please wait for your turn'
               }
             });
           }
         } else {
           // Queue not active - show traditional position among all patients
-          positionQuery = `
+          const positionQuery = `
             SELECT COUNT(*) as position
             FROM appointments 
             WHERE doctor_id = ? 
@@ -628,54 +652,13 @@ class PatientController {
               AND queue_number < ?
               AND status IN ('pending', 'scheduled', 'confirmed', 'in-progress')
           `;
-          positionParams = [doctorId, queueDate, appointment.queue_number];
+          const [positionResult] = await mysqlConnection.query(positionQuery, [doctorId, queueDate, appointment.queue_number]);
+          position = positionResult.position;
         }
-
-        const [positionResult] = await mysqlConnection.query(positionQuery, positionParams);
-        const position = positionResult.position;
 
         // For emergency patients in active queue
         if (isQueueActive && appointment.is_emergency) {
-          // Enhanced queue status information for emergency patients
-          const enhancedQueueStatus = queueStatus ? {
-            is_active: Boolean(queueStatus.is_active),
-            current_number: queueStatus.current_number,
-            current_emergency_number: queueStatus.current_emergency_number,
-            available_from: queueStatus.available_from,
-            available_to: queueStatus.available_to,
-            queue_date: queueStatus.queue_date
-          } : {
-            is_active: false,
-            current_number: '0',
-            current_emergency_number: 'E0',
-            available_from: '09:00:00',
-            available_to: '17:00:00',
-            queue_date: queueDate
-          };
-
-          return res.json({
-            success: true,
-            data: {
-              queueNumber: appointment.queue_number,
-              isEmergency: appointment.is_emergency,
-              status: appointment.status,
-              paymentStatus: appointment.payment_status,
-              position: appointment.payment_status === 'paid' ? position + 1 : null,
-              doctorId: appointment.doctor_id,
-              doctorName: appointment.doctor_name,
-              specialty: appointment.specialty,
-              queueActive: isQueueActive,
-              currentlyServing: position === 0 && appointment.payment_status === 'paid',
-              nextPatient: position === 0 && appointment.payment_status === 'paid',
-              // Include queue status information
-              queueStatus: enhancedQueueStatus,
-              currentNumber: enhancedQueueStatus.current_number,
-              currentEmergencyNumber: enhancedQueueStatus.current_emergency_number,
-              message: appointment.payment_status !== 'paid' 
-                ? 'Please complete payment to join the active queue'
-                : position === 0 ? 'You are next!' : `${position + 1} emergency patients ahead of you`
-            }
-          });
+          // This case is already handled above - this comment block can be removed
         }
 
         // Enhanced queue status information
@@ -703,14 +686,14 @@ class PatientController {
             isEmergency: appointment.is_emergency,
             status: appointment.status,
             paymentStatus: appointment.payment_status,
-            position: position + 1,
+            position: isQueueActive && appointment.payment_status === 'paid' ? position : position + 1,
             doctorId: appointment.doctor_id,
             doctorName: appointment.doctor_name,
             specialty: appointment.specialty,
             queueActive: isQueueActive,
-            currentlyServing: position === 0,
-            nextPatient: position === 0,
-            // Include queue status information
+            currentlyServing: currentlyServing,
+            nextPatient: isNextPatient,
+            estimatedWaitingTime: estimatedWaitingTime,
             queueStatus: enhancedQueueStatus,
             currentNumber: enhancedQueueStatus.current_number,
             currentEmergencyNumber: enhancedQueueStatus.current_emergency_number,
@@ -718,7 +701,10 @@ class PatientController {
               ? 'Doctor has not started the queue yet'
               : appointment.payment_status !== 'paid' 
                 ? 'Please complete payment to join the active queue'
-                : position === 0 ? 'You are next!' : `${position + 1} patients ahead of you`
+                : currentlyServing ? 'Your turn'
+                : isNextPatient ? 'You are next!' 
+                : position > 0 ? `${position} patients ahead of you (Est. wait: ${estimatedWaitingTime} min)`
+                : 'Please wait for your turn'
           }
         });
 
@@ -795,26 +781,84 @@ class PatientController {
           queueStatuses.map(qs => [qs.doctorId, qs.queueStatus])
         );
 
-        // Format response for multiple appointments with queue status
-        const formattedAppointments = appointments.map(apt => {
+        // Format response for multiple appointments with queue status and enhanced logic
+        const formattedAppointments = await Promise.all(appointments.map(async (apt) => {
           const queueStatus = queueStatusMap[apt.doctor_id];
+          const isQueueActive = queueStatus.is_active;
+          
+          // Calculate enhanced position information for each appointment
+          let currentlyServing = false;
+          let isNextPatient = false;
+          let estimatedWaitingTime = 0;
+          let position = apt.position;
+          
+          if (isQueueActive && apt.payment_status === 'paid') {
+            // Get current serving numbers
+            const currentNumber = parseInt(queueStatus.current_number || '0');
+            const currentEmergencyNumber = queueStatus.current_emergency_number || 'E0';
+            
+            if (apt.is_emergency) {
+              const patientEmergencyNum = parseInt(apt.queue_number.toString().substring(1));
+              const currentEmergencyNum = parseInt(currentEmergencyNumber.substring(1));
+              
+              // Check status for emergency patients
+              if (currentEmergencyNum === patientEmergencyNum) {
+                currentlyServing = true;
+                position = 0;
+                estimatedWaitingTime = "now";
+              } else if (currentEmergencyNum + 1 === patientEmergencyNum) {
+                isNextPatient = true;
+                position = 1;
+                estimatedWaitingTime = 15;
+              } else {
+                position = patientEmergencyNum - currentEmergencyNum;
+                estimatedWaitingTime = position * 15;
+              }
+            } else {
+              const patientNum = parseInt(apt.queue_number);
+              
+              // Check status for regular patients
+              if (currentNumber === patientNum) {
+                currentlyServing = true;
+                position = 0;
+                estimatedWaitingTime = "now";
+              } else if (currentNumber + 1 === patientNum) {
+                isNextPatient = true;
+                position = 1;
+                estimatedWaitingTime = 15;
+              } else {
+                position = patientNum - currentNumber;
+                estimatedWaitingTime = position * 15;
+              }
+            }
+          }
+          
           return {
             queueNumber: apt.queue_number,
             isEmergency: apt.is_emergency,
             status: apt.status,
             paymentStatus: apt.payment_status,
-            position: apt.position + 1,
+            position: isQueueActive && apt.payment_status === 'paid' ? position : apt.position + 1,
             doctorId: apt.doctor_id,
             doctorName: apt.doctor_name,
             specialty: apt.specialty,
-            currentlyServing: apt.position === 0,
-            // Include queue status information
+            currentlyServing: currentlyServing,
+            nextPatient: isNextPatient,
+            estimatedWaitingTime: estimatedWaitingTime,
             queueStatus: queueStatus,
             queueActive: queueStatus.is_active,
             currentNumber: queueStatus.current_number,
-            currentEmergencyNumber: queueStatus.current_emergency_number
+            currentEmergencyNumber: queueStatus.current_emergency_number,
+            message: !isQueueActive 
+              ? 'Doctor has not started the queue yet'
+              : apt.payment_status !== 'paid' 
+                ? 'Please complete payment to join the active queue'
+                : currentlyServing ? 'Your turn'
+                : isNextPatient ? 'You are next!' 
+                : position > 0 ? `${position} patients ahead of you (Est. wait: ${estimatedWaitingTime} min)`
+                : 'Please wait for your turn'
           };
-        });
+        }));
 
         res.json({
           success: true,
