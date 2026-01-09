@@ -38,6 +38,7 @@ router.use('/doctors', doctorRoutes);
 router.use('/medical-reports', medicalReportRoutes);
 router.use('/admin', adminRoutes);
 router.use('/billing', billingRoutes);
+router.use('/insurance-claims', require('./insurance-claims'));
 
 // API documentation endpoint
 router.get('/docs', (req, res) => {
