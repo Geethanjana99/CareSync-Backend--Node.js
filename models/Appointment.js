@@ -59,8 +59,8 @@ class Appointment {
         INSERT INTO appointments (
           id, appointment_id, patient_id, doctor_id, appointment_date,
           appointment_type, status, reason_for_visit, symptoms, priority,
-          notes, consultation_fee, queue_number, is_emergency, queue_date
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          notes, consultation_fee, payment_status, queue_number, is_emergency, queue_date
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `;
 
       // Ensure all required fields have values (no undefined)
@@ -77,6 +77,7 @@ class Appointment {
         appointment.priority || 'normal',
         appointment.notes || '',
         appointment.consultation_fee || 0,
+        appointment.payment_status || 'unpaid',
         appointment.queue_number,
         appointment.is_emergency ? 1 : 0,
         appointment.queue_date
@@ -114,6 +115,11 @@ class Appointment {
   // Get patient's queue position
   static async getPatientQueuePosition(patientId, doctorId, date = null) {
     return await Queue.getPatientQueuePosition(patientId, doctorId, date);
+  }
+
+  // Get patient's queue positions for all doctors on a date
+  static async getAllPatientQueuePositions(patientId, date = null) {
+    return await Queue.getAllPatientQueuePositions(patientId, date);
   }
 
   // Get doctor's queue for a specific date
@@ -168,8 +174,8 @@ class Appointment {
       INSERT INTO appointments (
         id, appointment_id, patient_id, doctor_id, appointment_date,
         appointment_type, status, reason_for_visit, symptoms, priority,
-        notes, consultation_fee, queue_number, is_emergency, queue_date
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        notes, consultation_fee, payment_status, queue_number, is_emergency, queue_date
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
     const params = [
@@ -185,6 +191,7 @@ class Appointment {
       this.priority || 'medium', 
       this.notes || null, 
       this.consultation_fee || null,
+      this.payment_status || 'unpaid',
       this.queue_number || null,
       this.is_emergency || false,
       this.queue_date || this.appointment_date
@@ -475,6 +482,85 @@ class Appointment {
 
     await appointment.update(updateData);
     return appointment;
+  }
+
+  // Get all appointments with filters and full details
+  static async findAll(filters = {}) {
+    let query = `
+      SELECT a.*, 
+             a.id as appointmentId,
+             p.patient_id, pu.name as patientName, pu.email as patientEmail, 
+             pu.phone as patient_phone, p.date_of_birth, p.gender,
+             d.doctor_id, du.name as doctor_name, du.email as doctor_email,
+             d.specialty, d.consultation_fee as doctor_fee,
+             a.appointment_date as appointmentDate,
+             a.queue_number,
+             a.appointment_type as appointmentType,
+             a.reason_for_visit as reasonForVisit
+      FROM appointments a
+      JOIN patients p ON a.patient_id = p.id
+      JOIN users pu ON p.user_id = pu.id
+      JOIN doctors d ON a.doctor_id = d.id
+      JOIN users du ON d.user_id = du.id
+      WHERE 1=1
+    `;
+    
+    const params = [];
+
+    // Apply filters
+    if (filters.patient_id) {
+      query += ' AND a.patient_id = ?';
+      params.push(filters.patient_id);
+    }
+
+    if (filters.doctor_id) {
+      query += ' AND a.doctor_id = ?';
+      params.push(filters.doctor_id);
+    }
+
+    if (filters.status) {
+      if (Array.isArray(filters.status)) {
+        query += ` AND a.status IN (${filters.status.map(() => '?').join(',')})`;
+        params.push(...filters.status);
+      } else {
+        query += ' AND a.status = ?';
+        params.push(filters.status);
+      }
+    }
+
+    if (filters.date_from) {
+      query += ' AND a.appointment_date >= ?';
+      params.push(filters.date_from);
+    }
+
+    if (filters.date_to) {
+      query += ' AND a.appointment_date <= ?';
+      params.push(filters.date_to);
+    }
+
+    if (filters.appointment_type) {
+      query += ' AND a.appointment_type = ?';
+      params.push(filters.appointment_type);
+    }
+
+    if (filters.priority) {
+      query += ' AND a.priority = ?';
+      params.push(filters.priority);
+    }
+
+    // Order by appointment date and queue number
+    query += ' ORDER BY a.appointment_date DESC, a.queue_number ASC';
+
+    // Add pagination
+    if (filters.limit) {
+      query += ` LIMIT ${parseInt(filters.limit)}`;
+      if (filters.offset) {
+        query += ` OFFSET ${parseInt(filters.offset)}`;
+      }
+    }
+    
+    const appointments = await mysqlConnection.query(query, params);
+    return appointments;
   }
 
   // Get appointment with full details

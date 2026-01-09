@@ -221,6 +221,42 @@ class AdminController {
     }
   }
 
+  // Get all doctors for admin use (e.g., appointment creation)
+  static async getDoctors(req, res, next) {
+    try {
+      const { page = 1, limit = 50, search, specialty } = req.query;
+      
+      const filters = {
+        search,
+        specialty
+      };
+
+      // Only add limit and offset if they are valid numbers
+      const parsedLimit = parseInt(limit);
+      const parsedPage = parseInt(page);
+      
+      if (!isNaN(parsedLimit) && parsedLimit > 0) {
+        filters.limit = parsedLimit;
+      }
+      
+      if (!isNaN(parsedPage) && parsedPage > 0 && !isNaN(parsedLimit)) {
+        filters.offset = (parsedPage - 1) * parsedLimit;
+      }
+
+      const doctors = await Doctor.findAll(filters);
+
+      res.json({
+        success: true,
+        data: {
+          doctors
+        }
+      });
+    } catch (error) {
+      logger.error('Error fetching doctors:', error);
+      next(error);
+    }
+  }
+
   // Get doctor performance metrics
   static async getDoctorMetrics(req, res, next) {
     try {
@@ -471,6 +507,123 @@ class AdminController {
       });
     } catch (error) {
       logger.error('Error fetching patient names:', error);
+      next(error);
+    }
+  }
+
+  // Admin book queue appointment for any patient
+  static async bookQueueAppointmentForPatient(req, res, next) {
+    try {
+      const {
+        patientId,
+        doctorId,
+        appointmentDate,
+        appointmentType = 'consultation',
+        reasonForVisit,
+        symptoms,
+        priority = 'medium',
+        isEmergency = false
+      } = req.body;
+
+      // Validate required fields
+      if (!patientId || !doctorId || !appointmentDate || !reasonForVisit) {
+        return res.status(400).json({
+          success: false,
+          message: 'Patient ID, Doctor ID, appointment date, and reason for visit are required'
+        });
+      }
+
+      // Get patient by ID (not by user ID like the regular method)
+      const patient = await Patient.findById(patientId);
+      if (!patient) {
+        return res.status(404).json({
+          success: false,
+          message: 'Patient not found'
+        });
+      }
+
+      // Convert public doctor ID to internal ID if needed
+      let internalDoctorId = doctorId;
+      
+      // Check if doctorId is a public ID (like 'D001') and convert to internal ID
+      if (typeof doctorId === 'string' && doctorId.startsWith('D')) {
+        const { mysqlConnection } = require('../config/mysql');
+        const doctorResult = await mysqlConnection.query(
+          'SELECT id FROM doctors WHERE doctor_id = ?',
+          [doctorId]
+        );
+        
+        if (doctorResult.length === 0) {
+          return res.status(400).json({
+            success: false,
+            message: 'Doctor not found'
+          });
+        }
+        
+        internalDoctorId = doctorResult[0].id;
+      }
+
+      // Validate appointment date
+      const selectedDate = new Date(appointmentDate);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      if (selectedDate < today) {
+        return res.status(400).json({
+          success: false,
+          message: 'Cannot book appointment for past dates'
+        });
+      }
+
+      // Create appointment using queue system
+      const appointmentData = {
+        patient_id: patient.id,
+        doctor_id: internalDoctorId,
+        appointment_date: appointmentDate,
+        appointment_type: appointmentType,
+        reason_for_visit: reasonForVisit,
+        symptoms: symptoms || null,
+        priority: priority,
+        status: 'scheduled',
+        created_by_admin: req.user.id
+      };
+
+      // Get next queue number for the date
+      const { mysqlConnection } = require('../config/mysql');
+      const queueResult = await mysqlConnection.query(
+        'SELECT COALESCE(MAX(queue_number), 0) + 1 as next_queue FROM appointments WHERE appointment_date = ? AND doctor_id = ?',
+        [appointmentDate, internalDoctorId]
+      );
+      
+      const queueNumber = queueResult[0].next_queue;
+      appointmentData.queue_number = queueNumber;
+
+      // If it's an emergency, move to front of queue
+      if (isEmergency) {
+        appointmentData.priority = 'urgent';
+        appointmentData.queue_number = 1;
+        
+        // Shift all other appointments for that day
+        await mysqlConnection.query(
+          'UPDATE appointments SET queue_number = queue_number + 1 WHERE appointment_date = ? AND doctor_id = ? AND queue_number >= 1',
+          [appointmentDate, internalDoctorId]
+        );
+      }
+
+      const appointment = await Appointment.create(appointmentData);
+
+      res.status(201).json({
+        success: true,
+        message: `Appointment scheduled successfully. Queue number: ${queueNumber}`,
+        data: {
+          appointment,
+          queueNumber,
+          isEmergency
+        }
+      });
+
+    } catch (error) {
+      logger.error('Error booking queue appointment for patient:', error);
       next(error);
     }
   }
