@@ -63,10 +63,10 @@ class AdminHealthPredictionController {
           apc.id as certification_id,
           apc.certification_status
         FROM diabetes_predictions dp
-        -- First try: Join by patient_code (for cases like 'P001')
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        -- Join by patients.id (primary key) since patientId in diabetes_predictions is patients.id
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
-        -- Second try: Join by user_id (for UUID cases)
+        -- Legacy join for old records that might use user_id directly
         LEFT JOIN users u2 ON dp.patient_id = u2.id
         LEFT JOIN patients p2 ON u2.id = p2.user_id
         -- Admin user join
@@ -87,7 +87,7 @@ class AdminHealthPredictionController {
       const countQuery = `
         SELECT COUNT(*) as total 
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
         LEFT JOIN users u2 ON dp.patient_id = u2.id
         WHERE (u.id IS NOT NULL OR u2.id IS NOT NULL)
@@ -192,10 +192,10 @@ class AdminHealthPredictionController {
           du.name as doctor_name,
           d.specialty as doctor_specialty
         FROM diabetes_predictions dp
-        -- First try: Join by patient_code (for cases like 'P001')
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        -- Join by patients.id (primary key) since patientId in diabetes_predictions is patients.id  
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
-        -- Second try: Join by user_id (for UUID cases)
+        -- Legacy join for old records that might use user_id directly
         LEFT JOIN users u2 ON dp.patient_id = u2.id
         LEFT JOIN patients p2 ON u2.id = p2.user_id
         -- Other joins
