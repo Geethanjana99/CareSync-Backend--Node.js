@@ -14,6 +14,7 @@ router.get('/dashboard', AdminController.getDashboard);
 // User management
 router.get('/users', AdminController.getUsers);
 router.get('/users/patients/names', AdminController.getPatientNames);
+router.get('/patients', AdminController.getAllPatients);
 router.get('/users/:userId', AdminController.getUserDetails);
 router.patch('/users/:userId/status', AdminController.updateUserStatus);
 router.post('/users/admin', userValidation.register, AdminController.createAdminUser);
@@ -25,6 +26,7 @@ router.post('/appointments/queue', AdminController.bookQueueAppointmentForPatien
 
 // Doctor management
 router.get('/doctors', AdminController.getDoctors);
+router.get('/doctors/all', AdminController.getAllDoctors);
 router.get('/doctors/metrics', AdminController.getDoctorMetrics);
 router.patch('/doctors/:doctorId/approval', AdminController.approveDoctorRegistration);
 

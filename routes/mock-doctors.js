@@ -222,43 +222,6 @@ router.put('/:id', (req, res) => {
   }
 });
 
-// DELETE /api/mock/doctors/:id - Delete doctor
-router.delete('/:id', (req, res) => {
-  const { id } = req.params;
-  console.log(`Mock Doctors API: DELETE /api/mock/doctors/${id} called`);
-  
-  try {
-    const doctorIndex = doctors.findIndex(d => d.id === id);
-    
-    if (doctorIndex === -1) {
-      return res.status(404).json({
-        success: false,
-        message: 'Doctor not found',
-        source: 'mock_api'
-      });
-    }
-    
-    const deletedDoctor = doctors[doctorIndex];
-    doctors.splice(doctorIndex, 1);
-    
-    console.log(`Doctor deleted:`, deletedDoctor);
-    
-    res.json({
-      success: true,
-      data: deletedDoctor,
-      message: 'Doctor deleted successfully',
-      source: 'mock_api'
-    });
-  } catch (error) {
-    console.error(`Error in DELETE /api/mock/doctors/${id}:`, error);
-    res.status(500).json({
-      success: false,
-      message: 'Internal server error',
-      error: error.message
-    });
-  }
-});
-
 // GET /api/mock/doctors/count - Get doctor count
 router.get('/meta/count', (req, res) => {
   console.log('Mock Doctors API: GET /api/mock/doctors/meta/count called');

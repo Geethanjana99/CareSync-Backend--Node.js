@@ -54,20 +54,26 @@ class AdminHealthPredictionController {
           dp.created_at,
           dp.updated_at,
           dp.processed_at,
-          u.name as patient_name,
-          u.email as patient_email,
-          u.phone as patient_phone,
-          p.date_of_birth as patient_dob,
+          COALESCE(u.name, u2.name) as patient_name,
+          COALESCE(u.email, u2.email) as patient_email,
+          COALESCE(u.phone, u2.phone) as patient_phone,
+          COALESCE(p.date_of_birth, p2.date_of_birth) as patient_dob,
           au.name as admin_name,
           -- Check if there's doctor certification
           apc.id as certification_id,
           apc.certification_status
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        -- Join by patients.id (primary key) since patientId in diabetes_predictions is patients.id
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
+        -- Legacy join for old records that might use user_id directly
+        LEFT JOIN users u2 ON dp.patient_id = u2.id
+        LEFT JOIN patients p2 ON u2.id = p2.user_id
+        -- Admin user join
         LEFT JOIN users au ON dp.admin_id = au.id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
-        ${whereClause}
+        WHERE (u.id IS NOT NULL OR u2.id IS NOT NULL)
+        ${status !== 'all' ? 'AND dp.status = ?' : ''}
         ORDER BY dp.created_at DESC
         LIMIT ${limit} OFFSET ${offset}
       `;
@@ -81,7 +87,11 @@ class AdminHealthPredictionController {
       const countQuery = `
         SELECT COUNT(*) as total 
         FROM diabetes_predictions dp
-        ${whereClause}
+        LEFT JOIN patients p ON dp.patient_id = p.id
+        LEFT JOIN users u ON p.user_id = u.id
+        LEFT JOIN users u2 ON dp.patient_id = u2.id
+        WHERE (u.id IS NOT NULL OR u2.id IS NOT NULL)
+        ${status !== 'all' ? 'AND dp.status = ?' : ''}
       `;
       const countParams = status !== 'all' ? [status] : [];
       const totalResult = await mysqlConnection.query(countQuery, countParams);
@@ -108,10 +118,10 @@ class AdminHealthPredictionController {
         updatedAt: submission.updated_at,
         processedAt: submission.processed_at,
         patientInfo: {
-          name: submission.patient_name,
-          email: submission.patient_email,
-          phone: submission.patient_phone,
-          dateOfBirth: submission.patient_dob
+          name: submission.patient_name || 'Unknown Patient',
+          email: submission.patient_email || 'N/A',
+          phone: submission.patient_phone || 'N/A',
+          dateOfBirth: submission.patient_dob || 'N/A'
         },
         adminName: submission.admin_name,
         isCertified: !!submission.certification_id,
@@ -165,11 +175,11 @@ class AdminHealthPredictionController {
       const query = `
         SELECT 
           dp.*,
-          u.name as patient_name,
-          u.email as patient_email,
-          u.phone as patient_phone,
-          p.date_of_birth as patient_dob,
-          p.gender as patient_gender,
+          COALESCE(u.name, u2.name) as patient_name,
+          COALESCE(u.email, u2.email) as patient_email,
+          COALESCE(u.phone, u2.phone) as patient_phone,
+          COALESCE(p.date_of_birth, p2.date_of_birth) as patient_dob,
+          COALESCE(p.gender, p2.gender) as patient_gender,
           au.name as admin_name,
           apc.id as certification_id,
           apc.certification_status,
@@ -182,13 +192,18 @@ class AdminHealthPredictionController {
           du.name as doctor_name,
           d.specialty as doctor_specialty
         FROM diabetes_predictions dp
-        LEFT JOIN patients p ON dp.patient_id = p.patient_id
+        -- Join by patients.id (primary key) since patientId in diabetes_predictions is patients.id  
+        LEFT JOIN patients p ON dp.patient_id = p.id
         LEFT JOIN users u ON p.user_id = u.id
+        -- Legacy join for old records that might use user_id directly
+        LEFT JOIN users u2 ON dp.patient_id = u2.id
+        LEFT JOIN patients p2 ON u2.id = p2.user_id
+        -- Other joins
         LEFT JOIN users au ON dp.admin_id = au.id
         LEFT JOIN ai_prediction_certifications apc ON dp.id = apc.prediction_id
         LEFT JOIN doctors d ON apc.doctor_id = d.id
         LEFT JOIN users du ON d.user_id = du.id
-        WHERE dp.id = ?
+        WHERE dp.id = ? AND (u.id IS NOT NULL OR u2.id IS NOT NULL)
       `;
       
       const results = await mysqlConnection.query(query, [id]);
@@ -222,11 +237,11 @@ class AdminHealthPredictionController {
         updatedAt: submission.updated_at,
         processedAt: submission.processed_at,
         patientInfo: {
-          name: submission.patient_name,
-          email: submission.patient_email,
-          phone: submission.patient_phone,
-          dateOfBirth: submission.patient_dob,
-          gender: submission.patient_gender
+          name: submission.patient_name || 'Unknown Patient',
+          email: submission.patient_email || 'N/A',
+          phone: submission.patient_phone || 'N/A',
+          dateOfBirth: submission.patient_dob || 'N/A',
+          gender: submission.patient_gender || 'N/A'
         },
         adminName: submission.admin_name,
         certification: submission.certification_id ? {
